@@ -61,6 +61,7 @@ winget install -e --id Spotify.Spotify # broken
 
 # Multimedia
 winget install -e --id GIMP.GIMP
+winget install -e --id IrfanSkiljan.IrfanView
 winget install -e --id Audacity.Audacity
 
 # Productivity

@@ -43,7 +43,6 @@ winget install -e --id Rustlang.Rustup
 winget install -e --id Cygwin.Cygwin # TODO install stuff I use such as GCC
 
 # Multimedia
-winget install -e --id IrfanSkiljan.IrfanView
 winget install -e --id OBSProject.OBSStudio
 winget install -e --id Canva.Canva # broken
 winget install -e --id 9WZDNCRFJ3TJ # Netflix
