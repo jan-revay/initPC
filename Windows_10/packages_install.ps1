@@ -2,12 +2,15 @@
 
 # TODOs:
 # - ? repair broken packages e.g. by using the msstore version instead
-# resp. disabling the hash check using the --ignore-security-hash option ?
+#   resp. disabling the hash check using the --ignore-security-hash option ?
 # - fine-tune this file on a virtual machine
-# - next time also create a winget config file (once winget-config is released)
-# - add zig compiler
-# - add Qt
 # - add MS Office
+# - add Qt
+# - add zig compiler
+# - next time also create a winget config file (once winget-config is released)
+# - optimize for runtime performance (if some program has a service that
+#   takes CPU/memory)
+# todo https://github.com/microsoft/winget-cli/blob/master/doc/Settings.md
 
 # Web browsers
 winget install -e --id Mozilla.Firefox
@@ -15,9 +18,10 @@ winget install -e --id Google.Chrome
 
 # Utils
 winget install -e --id VMware.WorkstationPlayer # broken
+winget install -e --id WinDirStat.WinDirStat
 
 # Drivers and HW support
-winget install -e --id Logitech.Options
+winget install -e --id Logitech.OptionsPlus
 
 # Code editors
 winget install -e --id Microsoft.VisualStudioCode
@@ -26,6 +30,7 @@ winget install -e --id Neovim.Neovim
 # Terminal emulators
 winget install -e --id Microsoft.WindowsTerminal
 winget install -e --id Maximus5.ConEmu
+winget install -e --id Eugeny.Tabby
 
 # compilers, build tools and interpreters
 winget install -e --id Python.Python.3.12

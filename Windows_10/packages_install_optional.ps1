@@ -1,13 +1,16 @@
 # packages I can live without...
 
 # SOFT to try
-# - termunus terminal
-# - install Drawboard pdf
-# - install photoshop resp. Adobe suite
+# - terminus terminal
+# - Drawboard pdf
+# - photoshop resp. Adobe suite
 # - davinci resolve
 # - go over packages here: https://github.com/microsoft/winget-pkgs/tree/master/manifests
-# and in Windows store, add relevant.
-# - ask Michal about video editting soft
+#   and in Windows store, add relevant.
+# - ask Michal about video editing soft
+# - web research
+# - try installing turing off services created by the optional soft resp.
+#   installing it as a separate user, so that they do not run when I don't use them.
 
 # Utils
 winget install -e --id BurntSushi.ripgrep.GNU # TODO test
@@ -40,8 +43,8 @@ winget install -e --id Rustlang.Rustup
 winget install -e --id Cygwin.Cygwin # TODO install stuff I use such as GCC
 
 # Multimedia
-winget install -e --id OBSProject.OBSStudio
 winget install -e --id IrfanSkiljan.IrfanView
+winget install -e --id OBSProject.OBSStudio
 winget install -e --id Canva.Canva # broken
 winget install -e --id 9WZDNCRFJ3TJ # Netflix
 winget install -e --id 9MSPC6MP8FM4 # MS Whiteboard
@@ -49,7 +52,10 @@ winget install -e --id Gyan.FFmpeg
 winget install -e --id Inkscape.Inkscape
 winget install -e --id BlenderFoundation.Blender
 
+winget upgrade --all
+
 # Pip packages
+# TODO some of the packages bellow are broken - fix
 pip install bitarray
 pip install bson
 pip install docutils
