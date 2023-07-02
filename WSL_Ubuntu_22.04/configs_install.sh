@@ -3,7 +3,7 @@
 
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 
-../SharedConfigs/configs_install_shared.sh
+../SharedConfigs/configs_install_shared.ps1
 
 # .bashrc stuff
 cp ../SharedConfigs/.my_bashrc ~/

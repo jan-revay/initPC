@@ -10,7 +10,9 @@
 # - next time also create a winget config file (once winget-config is released)
 # - optimize for runtime performance (if some program has a service that
 #   takes CPU/memory)
-# todo https://github.com/microsoft/winget-cli/blob/master/doc/Settings.md
+# TODO https://github.com/microsoft/winget-cli/blob/master/doc/Settings.md
+# TODO nvidia driver (studio or gaming?)
+# TODO other relevant drivers
 
 # Web browsers
 winget install -e --id Mozilla.Firefox
