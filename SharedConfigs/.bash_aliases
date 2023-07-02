@@ -2,6 +2,7 @@
 
 # TODO do some more research on the web wrt. what could be added here
 # TODO do sth. similar in Windows cmd and Windows PowerShell?
+# TODO add alias for git switch
 
 # 1-3 letter aliases
 # free one letter aliases(11): hijknoqtuwy
@@ -15,6 +16,8 @@ alias d='git diff'
 alias e='echo'
 alias f='find'
 alias gl='git log'
+alias gc='git clone'
+alias gg='git grep'
 alias l='ls -CF'
 alias L='ls -A'
 alias ll='ls -alF'
