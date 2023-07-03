@@ -43,7 +43,7 @@ winget install -e --id Ninja-build.Ninja
 
 # Office work
 winget install -e --id Adobe.Acrobat.Reader.64-bit
-winget install -e --id=TrackerSoftware.PDF-XChangeEditor
+winget install -e --id TrackerSoftware.PDF-XChangeEditor
 winget install -e --id KDE.Okular
 winget install -e --id TheDocumentFoundation.LibreOffice
 winget install -e --id Amazon.Kindle
@@ -71,7 +71,7 @@ winget install -e --id Doist.Todoist
 winget upgrade --all
 
 # Pip packages
-# TODO some packages bellow need to be fixed (or just installed globally?)
+# TODO some packages below need to be fixed (or just installed globally?)
 pip install flawfinder # C++ linter
 pip install cpplint
 
