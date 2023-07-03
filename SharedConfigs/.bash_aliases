@@ -5,7 +5,7 @@
 # TODO add alias for git switch
 
 # 1-3 letter aliases
-# free one letter aliases(11): hijknoqtuwy
+# free one letter aliases(10): hijknoquwy
 alias a='git add'
 alias a.='git add .'
 alias b='git branch'
@@ -29,6 +29,7 @@ alias r='git reset'
 alias s='git status'
 alias sph='git stash push'
 alias spo='git stash pop'
+alias t='cat'
 alias v='nvim'
 alias x='cd ~/x/' # all my development repos go here
 
