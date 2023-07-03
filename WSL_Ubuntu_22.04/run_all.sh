@@ -3,8 +3,8 @@
 # User input required: single keypress during the LLVM install, the rest should
 # be silent.
 
-if [[ `lsb_release -d -s` != "Ubuntu 22.04.2 LTS" ]]; then 
-    echo "Error: The base image does not match Ubuntu 22.04.2 LTS! Aborting"
+if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04.2 LTS' ]]; then 
+    echo 'Error: The base image does not match "Ubuntu 22.04.2 LTS"! Aborting.'
     exit 1
 fi
 

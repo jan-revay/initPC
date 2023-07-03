@@ -16,4 +16,4 @@ if [ -f ~/.my_bashrc ]; then
 fi" >> ~/.bashrc
 fi
 
-sudo update-alternatives --set editor /usr/bin/vim.basic
+sudo update-alternatives --set editor /usr/bin/nvim
