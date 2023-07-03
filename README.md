@@ -7,3 +7,4 @@ A collection of scripts and configuration files which I use to init all machines
 2. Merge with LogidCfg repo
 3. Test the Windows setup script on a VM
 4. Create aliases for PowerShell
+5. Try merging the apt, flatpak and snap install commands
