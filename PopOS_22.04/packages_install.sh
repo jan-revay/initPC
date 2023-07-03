@@ -10,10 +10,11 @@
 # - go through the backed up directories and packages form the IMS laptop and install relevant stuff
 # - set up the mouse
 # - split the packages into essential (basically the ones from WSL) and optional
+# - test & tune this on a virtual machine so that no user input is required
 
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-readonly LLVM_VERSION=15  # CURRENT_LLVM_STABLE
-readonly GCC_VERSION=12  # CURRENT_GCC_STABLE
+readonly LLVM_VERSION=16  # CURRENT_LLVM_STABLE
+readonly GCC_VERSION=13  # CURRENT_GCC_STABLE
 
 sudo apt update
 sudo apt upgrade
