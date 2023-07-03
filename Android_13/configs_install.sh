@@ -6,7 +6,7 @@ termux-setup-storage
 
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 
-../SharedConfigs/configs_install_shared.ps1
+../SharedConfigs/git_and_mkdirs.ps1
 
 # .bashrc stuff
 cp ../SharedConfigs/.my_bashrc ~/
@@ -27,4 +27,3 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi" >> ~/.bashrc
 fi
-

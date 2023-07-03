@@ -9,7 +9,7 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 #    - dock icons large
 #    - multitasking -> fixed number of workspaces
 
-../SharedConfigs/configs_install_shared.ps1
+../SharedConfigs/git_and_mkdirs.ps1
 
 # GNOME TWEAKS
 

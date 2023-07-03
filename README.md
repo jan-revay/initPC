@@ -9,3 +9,5 @@ A collection of scripts and configuration files which I use to init all machines
 4. Create aliases for PowerShell
 5. Try merging the apt, flatpak and snap install commands
 6. Have a look at popOS packages and add the useful ones to other init scripts
+7. Design a system for applying the configs on all my machines once they
+   were updated here.
