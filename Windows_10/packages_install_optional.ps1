@@ -33,6 +33,9 @@ winget install -e --id Postman.Postman
 winget install -e --id Mintty.WSLtty
 winget install -e --id PuTTY.PuTTY
 
+# Office work
+winget install -e --id Foxit.FoxitReader
+
 # File management
 winget install -e --id GNU.MidnightCommander
 
@@ -72,7 +75,6 @@ pip install tabulate
 
 # To consider from David
 # "Logitech.SetPoint"
-# TrackerSoftware.PDF-XChangeEditor
 # GitExtensionsTeam.GitExtensions
 
 # Manually installed programs
