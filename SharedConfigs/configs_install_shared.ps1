@@ -7,5 +7,5 @@ mkdir ~/x/tmp # stuff that can be deleted after restart
 git config --global core.editor "nvim"
 git config --global user.name "JohnnyRevay"
 # TODO make the email a bit more SPAM resistant as it is in a public repo...
-git config --global user.email "jan.revay.tutor@gmail.com"
+git config --global user.email "janci.revay@gmail.com"
 git config --list --show-origin
