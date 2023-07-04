@@ -1,6 +1,6 @@
 #!/bin/bash -x
 # BASE IMAGE Android 13
-
+set -e
 
 pkg update
 pkg upgrade

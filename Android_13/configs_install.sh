@@ -1,6 +1,8 @@
 #!/bin/bash -x
 # BASE IMAGE: Android 13
 
+set -e
+
 # CONFIG
 termux-setup-storage
 
