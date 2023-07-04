@@ -2,6 +2,7 @@
 # BASE IMAGE: WSL Ubuntu 22.04
 
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
+set -e # exit on error
 
 ../SharedConfigs/git_and_mkdirs.ps1
 

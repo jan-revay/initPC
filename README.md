@@ -12,3 +12,5 @@ A collection of scripts and configuration files which I use to init all machines
 6. Have a look at popOS packages and add the useful ones to other init scripts
 7. Design a system for applying the configs on all my machines once they
    were updated here.
+8. Add more C++ tools from here: https://github.com/cpp-best-practices/cppbestpractices/blob/master/02-Use_the_Tools_Available.md
+9. Add Bats automated tests
