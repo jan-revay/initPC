@@ -72,9 +72,11 @@ winget upgrade --all
 
 # Pip packages
 # TODO some packages below need to be fixed (or just installed globally?)
+# TODO install python applications with pipx
 pip install flawfinder # C++ linter
 pip install cpplint
 
+# TODO try installing these packages directly via winget
 pip install matplotlib
 pip install mock
 pip install numpy
