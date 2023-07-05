@@ -2,22 +2,44 @@
 # BASE IMAGE Android 13
 set -e
 
-pkg update
-pkg upgrade
+pkg update -y
+pkg upgrade -y
 
-pkg install x11-repo
+pkg install -y x11-repo
 # TODO setup termux X11 see https://github.com/termux/termux-x11
 
-pkg install build-essential
-pkg install git
-pkg install htop
-pkg install man
-pkg install neofetch
-pkg install neovim
-pkg install openssh
-pkg install python
-pkg install ripgrep
-pkg install tmux
-pkg install tree
+pkg install -y build-essential
+pkg install -y ccache
+pkg install -y cmake
+pkg install -y cppcheck
+pkg install -y iwyu
+pkg install -y ninja
+pkg install -y python
+pkg install -y shfmt
+pkg install -y valgrind
 
+pkg install -y gh
+pkg install -y git
+pkg install -y htop
+
+pkg install -y jq
+pkg install -y man
+pkg install -y neofetch
+pkg install -y openssh
+pkg install -y ripgrep
+pkg install -y tmux
+pkg install -y tree
+pkg install -y wget
+pkg install -y zsh
+
+pkg install -y neovim
+
+# the install script will probably need to be executed twice
+# because of pipx
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+
+pipx install conan
+pipx install flawfinder
+pipx install cpplint
 
