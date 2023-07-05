@@ -37,22 +37,21 @@ alias x='cd ~/x/' # all my development repos go here
 
 alias cd..='cd ..'
 alias ..='cd ..'
-alias ...='cd ../../..'
-alias ....='cd ../../../..'
-alias .....='cd ../../../../..'
+alias ...='cd ../../.. && pwd'
+alias ....='cd ../../../.. && pwd'
+alias .....='cd ../../../../.. && pwd'
 alias cd1='cd ..'
-alias cd2='cd ../..'
-alias cd3='cd ../../..'
-alias cd4='cd ../../../..'
-alias cd5='cd ../../../../..'
-alias cd6='cd ../../../../../..'
-alias cd7='cd ../../../../../../..'
-alias cd8='cd ../../../../../../../..'
-alias cd9='cd ../../../../../../../../..'
+alias cd2='cd ../.. && pwd'
+alias cd3='cd ../../.. && pwd'
+alias cd4='cd ../../../.. && pwd'
+alias cd5='cd ../../../../.. && pwd'
+alias cd6='cd ../../../../../.. && pwd'
+alias cd7='cd ../../../../../../.. && pwd'
+alias cd8='cd ../../../../../../../.. && pwd'
+alias cd9='cd ../../../../../../../../.. && pwd'
 
 # 3+ letter aliases
 alias open="xdg-open"
-
 
 # Unused commands:
 # alias gr='git review' # a Gerrit thing
