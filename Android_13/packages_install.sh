@@ -14,9 +14,10 @@ pkg install -y cmake
 pkg install -y cppcheck
 pkg install -y iwyu
 pkg install -y ninja
-pkg install -y python
 pkg install -y shfmt
 pkg install -y valgrind
+pkg install -y python
+pkg install -y python-numpy
 
 pkg install -y gh
 pkg install -y git
@@ -42,4 +43,3 @@ python3 -m pipx ensurepath
 pipx install conan
 pipx install flawfinder
 pipx install cpplint
-
