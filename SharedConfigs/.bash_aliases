@@ -50,6 +50,10 @@ alias cd7='cd ../../../../../../..'
 alias cd8='cd ../../../../../../../..'
 alias cd9='cd ../../../../../../../../..'
 
+# 3+ letter aliases
+alias open="xdg-open"
+
+
 # Unused commands:
 # alias gr='git review' # a Gerrit thing
 # alias d='git review -d'
