@@ -28,9 +28,9 @@ APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # util
 APT_PACKAGES+=(dconf-editor doxygen git gh) # utils
 APT_PACKAGES+=(python3-pip) # various runtimes
 # TODO maybe add default-jre and dotnet7?
-APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy) # Static analyzers
-APT_PACKAGES+=(cmake-format shfmt) # Code formatters
-APT_PACKAGES+=(valgrind hotspot heaptrack) # Dynamic analyzers , TODO test them
+APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy) # static analyzers
+APT_PACKAGES+=(cmake-format shfmt) # code formatters
+APT_PACKAGES+=(valgrind hotspot heaptrack) # dynamic analyzers , TODO test them
 APT_PACKAGES+=(python3-matplotlib python3-mock python3-numpy python3-pandas) # Python packages
 APT_PACKAGES+=(python3-pytest python3-requests python3-scipy) # Python packages
 sudo apt install -y "${APT_PACKAGES[@]}"
