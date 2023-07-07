@@ -8,4 +8,4 @@
 ## Examples
 
 - https://github.com/devcontainers/images/tree/main/src/cpp
-
+- https://itnext.io/simple-and-consistent-c-development-environment-c08cf8d93ed9
