@@ -17,3 +17,7 @@ A collection of scripts and configuration files which I use to init all machines
 10. Try adding NixOS
 11. Create CI tests on GitHub
 12. Use this Docker container as an inspiration https://github.com/cpp-best-practices/cmake_template/blob/main/.devcontainer/Dockerfile
+
+## Similar repos
+
+- https://github.com/shubham-goel/init-linux 
