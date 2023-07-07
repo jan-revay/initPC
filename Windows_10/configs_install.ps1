@@ -4,7 +4,8 @@
 # TODO nvim config stuff
 # TODO create PS and cmd aliases in WIN https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases?view=powershell-7.3
 
-../SharedConfigs/git_and_mkdirs.ps1
+../SharedConfigs/git_config.sh.ps1
+../SharedConfigs/mkdirs.ps1
 
 # Manually changed settings
 # Todo try to automatically set these windows settings in future
