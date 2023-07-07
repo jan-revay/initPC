@@ -3,6 +3,8 @@
 # User input required: single keypress during the LLVM install, the rest should
 # be silent.
 
+# make the echo prompt yellow to improve readability
+export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
 if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04.2 LTS' ]]; then 
