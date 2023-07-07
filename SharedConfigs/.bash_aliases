@@ -5,7 +5,7 @@
 # TODO add alias for git switch
 
 # 1-3 letter aliases
-# free one letter aliases(10): hijknoquwy
+# free one letter aliases(9): ijknoquwy
 alias a='git add'
 alias a.='git add .'
 alias b='git branch'
@@ -18,6 +18,7 @@ alias f='find'
 alias gl='git log'
 alias gc='git clone'
 alias gg='git grep'
+alias h='history'
 alias l='ls -CF'
 alias L='ls -A'
 alias ll='ls -alF'
@@ -52,6 +53,34 @@ alias cd9='cd ../../../../../../../../.. && pwd'
 
 # 3+ letter aliases
 alias open="xdg-open"
+
+# "repeat" command.  Like:
+#
+#	repeat 10 echo foo
+repeat ()
+{ 
+    local count="$1" i;
+    shift;
+    for i in $(seq 1 "$count");
+    do
+        eval "$@";
+    done
+}
+
+# Subfunction needed by `repeat'.
+seq ()
+{ 
+    local lower upper output;
+    lower=$1 upper=$2;
+
+    if [ $lower -ge $upper ]; then return; fi
+    while [ $lower -le $upper ];
+    do
+	echo -n "$lower "
+        lower=$(($lower + 1))
+    done
+    echo "$lower"
+}
 
 # Unused commands:
 # alias gr='git review' # a Gerrit thing
