@@ -6,14 +6,14 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
-sudo apt update
-sudo apt -y upgrade
+sudo apt-get update
+sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
 # Install the most recent llvm (see https://apt.llvm.org/)
 pushd /tmp || exit
 # llvm.sh required packages
-sudo apt install -y wget lsb-release wget software-properties-common gnupg
+sudo apt-get install -y wget lsb-release wget software-properties-common gnupg
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 sudo ./llvm.sh all
@@ -33,16 +33,16 @@ APT_PACKAGES+=(cmake-format shfmt) # code formatters
 APT_PACKAGES+=(valgrind hotspot heaptrack) # dynamic analyzers , TODO test them
 APT_PACKAGES+=(python3-matplotlib python3-mock python3-numpy python3-pandas) # Python packages
 APT_PACKAGES+=(python3-pytest python3-requests python3-scipy) # Python packages
-sudo apt install -y "${APT_PACKAGES[@]}"
+sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # cleanup
-sudo apt autoremove
-sudo apt update
-sudo apt -y upgrade
+sudo apt-get autoremove
+sudo apt-get update
+sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
 # === PYTHON APPLICATIONS ====
-sudo apt install -y pipx
+sudo apt-get install -y pipx
 pipx ensurepath
 
 # Static analyzers
