@@ -1,6 +1,11 @@
 # initPC
 
-A collection of scripts and configuration files which I use to init all machines I use.
+A collection of scripts and configuration files which I use to init all machines I use. The setup is C++ development oriented.
+
+## How to use
+
+1. git clone this repo
+2. run <Platform>/run_all.sh e.g. WSL_Ubuntu_22.04/run_all.sh where <Platform> is the host OS/platform
 
 ## TODO
 
