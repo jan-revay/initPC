@@ -5,7 +5,7 @@ I use this collection of scripts to init all machines I use. The setup is C++ de
 ## How to use
 
 1. `git clone https://github.com/jan-revay/initPC.git`
-2. run `./\<Platform\>/run_all.sh` script e.g. `WSL_Ubuntu_22.04/run_all.sh` where `<Platform>` is the host OS/platform
+2. run `./<Platform>/run_all.sh` script e.g. `WSL_Ubuntu_22.04/run_all.sh` where `<Platform>` is the host OS/platform
 
 ## TODO
 
