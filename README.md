@@ -1,10 +1,10 @@
 # initPC
 
-A collection of scripts and configuration files which I use to init all machines I use. The setup is C++ development oriented.
+I use this collection of scripts to init all machines I use. The setup is C++ development oriented.
 
 ## How to use
 
-1. git clone this repo
+1. `git clone https://github.com/jan-revay/initPC.git`
 2. run `./\<Platform\>/run_all.sh` script e.g. `WSL_Ubuntu_22.04/run_all.sh` where `<Platform>` is the host OS/platform
 
 ## TODO
@@ -25,4 +25,5 @@ A collection of scripts and configuration files which I use to init all machines
 
 ## Similar repos
 
-- https://github.com/shubham-goel/init-linux 
+- https://github.com/shubham-goel/init-linux
+- https://ae.prasadt.com/ (https://github.com/tprasadtp/ubuntu-post-install)
