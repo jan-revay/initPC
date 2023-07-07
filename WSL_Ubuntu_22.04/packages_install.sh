@@ -5,6 +5,9 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
+LATEST_GCC_VER="13"
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test # repository with latest GCC
+
 export DEBIAN_FRONTEND=noninteractive
 sudo apt-get update
 sudo apt-get -y upgrade
@@ -22,6 +25,7 @@ popd || exit
 
 # see https://github.com/rr-debugger/rr/wiki/Using-rr-in-an-IDE
 APT_PACKAGES=(build-essential rr ccache ninja-build cmake cmake-gui) # GCC and build tools
+APT_PACKAGES+=(gcc-${LATEST_GCC_VER} g++-${LATEST_GCC_VER} gdb) # latest GCC
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
 APT_PACKAGES+=(neovim emacs qtcreator) # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
