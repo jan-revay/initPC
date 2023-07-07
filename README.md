@@ -27,3 +27,4 @@ I use this collection of scripts to init all machines I use. The setup is C++ de
 
 - https://github.com/shubham-goel/init-linux
 - https://ae.prasadt.com/ (https://github.com/tprasadtp/ubuntu-post-install)
+- https://github.com/snwh/ubuntu-post-install
