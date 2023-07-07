@@ -5,7 +5,7 @@ set -e
 pkg update -y
 pkg upgrade -y
 
-pkg install -y x11-repo
+# pkg install -y x11-repo
 # TODO setup termux X11 see https://github.com/termux/termux-x11
 
 pkg install -y build-essential
