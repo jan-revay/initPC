@@ -5,7 +5,7 @@ A collection of scripts and configuration files which I use to init all machines
 ## How to use
 
 1. git clone this repo
-2. run ./<Platform>/run_all.sh script e.g. WSL_Ubuntu_22.04/run_all.sh where <Platform> is the host OS/platform
+2. run ./\<Platform\>/run_all.sh script e.g. WSL_Ubuntu_22.04/run_all.sh where <Platform> is the host OS/platform
 
 ## TODO
 
