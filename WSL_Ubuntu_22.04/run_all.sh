@@ -1,7 +1,6 @@
 #!/bin/bash -x
 # BASE IMAGE: WSL Ubuntu 22.04
-# User input required: single keypress during the LLVM install, the rest should
-# be silent.
+# The script whould not require any user input.
 
 # make the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"

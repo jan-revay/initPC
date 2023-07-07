@@ -1,6 +1,5 @@
 #!/bin/bash -x
 # BASE IMAGE: WSL Ubuntu 22.04
-# User input required: a single keypress during the LLVM install (beginning), otherwise silent.
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
 
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
@@ -17,7 +16,7 @@ pushd /tmp || exit
 sudo apt-get install -y wget lsb-release wget software-properties-common gnupg
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
-sudo ./llvm.sh all
+yes '' | sudo ./llvm.sh all
 rm llvm.sh
 popd || exit
 
