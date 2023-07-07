@@ -22,9 +22,11 @@ I use this collection of scripts to init all machines I use. The setup is C++ de
 10. Try adding NixOS
 11. Create CI tests on GitHub
 12. Use this Docker container as an inspiration https://github.com/cpp-best-practices/cmake_template/blob/main/.devcontainer/Dockerfile
+13. Todos from the repo
 
 ## Similar repos
 
 - https://github.com/shubham-goel/init-linux
 - https://ae.prasadt.com/ (https://github.com/tprasadtp/ubuntu-post-install)
 - https://github.com/snwh/ubuntu-post-install
+- ...
