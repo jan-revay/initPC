@@ -14,5 +14,5 @@ if [[ ! -f "/etc/wsl.conf" ]]; then
     echo "Warning: The base image probably does not run in WSL."
 fi
 
-./packages_install.sh
-./configs_install.sh
+. ./packages_install.sh
+. ./configs_install.sh
