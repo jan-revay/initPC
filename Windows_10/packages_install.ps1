@@ -21,6 +21,7 @@ winget install -e --id Google.Chrome
 # Utils
 winget install -e --id VMware.WorkstationPlayer # broken
 winget install -e --id WinDirStat.WinDirStat
+winget install -e --id Docker.DockerDesktop
 
 # Drivers and HW support
 winget install -e --id Logitech.OptionsPlus
