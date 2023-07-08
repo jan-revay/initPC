@@ -28,7 +28,7 @@ function sph {git stash push}
 function spo {git stash pop}
 # function t {cat}
 New-Alias -Name v -Value nvim
-function x {Set-Location ~/x/} # all my development repos go her
+function x {Set-Location ~/x/} # all my development repos go here
 
 
 # Set-Alias -Name a -Value a
