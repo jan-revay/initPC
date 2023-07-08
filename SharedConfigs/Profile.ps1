@@ -56,3 +56,13 @@ function x {Set-Location ~/x/} # all my development repos go her
 # Set-Alias -Name a -Value a
 # Set-Alias -Name a -Value a
 # Set-Alias -Name a -Value a
+
+# TODO
+# Liniks:
+# https://stackoverflow.com/questions/55539278/is-there-a-way-to-create-an-alias-to-a-cmdlet-in-a-way-that-it-only-runs-if-argu/55539863#55539863
+# https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.3
+# https://stackoverflow.com/questions/63291583/powershell-whats-the-difference-between-alias-and-function
+# https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/09-functions?view=powershell-7.3#parameters
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.3
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases?view=powershell-7.3
+# https://stackoverflow.com/questions/24914589/how-to-create-permanent-powershell-aliases

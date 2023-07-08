@@ -1,5 +1,5 @@
 # TODO:
-# RUN AS ADMINISTRATOR
+# RUN AS ADMINISTRATOR https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771525(v=ws.10)?redirectedfrom=MSDN
 # scaling on 4k monitor - try avoiding the fractional scaling as it causes blur sometimes
 # TODO windows registry stuff
 # TODO nvim config stuff
@@ -8,6 +8,8 @@
 ../SharedConfigs/git_config.sh.ps1
 ../SharedConfigs/mkdirs.ps1
 
+# Todo consider adding this only for current user so that I don't need sudo.
+# Maybe that would also be safer.
 Copy-Item ../SharedConfigs/Profile.ps1 $PSHOME\Profile.ps1
 
 # Manually changed settings
