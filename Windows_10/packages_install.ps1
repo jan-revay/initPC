@@ -74,8 +74,11 @@ winget upgrade --all
 # Pip packages
 # TODO some packages below need to be fixed (or just installed globally?)
 # TODO install python applications with pipx
-pip install flawfinder # C++ linter
-pip install cpplint
+py -3 -m pip install --user pipx
+py -3 -m pipx ensurepath
+
+pipx install flawfinder # C++ linter
+pipx install cpplint
 
 # TODO try installing these packages directly via winget
 pip install matplotlib
