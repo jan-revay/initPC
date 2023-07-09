@@ -27,7 +27,7 @@ function pl { & git pull $args }
 function r. { & git reset $args HEAD~1 }
 function r.. { & git reset $args HEAD~2 }
 function s { & git status $args }
-function ss { & git status --short $args }
+# function ss { & git status --short $args } - todo conflict on Ubuntu
 function sph { & git stash push $args }
 function spo { & git stash pop $args }
 New-Alias -Name t -Value cat
