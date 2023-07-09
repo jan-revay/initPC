@@ -3,6 +3,7 @@
 
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
+# TODO set current directory
 
 . ../SharedConfigs/git_config.sh.ps1
 . ../SharedConfigs/mkdirs.sh
