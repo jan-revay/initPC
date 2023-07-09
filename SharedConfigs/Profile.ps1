@@ -4,7 +4,7 @@ function a { & git add $args }
 function a. { & git add . $args }
 function aa { & git add --all $args } # 'A' on Unix
 function b { & git branch $args }
-function c { & git commit $args }
+function c { & git commit --verbose $args }
 function ca { & git commit --amend --no-edit $args }
 function ch { & git checkout $args }
 function d { & git diff $args }
