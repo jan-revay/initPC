@@ -12,6 +12,8 @@
 # - try installing turing off services created by the optional soft resp.
 #   installing it as a separate user, so that they do not run when I don't use them.
 
+Set-PSDebug -Trace 1
+
 # Utils
 winget install -e --id BurntSushi.ripgrep.GNU # TODO test
 winget install -e --id Microsoft.Sysinternals.ProcessMonitor
@@ -80,3 +82,5 @@ pip install tabulate
 # Manually installed programs
 # (TODO have a look on the next install, whether they are already packed for winget)
 # - Cmder
+
+Set-PSDebug -Trace 0

@@ -14,6 +14,8 @@
 # TODO nvidia driver (studio or gaming?)
 # TODO other relevant drivers
 
+Set-PSDebug -Trace 1
+
 # Web browsers
 winget install -e --id Mozilla.Firefox
 winget install -e --id Google.Chrome
@@ -88,3 +90,5 @@ pip install pandas
 pip install pytest
 pip install requests
 pip install scipy # TODO broken
+
+Set-PSDebug -Trace 0
