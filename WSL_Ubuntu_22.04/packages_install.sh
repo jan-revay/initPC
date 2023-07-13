@@ -29,7 +29,7 @@ APT_PACKAGES=(build-essential rr ccache ninja-build cmake cmake-gui) # GCC and b
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
 APT_PACKAGES+=(neovim emacs qtcreator) # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
-APT_PACKAGES+=(dconf-editor doxygen git gh) # utils
+APT_PACKAGES+=(dconf-editor doxygen git gh bat) # utils
 APT_PACKAGES+=(python3-pip) # various runtimes
 # TODO maybe add default-jre and dotnet7?
 APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy) # static analyzers
