@@ -36,7 +36,7 @@ alias s='git status'
 # alias ss='git status --short' todo conflict on Ubuntu
 alias sph='git stash push'
 alias spo='git stash pop'
-alias t='cat'
+alias t='bat'
 alias v='nvim'
 alias x='cd ~/x/' # all my development repos go here
 
