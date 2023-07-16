@@ -1,7 +1,9 @@
 #!/bin/bash -x
 # BASE IMAGE: WSL Ubuntu 22.04
+# The script whould not require any user input.
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
 
+# make the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
@@ -29,7 +31,7 @@ APT_PACKAGES=(build-essential rr ccache ninja-build cmake cmake-gui) # GCC and b
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
 APT_PACKAGES+=(neovim emacs qtcreator) # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
-APT_PACKAGES+=(dconf-editor doxygen git gh bat) # utils
+APT_PACKAGES+=(dconf-editor doxygen git gh bat exa) # utils
 APT_PACKAGES+=(python3-pip) # various runtimes
 # TODO maybe add default-jre and dotnet7?
 APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy) # static analyzers

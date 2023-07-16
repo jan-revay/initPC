@@ -3,6 +3,7 @@
 # TODO do some more research on the web wrt. what could be added here
 # TODO do sth. similar in Windows cmd and Windows PowerShell?
 # TODO add alias for git switch
+# TODO think about commands that could use a capitalized version
 
 # 1-3 letter aliases
 # free one letter aliases(9): ijknoquwy
@@ -22,9 +23,9 @@ alias glo='git log --oneline --decorate --color'
 alias gc='git clone'
 alias gg='git grep'
 alias h='history'
-alias l='ls -CF'
-alias L='ls -A'
-alias ll='ls -alF'
+alias l='exa -F'
+alias L='exa -aF'
+alias ll='exa -alF'
 alias m='man'
 alias ph='git push'
 alias pl='git pull'
@@ -36,7 +37,7 @@ alias s='git status'
 # alias ss='git status --short' todo conflict on Ubuntu
 alias sph='git stash push'
 alias spo='git stash pop'
-alias t='bat'
+alias t='batcat'
 alias v='nvim'
 alias x='cd ~/x/' # all my development repos go here
 
