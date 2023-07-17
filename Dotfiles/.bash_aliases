@@ -46,9 +46,10 @@ alias cd..='cd ..'
 # I use the ',' character instead of dots because `.` is already taken in UNIX
 # and I want the number of nested direcotires to math the number of dots/commas.
 alias ,='cd ..'
-alias ,,='cd ../../.. && pwd'
-alias ,,,='cd ../../../.. && pwd'
-alias ,,,,='cd ../../../../.. && pwd'
+alias ,,='cd ../.. && pwd'
+alias ,,,='cd ../../.. && pwd'
+alias ,,,,='cd ../../../.. && pwd'
+alias ,,,,,='cd ../../../../.. && pwd'
 alias 1='cd .. && pwd'
 alias 2='cd ../.. && pwd'
 alias 3='cd ../../.. && pwd'
