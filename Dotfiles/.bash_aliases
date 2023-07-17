@@ -43,19 +43,21 @@ alias v='nvim'
 alias x='cd ~/x/' # all my development repos go here
 
 alias cd..='cd ..'
-alias ..='cd ..'
-alias ...='cd ../../.. && pwd'
-alias ....='cd ../../../.. && pwd'
-alias .....='cd ../../../../.. && pwd'
-alias cd1='cd ..'
-alias cd2='cd ../.. && pwd'
-alias cd3='cd ../../.. && pwd'
-alias cd4='cd ../../../.. && pwd'
-alias cd5='cd ../../../../.. && pwd'
-alias cd6='cd ../../../../../.. && pwd'
-alias cd7='cd ../../../../../../.. && pwd'
-alias cd8='cd ../../../../../../../.. && pwd'
-alias cd9='cd ../../../../../../../../.. && pwd'
+# I use the ',' character instead of dots because `.` is already taken in UNIX
+# and I want the number of nested direcotires to math the number of dots/commas.
+alias ,='cd ..'
+alias ,,='cd ../../.. && pwd'
+alias ,,,='cd ../../../.. && pwd'
+alias ,,,,='cd ../../../../.. && pwd'
+alias 1='cd .. && pwd'
+alias 2='cd ../.. && pwd'
+alias 3='cd ../../.. && pwd'
+alias 4='cd ../../../.. && pwd'
+alias 5='cd ../../../../.. && pwd'
+alias 6='cd ../../../../../.. && pwd'
+alias 7='cd ../../../../../../.. && pwd'
+alias 8='cd ../../../../../../../.. && pwd'
+alias 9='cd ../../../../../../../../.. && pwd'
 
 # 3+ letter aliases
 alias open="xdg-open"
