@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "ionutvmi.path-autocomplete",
+        "eamodio.gitlens",
+        "stkb.rewrap",
+        "streetsidesoftware.code-spell-checker",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "timonwong.shellcheck",
+        "foxundermoon.shell-format",
+        "mads-hartmann.bash-ide-vscode"
+    ]
+}
