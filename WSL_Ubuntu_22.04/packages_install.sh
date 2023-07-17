@@ -3,7 +3,7 @@
 # The script should not require any user input.
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
 
-# make the echo prompt yellow to improve readability
+# makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 

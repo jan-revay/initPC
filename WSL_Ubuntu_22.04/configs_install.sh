@@ -2,7 +2,7 @@
 # The script should not require any user input.
 # BASE IMAGE: WSL Ubuntu 22.04
 
-# make the echo prompt yellow to improve readability
+# makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 # TODO set current directory
