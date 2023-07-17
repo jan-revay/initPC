@@ -42,6 +42,7 @@ alias t='batcat'
 alias v='nvim'
 alias x='cd ~/x/' # all my development repos go here
 
+alias -='cd -'
 alias cd..='cd ..'
 # I use the ',' character instead of dots because `.` is already taken in UNIX
 # and I want the number of nested direcotires to math the number of dots/commas.
