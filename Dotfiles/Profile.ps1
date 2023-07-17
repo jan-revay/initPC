@@ -1,5 +1,7 @@
 # 1-3 letter aliases
 # free one letter aliases(9): ijknoquwy
+# TODO update to match .bash_aliases
+
 function a { & git add $args }
 function a. { & git add . $args }
 function aa { & git add --all $args } # 'A' on Unix
