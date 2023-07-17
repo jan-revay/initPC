@@ -7,7 +7,9 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 # TODO set current directory
 
+# shellcheck source=/dev/null
 . ../Dotfiles/git_config.sh.ps1
+# shellcheck source=/dev/null
 . ../Dotfiles/mkdirs.sh
 
 # .bashrc stuff

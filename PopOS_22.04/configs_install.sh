@@ -9,7 +9,9 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 #    - dock icons large
 #    - multitasking -> fixed number of workspaces
 
+# shellcheck source=/dev/null
 . ../Dotfiles/git_config.sh.ps1
+# shellcheck source=/dev/null
 . ../Dotfiles/mkdirs.sh
 
 # GNOME TWEAKS

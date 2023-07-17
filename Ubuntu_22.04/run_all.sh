@@ -11,5 +11,7 @@ if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04.2 LTS' ]]; then
     exit 1
 fi
 
+# shellcheck source=/dev/null
 . ./packages_install.sh
+# shellcheck source=/dev/null
 . ./configs_install.sh

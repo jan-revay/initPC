@@ -6,5 +6,7 @@ if [[ "$(lsb_release --description --short)" != 'Pop!_OS 22.04 LTS' ]]; then
     exit 1
 fi
 
-./packages_install.sh
-./configs_install.sh
+# shellcheck source=/dev/null
+. ./packages_install.sh
+# shellcheck source=/dev/null
+. ./configs_install.sh
