@@ -9,7 +9,7 @@ set -e # exit on error
 # TODO set current directory
 
 # shellcheck source=/dev/null
-. ../Dotfiles/mkdirs.sh # TODO this is not a dotfilr
+. ../Dotfiles/mkdirs.sh # TODO this is not a dotfile
 
 # ==== Dotfiles ====
 # shellcheck source=/dev/null
