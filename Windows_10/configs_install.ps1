@@ -7,12 +7,12 @@
 
 Set-PSDebug -Trace 1
 
-. $PSScriptRoot/../SharedConfigs/git_config.sh.ps1
-. $PSScriptRoot/../SharedConfigs/mkdirs.ps1
+. $PSScriptRoot/../Dotfiles/git_config.sh.ps1
+. $PSScriptRoot/../Dotfiles/mkdirs.ps1
 
 # Todo consider adding this only for current user so that I don't need sudo.
 # Maybe that would also be safer.
-Copy-Item $PSScriptRoot/../SharedConfigs/Profile.ps1 $PSHOME/Profile.ps1
+Copy-Item $PSScriptRoot/../Dotfiles/Profile.ps1 $PSHOME/Profile.ps1
 
 # Manually changed settings
 # Todo try to automatically set these windows settings in future

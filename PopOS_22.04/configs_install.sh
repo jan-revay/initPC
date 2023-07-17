@@ -9,8 +9,8 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 #    - dock icons large
 #    - multitasking -> fixed number of workspaces
 
-. ../SharedConfigs/git_config.sh.ps1
-. ../SharedConfigs/mkdirs.sh
+. ../Dotfiles/git_config.sh.ps1
+. ../Dotfiles/mkdirs.sh
 
 # GNOME TWEAKS
 
@@ -34,8 +34,8 @@ gsettings set org.gnome.desktop.input-sources xkb-options \
 
 
 # .bashrc stuff
-cp ../SharedConfigs/.my_bashrc ~/
-cp ../SharedConfigs/.bash_aliases ~/
+cp ../Dotfiles/.my_bashrc ~/
+cp ../Dotfiles/.bash_aliases ~/
 
 if ! grep my_bashrc ~/.bashrc; then
 echo "
