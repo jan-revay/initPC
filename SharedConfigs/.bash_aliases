@@ -9,6 +9,7 @@
 # free one letter aliases(9): ijknoquwy
 alias a='git add'
 alias A='git add --all'
+alias aa='git add --all'
 alias a.='git add .'
 alias b='git branch'
 alias c='git commit --verbose'
