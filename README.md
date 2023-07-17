@@ -6,7 +6,7 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 
 1. `git clone https://github.com/jan-revay/initPC.git`
 2. `cd ./<Platform>/` for example `cd ./WSL_Ubuntu_22.04/`
-2. `./run_all.sh`
+3. `./run_all.sh`
 
 ## TODO
 
@@ -18,9 +18,9 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 6. Have a look at popOS packages and add the useful ones to other init scripts
 7. Design a system for applying the configs on all my machines once they
    were updated here.
-8. Add more C++ tools from here: https://github.com/cpp-best-practices/cppbestpractices/blob/master/02-Use_the_Tools_Available.md
+8. Add more C++ tools from here: <https://github.com/cpp-best-practices/cppbestpractices/blob/master/02-Use_the_Tools_Available.md>
 9. Add Bats automated tests
 10. Try adding NixOS
 11. Create CI tests on GitHub
-12. Use this Docker container as an inspiration https://github.com/cpp-best-practices/cmake_template/blob/main/.devcontainer/Dockerfile
+12. Use this Docker container as an inspiration <https://github.com/cpp-best-practices/cmake_template/blob/main/.devcontainer/Dockerfile>
 13. Todos from the repo
