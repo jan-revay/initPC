@@ -5,6 +5,12 @@
 # TODO add alias for git switch
 # TODO think about commands that could use a capitalized version
 
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+alias update='sudo apt update && sudo apt upgrade'
+alias path='echo -e ${PATH//:/\\n}'
+
 # 1-3 letter aliases
 # free one letter aliases(9): ijknoquwy
 alias a='git add'
