@@ -14,8 +14,13 @@ set -e # exit on error
 . ../Dotfiles/mkdirs.sh
 
 # .bashrc stuff
-cp ../Dotfiles/.my_bashrc ~/
-cp ../Dotfiles/.bash_aliases ~/
+mkdir -p ~/.old_dotfiles/
+
+mv ~/.my_bashrc ~/.old_dotfiles/
+mv ~/.bash_aliases ~/.old_dotfiles/
+
+ln -s "$(realpath ../Dotfiles/.my_bashrc)" ~/
+ln -s "$(realpath ../Dotfiles/.bash_aliases)" ~/
 
 if ! grep my_bashrc ~/.bashrc; then
 echo "
