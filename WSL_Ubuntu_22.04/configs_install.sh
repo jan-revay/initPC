@@ -1,5 +1,5 @@
 #!/bin/bash -x
-# The script whould not require any user input.
+# The script should not require any user input.
 # BASE IMAGE: WSL Ubuntu 22.04
 
 # make the echo prompt yellow to improve readability

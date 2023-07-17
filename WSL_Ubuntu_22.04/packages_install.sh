@@ -1,6 +1,6 @@
 #!/bin/bash -x
 # BASE IMAGE: WSL Ubuntu 22.04
-# The script whould not require any user input.
+# The script should not require any user input.
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
 
 # make the echo prompt yellow to improve readability
