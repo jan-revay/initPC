@@ -9,11 +9,12 @@ set -e # exit on error
 # TODO set current directory
 
 # shellcheck source=/dev/null
-. ../Dotfiles/git_config.sh.ps1
-# shellcheck source=/dev/null
-. ../Dotfiles/mkdirs.sh
+. ../Dotfiles/mkdirs.sh # TODO this is not a dotfilr
 
-# .bashrc stuff
+# ==== Dotfiles ====
+# shellcheck source=/dev/null
+. ../Dotfiles/git_config.sh.ps1
+
 mkdir -p ~/.old_dotfiles/
 
 mv ~/.my_bashrc ~/.old_dotfiles/
@@ -22,6 +23,8 @@ mv ~/.bash_aliases ~/.old_dotfiles/
 ln -s "$(realpath ../Dotfiles/.my_bashrc)" ~/
 ln -s "$(realpath ../Dotfiles/.bash_aliases)" ~/
 
+
+# ==== .bashrc stuff ====
 if ! grep my_bashrc ~/.bashrc; then
 echo "
 if [ -f ~/.my_bashrc ]; then
@@ -29,4 +32,5 @@ if [ -f ~/.my_bashrc ]; then
 fi" >> ~/.bashrc
 fi
 
+# ==== Misc ====
 sudo update-alternatives --set editor /usr/bin/nvim
