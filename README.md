@@ -1,11 +1,12 @@
 # initPC
 
-I use this collection of scripts to init all machines I use. The setup is C++ development oriented.
+A collection of (C++ development-oriented) scripts and configuration files (dotfiles) to quickly init new machines for my personal use.
 
 ## How to use
 
 1. `git clone https://github.com/jan-revay/initPC.git`
-2. run `./<Platform>/run_all.sh` script e.g. `WSL_Ubuntu_22.04/run_all.sh` where `<Platform>` is the host OS/platform
+2. `cd ./<Platform>/` for example `cd ./WSL_Ubuntu_22.04/`
+2. `./run_all.sh`
 
 ## TODO
 
@@ -23,10 +24,3 @@ I use this collection of scripts to init all machines I use. The setup is C++ de
 11. Create CI tests on GitHub
 12. Use this Docker container as an inspiration https://github.com/cpp-best-practices/cmake_template/blob/main/.devcontainer/Dockerfile
 13. Todos from the repo
-
-## Similar repos
-
-- https://github.com/shubham-goel/init-linux
-- https://ae.prasadt.com/ (https://github.com/tprasadtp/ubuntu-post-install)
-- https://github.com/snwh/ubuntu-post-install
-- ...
