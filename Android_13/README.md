@@ -5,3 +5,7 @@ go to Settings -> Apps -> ... -> special access -> Install unknown apps -> enabl
 download termux from termux github and click on the file to install (arm64)
 
 WARNING: termux in the Google app store is outdated and does not work correctly (mainly the repos)
+
+## TODOs
+
+1. Error msg when installing some pkgs - "Could not build wheels for Ninja" - solve.
