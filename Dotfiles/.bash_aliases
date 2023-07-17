@@ -24,9 +24,10 @@ alias glo='git log --oneline --decorate --color'
 alias gc='git clone'
 alias gg='git grep'
 alias h='history'
-alias l='exa -F'
+alias l='exa -F' # TODO - set/learn ls colors
 alias L='exa -aF'
 alias ll='exa -alF'
+alias lsd='exa -DF'
 alias m='man'
 alias ph='git push'
 alias pl='git pull'
@@ -40,8 +41,9 @@ alias sph='git stash push'
 alias spo='git stash pop'
 alias t='batcat'
 alias v='nvim'
-alias x='cd ~/x/' # all my development repos go here
 
+# alias dl="cd ~/Downloads"
+alias x='cd ~/x/' # all my development repos go here
 alias -- -='cd -' # without '--' -= would be interpretted as a CLI flag
 alias cd..='cd ..'
 # I use the ',' character instead of dots because `.` is already taken in UNIX
