@@ -11,6 +11,7 @@
 # - set up the mouse
 # - split the packages into essential (basically the ones from WSL) and optional
 # - test & tune this on a virtual machine so that no user input is required
+# - use WSL Ubuntu as a base layer
 
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 readonly LLVM_VERSION=16  # CURRENT_LLVM_STABLE
@@ -106,44 +107,6 @@ pip install quantities
 pip install requests
 pip install scipy
 
-# ===== GNOME EXTENSIONS =====
-
-# org.gnome.Shell.Extensions.InstallRemoteExtension() is the same DBus method that is used in the
-# gnome-browser-connector package (the package that installs extesions via Chrome/Firefox plugin)
-# @note the gdbus call InstallRemoteExtension() is invoked twice twice as sometimes the first call fails
-
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "scroll-workspaces@gfxmonk.net"
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "scroll-workspaces@gfxmonk.net"
-
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "workspaces-bar@fthx"
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "workspaces-bar@fthx"
-
-
-sudo apt install -y gnome-shell-extension-manager gir1.2-gtop-2.0 lm-sensors # vitals monitor needs that
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "Vitals@CoreCoding.com"
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "Vitals@CoreCoding.com"
-
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "hide-universal-access@akiirui.github.io"
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "hide-universal-access@akiirui.github.io"
-
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension \
-    "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension \
-    "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
-
-# TODO Gnome extensions to try
-# - some new clipboard manager
-
 # ===== MAYBE UNUSED =====
 # TODO remove need for user interaction (Y - enter)
 flatpak install gitkraken
@@ -156,3 +119,6 @@ sudo apt install -y autokey-common autokey-gtk
 # cleanup
 sudo apt autoremove
 apt list --upgradable # check for the packages that were not upgraded
+
+# GNOME extensions
+. ../Dotfiles/gnome_install_extensions.sh # TODO also not a dotfile
