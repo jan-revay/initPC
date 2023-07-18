@@ -70,6 +70,8 @@ alias 7='cd ../../../../../../.. && pwd'
 alias 8='cd ../../../../../../../.. && pwd'
 alias 9='cd ../../../../../../../../.. && pwd'
 
+alias xx='chmod +x'
+
 # 3+ letter aliases
 alias open="xdg-open"
 
