@@ -8,6 +8,7 @@
         "davidanson.vscode-markdownlint",
         "timonwong.shellcheck",
         "foxundermoon.shell-format",
-        "mads-hartmann.bash-ide-vscode"
+        "mads-hartmann.bash-ide-vscode",
+        "nhoizey.gremlins"
     ]
 }
