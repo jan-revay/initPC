@@ -76,26 +76,22 @@ alias open="xdg-open"
 # "repeat" command.  Like:
 #
 #	repeat 10 echo foo
-repeat ()
-{ 
-    local count="$1" i;
-    shift;
-    for i in $(seq 1 "$count");
-    do
-        eval "$@";
+repeat() {
+    local count="$1" i
+    shift
+    for i in $(seq 1 "$count"); do
+        eval "$@"
     done
 }
 
 # Subfunction needed by `repeat'.
-seq ()
-{ 
-    local lower upper output;
-    lower=$1 upper=$2;
+seq() {
+    local lower upper output
+    lower=$1 upper=$2
 
     if [ $lower -ge $upper ]; then return; fi
-    while [ $lower -le $upper ];
-    do
-	echo -n "$lower "
+    while [ $lower -le $upper ]; do
+        echo -n "$lower "
         lower=$(($lower + 1))
     done
     echo "$lower"

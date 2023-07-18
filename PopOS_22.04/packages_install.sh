@@ -14,22 +14,22 @@
 # - use WSL Ubuntu as a base layer
 
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-readonly LLVM_VERSION=16  # CURRENT_LLVM_STABLE
+readonly LLVM_VERSION=16 # CURRENT_LLVM_STABLE
 readonly GCC_VERSION=13  # CURRENT_GCC_STABLE
 
 sudo apt update
 sudo apt upgrade
 flatpak update
 
-if lspci | grep -i vmware; then  # if the script is running inside of a VMware virtual machine
-    sudo apt install -y open-vm-tools open-vm-tools-desktop  # install "VMware tools" (drivers)
-else # we are running bare metal (I don't use VirtualBox or other hypervisors)
+if lspci | grep -i vmware; then                             # if the script is running inside of a VMware virtual machine
+    sudo apt install -y open-vm-tools open-vm-tools-desktop # install "VMware tools" (drivers)
+else                                                        # we are running bare metal (I don't use VirtualBox or other hypervisors)
     # sudo snap install spotify
     # sudo snap install zoom-client
     sudo apt install -y logiops
 fi
 
-# ===== COMPILERS, DEBUGGERS, BUILD SYSTEMS, PACKAGE MANAGERS AND RUNTIMES ===== 
+# ===== COMPILERS, DEBUGGERS, BUILD SYSTEMS, PACKAGE MANAGERS AND RUNTIMES =====
 
 # Clang
 sudo apt install -y clang-${LLVM_VERSION} lldb-${LLVM_VERSION} lld-${LLVM_VERSION} \
@@ -48,9 +48,9 @@ sudo apt install -y make build-essential ccache ninja-build
 sudo apt install -y linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
 
 # programming tools
-sudo apt install -y code vim neovim emacs meld qtcreator kdevelop coqide  # editors, tools and IDEs
+sudo apt install -y code vim neovim emacs meld qtcreator kdevelop coqide # editors, tools and IDEs
 # TODO remove need for user interaction (Y - enter)
-flatpak install clion postman dfeet                                       # editors, tools and IDEs (flatpak)
+flatpak install clion postman dfeet # editors, tools and IDEs (flatpak)
 sudo apt install -y git gitk doxygen g++-multilib qt6-base-dev
 sudo apt install -y cmake cmake-gui
 
@@ -77,7 +77,7 @@ sudo apt install -y ttf-mscorefonts-installer
 # Flatpaks
 flatpak install foliate todoist signal caprine
 
-# ===== GUI TWEAKS AND AUTOMATIONS ===== 
+# ===== GUI TWEAKS AND AUTOMATIONS =====
 sudo apt install -y dconf-editor gnome-tweaks
 
 # ===== PYTHON LIBRARIES =====

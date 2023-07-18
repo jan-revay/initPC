@@ -23,13 +23,12 @@ mv ~/.bash_aliases ~/.old_dotfiles/ || true
 ln -s "$(realpath ../Dotfiles/.my_bashrc)" ~/
 ln -s "$(realpath ../Dotfiles/.bash_aliases)" ~/
 
-
 # ==== .bashrc stuff ====
 if ! grep my_bashrc ~/.bashrc; then
-echo "
+    echo "
 if [ -f ~/.my_bashrc ]; then
     . ~/.my_bashrc
-fi" >> ~/.bashrc
+fi" >>~/.bashrc
 fi
 
 # ==== Misc ====

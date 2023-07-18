@@ -7,4 +7,3 @@ set -e
 
 ./packages_install.sh
 ./configs_install.sh
-

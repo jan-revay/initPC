@@ -21,7 +21,7 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 # TODO add fonts settings scaling factor
 
 # KEYBOARD SHORTCUTS
-gsettings set org.gnome.settings-daemon.plugins.media-keys home      "['<Super>e']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
 # GSettings
 # TODO describe the procedure of capturing the GSettings (Dconf monitor)
@@ -34,16 +34,15 @@ gsettings set org.gnome.desktop.interface locate-pointer true
 gsettings set org.gnome.desktop.input-sources xkb-options \
     "['terminate:ctrl_alt_bksp', 'shift:both_capslock_cancel', 'caps:none']"
 
-
 # .bashrc stuff
 cp ../Dotfiles/.my_bashrc ~/
 cp ../Dotfiles/.bash_aliases ~/
 
 if ! grep my_bashrc ~/.bashrc; then
-echo "
+    echo "
 if [ -f ~/.my_bashrc ]; then
     . ~/.my_bashrc
-fi" >> ~/.bashrc
+fi" >>~/.bashrc
 fi
 
 # set default apps
