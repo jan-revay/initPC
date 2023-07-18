@@ -52,7 +52,8 @@ sudo apt-get install -y pipx
 pipx ensurepath
 
 # Static analyzers
-pipx install codechecker
+# codechecker disabled as it fails: pip seemed to fail to build package: PyYAML==5.4.1
+# pipx install codechecker
 pipx install flawfinder
 pipx install cpplint
 # TODO add fb_infer, cppdepend, protolint, PVS...
