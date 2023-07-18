@@ -1,5 +1,5 @@
 #!/bin/bash -x
-# The script should not require any user input.
+# The script should not require any user input and should be idempotent.
 # BASE IMAGE: WSL Ubuntu 22.04
 # TODO use stow or some other symlink resp. git bare solution instead of copying
 
