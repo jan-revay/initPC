@@ -11,6 +11,10 @@ if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04.2 LTS' ]]; then
     exit 1
 fi
 
+if [[ -f "/etc/wsl.conf" ]]; then
+    echo "Warning: The base image is WSL, use the WSL Ubuntu installer instead."
+fi
+
 # shellcheck source=/dev/null
 . ./packages_install.sh
 # shellcheck source=/dev/null
