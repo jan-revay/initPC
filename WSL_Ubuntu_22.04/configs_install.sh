@@ -17,8 +17,8 @@ set -e # exit on error
 
 mkdir -p ~/.old_dotfiles/
 
-mv ~/.my_bashrc ~/.old_dotfiles/
-mv ~/.bash_aliases ~/.old_dotfiles/
+mv ~/.my_bashrc ~/.old_dotfiles/ || true
+mv ~/.bash_aliases ~/.old_dotfiles/ || true
 
 ln -s "$(realpath ../Dotfiles/.my_bashrc)" ~/
 ln -s "$(realpath ../Dotfiles/.bash_aliases)" ~/
