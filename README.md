@@ -5,7 +5,7 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 ## How to use
 
 1. `git clone https://github.com/jan-revay/initPC.git`
-2. `cd ./initPC/<Platform>/` for example `cd ./initPC/WSL_Ubuntu_22.04/`
+2. `cd initPC/<Platform>/` for example `cd initPC/WSL_Ubuntu_22.04/`
 3. `./run_all.sh`
 
 ## TODO
