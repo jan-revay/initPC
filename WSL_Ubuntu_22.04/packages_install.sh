@@ -7,7 +7,8 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
-# LATEST_GCC_VER="13"
+LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' |
+    grep -E -o '^gcc-[0-9][0-9]' | sort -r | head --lines 1 | grep -E -o '[0-9][0-9]')
 # sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test # repository with latest GCC
 
 export DEBIAN_FRONTEND=noninteractive
@@ -26,8 +27,10 @@ rm llvm.sh
 popd || exit
 
 # see https://github.com/rr-debugger/rr/wiki/Using-rr-in-an-IDE
-APT_PACKAGES=(build-essential rr ccache ninja-build cmake cmake-gui) # GCC and build tools
-# APT_PACKAGES+=(gcc-${LATEST_GCC_VER} g++-${LATEST_GCC_VER} gdb) # latest GCC
+APT_PACKAGES=(build-essential gdb rr ccache ninja-build cmake cmake-gui) # GCC and build tools
+APT_PACKAGES+=(gcc-"${LATEST_GCC_VER_IN_APT}")                           # latest GCC
+APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # latest g++
+
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
 APT_PACKAGES+=(neovim emacs qtcreator)                                    # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
