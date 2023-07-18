@@ -75,9 +75,9 @@ alias xx='chmod +x'
 # 3+ letter aliases
 alias open="xdg-open"
 
-# "repeat" command.  Like:
-#
-#	repeat 10 echo foo
+# TODO fix shellcheck warnings
+# "repeat" command.
+# e.g. repeat 10 echo foo
 repeat() {
     local count="$1" i
     shift
