@@ -50,7 +50,7 @@ sudo apt-get update
 sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
-# === PYTHON APPLICATIONS ====
+# === PYTHON APPLICATIONS ===
 sudo apt-get install -y pipx
 pipx ensurepath
 
