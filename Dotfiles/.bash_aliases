@@ -12,7 +12,7 @@ alias update='sudo apt update && sudo apt upgrade'
 alias path='echo -e ${PATH//:/\\n}'
 
 # 1-3 letter aliases
-# free one letter aliases(9): ijknoquwy
+# free one letter aliases(9): ijknopquwy
 alias a='git add'
 alias A='git add --all'
 alias aa='git add --all'
