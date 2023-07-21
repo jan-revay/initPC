@@ -17,5 +17,9 @@ fi
 
 # shellcheck source=/dev/null
 . ./packages_install.sh
+
+# shellcheck source=/dev/null
+# . ./packages_install_optional.sh
+
 # shellcheck source=/dev/null
 . ./configs_install.sh
