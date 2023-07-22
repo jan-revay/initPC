@@ -4,6 +4,8 @@
 # TODO do sth. similar in Windows cmd and Windows PowerShell?
 # TODO add alias for git switch
 # TODO think about commands that could use a capitalized version
+# TODO consider using Bash command keyword in front of the alias definitions
+# as is done e.g. in oh-my-bash https://github.com/ohmybash/oh-my-bash/blob/master/plugins/git/git.plugin.sh
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
