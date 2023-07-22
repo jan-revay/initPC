@@ -42,11 +42,12 @@ alias ph='git push'
 alias pl='git pull'
 alias py='python3'
 alias r='git reset'
+# TODO add alias for git reset all (similar to aa)
 alias r.='git reset HEAD~1'
 alias r..='git reset HEAD~2'
 alias s='git status'
 # alias ss='git status --short' todo conflict on Ubuntu
-alias sph='git stash push'
+alias sph='git stash push' # sph, not spu, to be consistent with the ph alias
 alias spo='git stash pop'
 alias t='batcat'
 alias v='nvim'
