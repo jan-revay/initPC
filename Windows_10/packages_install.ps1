@@ -51,6 +51,7 @@ winget install -e --id KDE.Okular
 winget install -e --id TheDocumentFoundation.LibreOffice
 winget install -e --id Amazon.Kindle
 winget install -e --id Grammarly.Grammarly
+winget install -e --id calibre.calibre
 
 # Desktop environment extensions and tools
 winget install -e --id Microsoft.PowerToys
