@@ -6,3 +6,4 @@
 #    - zig compiler
 #    - rust compiler
 #    - ICC and AOCC (Intel and AMD C++ compilers)
+# add foliate: sudo apt install foliate
