@@ -35,6 +35,7 @@ APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # lates
 APT_PACKAGES+=(neovim emacs qtcreator)                                     # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq)  # utils
 APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish dust fd tokay) # utils
+APT_PACKAGES+=(prox) # utils
 APT_PACKAGES+=(python3-pip)                                                # various runtimes
 # TODO maybe add default-jre and dotnet7?
 APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy)                             # static analyzers
