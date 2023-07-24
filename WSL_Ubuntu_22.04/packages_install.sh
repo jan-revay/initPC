@@ -36,8 +36,7 @@ APT_PACKAGES+=(rustc)                                                    # Rust 
 APT_PACKAGES+=(neovim emacs qtcreator)                                    # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
 APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish fd-find)      # utils
-# APT_PACKAGES+=(dust prox)                                        # utils TODO
-# TODO fd-find appears to no be found
+# NOTE: fd-find executable is called `fdfind`
 APT_PACKAGES+=(python3-pip) # various runtimes
 # TODO maybe add default-jre and dotnet7?
 APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy)                             # static analyzers
@@ -70,4 +69,5 @@ pipx install conan
 # === Rust packages ===
 # /home/jr/.cargo/bin is added to the path in .bashrc (and other rc files)
 cargo install tokei
+cargo install du-dust
 # cargo install procs - fails because of the rustc version TODO
