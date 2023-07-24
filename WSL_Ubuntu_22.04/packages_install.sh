@@ -30,13 +30,15 @@ popd || exit
 APT_PACKAGES=(build-essential gdb rr ccache ninja-build cmake cmake-gui) # GCC and build tools
 APT_PACKAGES+=(gcc-"${LATEST_GCC_VER_IN_APT}")                           # latest GCC
 APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # latest g++
+APT_PACKAGES+=(rustc)                                                    # Rust compiler
 
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
-APT_PACKAGES+=(neovim emacs qtcreator)                                     # editors
-APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq)  # utils
-APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish dust fd tokay) # utils
-APT_PACKAGES+=(prox) # utils
-APT_PACKAGES+=(python3-pip)                                                # various runtimes
+APT_PACKAGES+=(neovim emacs qtcreator)                                    # editors
+APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
+APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish fd-find)      # utils
+# APT_PACKAGES+=(dust prox)                                        # utils TODO
+# TODO fd-find appears to no be found
+APT_PACKAGES+=(python3-pip) # various runtimes
 # TODO maybe add default-jre and dotnet7?
 APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy)                             # static analyzers
 APT_PACKAGES+=(cmake-format shfmt)                                           # code formatters
@@ -64,3 +66,8 @@ pipx install cpplint
 
 # C++ package managers
 pipx install conan
+
+# === Rust packages ===
+# /home/jr/.cargo/bin is added to the path in .bashrc (and other rc files)
+cargo install tokei
+# cargo install procs - fails because of the rustc version TODO

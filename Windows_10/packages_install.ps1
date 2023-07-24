@@ -24,6 +24,7 @@ winget install -e --id Google.Chrome
 winget install -e --id VMware.WorkstationPlayer # broken
 winget install -e --id WinDirStat.WinDirStat
 winget install -e --id Docker.DockerDesktop
+winget install -e --id XAMPPRocky.tokei # broken?
 
 # Drivers and HW support
 winget install -e --id Logitech.OptionsPlus
@@ -36,6 +37,7 @@ winget install -e --id Neovim.Neovim
 winget install -e --id Microsoft.WindowsTerminal
 winget install -e --id Maximus5.ConEmu
 winget install -e --id Eugeny.Tabby
+winget install -e --id Alacritty.Alacritty
 
 # compilers, build tools and interpreters
 winget install -e --id Python.Python.3.12

@@ -9,3 +9,5 @@ HISTFILESIZE=-1
 
 
 # TODO a more useful bash prompt i.e. with git branch - set PS1 ... PS4
+
+export PATH="$PATH:/home/jr/.cargo/bin"
