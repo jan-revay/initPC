@@ -22,4 +22,4 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 9. Add Bats automated tests
 10. Try adding NixOS
 11. Create CI tests on GitHub
-13. Todos from the repo
+12. Todos from the repo
