@@ -25,6 +25,7 @@ winget install -e --id VMware.WorkstationPlayer # broken
 winget install -e --id WinDirStat.WinDirStat
 winget install -e --id Docker.DockerDesktop
 winget install -e --id XAMPPRocky.tokei # broken?
+winget install -e --id 7zip.7zip
 
 # Drivers and HW support
 winget install -e --id Logitech.OptionsPlus
