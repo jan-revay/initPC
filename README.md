@@ -1,4 +1,4 @@
-# initPC
+# initPC (WIP)
 
 A collection of (C++ development-oriented) scripts and configuration files (dotfiles) to quickly init new machines for my personal use.
 
