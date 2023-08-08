@@ -23,3 +23,4 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 10. Try adding NixOS
 11. Create CI tests on GitHub
 12. Todos from the repo
+13. Make the core Linux init script Debian based (i.e. other distros just add stuff to the Debian base init script)
