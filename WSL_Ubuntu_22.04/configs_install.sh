@@ -6,7 +6,7 @@
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
-# TODO set current directory
+# TODO set the current directory
 
 # shellcheck source=/dev/null
 . ../Dotfiles/mkdirs.sh # TODO this is not a dotfile
@@ -28,7 +28,7 @@ if ! grep my_bashrc ~/.bashrc; then
     echo "
 if [ -f ~/.my_bashrc ]; then
     . ~/.my_bashrc
-fi" >>~/.bashrc
+fi" >> ~/.bashrc
 fi
 
 # ==== Misc ====
