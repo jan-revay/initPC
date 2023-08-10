@@ -56,6 +56,7 @@ alias v='nvim'
 alias x='cd ~/x/' # all my development repos go here
 alias -- -='cd -' # without '--' -= would be interpretted as a CLI flag
 alias cd..='cd ..'
+alias ..='cd ..'
 # I use the ',' character instead of dots because `.` is already taken in UNIX
 # and I want the number of nested direcotires to math the number of dots/commas.
 alias ,='cd ..'
