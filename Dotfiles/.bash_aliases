@@ -54,11 +54,11 @@ alias v='nvim'
 
 # alias dl="cd ~/Downloads"
 alias x='cd ~/x/' # all my development repos go here
-alias -- -='cd -' # without '--' -= would be interpretted as a CLI flag
+alias -- -='cd -' # without '--' -= would be interpreted as a CLI flag
 alias cd..='cd ..'
 alias ..='cd ..'
 # I use the ',' character instead of dots because `.` is already taken in UNIX
-# and I want the number of nested direcotires to math the number of dots/commas.
+# and I want the number of nested directories to math the number of dots/commas.
 alias ,='cd ..'
 alias ,,='cd ../.. && pwd'
 alias ,,,='cd ../../.. && pwd'

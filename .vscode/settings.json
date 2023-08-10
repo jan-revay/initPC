@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
-        "dotfiles"
+        "batcat",
+        "dotfiles",
+        "nvim"
     ],
     "cSpell.enableFiletypes": [
         "shellscript"
