@@ -7,8 +7,13 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
 cd ~/x/
-git clone https://github.com/helix-editor/helix
+
+if ! test -f helix ; then
+    git clone https://github.com/helix-editor/helix
+fi
+
 cd helix
+git pull helix
 cargo install --path helix-term --locked
 # hx --grammar fetch
 # hx --grammar build
