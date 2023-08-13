@@ -78,4 +78,4 @@ cargo install du-dust
 cargo install procs
 
 # NPM packages
-npm i -g bash-language-server
+sudo npm i -g bash-language-server
