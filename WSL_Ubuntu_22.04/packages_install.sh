@@ -6,8 +6,8 @@
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
-
 export DEBIAN_FRONTEND=noninteractive
+
 sudo add-apt-repository ppa:maveonair/helix-editor
 sudo apt-get update
 sudo apt-get -y upgrade
