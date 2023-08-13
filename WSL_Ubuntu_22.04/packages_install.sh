@@ -8,7 +8,7 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 export DEBIAN_FRONTEND=noninteractive
 
-sudo add-apt-repository ppa:maveonair/helix-editor
+sudo add-apt-repository -y ppa:maveonair/helix-editor
 sudo apt-get update
 sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
@@ -27,11 +27,13 @@ yes '' | sudo ./llvm.sh all
 rm llvm.sh
 popd || exit
 
+# Install rust ecosystem
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
 # see https://github.com/rr-debugger/rr/wiki/Using-rr-in-an-IDE
 APT_PACKAGES=(build-essential gdb rr ccache ninja-build cmake cmake-gui) # GCC and build tools
 APT_PACKAGES+=(gcc-"${LATEST_GCC_VER_IN_APT}")                           # latest GCC
 APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # latest g++
-APT_PACKAGES+=(rustc)                                                    # Rust compiler
 
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
 APT_PACKAGES+=(neovim helix emacs qtcreator)                              # editors
