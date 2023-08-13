@@ -1,5 +1,5 @@
 #!/bin/bash -x
-# BASE IMAGE: WSL Ubuntu 22.04
+# BASE IMAGE: WSL Debian 12
 # The script should not require any user input and should be idempotent.
 
 # makes the echo prompt yellow to improve readability
@@ -28,3 +28,5 @@ fi
 . ../WSL_Ubuntu_22.04/packages_install.sh
 # shellcheck source=/dev/null
 . ../WSL_Ubuntu_22.04/configs_install.sh
+# shellcheck source=/dev/null
+. ./source_packages_install.sh
