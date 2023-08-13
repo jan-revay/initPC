@@ -17,9 +17,11 @@ fi
 
 # Run stuff that requires user input first
 # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
-sudo apt update
-sudo apt install gh
-gh auth login --hostname github.com
+if ! gh auth status; then
+    sudo apt update
+    sudo apt install gh
+    gh auth login --hostname github.com
+fi
 
 # Let's try to keep the Ubuntu install script Debian compatible
 # shellcheck source=/dev/null
