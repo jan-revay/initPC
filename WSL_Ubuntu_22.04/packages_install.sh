@@ -8,6 +8,7 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
 export DEBIAN_FRONTEND=noninteractive
+sudo add-apt-repository ppa:maveonair/helix-editor
 sudo apt-get update
 sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
@@ -33,7 +34,7 @@ APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # lates
 APT_PACKAGES+=(rustc)                                                    # Rust compiler
 
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
-APT_PACKAGES+=(neovim emacs qtcreator)                                    # editors
+APT_PACKAGES+=(neovim helix emacs qtcreator)                              # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
 APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish fd-find)      # utils
 # NOTE: fd-find executable is called `fdfind`
