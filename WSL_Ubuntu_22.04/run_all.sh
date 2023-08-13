@@ -15,8 +15,10 @@ if [[ ! -f "/etc/wsl.conf" ]]; then
     echo "Warning: The base image probably does not run in WSL."
 fi
 
-# shellcheck source=/dev/null
-. ./gh_auth.sh
+# Run stuff that requires user input first
+# WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
+sudo apt install gh
+gh auth login --hostname github.com
 
 # shellcheck source=/dev/null
 . ./packages_install.sh
