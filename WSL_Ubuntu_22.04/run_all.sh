@@ -16,6 +16,9 @@ if [[ ! -f "/etc/wsl.conf" ]]; then
 fi
 
 # shellcheck source=/dev/null
+. ./gh_auth.sh
+
+# shellcheck source=/dev/null
 . ./packages_install.sh
 
 # shellcheck source=/dev/null
