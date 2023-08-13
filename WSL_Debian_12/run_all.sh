@@ -17,6 +17,8 @@ fi
 
 # Let's try to keep the Ubuntu install script Debian compatible
 # shellcheck source=/dev/null
+. ../WSL_Ubuntu_22.04/gh_auth.sh
+# shellcheck source=/dev/null
 . ../WSL_Ubuntu_22.04/packages_install.sh
 # shellcheck source=/dev/null
 . ../WSL_Ubuntu_22.04/configs_install.sh
