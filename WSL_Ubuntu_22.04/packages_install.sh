@@ -38,7 +38,7 @@ APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # lates
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
 APT_PACKAGES+=(neovim emacs qtcreator)                                    # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
-APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish fd-find)      # utils
+APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish fd-find npm)  # utils
 # NOTE: fd-find executable is called `fdfind`
 APT_PACKAGES+=(python3-pip) # various runtimes
 # TODO maybe add default-jre and dotnet7?
