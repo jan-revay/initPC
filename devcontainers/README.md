@@ -13,6 +13,7 @@
 - https://github.com/microsoft/vscode-docs/tree/main/.devcontainer
 - https://github.com/docker-library/official-images
 - https://hub.docker.com/_/buildpack-deps/
+- https://github.com/docker-library/buildpack-deps/tree/master
 
 ## TODO
 
