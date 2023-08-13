@@ -18,5 +18,8 @@ cargo install --path helix-term --locked
 # hx --grammar fetch
 # hx --grammar build
 mkdir -p ~/.config/helix/
-ln -f -s "$PWD/runtime" ~/.config/helix/runtime
+# TODO fix hx --health
+# `Runtime directory does not exist: /home/jr/.cargo/bin/runtime`
+# TODO fix recursive runtime directory nesting
+ln -f -s "$PWD/runtime/" ~/.config/helix/runtime/
 hx --health
