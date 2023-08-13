@@ -10,4 +10,6 @@ cd ~/x/
 git clone https://github.com/helix-editor/helix
 cd helix
 cargo install --path helix-term --locked
-ln -s $PWD/runtime ~/.config/helix/runtime
+# hx --grammar fetch
+# hx --grammar build
+ln -s "$PWD/runtime" ~/.config/helix/runtime
