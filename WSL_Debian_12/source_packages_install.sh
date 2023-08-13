@@ -8,12 +8,12 @@ set -e # exit on error
 
 cd ~/x/
 
-if ! test -f helix ; then
+if ! test -d helix ; then
     git clone https://github.com/helix-editor/helix
 fi
 
 cd helix
-git pull helix
+git pull
 cargo install --path helix-term --locked
 # hx --grammar fetch
 # hx --grammar build
