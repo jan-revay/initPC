@@ -19,3 +19,4 @@ cargo install --path helix-term --locked
 # hx --grammar build
 mkdir -p ~/.config/helix/
 ln -s "$PWD/runtime" ~/.config/helix/runtime
+hx --health
