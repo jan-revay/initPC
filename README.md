@@ -25,3 +25,4 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 12. Todos from the repo
 13. Make the core Linux init script Debian based (i.e. other distros just add stuff to the Debian base init script)
 14. Maybe replace the Debian variants (Ubuntu, PopOS...) with a single Ansible script with conditionals?
+15. Do some research whether snap and flatpak packages work in WSL resp. which alternative package manager to use in WSL
