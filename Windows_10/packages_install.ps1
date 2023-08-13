@@ -33,6 +33,7 @@ winget install -e --id Logitech.OptionsPlus
 # Code editors
 winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id Neovim.Neovim
+winget install -e --id Helix.Helix
 
 # Terminal emulators
 winget install -e --id Microsoft.WindowsTerminal
