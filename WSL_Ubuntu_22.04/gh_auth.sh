@@ -6,4 +6,14 @@
 read -sp 'Enter GitHub authentication token: ' TOKEN
 readonly TOKEN
 
-echo "${TOKEN}" | gh auth login --hostname GitHub.com --with-token
+echo \
+"github.com:
+    oauth_token: "${TOKEN}"
+    user: jan-revay
+    git_protocol: https" \
+> /home/jr/.config/gh/hosts.yml
+
+echo "${TOKEN}" | gh auth login --with-token
+# gh config set -h github.com git_protocol https
+echo
+echo Logged in to guthub.com
