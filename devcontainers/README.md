@@ -12,6 +12,7 @@
 - <https://github.com/cpp-best-practices/cmake_template/blob/main/.devcontainer/Dockerfile>
 - https://github.com/microsoft/vscode-docs/tree/main/.devcontainer
 - https://github.com/docker-library/official-images
+- https://hub.docker.com/_/buildpack-deps/
 
 ## TODO
 
