@@ -38,7 +38,8 @@ APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # lates
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
 APT_PACKAGES+=(neovim emacs qtcreator)                                    # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
-APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish fd-find npm)  # utils
+APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish fd-find)      # utils
+APT_PACKAGES+=(npm)                                                       # package managers
 # NOTE: fd-find executable is called `fdfind`
 APT_PACKAGES+=(python3-pip) # various runtimes
 # TODO maybe add default-jre and dotnet7?
@@ -46,7 +47,7 @@ APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy)                             # s
 APT_PACKAGES+=(cmake-format shfmt)                                           # code formatters
 APT_PACKAGES+=(valgrind hotspot heaptrack)                                   # dynamic analyzers , TODO test them
 APT_PACKAGES+=(python3-matplotlib python3-mock python3-numpy python3-pandas) # Python packages
-APT_PACKAGES+=(python3-pytest python3-requests python3-scipy)                # Python packages
+APT_PACKAGES+=(python3-pytest python3-requests python3-scipy python3-pylsp)  # Python packages
 sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # cleanup
@@ -75,3 +76,6 @@ source "$HOME/.cargo/env"
 cargo install tokei
 cargo install du-dust
 cargo install procs
+
+# NPM packages
+npm i -g bash-language-server
