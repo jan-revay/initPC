@@ -17,10 +17,12 @@ A collection of (C++, Python & Rust development-oriented) config scripts & dotfi
 
 Minimal, stable, and testing branches are expected to be _always in a consistent state_ so that they can always be used to init a machine e.g. VM or a bootable partition. The devel branch is expected to be broken from time to time (e.g. when working on larger changes "per partes") and it might not always be possible to init a machine using it.
 
-#### Workflow:
-```
-  implement          useful & functional           tested & useful           necessary
-O-----------> devel --------------------> testing -----------------> stable -----------> minimal
+### Workflow
+
+```text
+               functional &             tested &
+  impl.         consistent               useful            necessary
+O------> devel --------------> testing ----------> stable -----------> minimal
 ```
 
 ## TODO
