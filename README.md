@@ -16,8 +16,8 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 4. **devel** - development and experiments, might be inconsistent or broken regularly. Useful, consistent, and fully functional changes from the branch devel might be merged into the branch testing.
 
 Workflow:
-        implementation          useful & functional           tested & useful           necessary
-Change ----------------> devel --------------------> testing -----------------> stable -----------> minimal
+        implementation          useful & functional           tested & useful           necessary  
+Change ----------------> devel --------------------> testing -----------------> stable -----------> minimal  
 
 ## TODO
 
