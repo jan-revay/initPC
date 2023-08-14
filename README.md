@@ -44,3 +44,4 @@ O------> devel --------------> testing ----------> stable -----------> minimal
 14. Maybe replace the Debian variants (Ubuntu, PopOS...) with a single Ansible script with conditionals?
 15. Do some research whether snap and flatpak packages work in WSL resp. which alternative package manager to use in WSL
 16. Init script is now broken for Debian because of PPAs!!!
+17. Mark the stable branch as main in github?
