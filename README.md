@@ -1,6 +1,6 @@
 # initPC (WIP)
 
-A collection of (C++ development-oriented) scripts and configuration files (dotfiles) to quickly init new machines for my personal use.
+A collection of (C++, Python & Rust development-oriented) config scripts & dotfiles to quickly init new machines for my personal use.
 
 ## How to use
 
