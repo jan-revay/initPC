@@ -36,7 +36,7 @@ APT_PACKAGES+=(gcc-"${LATEST_GCC_VER_IN_APT}")                           # lates
 APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # latest g++
 
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
-APT_PACKAGES+=(neovim emacs qtcreator)                                    # editors
+APT_PACKAGES+=(neovim)                                                    # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
 APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish fd-find)      # utils
 APT_PACKAGES+=(npm)                                                       # package managers
