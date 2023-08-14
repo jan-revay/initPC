@@ -27,20 +27,4 @@ O------> devel --------------> testing ----------> stable -----------> minimal
 
 ## TODO
 
-1. Merge and deprecate the InitNewPC repo InitPC repo on org GitHub and initAndroid repo.
-2. Merge with LogidCfg repo
-3. Test the Windows setup script on a VM
-4. Create aliases for PowerShell
-5. Try merging the apt, flatpak, and snap install commands
-6. Have a look at popOS packages and add the useful ones to other init scripts
-7. Design a system for applying the configs on all my machines once they
-   were updated here.
-8. Add more C++ tools from here: <https://github.com/cpp-best-practices/cppbestpractices/blob/master/02-Use_the_Tools_Available.md>
-9. Add Bats automated tests
-10. Try adding NixOS
-11. Create CI tests on GitHub
-12. Todos from the repo
-13. Make the core Linux init script Debian based (i.e. other distros just add stuff to the Debian base init script)
-14. Maybe replace the Debian variants (Ubuntu, PopOS...) with a single Ansible script with conditionals?
-15. Do some research whether snap and flatpak packages work in WSL resp. which alternative package manager to use in WSL
-16. Init script is now broken for Debian because of PPAs!!!
+
