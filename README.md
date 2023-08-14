@@ -1,4 +1,4 @@
-# initPC - DEVEL BRANCH (WIP)
+# initPC - MINIMAL BRANCH (WIP)
 
 A collection of (C++, Python & Rust development-oriented) config scripts & dotfiles to quickly init new machines for my personal use.
 
