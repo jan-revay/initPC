@@ -10,7 +10,7 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 
 ## Branches
 
-1. **minimal** - debloated, stable, tested, production-ready, and not expected to change in the _yearly horizon_, only necessary stuff, possibly useful for detecting whether bugs in the stable branch are caused by the init script or to be used as a substitute for the stable branch while stable has a critical bug.
+1. **minimal** - debloated, stable, tested, production-ready, and not expected to change in the _yearly horizon_. Only necessary stuff. Possibly useful for detecting whether bugs in the stable branch are caused by the init script or to be used as a substitute for the stable branch while the stable branch has a critical bug.
 2. **stable** - stable, tested, production-ready, and not expected to change much in the _monthly horizon_.
 3. **testing** - shouldn't be broken or inconsistent most of the time, useful changes from devel that are queued to be accepted to stable (or rejected).
 4. **devel** - development and experiments, might be inconsistent or broken regularly. Useful, consistent, and fully functional changes from the branch devel might be merged into the branch testing.
