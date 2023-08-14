@@ -17,8 +17,8 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 
 #### Workflow:
 ```
-        implementation          useful & functional           tested & useful           necessary
-Change ----------------> devel --------------------> testing -----------------> stable -----------> minimal
+                    implement          useful & functional           tested & useful           necessary
+(experiment, idea) -----------> devel --------------------> testing -----------------> stable -----------> minimal
 ```
 
 ## TODO
