@@ -1,6 +1,8 @@
 # TODO test
 Set-PSDebug -Trace 1
 
+#TODO - add gh auth login
+
 # Scripts requiring user input
 . $PSScriptRoot/wsl_install.ps1
 
