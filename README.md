@@ -8,6 +8,13 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 2. `cd initPC/<Platform>/` for example `cd initPC/WSL_Ubuntu_22.04/`
 3. `./run_all.sh`
 
+## Branches
+
+1. **minimal** - debloated, stable, tested, production-ready, and not expected to change in the *yearly horizon*, only necessary stuff
+2. **stable** - stable, tested, production-ready, and not expected to change much in the *monthly horizon*
+3. **testing** - shouldn't be broken or inconsistent most of the time, useful changes from devel that are queued to be accepted to stable (or rejected)
+4. **devel** - development and experiments, might be in an inconsistent state or broken regularly. Useful, consistent, and fully functional changes from the branch devel might be merged into the branch testing.
+
 ## TODO
 
 1. Merge and deprecate the InitNewPC repo InitPC repo on org github and initAndroid repo.
