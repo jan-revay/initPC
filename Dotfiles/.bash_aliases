@@ -14,7 +14,7 @@ alias update='sudo apt update && sudo apt upgrade'
 alias path='echo -e ${PATH//:/\\n}'
 
 # 1-3 letter aliases
-# free one letter aliases(9): ijknopquwy
+# free one letter aliases(9): ijknquwy
 alias a='git add'
 alias A='git add --all'
 alias aa='git add --all'
@@ -38,6 +38,8 @@ alias L='exa -aF --color=always --group-directories-first'
 alias ll='exa -alF --color=always --group-directories-first'
 alias lsd='exa -DF --color=always --group-directories-first'
 alias m='man'
+alias p='git stash push'
+alias o='git stash pop'
 alias ph='git push'
 alias pl='git pull'
 alias py='python3'
@@ -47,8 +49,6 @@ alias r.='git reset HEAD~1'
 alias r..='git reset HEAD~2'
 alias s='git status'
 # alias ss='git status --short' todo conflict on Ubuntu
-alias sph='git stash push' # sph, not spu, to be consistent with the ph alias
-alias spo='git stash pop'
 alias t='batcat'
 alias v='nvim'
 
