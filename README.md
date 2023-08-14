@@ -10,10 +10,12 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 
 ## Branches
 
-1. **minimal** - debloated, stable, tested, production-ready, and not expected to change in the *yearly horizon*, only necessary stuff
-2. **stable** - stable, tested, production-ready, and not expected to change much in the *monthly horizon*
-3. **testing** - shouldn't be broken or inconsistent most of the time, useful changes from devel that are queued to be accepted to stable (or rejected)
+1. **minimal** - debloated, stable, tested, production-ready, and not expected to change in the _yearly horizon_, only necessary stuff, possibly useful for detecting whether bugs in the stable branch are caused by the init script or to be used as a substitute for the stable branch while stable has a critical bug.
+2. **stable** - stable, tested, production-ready, and not expected to change much in the _monthly horizon_.
+3. **testing** - shouldn't be broken or inconsistent most of the time, useful changes from devel that are queued to be accepted to stable (or rejected).
 4. **devel** - development and experiments, might be inconsistent or broken regularly. Useful, consistent, and fully functional changes from the branch devel might be merged into the branch testing.
+
+Minimal, stable, and testing branches are expected to be _always in a consistent state_ so that they can always be used to init a machine e.g. VM or a bootable partition. The devel branch is expected to be broken from time to time (e.g. when working on larger changes "per partes") and it might not always be possible to init a machine using it.
 
 #### Workflow:
 ```
@@ -23,11 +25,11 @@ O-----------> devel --------------------> testing -----------------> stable ----
 
 ## TODO
 
-1. Merge and deprecate the InitNewPC repo InitPC repo on org github and initAndroid repo.
+1. Merge and deprecate the InitNewPC repo InitPC repo on org GitHub and initAndroid repo.
 2. Merge with LogidCfg repo
 3. Test the Windows setup script on a VM
 4. Create aliases for PowerShell
-5. Try merging the apt, flatpak and snap install commands
+5. Try merging the apt, flatpak, and snap install commands
 6. Have a look at popOS packages and add the useful ones to other init scripts
 7. Design a system for applying the configs on all my machines once they
    were updated here.
