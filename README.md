@@ -15,8 +15,8 @@ A collection of (C++ development-oriented) scripts and configuration files (dotf
 3. **testing** - shouldn't be broken or inconsistent most of the time, useful changes from devel that are queued to be accepted to stable (or rejected)
 4. **devel** - development and experiments, might be inconsistent or broken regularly. Useful, consistent, and fully functional changes from the branch devel might be merged into the branch testing.
 
+#### Workflow:
 ```
-Workflow:
         implementation          useful & functional           tested & useful           necessary
 Change ----------------> devel --------------------> testing -----------------> stable -----------> minimal
 ```
