@@ -27,9 +27,6 @@ fi
 . ./packages_install.sh
 
 # shellcheck source=/dev/null
-. ./ppa_packages_install.sh
-
-# shellcheck source=/dev/null
 # . ./packages_install_optional.sh
 
 # shellcheck source=/dev/null
