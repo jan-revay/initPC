@@ -14,13 +14,14 @@ alias update='sudo apt update && sudo apt upgrade'
 alias path='echo -e ${PATH//:/\\n}'
 
 # 1-3 letter aliases
-# free one letter aliases(9): ijknquwy
+# free one letter aliases(9): jknquwy
 alias a='git add'
 alias A='git add --all'
 alias aa='git add --all'
 alias a.='git add .'
 alias b='git branch'
 alias c='git commit --verbose'
+alias i='git add --all && git commit --verbose'
 alias ca='git commit --amend --no-edit'
 alias ch='git checkout'
 alias d='git diff'
