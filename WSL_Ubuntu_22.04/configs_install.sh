@@ -9,27 +9,13 @@ set -e # exit on error
 # TODO set the current directory
 
 # shellcheck source=/dev/null
-. ../Dotfiles/mkdirs.sh # TODO this is not a dotfile
+. ../CommonInitScripts/mkdirs.sh # TODO this is not a dotfile
 
 # ==== Dotfiles ====
 # shellcheck source=/dev/null
-. ../Dotfiles/git_config.sh.ps1
+. ../CommonInitScripts/git_config.sh.ps1
 
-mkdir -p ~/.old_dotfiles/
-
-mv ~/.my_bashrc ~/.old_dotfiles/ || true
-mv ~/.bash_aliases ~/.old_dotfiles/ || true
-
-ln -s "$(realpath ../Dotfiles/.my_bashrc)" ~/
-ln -s "$(realpath ../Dotfiles/.bash_aliases)" ~/
-
-# ==== .bashrc stuff ====
-if ! grep my_bashrc ~/.bashrc; then
-    echo "
-if [ -f ~/.my_bashrc ]; then
-    . ~/.my_bashrc
-fi" >> ~/.bashrc
-fi
+. ../CommonInitScripts/install_dotfiles.sh
 
 # ==== Misc ====
 sudo update-alternatives --set editor /usr/bin/nvim
