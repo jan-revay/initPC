@@ -15,6 +15,7 @@ set -e # exit on error
 # shellcheck source=/dev/null
 . ../CommonInitScripts/git_config.sh.ps1
 
+# shellcheck source=/dev/null
 . ../CommonInitScripts/install_dotfiles.sh
 
 # ==== Misc ====
