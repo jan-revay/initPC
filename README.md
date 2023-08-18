@@ -1,6 +1,6 @@
 # initPC - TESTING BRANCH (WIP)
 
-A collection of (C++, Python & Rust development-oriented) config scripts & dotfiles to quickly init new machines for my personal use.
+A collection of (C++, Python & Rust development-oriented) config scripts to quickly init new machines for my personal use. Dotfiles are in a separate repository here: <https://github.com/jan-revay/dotfiles>.
 
 ## How to use
 
@@ -42,6 +42,5 @@ O------> devel --------------> testing ----------> stable -----------> minimal
 12. Todos from the repo
 13. Make the core Linux init script Debian based (i.e. other distros just add stuff to the Debian base init script)
 14. Maybe replace the Debian variants (Ubuntu, PopOS...) with a single Ansible script with conditionals?
-15. Do some research whether snap and flatpak packages work in WSL resp. which alternative package manager to use in WSL
+15. Do some research on whether snap and flatpak packages work in WSL resp. which alternative package manager to use in WSL
 16. Init script is now broken for Debian because of PPAs!!!
-17. Mark the stable branch as main in github?
