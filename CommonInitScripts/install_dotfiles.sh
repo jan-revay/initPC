@@ -38,7 +38,7 @@ function checkout_dotfiles {
 
     echo -e "${GREEN}Checked out dotfiles branch:" ${BRANCH}${NC}
 }
-# TODO merge similar stuff in the two branches of the if stmnt
+
 # TODO consider using git checkout --force as a simplification
 if [ ! -d ~/.dotfiles ]; then
     echo ".dotfiles" > ~/.gitignore
