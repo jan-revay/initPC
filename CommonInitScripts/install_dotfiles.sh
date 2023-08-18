@@ -17,7 +17,7 @@ function dot {
 function backup_dotfiles {
     mkdir -p ~/.dotfiles_automatic_backup/
     dot checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | \
-        xargs -I{} mv ~/{} .dotfiles_automatic_backup/{}
+        xargs -I{} mv ~/{} ~/.dotfiles_automatic_backup/{}
 }
 
 if [ ! -d ~/.dotfiles ]; then
