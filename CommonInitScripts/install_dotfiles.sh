@@ -11,7 +11,9 @@ set -e # exit on error
 # see: https://www.atlassian.com/git/tutorials/dotfiles
 BRANCH=$(git symbolic-ref --short HEAD)
 readonly BRANCH
-alias dot='/usr/bin/git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}"'
+function dot {
+    /usr/bin/git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}" $@
+}
 if [ -d .dotfiles ]; then
     echo ".dotfiles" > ~/.gitignore
     git clone --bare https://github.com/jan-revay/dotfiles.git \
