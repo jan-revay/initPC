@@ -14,20 +14,25 @@ readonly BRANCH
 function dot {
     /usr/bin/git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}" $@
 }
-if [ ! -d ~/.dotfiles ]; then
-    echo ".dotfiles" > ~/.gitignore
-    git clone --bare https://github.com/jan-revay/dotfiles.git \
-        "${HOME}/.dotfiles" --branch "${BRANCH}"
-    # echo "*" > ~/.gitignore  # secure option
-
-    # TODO improve not to filter just the dot
+function backup_dotfiles {
     mkdir -p ~/.dotfiles_automatic_backup/
     dot checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | \
         xargs -I{} mv {} .dotfiles_automatic_backup/{}
-    dot checkout
+}
+
+if [ ! -d ~/.dotfiles ]; then
+    echo ".dotfiles" > ~/.gitignore
+    # echo "*" > ~/.gitignore  # secure option
+    git clone --bare https://github.com/jan-revay/dotfiles.git \
+        "${HOME}/.dotfiles" --branch "${BRANCH}"
+
+    # TODO improve not to filter just the dot
+    backup_dotfiles
+    dot checkout "${BRANCH}"
     dot config --local status.showUntrackedFiles no
 else
     dot pull
+    backup_dotfiles
     dot checkout "${BRANCH}"
 fi
 
