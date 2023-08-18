@@ -20,8 +20,10 @@ function backup_dotfiles {
     OLD_DOTFILES=$(dot checkout 2>&1 | grep -E "\s+\." | awk {'print $1'})
     readonly OLD_DOTFILES
 
-    xargs -I{} mkdir "${HOME}/.dotfiles_automatic_backup/$(dirname {})"
-    xargs -I{} mv ~/{} ~/.dotfiles_automatic_backup/{}
+    echo "$OLD_DOTFILES" |
+        xargs -I{} mkdir "${HOME}/.dotfiles_automatic_backup/$(dirname {})"
+    echo "$OLD_DOTFILES" |
+        xargs -I{} mv ~/{} ~/.dotfiles_automatic_backup/{}
 }
 
 if [ ! -d ~/.dotfiles ]; then
