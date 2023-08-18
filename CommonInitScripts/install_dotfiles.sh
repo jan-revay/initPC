@@ -17,10 +17,11 @@ function dot {
 
 function backup_dotfiles {
     mkdir -p ~/.dotfiles_automatic_backup/
-    dot checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} |
-        xargs -I{} \
-        mkdir "${HOME}/.dotfiles_automatic_backup/$(basedir {})" \
-        mv ~/{} ~/.dotfiles_automatic_backup/{}
+    OLD_DOTFILES=$(dot checkout 2>&1 | grep -E "\s+\." | awk {'print $1'})
+    readonly OLD_DOTFILES
+
+    xargs -I{} mkdir "${HOME}/.dotfiles_automatic_backup/$(basedir {})"
+    xargs -I{} mv ~/{} ~/.dotfiles_automatic_backup/{}
 }
 
 if [ ! -d ~/.dotfiles ]; then
