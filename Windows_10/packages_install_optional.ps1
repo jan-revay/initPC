@@ -17,6 +17,8 @@ Set-PSDebug -Trace 1
 # Utils
 winget install -e --id BurntSushi.ripgrep.GNU # TODO test
 winget install -e --id Microsoft.Sysinternals.ProcessMonitor
+# TODO - always install latest ?
+winget install -e --id Microsoft.DotNet.DesktopRuntime.6 # for GitExtensions
 winget install -e --id Microsoft.DotNet.DesktopRuntime.7
 winget install -e --id Microsoft.DotNet.SDK.7
 winget install -e --id GitExtensionsTeam.GitExtensions
