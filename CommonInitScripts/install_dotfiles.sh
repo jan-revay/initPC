@@ -11,18 +11,23 @@ set -e # exit on error
 # see: https://www.atlassian.com/git/tutorials/dotfiles
 BRANCH=$(git symbolic-ref --short HEAD)
 readonly BRANCH
-echo ".dotfiles" > ~/.gitignore
-git clone --bare https://github.com/jan-revay/dotfiles.git "${HOME}/.dotfiles" \
-    --branch "${BRANCH}"
 alias dot='/usr/bin/git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}"'
-# echo "*" > ~/.gitignore  # secure option (I would have to use -f with dot add)
+if [ -d .dotfiles ]; then
+    echo ".dotfiles" > ~/.gitignore
+    git clone --bare https://github.com/jan-revay/dotfiles.git \
+        "${HOME}/.dotfiles" --branch "${BRANCH}"
+    # echo "*" > ~/.gitignore  # secure option
 
-# TODO improve not to filter just the dot
-mkdir -p ~/.old_dotfiles/
-dot checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | \
-    xargs -I{} mv {} .old_dotfiles/{}
-dot checkout
-dot config --local status.showUntrackedFiles no
+    # TODO improve not to filter just the dot
+    mkdir -p ~/.dotfiles_automatic_backup/
+    dot checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | \
+        xargs -I{} mv {} .old_dotfiles/{}
+    dot checkout
+    dot config --local status.showUntrackedFiles no
+else
+    dot pull
+    dot checkout "${BRANCH}"
+fi
 
 # TODO consider having git tracked .bashrc (that way I don't need to add anything)
 # ==== .bashrc stuff ====
