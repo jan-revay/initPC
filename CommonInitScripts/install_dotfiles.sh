@@ -23,7 +23,7 @@ if [ ! -d ~/.dotfiles ]; then
     # TODO improve not to filter just the dot
     mkdir -p ~/.dotfiles_automatic_backup/
     dot checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | \
-        xargs -I{} mv {} .old_dotfiles/{}
+        xargs -I{} mv {} .dotfiles_automatic_backup/{}
     dot checkout
     dot config --local status.showUntrackedFiles no
 else
