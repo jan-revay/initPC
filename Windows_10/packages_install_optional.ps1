@@ -17,6 +17,7 @@ Set-PSDebug -Trace 1
 # Utils
 winget install -e --id BurntSushi.ripgrep.GNU # TODO test
 winget install -e --id Microsoft.Sysinternals.ProcessMonitor
+winget install -e --id GitExtensionsTeam.GitExtensions
 
 # IDEs and code editors
 winget install -e --id Microsoft.VisualStudio.2022.Community
@@ -77,7 +78,6 @@ pip install tabulate
 
 # To consider from David
 # "Logitech.SetPoint"
-# GitExtensionsTeam.GitExtensions
 
 # Manually installed programs
 # (TODO have a look on the next install, whether they are already packed for winget)
