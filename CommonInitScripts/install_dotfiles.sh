@@ -14,7 +14,7 @@ readonly BRANCH
 function dot {
     /usr/bin/git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}" $@
 }
-if [ -d .dotfiles ]; then
+if [ ! -d ~/.dotfiles ]; then
     echo ".dotfiles" > ~/.gitignore
     git clone --bare https://github.com/jan-revay/dotfiles.git \
         "${HOME}/.dotfiles" --branch "${BRANCH}"
