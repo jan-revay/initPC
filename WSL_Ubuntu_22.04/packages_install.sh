@@ -19,7 +19,7 @@ LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' |
 # Install the most recent llvm (see https://apt.llvm.org/)
 pushd /tmp || exit
 # llvm.sh required packages
-sudo apt-get install -y wget lsb-release wget software-properties-common gnupg
+sudo apt-get install -y wget lsb-release software-properties-common gnupg
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 yes '' | sudo ./llvm.sh all
