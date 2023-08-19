@@ -24,6 +24,7 @@ pkg install -y git
 pkg install -y htop
 
 pkg install -y bat
+pkg install -y exa
 pkg install -y jq
 pkg install -y man
 pkg install -y neofetch

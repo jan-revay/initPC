@@ -8,12 +8,11 @@ termux-setup-storage
 
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 
-. ../Dotfiles/git_config.sh.ps1
-. ../Dotfiles/mkdirs.sh
+. ../CommonInitScripts/git_config.sh.ps1
+. ../CommonInitScripts/mkdirs.sh
+. ../CommonInitScripts/install_dotfiles.sh
 
-# .bashrc stuff
-cp ../Dotfiles/.my_bashrc ~/
-cp ../Dotfiles/.bash_aliases ~/
+# .bashrc suff
 
 touch ~/.bashrc
 
