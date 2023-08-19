@@ -26,6 +26,7 @@ pkg install -y shfmt
 pkg install -y valgrind
 pkg install -y python
 pkg install -y python-numpy
+pkg install -y nodejs
 # pkg install -y matplotlib - DO NOT INSTALL, BROKEN
 
 pkg install -y gh
@@ -67,3 +68,6 @@ pipx install cpplint
 
 # rustup is broken TODO fix resp. do equivalent stuff in pkg
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+# NPM packages
+sudo npm i -g bash-language-server
