@@ -14,6 +14,9 @@ pkg install -y curl
 pkg install -y gdb
 
 pkg install -y build-essential
+pkg install -y rust
+pkg install -y rustc-dev
+pkg install -y rust-analyzer
 pkg install -y ccache
 pkg install -y cmake
 pkg install -y cppcheck
@@ -43,6 +46,12 @@ pkg install -y zsh
 pkg install -y fish
 
 pkg install -y neovim
+pkg install -y helix
+pkg install -y dust
+pkg install -y onefetch
+pkg install -y procs
+pkg install -y tokei
+
 
 # the install script will probably need to be executed twice
 # because of pipx
@@ -56,4 +65,5 @@ pipx install cpplint
 # pip install pandas - DO NOT INSTALL, BROKEN
 # pip install scipy
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+# rustup is broken TODO fix resp. do equivalent stuff in pkg
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
