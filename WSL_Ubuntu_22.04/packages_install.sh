@@ -79,3 +79,8 @@ cargo install procs
 
 # NPM packages
 sudo npm i -g bash-language-server
+
+# bare dpkg packages
+wget https://github.com/o2sh/onefetch/releases/download/2.18.1/onefetch_2.18.1_amd64.deb
+dpkg -i onefetch_2.18.1_amd64.deb
+
