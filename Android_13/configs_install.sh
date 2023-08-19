@@ -4,7 +4,9 @@
 set -e
 
 # CONFIG
-termux-setup-storage
+if [ ! -d ~/storage ]; then
+    termux-setup-storage
+fi
 
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 
