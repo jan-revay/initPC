@@ -8,30 +8,30 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 export DEBIAN_FRONTEND=noninteractive
 
-sudo apt-get update
-sudo apt-get -y upgrade
+ apt-get update
+ apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
-# sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test # repository with latest GCC
+#  add-apt-repository -y ppa:ubuntu-toolchain-r/test # repository with latest GCC
 LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' |
     grep -E -o '^gcc-[0-9][0-9]' | sort -r | head --lines 1 | grep -E -o '[0-9][0-9]')
 
 # Install the most recent llvm (see https://apt.llvm.org/)
 pushd /tmp || exit
 # llvm.sh required packages
-sudo apt-get install -y wget lsb-release software-properties-common gnupg
+ apt-get install -y wget lsb-release software-properties-common gnupg
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
-yes '' | sudo ./llvm.sh all
+yes '' |  ./llvm.sh all
 rm llvm.sh
 popd || exit
 
 # Install rust ecosystem
-sudo apt-get install curl
+ apt-get install curl
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # see https://github.com/rr-debugger/rr/wiki/Using-rr-in-an-IDE
-APT_PACKAGES=(build-essential gdb rr ccache ninja-build cmake cmake-gui) # GCC and build tools
+APT_PACKAGES=(build-essential gdb ccache ninja-build cmake cmake-gui) # GCC and build tools
 APT_PACKAGES+=(gcc-"${LATEST_GCC_VER_IN_APT}")                           # latest GCC
 APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # latest g++
 
@@ -48,27 +48,27 @@ APT_PACKAGES+=(cmake-format shfmt)                                           # c
 APT_PACKAGES+=(valgrind hotspot heaptrack)                                   # dynamic analyzers , TODO test them
 APT_PACKAGES+=(python3-matplotlib python3-mock python3-numpy python3-pandas) # Python packages
 APT_PACKAGES+=(python3-pytest python3-requests python3-scipy python3-pylsp)  # Python packages
-sudo apt-get install -y "${APT_PACKAGES[@]}"
+ apt-get install -y "${APT_PACKAGES[@]}"
 
 # cleanup
-sudo apt-get autoremove
-sudo apt-get update
-sudo apt-get -y upgrade
+ apt-get autoremove
+ apt-get update
+ apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
 # === PYTHON APPLICATIONS ===
-sudo apt-get install -y pipx
+ apt-get install -y pipx
 pipx ensurepath
 
 # Static analyzers
 # codechecker disabled as it fails: pip seemed to fail to build package: PyYAML==5.4.1
 # pipx install codechecker
-pipx install flawfinder
-pipx install cpplint
+# pipx install flawfinder
+# pipx install cpplint
 # TODO add fb_infer, cppdepend, protolint, PVS...
 
 # C++ package managers
-pipx install conan
+# pipx install conan
 
 # === Rust packages ===
 # /home/jr/.cargo/bin is added to the path in .bashrc (and other rc files)
@@ -78,9 +78,9 @@ cargo install du-dust
 cargo install procs
 
 # NPM packages
-sudo npm i -g bash-language-server
+ npm i -g bash-language-server
 
 # bare dpkg packages
-wget https://github.com/o2sh/onefetch/releases/download/2.18.1/onefetch_2.18.1_amd64.deb
-dpkg -i onefetch_2.18.1_amd64.deb
+# wget https://github.com/o2sh/onefetch/releases/download/2.18.1/onefetch_2.18.1_amd64.deb
+# dpkg -i onefetch_2.18.1_amd64.deb
 

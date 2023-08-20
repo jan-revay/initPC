@@ -13,7 +13,7 @@ NC='\033[0m' # No Color
 # Using bare git repo for management of config files
 # see: https://www.atlassian.com/git/tutorials/dotfiles
 function dot {
-    /usr/bin/git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}" $@
+    git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}" $@
 }
 
 # TODO Make .dotfiles_auto_backup a git repo and commit on every new backup (maybe I could even push somewhere upstream)

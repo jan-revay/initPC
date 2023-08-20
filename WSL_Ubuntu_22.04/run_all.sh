@@ -6,6 +6,10 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
+# TODO add apt install lsb
+# TODO fix the script to work on proot-distro ububtu
+# make the script run without sudo
+
 if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* ]]; then
     echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.'
     exit 1
@@ -18,8 +22,8 @@ fi
 # Run stuff that requires user input first
 # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
 if ! gh auth status; then
-    sudo apt update
-    sudo apt install gh
+     apt update
+     apt install gh
     gh auth login --hostname github.com
 fi
 

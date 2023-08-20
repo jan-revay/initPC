@@ -19,4 +19,5 @@ set -e # exit on error
 . ../CommonInitScripts/install_dotfiles.sh
 
 # ==== Misc ====
-sudo update-alternatives --set editor /usr/bin/nvim
+update-alternatives --set editor \
+	"$(whereis nvim | awk '{ print $2 }')"
