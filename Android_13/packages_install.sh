@@ -70,4 +70,12 @@ pipx install cpplint
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # NPM packages
-sudo npm i -g bash-language-server
+npm i -g bash-language-server
+
+# TODO - install rust here as android rustup is broken
+pkg install proot-distro
+# TODO
+# proot-distro install ubuntu
+# proot-distro login ubuntu -- \
+#    "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs |
+#     sh -s -- -y"
