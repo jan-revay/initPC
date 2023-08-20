@@ -52,6 +52,7 @@ pkg install -y dust
 pkg install -y onefetch
 pkg install -y procs
 pkg install -y tokei
+pkg install -y fd
 
 
 # the install script will probably need to be executed twice
