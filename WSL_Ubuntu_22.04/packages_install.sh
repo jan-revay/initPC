@@ -58,7 +58,7 @@ apt list --upgradable # check for the packages that were not upgraded
 
 # === PYTHON APPLICATIONS ===
 sudo apt-get install -y pipx
-pipx ensurepath
+# pipx ensurepath - ensurepath is broken (it adds the path multiple times in subshells)
 
 # Static analyzers
 # codechecker disabled as it fails: pip seemed to fail to build package: PyYAML==5.4.1
