@@ -43,4 +43,5 @@ O------> devel --------------> testing ----------> stable -----------> minimal
 13. Make the core Linux init script Debian based (i.e. other distros just add stuff to the Debian base init script)
 14. Maybe replace the Debian variants (Ubuntu, PopOS...) with a single Ansible script with conditionals?
 15. Do some research on whether snap and flatpak packages work in WSL resp. which alternative package manager to use in WSL
-16. Consider running whole `./run_all.sh` script as sudo and removing `sudo` commands from the script.
+16. Consider running the whole `./run_all.sh` script as sudo and removing `sudo` commands from the script.
+17. Shorten the names of branches I use most often devel -> dev, testing -> test
