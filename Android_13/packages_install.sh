@@ -24,7 +24,7 @@ APT_PACKAGES+=(proot-distro) # ubuntu/debian emulation
 
 pkg install -y "${APT_PACKAGES[@]}"
 
-# the install script will probably need to be executed twice
+# TODO the install needs to be executed twice due to pipx - FIX
 # because of pipx
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
