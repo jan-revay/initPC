@@ -19,7 +19,7 @@ mkdir -p ~/.config/helix/
 # TODO fix hx --Health warning:
 # `Runtime directory does not exist: /home/jr/.cargo/bin/runtime`
 # TODO fix recursive runtime directory nesting
-ln -f -s "$PWD/runtime/" ~/.config/helix/runtime/
+ln -f -s "$PWD/runtime" ~/.config/helix/runtime
 hx --grammar fetch
 hx --grammar build
 hx --health
