@@ -20,9 +20,9 @@ Minimal, stable, and testing branches are expected to be _always in a consistent
 ### Workflow
 
 ```text
-               functional &             tested &
-  impl.         consistent               useful            necessary
-O------> devel --------------> testing ----------> stable -----------> minimal
+               functional &           tested &
+  impl.         consistent             useful            necessary
+O------> devel -------------> testing ---------> stable -----------> minimal
 ```
 
 ## TODO
