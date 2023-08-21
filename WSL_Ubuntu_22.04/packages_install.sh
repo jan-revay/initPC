@@ -27,7 +27,7 @@ rm llvm.sh
 popd || exit
 
 # Install rust ecosystem
-sudo apt-get install curl
+sudo apt-get install -y curl
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # see https://github.com/rr-debugger/rr/wiki/Using-rr-in-an-IDE
