@@ -1,59 +1,28 @@
 #!/bin/bash -x
 # BASE IMAGE Android 13
+
+# TODO group packages as in WSL_Ubuntu
 set -e
 
 pkg update -y
 pkg upgrade -y
+pkg upgrade -y # running upgrade once is sometimes not enough
 
 # pkg install -y x11-repo
 # TODO setup termux X11 see https://github.com/termux/termux-x11
 
+APT_PACKAGES=(wget gnupg curl tar)
+APT_PACKAGES+=(build-essential gdb ccache ninja cmake) # GCC and build tools
+# APT_PACKAGES+=(rust rustc-dev rust-analyzer) - broken
+APT_PACKAGES+=(python python-numpy) # python
+APT_PACKAGES+=(neovim helix) # code editors
+# utils - TODO organize
+APT_PACKAGES+=(cppcheck iwyu shfmt valgrind doxygen nodejs) # static analyzers
+APT_PACKAGES+=(zsh fish tmux tree dust onefetch procs) # shells and commands
+APT_PACKAGES+=(tokei fd gh git htop bat exa jq man neofetch openssh ripgrep)
+APT_PACKAGES+=(proot-distro) # ubuntu/debian emulation
 
-pkg install -y gnupg
-pkg install -y curl
-pkg install -y gdb
-
-pkg install -y build-essential
-pkg install -y rust
-pkg install -y rustc-dev
-pkg install -y rust-analyzer
-pkg install -y ccache
-pkg install -y cmake
-pkg install -y cppcheck
-pkg install -y iwyu
-pkg install -y ninja
-pkg install -y shfmt
-pkg install -y valgrind
-pkg install -y python
-pkg install -y python-numpy
-pkg install -y nodejs
-# pkg install -y matplotlib - DO NOT INSTALL, BROKEN
-
-pkg install -y gh
-pkg install -y git
-pkg install -y htop
-
-pkg install -y bat
-pkg install -y exa
-pkg install -y jq
-pkg install -y man
-pkg install -y neofetch
-pkg install -y openssh
-pkg install -y ripgrep
-pkg install -y tmux
-pkg install -y tree
-pkg install -y wget
-pkg install -y zsh
-pkg install -y fish
-
-pkg install -y neovim
-pkg install -y helix
-pkg install -y dust
-pkg install -y onefetch
-pkg install -y procs
-pkg install -y tokei
-pkg install -y fd
-
+pkg install -y "${APT_PACKAGES[@]}"
 
 # the install script will probably need to be executed twice
 # because of pipx
@@ -64,8 +33,9 @@ pipx install conan
 pipx install flawfinder
 pipx install cpplint
 
+# pkg install -y matplotlib - DO NOT INSTALL, BROKEN
 # pip install pandas - DO NOT INSTALL, BROKEN
-# pip install scipy
+# pip install scipy - broken
 
 # rustup is broken TODO fix resp. do equivalent stuff in pkg
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
@@ -74,8 +44,8 @@ pipx install cpplint
 npm i -g bash-language-server
 
 # TODO - install rust here as android rustup is broken
-pkg install proot-distro
-# TODO
+pkg install 
+# TODO init distro and choose the method (there are various setup scripts for that)
 # proot-distro install ubuntu
 # proot-distro login ubuntu -- \
 #    "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs |
