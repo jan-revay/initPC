@@ -48,7 +48,11 @@ npm i -g bash-language-server
 
 # TODO - install rust here as android rustup is broken
 # TODO init distro and choose the method (there are various setup scripts for that)
-# proot-distro install ubuntu
+# TODO run a version of my ubuntu init scripts here
+# TODO do a more research about differences between termux and proot-distro and
+# linux emulators that other apps use (resp. other install scripts)
+# TODO try to compile sth. in that Ubuntu resp. in Termux
+proot-distro install ubuntu
 # proot-distro login ubuntu -- \
-#    "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs |
-#     sh -s -- -y"
+#     "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs |
+#      sh -s -- -y"
