@@ -15,10 +15,10 @@ APT_PACKAGES=(wget gnupg curl tar)
 APT_PACKAGES+=(build-essential gdb ccache ninja cmake) # GCC and build tools
 # APT_PACKAGES+=(rust rustc-dev rust-analyzer) - broken
 APT_PACKAGES+=(python python-numpy) # python
-APT_PACKAGES+=(neovim helix) # code editors
+APT_PACKAGES+=(neovim helix)        # code editors
 # utils - TODO organize
 APT_PACKAGES+=(cppcheck iwyu shfmt valgrind doxygen nodejs) # static analyzers
-APT_PACKAGES+=(zsh fish tmux tree dust onefetch procs) # shells and commands
+APT_PACKAGES+=(zsh fish tmux tree dust onefetch procs)      # shells and commands
 APT_PACKAGES+=(tokei fd gh git htop bat exa jq man neofetch openssh ripgrep)
 APT_PACKAGES+=(imagemagick)
 APT_PACKAGES+=(proot-distro) # ubuntu/debian emulation
@@ -45,7 +45,7 @@ pipx install cpplint
 npm i -g bash-language-server
 
 # TODO - install rust here as android rustup is broken
-pkg install 
+pkg install
 # TODO init distro and choose the method (there are various setup scripts for that)
 # proot-distro install ubuntu
 # proot-distro login ubuntu -- \
