@@ -8,7 +8,7 @@ set -e # exit on error
 
 cd ~/x/
 
-if ! test -d helix ; then
+if ! test -d helix; then
     git clone https://github.com/helix-editor/helix
 fi
 

@@ -1,0 +1,13 @@
+[*.sh]
+
+binary_next_line     = true  # like -bn
+charset              = utf-8
+function_next_line   = true  # --func-next-line
+indent_size          = 4
+indent_style         = space
+insert_final_newline = true
+keep_padding         = false # like -kp
+shell_variant        = bash # --language-variant
+space_redirects      = true  # like -sr
+switch_case_indent   = true  # like -ci
+trim_trailing_whitespace = true
