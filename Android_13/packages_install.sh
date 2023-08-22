@@ -1,9 +1,12 @@
 #!/bin/bash -x
 # BASE IMAGE Android 13
 
-# TODO group packages as in WSL_Ubuntu
-set -e
+# makes the echo prompt yellow to improve readability
+export PS4="\[\033[1;93m\]+ \[\033[0m\]"
+set -e # exit on error
+export DEBIAN_FRONTEND=noninteractive
 
+# TODO group packages as in WSL_Ubuntu
 pkg update -y
 pkg upgrade -y
 pkg upgrade -y # running upgrade once is sometimes not enough
@@ -26,6 +29,7 @@ APT_PACKAGES+=(imagemagick)
 APT_PACKAGES+=(proot-distro) # ubuntu/debian emulation
 
 pkg install -y "${APT_PACKAGES[@]}"
+apt list --upgradable
 
 # TODO the install needs to be executed twice due to pipx - FIX
 # because of pipx

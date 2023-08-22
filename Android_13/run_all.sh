@@ -1,7 +1,10 @@
 #!/bin/bash -x
 # BASE IMAGE: Android 13
 
-set -e
+# makes the echo prompt yellow to improve readability
+export PS4="\[\033[1;93m\]+ \[\033[0m\]"
+set -e # exit on error
+export DEBIAN_FRONTEND=noninteractive
 
 if ! gh auth status; then
     pkg update
