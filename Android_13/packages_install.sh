@@ -47,7 +47,6 @@ pipx install cpplint
 npm i -g bash-language-server
 
 # TODO - install rust here as android rustup is broken
-pkg install
 # TODO init distro and choose the method (there are various setup scripts for that)
 # proot-distro install ubuntu
 # proot-distro login ubuntu -- \
