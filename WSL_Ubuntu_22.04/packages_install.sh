@@ -43,7 +43,7 @@ APT_PACKAGES+=(npm)                                                       # pack
 # NOTE: fd-find executable is called `fdfind`
 APT_PACKAGES+=(python3-pip) # various runtimes
 # TODO maybe add default-jre and dotnet7?
-APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy)                             # static analyzers
+APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy shellcheck)                  # static analyzers
 APT_PACKAGES+=(cmake-format shfmt)                                           # code formatters
 APT_PACKAGES+=(valgrind hotspot heaptrack)                                   # dynamic analyzers , TODO test them
 APT_PACKAGES+=(python3-matplotlib python3-mock python3-numpy python3-pandas) # Python packages
