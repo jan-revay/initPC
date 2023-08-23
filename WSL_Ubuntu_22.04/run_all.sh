@@ -17,6 +17,8 @@ fi
 
 # TODO "Which services should be restarted?" prompt is still present in VM
 export NEEDRESTART_MODE=a
+export NEEDRESTART_SUSPEND=1
+export NEEDRESTART_MODE=a
 
 # Run stuff that requires user input first
 # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
