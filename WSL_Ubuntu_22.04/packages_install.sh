@@ -7,6 +7,7 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 export DEBIAN_FRONTEND=noninteractive
+export NEEDRESTART_MODE=a
 
 sudo apt-get update
 sudo apt-get -y upgrade
@@ -51,7 +52,7 @@ APT_PACKAGES+=(python3-pytest python3-requests python3-scipy python3-pylsp)  # P
 sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # cleanup
-sudo apt-get autoremove
+sudo apt-get -y autoremove
 sudo apt-get update
 sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded

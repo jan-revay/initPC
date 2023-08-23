@@ -15,6 +15,8 @@ if [[ ! -f "/etc/wsl.conf" ]]; then
     echo "Warning: The base image probably does not run in WSL."
 fi
 
+export NEEDRESTART_MODE=a
+
 # Run stuff that requires user input first
 # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
 if ! gh auth status; then
