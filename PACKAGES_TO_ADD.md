@@ -11,3 +11,5 @@
 - protobuf linter
 - LaTeX
 - hex editor
+- yapf (python formatter)
+- youtube-dl (youtube video downloader)
