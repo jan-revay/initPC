@@ -6,7 +6,7 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
-if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* ]]; then
+if [[ "$(lsb_release --description --short)" != 'Ubuntu '* ]]; then
     echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.'
     exit 1
 fi
@@ -18,7 +18,6 @@ fi
 # TODO "Which services should be restarted?" prompt is still present in VM
 export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
-export NEEDRESTART_MODE=a
 
 # Run stuff that requires user input first
 # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)

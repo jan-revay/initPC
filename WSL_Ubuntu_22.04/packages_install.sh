@@ -9,6 +9,7 @@ set -e # exit on error
 export DEBIAN_FRONTEND=noninteractive
 # TODO "Which services should be restarted?" prompt is still present in VM
 export NEEDRESTART_MODE=a
+export NEEDRESTART_SUSPEND=1
 
 sudo apt-get update
 sudo apt-get -y upgrade
