@@ -18,7 +18,7 @@ APT_PACKAGES=(wget gnupg curl tar)
 APT_PACKAGES+=(build-essential gdb ccache ninja cmake) # GCC and build tools
 # APT_PACKAGES+=(rust rustc-dev rust-analyzer) - broken
 APT_PACKAGES+=(python python-numpy) # python
-APT_PACKAGES+=(nodejs)              # JavaScript
+APT_PACKAGES+=(nodejs ruby)         # JavaScript & Ruby
 APT_PACKAGES+=(neovim helix)        # code editors
 # utils - TODO organize
 APT_PACKAGES+=(cppcheck iwyu shfmt shellcheck)         # static analyzers
@@ -49,6 +49,8 @@ pipx install cpplint
 
 # NPM packages
 npm i -g bash-language-server
+# GEM packages
+gem install mdl # markdown-linst
 
 # TODO - install rust here as android rustup is broken
 # TODO init distro and choose the method (there are various setup scripts for that)
