@@ -30,3 +30,5 @@ fi
 . ../WSL_Ubuntu_22.04/configs_install.sh
 # shellcheck source=/dev/null
 . ./source_packages_install.sh
+
+reboot

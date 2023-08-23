@@ -6,6 +6,7 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
+# TODO add Ubuntu version here
 if [[ "$(lsb_release --description --short)" != 'Ubuntu '* ]]; then
     echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.'
     exit 1
@@ -38,3 +39,5 @@ fi
 
 # shellcheck source=/dev/null
 . ./configs_install.sh
+
+reboot

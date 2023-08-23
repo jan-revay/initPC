@@ -19,3 +19,5 @@ fi
 . ./packages_install.sh
 # shellcheck source=/dev/null
 . ./configs_install.sh
+
+reboot
