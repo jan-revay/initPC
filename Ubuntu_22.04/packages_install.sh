@@ -18,3 +18,8 @@ fi
 # shellcheck source=/dev/null
 . ../WSL_Ubuntu_22.04/packages_install.sh
 # Programs with GUI are added below
+
+# TODO add packages from PopOS here (and use this as a base for the PopOS)
+
+# GNOME extensions
+124 . ../CommonInitScripts/gnome_install_extensions.sh
