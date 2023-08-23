@@ -17,5 +17,4 @@ fi
 # WSL Ubuntu script installs command line applications
 # shellcheck source=/dev/null
 . ../WSL_Ubuntu_22.04/packages_install.sh
-
 # Programs with GUI are added below
