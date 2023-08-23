@@ -7,6 +7,7 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 export DEBIAN_FRONTEND=noninteractive
+# TODO "Which services should be restarted?" prompt is still present in VM
 export NEEDRESTART_MODE=a
 
 sudo apt-get update

@@ -15,6 +15,7 @@ if [[ ! -f "/etc/wsl.conf" ]]; then
     echo "Warning: The base image probably does not run in WSL."
 fi
 
+# TODO "Which services should be restarted?" prompt is still present in VM
 export NEEDRESTART_MODE=a
 
 # Run stuff that requires user input first
