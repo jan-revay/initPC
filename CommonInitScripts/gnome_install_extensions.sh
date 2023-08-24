@@ -14,12 +14,13 @@ gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
     /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "scroll-workspaces@gfxmonk.net" \
     || true
 
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "workspaces-bar@fthx" \
-    || true
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "workspaces-bar@fthx" \
-    || true
+# Outdated, replace with this.simple-indication-of-workspaces@azate.email ? (or try to find similar tool)
+# gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
+#     /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "workspaces-bar@fthx" \
+#     || true
+# gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
+#     /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "workspaces-bar@fthx" \
+#     || true
 
 sudo apt install -y gnome-shell-extension-manager gir1.2-gtop-2.0 lm-sensors # vitals monitor needs that
 
