@@ -17,10 +17,11 @@ function dot {
 }
 
 # TODO Make .dotfiles_auto_backup a git repo and commit on every new backup (maybe I could even push somewhere upstream)
+# TODO broken - does not back up nvim config...
 function backup_conflicting_dotfiles {
     echo -e "${GREEN}Backing up old dotfiles${NC}"
     mkdir -p ~/.dotfiles_auto_backup/
-    OLD_DOTFILES=$(dot checkout 2>&1 | grep "^[[:space:]][^[:space:]]\+$" | awk {'print $1'})
+    OLD_DOTFILES=$(dot checkout 2>&1 | grep "^[[:space:]]\+[^[:space:]]\+$" | awk {'print $1'})
     readonly OLD_DOTFILES
 
     OLD_DOTDIRS=$(echo "$OLD_DOTFILES" | xargs -I{} dirname ${HOME}/.dotfiles_auto_backup/{})
