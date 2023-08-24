@@ -31,6 +31,10 @@ sudo apt install -y linux-tools-common linux-tools-generic linux-tools-"$(uname 
 
 sudo apt install -y flatpak meld kdevelop coqide gitk cmake-gui # editors, tools and IDEs
 
+sudo apt install -y snapd
+# TODO reloading bashrc might be needed
+sudo snap install core snap-store
+
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 flatpak install flathub com.visualstudio.code

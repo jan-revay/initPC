@@ -20,6 +20,7 @@ fi
 export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
 
+# TODO configure postfix in advance from command line
 # TODO what is this app and why does it automatically installs itself on Ubuntu
 # server/desktop, but not in wsl? It needs user interaction hece adding it here.
 sudo apt install postfix
