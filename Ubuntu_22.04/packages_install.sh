@@ -27,13 +27,15 @@ fi
 # TODO test the flatpaks
 # TODO debloat
 # TODO add snap installation script so that there is a same base on PopOS
-sudo apt install -y linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
+
+# TODO bug - these packages are not found on debian
+#sudo apt install -y linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
 
 sudo apt install -y flatpak meld kdevelop coqide gitk cmake-gui # editors, tools and IDEs
 
 sudo apt install -y snapd
 # TODO reloading bashrc might be needed
-sudo snap install core snap-store
+sudo snap install core
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
@@ -41,7 +43,8 @@ flatpak install flathub com.visualstudio.code
 # ===== MESSAGING, PRODUCTIVITY, GRAPHICS, SOUND AND BOOKS =====
 
 sudo apt install -y gimp krita inkscape okular evince vlc audacity xdotool
-sudo apt install -y ttf-mscorefonts-installer
+# not found on Debian
+# sudo apt install -y ttf-mscorefonts-installer
 
 # Flatpaks
 flatpak install foliate todoist signal caprine
