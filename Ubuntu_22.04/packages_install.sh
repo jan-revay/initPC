@@ -22,6 +22,10 @@ fi
 
 # TODO add packages from PopOS here (and use this as a base for the PopOS)
 # TODO make the script noninteractive
+# TODO decide between flatpaks and snaps (or combine them)
+# TODO VSC flatpak appears to be broken and lower quality than the snap
+# TODO test the flatpaks
+# TODO debloat
 sudo apt install -y linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
 
 sudo apt install -y flatpak meld kdevelop coqide gitk cmake-gui # editors, tools and IDEs
