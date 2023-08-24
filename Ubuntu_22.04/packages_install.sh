@@ -22,4 +22,4 @@ fi
 # TODO add packages from PopOS here (and use this as a base for the PopOS)
 
 # GNOME extensions
-124 . ../CommonInitScripts/gnome_install_extensions.sh
+. ../CommonInitScripts/gnome_install_extensions.sh
