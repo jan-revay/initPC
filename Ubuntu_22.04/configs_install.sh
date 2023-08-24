@@ -29,7 +29,7 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:close'
 gsettings set org.gnome.desktop.interface locate-pointer true
 # todo test the keyboard settings
 gsettings set org.gnome.desktop.input-sources xkb-options \
-        "['terminate:ctrl_alt_bksp', 'shift:both_capslock_cancel', 'caps:none']"
+    "['terminate:ctrl_alt_bksp', 'shift:both_capslock_cancel', 'caps:none']"
 
 # set default apps
 xdg-mime default code.desktop text/markdown

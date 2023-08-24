@@ -28,12 +28,13 @@ if ! gh auth status; then
     gh auth login --hostname github.com
 fi
 
-
 # shellcheck source=/dev/null
 . ./packages_install.sh
 # shellcheck source=/dev/null
 . ../WSL_Ubuntu_22.04/ppa_packages_install.sh
 # shellcheck source=/dev/null
 . ./configs_install.sh
+# GNOME extensions
+. ../CommonInitScripts/gnome_install_extensions.sh
 
 reboot
