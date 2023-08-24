@@ -20,6 +20,13 @@ fi
 export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
 
+# TODO what is this app and why does it automatically installs itself on Ubuntu
+# server/desktop, but not in wsl? It needs user interaction hece adding it here.
+sudo apt install postfix
+
+# GNOME extensions
+. ../CommonInitScripts/gnome_install_extensions.sh
+
 # Run stuff that requires user input first
 # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
 if ! gh auth status; then
@@ -34,7 +41,5 @@ fi
 . ../WSL_Ubuntu_22.04/ppa_packages_install.sh
 # shellcheck source=/dev/null
 . ./configs_install.sh
-# GNOME extensions
-. ../CommonInitScripts/gnome_install_extensions.sh
 
 reboot
