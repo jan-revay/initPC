@@ -12,16 +12,18 @@ NC='\033[0m' # No Color
 # TODO replace tabs with spaces
 # Using bare git repo for management of config files
 # see: https://www.atlassian.com/git/tutorials/dotfiles
-function dot {
+function dot
+{
     git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}" $@
 }
 
 # TODO Make .dotfiles_auto_backup a git repo and commit on every new backup (maybe I could even push somewhere upstream)
 # TODO broken - does not back up nvim config...
-function backup_conflicting_dotfiles {
+function backup_conflicting_dotfiles
+{
     echo -e "${GREEN}Backing up old dotfiles${NC}"
     mkdir -p ~/.dotfiles_auto_backup/
-    OLD_DOTFILES=$(dot checkout 2>&1 | grep "^[[:space:]]\+[^[:space:]]\+$" | awk {'print $1'})
+    OLD_DOTFILES=$(dot checkout "${BRANCH}" 2>&1 | grep "^[[:space:]]\+[^[:space:]]\+$")
     readonly OLD_DOTFILES
 
     OLD_DOTDIRS=$(echo "$OLD_DOTFILES" | xargs -I{} dirname ${HOME}/.dotfiles_auto_backup/{})
@@ -29,7 +31,8 @@ function backup_conflicting_dotfiles {
     echo "$OLD_DOTFILES" | xargs -I{} mv ~/{} ~/.dotfiles_auto_backup/{}
 }
 
-function checkout_dotfiles {
+function checkout_dotfiles
+{
     BRANCH=$(git symbolic-ref --short HEAD)
     readonly BRANCH
     if ! dot checkout "${BRANCH}"; then
