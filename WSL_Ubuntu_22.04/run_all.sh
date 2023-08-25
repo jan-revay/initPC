@@ -27,14 +27,10 @@ if ! gh auth status; then
     gh auth login --hostname github.com
 fi
 
-# shellcheck source=/dev/null
 . ./packages_install.sh
 
-# shellcheck source=/dev/null
 . ./ppa_packages_install.sh
 
-# shellcheck source=/dev/null
 # . ./packages_install_optional.sh
 
-# shellcheck source=/dev/null
 . ./configs_install.sh
