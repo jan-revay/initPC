@@ -39,5 +39,3 @@ fi
 
 # shellcheck source=/dev/null
 . ./configs_install.sh
-
-reboot
