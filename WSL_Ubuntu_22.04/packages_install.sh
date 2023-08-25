@@ -93,4 +93,3 @@ wget https://github.com/o2sh/onefetch/releases/download/2.18.1/onefetch_2.18.1_a
 sudo dpkg -i onefetch_2.18.1_amd64.deb
 rm onefetch_2.18.1_amd64.deb
 popd || exit
-# TODO delete the package after inastall (and save it to /tmp)

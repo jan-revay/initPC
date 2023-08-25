@@ -17,24 +17,12 @@ if [[ -f "/etc/wsl.conf" ]]; then
 fi
 
 # TODO "Which services should be restarted?" prompt is still present in VM
+# TODO - is this relevant in Ubuntu desktop (seems to only do sth. in Ubuntu server)
 export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
 
-# TODO configure postfix in advance from command line
-# TODO what is this app and why does it automatically installs itself on Ubuntu
-# server/desktop, but not in wsl? It needs user interaction hece adding it here.
-sudo apt install postfix
-
-# GNOME extensions
-. ../CommonInitScripts/gnome_install_extensions.sh
-
-# Run stuff that requires user input first
-# WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
-if ! gh auth status; then
-    sudo apt update
-    sudo apt install gh
-    gh auth login --hostname github.com
-fi
+# Run stuff that requires user input first (if not turned off by `--noninteractive`)
+. ./interactive_part.sh
 
 # shellcheck source=/dev/null
 . ./packages_install.sh

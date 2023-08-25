@@ -19,13 +19,8 @@ fi
 export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
 
-# Run stuff that requires user input first
-# WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
-if ! gh auth status; then
-    sudo apt update
-    sudo apt install gh
-    gh auth login --hostname github.com
-fi
+# Run stuff that requires user input first (if not turned off by `--noninteractive`)
+. ./interactive_part.sh
 
 . ./packages_install.sh
 

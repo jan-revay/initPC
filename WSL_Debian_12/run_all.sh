@@ -15,18 +15,13 @@ if [[ ! -f "/etc/wsl.conf" ]]; then
     echo "Warning: The base image probably does not run in WSL."
 fi
 
-# Run stuff that requires user input first
-# WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
-if ! gh auth status; then
-    sudo apt update
-    sudo apt install gh
-    gh auth login --hostname github.com
-fi
+# Run stuff that requires user input first (if not turned off by `--noninteractive`)
+. ../WSL_Ubuntu_22.04/interactive_part.sh
 
 # Let's try to keep the Ubuntu install script Debian compatible
-# shellcheck source=/dev/null
+
 . ../WSL_Ubuntu_22.04/packages_install.sh
-# shellcheck source=/dev/null
+
 . ../WSL_Ubuntu_22.04/configs_install.sh
-# shellcheck source=/dev/null
+
 . ./source_packages_install.sh
