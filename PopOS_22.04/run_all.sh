@@ -11,4 +11,6 @@ fi
 # shellcheck source=/dev/null
 . ./configs_install.sh
 
+echo "INIT SCRIPT FINISHED SUCCESSFULLY, REBOOTING IN 30 SECONDS..."
+sleep 30
 reboot
