@@ -1,8 +1,33 @@
 {
     "cSpell.words": [
         "batcat",
+        "ccache",
+        "clazy",
+        "cppcheck",
+        "cpplint",
+        "dconf",
         "dotfiles",
-        "nvim"
+        "doxygen",
+        "flawfinder",
+        "iwyu",
+        "matplotlib",
+        "neofetch",
+        "neovim",
+        "noninteractive",
+        "numpy",
+        "nvim",
+        "onefetch",
+        "pipx",
+        "procs",
+        "pylsp",
+        "pytest",
+        "qtcreator",
+        "ripgrep",
+        "rubygems",
+        "scipy",
+        "tokei",
+        "traceroute",
+        "valgrind"
     ],
     "cSpell.enableFiletypes": [
         "shellscript"
