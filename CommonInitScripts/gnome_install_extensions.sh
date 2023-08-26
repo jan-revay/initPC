@@ -1,3 +1,11 @@
+#!/bin/bash -x
+# BASE IMAGE: WSL Ubuntu 22.04
+# The script REQUIRES USER INTERACTION IN GNOME!!!
+
+# makes the echo prompt yellow to improve readability
+export PS4="\[\033[1;93m\]+ \[\033[0m\]"
+set -e # exit on error
+
 # ===== GNOME EXTENSIONS =====
 
 # org.gnome.Shell.Extensions.InstallRemoteExtension() is the same DBus method that is used in the
