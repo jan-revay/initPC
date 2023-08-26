@@ -19,5 +19,12 @@ jobs:
     - name: iniPC script should not fail
       run: cd ${{github.workspace}}/WSL_Ubuntu_22.04/ && ./run_all.sh --noninteractive
 
+    - name: save ~/ for idempotency test
+      run: cp -r ~/ /tmp/old_home/
+
     - name: running iniPC script 2nd time should not fail
       run: cd ${{github.workspace}}/WSL_Ubuntu_22.04/ && ./run_all.sh --noninteractive
+
+    # TODO - do something like:
+    # - name: The initPC script should be idempotent on ~/ directory
+    #   run: diff -bur  ~/  /tmp/old_home/
