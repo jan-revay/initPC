@@ -1,4 +1,4 @@
-name: WSL_Ubuntu_22.04 - iniPC script should not fail
+name: WSL_Ubuntu_22.04 - iniPC script
 
 on:
   push:
@@ -16,5 +16,8 @@ jobs:
       with:
         ref: devel
 
-    - name: iniPC script does not fail
+    - name: iniPC script should not fail
+      run: cd ${{github.workspace}}/WSL_Ubuntu_22.04/ && ./run_all.sh --noninteractive
+
+    - name: running iniPC script 2nd time should not fail
       run: cd ${{github.workspace}}/WSL_Ubuntu_22.04/ && ./run_all.sh --noninteractive
