@@ -6,9 +6,7 @@ A collection of (C++, Python & Rust development-oriented) config scripts to quic
 
 1. `git clone https://github.com/jan-revay/initPC.git`
 2. `cd initPC/`
-3. `mkdir Logs`
-4. `cd ./<Platform>/` for example `cd ./WSL_Ubuntu_22.04/`
-5. `./run_all.sh 2>&1 | tee ../Logs/$(date "+%Y%m%d_%H%M%S").log`
+3. `./run_init.sh` (a platform independent init script launcher)
 
 Note: `cat <logfile>` will display the log with the original VT100 colors.
 
