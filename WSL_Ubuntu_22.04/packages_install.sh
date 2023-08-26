@@ -19,20 +19,6 @@ apt list --upgradable # check for the packages that were not upgraded
 LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' \
     | grep -E -o '^gcc-[0-9][0-9]' | sort -r | head --lines 1 | grep -E -o '[0-9][0-9]')
 
-# Install the most recent llvm (see https://apt.llvm.org/)
-pushd /tmp || exit
-# llvm.sh required packages
-sudo apt-get install -y wget lsb-release software-properties-common gnupg
-wget https://apt.llvm.org/llvm.sh
-chmod +x llvm.sh
-yes '' | sudo ./llvm.sh all
-rm llvm.sh
-popd || exit
-
-# Install rust ecosystem
-sudo apt-get install -y curl
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-
 # see https://github.com/rr-debugger/rr/wiki/Using-rr-in-an-IDE
 APT_PACKAGES=(build-essential gdb rr ccache ninja-build cmake cmake-gui) # GCC and build tools
 APT_PACKAGES+=(gcc-"${LATEST_GCC_VER_IN_APT}")                           # latest GCC
@@ -42,7 +28,7 @@ APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # lates
 APT_PACKAGES+=(neovim emacs qtcreator)                                    # editors
 APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
 APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish fd-find)      # utils
-APT_PACKAGES+=(npm rubygems)                                              # package managers
+APT_PACKAGES+=(npm rubygems pipx)                                         # package managers
 # NOTE: fd-find executable is called `fdfind`
 APT_PACKAGES+=(python3-pip) # various runtimes
 # TODO maybe add default-jre and dotnet7?
@@ -51,7 +37,20 @@ APT_PACKAGES+=(cmake-format shfmt)                                           # c
 APT_PACKAGES+=(valgrind hotspot heaptrack)                                   # dynamic analyzers , TODO test them
 APT_PACKAGES+=(python3-matplotlib python3-mock python3-numpy python3-pandas) # Python packages
 APT_PACKAGES+=(python3-pytest python3-requests python3-scipy python3-pylsp)  # Python packages
+APT_PACKAGES+=(wget lsb-release software-properties-common gnupg curl)       # requirements for llvm and rust install scripts
 sudo apt-get install -y "${APT_PACKAGES[@]}"
+
+# Install the most recent llvm (see https://apt.llvm.org/)
+pushd /tmp || exit
+# llvm.sh required packages
+wget https://apt.llvm.org/llvm.sh
+chmod +x llvm.sh
+yes '' | sudo ./llvm.sh all
+rm llvm.sh
+popd || exit
+
+# Install rust ecosystem
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # cleanup
 sudo apt-get -y autoremove
@@ -60,7 +59,6 @@ sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
 # === PYTHON APPLICATIONS ===
-sudo apt-get install -y pipx
 # pipx ensurepath - ensurepath is broken (it adds the path multiple times in subshells)
 
 # Static analyzers
