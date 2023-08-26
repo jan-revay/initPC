@@ -46,7 +46,7 @@ cd ./initPC/.git/hooks/
 ln -s ../../pre-commit-hook.sh pre-commit
 ```
 
-The precommit hooks currently run `shfmt` and `shellcheck`
+The pre-commit hook currently runs `shfmt` and `shellcheck`
 
 ## TODO
 
