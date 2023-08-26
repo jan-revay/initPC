@@ -35,7 +35,7 @@ function checkout_dotfiles
 {
     DOTFILES_BRANCH=$(git symbolic-ref --short HEAD)
     # e.g. "devel-feature-precommit-hooks" -> "devel"
-    DOTFILES_BRANCH=$(echo "${DOTFILES_BRANCH}" | grep -o "[a-z]\+-" | head -n 1 | grep -o "[a-z]\+")
+    DOTFILES_BRANCH=$(echo "${DOTFILES_BRANCH}" | grep -o "[a-z]\+" | head -n 1")
     readonly DOTFILES_BRANCH
     if ! dot checkout "${DOTFILES_BRANCH}"; then
         backup_conflicting_dotfiles
