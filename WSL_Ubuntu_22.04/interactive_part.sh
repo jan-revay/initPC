@@ -8,7 +8,8 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
-function interactive_part {
+function interactive_part
+{
     # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
     if ! gh auth status; then
         sudo apt update

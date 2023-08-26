@@ -42,7 +42,7 @@ if ! grep my_bashrc ~/.bashrc; then
     echo "
 if [ -f ~/.my_bashrc ]; then
     . ~/.my_bashrc
-fi" >>~/.bashrc
+fi" >> ~/.bashrc
 fi
 
 # set default apps
