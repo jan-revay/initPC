@@ -11,8 +11,9 @@ if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* ]]; then
     exit 1
 fi
 
-if [[ ! -f "/etc/wsl.conf" ]]; then
+if ! uname -r | grep "WSL2"; then
     echo "Warning: The base image probably does not run in WSL."
+    exit 2
 fi
 
 # TODO "Which services should be restarted?" prompt is still present in VM

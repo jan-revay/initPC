@@ -11,8 +11,9 @@ if ! grep 'PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"' /etc/os-release; then
     exit 1
 fi
 
-if [[ ! -f "/etc/wsl.conf" ]]; then
+if ! uname -r | grep "WSL2"; then
     echo "Warning: The base image probably does not run in WSL."
+    exit 2
 fi
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
