@@ -10,6 +10,8 @@ A collection of (C++, Python & Rust development-oriented) config scripts to quic
 4. `cd ./<Platform>/` for example `cd ./WSL_Ubuntu_22.04/`
 5. `./run_all.sh 2>&1 | tee ../Logs/$(date "+%Y%m%d_%H%M%S").log`
 
+Note: `cat <logfile>` will display the log with the original VT100 colors.
+
 ## Branches
 
 1. **minimal** - debloated, stable, tested, production-ready, and not expected to change in the _yearly horizon_. Only necessary stuff. Possibly useful for detecting whether bugs in the stable branch are caused by the init script or to be used as a substitute for the stable branch while the stable branch has a critical bug.
