@@ -9,6 +9,7 @@
         "timonwong.shellcheck",
         "foxundermoon.shell-format",
         "mads-hartmann.bash-ide-vscode",
-        "nhoizey.gremlins"
+        "nhoizey.gremlins",
+        "github.vscode-github-actions"
     ]
 }
