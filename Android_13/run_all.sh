@@ -6,6 +6,11 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 export DEBIAN_FRONTEND=noninteractive
 
+if ! uname -a | grep Android; then
+    echo The init script does not run on Android
+    exit 1
+fi
+
 if ! gh auth status; then
     pkg update
     pkg install gh

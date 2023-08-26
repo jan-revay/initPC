@@ -6,6 +6,10 @@ if [[ "$(lsb_release --description --short)" != 'Pop!_OS 22.04 LTS' ]]; then
     exit 1
 fi
 
+if uname -r | grep "WSL2"; then
+    echo "Warning: The base image runs in WSL."
+fi
+
 # shellcheck source=/dev/null
 . ./packages_install.sh
 # shellcheck source=/dev/null
