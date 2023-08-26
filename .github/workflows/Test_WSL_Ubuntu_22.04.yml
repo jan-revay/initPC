@@ -1,0 +1,18 @@
+name: CMake
+
+on:
+  push:
+    branches: [ "devel" ]
+  pull_request:
+    branches: [ "testing" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+    # see https://github.com/actions/checkout
+    - uses: actions/checkout@v3
+
+    - name: iniPC script does not fail
+      run: ${{github.workspace}}/WSL_Ubuntu_22.04/run_all.sh --noninteractive
