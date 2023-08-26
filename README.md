@@ -25,6 +25,18 @@ Minimal, stable, and testing branches are expected to be _always in a consistent
 O------> devel -------------> testing ---------> stable -----------> minimal
 ```
 
+#### Feature branch naming scheme
+
+All feature branches should be branched off and merged to devel (only devel itself
+can be merged into the branch testing). Names of feature branches must match the
+following:
+
+```
+devel-feature-<name of the feature>
+```
+
+Using a different naming scheme will break ./install_dotfiles.sh script.
+
 ## TODO
 
 1. Merge and deprecate the InitNewPC repo InitPC repo on org GitHub and initAndroid repo.

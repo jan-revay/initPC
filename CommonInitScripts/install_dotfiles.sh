@@ -14,7 +14,7 @@ NC='\033[0m' # No Color
 # see: https://www.atlassian.com/git/tutorials/dotfiles
 function dot
 {
-    git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}" $@
+    git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}" "$@"
 }
 
 # TODO Make .dotfiles_auto_backup a git repo and commit on every new backup (maybe I could even push somewhere upstream)
@@ -23,24 +23,26 @@ function backup_conflicting_dotfiles
 {
     echo -e "${GREEN}Backing up old dotfiles${NC}"
     mkdir -p ~/.dotfiles_auto_backup/
-    OLD_DOTFILES=$(dot checkout "${BRANCH}" 2>&1 | grep "^[[:space:]]\+[^[:space:]]\+$")
+    OLD_DOTFILES=$(dot checkout "${DOTFILES_BRANCH}" 2>&1 | grep "^[[:space:]]\+[^[:space:]]\+$")
     readonly OLD_DOTFILES
 
-    OLD_DOTDIRS=$(echo "$OLD_DOTFILES" | xargs -I{} dirname ${HOME}/.dotfiles_auto_backup/{})
+    OLD_DOTDIRS=$(echo "$OLD_DOTFILES" | xargs -I{} dirname "${HOME}/.dotfiles_auto_backup/{}")
     echo "$OLD_DOTDIRS" | xargs -I{} mkdir -p {}
     echo "$OLD_DOTFILES" | xargs -I{} mv ~/{} ~/.dotfiles_auto_backup/{}
 }
 
 function checkout_dotfiles
 {
-    BRANCH=$(git symbolic-ref --short HEAD)
-    readonly BRANCH
-    if ! dot checkout "${BRANCH}"; then
+    DOTFILES_BRANCH=$(git symbolic-ref --short HEAD)
+    # e.g. "devel-feature-precommit-hooks" -> "devel"
+    DOTFILES_BRANCH=$(echo "${DOTFILES_BRANCH}" | grep -o "[a-z]\+-" | head -n 1 | grep -o "[a-z]\+")
+    readonly DOTFILES_BRANCH
+    if ! dot checkout "${DOTFILES_BRANCH}"; then
         backup_conflicting_dotfiles
-        dot checkout "${BRANCH}"
+        dot checkout "${DOTFILES_BRANCH}"
     fi
 
-    echo -e "${GREEN}Checked out dotfiles branch:" ${BRANCH}${NC}
+    echo -e "${GREEN}Checked out dotfiles branch: ${DOTFILES_BRANCH}${NC}"
 }
 
 # TODO consider using git checkout --force as a simplification
