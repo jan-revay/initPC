@@ -23,9 +23,13 @@ if [ "$1" = "--help" ]; then
     # shellcheck disable=SC2016
     echo '--noninteractive  skip stuff requiring user interaction (e.g. `gh auth login`)'
     exit 0
-elif [ "$1" != "--noninteractive" ]; then
+fi
+
+if [ "$1" == "--noninteractive" ]; then
+    echo "Skipping interactive commands as $1 parameter was provided"
+elif [ "$1" == "" ]; then
     interactive_part
-elif [ "$1" != "" ]; then
+else
     echo "invalid argument $1"
     exit 1
 fi
