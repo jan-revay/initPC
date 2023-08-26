@@ -7,7 +7,13 @@ if [[ "$(lsb_release --description --short)" != 'Pop!_OS 22.04 LTS' ]]; then
 fi
 
 if uname -r | grep "WSL2"; then
-    echo "Warning: The base image runs in WSL."
+    echo "Error: The script runs in WSL."
+    exit 3
+fi
+
+if ! gnome-extensions --version; then
+    echo 'GNOME not found'
+    exit 4
 fi
 
 # shellcheck source=/dev/null
