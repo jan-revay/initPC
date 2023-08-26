@@ -37,6 +37,17 @@ devel-feature-<name of the feature>
 
 Using a different naming scheme will break ./install_dotfiles.sh script.
 
+## Installing pre-commit hooks
+
+To install pre-commit hooks run:
+
+```
+cd ./initPC/.git/hooks/
+ln -s ../../pre-commit-hook.sh pre-commit
+```
+
+The precommit hooks currently run `shfmt` and `shellcheck`
+
 ## TODO
 
 1. Merge and deprecate the InitNewPC repo InitPC repo on org GitHub and initAndroid repo.
