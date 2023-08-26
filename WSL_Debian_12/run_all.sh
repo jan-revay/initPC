@@ -11,9 +11,15 @@ if ! grep 'PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"' /etc/os-release; then
     exit 1
 fi
 
-if ! uname -r | grep "WSL2"; then
-    echo "Warning: The base image probably does not run in WSL."
-    exit 2
+# TODO remove resp. rename the script directory
+# if ! uname -r | grep "WSL2"; then
+#     echo "Warning: The base image probably does not run in WSL."
+#     exit 2
+# fi
+
+if gnome-extensions --version; then
+    echo 'Use Ubuntu Desktop installer (./Ubuntu_22.04)'
+    echo 'This script is targeted only to CLI installations'
 fi
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)

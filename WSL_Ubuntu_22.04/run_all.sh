@@ -11,9 +11,15 @@ if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* ]]; then
     exit 1
 fi
 
-if ! uname -r | grep "WSL2"; then
-    echo "Warning: The base image probably does not run in WSL."
-    exit 2
+# TODO remove resp. rename the script directory
+# if ! uname -r | grep "WSL2"; then
+#     echo "Warning: The base image probably does not run in WSL."
+#     exit 2
+# fi
+
+if gnome-extensions --version; then
+    echo 'Use Ubuntu Desktop installer (./Ubuntu_22.04)'
+    echo 'This script is targeted only to CLI installations'
 fi
 
 # TODO "Which services should be restarted?" prompt is still present in VM
