@@ -4,11 +4,14 @@ A collection of (C++, Python & Rust development-oriented) config scripts to quic
 
 ## How to use
 
-1. `git clone https://github.com/jan-revay/initPC.git`
-2. `cd initPC/`
-3. `./run_init.sh` (a platform independent init script launcher)
+1. `cd ~`
+2. `git clone https://github.com/jan-revay/initPC.git`
+3. `cd initPC/`
+4. `./run_init.sh` (a platform-independent init script launcher)
 
-Note: `cat <logfile>` will display the logfile with the original VT100 colors.
+Note: `cat <logfile>` will display the log file with the original VT100 colors.
+
+After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changing a config file, or adding an alias...), run the `refresh` command from Bash. The `refresh` command is an alias to `cd ~/initPC && ./run_init.sh`.
 
 ## Branches
 
