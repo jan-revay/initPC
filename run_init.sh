@@ -5,6 +5,8 @@
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 
+mkdir -p Logs
+
 function try_platform
 {
     cd "$1" || exit
