@@ -75,6 +75,7 @@ pipx install conan
 
 # === Rust packages ===
 # /home/jr/.cargo/bin is added to the path in .bashrc (and other rc files)
+# shellcheck source=/dev/null
 source "$HOME/.cargo/env"
 cargo install tokei
 cargo install du-dust
