@@ -1,4 +1,4 @@
-name: CMake
+name: WSL_Ubuntu_22.04 - iniPC script should not fail
 
 on:
   push:
