@@ -7,6 +7,7 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
+# TODO - add all packages to a single list (change this to a conditional append)
 if lspci | grep -i vmware; then                             # if the script is running inside of a VMware virtual machine
     sudo apt install -y open-vm-tools open-vm-tools-desktop # install "VMware tools" (drivers)
 else                                                        # we are running bare metal (I don't use VirtualBox or other hypervisors)

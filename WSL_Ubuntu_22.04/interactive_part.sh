@@ -12,8 +12,8 @@ function interactive_part
 {
     # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
     if ! gh auth status; then
-        sudo apt update
-        sudo apt install gh
+        sudo apt-get -y update
+        sudo apt-get install -y gh
         gh auth login --hostname github.com
     fi
 }

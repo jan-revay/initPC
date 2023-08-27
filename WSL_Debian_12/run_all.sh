@@ -32,3 +32,5 @@ fi
 . ../WSL_Ubuntu_22.04/configs_install.sh
 
 . ./source_packages_install.sh
+
+# . ../WSL_Ubuntu_22.04/packages_install_optional.sh

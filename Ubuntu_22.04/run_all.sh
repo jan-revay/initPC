@@ -30,11 +30,10 @@ export NEEDRESTART_SUSPEND=1
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
 . ./interactive_part.sh
 
-# shellcheck source=/dev/null
 . ./packages_install.sh
-# shellcheck source=/dev/null
+
 . ../WSL_Ubuntu_22.04/ppa_packages_install.sh
-# shellcheck source=/dev/null
+
 . ./configs_install.sh
 
 echo "INIT SCRIPT FINISHED SUCCESSFULLY, REBOOTING IN 30 SECONDS..."
