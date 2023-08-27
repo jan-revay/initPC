@@ -16,9 +16,7 @@ if ! gnome-extensions --version; then
     exit 4
 fi
 
-# shellcheck source=/dev/null
 . ./packages_install.sh
-# shellcheck source=/dev/null
 . ./configs_install.sh
 
 echo "INIT SCRIPT FINISHED SUCCESSFULLY, REBOOTING IN 30 SECONDS..."
