@@ -16,4 +16,4 @@ set -e # exit on error
 # TODO configure postfix in advance from command line
 # TODO what is this app and why does it automatically installs itself on Ubuntu
 # server/desktop, but not in wsl? It needs user interaction hence adding it here.
-sudo apt install postfix
+sudo apt-get install -y postfix
