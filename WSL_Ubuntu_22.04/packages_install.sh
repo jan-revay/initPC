@@ -42,7 +42,7 @@ sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # Install the most recent llvm (see https://apt.llvm.org/)
 pushd /tmp || exit
-# llvm.sh required packages are installed above
+# packages required by llvm.sh script are installed above
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 yes '' | sudo ./llvm.sh all
