@@ -11,7 +11,7 @@ export DEBIAN_FRONTEND=noninteractive
 export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
 
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
@@ -53,9 +53,9 @@ popd || exit
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # cleanup
-sudo apt-get -y autoremove
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get -y upgrade
+sudo apt-get -y autoremove
 apt list --upgradable # check for the packages that were not upgraded
 
 # === PYTHON APPLICATIONS ===
@@ -72,7 +72,6 @@ pipx install cpplint
 pipx install conan
 
 # === Rust packages ===
-# /home/jr/.cargo/bin is added to the path in .bashrc (and other rc files)
 # shellcheck source=/dev/null
 source "$HOME/.cargo/env"
 cargo install tokei

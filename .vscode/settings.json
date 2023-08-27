@@ -6,6 +6,7 @@
         "cppcheck",
         "cpplint",
         "dconf",
+        "dotfile",
         "dotfiles",
         "doxygen",
         "flawfinder",
