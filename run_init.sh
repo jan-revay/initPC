@@ -10,7 +10,6 @@ mkdir -p Logs
 function try_platform
 {
     cd "$1" || exit
-    # shellcheck disable=SC1091
     ./run_all.sh 2>&1 | tee ../Logs/"$(date "+%Y%m%d_%H%M%S")".log
     cd ..
 }

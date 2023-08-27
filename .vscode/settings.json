@@ -26,6 +26,8 @@
         "ripgrep",
         "rubygems",
         "scipy",
+        "shellcheck",
+        "shfmt",
         "tokei",
         "traceroute",
         "valgrind"

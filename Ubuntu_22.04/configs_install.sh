@@ -8,7 +8,6 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
-# shellcheck source=/dev/null
 . ../WSL_Ubuntu_22.04/configs_install.sh
 
 # GNOME TWEAKS
