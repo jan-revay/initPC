@@ -21,7 +21,7 @@ winget install -e --id Microsoft.Sysinternals.ProcessMonitor
 winget install -e --id Microsoft.DotNet.DesktopRuntime.6 # for GitExtensions
 winget install -e --id Microsoft.DotNet.DesktopRuntime.7
 winget install -e --id Microsoft.DotNet.SDK.7
-winget install -e --id GitExtensionsTeam.GitExtensions
+winget install -e --id GitExtensionsTeam.GitExtensions # TODO this package is also in packages_install.ps1
 
 # IDEs and code editors
 winget install -e --id Microsoft.VisualStudio.2022.Community
