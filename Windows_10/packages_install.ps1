@@ -31,6 +31,8 @@ winget install -e --id Ookla.Speedtest.Desktop
 # Version controll
 winget install -e --id GitHub.cli
 winget install -e --id Git.Git
+winget install -e --id GitHub.GitHubDesktop
+winget install -e --id GitExtensionsTeam.GitExtensions
 
 # Drivers and HW support
 winget install -e --id Logitech.OptionsPlus
