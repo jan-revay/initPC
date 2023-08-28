@@ -2,6 +2,9 @@
 # BASE IMAGE: WSL Debian 12
 # The script should not require any user input and should be idempotent.
 
+# Packages that are installed on Ubuntu, but not available on Debian (e.g. PPAs)
+# are installed here.
+
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
@@ -23,3 +26,7 @@ ln -f -s "$PWD/runtime" ~/.config/helix/runtime
 hx --grammar fetch
 hx --grammar build
 hx --health
+
+# TODO - do I need to use --force parameter to update cargo packages?
+# see: https://github.com/o2sh/onefetch/wiki/Installation#cargo
+cargo install onefetch
