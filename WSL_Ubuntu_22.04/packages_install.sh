@@ -83,4 +83,3 @@ sudo npm i -g bash-language-server
 
 # GEM packages
 sudo gem install mdl # markdown-lint
-
