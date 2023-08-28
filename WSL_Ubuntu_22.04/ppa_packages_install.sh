@@ -7,7 +7,8 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
 sudo add-apt-repository -y ppa:maveonair/helix-editor
+sudo add-apt-repository -y ppa:o2sh/onefetch
 sudo apt-get -y update
 
-APT_PACKAGES=(helix)
+APT_PACKAGES=(helix onefetch)
 sudo apt-get install -y "${APT_PACKAGES[@]}"
