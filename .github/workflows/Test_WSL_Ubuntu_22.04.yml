@@ -27,4 +27,4 @@ jobs:
 
     # TODO split this command to multiple lines
     - name: The initPC script should be idempotent on ~/ directory (WIP - not working correctly yet)
-      run: find ~/ -type f \( ! -iname "*.log" ! -path "*/.dotfiles/logs/HEAD" ! -path "*work/_temp/_runner_file_commands*" ! -name ".wget-hsts"  \) -print0 | xargs -0 -I{} bash -c 'diff "$1" "/tmp/old_home/$1"' bash {} || true
+      run: cd ~ && find . -type f \( ! -iname "*.log" ! -path "*/.dotfiles/logs/HEAD" ! -path "*work/_temp/_runner_file_commands*" ! -name ".wget-hsts"  \) -print0 | xargs -0 -I{} bash -c 'diff "$1" "/tmp/old_home/$1"' bash {} || true
