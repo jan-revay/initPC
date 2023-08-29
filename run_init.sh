@@ -8,7 +8,7 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 mkdir -p Logs
 
 LOG_PATH="../Logs/$(date '+%Y%m%d_%H%M%S').log"
-readonly LOG_PATH # the file should be rewritten
+readonly LOG_PATH # the file should be rewritten - TODO rewrite
 
 function try_platform
 {
