@@ -33,7 +33,7 @@ APT_PACKAGES+=(npm rubygems pipx)                                         # pack
 # NOTE: fd-find executable is called `fdfind`
 APT_PACKAGES+=(python3-pip) # various runtimes
 # TODO maybe add default-jre and dotnet7?
-APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy shellcheck)                  # static analyzers
+APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy shellcheck ruby-mdl)         # static analyzers
 APT_PACKAGES+=(cmake-format shfmt)                                           # code formatters
 APT_PACKAGES+=(valgrind hotspot heaptrack)                                   # dynamic analyzers , TODO test them
 APT_PACKAGES+=(python3-matplotlib python3-mock python3-numpy python3-pandas) # Python packages
@@ -77,12 +77,14 @@ pipx install conan
 source "$HOME/.cargo/env"
 # TODO try to find these packages in apt db or as snaps
 # TODO try to minimize the number of package managers I need to use
-# TODO installing cargo packages is super slow - try to find other way
+# TODO installing cargo packages is super slow - try to find another way
+# NOTE: du-dust and procs are also available at snap store, tokei is not
 CARGO_PACKAGES=(tokei du-dust procs)
 time cargo install "${CARGO_PACKAGES[@]}"
 
 # NPM packages
 time sudo npm i -g bash-language-server
 
+# TODO remove is not used (also with GEM)
 # GEM packages
-time sudo gem install mdl # markdown-lint
+# time sudo gem install mdl # markdown-lint
