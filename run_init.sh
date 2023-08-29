@@ -31,3 +31,6 @@ try_platform "WSL_Debian_12"
 try_platform "Ubuntu_22.04"
 try_platform "PopOS_22.04"
 try_platform "Android_13"
+
+cd .git/hooks/
+ln -s --force ../../pre-commit-hook.sh pre-commit
