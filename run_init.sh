@@ -15,6 +15,7 @@ function try_platform
     cd "$1" || exit 50
 
     time ./run_all.sh 2>&1 | tee "${LOG_PATH}"
+    # TODO - consider even better error code number (guaranteed to be unique)
     # exit code 126 = incorrect platform
     if [[ "${PIPESTATUS[0]}" != 126 ]]; then
         exit 0
