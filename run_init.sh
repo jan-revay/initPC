@@ -1,5 +1,5 @@
 #!/bin/bash -x
-# BASE IMAGE: WSL Ubuntu 22.04
+# BASE IMAGE: all
 # This script tries to detect platform automatically
 
 # makes the echo prompt yellow to improve readability
