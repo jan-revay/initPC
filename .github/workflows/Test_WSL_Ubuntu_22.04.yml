@@ -32,5 +32,5 @@ jobs:
         find . -type f \( ! -iname "*.log" ! -path "*/.dotfiles/logs/HEAD" ! -path "*work/_temp/*" \
         ! -path "./runners/*" ! -name ".wget-hsts"  \) -print0 |
         xargs -0 -I{} bash -c \
-        'diff "$1" "/tmp/old_home/$1"' \
+        'diff -s "$1" "/tmp/old_home/$1"' \
         bash {}
