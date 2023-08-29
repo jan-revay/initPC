@@ -1,19 +1,22 @@
 #!/bin/bash -x
 # BASE IMAGE: PopOS 22.04
 
+# makes the echo prompt yellow to improve readability
+export PS4="\[\033[1;93m\]+ \[\033[0m\]"
+set -e # exit on error
+
 if [[ "$(lsb_release --description --short)" != 'Pop!_OS 22.04 LTS' ]]; then
     echo 'Error: The base image does not match "Pop!_OS 22.04 LTS"! Aborting.'
-    exit 1
+    exit 126
 fi
 
 if uname -r | grep "WSL2"; then
-    echo "Error: The script runs in WSL."
-    exit 3
+    echo "Warning: The script runs in WSL."
 fi
 
 if ! gnome-extensions --version; then
-    echo 'GNOME not found'
-    exit 4
+    echo 'gnome-extensions not found'
+    exit 126
 fi
 
 . ./packages_install.sh

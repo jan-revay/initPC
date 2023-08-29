@@ -8,7 +8,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 if ! uname -a | grep Android; then
     echo The init script does not run on Android
-    exit 1
+    exit 126
 fi
 
 if ! gh auth status; then

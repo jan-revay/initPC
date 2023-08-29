@@ -1,6 +1,5 @@
 #!/bin/bash -x
 # BASE IMAGE: Ubuntu 22.04
-# The script should not require any user input and should be idempotent.
 
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
@@ -9,17 +8,16 @@ set -e # exit on error
 # TODO add Ubuntu version
 if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* ]]; then
     echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.'
-    exit 1
+    exit 126
 fi
 
 if uname -r | grep "WSL2"; then
-    echo "Error: The script runs in WSL."
-    exit 3
+    echo "Warning: The script runs in WSL."
 fi
 
 if ! gnome-extensions --version; then
-    echo 'GNOME not found'
-    exit 4
+    echo 'gnome-extensions not found'
+    exit 126
 fi
 
 # TODO "Which services should be restarted?" prompt is still present in VM

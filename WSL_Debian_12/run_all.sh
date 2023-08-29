@@ -8,7 +8,7 @@ set -e # exit on error
 
 if ! grep 'PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"' /etc/os-release; then
     echo 'Error: The base image does not match "Debian GNU/Linux 12 (bookworm)"! Aborting.'
-    exit 1
+    exit 126
 fi
 
 # TODO remove resp. rename the script directory
@@ -18,8 +18,10 @@ fi
 # fi
 
 if gnome-extensions --version; then
-    echo 'Use Ubuntu Desktop installer (./Ubuntu_22.04)'
+    # TODO - debian desktop installer
+    echo 'Use Debian Desktop installer (./Debian_12)'
     echo 'This script is targeted only to CLI installations'
+    exit 126
 fi
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
