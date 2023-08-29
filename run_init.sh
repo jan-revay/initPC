@@ -7,11 +7,15 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 
 mkdir -p Logs
 
+LOG_PATH="../Logs/$(date '+%Y%m%d_%H%M%S').log"
+readonly LOG_PATH # the file should be rewritten
+
 function try_platform
 {
     cd "$1" || exit 50
-    time ./run_all.sh 2>&1 | tee ../Logs/"$(date "+%Y%m%d_%H%M%S")".log
-    if [ ${PIPESTATUS[0]} = 0 ]; then
+
+    time ./run_all.sh 2>&1 | tee "${LOG_PATH}"
+    if [ "${PIPESTATUS[0]}" = 0 ]; then
         exit 0
     fi
 
