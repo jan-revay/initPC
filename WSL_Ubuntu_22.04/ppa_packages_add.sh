@@ -8,7 +8,5 @@ set -e # exit on error
 
 sudo add-apt-repository -y ppa:maveonair/helix-editor
 sudo add-apt-repository -y ppa:o2sh/onefetch
-sudo apt-get -y update
 
-APT_PACKAGES=(helix onefetch)
-sudo apt-get install -y "${APT_PACKAGES[@]}"
+APT_PACKAGES+=(helix onefetch)

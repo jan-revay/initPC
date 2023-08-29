@@ -29,9 +29,9 @@ export NEEDRESTART_SUSPEND=1
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
 . ./interactive_part.sh
 
-. ./packages_install.sh
+. ./ppa_packages_add.sh
 
-. ./ppa_packages_install.sh
+. ./packages_install.sh
 
 # . ./packages_install_optional.sh
 
