@@ -32,4 +32,4 @@ hx --health
 
 # TODO - do I need to use --force parameter to update cargo packages?
 # see: https://github.com/o2sh/onefetch/wiki/Installation#cargo
-cargo install onefetch
+cargo install onefetch du-dust procs
