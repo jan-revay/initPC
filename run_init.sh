@@ -15,7 +15,7 @@ function try_platform
     cd "$1" || exit 50
 
     time ./run_all.sh 2>&1 | tee "${LOG_PATH}"
-    if [ "${PIPESTATUS[0]}" = 0 ]; then
+    if [[ "${PIPESTATUS[0]}" == 0 || "${PIPESTATUS[0]}" == 126 ]]; then
         exit 0
     fi
 

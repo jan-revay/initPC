@@ -10,7 +10,7 @@ set -e # exit on error
 if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* &&
 "$(lsb_release --description --short)" != 'Ubuntu 23.04'* ]]; then
     echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.'
-    exit 1
+    exit 126
 fi
 
 # TODO remove resp. rename the script directory
@@ -22,6 +22,7 @@ fi
 if gnome-extensions --version; then
     echo 'Use Ubuntu Desktop installer (./Ubuntu_22.04)'
     echo 'This script is targeted only to CLI installations'
+    exit 126
 fi
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
