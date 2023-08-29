@@ -16,7 +16,7 @@ pkg upgrade -y # running upgrade once is sometimes not enough
 
 APT_PACKAGES=(wget gnupg curl tar)
 APT_PACKAGES+=(build-essential gdb ccache ninja cmake) # GCC and build tools
-# APT_PACKAGES+=(rust rustc-dev rust-analyzer) - broken
+APT_PACKAGES+=(rust rustc-dev rust-analyzer)
 APT_PACKAGES+=(python python-numpy) # python
 APT_PACKAGES+=(nodejs ruby)         # JavaScript & Ruby
 APT_PACKAGES+=(neovim helix)        # code editors
