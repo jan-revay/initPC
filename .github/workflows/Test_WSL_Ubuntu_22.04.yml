@@ -29,6 +29,7 @@ jobs:
     - name: The initPC script should be idempotent on ~/ directory (WIP - not working correctly yet)
       run: |
         cd ~
+        pwd
         find . -type f \( ! -iname "*.log" ! -path "*/.dotfiles/logs/HEAD" ! -path "*work/_temp/*" \
         ! -path "./runners/*" ! -name ".wget-hsts"  \) -print0 |
         xargs -0 -I{} bash -c \
