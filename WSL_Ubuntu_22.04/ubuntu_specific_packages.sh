@@ -11,7 +11,5 @@ sudo add-apt-repository -y ppa:o2sh/onefetch
 
 APT_PACKAGES+=(helix onefetch)
 
-sudo snap install core
-
 SNAP_PACKAGES+=(dust procs)
 sudo snap install "${SNAP_PACKAGES[@]}"
