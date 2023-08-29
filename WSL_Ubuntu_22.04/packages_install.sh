@@ -13,7 +13,7 @@ export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
 
 sudo apt-get -y update
-sudo apt-get -y upgrade
+time sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
 # sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test # repository with latest GCC
@@ -39,7 +39,7 @@ APT_PACKAGES+=(valgrind hotspot heaptrack)                                   # d
 APT_PACKAGES+=(python3-matplotlib python3-mock python3-numpy python3-pandas) # Python packages
 APT_PACKAGES+=(python3-pytest python3-requests python3-scipy python3-pylsp)  # Python packages
 APT_PACKAGES+=(wget lsb-release software-properties-common gnupg curl)       # requirements for llvm and rust install scripts
-sudo apt-get install -y "${APT_PACKAGES[@]}"
+time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # Install the most recent llvm (see https://apt.llvm.org/)
 pushd /tmp || exit
@@ -82,7 +82,7 @@ CARGO_PACKAGES=(tokei du-dust procs)
 time cargo install "${CARGO_PACKAGES[@]}"
 
 # NPM packages
-sudo npm i -g bash-language-server
+time sudo npm i -g bash-language-server
 
 # GEM packages
-sudo gem install mdl # markdown-lint
+time sudo gem install mdl # markdown-lint
