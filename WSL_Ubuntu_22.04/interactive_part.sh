@@ -18,7 +18,10 @@ function interactive_part
         sudo apt-get install -y gh
         echo "${GITHUB_TOKEN}" | gh auth login --hostname github.com --with-token
         gh config set git_protocol https --host github.com
-        echo "    user: jan-revay" >> ~/.config/gh/hosts.yml
+        # With the next line, the result of `gh auth login` would be exactly the same
+        # as if we used the interactive version. Though authentication appears to work
+        # without it, hence it is commented out.
+        # echo "    user: jan-revay" >> ~/.config/gh/hosts.yml
         gh auth setup-git
     fi
 }
