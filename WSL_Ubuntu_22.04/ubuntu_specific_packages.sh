@@ -6,10 +6,9 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
-sudo add-apt-repository -y ppa:maveonair/helix-editor
-sudo add-apt-repository -y ppa:o2sh/onefetch
-
-APT_PACKAGES+=(helix onefetch)
-
-SNAP_PACKAGES+=(dust procs)
-time sudo snap install "${SNAP_PACKAGES[@]}"
+# list install is not idempotent for some reason - TODO fix
+# SNAP_PACKAGES+=(dust procs onefetch) - 
+time sudo snap install dust
+time sudo snap install procs
+time sudo snap install onefetch
+time sudo snap install helix --classic
