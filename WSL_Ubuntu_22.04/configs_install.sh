@@ -5,9 +5,8 @@
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
-# TODO set the current directory?
 
-. ../CommonInitScripts/mkdirs.sh # TODO this is not a dotfile
+. ../CommonInitScripts/mkdirs.sh
 
 # ==== Dotfiles ====
 . ../CommonInitScripts/git_config.sh.ps1
