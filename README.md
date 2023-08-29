@@ -75,3 +75,4 @@ The pre-commit hook currently runs `shfmt` and `shellcheck`. Pre-commit hooks ar
 16. Consider running the whole `./run_all.sh` script as sudo and removing `sudo` commands from the script.
 17. Shorten the names of branches I use most often devel -> dev, testing -> test
 18. Consider using <http://www.bashbooster.net/> or some similar light-weight library.
+19. Format to max 82 chars in a line. 
