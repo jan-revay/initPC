@@ -18,8 +18,8 @@ function interactive_part
         sudo apt-get install -y gh
         echo "${GITHUB_TOKEN}" | gh auth login --hostname github.com --with-token
         gh config set git_protocol https --host github.com
-        # With the next line, the result of `gh auth login` would be exactly the same
-        # as if we used the interactive version. The authentication on Ubuntu 22.04
+        # With the next line, the result of `gh auth login` is exactly the same as
+        # if we used the interactive version. The authentication on Ubuntu 22.04
         # does not work without it. The noninteractive version does not set user for
         # some reason (probably a bug TODO report it).
         echo "    user: jan-revay" >> ~/.config/gh/hosts.yml
