@@ -7,6 +7,11 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 
 set -e # exit on error
 
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+echo -e "${GREEN} ######  RUNNING PRE-COMMIT HOOKS  ###### ${NC}"
+
 find . -type f -name "*.sh" -execdir shfmt -w {} \;
 
 # NOTE: `find -execdir` cannot be used because it does not propagate errors
