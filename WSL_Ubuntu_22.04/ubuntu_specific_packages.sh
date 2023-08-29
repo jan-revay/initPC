@@ -13,5 +13,5 @@ APT_PACKAGES+=(helix onefetch)
 
 sudo snap install core
 
-SNAP_PACKAGES+=(du-dust procs)
+SNAP_PACKAGES+=(dust procs)
 sudo snap install "${SNAP_PACKAGES[@]}"
