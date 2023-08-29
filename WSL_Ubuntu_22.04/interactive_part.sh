@@ -13,9 +13,9 @@ function interactive_part
     # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
     if ! gh auth status; then
         read -s -p "GitHub token: " GITHUB_TOKEN
+        echo # add newline
         sudo apt-get -y update
         sudo apt-get install -y gh
-        echo # add newline
         echo "${GITHUB_TOKEN}" | gh auth login --hostname github.com --with-token
         gh config set git_protocol https --host github.com
         echo "    user: jan-revay" >> ~/.config/gh/hosts.yml
