@@ -6,8 +6,9 @@ A collection of (C++, Python & Rust development-oriented) config scripts to quic
 
 1. `cd ~`
 2. `git clone https://github.com/jan-revay/initPC.git`
-3. `cd initPC/`
-4. `./run_init.sh` (a platform-independent init script launcher)
+3. `git checkout <branch>` (optional, default is the branch stable)
+4. `cd initPC/`
+5. `./run_init.sh` (a platform-independent init script launcher)
 
 Note: `cat <logfile>` will display the log file with the original VT100 colors.
 
