@@ -12,7 +12,7 @@ function interactive_part
 {
     # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
     if ! gh auth status; then
-        read -s -p "GitHub token: " GITHUB_TOKEN
+        read -r -s -p "GitHub token: " GITHUB_TOKEN
         echo # add newline
         sudo apt-get -y update
         sudo apt-get install -y gh

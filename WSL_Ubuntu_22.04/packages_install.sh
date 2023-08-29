@@ -22,8 +22,8 @@ LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' \
 
 # see https://github.com/rr-debugger/rr/wiki/Using-rr-in-an-IDE
 APT_PACKAGES+=(build-essential gdb rr ccache ninja-build cmake cmake-gui) # GCC and build tools
-APT_PACKAGES+=(gcc-"${LATEST_GCC_VER_IN_APT}")                           # latest GCC
-APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                           # latest g++
+APT_PACKAGES+=(gcc-"${LATEST_GCC_VER_IN_APT}")                            # latest GCC
+APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                            # latest g++
 
 # APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
 APT_PACKAGES+=(neovim emacs qtcreator)                                    # editors
