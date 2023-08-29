@@ -32,4 +32,6 @@ hx --health
 
 # TODO - do I need to use --force parameter to update cargo packages?
 # see: https://github.com/o2sh/onefetch/wiki/Installation#cargo
-cargo install onefetch du-dust procs
+# TODO enable systemd and install these via snaps - that way I can use identical install script
+# for ubuntu and debian (don't forget to make writing /etc/wsl.conf idempotent)
+cargo install onefetch du-dust # procs - procs is temporary broken
