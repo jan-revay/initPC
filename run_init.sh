@@ -10,8 +10,8 @@ mkdir -p Logs
 function try_platform
 {
     cd "$1" || exit 50
-
-    if time ./run_all.sh 2>&1 | tee ../Logs/"$(date "+%Y%m%d_%H%M%S")".log; then
+    time ./run_all.sh 2>&1 | tee ../Logs/"$(date "+%Y%m%d_%H%M%S")".log
+    if [ ${PIPESTATUS[0]} = 0 ]; then
         exit 0
     fi
 
