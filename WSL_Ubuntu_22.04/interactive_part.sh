@@ -19,7 +19,7 @@ function interactive_part
         echo "${GITHUB_TOKEN}" | gh auth login --hostname github.com --with-token
         gh config set git_protocol https --host github.com
         echo "    user: jan-revay" >> ~/.config/gh/hosts.yml
-        gh auth --setup-git
+        gh auth setup-git
     fi
 }
 
