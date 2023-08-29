@@ -75,7 +75,8 @@ pipx install conan
 # === Rust packages ===
 # shellcheck source=/dev/null
 source "$HOME/.cargo/env"
-# TODO try to find these packages in apt db
+# TODO try to find these packages in apt db or as snaps
+# TODO try to minimize the number of package managers I need to use
 CARGO_PACKAGES=(tokei du-dust procs)
 cargo install "${CARGO_PACKAGES[@]}"
 
