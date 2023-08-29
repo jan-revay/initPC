@@ -2,6 +2,7 @@
 # BASE IMAGE: WSL Ubuntu 22.04
 # The script should not require any user input and should be idempotent.
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
+# TODO move the package lists to external files
 
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
@@ -74,9 +75,9 @@ pipx install conan
 # === Rust packages ===
 # shellcheck source=/dev/null
 source "$HOME/.cargo/env"
-cargo install tokei
-cargo install du-dust
-cargo install procs
+# TODO try to find these packages in apt db
+CARGO_PACKAGES=(tokei du-dust procs)
+cargo install "${CARGO_PACKAGES[@]}"
 
 # NPM packages
 sudo npm i -g bash-language-server
