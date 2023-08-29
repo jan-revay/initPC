@@ -78,7 +78,7 @@ source "$HOME/.cargo/env"
 # TODO try to find these packages in apt db or as snaps
 # TODO try to minimize the number of package managers I need to use
 CARGO_PACKAGES=(tokei du-dust procs)
-cargo install "${CARGO_PACKAGES[@]}"
+time cargo install "${CARGO_PACKAGES[@]}"
 
 # NPM packages
 sudo npm i -g bash-language-server
