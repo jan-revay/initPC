@@ -7,6 +7,10 @@
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 
+pushd .git/hooks/ || exit 40
+ln -s --force ../../pre-commit-hook.sh pre-commit
+popd || exit 40
+
 mkdir -p Logs
 
 LOG_PATH="../Logs/$(date '+%Y%m%d_%H%M%S').log"
@@ -32,5 +36,4 @@ try_platform "Ubuntu_22.04"
 try_platform "PopOS_22.04"
 try_platform "Android_13"
 
-cd .git/hooks/
-ln -s --force ../../pre-commit-hook.sh pre-commit
+
