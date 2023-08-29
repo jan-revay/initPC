@@ -10,3 +10,6 @@ sudo add-apt-repository -y ppa:maveonair/helix-editor
 sudo add-apt-repository -y ppa:o2sh/onefetch
 
 APT_PACKAGES+=(helix onefetch)
+
+SNAP_PACKAGES+=(du-dust procs)
+sudo snap install "${SNAP_PACKAGES[@]}"
