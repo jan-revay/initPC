@@ -10,7 +10,9 @@ set -e # exit on error
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
+echo
 echo -e "${GREEN} ######  RUNNING PRE-COMMIT HOOKS  ###### ${NC}"
+echo
 
 find . -type f -name "*.sh" -execdir shfmt -w {} \;
 
