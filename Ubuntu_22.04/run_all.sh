@@ -32,7 +32,7 @@ export NEEDRESTART_SUSPEND=1
 
 . ./packages_install.sh
 
-. ../WSL_Ubuntu_22.04/ppa_packages_install.sh
+. ../WSL_Ubuntu_22.04/ubuntu_specific_packages.sh
 
 . ./configs_install.sh
 

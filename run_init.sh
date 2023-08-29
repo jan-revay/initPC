@@ -10,7 +10,11 @@ mkdir -p Logs
 function try_platform
 {
     cd "$1" || exit 50
-    ./run_all.sh 2>&1 | tee ../Logs/"$(date "+%Y%m%d_%H%M%S")".log
+
+    if time ./run_all.sh 2>&1 | tee ../Logs/"$(date "+%Y%m%d_%H%M%S")".log; then
+        exit 0
+    fi
+
     cd ..
 }
 
