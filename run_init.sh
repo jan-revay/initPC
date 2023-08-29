@@ -2,6 +2,8 @@
 # BASE IMAGE: all
 # This script tries to detect platform automatically
 
+# TODO include this script in CI directly
+
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 
