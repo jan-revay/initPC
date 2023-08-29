@@ -22,10 +22,6 @@ if gnome-extensions --version; then
     echo 'This script is targeted only to CLI installations'
 fi
 
-# TODO "Which services should be restarted?" prompt is still present in VM
-export NEEDRESTART_MODE=a
-export NEEDRESTART_SUSPEND=1
-
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
 . ./interactive_part.sh
 
