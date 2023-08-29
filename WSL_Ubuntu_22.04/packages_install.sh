@@ -77,6 +77,7 @@ pipx install conan
 source "$HOME/.cargo/env"
 # TODO try to find these packages in apt db or as snaps
 # TODO try to minimize the number of package managers I need to use
+# TODO installing cargo packages is super slow - try to find other way
 CARGO_PACKAGES=(tokei du-dust procs)
 time cargo install "${CARGO_PACKAGES[@]}"
 
