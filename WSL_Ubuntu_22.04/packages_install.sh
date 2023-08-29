@@ -46,12 +46,12 @@ pushd /tmp || exit
 # packages required by llvm.sh script are installed above
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
-yes '' | sudo ./llvm.sh all
+time yes '' | sudo ./llvm.sh all
 rm llvm.sh
 popd || exit
 
 # Install rust ecosystem
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+time curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # cleanup
 sudo apt-get -y update
