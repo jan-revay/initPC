@@ -10,7 +10,7 @@ A collection of (C++, Python & Rust development-oriented) config scripts to quic
 4. `git checkout <branch>` (optional, default is the branch stable)
 5. `./run_init.sh` (a platform-independent init script launcher)
 
-Note: `cat <logfile>` will display the log file with the original VT100 colors.
+Note: Logs will appear in the folder `/initPC/Logs/`. `cat <logfile>` will display a log file with the original VT100 colors.
 
 After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changing a config file, or adding an alias...), run the `refresh` command from Bash. The `refresh` command is an alias to `cd ~/initPC && git pull && ./run_init.sh`.
 
