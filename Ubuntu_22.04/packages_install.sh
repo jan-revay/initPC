@@ -33,7 +33,9 @@ sudo apt install -y flatpak meld kdevelop coqide gitk cmake-gui # editors, tools
 
 sudo apt install -y snapd
 # TODO reloading bashrc might be needed
-sudo snap install core snap-store
+# Installing snaps from a list is not idempotent for some reason TODO try fixing
+sudo snap install core
+sudo snap install snap-store
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
