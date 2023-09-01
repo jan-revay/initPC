@@ -64,15 +64,17 @@ The pre-commit hook currently runs `shfmt` and `shellcheck`. Pre-commit hooks ar
 6. Have a look at popOS packages and add the useful ones to other init scripts
 7. Design a system for applying the configs on all my machines once they
    were updated here.
-8. Add more C++ tools from here: <https://github.com/cpp-best-practices/cppbestpractices/blob/master/02-Use_the_Tools_Available.md>
-9. Add Bats automated tests
-10. Try adding NixOS
-11. Create CI tests on GitHub
-12. Todos from the repo
-13. Make the core Linux init script Debian based (i.e. other distros just add stuff to the Debian base init script)
-14. Maybe replace the Debian variants (Ubuntu, PopOS...) with a single Ansible script with conditionals?
-15. Do some research on whether snap and flatpak packages work in WSL resp. which alternative package manager to use in WSL
-16. Consider running the whole `./run_all.sh` script as sudo and removing `sudo` commands from the script.
-17. Shorten the names of branches I use most often devel -> dev, testing -> test
-18. Consider using <http://www.bashbooster.net/> or some similar light-weight library.
-19. Format to max 82 chars in a line. 
+   - implement `refresh` alias
+   - add notification to .bashrc if the initPC or dotfiles are not up to date
+9. Add more C++ tools from here: <https://github.com/cpp-best-practices/cppbestpractices/blob/master/02-Use_the_Tools_Available.md>
+10. Add Bats automated tests
+11. Try adding NixOS
+12. Create CI tests on GitHub
+13. Todos from the repo
+14. Make the core Linux init script Debian based (i.e. other distros just add stuff to the Debian base init script)
+15. Maybe replace the Debian variants (Ubuntu, PopOS...) with a single Ansible script with conditionals?
+16. Do some research on whether snap and flatpak packages work in WSL resp. which alternative package manager to use in WSL
+17. Consider running the whole `./run_all.sh` script as sudo and removing `sudo` commands from the script.
+18. Shorten the names of branches I use most often devel -> dev, testing -> test
+19. Consider using <http://www.bashbooster.net/> or some similar light-weight library.
+20. Format to max 82 chars in a line. 
