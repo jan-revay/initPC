@@ -5,8 +5,10 @@
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
-# TODO add Ubuntu version
-if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* ]]; then
+# TODO what about supporting all Ubuntu 2x versions?
+# TODO Ubuntu 23.04 works, hence it can be allowed, make this official
+if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* &&
+"$(lsb_release --description --short)" != 'Ubuntu 23.04'* ]]; then
     echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.'
     exit 126
 fi
