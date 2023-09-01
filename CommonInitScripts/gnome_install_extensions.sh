@@ -1,6 +1,7 @@
 #!/bin/bash -x
 # BASE IMAGE: WSL Ubuntu 22.04
-# The script REQUIRES USER INTERACTION IN GNOME!!!
+# This script should be idempotent.
+# This script REQUIRES USER INTERACTION IN GNOME!!!
 
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
@@ -10,50 +11,29 @@ set -e # exit on error
 
 # org.gnome.Shell.Extensions.InstallRemoteExtension() is the same DBus method that is used in the
 # gnome-browser-connector package (the package that installs extesions via Chrome/Firefox plugin)
-## @note the gdbus call InstallRemoteExtension() is invoked twice twice as sometimes the first call fails
+## @note the gdbus call InstallRemoteExtension() might need to be invoked twice
+## as sometimes the first call fails.
 
-# TODO try to remove || true
-# TODO create a function install_gnome_extension() and call it on a list, instead of this
+function install_gnome_extension
+{
+    local EXTENSION_ID="$1"
 
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "scroll-workspaces@gfxmonk.net" \
-    || true
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "scroll-workspaces@gfxmonk.net" \
-    || true
+    # TODO test whether all extensions are installed the first call
+    # if not, call gdbus in a while loop
+    if ! gnome-extensions list | grep "${EXTENSION_ID}"; then
+        gdbus call --session --dest org.gnome.Shell.Extensions \
+            --object-path /org/gnome/Shell/Extensions \
+            --method org.gnome.Shell.Extensions.InstallRemoteExtension \
+            "${EXTENSION_ID}"
+    fi
+}
 
-# Outdated, replace with this.simple-indication-of-workspaces@azate.email ? (or try to find similar tool)
-# gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-#     /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "workspaces-bar@fthx" \
-#     || true
-# gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-#     /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "workspaces-bar@fthx" \
-#     || true
-
-sudo apt install -y gnome-shell-extension-manager gir1.2-gtop-2.0 lm-sensors # vitals monitor needs that
-
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "Vitals@CoreCoding.com" \
-    || true
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "Vitals@CoreCoding.com" \
-    || true
-
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "hide-universal-access@akiirui.github.io" \
-    || true
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension "hide-universal-access@akiirui.github.io" \
-    || true
-
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension \
-    "auto-move-windows@gnome-shell-extensions.gcampax.github.com" \
-    || true
-gdbus call --session --dest org.gnome.Shell.Extensions --object-path \
-    /org/gnome/Shell/Extensions --method org.gnome.Shell.Extensions.InstallRemoteExtension \
-    "auto-move-windows@gnome-shell-extensions.gcampax.github.com" \
-    || true
+install_gnome_extension "scroll-workspaces@gfxmonk.net"
+install_gnome_extension "Vitals@CoreCoding.com"
+install_gnome_extension "hide-universal-access@akiirui.github.io"
+install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
+# TODO Do some research whether there is not some better workspace indicator.
+install_gnome_extension "this.simple-indication-of-workspaces@azate.email"
 
 # TODO Gnome extensions to try
 # - some new clipboard manager
