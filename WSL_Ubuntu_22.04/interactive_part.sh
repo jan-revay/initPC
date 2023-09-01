@@ -41,5 +41,5 @@ elif [ "$1" == "" ]; then
     interactive_part
 else
     echo "invalid argument $1"
-    exit 126
+    exit 1
 fi
