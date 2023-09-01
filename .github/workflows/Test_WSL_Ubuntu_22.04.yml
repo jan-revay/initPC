@@ -3,6 +3,10 @@ name: WSL_Ubuntu_22.04 - iniPC script
 on:
   push:
     branches: [ "devel" ]
+    paths:
+    - './WSL_Ubuntu_22.04/*.sh'
+    - './CommonInitScripts/*.sh*'
+    - './.github/workflows/Test_WSL_Ubuntu_22.04.yml'
   pull_request:
     branches: [ "testing" ]
 
