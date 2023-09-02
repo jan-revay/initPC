@@ -14,8 +14,8 @@ function interactive_part
     if ! gh auth status; then
         read -r -s -p "GitHub token: " GITHUB_TOKEN
         echo # add newline
-        sudo apt-fast -y update
-        sudo apt-fast install -y gh
+        sudo apt-get -y update
+        sudo apt-get install -y gh
         echo "${GITHUB_TOKEN}" | gh auth login --hostname github.com --with-token
         gh config set git_protocol https --host github.com
         # With the next line, the result of `gh auth login` is exactly the same as
