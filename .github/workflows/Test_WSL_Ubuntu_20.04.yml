@@ -1,0 +1,40 @@
+name: WSL_Ubuntu_22.04 - iniPC script
+
+on:
+  push:
+    branches: [ "devel" ]
+    paths:
+    - 'WSL_Ubuntu_22.04/*.sh'
+    - 'CommonInitScripts/*.sh*'
+    - '.github/workflows/Test_WSL_Ubuntu_22.04.yml'
+  pull_request:
+    branches: [ "testing" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+    # see https://github.com/actions/checkout
+    - uses: actions/checkout@v3
+      with:
+        ref: devel
+
+    - name: iniPC script should not fail
+      run: cd ${{github.workspace}}/WSL_Ubuntu_22.04/ && ./run_all.sh --noninteractive
+
+    - name: save ~/ for idempotency test
+      run: cp -r ~/ /tmp/old_home/
+
+    - name: running iniPC script 2nd time should not fail
+      run: cd ${{github.workspace}}/WSL_Ubuntu_22.04/ && ./run_all.sh --noninteractive
+
+    # TODO split this command to multiple lines
+    - name: The initPC script should be idempotent on ~/ directory (WIP - not working correctly yet)
+      run: |
+        cd ~
+        pwd
+        find . -type f \( ! -iname "*.log" ! -path "*/.dotfiles/logs/HEAD" \
+        ! -path "*work/_temp/*" ! -path "./runners/*" \
+        ! -name ".wget-hsts"  \) -print0 |
+        xargs -0 -I{} bash -c 'diff "$1" "/tmp/old_home/$1"' bash {}
