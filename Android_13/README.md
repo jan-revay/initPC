@@ -14,3 +14,4 @@ Once termux is installed continue as described in the main [README.md](https://g
 ## Similar repos
 
 - <https://github.com/Sohil876/Termux-zsh/tree/master>
+- <https://github.com/adi1090x/termux-desktop/tree/master>
