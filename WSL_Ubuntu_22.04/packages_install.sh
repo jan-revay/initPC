@@ -12,8 +12,8 @@ export DEBIAN_FRONTEND=noninteractive
 export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
 
-sudo apt-fast -y update
-time sudo apt-fast -y upgrade
+sudo apt-get -y update
+time sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
 # sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test # repository with latest GCC
@@ -39,7 +39,7 @@ APT_PACKAGES+=(valgrind hotspot heaptrack)                                   # d
 APT_PACKAGES+=(python3-matplotlib python3-mock python3-numpy python3-pandas) # Python packages
 APT_PACKAGES+=(python3-pytest python3-requests python3-scipy python3-pylsp)  # Python packages
 APT_PACKAGES+=(wget lsb-release software-properties-common gnupg curl)       # requirements for llvm and rust install scripts
-time sudo apt-fast install -y "${APT_PACKAGES[@]}"
+time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # Install the most recent llvm (see https://apt.llvm.org/)
 pushd /tmp || exit
@@ -54,8 +54,8 @@ popd || exit
 time curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # cleanup
-sudo apt-fast -y update
-sudo apt-fast -y upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt-get -y autoremove
 apt list --upgradable # check for the packages that were not upgraded
 
