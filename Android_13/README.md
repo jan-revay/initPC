@@ -10,3 +10,7 @@ Once termux is installed continue as described in the main [README.md](https://g
 
 1. Error msg when installing some pkgs - "Could not build wheels for Ninja" - solve.
 2. 
+
+## Similar repos
+
+- <https://github.com/Sohil876/Termux-zsh/tree/master>
