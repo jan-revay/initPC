@@ -1,4 +1,4 @@
-name: WSL_Ubuntu_22.04 - iniPC script
+name: WSL_Ubuntu_20.04 - iniPC script
 
 on:
   push:
