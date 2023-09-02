@@ -33,7 +33,9 @@ install_gnome_extension "Vitals@CoreCoding.com"
 install_gnome_extension "hide-universal-access@akiirui.github.io"
 install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
 # TODO Do some research whether there is not some better workspace indicator.
+# TODO experimental extensions - TODO - evaluate
 install_gnome_extension "this.simple-indication-of-workspaces@azate.email"
+install_gnome_extension "quake-mode@repsac-by.github.com"
 
 # TODO Gnome extensions to try
 # - some new clipboard manager
