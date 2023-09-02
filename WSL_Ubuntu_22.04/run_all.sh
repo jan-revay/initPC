@@ -7,9 +7,10 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
 # TODO Ubuntu 23.04 works, hence it can be allowed, make this official
-# TODO try enabling 2x in general
+# TODO try enabling 2x in general - this did not work - some packages are not avaliable on 20.04
+# TODO try enabling 22.04 + (ideally by explicit naming)
 if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* &&
-"$(lsb_release --description --short)" != 'Ubuntu 2'* ]]; then
+"$(lsb_release --description --short)" != 'Ubuntu 23.04'* ]]; then
     echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.'
     exit 126
 fi
