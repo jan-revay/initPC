@@ -26,6 +26,10 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 # TODO test all these settings (whether they work, set stuff in Dconf and whether
 # they work as intended)
 # TODO describe the procedure of capturing the GSettings (Dconf monitor)
+# TODO normalize keyboard shortcuts for copy pasting and copy pasting from terminal
+# ideally switch Ctrl+C and Shift+Ctrl+C in terminal settings
+# TODO problem witch vim on Allacrity on Pop (try later release of Allacrity or reporting the bug)
+# TODO try Kitty terminal from JG and some other terminal emulators from my notes
 # KEYBOARD SHORTCUTS AND SETTINGS
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 # TODO test the keyboard settings
