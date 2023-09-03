@@ -28,6 +28,8 @@ function install_gnome_extension
     fi
 }
 
+# TODO find extension for clipboard management
+
 install_gnome_extension "scroll-workspaces@gfxmonk.net"
 install_gnome_extension "Vitals@CoreCoding.com"
 install_gnome_extension "hide-universal-access@akiirui.github.io"
