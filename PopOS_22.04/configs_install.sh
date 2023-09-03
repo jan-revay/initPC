@@ -57,7 +57,7 @@ gsettings set org.gnome.shell.extensions.pop-cosmic show-workspaces-button 'fals
 gsettings set org.gnome.shell.extensions.pop-cosmic workspace-picker-left 'true'
 # TODO split that long line to multiple lines (find an elegant way)
 gsettings set org.gnome.shell.extensions.auto-move-windows application-list \
-"['google-chrome.desktop:1', 'firefox.desktop:3', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.todoist.Todoist.desktop:3', 'org.gnome.Nautilus.desktop:4']"
+    "['google-chrome.desktop:1', 'firefox.desktop:3', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.todoist.Todoist.desktop:3', 'org.gnome.Nautilus.desktop:4']"
 gsettings set com.github.repsac-by.quake-mode quake-mode-tray 'false'
 gsettings set com.github.repsac-by.quake-mode quake-mode-hide-from-overview 'true'
 gsettings set com.github.repsac-by.quake-mode quake-mode-always-on-top 'true'
@@ -68,7 +68,7 @@ gsettings set com.github.repsac-by.quake-mode quake-mode-valign 'top'
 # TODO - create a separate app launcher for the alacritty in quake mode so that
 # I can use it with tiling despite the cast that it has the exception
 # I need to somehow add the .desktop file to /usr/share/applications/usr/share/applications
-gsettings set com.github.repsac-by.quake-mode.accelerators quake-mode-accelerator-1  "['F12']"
+gsettings set com.github.repsac-by.quake-mode.accelerators quake-mode-accelerator-1 "['F12']"
 gsettings set com.github.repsac-by.quake-mode.apps app-1 'com.alacritty.Alacritty.desktop'
 
 gsettings set org.gnome.shell.extensions.net.gfxmonk.scroll-workspaces ignore-last-workspace 'true'
