@@ -27,7 +27,6 @@ winget install -e --id Docker.DockerDesktop
 winget install -e --id XAMPPRocky.tokei # broken?
 winget install -e --id 7zip.7zip
 winget install -e --id Ookla.Speedtest.Desktop
-winget install -e --id Microsoft.MouseandKeyboardCenter
 
 # Version controll
 winget install -e --id GitHub.cli
