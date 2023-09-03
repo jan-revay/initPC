@@ -22,6 +22,7 @@ function interactive_part
         # if we used the interactive version. The authentication on Ubuntu 22.04
         # does not work without it. The noninteractive version does not set user for
         # some reason (probably a bug TODO report it).
+        # TODO - only echo if user is not already set
         echo "    user: jan-revay" >> ~/.config/gh/hosts.yml
         gh auth setup-git
     fi
