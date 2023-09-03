@@ -8,6 +8,10 @@ set -e # exit on error
 
 # list install is not idempotent for some reason - TODO fix
 # SNAP_PACKAGES+=(dust procs onefetch) -
+# TODO benchmark the performance of snap vs. cargo
+# rust packages and maybe switch back to cargo
+# but install specific versions so that the script
+# will not break easily. 
 time sudo snap install dust
 time sudo snap install procs
 time sudo snap install onefetch
