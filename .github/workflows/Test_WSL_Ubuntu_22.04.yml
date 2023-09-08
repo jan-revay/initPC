@@ -30,7 +30,7 @@ jobs:
       run: ${{github.workspace}}/run_init.sh --noninteractive
 
     # TODO split this command to multiple lines
-    - name: The initPC script should be idempotent on ~/ directory (WIP - not working correctly yet)
+    - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing)
       run: |
         cd ~
         pwd
