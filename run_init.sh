@@ -10,7 +10,7 @@ set -e # exit on error
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-# TODO - move to the config script (resp. run paltform independent config scripts from here?)
+# TODO - move to the config script (resp. run platform independent config scripts from here?)
 pushd .git/hooks/ || exit 50
 ln -s --force ../../pre-commit-hook.sh pre-commit
 popd || exit 50
