@@ -1,11 +1,16 @@
 #!/bin/bash -x
-# BASE IMAGE: all
-# This script tries to automatically detect and init the host platform.
+# BASE IMAGE: any (including unsupported)
+# This script tries to automatically detect and init (bootstrap & configure) the host platform.
 
+# TODO add this (including color vars to prelude script)
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+# TODO - move to the config script (resp. run paltform independent config scripts from here?)
 pushd .git/hooks/ || exit 50
 ln -s --force ../../pre-commit-hook.sh pre-commit
 popd || exit 50
@@ -34,3 +39,6 @@ try_platform "WSL_Debian_12" "$1"
 try_platform "Ubuntu_22.04" "$1"
 try_platform "PopOS_22.04" "$1"
 try_platform "Android_13" "$1"
+
+echo -e "${RED}Fatal error: Unsupported platform - supported platform was not detected.${NC}"
+exit 60
