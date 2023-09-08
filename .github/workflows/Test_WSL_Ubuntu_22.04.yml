@@ -4,9 +4,10 @@ on:
   push:
     branches: [ "devel" ]
     paths:
-    - 'WSL_Ubuntu_22.04/*.sh'
+    - 'run_init.sh'
     - 'CommonInitScripts/*.sh*'
     - '.github/workflows/Test_WSL_Ubuntu_22.04.yml'
+    - 'WSL_Ubuntu_22.04/*.sh'
   pull_request:
     branches: [ "testing" ]
 
@@ -20,16 +21,17 @@ jobs:
       with:
         ref: devel
 
-    - name: iniPC script should not fail
+    - name: Running iniPC script for the 1st time should not fail.
       run: ${{github.workspace}}/run_init.sh --noninteractive
 
     - name: save ~/ for idempotency test
       run: cp -r ~/ /tmp/old_home/
 
-    - name: running iniPC script 2nd time should not fail
+    - name: Running iniPC script for the 2nd time should not fail.
       run: ${{github.workspace}}/run_init.sh --noninteractive
 
     # TODO split this command to multiple lines
+    # TODO also test that the first run of initPC script does change the state of home dir
     - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing)
       run: |
         cd ~
