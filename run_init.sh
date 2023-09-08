@@ -40,5 +40,5 @@ try_platform "Ubuntu_22.04" "$1"
 try_platform "PopOS_22.04" "$1"
 try_platform "Android_13" "$1"
 
-echo -e "${RED}Fatal error: Unsupported platform - supported platform was not detected.${NC}"
+echo -e "${RED}Fatal error: Unsupported platform - no supported platform was detected.${NC}"
 exit 60
