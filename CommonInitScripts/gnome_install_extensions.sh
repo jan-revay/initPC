@@ -10,7 +10,8 @@ set -e # exit on error
 # ===== GNOME EXTENSIONS =====
 
 
-# TODO consider these extensions: https://youtube.com/watch?v=wtjeaL90E6Q&si=VQmzns96n-dI6eL0
+# TODO consider these extensions: https://youtube.com/watch?v=wtjeaL90E6Q&si=VQmzns96n-dI6eL0 and
+# extensions used in Nobara project (linux distro)
 # org.gnome.Shell.Extensions.InstallRemoteExtension() is the same DBus method that is used in the
 # gnome-browser-connector package (the package that installs extesions via Chrome/Firefox plugin)
 ## @note the gdbus call InstallRemoteExtension() might need to be invoked twice
