@@ -2,7 +2,8 @@
 # BASE IMAGE: any (including unsupported)
 # This script tries to automatically detect and init (bootstrap & configure) the host platform.
 
-# TODO add this (including color vars to prelude script)
+# TODO add this (including color consts) to a prelude script
+# TODO make exit codes named constants in the prelude script
 # makes the echo prompt yellow to improve readability
 export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
