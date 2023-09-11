@@ -79,7 +79,7 @@ source "$HOME/.cargo/env"
 # TODO try to minimize the number of package managers I need to use
 # TODO installing cargo packages is super slow - try to find another way. Don't use cargo unless we have to.
 # NOTE: du-dust and procs are also available at snap store, tokei is not (TODO remove?)
-CARGO_PACKAGES=(tokei)
+CARGO_PACKAGES=(tokei git-graph)
 time cargo install "${CARGO_PACKAGES[@]}"
 
 # NPM packages
