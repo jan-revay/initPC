@@ -29,7 +29,7 @@ function try_platform
     # TODO - consider even better error code number (guaranteed to be unique)
     # exit code 126 = incorrect platform
     if [[ "${PIPESTATUS[0]}" != 126 ]]; then
-    #TODO add success notification
+        #TODO add success notification
         exit "${PIPESTATUS[0]}"
     fi
 
