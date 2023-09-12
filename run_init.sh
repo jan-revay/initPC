@@ -21,9 +21,11 @@ function try_platform
     time ./run_all.sh "$2" 2>&1 | tee "${LOG_PATH}"
     # TODO - consider even better error code number (guaranteed to be unique)
     # exit code 126 = incorrect platform
-    if [[ "${PIPESTATUS[0]}" != "${EXIT_INCORRECT_PLATFORM}" ]]; then
-        #TODO add success notification
-        exit "${PIPESTATUS[0]}"
+    local STATUS="${PIPESTATUS[0]}"
+    if [[ "${STATUS}" != "${EXIT_INCORRECT_PLATFORM}" ]]; then
+        # TODO add success notification?
+        # TODO add CommonConfig scripts?
+        exit "${STATUS}"
     fi
 
     popd || exit ${EXIT_FILE_IO_ERROR}

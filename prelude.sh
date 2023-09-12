@@ -2,7 +2,6 @@
 
 # WIP
 
-
 if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     __INITPC_PRELUDE_SOURCED__='true'
 
@@ -19,16 +18,23 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # https://dev.to/ifenna__/adding-colors-to-bash-scripts-48g4
     set -e # exit on error
 
+    # shellcheck disable=SC2034
     readonly RED='\033[0;31m'
+    # shellcheck disable=SC2034
     readonly IYELLOW='\033[0;93m' # high intensity yellow
+    # shellcheck disable=SC2034
     readonly GREEN='\033[0;32m'
+    # shellcheck disable=SC2034
     readonly NC='\033[0m' # No Color
-    
+
     export PS4="\[${IYELLOW}\]+ \[${NC}\]"
 
+    # shellcheck disable=SC2034
     readonly EXIT_SUCCESS=0
+    # shellcheck disable=SC2034
     readonly EXIT_FILE_IO_ERROR=50
+    # shellcheck disable=SC2034
     readonly EXIT_INCORRECT_PLATFORM=126
-    
+
     # TODO - finish
 fi
