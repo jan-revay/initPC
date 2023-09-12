@@ -2,17 +2,15 @@
 # BASE IMAGE: WSL Ubuntu 22.04
 # This script should be idempotent.
 
-# makes the echo prompt yellow to improve readability
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-set -e # exit on error
+. ../prelude.sh
 
 # TODO Ubuntu 23.04 works, hence it can be allowed, make this official
 # TODO try enabling 2x in general - this did not work - some packages are not avaliable on 20.04
 # TODO try enabling 22.04 + (ideally by explicit naming)
 if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* &&
 "$(lsb_release --description --short)" != 'Ubuntu 23.04'* ]]; then
-    echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.'
-    exit 126
+    echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.' >&2
+    exit ${EXIT_INCORRECT_PLATFORM}
 fi
 
 # TODO remove resp. rename the script directory
@@ -22,9 +20,9 @@ fi
 # fi
 
 if gnome-extensions --version; then
-    echo 'Use Ubuntu Desktop installer (./Ubuntu_22.04)'
-    echo 'This script is targeted only to CLI installations'
-    exit 126
+    echo 'Use Ubuntu Desktop installer (./Ubuntu_22.04)' >&2
+    echo 'This script is targeted only to CLI installations' >&2
+    exit ${EXIT_INCORRECT_PLATFORM}
 fi
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
