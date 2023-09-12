@@ -42,13 +42,13 @@ APT_PACKAGES+=(wget lsb-release software-properties-common gnupg curl)       # r
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # Install the most recent llvm (see https://apt.llvm.org/)
-pushd /tmp || exit
+pushd /tmp || exit 50
 # packages required by llvm.sh script are installed above
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 time yes '' | sudo ./llvm.sh all
 rm llvm.sh
-popd || exit
+popd || exit 50
 
 # Install rust ecosystem
 time curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
