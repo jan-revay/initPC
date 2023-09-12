@@ -2,19 +2,12 @@
 # BASE IMAGE: any (including unsupported)
 # This script tries to automatically detect and init (bootstrap & configure) the host platform.
 
-# TODO add this (including color consts) to a prelude script
-# TODO make exit codes named constants in the prelude script
-# makes the echo prompt yellow to improve readability
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-set -e # exit on error
-
-RED='\033[0;31m'
-NC='\033[0m' # No Color
+. prelude.sh
 
 # TODO - move to the config script (resp. run platform independent config scripts from here?)
-pushd .git/hooks/ || exit 50
+pushd .git/hooks/ || exit ${EXIT_FILE_IO_ERROR}
 ln -s --force ../../pre-commit-hook.sh pre-commit
-popd || exit 50
+popd || exit ${EXIT_FILE_IO_ERROR}
 
 mkdir -p Logs
 
@@ -23,17 +16,17 @@ readonly LOG_PATH
 
 function try_platform
 {
-    pushd "$1" || exit 50
+    pushd "$1" || exit ${EXIT_FILE_IO_ERROR}
 
     time ./run_all.sh "$2" 2>&1 | tee "${LOG_PATH}"
     # TODO - consider even better error code number (guaranteed to be unique)
     # exit code 126 = incorrect platform
-    if [[ "${PIPESTATUS[0]}" != 126 ]]; then
+    if [[ "${PIPESTATUS[0]}" != "${EXIT_INCORRECT_PLATFORM}" ]]; then
         #TODO add success notification
         exit "${PIPESTATUS[0]}"
     fi
 
-    popd || exit 50
+    popd || exit ${EXIT_FILE_IO_ERROR}
 }
 
 try_platform "WSL_Ubuntu_22.04" "$1"
@@ -43,4 +36,4 @@ try_platform "PopOS_22.04" "$1"
 try_platform "Android_13" "$1"
 
 echo -e "${RED}Fatal error: Unsupported platform - no supported platform detected.${NC}"
-exit 60
+exit ${EXIT_INCORRECT_PLATFORM}
