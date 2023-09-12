@@ -3,7 +3,7 @@
 # WIP
 
 
-if [[ "${__INITPC_PRELUDE_SOURCED__}" == "true" ]]; then
+if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     __INITPC_PRELUDE_SOURCED__='true'
 
     # TODO add this (including color consts) to a prelude script
