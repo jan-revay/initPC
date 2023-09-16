@@ -13,9 +13,10 @@ set -e # exit on error
 # extensions used in Nobara project (linux distro)
 # org.gnome.Shell.Extensions.InstallRemoteExtension() is the same DBus method that is used in the
 # gnome-browser-connector package (the package that installs extesions via Chrome/Firefox plugin)
+# TODO add extensions from this video: https://youtu.be/KtjYPMCvQ7Y?si=sAPoExRbWvSI5g3s
+
 ## @note the gdbus call InstallRemoteExtension() might need to be invoked twice
 ## as sometimes the first call fails.
-
 function install_gnome_extension
 {
     local EXTENSION_ID="$1"
