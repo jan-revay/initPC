@@ -37,7 +37,10 @@ apt list --upgradable
 # because of pipx
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
+# shellcheck source=/dev/null
+. ~/.bash_profile
 
+#TODO bug - pipx adds path also to .bashrc hence adding it multiple tomes for sub-shells
 pipx install conan
 pipx install flawfinder
 pipx install cpplint
