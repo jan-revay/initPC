@@ -6,6 +6,8 @@ export PS4="\[\033[1;93m\]+ \[\033[0m\]"
 set -e # exit on error
 export DEBIAN_FRONTEND=noninteractive
 
+# TODO add toybox https://android.googlesource.com/platform/external/toybox/+/b20c80b/README
+
 # TODO group packages as in WSL_Ubuntu
 pkg update -y
 pkg upgrade -y
