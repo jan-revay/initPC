@@ -11,6 +11,7 @@ if ! uname -a | grep Android; then
     exit 126
 fi
 
+#TODO gh auth does not work (sync woth ubuntu one)
 if ! gh auth status; then
     pkg update
     pkg install gh
