@@ -1,6 +1,7 @@
 # initPC
 
-A collection of (C++, Python & Rust development-oriented) config scripts to quickly init new machines for my personal use. Dotfiles are in a separate repository here: <https://github.com/jan-revay/dotfiles>.
+About
+🛠A collection of C++, Python & Rust development-oriented config scripts to quickly init new machines for my personal use.💻Dotfiles are in a separate repository here: <https://github.com/jan-revay/dotfiles>
 
 ## How to use
 
@@ -42,17 +43,6 @@ devel-feature-<name of the feature>
 ```
 
 Using a different naming scheme will break ./install_dotfiles.sh script.
-
-## Installing pre-commit hooks
-
-To install pre-commit hooks run:
-
-```
-cd ./initPC/.git/hooks/
-ln -s ../../pre-commit-hook.sh pre-commit
-```
-
-The pre-commit hook currently runs `shfmt` and `shellcheck`. Pre-commit hooks are installed automatically by ./run_init.sh.
 
 ## TODO
 
