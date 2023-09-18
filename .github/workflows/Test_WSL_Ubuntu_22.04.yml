@@ -28,7 +28,7 @@ jobs:
     # see: https://github.com/actions/checkout
     - uses: actions/checkout@v3
       with:
-        ref: devel
+        ref: ${{ github.ref }}
 
     - name: Running iniPC script for the 1st time should not fail.
       run: ${{github.workspace}}/run_init.sh --noninteractive
