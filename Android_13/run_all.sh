@@ -8,7 +8,6 @@ if ! uname -a | grep Android; then
     exit ${EXIT_INCORRECT_PLATFORM}
 fi
 
-#TODO gh auth does not work (sync woth ubuntu one)
 if ! gh auth status; then
     pkg update
     pkg install gh
