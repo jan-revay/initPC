@@ -30,6 +30,9 @@ jobs:
       with:
         ref: ${{ github.ref }}
 
+    - name: print `github.ref`
+      run: echo ${{ github.ref }}
+
     - name: Running iniPC script for the 1st time should not fail.
       run: ${{github.workspace}}/run_init.sh --noninteractive
 
