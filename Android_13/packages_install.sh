@@ -3,6 +3,8 @@
 
 . ../prelude.sh
 
+# TODO add toybox https://android.googlesource.com/platform/external/toybox/+/b20c80b/README
+
 # TODO group packages as in WSL_Ubuntu
 pkg update -y
 pkg upgrade -y
@@ -28,11 +30,12 @@ APT_PACKAGES+=(proot-distro) # ubuntu/debian emulation
 pkg install -y "${APT_PACKAGES[@]}"
 apt list --upgradable
 
-# TODO the install needs to be executed twice due to pipx - FIX
-# because of pipx
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
+# shellcheck source=/dev/null
+. ~/.bash_profile
 
+#TODO bug - pipx adds path also to .bashrc hence adding it multiple tomes for sub-shells
 pipx install conan
 pipx install flawfinder
 pipx install cpplint
