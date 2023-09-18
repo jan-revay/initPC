@@ -74,6 +74,19 @@ to .vmx file in the virtual machine image directory.
     * Alt + Tab shows windows that are open on -> Only the desktop I'm using
 - Clipboard -> clipboard history -> on (Pressing Win + V displays the history)
 
+### Turn off unnecessary animations in advanced settings
+
+- Right-click the Start menu and select System from the context menu.
+- This will take you to Control Panel > System and Security > System.
+- Now click "Advanced system settings".
+- Click to "Advanced" tab
+- Click "Settings" in "Performance" section
+- Select "Let Windows choose...."
+- Additionally to that desellect:
+    * "Animate windows when minimizing and maximizing" (it will also improve speed of switching virtual desktops)
+    * "Fade or slide ToolTips into view"
+    * ... TODO find out what other options are doing
+
 
 # TODO
 
@@ -83,3 +96,4 @@ to .vmx file in the virtual machine image directory.
 - adjust text size
 - download additional fonts
 - study this - in order to automatize more: <https://learn.microsoft.com/en-us/windows-hardware/get-started/?view=windows-11>
+- Optimizations from <https://www.youtube.com/watch?v=RswaXcWWCo0> and <https://www.youtube.com/watch?v=uCVc-7z-toE>
