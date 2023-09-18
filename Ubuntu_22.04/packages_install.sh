@@ -3,9 +3,8 @@
 # The script should not require any user input and should be idempotent.
 
 # TODO use lists for packages (and use on install command)
-# makes the echo prompt yellow to improve readability
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-set -e # exit on error
+
+. ../prelude.sh
 
 # TODO - add all packages to a single list (change this to a conditional append)
 if lspci | grep -i vmware; then                             # if the script is running inside of a VMware virtual machine

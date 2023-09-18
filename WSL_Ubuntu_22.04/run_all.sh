@@ -26,12 +26,12 @@ if gnome-extensions --version; then
 fi
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
-. ./interactive_part.sh
+. interactive_part.sh
 
-. ./ubuntu_specific_packages.sh
+. ubuntu_specific_packages.sh
 
-. ./packages_install.sh
+. packages_install.sh
 
-# . ./packages_install_optional.sh
+# . packages_install_optional.sh
 
-. ./configs_install.sh
+. configs_install.sh

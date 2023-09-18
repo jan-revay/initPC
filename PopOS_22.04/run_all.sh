@@ -1,13 +1,11 @@
 #!/bin/bash -x
 # BASE IMAGE: PopOS 22.04
 
-# makes the echo prompt yellow to improve readability
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-set -e # exit on error
+. ../prelude.sh
 
 if [[ "$(lsb_release --description --short)" != 'Pop!_OS 22.04 LTS' ]]; then
     echo 'Error: The base image does not match "Pop!_OS 22.04 LTS"! Aborting.'
-    exit 126
+    exit ${EXIT_INCORRECT_PLATFORM}
 fi
 
 if uname -r | grep "WSL2"; then
@@ -16,12 +14,13 @@ fi
 
 if ! gnome-extensions --version; then
     echo 'gnome-extensions not found'
-    exit 126
+    exit ${EXIT_INCORRECT_PLATFORM}
 fi
 
-. ./packages_install.sh
-. ./configs_install.sh
+. packages_install.sh
+. configs_install.sh
 
+# TODO this is not compatible with refresh command and run_init.sh
 echo "INIT SCRIPT FINISHED SUCCESSFULLY, REBOOTING IN 30 SECONDS..."
 sleep 30
 reboot

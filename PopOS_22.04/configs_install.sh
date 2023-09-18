@@ -5,7 +5,7 @@
 echo Read the warning in the script
 exit 77
 
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
+. ../prelude.sh
 
 # TODO
 # in settings

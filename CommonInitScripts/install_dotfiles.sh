@@ -3,11 +3,7 @@
 # BASE IMAGE: ALL
 # TODO use stow or some other symlink resp. git bare solution instead of copying
 
-# makes the echo prompt yellow to improve readability
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-set -e # exit on error
-GREEN='\033[0;32m'
-NC='\033[0m' # No Color
+. ../prelude.sh
 
 # TODO replace tabs with spaces
 # Using bare git repo for management of config files
@@ -62,5 +58,12 @@ if ! grep my_bashrc ~/.bashrc; then
     echo "
 if [ -f ~/.my_bashrc ]; then
     . ~/.my_bashrc
+fi" >> ~/.bashrc
+fi
+
+if ! grep .bash_aliases ~/.bashrc; then
+    echo "
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
 fi" >> ~/.bashrc
 fi

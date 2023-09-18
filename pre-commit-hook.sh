@@ -1,14 +1,9 @@
 #!/bin/bash -x
 # TODO precommit hooks WIP
 
-# makes the echo prompt yellow to improve readability
+. prelude.sh
 
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-
-set -e # exit on error
-
-GREEN='\033[0;32m'
-NC='\033[0m' # No Color
+# TODO always run from repo root directory regardless of the pwd
 
 echo
 echo -e "${GREEN} ######  RUNNING PRE-COMMIT HOOKS  ###### ${NC}"

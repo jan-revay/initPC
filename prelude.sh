@@ -29,12 +29,17 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
 
     export PS4="\[${IYELLOW}\]+ \[${NC}\]"
 
+    # TODO renumber the exit codes according to the docs bellow
+    # SEE: https://manpages.ubuntu.com/manpages/lunar/man3/sysexits.h.3head.html
+    # SEE: https://tldp.org/LDP/abs/html/exitcodes.html
     # shellcheck disable=SC2034
     readonly EXIT_SUCCESS=0
     # shellcheck disable=SC2034
     readonly EXIT_FILE_IO_ERROR=50
+    # TODO - consider even better error code number (guaranteed to be unique)
     # shellcheck disable=SC2034
-    readonly EXIT_INCORRECT_PLATFORM=126
-
+    readonly EXIT_INCORRECT_PLATFORM=100
+    # shellcheck disable=SC2034
+    readonly EXIT_INVALID_ARGUMENT=10
     # TODO - finish
 fi

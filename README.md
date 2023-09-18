@@ -80,3 +80,4 @@ The pre-commit hook currently runs `shfmt` and `shellcheck`. Pre-commit hooks ar
 20. Format to max 82 chars in a line.
 21. Echo errors to stderr
 22. Make the script compliant with Google Bash style guide.
+23. Consider running different files in different subshells i.e. not using `source` command.

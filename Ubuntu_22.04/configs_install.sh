@@ -4,9 +4,7 @@
 
 # TODO sync with PopOS configs_install.sh
 
-# makes the echo prompt yellow to improve readability
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-set -e # exit on error
+. ../prelude.sh
 
 . ../WSL_Ubuntu_22.04/configs_install.sh
 

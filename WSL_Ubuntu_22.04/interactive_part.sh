@@ -4,13 +4,10 @@
 # This script is being run first i.e. before anything else, so that all
 # user interaction is finished as quickly as possible.
 
-# makes the echo prompt yellow to improve readability
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-set -e # exit on error
+. ../prelude.sh
 
 function interactive_part
 {
-    # WARNING: gh auth login --with-token is somehow broken (git asks for pw anyway)
     if ! gh auth status; then
         read -r -s -p "GitHub token: " GITHUB_TOKEN
         echo # add newline
@@ -28,12 +25,13 @@ function interactive_part
     fi
 }
 
+# TODO improve parameter parsing - move it to platform independent code
 if [ "$1" = "--help" ]; then
     echo "usage: ./run_all.sh [--noninteractive]"
     echo
     # shellcheck disable=SC2016
     echo '--noninteractive  skip stuff requiring user interaction (e.g. `gh auth login`)'
-    exit 0
+    exit ${EXIT_SUCCESS}
 fi
 
 if [ "$1" == "--noninteractive" ]; then
@@ -42,5 +40,5 @@ elif [ "$1" == "" ]; then
     interactive_part
 else
     echo "invalid argument $1"
-    exit 1
+    exit ${EXIT_INVALID_ARGUMENT}
 fi

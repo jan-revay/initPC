@@ -8,9 +8,7 @@
 # TODO try installing these packages as snaps (therefore using the same script
 # for Debian and Ubuntu)
 
-# makes the echo prompt yellow to improve readability
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-set -e # exit on error
+. ../prelude.sh
 
 cd ~/x/
 

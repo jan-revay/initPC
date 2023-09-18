@@ -4,9 +4,8 @@
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
 # TODO move the package lists to external files
 
-# makes the echo prompt yellow to improve readability
-export PS4="\[\033[1;93m\]+ \[\033[0m\]"
-set -e # exit on error
+. ../prelude.sh
+
 export DEBIAN_FRONTEND=noninteractive
 # TODO "Which services should be restarted?" prompt is still present in VM
 export NEEDRESTART_MODE=a
@@ -42,13 +41,13 @@ APT_PACKAGES+=(wget lsb-release software-properties-common gnupg curl)       # r
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # Install the most recent llvm (see https://apt.llvm.org/)
-pushd /tmp || exit 50
+pushd /tmp || exit ${EXIT_FILE_IO_ERROR}
 # packages required by llvm.sh script are installed above
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 time yes '' | sudo ./llvm.sh all
 rm llvm.sh
-popd || exit 50
+popd || exit ${EXIT_FILE_IO_ERROR}
 
 # Install rust ecosystem
 time curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
