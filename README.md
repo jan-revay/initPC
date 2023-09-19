@@ -65,7 +65,7 @@ Using a different naming scheme will break ./install_dotfiles.sh script.
 16. Do some research on whether snap and flatpak packages work in WSL resp. which alternative package manager to use in WSL
 17. Consider running the whole `./run_all.sh` script as sudo and removing `sudo` commands from the script.
 18. Shorten the names of branches I use most often devel -> dev, testing -> test
-19. Consider using <http://www.bashbooster.net/> or some similar light-weight library.
+19. Consider using <http://www.bashbooster.net/>, <https://github.com/bevry/dorothy>, <https://www.chezmoi.io/> or similar libraries.
 20. Format to max 82 chars in a line.
 21. Echo errors to stderr
 22. Make the script compliant with Google Bash style guide.
