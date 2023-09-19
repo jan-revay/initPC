@@ -10,9 +10,8 @@ jobs:
     steps:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Fast Forward PR
-        id: ff-action
+        uses: actions/checkout@v3                
+      - name: Fast Forward PR        
         uses: endre-spotlab/fast-forward-js-action@2.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
