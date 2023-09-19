@@ -5,7 +5,7 @@
 . ../prelude.sh
 
 # TODO Ubuntu 23.04 works, hence it can be allowed, make this official
-# TODO try enabling 2x in general - this did not work - some packages are not avaliable on 20.04
+# TODO try enabling 2x in general - this did not work - some packages are not available on 20.04
 # TODO try enabling 22.04 + (ideally by explicit naming)
 if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* &&
 "$(lsb_release --description --short)" != 'Ubuntu 23.04'* ]]; then
