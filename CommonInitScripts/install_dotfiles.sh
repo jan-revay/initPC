@@ -33,6 +33,7 @@ function checkout_dotfiles
 {
     local DOTFILES_BRANCH=devel
 
+    # if HEAD is not detached
     if git symbolic-ref --short HEAD; then
         local HEAD
         HEAD=$(git symbolic-ref --short HEAD)
