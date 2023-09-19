@@ -2,6 +2,8 @@ on:
   issue_comment:
     types: [created]
 
+# TODO the action is broken - fix
+
 jobs:
   fast_forward_job:
     name: Fast Forward Merge
