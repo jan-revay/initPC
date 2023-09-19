@@ -28,11 +28,14 @@ jobs:
     # see: https://github.com/actions/checkout
     # TODO: current implementations fails unit tests (detached head stuff)
     - uses: actions/checkout@v3
-      with:
-        ref: ${{ github.ref }}
+      #      with:
+      #  ref: ${{ github.ref }}
 
-    - name: print `github.ref`
+    - name: print `github.ref=${{ github.ref }}`
       run: echo ${{ github.ref }}
+
+    - name: print `github.sha=${{ github.sha }}`
+      run: echo ${{ github.sha }}
 
     - name: Running iniPC script for the 1st time should not fail.
       run: ${{github.workspace}}/run_init.sh --noninteractive

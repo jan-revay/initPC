@@ -1,40 +1,54 @@
 #!/bin/bash -x
 # The script should not require any user input and should be idempotent.
 # BASE IMAGE: ALL
-# TODO use stow or some other symlink resp. git bare solution instead of copying
+# Dotfiles are managed via bare git repository.
+# see: https://www.atlassian.com/git/tutorials/dotfiles
 
 . ../prelude.sh
 
-# TODO replace tabs with spaces
-# Using bare git repo for management of config files
-# see: https://www.atlassian.com/git/tutorials/dotfiles
 function dot
 {
     git --git-dir="${HOME}/.dotfiles/" --work-tree="${HOME}" "$@"
 }
 
 # TODO Make .dotfiles_auto_backup a git repo and commit on every new backup (maybe I could even push somewhere upstream)
-# TODO broken - does not back up nvim config...
 function backup_conflicting_dotfiles
 {
+    local DOTFILES_BRANCH="$1"
+    readonly DOTFILES_BRANCH
     echo -e "${GREEN}Backing up old dotfiles${NC}"
     mkdir -p ~/.dotfiles_auto_backup/
+    local OLD_DOTFILES
     OLD_DOTFILES=$(dot checkout "${DOTFILES_BRANCH}" 2>&1 | grep "^[[:space:]]\+[^[:space:]]\+$")
     readonly OLD_DOTFILES
 
+    local OLD_DOTDIRS
     OLD_DOTDIRS=$(echo "$OLD_DOTFILES" | xargs -I{} dirname "${HOME}/.dotfiles_auto_backup/{}")
+    readonly OLD_DOTDIRS
     echo "$OLD_DOTDIRS" | xargs -I{} mkdir -p {}
     echo "$OLD_DOTFILES" | xargs -I{} mv ~/{} ~/.dotfiles_auto_backup/{}
 }
 
 function checkout_dotfiles
 {
-    DOTFILES_BRANCH=$(git symbolic-ref --short HEAD)
-    # e.g. "devel-feature-precommit-hooks" -> "devel"
-    DOTFILES_BRANCH=$(echo "${DOTFILES_BRANCH}" | grep -o "[a-z]\+" | head -n 1)
+    local DOTFILES_BRANCH=devel
+
+    if git symbolic-ref --short HEAD; then
+        local HEAD
+        HEAD=$(git symbolic-ref --short HEAD)
+        readonly HEAD
+
+        if [[ "${HEAD}" == "minimal" ||
+            "${HEAD}" == "stable" ||
+            "${HEAD}" == "testing" ]]; then
+            DOTFILES_BRANCH="${HEAD}"
+        fi
+    fi
+
     readonly DOTFILES_BRANCH
+
     if ! dot checkout "${DOTFILES_BRANCH}"; then
-        backup_conflicting_dotfiles
+        backup_conflicting_dotfiles "${DOTFILES_BRANCH}"
         dot checkout "${DOTFILES_BRANCH}"
     fi
 
@@ -43,6 +57,7 @@ function checkout_dotfiles
 
 # TODO consider using git checkout --force as a simplification
 if [ ! -d ~/.dotfiles ]; then
+    # TODO - is this idempotent?
     echo ".dotfiles" > ~/.gitignore
     # echo "*" > ~/.gitignore  # secure option
     git clone --bare https://github.com/jan-revay/dotfiles.git "${HOME}/.dotfiles"
