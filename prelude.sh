@@ -5,8 +5,6 @@
 if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     __INITPC_PRELUDE_SOURCED__='true'
 
-    # TODO add this (including color consts) to a prelude script
-    # makes the echo prompt yellow to improve readability
     # TODO toread:
     # https://linuxopsys.com/topics/customizing-bash-prompt-in-linux-changing-colors
     # https://gist.github.com/vratiu/9780109
@@ -16,6 +14,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # https://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
     # https://unix.stackexchange.com/questions/148/colorizing-your-terminal-and-shell-environment
     # https://dev.to/ifenna__/adding-colors-to-bash-scripts-48g4
+
     set -e # exit on error
 
     # shellcheck disable=SC2034
@@ -27,6 +26,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # shellcheck disable=SC2034
     readonly NC='\033[0m' # No Color
 
+    # makes the echo prompt yellow to improve readability
     export PS4="\[${IYELLOW}\]+ \[${NC}\]"
 
     # TODO renumber the exit codes according to the docs bellow
