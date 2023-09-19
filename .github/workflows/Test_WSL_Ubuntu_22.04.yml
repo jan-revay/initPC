@@ -19,17 +19,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-22.04
-
     steps:
-    # TODO - BUG - use the correct respective branch
-    # currently stable CI runs devel branch
-    # see: https://docs.github.com/en/actions/learn-github-actions/variables
-    # see: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#push
-    # see: https://github.com/actions/checkout
-    # TODO: current implementations fails unit tests (detached head stuff)
+    # TODO - BUG - use the correct respective branch - check that it is resolved
     - uses: actions/checkout@v3
-      #      with:
-      #  ref: ${{ github.ref }}
 
     - name: print `github.ref=${{ github.ref }}`
       run: echo ${{ github.ref }}
@@ -48,6 +40,7 @@ jobs:
 
     # TODO split this command to multiple lines
     # TODO also test that the first run of initPC script does change the state of home dir
+    # TODO - test whether the test works as expected
     - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing)
       run: |
         cd ~
