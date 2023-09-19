@@ -48,4 +48,4 @@ jobs:
         find . -type f \( ! -iname "*.log" ! -path "*/.dotfiles/logs/HEAD" \
         ! -path "*work/_temp/*" ! -path "./runners/*" \
         ! -name ".wget-hsts"  \) -print0 |
-        xargs -0 -I{} bash -c 'if ! diff "$1" "/tmp/old_home/$1"; then echo "diff failed for: $1"' bash {}
+        xargs -0 -I{} bash -c 'if ! diff "$1" "/tmp/old_home/$1"; then echo "diff failed for: $1"; fi' bash {}
