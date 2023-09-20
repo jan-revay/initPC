@@ -24,6 +24,7 @@ on:
     - 'WSL_Ubuntu_22.04/*.sh'
     - 'PopOS_22.04/*.sh'
 
+# TODO try caching the PopOS container
 jobs:
   build:
     runs-on: ubuntu-22.04
