@@ -7,15 +7,16 @@
 
 ## Examples
 
+- <https://github.com/HappyCerberus/cpp-course/blob/main/.docker/Dockerfile>
 - <https://github.com/devcontainers/images/tree/main/src/cpp>
 - <https://itnext.io/simple-and-consistent-c-development-environment-c08cf8d93ed9>
 - <https://github.com/cpp-best-practices/cmake_template/blob/main/.devcontainer/Dockerfile>
-- https://github.com/microsoft/vscode-docs/tree/main/.devcontainer
-- https://github.com/docker-library/official-images
-- https://hub.docker.com/_/buildpack-deps/
-- https://github.com/docker-library/buildpack-deps/tree/master
-- https://hub.docker.com/_/rust
-- https://github.com/conan-io/conan-docker-tools/blob/master/modern/clang/Dockerfile
+- <https://github.com/microsoft/vscode-docs/tree/main/.devcontainer>
+- <https://github.com/docker-library/official-images>
+- <https://hub.docker.com/_/buildpack-deps/>
+- <https://github.com/docker-library/buildpack-deps/tree/master>
+- <https://hub.docker.com/_/rust>
+- <https://github.com/conan-io/conan-docker-tools/blob/master/modern/clang/Dockerfile>
 
 ## TODO
 
