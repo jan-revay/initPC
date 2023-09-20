@@ -1,5 +1,7 @@
 name: WSL_Debian_12 - iniPC script
 
+# TODO try using platform matrix and a single file for Ubuntu and Debian
+
 on:
   push:
     branches: [ "devel", "testing", "stable", "minimal" ]
