@@ -23,11 +23,32 @@ jobs:
     runs-on: ubuntu-22.04
     container: "debian:12"
     steps:
-    - name: "git"
-      shell: bash
-      run: "git --version"
-    # TODO - BUG - use the correct respective branch - check that it is resolved
-    - uses: actions/checkout@v3
+      - name: "set APT to non-interactive"
+        shell: bash
+        run: "echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections"
+      - name: "Update APT"
+        shell: bash
+        run: "apt update"
+      - name: "Install git"
+        shell: bash
+        run: "apt-get install -y git"
+      - name: "Install curl"
+        shell: bash
+        run: "apt-get install -y curl"
+      - name: "Update APT"
+        shell: bash
+        run: "apt update"
+      - name: "Ensure /run/sshd exists"
+        shell: bash
+        run: "mkdir -p /run/sshd"
+      - name: "Install openssh-server"
+        shell: bash
+        run: "apt-get install -y openssh-server"
+      - name: "Workaround git permissions issue"
+        shell: bash
+        run: "git config --global --add safe.directory /__w/wezterm/wezterm"
+      - name: "checkout repo"
+        uses: actions/checkout@v4
 
     - name: print `github.ref=${{ github.ref }}`
       shell: bash
