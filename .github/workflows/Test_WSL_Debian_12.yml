@@ -23,10 +23,14 @@ jobs:
     runs-on: ubuntu-22.04
     container: "debian:12"
     steps:
+    - name: "Install git"
+      shell: bash
+      run: "apt-get install -y git"
     # TODO - BUG - use the correct respective branch - check that it is resolved
     - uses: actions/checkout@v3
 
     - name: print `github.ref=${{ github.ref }}`
+      shell: bash
       run: echo ${{ github.ref }}
 
     - name: print `github.sha=${{ github.sha }}`
