@@ -27,27 +27,19 @@ jobs:
     runs-on: ubuntu-22.04
     container: "nycticoracs/pop_os:22.04"
     steps:
-      - name: "set APT to non-interactive"
-        shell: bash
-        run: "echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections"
+      # - name: "set APT to non-interactive"
+      #   shell: bash
+      #   run: "echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections"
       - name: "Update APT"
-        shell: bash
-        run: "apt update"
+        run: "apt-get update -y"
       - name: "Install git"
-        shell: bash
-        run: "apt-get install -y git"
-      - name: "Install sudo"
-        shell: bash
-        run: "apt-get -y install sudo"
+        run: "apt-get install -y git sudo"
       - name: "checkout repo"
         uses: actions/checkout@v4
       - name: print `github.ref=${{ github.ref }}`
-        shell: bash
         run: echo ${{ github.ref }}
       - name: print `github.sha=${{ github.sha }}`
         run: echo ${{ github.sha }}
-      - name: print `ls ~`
-        run: ls ~
       - name: Running iniPC script for the 1st time should not fail.
         run: ./run_init.sh --noninteractive
       - name: save ~/ for idempotency test
