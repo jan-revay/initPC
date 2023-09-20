@@ -1,1 +1,26 @@
-# TODO: see https://github.com/wez/wezterm/blob/main/.github/workflows/gen_windows.yml
+name: Windows-latest - initPC script
+
+on:
+  push:
+    branches: [ "devel", "testing", "stable", "minimal" ]
+    paths:
+    - 'CommonInitScripts/*'
+    - '.github/workflows/windows.yml'
+    - 'Windows_10/*'
+  pull_request:
+    branches: [ "devel", "testing", "stable", "minimal" ]
+    paths:
+    - 'CommonInitScripts/*'
+    - '.github/workflows/windows.yml'
+    - 'Windows_10/*'
+
+jobs:
+  build:
+    runs-on: "windows-latest"
+    
+    steps:
+      - name: "checkout repo"
+        uses: actions/checkout@v4
+      - name: "Build (Release mode)"
+        shell: powershell
+        run: .\Windows_10\run_all.ps1
