@@ -13,6 +13,7 @@ on:
     - 'CommonInitScripts/*.sh*'
     - '.github/workflows/pop.yml'
     - 'WSL_Ubuntu_22.04/*.sh'
+    - 'PopOS_22.04/*.sh'
   pull_request:
     branches: [ "devel", "testing", "stable", "minimal" ]
     paths:
@@ -21,6 +22,7 @@ on:
     - 'CommonInitScripts/*.sh*'
     - '.github/workflows/pop.yml'
     - 'WSL_Ubuntu_22.04/*.sh'
+    - 'PopOS_22.04/*.sh'
 
 jobs:
   build:
