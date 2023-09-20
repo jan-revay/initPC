@@ -23,22 +23,16 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     # TODO - BUG - use the correct respective branch - check that it is resolved
-    - uses: actions/checkout@v3
-
-    - name: print `github.ref=${{ github.ref }}`
-      run: echo ${{ github.ref }}
-
-    - name: print `github.sha=${{ github.sha }}`
-      run: echo ${{ github.sha }}
-
+    - uses: actions/checkout@v4
+    - name: print `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
+      run: "echo Ref: ${{ github.ref }}, SHA: ${{ github.sha }}"
+      
     - name: Running iniPC script for the 1st time should not fail.
-      run: ${{github.workspace}}/run_init.sh --noninteractive
-
+      run: ./run_init.sh --noninteractive
     - name: save ~/ for idempotency test
       run: cp -r ~/ /tmp/old_home/
-
     - name: Running iniPC script for the 2nd time should not fail.
-      run: ${{github.workspace}}/run_init.sh --noninteractive
+      run: ./run_init.sh --noninteractive
 
     # TODO split this command to multiple lines
     # TODO also test that the first run of initPC script does change the state of home dir
