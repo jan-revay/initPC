@@ -23,9 +23,9 @@ jobs:
     runs-on: ubuntu-22.04
     container: "debian:12"
     steps:
-    - name: "Install git"
+    - name: "git"
       shell: bash
-      run: "apt-get install -y git"
+      run: "git --version"
     # TODO - BUG - use the correct respective branch - check that it is resolved
     - uses: actions/checkout@v3
 
