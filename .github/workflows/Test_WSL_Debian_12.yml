@@ -12,6 +12,7 @@ on:
     - 'prelude.sh'
     - 'CommonInitScripts/*.sh*'
     - '.github/workflows/Test_WSL_Debian_12.yml'
+    - 'WSL_Ubuntu_22.04/*.sh'
     - 'WSL_Debian_12/*.sh'
   pull_request:
     branches: [ "devel", "testing", "stable", "minimal" ]
@@ -20,6 +21,7 @@ on:
     - 'prelude.sh'
     - 'CommonInitScripts/*.sh*'
     - '.github/workflows/Test_WSL_Debian_12.yml'
+    - 'WSL_Ubuntu_22.04/*.sh'
     - 'WSL_Debian_12/*.sh'
 
 jobs:
