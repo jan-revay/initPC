@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - name: Update APT
-      run: apt-get update -y
+      run: sudo apt-get update -y && sudo apt-get upgrade -y
     - name: Install GNOME
       run: sudo apt-get install -y ubuntu-desktop-minimal
     # TODO - BUG - use the correct respective branch - check that it is resolved
