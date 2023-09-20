@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - name: Install GNOME
-      run: sudo apt install ubuntu-desktop-minimal
+      run: sudo apt-get install -y ubuntu-desktop-minimal
     # TODO - BUG - use the correct respective branch - check that it is resolved
     - uses: actions/checkout@v4
     - name: print `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
