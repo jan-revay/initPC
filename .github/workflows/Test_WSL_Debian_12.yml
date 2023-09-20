@@ -4,6 +4,8 @@ name: WSL_Debian_12 - iniPC script
 # TODO - set trigger paths, remove unnecessary commands, unify with Ubuntu script
 # TODO test
 
+# TODO Debian fails to build because of this bug: https://github.com/llvm/llvm-project/issues/62475
+
 on:
   push:
     branches: [ "devel", "testing", "stable", "minimal" ]
