@@ -1,4 +1,4 @@
-name: WSL_Ubuntu_22.04 - iniPC script
+name: Ubuntu_22.04 - iniPC script
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     - 'run_init.sh'
     - 'prelude.sh'
     - 'CommonInitScripts/*.sh*'
-    - '.github/workflows/Test_WSL_Ubuntu_22.04.yml'
+    - '.github/workflows/Test_Ubuntu_22.04.yml'
     - 'WSL_Ubuntu_22.04/*.sh'
     - 'Ubuntu_22.04/*.sh'
   pull_request:
@@ -16,7 +16,7 @@ on:
     - 'run_init.sh'
     - 'prelude.sh'
     - 'CommonInitScripts/*.sh*'
-    - '.github/workflows/Test_WSL_Ubuntu_22.04.yml'
+    - '.github/workflows/Test_Ubuntu_22.04.yml'
     - 'WSL_Ubuntu_22.04/*.sh'
     - 'Ubuntu_22.04/*.sh'
 
