@@ -33,7 +33,6 @@ jobs:
       - name: "Update APT"
         run: "apt-get update -y"
       - name: "Install `git` and `sudo`"
-        shell: bash
         run: "apt-get install -y git sudo"
       - name: "Checkout repo"
         uses: actions/checkout@v4
@@ -41,8 +40,6 @@ jobs:
         run: echo ${{ github.ref }}
       - name: print `github.sha=${{ github.sha }}`
         run: echo ${{ github.sha }}
-      - name: print `ls ~`
-        run: ls ~
       - name: Running iniPC script for the 1st time should not fail.
         run: ./run_init.sh --noninteractive
       - name: save ~/ for idempotency test
