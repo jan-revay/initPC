@@ -33,7 +33,7 @@ jobs:
       run: echo ${{ github.sha }}
 
     - name: Running iniPC script for the 1st time should not fail.
-      run: ${{github.workspace}}/run_init.sh --noninteractive
+      run: ${{github.workspace}}/../run_init.sh --noninteractive
 
     - name: save ~/ for idempotency test
       run: cp -r ~/ /tmp/old_home/
