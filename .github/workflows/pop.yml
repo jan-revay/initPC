@@ -4,6 +4,7 @@ name: Pop_OS - iniPC script
 # TODO - set trigger paths, remove unnecessary commands, unify with Ubuntu script
 # TODO test
 # TODO fix PopOS init script itself...
+# TODO standardize workflow names
 
 on:
   push:
