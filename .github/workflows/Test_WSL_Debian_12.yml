@@ -12,7 +12,7 @@ on:
     - 'prelude.sh'
     - 'CommonInitScripts/*.sh*'
     - '.github/workflows/Test_WSL_Debian_12.yml'
-    - 'WSL_Ubuntu_22.04/*.sh'
+    - 'WSL_Debian_12/*.sh'
   pull_request:
     branches: [ "devel", "testing", "stable", "minimal" ]
     paths:
@@ -20,29 +20,24 @@ on:
     - 'prelude.sh'
     - 'CommonInitScripts/*.sh*'
     - '.github/workflows/Test_WSL_Debian_12.yml'
-    - 'WSL_Ubuntu_22.04/*.sh'
+    - 'WSL_Debian_12/*.sh'
 
 jobs:
   build:
     runs-on: ubuntu-22.04
     container: "debian:12"
     steps:
-      - name: "set APT to non-interactive"
-        shell: bash
-        run: "echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections"
+      # - name: "set APT to non-interactive"
+      #   shell: bash
+      #   run: "echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections"
       - name: "Update APT"
+        run: "apt-get update -y"
+      - name: "Install `git` and `sudo`"
         shell: bash
-        run: "apt update"
-      - name: "Install git"
-        shell: bash
-        run: "apt-get install -y git"
-      - name: "Install sudo"
-        shell: bash
-        run: "apt-get -y install sudo"
-      - name: "checkout repo"
+        run: "apt-get install -y git sudo"
+      - name: "Checkout repo"
         uses: actions/checkout@v4
       - name: print `github.ref=${{ github.ref }}`
-        shell: bash
         run: echo ${{ github.ref }}
       - name: print `github.sha=${{ github.sha }}`
         run: echo ${{ github.sha }}
