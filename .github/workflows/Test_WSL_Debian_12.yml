@@ -32,6 +32,9 @@ jobs:
     - name: print `github.sha=${{ github.sha }}`
       run: echo ${{ github.sha }}
 
+    - name: print `ls ${{github.workspace}} `
+      run: ls ${{github.workspace}}
+
     - name: Running iniPC script for the 1st time should not fail.
       run: ${{github.workspace}}/../run_init.sh --noninteractive
 
