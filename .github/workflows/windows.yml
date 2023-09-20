@@ -21,6 +21,6 @@ jobs:
     steps:
       - name: "checkout repo"
         uses: actions/checkout@v4
-      - name: "Build (Release mode)"
+      - name: "Run `run_all.ps1`"
         shell: powershell
         run: .\Windows_10\run_all.ps1
