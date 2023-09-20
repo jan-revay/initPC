@@ -49,34 +49,27 @@ jobs:
         run: "git config --global --add safe.directory /__w/wezterm/wezterm"
       - name: "checkout repo"
         uses: actions/checkout@v4
-
-    - name: print `github.ref=${{ github.ref }}`
-      shell: bash
-      run: echo ${{ github.ref }}
-
-    - name: print `github.sha=${{ github.sha }}`
-      run: echo ${{ github.sha }}
-
-    - name: print `ls ~`
-      run: ls ~
-
-    - name: Running iniPC script for the 1st time should not fail.
-      run: ${{github.workspace}}/../run_init.sh --noninteractive
-
-    - name: save ~/ for idempotency test
-      run: cp -r ~/ /tmp/old_home/
-
-    - name: Running iniPC script for the 2nd time should not fail.
-      run: ${{github.workspace}}/run_init.sh --noninteractive
-
-    # TODO split this command to multiple lines
-    # TODO also test that the first run of initPC script does change the state of home dir
-    # TODO - test whether the test works as expected
-    - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing)
-      run: |
-        cd ~
-        pwd
-        find . -type f \( ! -iname "*.log" ! -path "*/.dotfiles/logs/HEAD" \
-        ! -path "*work/_temp/*" ! -path "./runners/*" \
-        ! -name ".wget-hsts"  \) -print0 |
-        xargs -0 -I{} bash -c 'if ! diff "$1" "/tmp/old_home/$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
+      - name: print `github.ref=${{ github.ref }}`
+        shell: bash
+        run: echo ${{ github.ref }}
+      - name: print `github.sha=${{ github.sha }}`
+        run: echo ${{ github.sha }}
+      - name: print `ls ~`
+        run: ls ~
+      - name: Running iniPC script for the 1st time should not fail.
+        run: ${{github.workspace}}/../run_init.sh --noninteractive
+      - name: save ~/ for idempotency test
+        run: cp -r ~/ /tmp/old_home/
+      - name: Running iniPC script for the 2nd time should not fail.
+        run: ${{github.workspace}}/run_init.sh --noninteractive
+      # TODO split this command to multiple lines
+      # TODO also test that the first run of initPC script does change the state of home dir
+      # TODO - test whether the test works as expected
+      - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing)
+        run: |
+          cd ~
+          pwd
+          find . -type f \( ! -iname "*.log" ! -path "*/.dotfiles/logs/HEAD" \
+          ! -path "*work/_temp/*" ! -path "./runners/*" \
+          ! -name ".wget-hsts"  \) -print0 |
+          xargs -0 -I{} bash -c 'if ! diff "$1" "/tmp/old_home/$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
