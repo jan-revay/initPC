@@ -11,6 +11,7 @@
 # - web research
 # - try installing turing off services created by the optional soft resp.
 #   installing it as a separate user, so that they do not run when I don't use them.
+# TODO add `--accept-source-agreements --accept-package-agreements` options as in packages_install.ps1
 
 Set-PSDebug -Trace 1
 
