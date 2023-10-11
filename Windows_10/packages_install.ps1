@@ -17,6 +17,7 @@
 # TODO add `--silent` and `--disable-interactivity` options to `winget install` commands? https://learn.microsoft.com/en-us/windows/package-manager/winget/install
 
 Set-PSDebug -Trace 1
+$ErrorActionPreference = "Stop"
 
 # Web browsers
 winget install --accept-source-agreements --accept-package-agreements -e --id Mozilla.Firefox

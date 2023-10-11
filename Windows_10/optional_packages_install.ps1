@@ -14,6 +14,7 @@
 # TODO add `--accept-source-agreements --accept-package-agreements` options as in packages_install.ps1
 
 Set-PSDebug -Trace 1
+$ErrorActionPreference = "Stop"
 
 # Utils
 winget install -e --id BurntSushi.ripgrep.GNU # TODO test

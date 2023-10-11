@@ -1,4 +1,5 @@
 Set-PSDebug -Trace 1
+$ErrorActionPreference = "Stop"
 
 # TODO - don't go into the WSL instance (that interrupts the init script)
 wsl --install --distribution Ubuntu --no-launch

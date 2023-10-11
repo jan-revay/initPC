@@ -1,6 +1,6 @@
 # TODO test
 Set-PSDebug -Trace 1
-
+$ErrorActionPreference = "Stop"
 
 # TODO set to break on errors
 #TODO - add gh auth login

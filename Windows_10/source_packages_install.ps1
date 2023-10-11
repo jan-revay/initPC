@@ -1,6 +1,7 @@
 # THIS SCRIPT MUST BE RUN AS ADMINISTRATOR
 
 Set-PSDebug -Trace 1
+$ErrorActionPreference = "Stop"
 
 # Virtual desktop scroll
 
