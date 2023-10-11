@@ -70,7 +70,7 @@ to .vmx file in the virtual machine image directory.
 - Multitasking
     * snap windows -> on (plus all related checkboxes)
     * Alt + Tab -> open windows only
-    * Virtual desktops -> On taskbar show windows that are open on -> All desktops
+    * Virtual desktops -> On taskbar show windows that are open on -> Only the desktop I'm using
     * Alt + Tab shows windows that are open on -> Only the desktop I'm using
 - Clipboard -> clipboard history -> on (Pressing Win + V displays the history)
 
