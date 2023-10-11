@@ -18,75 +18,75 @@
 Set-PSDebug -Trace 1
 
 # Web browsers
-winget install -e --id Mozilla.Firefox
-winget install -e --id Google.Chrome
+winget install --accept-source-agreements --accept-package-agreements -e --id Mozilla.Firefox
+winget install --accept-source-agreements --accept-package-agreements -e --id Google.Chrome
 
 # Utils
-winget install -e --id VMware.WorkstationPlayer # broken
-winget install -e --id WinDirStat.WinDirStat
-winget install -e --id Docker.DockerDesktop
-winget install -e --id XAMPPRocky.tokei # broken?
-winget install -e --id 7zip.7zip
-winget install -e --id Ookla.Speedtest.Desktop
-winget install -e --id AltSnap.AltSnap
+winget install --accept-source-agreements --accept-package-agreements -e --id VMware.WorkstationPlayer # broken
+winget install --accept-source-agreements --accept-package-agreements -e --id WinDirStat.WinDirStat
+winget install --accept-source-agreements --accept-package-agreements -e --id Docker.DockerDesktop
+winget install --accept-source-agreements --accept-package-agreements -e --id XAMPPRocky.tokei # broken?
+winget install --accept-source-agreements --accept-package-agreements -e --id 7zip.7zip
+winget install --accept-source-agreements --accept-package-agreements -e --id Ookla.Speedtest.Desktop
+winget install --accept-source-agreements --accept-package-agreements -e --id AltSnap.AltSnap
 # TODO add relevant sysinternals packages (see `winget search sysinternals`)
 
 
 # Version controll
-winget install -e --id GitHub.cli
-winget install -e --id Git.Git
-winget install -e --id GitHub.GitHubDesktop
-winget install -e --id GitExtensionsTeam.GitExtensions
-winget install -e --id o2sh.onefetch
+winget install --accept-source-agreements --accept-package-agreements -e --id GitHub.cli
+winget install --accept-source-agreements --accept-package-agreements -e --id Git.Git
+winget install --accept-source-agreements --accept-package-agreements -e --id GitHub.GitHubDesktop
+winget install --accept-source-agreements --accept-package-agreements -e --id GitExtensionsTeam.GitExtensions
+winget install --accept-source-agreements --accept-package-agreements -e --id o2sh.onefetch
 
 # Drivers and HW support
-winget install -e --id Logitech.OptionsPlus
+winget install --accept-source-agreements --accept-package-agreements -e --id Logitech.OptionsPlus
 
 # Code editors
-winget install -e --id Microsoft.VisualStudioCode
-winget install -e --id Neovim.Neovim
-winget install -e --id Helix.Helix
+winget install --accept-source-agreements --accept-package-agreements -e --id Microsoft.VisualStudioCode
+winget install --accept-source-agreements --accept-package-agreements -e --id Neovim.Neovim
+winget install --accept-source-agreements --accept-package-agreements -e --id Helix.Helix
 
 # Terminal emulators
-winget install -e --id Microsoft.WindowsTerminal
-winget install -e --id Maximus5.ConEmu
-winget install -e --id Eugeny.Tabby
-winget install -e --id Alacritty.Alacritty
+winget install --accept-source-agreements --accept-package-agreements -e --id Microsoft.WindowsTerminal
+winget install --accept-source-agreements --accept-package-agreements -e --id Maximus5.ConEmu
+winget install --accept-source-agreements --accept-package-agreements -e --id Eugeny.Tabby
+winget install --accept-source-agreements --accept-package-agreements -e --id Alacritty.Alacritty
 
 # compilers, build tools and interpreters
-winget install -e --id Python.Python.3.12
-winget install -e --id LLVM.LLVM
-winget install -e --id JFrog.Conan
-winget install -e --id Kitware.CMake
-winget install -e --id Ninja-build.Ninja
+winget install --accept-source-agreements --accept-package-agreements -e --id Python.Python.3.12
+winget install --accept-source-agreements --accept-package-agreements -e --id LLVM.LLVM
+winget install --accept-source-agreements --accept-package-agreements -e --id JFrog.Conan
+winget install --accept-source-agreements --accept-package-agreements -e --id Kitware.CMake
+winget install --accept-source-agreements --accept-package-agreements -e --id Ninja-build.Ninja
 
 # Office work
-winget install -e --id Adobe.Acrobat.Reader.64-bit
-winget install -e --id TrackerSoftware.PDF-XChangeEditor
-winget install -e --id KDE.Okular
-winget install -e --id TheDocumentFoundation.LibreOffice
-winget install -e --id Amazon.Kindle
-winget install -e --id Grammarly.Grammarly
-winget install -e --id calibre.calibre
+winget install --accept-source-agreements --accept-package-agreements -e --id Adobe.Acrobat.Reader.64-bit
+winget install --accept-source-agreements --accept-package-agreements -e --id TrackerSoftware.PDF-XChangeEditor
+winget install --accept-source-agreements --accept-package-agreements -e --id KDE.Okular
+winget install --accept-source-agreements --accept-package-agreements -e --id TheDocumentFoundation.LibreOffice
+winget install --accept-source-agreements --accept-package-agreements -e --id Amazon.Kindle
+winget install --accept-source-agreements --accept-package-agreements -e --id Grammarly.Grammarly
+winget install --accept-source-agreements --accept-package-agreements -e --id calibre.calibre
 
 # Desktop environment extensions and tools
-winget install -e --id Microsoft.PowerToys
-winget install -e --id AutoHotkey.AutoHotkey
+winget install --accept-source-agreements --accept-package-agreements -e --id Microsoft.PowerToys
+winget install --accept-source-agreements --accept-package-agreements -e --id AutoHotkey.AutoHotkey
 
 # Messaging and videoconferencing apps
-winget install -e --id OpenWhisperSystems.Signal
-winget install -e --id WhatsApp.WhatsApp # broken
-winget install -e --id Zoom.Zoom  # broken
-winget install -e --id Facebook.Messenger # broken
-winget install -e --id Spotify.Spotify # broken
+winget install --accept-source-agreements --accept-package-agreements -e --id OpenWhisperSystems.Signal
+winget install --accept-source-agreements --accept-package-agreements -e --id WhatsApp.WhatsApp # broken
+winget install --accept-source-agreements --accept-package-agreements -e --id Zoom.Zoom  # broken
+winget install --accept-source-agreements --accept-package-agreements -e --id Facebook.Messenger # broken
+winget install --accept-source-agreements --accept-package-agreements -e --id Spotify.Spotify # broken
 
 # Multimedia
-winget install -e --id GIMP.GIMP
-winget install -e --id IrfanSkiljan.IrfanView
-winget install -e --id Audacity.Audacity
+winget install --accept-source-agreements --accept-package-agreements -e --id GIMP.GIMP
+winget install --accept-source-agreements --accept-package-agreements -e --id IrfanSkiljan.IrfanView
+winget install --accept-source-agreements --accept-package-agreements -e --id Audacity.Audacity
 
 # Productivity
-winget install -e --id Doist.Todoist
+winget install --accept-source-agreements --accept-package-agreements -e --id Doist.Todoist
 
 winget upgrade --all
 
