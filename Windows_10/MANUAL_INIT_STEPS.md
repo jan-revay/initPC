@@ -85,6 +85,7 @@ to .vmx file in the virtual machine image directory.
 - Additionally to that desellect:
     * "Animate windows when minimizing and maximizing" (it will also improve speed of switching virtual desktops)
     * "Fade or slide ToolTips into view"
+    * "Animations in the taskbar"
     * ... TODO find out what other options are doing
 
 
