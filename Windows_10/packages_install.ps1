@@ -28,6 +28,8 @@ winget install -e --id XAMPPRocky.tokei # broken?
 winget install -e --id 7zip.7zip
 winget install -e --id Ookla.Speedtest.Desktop
 winget install -e --id AltSnap.AltSnap
+# TODO add relevant sysinternals packages (see `winget search sysinternals`)
+
 
 # Version controll
 winget install -e --id GitHub.cli
