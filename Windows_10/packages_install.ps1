@@ -13,6 +13,7 @@
 # TODO https://github.com/microsoft/winget-cli/blob/master/doc/Settings.md
 # TODO nvidia driver (studio or gaming?)
 # TODO other relevant drivers
+# TODO add useful packages from here: https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md
 
 Set-PSDebug -Trace 1
 
