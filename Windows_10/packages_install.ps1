@@ -14,7 +14,7 @@
 # TODO nvidia driver (studio or gaming?)
 # TODO other relevant drivers
 # TODO add useful packages from here: https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md
-# TODO add `--silent` options to `winget install` commands? https://learn.microsoft.com/en-us/windows/package-manager/winget/install
+# TODO add `--silent` and `--disable-interactivity` options to `winget install` commands? https://learn.microsoft.com/en-us/windows/package-manager/winget/install
 
 Set-PSDebug -Trace 1
 
