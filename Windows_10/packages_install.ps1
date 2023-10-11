@@ -88,7 +88,7 @@ winget install --accept-source-agreements --accept-package-agreements -e --id Au
 # Productivity
 winget install --accept-source-agreements --accept-package-agreements -e --id Doist.Todoist
 
-winget upgrade --all
+winget upgrade --all --accept-source-agreements --accept-package-agreements
 
 # Pip packages
 # TODO some packages below need to be fixed (or just installed globally?)
