@@ -23,15 +23,17 @@ $config = @"
 
 echo $config | Out-File -Encoding ASCII -FilePath ./dist/config.json
 
-$exe_dir = "$PWD\dist"
+( $res = Get-ScheduledTask "Taskbar_scroll" ) 2> $null
+if ($res -eq $null) {
+    $exe_dir = "$PWD\dist"
+    $action = New-ScheduledTaskAction -Execute "$exe_dir\scroll-desktops.exe" `
+        -Argument "--nowindowed --noconsole" `
+        -WorkingDirectory "$exe_dir"
+    $trigger = New-ScheduledTaskTrigger -AtLogOn
 
-# TODO - make scheduler registration idempotent
-$action = New-ScheduledTaskAction -Execute "$exe_dir\scroll-desktops.exe" `
-    -Argument "--nowindowed --noconsole" `
-    -WorkingDirectory "$exe_dir"
-$trigger = New-ScheduledTaskTrigger -AtLogOn
-Register-ScheduledTask -TaskName 'Taskbar_scroll' `
-    -Action $action -Trigger $trigger -RunLevel Highest
+    Register-ScheduledTask -TaskName 'Taskbar_scroll' `
+        -Action $action -Trigger $trigger -RunLevel Highest
+}
 
 popd
 
