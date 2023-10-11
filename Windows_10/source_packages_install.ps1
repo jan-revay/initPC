@@ -23,7 +23,7 @@ $config = @"
 
 echo $config | Out-File -Encoding ASCII -FilePath ./dist/config.json
 
-( $res = Get-ScheduledTask "Taskbar_scroll" ) 2> $null
+( $res = Get-ScheduledTask "Taskbar_scroll" -ErrorAction SilentlyContinue ) 2> $null
 if ($res -eq $null) {
     $exe_dir = "$PWD\dist"
     $action = New-ScheduledTaskAction -Execute "$exe_dir\scroll-desktops.exe" `
