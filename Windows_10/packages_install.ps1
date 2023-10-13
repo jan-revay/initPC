@@ -94,7 +94,7 @@ $WINGET_PACKAGES = @(
 )
 
 $WINGET_PACKAGES | ForEach-Object {
-    echo Winget is installing: $PSItem ;
+    echo "### Winget is installing a package: $PSItem"
     winget install --accept-source-agreements --accept-package-agreements `
         --silent --disable-interactivity -e --id  $PSItem 
     }
