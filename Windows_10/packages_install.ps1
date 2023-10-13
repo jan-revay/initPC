@@ -22,75 +22,75 @@ $ErrorActionPreference = "Stop"
 
 $WINGET_PACKAGES = @(
     # Web browsers
-    Mozilla.Firefox
-    Google.Chrome
+    'Mozilla.Firefox'
+    'Google.Chrome'
 
 # Utils
-    VMware.WorkstationPlayer # broken
-    WinDirStat.WinDirStat
-    Docker.DockerDesktop
-    XAMPPRocky.tokei # broken?
-    7zip.7zip
-    Ookla.Speedtest.Desktop
-    AltSnap.AltSnap
+    'VMware.WorkstationPlayer' # broken
+    'WinDirStat.WinDirStat'
+    'Docker.DockerDesktop'
+    'XAMPPRocky.tokei' # broken?
+    '7zip.7zip'
+    'Ookla.Speedtest.Desktop'
+    'AltSnap.AltSnap'
 # TODO add relevant sysinternals packages (see `winget search sysinternals`)
 
 
 # Version controll
-    GitHub.cli
-    Git.Git
-    GitHub.GitHubDesktop
-    GitExtensionsTeam.GitExtensions
-    o2sh.onefetch
+    'GitHub.cli'
+    'Git.Git'
+    'GitHub.GitHubDesktop'
+    'GitExtensionsTeam.GitExtensions'
+    'o2sh.onefetch'
 
 # Drivers and HW support
-    Logitech.OptionsPlus
+    'Logitech.OptionsPlus'
 
 # Code editors
-    Microsoft.VisualStudioCode
-    Neovim.Neovim
-    Helix.Helix
+    'Microsoft.VisualStudioCode'
+    'Neovim.Neovim'
+    'Helix.Helix'
 
 # Terminal emulators
-    Microsoft.WindowsTerminal
-    Maximus5.ConEmu
-    Eugeny.Tabby
-    Alacritty.Alacritty
+    'Microsoft.WindowsTerminal'
+    'Maximus5.ConEmu'
+    'Eugeny.Tabby'
+    'Alacritty.Alacritty'
 
 # compilers, build tools and interpreters
-    Python.Python.3.12
-    LLVM.LLVM
-    JFrog.Conan
-    Kitware.CMake
-    Ninja-build.Ninja
+    'Python.Python.3.12'
+    'LLVM.LLVM'
+    'JFrog.Conan'
+    'Kitware.CMake'
+    'Ninja-build.Ninja'
 
 # Office work
-    Adobe.Acrobat.Reader.64-bit
-    TrackerSoftware.PDF-XChangeEditor
-    KDE.Okular
-    TheDocumentFoundation.LibreOffice
-    Amazon.Kindle
-    Grammarly.Grammarly
-    calibre.calibre
+    'Adobe.Acrobat.Reader.64-bit'
+    'TrackerSoftware.PDF-XChangeEditor'
+    'KDE.Okular'
+    'TheDocumentFoundation.LibreOffice'
+    'Amazon.Kindle'
+    'Grammarly.Grammarly'
+    'calibre.calibre'
 
 # Desktop environment extensions and tools
-    Microsoft.PowerToys
-    AutoHotkey.AutoHotkey
+    'Microsoft.PowerToys'
+    'AutoHotkey.AutoHotkey'
 
 # Messaging and videoconferencing apps
-    OpenWhisperSystems.Signal
-    WhatsApp.WhatsApp # broken
-    Zoom.Zoom  # broken
-    Facebook.Messenger # broken
-    Spotify.Spotify # broken
+    'OpenWhisperSystems.Signal'
+    'WhatsApp.WhatsApp' # broken
+    'Zoom.Zoom'  # broken
+    'Facebook.Messenger' # broken
+    'Spotify.Spotify' # broken
 
 # Multimedia
-    GIMP.GIMP
-    IrfanSkiljan.IrfanView
-    Audacity.Audacity
+    'GIMP.GIMP'
+    'IrfanSkiljan.IrfanView'
+    'Audacity.Audacity'
 
 # Productivity
-    Doist.Todoist
+    'Doist.Todoist'
 )
 
 # TODO split to multiple lines
