@@ -53,6 +53,7 @@ jobs:
       # TODO split this command to multiple lines
       # TODO also test that the first run of initPC script does change the state of home dir
       # TODO - test whether the test works as expected
+      # TODO sync the idempotency test between linux distros (this is the most recent)
       - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing)
         run: |
           cd ~
@@ -64,4 +65,4 @@ jobs:
           ! -path "./x/helix/target/release/build/helix-term*" \
           ! -path "./x/helix/target/.rustc_info.json" \
           ! -name ".wget-hsts"  \) -print0 |
-          xargs -0 -I{} bash -c 'if ! diff "$1" "/tmp/old_home/$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
+          xargs -0 -I{} bash -c 'if ! diff -C 3 "/tmp/old_home/$1" "$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
