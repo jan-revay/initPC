@@ -11,3 +11,5 @@ shell_variant        = bash # --language-variant
 space_redirects      = true  # like -sr
 switch_case_indent   = true  # like -ci
 trim_trailing_whitespace = true
+
+# TODO add config for ps1
