@@ -94,7 +94,7 @@ $WINGET_PACKAGES = @(
 )
 
 # TODO split to multiple lines
-$WINGET_PACKAGES | ForEach-Object { winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id  [$PSItem] }
+$WINGET_PACKAGES | ForEach-Object { winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id  $PSItem }
 winget upgrade --all --accept-source-agreements --accept-package-agreements --silent --disable-interactivity
 
 # Pip packages
