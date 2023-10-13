@@ -32,4 +32,4 @@ hx --health
 # see: https://github.com/o2sh/onefetch/wiki/Installation#cargo
 # TODO enable systemd and install these via snaps - that way I can use identical install script
 # for ubuntu and debian (don't forget to make writing /etc/wsl.conf idempotent)
-cargo install du-dust # onefetch, procs - temporary broken (won't compile)
+cargo install du-dust onefetch, procs # temporary broken (won't compile)
