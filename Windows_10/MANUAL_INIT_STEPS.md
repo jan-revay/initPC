@@ -85,7 +85,7 @@ to .vmx file in the virtual machine image directory.
 
 - Text cursor - Turn on text cursor indicator (pink, 1/4 size)
 - (maybe - Display - Show animations in Windows - off? - that is already set above with greater granularity)
-- (maybe - Display -> make text bigger)
+- (maybe - Display -> make text bigger to around 105%)
 - night light settings - from 21 to 7, 50%
 
 ### System - settings
