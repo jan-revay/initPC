@@ -4,15 +4,15 @@ on:
   push:
     branches: [ "devel", "testing", "stable", "minimal" ]
     paths:
-    - 'CommonInitScripts/*'
+    - 'CommonInitScripts/*.ps1'
     - '.github/workflows/windows.yml'
-    - 'Windows_10/*'
+    - 'Windows_10/*.ps1'
   pull_request:
     branches: [ "devel", "testing", "stable", "minimal" ]
     paths:
-    - 'CommonInitScripts/*'
+    - 'CommonInitScripts/*.ps1'
     - '.github/workflows/windows.yml'
-    - 'Windows_10/*'
+    - 'Windows_10/*.ps1'
 
 jobs:
   build:
