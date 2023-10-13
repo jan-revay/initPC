@@ -62,11 +62,36 @@ to .vmx file in the virtual machine image directory.
 - Show recently opened itels in Jump Lists on start or the taskbar and in file explorer Quick access -> on
 - Choose which folders appear on Start -> Settings and Personal folder
 
+#### Background
+
+- set it to some gray color
+
+#### Colors
+
+- Choose your color - dark - IMPORTANT
+- Window colors -> Blue (or some other contrast color wrt. the window borders)
+- Show accent color on the following surfaces -> Title bars and window borders -> CHECK - IMPORTANT
+
+#### Themes
+
+- Mouse Cursor - Windows Standard (extra large)
+- Save my theme
+
+####
+
+- Fonts - Adjust ClearType text - go over the wizard
+
+### Accessibility settings
+
+- Text cursor - Turn on text cursor indicator (pink, 1/4 size)
+- (maybe - Display - Show animations in Windows - off? - that is already set above with greater granularity)
+- (maybe - Display -> make text bigger)
+
 ### System - settings
 
 1. Go to Windows Settings -> System
 
-- Power & Sleep - set all to Never
+- Power & Sleep - set all to Never - but set screen to turn off after 45 minutes
 - Multitasking
     * snap windows -> on (plus all related checkboxes)
     * Alt + Tab -> open windows only
