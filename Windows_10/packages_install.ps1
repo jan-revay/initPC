@@ -93,9 +93,12 @@ $WINGET_PACKAGES = @(
     'Doist.Todoist'
 )
 
-# TODO split to multiple lines
-$WINGET_PACKAGES | ForEach-Object { winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id  $PSItem }
-winget upgrade --all --accept-source-agreements --accept-package-agreements --silent --disable-interactivity
+$WINGET_PACKAGES | ForEach-Object {
+    winget install --accept-source-agreements --accept-package-agreements `
+        --silent --disable-interactivity -e --id  $PSItem 
+    }
+winget upgrade --all --accept-source-agreements --accept-package-agreements `
+    --silent --disable-interactivity
 
 # Pip packages
 # TODO some packages below need to be fixed (or just installed globally?)
