@@ -20,77 +20,81 @@
 Set-PSDebug -Trace 1
 $ErrorActionPreference = "Stop"
 
-# Web browsers
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Mozilla.Firefox
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Google.Chrome
+$WINGET_PACKAGES = @(
+    # Web browsers
+    Mozilla.Firefox
+    Google.Chrome
 
 # Utils
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id VMware.WorkstationPlayer # broken
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id WinDirStat.WinDirStat
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Docker.DockerDesktop
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id XAMPPRocky.tokei # broken?
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id 7zip.7zip
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Ookla.Speedtest.Desktop
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id AltSnap.AltSnap
+    VMware.WorkstationPlayer # broken
+    WinDirStat.WinDirStat
+    Docker.DockerDesktop
+    XAMPPRocky.tokei # broken?
+    7zip.7zip
+    Ookla.Speedtest.Desktop
+    AltSnap.AltSnap
 # TODO add relevant sysinternals packages (see `winget search sysinternals`)
 
 
 # Version controll
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id GitHub.cli
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Git.Git
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id GitHub.GitHubDesktop
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id GitExtensionsTeam.GitExtensions
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id o2sh.onefetch
+    GitHub.cli
+    Git.Git
+    GitHub.GitHubDesktop
+    GitExtensionsTeam.GitExtensions
+    o2sh.onefetch
 
 # Drivers and HW support
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Logitech.OptionsPlus
+    Logitech.OptionsPlus
 
 # Code editors
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Microsoft.VisualStudioCode
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Neovim.Neovim
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Helix.Helix
+    Microsoft.VisualStudioCode
+    Neovim.Neovim
+    Helix.Helix
 
 # Terminal emulators
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Microsoft.WindowsTerminal
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Maximus5.ConEmu
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Eugeny.Tabby
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Alacritty.Alacritty
+    Microsoft.WindowsTerminal
+    Maximus5.ConEmu
+    Eugeny.Tabby
+    Alacritty.Alacritty
 
 # compilers, build tools and interpreters
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Python.Python.3.12
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id LLVM.LLVM
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id JFrog.Conan
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Kitware.CMake
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Ninja-build.Ninja
+    Python.Python.3.12
+    LLVM.LLVM
+    JFrog.Conan
+    Kitware.CMake
+    Ninja-build.Ninja
 
 # Office work
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Adobe.Acrobat.Reader.64-bit
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id TrackerSoftware.PDF-XChangeEditor
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id KDE.Okular
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id TheDocumentFoundation.LibreOffice
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Amazon.Kindle
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Grammarly.Grammarly
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id calibre.calibre
+    Adobe.Acrobat.Reader.64-bit
+    TrackerSoftware.PDF-XChangeEditor
+    KDE.Okular
+    TheDocumentFoundation.LibreOffice
+    Amazon.Kindle
+    Grammarly.Grammarly
+    calibre.calibre
 
 # Desktop environment extensions and tools
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Microsoft.PowerToys
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id AutoHotkey.AutoHotkey
+    Microsoft.PowerToys
+    AutoHotkey.AutoHotkey
 
 # Messaging and videoconferencing apps
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id OpenWhisperSystems.Signal
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id WhatsApp.WhatsApp # broken
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Zoom.Zoom  # broken
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Facebook.Messenger # broken
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Spotify.Spotify # broken
+    OpenWhisperSystems.Signal
+    WhatsApp.WhatsApp # broken
+    Zoom.Zoom  # broken
+    Facebook.Messenger # broken
+    Spotify.Spotify # broken
 
 # Multimedia
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id GIMP.GIMP
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id IrfanSkiljan.IrfanView
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Audacity.Audacity
+    GIMP.GIMP
+    IrfanSkiljan.IrfanView
+    Audacity.Audacity
 
 # Productivity
-winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id Doist.Todoist
+    Doist.Todoist
+)
 
+# TODO split to multiple lines
+$WINGET_PACKAGES | ForEach-Object { winget install --accept-source-agreements --accept-package-agreements --silent --disable-interactivity -e --id  [$PSItem] }
 winget upgrade --all --accept-source-agreements --accept-package-agreements --silent --disable-interactivity
 
 # Pip packages
