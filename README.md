@@ -4,15 +4,26 @@
 
 ## How to use
 
+### On Linux
+
 1. `cd ~`
 2. `git clone https://github.com/jan-revay/initPC.git`
 3. `cd initPC/`
-4. `git checkout <branch>` (optional, default is the branch stable)
+4. `git checkout <branch>` (optional, default is the branch `devel`)
 5. `./run_init.sh` (a platform-independent init script launcher)
 
 Note: Logs will appear in the folder `initPC/Logs/`. Use `cat <logfile>` to display a log file with the original VT100 colors.
 
 After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changing a config file, or adding an alias...), run the `refresh` command from Bash to apply the config change to the machine.
+
+### On Windows
+
+1. `cd ~`
+2. `git clone https://github.com/jan-revay/initPC.git`
+3. `cd initPC`
+4. `git checkout <branch>` (optional, default is the branch `devel`)
+5. `cd Windows_10`
+6. `.\run_all.ps1`
 
 ## Branches
 
