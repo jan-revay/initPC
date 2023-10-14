@@ -52,8 +52,6 @@ following:
 devel-feature-<name of the feature>
 ```
 
-Using a different naming scheme will break ./install_dotfiles.sh script.
-
 ## TODO
 
 1. Merge and deprecate the InitNewPC repo InitPC repo on org GitHub and initAndroid repo.
