@@ -38,4 +38,17 @@ if ($res -eq $null) {
 
 popd
 
+
+( $res = Get-ScheduledTask "AltSnap" -ErrorAction SilentlyContinue ) 2> $null
+if ($res -eq $null) {
+    $exe_dir = "C:\Users\janci\AppData\Roaming\AltSnap"
+    $action = New-ScheduledTaskAction -Execute "$exe_dir\AltSnap.exe" `
+        -WorkingDirectory "$exe_dir"
+    $trigger = New-ScheduledTaskTrigger -AtLogOn
+
+    Register-ScheduledTask -TaskName 'AltSnap' `
+        -Action $action -Trigger $trigger -RunLevel Highest
+}
+
+
 Set-PSDebug -Trace 0
