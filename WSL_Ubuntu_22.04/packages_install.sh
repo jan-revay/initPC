@@ -15,6 +15,9 @@ sudo apt-get -y update
 time sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
+# see: https://github.com/jan-revay/initPC/issues/31
+touch ~/.bashrc # some install scripts want to append stuff here
+
 # sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test # repository with latest GCC
 LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' \
     | grep -E -o '^gcc-[0-9][0-9]' | sort -r | head --lines 1 | grep -E -o '[0-9][0-9]')
