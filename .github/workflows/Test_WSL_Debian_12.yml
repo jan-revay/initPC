@@ -65,4 +65,4 @@ jobs:
           ! -path "./x/helix/target/release/build/helix-term*" \
           ! -path "./x/helix/target/.rustc_info.json" \
           ! -name ".wget-hsts"  \) -print0 |
-          xargs -0 -I{} bash -c 'if ! diff -C 3 "/tmp/old_home/$1" "$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
+          xargs -0 -I{} bash -c 'if ! diff -C 200 "/tmp/old_home/$1" "$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
