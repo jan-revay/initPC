@@ -31,7 +31,6 @@ fi
 
 . ../WSL_Ubuntu_22.04/configs_install.sh
 
-# TODO - uncomment
-# . debian_specific_packages.sh # last, because some packages are built from source
+. debian_specific_packages.sh # last, because some packages are built from source
 
 # . ../WSL_Ubuntu_22.04/packages_install_optional.sh
