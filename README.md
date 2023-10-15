@@ -79,3 +79,4 @@ devel-feature-<name of the feature>
 21. Echo errors to stderr
 22. Make the script compliant with Google Bash style guide.
 23. Consider running different files in different subshells i.e. not using `source` command.
+24. Have a look at CI scripts Dorothy repo uses: https://github.com/bevry/dorothy/blob/master/.github/workflows/dorothy-workflow.yml and apply the insights in my CI. 
