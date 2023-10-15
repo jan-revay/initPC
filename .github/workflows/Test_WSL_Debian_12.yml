@@ -3,7 +3,7 @@ name: WSL_Debian_12 - iniPC script
 # TODO try using platform matrix and a single file for Ubuntu and Debian
 # TODO - set trigger paths, remove unnecessary commands, unify with Ubuntu script
 # TODO test
-
+# TODO merge WSL_Debian and WSL_Ubuntu_22.04 CI into a single .yml file
 # TODO Debian fails to build because of this bug: https://github.com/llvm/llvm-project/issues/62475
 
 on:
