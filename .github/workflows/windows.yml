@@ -1,3 +1,5 @@
+name: Run initPC on ${{ matrix.os }}
+
 on:
   push:
     branches: [ "devel", "testing", "stable", "minimal" ]
