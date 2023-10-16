@@ -22,4 +22,6 @@ wsl --install --distribution Debian --no-launch
 # TODO add remaining WSL setup here (e.g. mounting of Windows FS)
 # - wsl - mount windows FS there?
 
+# TODO - try installing WSL distros via winget (maybe it will be less interactive)
+# TODO add Kali linux WSL
 Set-PSDebug -Trace 0

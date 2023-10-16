@@ -38,6 +38,7 @@ try_platform "WSL_Debian_12" "$1"
 try_platform "Ubuntu_22.04" "$1"
 try_platform "PopOS_22.04" "$1"
 try_platform "Android_13" "$1"
+try_platform "Kali_latest_TUI" "$1"
 
 echo -e "${RED}run_init.sh: Fatal error - Unsupported platform " \
     "- no supported platform detected.${NC}" \
