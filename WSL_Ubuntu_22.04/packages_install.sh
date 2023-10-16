@@ -49,7 +49,7 @@ pushd /tmp || exit ${EXIT_FILE_IO_ERROR}
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 if ! time yes '' | sudo ./llvm.sh all; then
-# workaround bug in llvm install script: https://github.com/llvm/llvm-project/issues/62475
+    # workaround bug in llvm install script: https://github.com/llvm/llvm-project/issues/62475
     sudo apt update -y
     time yes '' | sudo ./llvm.sh all
 fi

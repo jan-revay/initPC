@@ -33,6 +33,6 @@ fi
 . ../WSL_Ubuntu_22.04/configs_install.sh
 
 # TODO create kali_specific_packages.sh
-. debian_specific_packages.sh # last, because some packages are built from source
+. ../WSL_Debian_12/debian_specific_packages.sh # last, because some packages are built from source
 
 # . ../WSL_Ubuntu_22.04/packages_install_optional.sh

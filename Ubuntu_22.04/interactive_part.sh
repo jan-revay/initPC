@@ -19,7 +19,3 @@ elif [ "$1" == "" ]; then
     # server/desktop, but not in wsl? It needs user interaction hence adding it here.
     sudo apt-get install -y postfix
 fi
-
-
-
-
