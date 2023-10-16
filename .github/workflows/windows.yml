@@ -1,4 +1,4 @@
-name: Run initPC on Windows
+name: Windows
 
 on:
   push:
