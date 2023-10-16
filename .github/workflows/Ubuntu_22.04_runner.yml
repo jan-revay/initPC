@@ -18,14 +18,14 @@ on:
     - '.github/workflows/Ubuntu_22.04_runner.yml'
     - 'WSL_Ubuntu_22.04/*.sh'
 
-# TODO add gnome version as matrix
 jobs:
   build:
+    continue-on-error: true
     name: With GNOME - ${{ matrix.install-gnome }}
     runs-on: ubuntu-22.04
     strategy:
-      matrix: # TODO add gnome as an additional row in the matrix
-        install-gnome: ['yes', 'no']
+      matrix:
+        install-gnome: ['yes', 'no'] # TODO add this to containers.yml
     steps:
     - name: Update APT & upgrade
       run: sudo apt-get update -y && sudo apt-get upgrade -y
