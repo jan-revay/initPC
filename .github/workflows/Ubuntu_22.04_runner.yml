@@ -23,6 +23,8 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
+    - name: Update APT & upgrade
+      run: sudo apt-get update -y && sudo apt-get upgrade -y
     # TODO - BUG - use the correct respective branch - check that it is resolved
     - uses: actions/checkout@v4
     - name: print `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
