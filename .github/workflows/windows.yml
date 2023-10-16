@@ -1,4 +1,4 @@
-name: Run initPC on ${{ matrix.os }}
+name: Run initPC on Windows
 
 on:
   push:
@@ -16,7 +16,7 @@ on:
 
 jobs:
   build:
-    name: Run initPC on ${{ matrix.os }}
+    name: ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     continue-on-error: true
     strategy:
