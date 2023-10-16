@@ -45,7 +45,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # TODO - finish
     #
 
-    function distro_is {
+    function distro_is (
     # TODO see:
     # https://www.freedesktop.org/software/systemd/man/os-release.html
     # https://0pointer.de/blog/projects/os-release.html
@@ -62,5 +62,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
             echo "Error: The OS is ${PRETTY_NAME} but should be $1! Aborting."
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
-    }
+
+        exit ${EXIT_SUCCESS}
+    )
 fi
