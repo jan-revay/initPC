@@ -46,6 +46,16 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     #
 
     function distro_is {
+    # TODO see:
+    # https://www.freedesktop.org/software/systemd/man/os-release.html
+    # https://0pointer.de/blog/projects/os-release.html
+    # https://manpages.ubuntu.com/manpages/focal/man5/os-release.5.html
+    # https://docs.oracle.com/cd/E88353_01/html/E37852/os-release-5.html
+    # https://github.com/chef/os_release
+    # https://man.archlinux.org/man/os-release.5.en
+    # https://manpages.debian.org/testing/systemd/os-release.5.en.html
+    # https://www.commandlinux.com/man-page/man5/os-release.5.html
+    # https://unix.stackexchange.com/questions/351557/on-what-linux-distributions-can-i-rely-on-the-presence-of-etc-os-release
         source /etc/os-release
 
         if [[ "${PRETTY_NAME}" != "$1" ]]; then
