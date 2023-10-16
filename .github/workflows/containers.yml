@@ -7,6 +7,7 @@ name: Containers
 # TODO Debian fails to build because of this bug: https://github.com/llvm/llvm-project/issues/62475
 # TODO - problem - changes in e.g. Kali Linux will thanks to the matrix trigger CI pipeline also for Debian etc. which might not be needed
 # TODO add correct trigger paths (e.g. for PopOS etc.)
+# TODO output of try_platform for Ubuntu does not show in logs
 
 on:
   push:
