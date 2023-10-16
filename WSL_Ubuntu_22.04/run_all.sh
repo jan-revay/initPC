@@ -4,12 +4,13 @@
 
 . ../prelude.sh
 
+# TODO use distro_is function from prelude.sh everywhere
 # TODO Ubuntu 23.04 works, hence it can be allowed, make this official
 # TODO try enabling 2x in general - this did not work - some packages are not available on 20.04
 # TODO try enabling 22.04 + (ideally by explicit naming)
 if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* &&
 "$(lsb_release --description --short)" != 'Ubuntu 23.04'* ]]; then
-    echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.' >&2
+    echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.'
     exit ${EXIT_INCORRECT_PLATFORM}
 fi
 

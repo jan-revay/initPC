@@ -39,8 +39,18 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # TODO - consider even better error code number (guaranteed to be unique)
     # apt-get install returns 100 if a package was not found... 100 is not a good error code. >IMPORTANT<
     # shellcheck disable=SC2034
-    readonly EXIT_INCORRECT_PLATFORM=100
+    readonly EXIT_INCORRECT_PLATFORM=99
     # shellcheck disable=SC2034
     readonly EXIT_INVALID_ARGUMENT=10
     # TODO - finish
+    #
+
+    function distro_is {
+        source /etc/os-release
+
+        if [[ "${PRETTY_NAME}" != "$1" ]]; then
+            echo "Error: The OS is ${PRETTY_NAME} but should be $1! Aborting."
+            exit ${EXIT_INCORRECT_PLATFORM}
+        fi
+    }
 fi
