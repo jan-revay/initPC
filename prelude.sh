@@ -37,6 +37,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # shellcheck disable=SC2034
     readonly EXIT_FILE_IO_ERROR=50
     # TODO - consider even better error code number (guaranteed to be unique)
+    # apt-get install returns 100 if a package was not found... 100 is not a good error code. >IMPORTANT<
     # shellcheck disable=SC2034
     readonly EXIT_INCORRECT_PLATFORM=100
     # shellcheck disable=SC2034
