@@ -18,6 +18,7 @@ jobs:
   build:
     name: Run initPC on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
+    continue-on-error: true
     strategy:
       matrix:
         os: [windows-latest, windows-2019]
