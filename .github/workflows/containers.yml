@@ -1,4 +1,4 @@
-name: Run iniPC on Linux containers
+name: Containers
 
 # TODO try using platform matrix and a single file for Ubuntu and Debian
 # TODO - set trigger paths, remove unnecessary commands, unify with Ubuntu script
@@ -13,7 +13,7 @@ on:
     - 'run_init.sh'
     - 'prelude.sh'
     - 'CommonInitScripts/*.sh*'
-    - '.github/workflows/run_initPC_on_Linux_containers.yml'
+    - '.github/workflows/containers.yml'
     - 'WSL_Ubuntu_22.04/*.sh'
     - 'WSL_Debian_12/*.sh'
   pull_request:
@@ -22,7 +22,7 @@ on:
     - 'run_init.sh'
     - 'prelude.sh'
     - 'CommonInitScripts/*.sh*'
-    - '.github/workflows/run_initPC_on_Linux_containers.yml'
+    - '.github/workflows/containers.yml'
     - 'WSL_Ubuntu_22.04/*.sh'
     - 'WSL_Debian_12/*.sh'
 
