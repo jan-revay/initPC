@@ -38,6 +38,7 @@ jobs:
           - 'ubuntu:22.04'
           - 'debian:12' # https://hub.docker.com/_/debian
           - 'kalilinux/kali-rolling' # https://hub.docker.com/r/kalilinux/kali-rolling
+          - 'nycticoracs/pop_os:22.04' # PopOS TODO add link
     container:
       image: ${{ matrix.container }}
     
