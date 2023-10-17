@@ -45,6 +45,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # TODO - finish
     #
 
+# TODO test for Distro name
     function distro_is (
     # TODO see:
     # https://www.freedesktop.org/software/systemd/man/os-release.html
@@ -57,7 +58,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # https://www.commandlinux.com/man-page/man5/os-release.5.html
     # https://unix.stackexchange.com/questions/351557/on-what-linux-distributions-can-i-rely-on-the-presence-of-etc-os-release
         source /etc/os-release
-
+# TODO print the distro name and version every time
         if [[ "${PRETTY_NAME}" != "$1" ]]; then
             echo "Error: The OS is ${PRETTY_NAME} but should be $1! Aborting."
             exit ${EXIT_INCORRECT_PLATFORM}
@@ -65,4 +66,5 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
 
         exit ${EXIT_SUCCESS}
     )
+# TODO function version_gt
 fi
