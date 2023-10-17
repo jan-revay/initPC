@@ -4,6 +4,12 @@
 
 - add build test for Android (Temrux)
 - add run test for my .vimrc (maybe add it to the dotfiles repo instead)
+- draw dependency graph here
+
+## Triggers
+
+- for push only stuff that was influenced by the change will be checked
+- for pull request everything will be run always (regardless whether files in question changed or not) - the point of this is not to forget anything when changing filenames or adding new files
 
 ## Example GitHub actions from similar repos
 
