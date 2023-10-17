@@ -49,6 +49,9 @@ jobs:
     container:
       image: ${{ matrix.container }}
     # TODO exit on push with commit message "Add a TODO"
+
+    # TODO - consider making these steps some kind of subroutine
+    # or some other way to avoid redundant runs in the matrix
     steps: # TODO - exit if the change was in the path that is not a dependency
       # - name: "set APT to non-interactive"
       #   shell: bash
