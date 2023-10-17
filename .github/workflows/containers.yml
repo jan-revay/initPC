@@ -68,6 +68,8 @@ jobs:
         run: echo ${{ github.ref }}
       - name: print `github.sha=${{ github.sha }}`
         run: echo ${{ github.sha }}
+      - name: "cat /etc/os-release"
+        run: cat /etc/os-release
       - name: Running iniPC script for the 1st time should not fail.
         run: ./run_init.sh --noninteractive
       - name: save ~/ for idempotency test
