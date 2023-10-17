@@ -39,8 +39,9 @@ jobs:
     strategy:
       matrix: # TODO add gnome as an additional row in the matrix
         container:
-          - 'ubuntu:23.10' # https://hub.docker.com/_/ubuntu
+          - 'ubuntu:23.04' # https://hub.docker.com/_/ubuntu
           - 'ubuntu:22.04'
+          - 'ubuntu:rolling'
           - 'debian:12' # https://hub.docker.com/_/debian
           - 'debian:testing'
           - 'kalilinux/kali-rolling' # https://hub.docker.com/r/kalilinux/kali-rolling
