@@ -5,11 +5,10 @@
 
 # TODO what about supporting all Ubuntu 2x versions?
 # TODO Ubuntu 23.04 works, hence it can be allowed, make this official
-if [[ "$(lsb_release --description --short)" != 'Ubuntu 22.04'* &&
-"$(lsb_release --description --short)" != 'Ubuntu 23.04'* ]]; then
-    echo 'Error: The base image does not match "Ubuntu 22.04"! Aborting.'
-    exit ${EXIT_INCORRECT_PLATFORM}
-fi
+# TODO - change the naming of directories so that it does not include the version or
+# make it clear that the specified version is minimal.
+distro_is ubuntu
+distro_version_ge 22
 
 if uname -r | grep "WSL2"; then
     echo "Warning: The script runs in WSL."
