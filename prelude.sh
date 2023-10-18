@@ -76,7 +76,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
             return
         fi
 
-        MAJOR_VERSION=$(echo ${VERSION_ID} | grep -o "^[0-9]\+")
+        local MAJOR_VERSION=$(echo ${VERSION_ID} | grep -o "^[0-9]\+")
         
         if [[ "${MAJOR_VERSION}" -lt "$1" ]]; then
             echo "Error: Major version is ${MAJOR_VERSION} but it should be at least $1! Aborting."
