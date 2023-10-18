@@ -45,26 +45,46 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # TODO - finish
     #
 
-# TODO test for Distro name
     function distro_is (
-    # TODO see:
-    # https://www.freedesktop.org/software/systemd/man/os-release.html
-    # https://0pointer.de/blog/projects/os-release.html
-    # https://manpages.ubuntu.com/manpages/focal/man5/os-release.5.html
-    # https://docs.oracle.com/cd/E88353_01/html/E37852/os-release-5.html
-    # https://github.com/chef/os_release
-    # https://man.archlinux.org/man/os-release.5.en
-    # https://manpages.debian.org/testing/systemd/os-release.5.en.html
-    # https://www.commandlinux.com/man-page/man5/os-release.5.html
-    # https://unix.stackexchange.com/questions/351557/on-what-linux-distributions-can-i-rely-on-the-presence-of-etc-os-release
+        # TODO test the test... and make sure it is correct/valid/general enough
+        # TODO see:
+        # https://www.freedesktop.org/software/systemd/man/os-release.html
+        # https://0pointer.de/blog/projects/os-release.html
+        # https://manpages.ubuntu.com/manpages/focal/man5/os-release.5.html
+        # https://docs.oracle.com/cd/E88353_01/html/E37852/os-release-5.html
+        # https://github.com/chef/os_release
+        # https://man.archlinux.org/man/os-release.5.en
+        # https://manpages.debian.org/testing/systemd/os-release.5.en.html
+        # https://www.commandlinux.com/man-page/man5/os-release.5.html
+        # https://unix.stackexchange.com/questions/351557/on-what-linux-distributions-can-i-rely-on-the-presence-of-etc-os-release
+        
         source /etc/os-release
-# TODO print the distro name and version every time
-        if [[ "${PRETTY_NAME}" != "$1" ]]; then
-            echo "Error: The OS is ${PRETTY_NAME} but should be $1! Aborting."
+        echo "Distro ID=${ID}"
+    
+        if [[ "${ID}" != "$1" ]]; then
+            echo "Error: The distro ID is ${ID} but it should be $1! Aborting."
+            exit ${EXIT_INCORRECT_PLATFORM}
+        fi
+    
+        exit ${EXIT_SUCCESS}
+    )
+    
+    function distro_version_ge (
+        source /etc/os-release
+        echo "Version ID=${VERSION_ID}"
+
+        if [[ ${VERSION_ID} == ""  ]]; then
+            echo "Warning: The version ID is empty."
+            exit ${EXIT_SUCCESS}
+        fi
+
+        MAJOR_VERSION=$(echo ${VERSION_ID} | grep -o "^[0-9]\+")
+        
+        if [[ "${MAJOR_VERSION}" -lt "$1" ]]; then
+            echo "Error: Major version is ${MAJOR_VERSION} but it should be at least $1! Aborting."
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
 
         exit ${EXIT_SUCCESS}
     )
-# TODO function version_gt
 fi
