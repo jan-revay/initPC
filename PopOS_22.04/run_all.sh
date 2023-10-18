@@ -3,10 +3,8 @@
 
 . ../prelude.sh
 
-if [[ "$(lsb_release --description --short)" != 'Pop!_OS 22.04 LTS' ]]; then
-    echo 'Error: The base image does not match "Pop!_OS 22.04 LTS"! Aborting.'
-    exit ${EXIT_INCORRECT_PLATFORM}
-fi
+distro_is pop
+distro_version_ge 22
 
 if uname -r | grep "WSL2"; then
     echo "Warning: The script runs in WSL."
