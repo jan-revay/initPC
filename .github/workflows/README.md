@@ -5,6 +5,7 @@
 - add build test for Android (Temrux)
 - add run test for my .vimrc (maybe add it to the dotfiles repo instead)
 - draw dependency graph here
+- in matrix executions - if one branch fails, the whole task should fail also (though the tests should be executed)
 
 ## Triggers
 
