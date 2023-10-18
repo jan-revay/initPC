@@ -4,10 +4,8 @@
 
 . ../prelude.sh
 
-if ! grep 'PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"' /etc/os-release; then
-    echo 'Error: The base image does not match "Debian GNU/Linux 12 (bookworm)"! Aborting.'
-    exit ${EXIT_INCORRECT_PLATFORM}
-fi
+distro_is debian
+distro_version_ge 12
 
 # TODO remove resp. rename the script directory
 # if ! uname -r | grep "WSL2"; then
