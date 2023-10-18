@@ -83,4 +83,6 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
     }
+
+    # TODO add a check for a presence of GNOME here
 fi
