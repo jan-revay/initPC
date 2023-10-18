@@ -7,6 +7,21 @@
 - draw dependency graph here
 - in matrix executions - if one branch fails, the whole task should fail also (though the tests should be executed)
 
+## Problems
+
+- snaps and flatpacks in Docker containers (consider making them work or avoiding them)
+
+## Triggers strategy (TODO)
+
+- use matrix for versions of the same distro
+- separate action for each distro with separate paths filters
+- the test itself will be a callable action that will be called from distro actions
+- changes in WSL_Ubuntu will trigger checks of everything as everything depends on
+  stuff in that directory (github action for WSL_Ubuntu will call everything itself
+  and everything will be made callable) - name the test "Test_Everything"
+- pull_request event will also trigger Test_Everything
+- TODO - but read Github Actions documentation first. Maybe there is even more elegant way.
+
 ## Triggers
 
 - for push only stuff that was influenced by the change will be checked
