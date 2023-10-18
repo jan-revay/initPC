@@ -68,7 +68,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     }
     
     function distro_version_ge {
-        local MAJOR_VERSION=$(source /etc/os-release && echo "${VERSION_ID}")
+        local VERSION_ID=$(source /etc/os-release && echo "${VERSION_ID}")
         echo "Version ID=${VERSION_ID}"
 
         if [[ ${VERSION_ID} == ""  ]]; then
