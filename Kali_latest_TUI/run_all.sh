@@ -4,11 +4,8 @@
 
 . ../prelude.sh
 
-# TODO - make this a function, use variables, execute os-release as a script
-if ! grep 'PRETTY_NAME="Kali GNU/Linux Rolling"' /etc/os-release; then
-    echo 'Error: The base image does not match "Kali GNU/Linux Rolling"! Aborting.'
-    exit ${EXIT_INCORRECT_PLATFORM}
-fi
+distro_is kali
+distro_version_ge 2023
 
 # TODO remove resp. rename the script directory
 # if ! uname -r | grep "WSL2"; then
