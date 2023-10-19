@@ -45,7 +45,8 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # TODO - finish
     #
 
-    function distro_is {
+    function distro_is
+    {
         # TODO test the test... and make sure it is correct/valid/general enough
         # TODO see:
         # https://www.freedesktop.org/software/systemd/man/os-release.html
@@ -57,27 +58,30 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         # https://manpages.debian.org/testing/systemd/os-release.5.en.html
         # https://www.commandlinux.com/man-page/man5/os-release.5.html
         # https://unix.stackexchange.com/questions/351557/on-what-linux-distributions-can-i-rely-on-the-presence-of-etc-os-release
-        
-        local ID=$(source /etc/os-release && echo "${ID}")
+        local ID
+        ID=$(source /etc/os-release && echo "${ID}")
         echo "Distro ID=${ID}"
-    
+
         if [[ "${ID}" != "$1" ]]; then
             echo "Error: The distro ID is ${ID} but it should be $1! Aborting."
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
     }
-    
-    function distro_version_ge {
-        local VERSION_ID=$(source /etc/os-release && echo "${VERSION_ID}")
+
+    function distro_version_ge
+    {
+        local VERSION_ID
+        VERSION_ID="$(source /etc/os-release && echo "${VERSION_ID}")"
         echo "Version ID=${VERSION_ID}"
 
-        if [[ ${VERSION_ID} == ""  ]]; then
+        if [[ ${VERSION_ID} == "" ]]; then
             echo "Warning: The version ID is empty."
             return
         fi
 
-        local MAJOR_VERSION=$(echo ${VERSION_ID} | grep -o "^[0-9]\+")
-        
+        local MAJOR_VERSION
+        MAJOR_VERSION="$(echo "${VERSION_ID}" | grep -o "^[0-9]\+")"
+
         if [[ "${MAJOR_VERSION}" -lt "$1" ]]; then
             echo "Error: Major version is ${MAJOR_VERSION} but it should be at least $1! Aborting."
             exit ${EXIT_INCORRECT_PLATFORM}
