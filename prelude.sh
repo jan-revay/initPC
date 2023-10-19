@@ -45,6 +45,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # TODO - finish
     #
 
+    # @param $1 - distro ID
     function distro_is
     {
         # TODO test the test... and make sure it is correct/valid/general enough
@@ -68,6 +69,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         fi
     }
 
+    # @param $1 - minimal distro major version
     function distro_version_ge
     {
         local VERSION_ID
@@ -89,4 +91,13 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     }
 
     # TODO add a check for a presence of GNOME here
+
+#   function gnome_present
+#   {
+#       #       if [[ $1 == "yes" ]]; then
+#       #       if gnome-extensions --version; then
+#       #       else
+#       #       fi
+#       #       fi
+#   }
 fi
