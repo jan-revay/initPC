@@ -52,6 +52,16 @@ following:
 devel-feature-<name of the feature>
 ```
 
+## FAQ
+
+### 1. Why don't I use Ansible?
+
+TODO
+
+### 3. Why don't I use Chezmoi?
+
+TODO
+
 ## TODO
 
 1. Merge and deprecate the InitNewPC repo InitPC repo on org GitHub and initAndroid repo.
