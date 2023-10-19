@@ -23,24 +23,46 @@ LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' \
     | grep -E -o '^gcc-[0-9][0-9]' | sort -r | head --lines 1 | grep -E -o '[0-9][0-9]')
 
 # see https://github.com/rr-debugger/rr/wiki/Using-rr-in-an-IDE
-APT_PACKAGES+=(build-essential gdb rr ccache ninja-build cmake cmake-gui) # GCC and build tools
-APT_PACKAGES+=(gcc-"${LATEST_GCC_VER_IN_APT}")                            # latest GCC
-APT_PACKAGES+=(g++-"${LATEST_GCC_VER_IN_APT}")                            # latest g++
+# TODO consider moving all packages that need GUI to GUI part of the initPC script
+APT_PACKAGES+=(
+    # GCC and build tools
+    build-essential gdb rr ccache ninja-build cmake cmake-gui
+    gcc-"${LATEST_GCC_VER_IN_APT}" g++-"${LATEST_GCC_VER_IN_APT}"
 
-# APT_PACKAGES+=" linux-tools-$(uname -r)" # TODO broken
-APT_PACKAGES+=(neovim emacs qtcreator)                                    # editors
-APT_PACKAGES+=(ripgrep tree curl neofetch htop tmux at zsh traceroute jq) # utils
-APT_PACKAGES+=(dconf-editor doxygen git gh bat exa man fish fd-find)      # utils
-APT_PACKAGES+=(npm rubygems pipx)                                         # package managers
-# NOTE: fd-find executable is called `fdfind`
-APT_PACKAGES+=(python3-pip) # various runtimes
-# TODO maybe add default-jre and dotnet7?
-APT_PACKAGES+=(cppcheck cppcheck-gui iwyu clazy shellcheck)                  # static analyzers
-APT_PACKAGES+=(cmake-format shfmt)                                           # code formatters
-APT_PACKAGES+=(valgrind hotspot heaptrack)                                   # dynamic analyzers , TODO test them
-APT_PACKAGES+=(python3-matplotlib python3-mock python3-numpy python3-pandas) # Python packages
-APT_PACKAGES+=(python3-pytest python3-requests python3-scipy python3-pylsp)  # Python packages
-APT_PACKAGES+=(wget lsb-release software-properties-common gnupg curl)       # requirements for llvm and rust install scripts
+    # " linux-tools-$(uname -r)" # TODO broken
+
+    # editors
+    # TODO consider moving qtcreator to the GUI part of the script
+    neovim emacs qtcreator
+
+    # utils
+    ripgrep tree curl neofetch htop tmux at zsh traceroute jq
+    # NOTE: fd-find executable is called `fdfind`
+    # TODO consider moving doconf-editor to GUI part of the initPC script
+    dconf-editor doxygen git gh bat exa man fish fd-find
+
+    # package managers
+    npm rubygems pipx python3-pip
+    # TODO maybe add default-jre and dotnet7?
+
+    # static analyzers
+    # TODO clazy is broken on Debian:testing
+    cppcheck cppcheck-gui iwyu clazy shellcheck
+
+    # code formatters
+    cmake-format shfmt
+
+    # dynamic analyzers , TODO test them
+    valgrind hotspot heaptrack
+
+    # Python packages
+    python3-matplotlib python3-mock python3-numpy python3-pandas
+    python3-pytest python3-requests python3-scipy python3-pylsp
+
+    # requirements for llvm and rust install scripts
+    wget lsb-release software-properties-common gnupg curl
+)
+
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # Install the most recent llvm (see https://apt.llvm.org/)
