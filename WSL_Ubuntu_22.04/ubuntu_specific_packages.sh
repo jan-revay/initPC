@@ -4,6 +4,8 @@
 
 . ../prelude.sh
 
+# consider avoiding or ifdefing snaps as they cannot be used in containers
+
 # list install is not idempotent for some reason - TODO fix
 # SNAP_PACKAGES+=(dust procs onefetch) -
 # TODO benchmark the performance of snap vs. cargo
