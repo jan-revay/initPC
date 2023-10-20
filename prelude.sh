@@ -77,6 +77,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         fi
     }
 
+    # TODO make distro_version_le
     # @param $1 - minimal distro major version
     function distro_version_ge
     {

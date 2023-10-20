@@ -1,5 +1,4 @@
 #!/bin/bash -x
-# BASE IMAGE: PopOS 22.04
 
 # TODO
 # - Docker

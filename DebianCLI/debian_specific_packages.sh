@@ -1,5 +1,4 @@
 #!/bin/bash -x
-# BASE IMAGE: WSL Debian 12
 # The script should not require any user input and should be idempotent.
 
 # Packages that are installed on Ubuntu, but not available on Debian (e.g. PPAs)

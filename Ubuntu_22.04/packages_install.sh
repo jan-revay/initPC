@@ -1,5 +1,4 @@
 #!/bin/bash -x
-# BASE IMAGE: Ubuntu 22.04
 # The script should not require any user input and should be idempotent.
 
 # TODO use lists for packages (and use on install command)
@@ -15,8 +14,7 @@ else                                                        # we are running bar
     sudo apt install -y logiops
 fi
 
-# WSL Ubuntu script installs command line applications
-. ../WSL_Ubuntu_22.04/packages_install.sh
+. ../UbuntuCLI/packages_install.sh
 # Programs with GUI are added below
 
 # TODO add packages from PopOS here (and use this as a base for the PopOS)

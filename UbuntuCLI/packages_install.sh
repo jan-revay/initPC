@@ -1,5 +1,4 @@
 #!/bin/bash -x
-# BASE IMAGE: WSL Ubuntu 22.04
 # The script should not require any user input and should be idempotent.
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
 # TODO move the package lists to external files

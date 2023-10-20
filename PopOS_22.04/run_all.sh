@@ -1,5 +1,5 @@
 #!/bin/bash -x
-# BASE IMAGE: PopOS 22.04
+# This script should be idempotent.
 
 . ../prelude.sh
 

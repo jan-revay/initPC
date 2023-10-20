@@ -1,5 +1,4 @@
 #!/bin/bash -x
-# BASE IMAGE: WSL Ubuntu 22.04
 # This script should be idempotent.
 # This script REQUIRES USER INTERACTION IN GNOME!!!
 

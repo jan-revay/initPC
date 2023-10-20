@@ -1,12 +1,11 @@
 #!/bin/bash -x
-# BASE IMAGE: Ubuntu 22.04
 # The script should not require any user input and should be idempotent.
 
 # TODO sync with PopOS configs_install.sh
 
 . ../prelude.sh
 
-. ../WSL_Ubuntu_22.04/configs_install.sh
+. ../UbuntuCLI/configs_install.sh
 
 # GNOME TWEAKS
 
