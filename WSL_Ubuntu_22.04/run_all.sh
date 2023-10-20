@@ -17,11 +17,7 @@ distro_version_ge 22
 #     exit 2
 # fi
 
-if gnome-extensions --version; then
-    echo 'Use Ubuntu Desktop installer (./Ubuntu_22.04)' >&2
-    echo 'This script is targeted only to CLI installations' >&2
-    exit ${EXIT_INCORRECT_PLATFORM}
-fi
+gnome_present no
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
 . interactive_part.sh

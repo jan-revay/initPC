@@ -13,12 +13,7 @@ distro_version_ge 12
 #     exit 2
 # fi
 
-if gnome-extensions --version; then
-    # TODO - debian desktop installer
-    echo 'Use Debian Desktop installer (./Debian_12)'
-    echo 'This script is targeted only to CLI installations'
-    exit ${EXIT_INCORRECT_PLATFORM}
-fi
+gnome_present no
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
 . ../WSL_Ubuntu_22.04/interactive_part.sh

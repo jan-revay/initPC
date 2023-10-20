@@ -9,14 +9,10 @@
 # make it clear that the specified version is minimal.
 distro_is ubuntu
 distro_version_ge 22
+gnome_present yes
 
 if uname -r | grep "WSL2"; then
     echo "Warning: The script runs in WSL."
-fi
-
-if ! gnome-extensions --version; then
-    echo 'gnome-extensions not found'
-    exit ${EXIT_INCORRECT_PLATFORM}
 fi
 
 # TODO "Which services should be restarted?" prompt is still present in VM

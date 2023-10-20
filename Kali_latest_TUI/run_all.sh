@@ -6,19 +6,13 @@
 
 distro_is kali
 distro_version_ge 2023
+gnome_present no
 
 # TODO remove resp. rename the script directory
 # if ! uname -r | grep "WSL2"; then
 #     echo "Warning: The base image probably does not run in WSL."
 #     exit 2
 # fi
-
-if gnome-extensions --version; then
-    # TODO - Kali desktop installer
-    echo 'Use Kali Desktop installer (TODO)'
-    echo 'This script is targeted only to CLI installations'
-    exit ${EXIT_INCORRECT_PLATFORM}
-fi
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
 . ../WSL_Ubuntu_22.04/interactive_part.sh
