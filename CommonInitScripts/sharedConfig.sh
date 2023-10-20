@@ -1,6 +1,7 @@
 #!/bin/bash -x
 # WARNING: this scripts expects ./CommonInitScripts as a working directory
 
+# TODO rename to snake case shared_config.sh
 # TODO cd working directory to ./CommonInitScripts in this script
 # see: https://stackoverflow.com/questions/59895/how-do-i-get-the-directory-where-a-bash-script-is-located-from-within-the-script
 
