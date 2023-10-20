@@ -27,7 +27,8 @@ ln -f -s "$PWD/runtime" ~/.config/helix/runtime
 hx --grammar fetch
 hx --grammar build
 hx --health
-# TODO add find "${CRAFT_PART_INSTALL}" -type f -executable -exec strip {} \; 
+# TODO add find "${CRAFT_PART_INSTALL}" -type f -executable -exec strip {} \;
+#TODO - have a look at here: https://github.com/helix-editor/helix/tree/master/.github/workflows
 
 # TODO - do I need to use --force parameter to update cargo packages?
 # see: https://github.com/o2sh/onefetch/wiki/Installation#cargo
