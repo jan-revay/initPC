@@ -89,3 +89,4 @@ TODO
 21. Echo errors to stderr
 22. Make the script compliant with Google Bash style guide.
 23. Consider running different files in different subshells i.e. not using `source` command.
+24. shared_gui_packages_install.sh
