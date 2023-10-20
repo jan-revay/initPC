@@ -1,6 +1,6 @@
 # initPC
 
-🛠A collection of C++, Python & Rust development-oriented config scripts to quickly init new machines for my personal use.💻Dotfiles are in a separate repository here: <https://github.com/jan-revay/dotfiles>
+🛠A collection of C++, Python & Rust development-oriented config scripts to quickly init new machines for my personal use.💻Dotfiles are in a separate repository here: <https://github.com/jan-revay/dotfiles> and here: <https://github.com/jan-revay/windows_dotfiles>
 
 ## How to use
 
