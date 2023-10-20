@@ -59,7 +59,15 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         # https://manpages.debian.org/testing/systemd/os-release.5.en.html
         # https://www.commandlinux.com/man-page/man5/os-release.5.html
         # https://unix.stackexchange.com/questions/351557/on-what-linux-distributions-can-i-rely-on-the-presence-of-etc-os-release
+
+        if [[ ! -f /etc/os-release ]]; then
+            echo "/etc/os-release file not found."
+            echo "Aborting."
+            exit ${EXIT_INCORRECT_PLATFORM}
+        fi
+
         local ID
+        # shellcheck disable=SC1091
         ID=$(source /etc/os-release && echo "${ID}")
         echo "Distro ID=${ID}"
 
@@ -72,7 +80,14 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # @param $1 - minimal distro major version
     function distro_version_ge
     {
+        if [[ ! -f /etc/os-release ]]; then
+            echo "/etc/os-release file not found."
+            echo "Aborting."
+            exit ${EXIT_INCORRECT_PLATFORM}
+        fi
+
         local VERSION_ID
+        # shellcheck disable=SC1091
         VERSION_ID="$(source /etc/os-release && echo "${VERSION_ID}")"
         echo "Version ID=${VERSION_ID}"
 
@@ -90,14 +105,19 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         fi
     }
 
-    # TODO add a check for a presence of GNOME here
+    function gnome_present
+    {
+        local GNOME_PRESENT="no"
 
-#   function gnome_present
-#   {
-#       #       if [[ $1 == "yes" ]]; then
-#       #       if gnome-extensions --version; then
-#       #       else
-#       #       fi
-#       #       fi
-#   }
+        if gnome-extensions --version; then
+            GNOME_PRESENT="yes"
+            echo "gnome-extensions executable found."
+            echo "Assuming that GNOME is present"
+        fi
+
+        if [[ ${GNOME_PRESENT} != "$1" ]]; then
+            echo "GNOME_PRESENT != $1. Aborting."
+            exit ${EXIT_INCORRECT_PLATFORM}
+        fi
+    }
 fi
