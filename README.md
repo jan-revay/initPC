@@ -12,7 +12,7 @@
     * `./run_init.sh` - on Linux distros or Termux
     * `cd Windows_10 && .\run_all.ps1` - on Windows
 
-Note: Logs will appear in the folder `initPC/Logs/`. Use `cat <logfile>` to display a log file with the original VT100 colors.
+✔️ *Note: Logs will appear in the folder `initPC/Logs/`. Use `cat <logfile>` to display the log file with the original VT100 colors.*
 
 After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changing a config file, or adding an alias...), run the `refresh` command from Bash to apply the config change to your machine.
 
