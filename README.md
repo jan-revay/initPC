@@ -9,9 +9,9 @@
 3. `cd initPC/`
 4. `git checkout <branch>` (optional step, branch `devel` is the default)
 5. Run init script launcher
-   a) `./run_init.sh` (a distro-independent Linux init script launcher)
-   b) `cd Windows_10\run_all.ps1` (on Windows)
-   c) `cd Android_13/run_all.sh` (in Termux on Android)
+    * `./run_init.sh` (a distro-independent Linux init script launcher)
+    * `cd Windows_10\run_all.ps1` (on Windows)
+    * `cd Android_13/run_all.sh` (in Termux on Android)
 
 Note: Logs will appear in the folder `initPC/Logs/`. Use `cat <logfile>` to display a log file with the original VT100 colors.
 
