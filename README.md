@@ -9,7 +9,7 @@
 1. `cd ~`
 2. `git clone https://github.com/jan-revay/initPC.git`
 3. `cd initPC/`
-4. `git checkout <branch>` (optional, default is the branch `devel`)
+4. `git checkout <branch>` (optional step, branch `devel` is the default)
 5. `./run_init.sh` (a platform-independent init script launcher)
 
 Note: Logs will appear in the folder `initPC/Logs/`. Use `cat <logfile>` to display a log file with the original VT100 colors.
