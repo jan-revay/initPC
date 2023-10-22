@@ -16,18 +16,18 @@ on:
 jobs:
   build:
     continue-on-error: true
-    name: ${{ matrix.install-gnome }}
+    name: ${{ matrix.install-gui }}
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        install-gnome: ['GNOME', 'NO GUI'] # TODO add this to containers.yml
+        install-gui: ['GNOME', 'NO GUI'] # TODO add this to containers.yml
     steps:
     - name: Update APT & upgrade
       run: sudo apt-get update -y && sudo apt-get upgrade -y
     # TODO - BUG - use the correct respective branch - check that it is resolved
-    - name: ${{ matrix.install-gnome }} 
+    - name: ${{ matrix.install-gui }}
       run: |
-          if [[ "${{ matrix.install-gnome }}" == 'GNOME' ]]; then
+          if [[ "${{ matrix.install-gui }}" == 'GNOME' ]]; then
               sudo apt-get install -y ubuntu-desktop-minimal
           fi
     - uses: actions/checkout@v4
