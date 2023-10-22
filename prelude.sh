@@ -108,7 +108,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         fi
 
         if [[ "${MAJOR_VERSION}" -lt "$1" ]]; then
-            echo "Error: Major version is ${MAJOR_VERSION} but it should be at least $1! Aborting."
+            echo "Error: Major distro version is ${MAJOR_VERSION} but it should be at least $1! Aborting."
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
     }
@@ -123,7 +123,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         fi
 
         if [[ "${MAJOR_VERSION}" -gt "$1" ]]; then
-            echo "Error: Major version is ${MAJOR_VERSION} but it should be at most $1! Aborting."
+            echo "Error: Major distro version is ${MAJOR_VERSION} but it should be at most $1! Aborting."
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
     }
