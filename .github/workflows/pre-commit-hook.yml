@@ -1,0 +1,25 @@
+name: pre-commit hook
+
+on:
+  push:
+    branches: [ "devel", "testing", "stable", "LTS" ]
+  pull_request:
+    branches: [ "devel", "testing", "stable", "LTS" ]
+
+jobs:
+  build:
+    # name: ${{ matrix.install-gui }}
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Update APT & upgrade
+      run: sudo apt-get update -y && sudo apt-get upgrade -y
+    - name: Install dependencies
+      run: apt install -y shfmt shellcheck 
+  
+    - uses: actions/checkout@v4
+    - name: print `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
+      run: "echo Ref: ${{ github.ref }}, SHA: ${{ github.sha }}"
+      
+    - name: pre-commit hook should not fail
+      run: ./pre-commit-hook.sh
