@@ -77,7 +77,6 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         fi
     }
 
-    # TODO make distro_version_le
     # @param $1 - minimal distro major version
     function distro_version_ge
     {
@@ -92,6 +91,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         VERSION_ID="$(source /etc/os-release && echo "${VERSION_ID}")"
         echo "Version ID=${VERSION_ID}"
 
+        # An empty VERSION_ID is interpretted as the (positive) infinity.
         if [[ ${VERSION_ID} == "" ]]; then
             echo "Warning: The version ID is empty."
             return
@@ -102,6 +102,16 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
 
         if [[ "${MAJOR_VERSION}" -lt "$1" ]]; then
             echo "Error: Major version is ${MAJOR_VERSION} but it should be at least $1! Aborting."
+            exit ${EXIT_INCORRECT_PLATFORM}
+        fi
+    }
+
+    function distro_version_lt {
+        $(distro_version_ge "$1")
+        if [[ $? == ${EXIT_INCORRECT_PLATFORM} ]]; then
+            return
+        else
+            # If VERSION_ID is empty we fail.
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
     }
