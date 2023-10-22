@@ -2,15 +2,16 @@ name: Ubuntu GH
 
 on:
   push:
-    branches: [ "devel", "testing", "stable", "minimal" ]
+    branches: [ "devel", "testing", "stable", "LTS" ]
     paths:
+    - '.github/workflows/UbuntuGH.yml'
     - 'run_init.sh'
     - 'prelude.sh'
     - 'CommonInitScripts/**.sh*'
-    - '.github/workflows/UbuntuGH.yml'
     - 'UbuntuCLI/**.sh'
+    - 'Ubuntu_22.04/**.sh'
   pull_request:
-    branches: [ "devel", "testing", "stable", "minimal" ]
+    branches: [ "devel", "testing", "stable", "LTS" ]
 
 jobs:
   build:
