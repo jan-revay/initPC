@@ -99,7 +99,12 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # @param $1 - minimal distro major version
     function distro_version_ge
     {
-        local MAJOR_VERSION="$(get_major_distro_version)"
+        local MAJOR_VERSION
+        MAJOR_VERSION="$(get_major_distro_version)"
+
+        if [[ "$?" != '0' ]]; then
+            exit ${EXIT_INCORRECT_PLATFORM}
+        fi
 
         # An empty VERSION_ID is interpretted as the (positive) infinity.
         if [[ "${MAJOR_VERSION}" == "" ]]; then
@@ -114,7 +119,12 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     }
 
     function distro_version_le {
-        local MAJOR_VERSION="$(get_major_distro_version)"
+        local MAJOR_VERSION
+        MAJOR_VERSION="$(get_major_distro_version)"
+
+        if [[ "$?" != '0' ]]; then
+            exit ${EXIT_INCORRECT_PLATFORM}
+        fi
 
         # An empty VERSION_ID is interpretted as the (positive) infinity.
         if [[ "${MAJOR_VERSION}" == "" ]]; then
