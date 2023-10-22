@@ -25,7 +25,7 @@ After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changi
 
 LTS, stable, and testing branches are expected to be _always in a consistent state_ so that they can always be used to init a new machine e.g. VM or a bootable partition. The devel branch is expected to be broken from time to time (e.g. when working on larger changes "per partes") and it might not always be possible to init a machine using it.
 
-✔️ *Note: By stable I mean free of unpredictable behavior not as decribed here: https://medium.com/@gordon.messmer/what-does-stable-mean-4447ac53bac8 (TODO toread)*
+✔️ *Note: By stable I mean free of unpredictable behavior and crashes, not as decribed here: https://medium.com/@gordon.messmer/what-does-stable-mean-4447ac53bac8 (TODO toread)*
 
 ### Change workflow
 
