@@ -15,7 +15,7 @@ on:
 jobs:
   build:
     continue-on-error: true
-    name: With GNOME - ${{ matrix.install-gnome }}
+    name: ${{ matrix.install-gnome }}
     runs-on: ubuntu-22.04
     strategy:
       matrix:
