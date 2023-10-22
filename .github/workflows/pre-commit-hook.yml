@@ -15,7 +15,7 @@ jobs:
     - name: Update APT
       run: sudo apt-get update -y
     - name: Install dependencies
-      run: apt install -y shfmt shellcheck 
+      run: sudo apt install -y shfmt shellcheck
   
     - uses: actions/checkout@v4
     - name: print `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
