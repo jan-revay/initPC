@@ -7,7 +7,7 @@ on:
     - 'run_init.sh'
     - 'prelude.sh'
     - 'CommonInitScripts/**.sh*'
-    - '.github/workflows/Ubuntu_22.04_runner.yml'
+    - '.github/workflows/UbuntuGH.yml'
     - 'UbuntuCLI/**.sh'
   pull_request:
     branches: [ "devel", "testing", "stable", "minimal" ]
