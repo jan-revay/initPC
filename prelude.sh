@@ -100,9 +100,8 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     function distro_version_ge
     {
         local MAJOR_VERSION
-        MAJOR_VERSION="$(get_major_distro_version)"
 
-        if [[ "$?" != '0' ]]; then
+        if ! MAJOR_VERSION="$(get_major_distro_version)"; then
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
 
@@ -120,9 +119,8 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
 
     function distro_version_le {
         local MAJOR_VERSION
-        MAJOR_VERSION="$(get_major_distro_version)"
 
-        if [[ "$?" != '0' ]]; then
+        if ! MAJOR_VERSION="$(get_major_distro_version)"; then
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
 
