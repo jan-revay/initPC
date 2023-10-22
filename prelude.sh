@@ -108,7 +108,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
 
     function distro_version_lt {
         $(distro_version_ge "$1")
-        if [[ $? == ${EXIT_INCORRECT_PLATFORM} ]]; then
+        if [[ "$?" == "${EXIT_INCORRECT_PLATFORM}" ]]; then
             return
         else
             # If VERSION_ID is empty we fail.
