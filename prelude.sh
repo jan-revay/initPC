@@ -77,8 +77,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         fi
     }
 
-    # @param $1 - minimal distro major version
-    function distro_version_ge
+    function get_major_distro_version
     {
         if [[ ! -f /etc/os-release ]]; then
             echo "/etc/os-release file not found."
@@ -89,16 +88,24 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         local VERSION_ID
         # shellcheck disable=SC1091
         VERSION_ID="$(source /etc/os-release && echo "${VERSION_ID}")"
-        echo "Version ID=${VERSION_ID}"
 
-        # An empty VERSION_ID is interpretted as the (positive) infinity.
         if [[ ${VERSION_ID} == "" ]]; then
-            echo "Warning: The version ID is empty."
             return
         fi
 
-        local MAJOR_VERSION
-        MAJOR_VERSION="$(echo "${VERSION_ID}" | grep -o "^[0-9]\+")"
+        echo "${VERSION_ID}" | grep -o "^[0-9]\+"
+    }
+
+    # @param $1 - minimal distro major version
+    function distro_version_ge
+    {
+        local MAJOR_VERSION="$(get_major_distro_version)"
+
+        # An empty VERSION_ID is interpretted as the (positive) infinity.
+        if [[ "${MAJOR_VERSION}" == "" ]]; then
+            echo "Warning: The version ID is empty."
+            return
+        fi
 
         if [[ "${MAJOR_VERSION}" -lt "$1" ]]; then
             echo "Error: Major version is ${MAJOR_VERSION} but it should be at least $1! Aborting."
@@ -106,12 +113,17 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         fi
     }
 
-    function distro_version_lt {
-        $(distro_version_ge "$1")
-        if [[ "$?" == "${EXIT_INCORRECT_PLATFORM}" ]]; then
-            return
-        else
-            # If VERSION_ID is empty we fail.
+    function distro_version_le {
+        local MAJOR_VERSION="$(get_major_distro_version)"
+
+        # An empty VERSION_ID is interpretted as the (positive) infinity.
+        if [[ "${MAJOR_VERSION}" == "" ]]; then
+            echo "Warning: The version ID is empty."
+            exit ${EXIT_INCORRECT_PLATFORM}
+        fi
+
+        if [[ "${MAJOR_VERSION}" -gt "$1" ]]; then
+            echo "Error: Major version is ${MAJOR_VERSION} but it should be at most $1! Aborting."
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
     }
