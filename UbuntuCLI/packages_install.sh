@@ -71,6 +71,7 @@ wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 if ! time yes '' | sudo ./llvm.sh all; then
     # workaround bug in llvm install script: https://github.com/llvm/llvm-project/issues/62475
+    # TODO remove the workaround when it is fixed in llvm.sh
     sudo apt update -y
     time yes '' | sudo ./llvm.sh all
 fi
