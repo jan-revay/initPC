@@ -28,7 +28,7 @@ LTS, stable, and testing branches are expected to be _always in a consistent sta
 ### Workflow
 
 ```text
-               functional &           tested &
+               functional &           tested &         very stable &
   impl.         consistent             useful            necessary
 O------> devel -------------> testing ---------> stable -----------> LTS
 ```
