@@ -27,7 +27,7 @@ LTS, stable, and testing branches are expected to be _always in a consistent sta
 
 ✔️ *Note: By stable I mean free of unpredictable behavior not as decribed here: https://medium.com/@gordon.messmer/what-does-stable-mean-4447ac53bac8 (TODO toread)*
 
-### Workflow
+### Change workflow
 
 ```text
                functional &           tested &      not changing, stable &
