@@ -14,6 +14,9 @@ on:
   push:
     # TODO add relevant paths resp. rewrite as described in the readme
     branches: [ "devel", "testing", "stable", "LTS" ]
+    paths:
+    - '**.sh'
+    - '.github/workflows/containers.yml'
   pull_request:
     branches: [ "devel", "testing", "stable", "LTS" ]
 
