@@ -16,7 +16,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # https://dev.to/ifenna__/adding-colors-to-bash-scripts-48g4
 
     set -e # exit on error
-    # TODO add set +x and remove it from headers? 
+    # TODO add set +x and remove it from headers?
 
     # shellcheck disable=SC2034
     readonly RED='\033[0;31m'
@@ -121,5 +121,10 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
             echo "GNOME_PRESENT != $1. Aborting."
             exit ${EXIT_INCORRECT_PLATFORM}
         fi
+    }
+
+    print0()
+    {
+        [ "$#" -eq 0 ] || printf '%s\0' "$@"
     }
 fi

@@ -92,12 +92,13 @@ apt list --upgradable # check for the packages that were not upgraded
 # Static analyzers
 # codechecker disabled as it fails: pip seemed to fail to build package: PyYAML==5.4.1
 # pipx install codechecker
-pipx install flawfinder
-pipx install cpplint
+
+readonly PIPX_PACKAGES=(
+    flawfinder cpplint conan
+)
 # TODO add fb_infer, cppdepend, protolint, PVS...
 
-# C++ package managers
-pipx install conan
+print0 "${PIPX_PACKAGES[@]}" | xargs pipx install
 
 # === Rust packages ===
 # shellcheck source=/dev/null
