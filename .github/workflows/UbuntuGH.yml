@@ -15,7 +15,6 @@ on:
 
 jobs:
   build:
-    continue-on-error: true
     name: ${{ matrix.install-gui }}
     runs-on: ubuntu-22.04
     strategy:
