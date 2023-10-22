@@ -98,7 +98,7 @@ readonly PIPX_PACKAGES=(
 )
 # TODO add fb_infer, cppdepend, protolint, PVS...
 
-print0 "${PIPX_PACKAGES[@]}" | xargs pipx install
+print0 "${PIPX_PACKAGES[@]}" | xargs -0 pipx install
 
 # === Rust packages ===
 # shellcheck source=/dev/null
