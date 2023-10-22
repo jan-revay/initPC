@@ -1,5 +1,6 @@
 # Examples
 
+- <https://github.com/ThePrimeagen/ansible/tree/master>
 - <https://github.com/bradwilson/ansible-dev-pc>  
 - <https://www.youtube.com/watch?v=gIDywsGBqf4>
 - <https://docs.ansible.com/ansible/latest/getting_started/index.html>
