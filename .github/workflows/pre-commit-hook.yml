@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: Update APT & upgrade
-      run: sudo apt-get update -y && sudo apt-get upgrade -y
+    - name: Update APT
+      run: sudo apt-get update -y
     - name: Install dependencies
       run: apt install -y shfmt shellcheck 
   
