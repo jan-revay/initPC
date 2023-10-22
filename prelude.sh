@@ -1,7 +1,5 @@
 #!/bin/bash -x
 
-# WIP
-
 if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     __INITPC_PRELUDE_SOURCED__='true'
 
@@ -16,7 +14,8 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # https://dev.to/ifenna__/adding-colors-to-bash-scripts-48g4
 
     set -e # exit on error
-    # TODO add set +x and remove it from headers?
+    set -x # debug logging
+    # TODO try removing -x option from scripts that include this
 
     # shellcheck disable=SC2034
     readonly RED='\033[0;31m'
