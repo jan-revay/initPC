@@ -2,26 +2,22 @@ name: Windows
 
 on:
   push:
-    branches: [ "devel", "testing", "stable", "minimal" ]
+    branches: [ "devel", "testing", "stable", "LTS" ]
     paths:
-    - 'CommonInitScripts/*.ps1'
+    - '*.ps1'
+    - 'CommonInitScripts/**.ps1'
+    - 'Windows_10/**.ps1'
     - '.github/workflows/windows.yml'
-    - 'Windows_10/*.ps1'
   pull_request:
-    branches: [ "devel", "testing", "stable", "minimal" ]
-    paths:
-    - 'CommonInitScripts/*.ps1'
-    - '.github/workflows/windows.yml'
-    - 'Windows_10/*.ps1'
+    branches: [ "devel", "testing", "stable", "LTS" ]
 
 jobs:
   build:
     name: ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
-    continue-on-error: true
     strategy:
       matrix:
-        os: [windows-latest, windows-2019]
+        os: [windows-2022] # TODO add a newer runner when avaliable
 
     steps:
       - name: "checkout repo"
@@ -35,3 +31,5 @@ jobs:
       - name: "Run `run_all.ps1`"
         shell: powershell
         run: .\Windows_10\run_all.ps1
+
+# TODO add idempotency test
