@@ -1,4 +1,4 @@
-name: Ubuntu 22.04 GH runner
+name: Ubuntu GH 
 
 on:
   push:
@@ -19,14 +19,14 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        install-gnome: ['yes', 'no'] # TODO add this to containers.yml
+        install-gnome: ['GNOME', 'NO GUI'] # TODO add this to containers.yml
     steps:
     - name: Update APT & upgrade
       run: sudo apt-get update -y && sudo apt-get upgrade -y
     # TODO - BUG - use the correct respective branch - check that it is resolved
-    - name: Install GNOME - ${{ matrix.install-gnome }} 
+    - name: ${{ matrix.install-gnome }} 
       run: |
-          if [[ ${{ matrix.install-gnome }} == 'yes' ]]; then
+          if [[ ${{ matrix.install-gnome }} == 'GNOME' ]]; then
               sudo apt-get install -y ubuntu-desktop-minimal
           fi
     - uses: actions/checkout@v4
