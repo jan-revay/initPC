@@ -113,6 +113,14 @@ to .vmx file in the virtual machine image directory.
     * "Fade or slide ToolTips into view"
     * "Animations in the taskbar"
     * ... TODO find out what other options are doing
+ 
+## Set first day of week
+
+1. Right click at clock/calendar widget in taskbar
+2. Adjust date/time
+3. Related settings (link) - Date, time & regional formatting
+4. Regional format data - change data formats
+5. First day of week - Monday
 
 
 # TODO
