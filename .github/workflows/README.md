@@ -33,6 +33,13 @@
 ### Dotfile managers
 
 1. <https://github.com/bevry/dorothy/blob/master/.github/workflows/dorothy-workflow.yml>
-2. 
+2. Markdown management:
+    <https://github.com/isocpp/CppCoreGuidelines/blob/master/.github/workflows/build.yml>
+    <https://github.com/isocpp/CppCoreGuidelines/blob/master/scripts/Makefile>
 
 ### Other repos
+
+
+## TODO CI checks to add
+
+1. Check .md files with spellchecker
