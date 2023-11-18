@@ -24,7 +24,7 @@ After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changi
 4. **`devel`** - development and experiments, might be inconsistent or broken regularly. Useful, consistent, and fully functional changes from the branch devel might be merged into the branch testing.
 5. **`devel-feature-<name of the feature>`** - all feature branches should be branched off and merged to devel (only devel itself should be merged into the branch **testing**). Bugfixes of `testing`, `stable` or `LTS` should always go through `devel` branch.
 
-`LTS`, `stable`, and `testing` branches are expected to be _always in a consistent state_ so that they can always be used to init a new machine e.g. VM or a bootable partition. The `devel` branch is expected to be broken from time to time (e.g. when working on larger changes "per partes") and it might not always be possible to init a machine using it.
+`LTS`, `stable`, and `testing` branches are expected to be _**always in a consistent state**_ so that they can always be used to init a new machine e.g. VM or a bootable partition. The `devel` branch is expected to be broken from time to time (e.g. when working on larger changes "per partes") and it might not always be possible to init a machine using it.
 
 ✔️ *Note: By stable I mean free of unpredictable behavior and crashes, not as decribed here: https://medium.com/@gordon.messmer/what-does-stable-mean-4447ac53bac8 (TODO toread)*
 
