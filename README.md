@@ -18,14 +18,14 @@ After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changi
 
 ## Branches
 
-1. **`devel`** - development and experiments, might be inconsistent or broken regularly. Consistent, and fully functional changes from the branch `devel` might be merged into the branch `testing`.
+1. **`devel`** - development and experiments, might be inconsistent or broken regularly. Consistent, and fully functional changes from the branch `devel` might be merged into the branch `testing`. The `devel` branch is expected to be broken from time to time (e.g. when working on larger changes "per partes" or experimenting) and it might not always be possible to init a machine using it. New changes are usually pushed to the `devel` branch directly, very large changes can have an individual feature branch, however.
 2. **`testing`** - shouldn't be broken or inconsistent most of the time, changes from `devel` that are queued to be accepted to the `stable` branch (or rejected). If a change is rejected from `testing` it will be dropped via a commit into `devel` that will be fast-forward merged to the `testing` branch again.
 3. **`stable`** - tested, stable, useful, production-ready, and not expected to change much in the _monthly horizon_.
 4. **`LTS`** - debloated, (also tested, stable, useful, production-ready) and not expected to change in the _yearly horizon_. Only necessary stuff. Possibly useful for detecting whether bugs in the `stable` branch are caused by the init script or to be used as a substitute for the `stable` branch while the `stable` branch has a critical bug. Debloating is done via additional commits on top of the `LTS` branch, therefore syncing `stable` and `LTS` is done via rebasing to preserve the debloating commits on top. As the `LTS` branch has additional commits on top, it is tested separately.
 5. **`feature-<name of the feature>`** - all feature branches should be branched off and merged to `devel`. Features and bugfixes of `testing`, `stable`, or `LTS` should always go through the `devel` branch first (following the change workflow below).
 6. **`archived/<branch-name>-<YYYY-MM-DD>`** - branches archived before a `push --force`.
 
-`LTS`, `stable`, and `testing` branches are expected to be _always in a consistent state_ so that they can always be used to init a new machine e.g. VM or a bootable partition. The `devel` branch is expected to be broken from time to time (e.g. when working on larger changes "per partes" or experimenting) and it might not always be possible to init a machine using it. Changes are usually pushed to the `devel` branch directly, very large changes can have an individual feature branch, however.
+`LTS`, `stable`, and `testing` branches are expected to be _always in a consistent state_ so that they can always be used to init a new machine e.g. VM or a bootable partition.
 
 ✔️ *Note: By stable I mean free of unpredictable behavior and crashes, not as described here: <https://medium.com/@gordon.messmer/what-does-stable-mean-4447ac53bac8> (TODO toread)*
 
