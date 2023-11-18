@@ -32,7 +32,7 @@ After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changi
 ### Change workflow
 
 ```text
-                functional &        tested, stable, useful    not changing, debloated,
+                functional &        tested, stable, useful   not changing, debloated,
   impl.          consistent           & production-ready        retested & stable
 O------> devel -------------> testing -----------------> stable -----------------> LTS
                ff-only merge            ff-only merge                rebase
