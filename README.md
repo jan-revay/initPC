@@ -82,3 +82,4 @@ TODO
 25. Automatic formatting of markdown files
 26. Format markdown files (add linebreaks, beautify...)
 27. Consolidate branches (unmerged feature branches).
+28. Backup solution
