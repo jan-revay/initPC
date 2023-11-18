@@ -33,6 +33,7 @@ LTS, stable, and testing branches are expected to be _always in a consistent sta
                functional &           tested &      not changing, stable &
   impl.         consistent             useful            necessary
 O------> devel -------------> testing ---------> stable -----------> LTS
+               ff-only merge        ff-only merge         rebase
 ```
 
 ### Feature branch naming scheme
