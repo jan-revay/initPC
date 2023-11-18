@@ -51,7 +51,11 @@ devel-feature-<name of the feature>
 
 TODO
 
-### 3. Why don't I use Chezmoi?
+### 2. Why don't I use Chezmoi?
+
+TODO
+
+### 3. Is the `refresh` command idempotent?
 
 TODO
 
