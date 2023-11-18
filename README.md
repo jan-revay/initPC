@@ -35,7 +35,7 @@ After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changi
                 functional &        tested, stable, useful    not changing, debloated,
   impl.          consistent           & production-ready     tested, stable & necessary
 O------> devel -------------> testing -----------------> stable -----------------> LTS
-               ff-only merge            ff-only merge               rebase
+               ff-only merge            ff-only merge                rebase
 ```
 
 ## FAQ
