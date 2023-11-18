@@ -1,4 +1,8 @@
-# Examples
+# Ansible
+
+In this subdirectory I will try to replicate my config via Ansible (i.e. the result should be identical to the Bash script). In the future I might consider to switch to Ansible completely, however I need to test it first (also Termux does not support Ansible it seems).
+
+## Examples
 
 - <https://github.com/ThePrimeagen/ansible/tree/master>
 - <https://github.com/bradwilson/ansible-dev-pc>  
