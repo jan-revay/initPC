@@ -18,7 +18,7 @@ After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changi
 
 ## Branches
 
-1. **`LTS`** - debloated, stable, tested, production-ready, and not expected to change in the _yearly horizon_. Only necessary stuff. Possibly useful for detecting whether bugs in the stable branch are caused by the init script or to be used as a substitute for the stable branch while the stable branch has a critical bug.
+1. **`LTS`** - debloated, stable, tested, production-ready, and not expected to change in the _yearly horizon_. Only necessary stuff. Possibly useful for detecting whether bugs in the stable branch are caused by the init script or to be used as a substitute for the stable branch while the stable branch has a critical bug. Debloating is done via additional commits on top of the `LTS` branch, therefore syncing `stable` and `LTS` is done via rebasing to preserve the debloating commits on top.
 2. **`stable`** - stable, tested, production-ready, and not expected to change much in the _monthly horizon_.
 3. **`testing`** - shouldn't be broken or inconsistent most of the time, useful changes from `devel` that are queued to be accepted to the `stable` branch (or rejected). If a change is rejected from `testing` it will be dropped via a commit in `devel` that will be fast-forward merged to the `testing` branch again.
 4. **`devel`** - development and experiments, might be inconsistent or broken regularly. Useful, consistent, and fully functional changes from the branch devel might be merged into the branch `testing`.
