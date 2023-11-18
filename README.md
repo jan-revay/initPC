@@ -23,6 +23,7 @@ After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changi
 3. **`testing`** - shouldn't be broken or inconsistent most of the time, useful changes from devel that are queued to be accepted to the `stable` branch (or rejected).
 4. **`devel`** - development and experiments, might be inconsistent or broken regularly. Useful, consistent, and fully functional changes from the branch devel might be merged into the branch `testing`.
 5. **`devel-feature-<name of the feature>`** - all feature branches should be branched off and merged to devel. Features and bugfixes of `testing`, `stable` or `LTS` should always go through the `devel` branch first (following the change workflow below).
+6. **`archived/<branch-name>-<YYYY-MM-DD>`** - branches archived before a `push --force`.
 
 `LTS`, `stable`, and `testing` branches are expected to be _always in a consistent state_ so that they can always be used to init a new machine e.g. VM or a bootable partition. The `devel` branch is expected to be broken from time to time (e.g. when working on larger changes "per partes" or experimenting) and it might not always be possible to init a machine using it. Changes are usually pushed to the `devel` branch directly, very large changes can have an individual feature branch however.
 
