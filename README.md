@@ -20,7 +20,7 @@ After you updated the `initPC` or `dotfiles` repo (e.g. adding a package, changi
 
 1. **`LTS`** - debloated, stable, tested, production-ready, and not expected to change in the _yearly horizon_. Only necessary stuff. Possibly useful for detecting whether bugs in the stable branch are caused by the init script or to be used as a substitute for the stable branch while the stable branch has a critical bug.
 2. **`stable`** - stable, tested, production-ready, and not expected to change much in the _monthly horizon_.
-3. **`testing`** - shouldn't be broken or inconsistent most of the time, useful changes from devel that are queued to be accepted to stable (or rejected).
+3. **`testing`** - shouldn't be broken or inconsistent most of the time, useful changes from devel that are queued to be accepted to the `stable` branch (or rejected).
 4. **`devel`** - development and experiments, might be inconsistent or broken regularly. Useful, consistent, and fully functional changes from the branch devel might be merged into the branch testing.
 5. **`devel-feature-<name of the feature>`** - all feature branches should be branched off and merged to devel. Features and bugfixes of `testing`, `stable` or `LTS` should always go through the `devel` branch first (following the change workflow below).
 
