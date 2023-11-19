@@ -18,7 +18,7 @@
 
 ### Applying changes to your machine
 
-Run the `refresh` command from Bash, after you have updated the `initPC` or `dotfiles` repo (e.g. adding a package, changing a config file, or adding an alias...), to apply the config change to your machine. The script never removes any packages other than the ones in `apt-get autoremove`, therefore removing packages from the init script does not have any effect after the first run.
+Run the `refresh` command from Bash, after you have updated the `initPC` or `dotfiles` repo (e.g. adding a package, changing a config file, or adding an alias...), to apply the config change to your machine (after the first run). The script never removes any packages other than the ones in `apt-get autoremove`, therefore removing packages from the init script does not have any effect after the first run.
 
 ## Branches
 
