@@ -4,6 +4,8 @@
 
 ## How to use
 
+### First run on a new machine
+
 1. `cd ~`
 2. `git clone https://github.com/jan-revay/initPC.git`
 3. `cd initPC/`
@@ -14,7 +16,9 @@
 
 ✔️ *Note: Logs will appear in the folder `initPC/Logs/`. Use `cat <logfile>` to display the log file with the original VT100 colors.*
 
-Run the `refresh` command from Bash, after you have updated the `initPC` or `dotfiles` repo (e.g. adding a package, changing a config file, or adding an alias...), to apply the config change to your machine.
+### Applying changes to your machine
+
+Run the `refresh` command from Bash, after you have updated the `initPC` or `dotfiles` repo (e.g. adding a package, changing a config file, or adding an alias...), to apply the config change to your machine. The script never removes any packages other than the ones in `apt-get autoremove`, therefore removing packages from the init script does not have any effect after the first run.
 
 ## Branches
 
