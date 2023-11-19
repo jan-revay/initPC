@@ -36,10 +36,15 @@ Run the `refresh` command from Bash, after you have updated the `initPC` or `dot
 ### Change workflow
 
 ```text
-                functional &        tested, stable, useful   not changing, debloated,
-  impl.          consistent           & production-ready        retested & stable
-O------> devel -------------> testing -----------------> stable -----------------> LTS
-               ff-only merge            ff-only merge                rebase
+                    functional &         tested, stable, useful   not changing, debloated,
+    impl.            consistent            & production-ready        retested & stable
+O---------> devel ---------------> testing -----------------> stable -----------------> LTS
+|             ∧    ff-only merge             ff-only merge                rebase
+| impl.       |
+|             |
++-----> feature-branch
+ large
+ change
 ```
 
 ## FAQ
