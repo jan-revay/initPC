@@ -22,7 +22,7 @@ Run the `refresh` command from Bash, after you have updated the `initPC` or `dot
 
 ## Branches
 
-1. **`devel`** - development and experiments, might be inconsistent or broken regularly. Consistent, and fully functional changes from the branch `devel` might be merged into the branch `testing`. The `devel` branch is expected to be broken from time to time (e.g. when working on larger changes "per partes" or experimenting) and it might not always be possible to init a machine using it. New changes are usually pushed to the `devel` branch directly, however very large changes can have an individual feature branch.
+1. **`devel`** - development and experiments, might be inconsistent or broken regularly. Consistent, and fully functional changes from the branch `devel` might be merged into the branch `testing`. The `devel` branch is expected to be broken from time to time (e.g. when working on larger changes "per partes" or experimenting) and it might not always be possible to init a machine using it. New changes are usually pushed to the `devel` branch directly, however, very large changes can have an individual feature branch.
 2. **`testing`** - shouldn't be broken or inconsistent most of the time, changes from `devel` that are queued to be accepted to the `stable` branch (or rejected). If a change is rejected from `testing` it will be dropped via a commit into `devel` that will be fast-forward merged to the `testing` branch again.
 3. **`stable`** - tested, stable, useful, production-ready, and not expected to change much in the _monthly horizon_.
 4. **`LTS`** - debloated, (also tested, stable, useful, production-ready) and not expected to change in the _yearly horizon_. Only necessary stuff. Possibly useful for detecting whether bugs in the `stable` branch are caused by the init script or to be used as a substitute for the `stable` branch while the `stable` branch has a critical bug. Debloating is done via additional commits on top of the `LTS` branch, therefore syncing `stable` and `LTS` is done via rebasing to preserve the debloating commits on top. As the `LTS` branch has additional commits on top, it is tested separately.
@@ -65,7 +65,7 @@ TODO
 1. Try merging the apt, flatpak, and snap install commands
 1. Have a look at popOS packages and add the useful ones to other init scripts
 1. Design a system for applying the configs on all my machines once they
-   were updated here.
+   are updated here.
    - implement `refresh` alias
    - add notification to .bashrc if the initPC or dotfiles are not up to date
 1. Add more C++ tools from here: <https://github.com/cpp-best-practices/cppbestpractices/blob/master/02-Use_the_Tools_Available.md>
