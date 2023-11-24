@@ -59,7 +59,44 @@ TODO
 
 ### 3. Is the `refresh` command idempotent?
 
+By idempotency we mean: TODO
+
+```
+Let:
+R_C1 - executing refresh resp. initPC via ./run_init.sh on a commit C1
+S - clean state (state after installing a new OS before running ./run_init.sh)
+𝓢 - set of all possible states of an OS image
+∘ : R_Ci x 𝓢 -> 𝓢 - application of the `refresh` command to the state
+
+We want:
+
+R_C1 ∘ (R_C1 ∘ S) = R_C1 ∘ S
+```
+
 TODO
+
+### 4. Does runing the `refresh` command after a change in this repo on a new machine produce an equivalent state to running `refresh` on an existing machine?
+
+TODO - when does this hold and when it does not?
+
+```
+Let us have 2 commits:
+C1
+C2
+
+C1 -> C2
+
+And let:
+R_Ci - executing refresh resp. initPC via ./run_init.sh on a commit Ci
+S - clean state (state after installing a new OS before running ./run_init.sh)
+𝓢 - set of all possible states of an OS image
+∘ : R_Ci x 𝓢 -> 𝓢 - application of the `refresh` command to the state
+
+We want:
+
+R_C2 ∘ (R_C1 ∘ S) = R_C2 ∘ S
+```
+
 
 ## TODO
 
