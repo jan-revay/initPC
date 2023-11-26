@@ -77,6 +77,8 @@ TODO
 
 ### 4. Does runing the `refresh` command after a change in this repo on a new machine produce an equivalent state to running `refresh` on an existing machine?
 
+In general no.
+
 TODO - when does this hold and when it does not?
 
 ```
