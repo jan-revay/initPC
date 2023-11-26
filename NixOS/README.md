@@ -16,3 +16,4 @@
 * https://edolstra.github.io/pubs/nixos-jfp-final.pdf
 * https://github.com/NixOS/nix-book
 * https://leanpub.com/nixos-in-production
+* https://github.com/Gabriella439
