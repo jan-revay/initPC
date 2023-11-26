@@ -15,3 +15,4 @@
 * https://cds.cern.ch/record/2700235/files/10.1051_epjconf_201921405005.pdf
 * https://edolstra.github.io/pubs/nixos-jfp-final.pdf
 * https://github.com/NixOS/nix-book
+* https://leanpub.com/nixos-in-production
