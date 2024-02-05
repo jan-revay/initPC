@@ -8,6 +8,7 @@
 ## TODOs
 
 * use brew bundle
+* linux VM and Android emulator
 
 ## Similar
 
