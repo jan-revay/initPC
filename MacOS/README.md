@@ -20,3 +20,4 @@
 * <https://www.thegeekdiary.com/brew-bundle-bundler-for-homebrew-homebrew-cask-and-the-mac-app-store/>
 * <https://github.com/thoughtbot/laptop>
 * <https://www.freecodecamp.org/news/install-xcode-command-line-tools/>
+* <https://www.makeuseof.com/tag/install-mac-software-terminal-homebrew/>
