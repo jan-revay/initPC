@@ -22,3 +22,4 @@
 * <https://github.com/thoughtbot/laptop>
 * <https://www.freecodecamp.org/news/install-xcode-command-line-tools/>
 * <https://www.makeuseof.com/tag/install-mac-software-terminal-homebrew/>
+* <https://www.xda-developers.com/how-run-ios-apps-mac/>
