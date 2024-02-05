@@ -16,3 +16,4 @@ brew update
 
 brew install gcc
 brew install todoist
+brew install alacritty
