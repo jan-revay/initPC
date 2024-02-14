@@ -15,5 +15,5 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew update
 
 brew install gcc
-brew install todoist logitech-options zoom whatsapp messenger
+brew install todoist logi-options-plus zoom whatsapp messenger
 brew install alacritty
