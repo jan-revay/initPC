@@ -6,6 +6,7 @@
 
 ## To read
 
+* https://github.com/0atman/noboilerplate/blob/main/scripts/38-nixos.md
 * https://en.wikipedia.org/wiki/NixOS
 * https://en.wikipedia.org/wiki/Nix_(package_manager)
 * https://github.com/NixOS/nixpkgs
