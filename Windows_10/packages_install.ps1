@@ -33,6 +33,8 @@ $WINGET_PACKAGES = @(
     '7zip.7zip'
     'Ookla.Speedtest.Desktop'
     'AltSnap.AltSnap'
+    'CPUID.HWMonitor'
+    'CPUID.CPU-Z'
 # TODO add relevant sysinternals packages (see `winget search sysinternals`)
 
 
