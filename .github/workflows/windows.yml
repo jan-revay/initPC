@@ -25,12 +25,12 @@ jobs:
         uses: actions/checkout@v4
       - name: "Install `winget`"
         shell: pwsh
-        run: choco install winget-cli
+        run: choco install winget.powershell
       - name: "Test `winget` installation"
         shell: pwsh
         run: winget
       - name: "Run `packages_install.ps1` separately (so that it does not pollute logs)"
-        shell: powershell
+        shell: pwsh
         run: .\Windows_10\packages_install.ps1
       - name: "Run `run_all.ps1`"
         shell: pwsh
