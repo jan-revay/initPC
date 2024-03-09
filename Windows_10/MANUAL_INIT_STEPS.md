@@ -112,6 +112,7 @@ to .vmx file in the virtual machine image directory.
     * "Animate windows when minimizing and maximizing" (it will also improve speed of switching virtual desktops)
     * "Fade or slide ToolTips into view"
     * "Animations in the taskbar"
+    * "Animate controls and elements inside Windows"
     * ... TODO find out what other options are doing
  
 ## Set first day of week
