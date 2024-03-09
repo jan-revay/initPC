@@ -34,5 +34,8 @@ jobs:
       - name: "Run `run_all.ps1`"
         shell: pwsh
         run: .\Windows_10\run_all.ps1
+      - name: Install optional packages
+        shell: pwsh
+        run: .\Windows_10\optional_packages_install.ps1
 
 # TODO add idempotence test

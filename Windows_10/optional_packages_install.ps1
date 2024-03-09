@@ -16,54 +16,63 @@
 Set-PSDebug -Trace 1
 $ErrorActionPreference = "Stop"
 
+$WINGET_PACKAGES = @(
+
 # Utils
-winget install -e --id BurntSushi.ripgrep.GNU # TODO test
-winget install -e --id Microsoft.Sysinternals.ProcessMonitor
+    'BurntSushi.ripgrep.GNU' # TODO test
+    'Microsoft.Sysinternals.ProcessMonitor'
 # TODO - always install latest ?
-winget install -e --id Microsoft.DotNet.DesktopRuntime.6 # for GitExtensions
-winget install -e --id Microsoft.DotNet.DesktopRuntime.7
-winget install -e --id Microsoft.DotNet.SDK.7
-winget install -e --id GitExtensionsTeam.GitExtensions # TODO this package is also in packages_install.ps1
+    'Microsoft.DotNet.DesktopRuntime.6' # for GitExtensions
+    'Microsoft.DotNet.DesktopRuntime.7'
+    'Microsoft.DotNet.SDK.7'
+    'GitExtensionsTeam.GitExtensions' # TODO this package is also in packages_install.ps1
 
 # IDEs and code editors
-winget install -e --id Microsoft.VisualStudio.2022.Community
+    'Microsoft.VisualStudio.2022.Community'
 # components need to be added to the VS manually (start menu -> Visual Studio Installer)
 # TODO try adding the components via command line here
-winget install -e --id JetBrains.CLion
-winget install -e --id JetBrains.PyCharm.Community
-winget install -e --id KDE.kdevelop
-winget install -e --id KDE.Kate
-winget install -e --id Coq.CoqPlatform
-winget install -e --id Meld.Meld
-winget install -e --id Notepad++.Notepad++
-winget install -e --id Postman.Postman
+    'JetBrains.CLion'
+    'JetBrains.PyCharm.Community'
+    'KDE.kdevelop'
+    'KDE.Kate'
+    'Coq.CoqPlatform'
+    'Meld.Meld'
+    'Notepad++.Notepad++'
+    'Postman.Postman'
 
 # Terminal emulators
-winget install -e --id Mintty.WSLtty
-winget install -e --id PuTTY.PuTTY
+    'Mintty.WSLtty'
+    'PuTTY.PuTTY'
 
 # Office work
-winget install -e --id Foxit.FoxitReader
+    'Foxit.FoxitReader'
 
 # File management
-winget install -e --id GNU.MidnightCommander
+    'GNU.MidnightCommander'
 
 # Compilers
-winget install -e --id commercialhaskell.stack
-winget install -e --id SWI-Prolog.SWI-Prolog
-winget install -e --id Rustlang.Rustup
-winget install -e --id Cygwin.Cygwin # TODO install stuff I use such as GCC
+    'commercialhaskell.stack'
+    'SWI-Prolog.SWI-Prolog'
+    'Rustlang.Rustup'
+    'Cygwin.Cygwin' # TODO install stuff I use such as GCC
 
 # Multimedia
-winget install -e --id OBSProject.OBSStudio
-winget install -e --id Canva.Canva # broken
-winget install -e --id 9WZDNCRFJ3TJ # Netflix
-winget install -e --id 9MSPC6MP8FM4 # MS Whiteboard
-winget install -e --id Gyan.FFmpeg
-winget install -e --id Inkscape.Inkscape
-winget install -e --id BlenderFoundation.Blender
+    'OBSProject.OBSStudio'
+    'Canva.Canva' # broken
+    '9WZDNCRFJ3TJ' # Netflix
+    '9MSPC6MP8FM4' # MS Whiteboard
+    'Gyan.FFmpeg'
+    'Inkscape.Inkscape'
+    'BlenderFoundation.Blender'
+)
 
-winget upgrade --all
+$WINGET_PACKAGES | ForEach-Object {
+    echo "### Winget is installing a package: $PSItem"
+    winget install --accept-source-agreements --accept-package-agreements `
+        --silent --disable-interactivity -e --id  $PSItem
+    }
+winget upgrade --all --accept-source-agreements --accept-package-agreements `
+    --silent --disable-interactivity
 
 # Pip packages
 # TODO some of the packages bellow are broken - fix
