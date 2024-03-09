@@ -95,13 +95,10 @@ $WINGET_PACKAGES = @(
     'Doist.Todoist'
 )
 
-# refresh Path variable (in case Winget was just installed now)
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-
 $WINGET_PACKAGES | ForEach-Object {
     echo "### Winget is installing a package: $PSItem"
     winget install --accept-source-agreements --accept-package-agreements `
-        --silent --disable-interactivity -e --id  $PSItem 
+        --silent --disable-interactivity -e --id  $PSItem
     }
 winget upgrade --all --accept-source-agreements --accept-package-agreements `
     --silent --disable-interactivity
