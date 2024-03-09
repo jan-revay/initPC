@@ -81,7 +81,8 @@ $WINGET_PACKAGES = @(
 
 # Messaging and videoconferencing apps
     'OpenWhisperSystems.Signal'
-    'WhatsApp.WhatsApp' # broken
+     # WhatsApp should be installed from msstore, the winget package is broken
+    '9NKSQGP7F2NH'
     'Zoom.Zoom'  # broken
     'Facebook.Messenger' # broken
     'Spotify.Spotify' # broken
