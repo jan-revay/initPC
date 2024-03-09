@@ -6,7 +6,7 @@ on:
     paths:
     - '*.ps1'
     - 'CommonInitScripts/**.ps1'
-    - 'Windows_10/**.ps1'
+    - 'Windows_1X/**.ps1'
     - '.github/workflows/windows.yml'
   pull_request:
     branches: [ "devel", "testing", "stable", "LTS" ]
