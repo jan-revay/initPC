@@ -26,6 +26,9 @@ jobs:
       - name: "Install `winget`"
         shell: pwsh
         run: choco install winget
+      - name: "Test `winget` installation"
+        shell: pwsh
+        run: winget
       - name: "Run `packages_install.ps1` separately (so that it does not pollute logs)"
         shell: powershell
         run: .\Windows_10\packages_install.ps1
