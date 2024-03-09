@@ -23,9 +23,8 @@ jobs:
     steps:
       - name: "checkout repo"
         uses: actions/checkout@v4
-      - name: "Install `winget`"
-        shell: pwsh
-        run: choco install winget.powershell winget winget-cli
+      - name: Install winget
+        uses: Cyberboss/install-winget@v1
       - name: "Test `winget` installation"
         shell: pwsh
         run: winget
