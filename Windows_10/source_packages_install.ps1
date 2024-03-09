@@ -25,7 +25,7 @@ $config = @"
 echo $config | Out-File -Encoding ASCII -FilePath ./dist/config.json
 
 ( $res = Get-ScheduledTask "Taskbar_scroll" -ErrorAction SilentlyContinue ) 2> $null
-if ($res -eq $null) {
+if ($null -eq $res) {
     $exe_dir = "$PWD\dist"
     $action = New-ScheduledTaskAction -Execute "$exe_dir\scroll-desktops.exe" `
         -Argument "--nowindowed --noconsole" `
@@ -40,7 +40,7 @@ popd
 
 
 ( $res = Get-ScheduledTask "AltSnap" -ErrorAction SilentlyContinue ) 2> $null
-if ($res -eq $null) {
+if ($null -eq $res) {
     $exe_dir = "C:\Users\janci\AppData\Roaming\AltSnap"
     $action = New-ScheduledTaskAction -Execute "$exe_dir\AltSnap.exe" `
         -WorkingDirectory "$exe_dir"
