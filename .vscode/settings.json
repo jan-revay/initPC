@@ -2,10 +2,12 @@
     "cSpell.words": [
         "batcat",
         "ccache",
+        "choco",
         "clazy",
         "cppcheck",
         "cpplint",
         "dconf",
+        "devel",
         "dotfile",
         "dotfiles",
         "doxygen",
@@ -30,7 +32,8 @@
         "shfmt",
         "tokei",
         "traceroute",
-        "valgrind"
+        "valgrind",
+        "winget"
     ],
     "cSpell.enableFiletypes": [
         "shellscript"
