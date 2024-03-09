@@ -20,6 +20,8 @@
 Set-PSDebug -Trace 1
 $ErrorActionPreference = "Stop"
 
+winget
+
 $WINGET_PACKAGES = @(
     # Web browsers
     'Mozilla.Firefox'
