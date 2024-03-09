@@ -106,9 +106,13 @@ winget upgrade --all --accept-source-agreements --accept-package-agreements `
 # Pip packages
 # TODO some packages below need to be fixed (or just installed globally?)
 # TODO install python applications with pipx
+# refresh Path variable
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 py -3 -m pip install --user pipx
 py -3 -m pipx ensurepath
 
+# refresh Path variable
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 pipx install flawfinder # C++ linter
 pipx install cpplint
 
