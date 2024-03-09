@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
       - name: "Install `winget`"
         shell: pwsh
-        run: choco install winget
+        run: choco install winget-cli
       - name: "Test `winget` installation"
         shell: pwsh
         run: winget
