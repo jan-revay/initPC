@@ -17,19 +17,19 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-2022] # TODO add a newer runner when avaliable
+        os: ["windows-2022", "windows-latest"] # TODO add a newer runner when available
 
     steps:
       - name: "checkout repo"
         uses: actions/checkout@v4
       - name: "Install `winget`"
-        shell: powershell
+        shell: pwsh
         run: choco install winget
-      - name: "Run `packages_install.ps1` separatelly (so that it does not pollute logs)"
+      - name: "Run `packages_install.ps1` separately (so that it does not pollute logs)"
         shell: powershell
         run: .\Windows_10\packages_install.ps1
       - name: "Run `run_all.ps1`"
-        shell: powershell
+        shell: pwsh
         run: .\Windows_10\run_all.ps1
 
-# TODO add idempotency test
+# TODO add idempotence test
