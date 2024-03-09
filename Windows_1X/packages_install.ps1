@@ -16,6 +16,7 @@
 # TODO add useful packages from here: https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md
 # TODO add `--silent` and `--disable-interactivity` options to `winget install` commands? https://learn.microsoft.com/en-us/windows/package-manager/winget/install
 # TODO rewrite (package list and a single install command)
+# TODO install broken winget packages from msstore if possible
 
 Set-PSDebug -Trace 1
 $ErrorActionPreference = "Stop"
