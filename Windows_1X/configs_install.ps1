@@ -13,6 +13,8 @@ $ErrorActionPreference = "Stop"
 
 # Todo consider adding this only for current user so that I don't need sudo.
 # Maybe that would also be safer.
+# TODO update the profile to be up to date with Bash aliases
+# TODO pwsh does not use this profile for som reason -> also set it for pwsh
 Copy-Item -Force $PSScriptRoot/win_dotfiles/Profile.ps1 $PSHOME/Profile.ps1
 
 # Manually changed settings
