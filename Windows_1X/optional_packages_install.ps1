@@ -67,6 +67,7 @@ $WINGET_PACKAGES = @(
 
 # benchmarks and stress tests
     'Maxon.CinebenchR23'
+    'FinalWire.AIDA64.Engineer'
 )
 
 $WINGET_PACKAGES | ForEach-Object {
