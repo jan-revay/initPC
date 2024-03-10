@@ -71,6 +71,8 @@ $WINGET_PACKAGES = @(
     'PrimateLabs.Geekbench.6'
     'Geeks3D.FurMark'
     'TechPowerUp.GPU-Z'
+    '9NX2VQG25JXJ' # PassMark PerformanceTest
+    # TODO add PassMark burnIn test
     # TODO prime95 does not have a winget package - install manually?
 )
 
