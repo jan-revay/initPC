@@ -72,6 +72,7 @@ $WINGET_PACKAGES = @(
     'Geeks3D.FurMark'
     'TechPowerUp.GPU-Z'
     'CrystalDewWorld.CrystalDiskMark'
+    'Antutu.AntutuBenchmark'
     '9NX2VQG25JXJ' # PassMark PerformanceTest
     '9N7ZMT6X8VLN' # GFX Memory Speed Benchmark
     # TODO add PassMark burnIn test
