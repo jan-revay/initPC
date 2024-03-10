@@ -73,6 +73,7 @@ $WINGET_PACKAGES = @(
     'TechPowerUp.GPU-Z'
     'CrystalDewWorld.CrystalDiskMark'
     '9NX2VQG25JXJ' # PassMark PerformanceTest
+    '9N7ZMT6X8VLN' # GFX Memory Speed Benchmark
     # TODO add PassMark burnIn test
     # TODO prime95 does not have a winget package - install manually?
 )
