@@ -64,6 +64,9 @@ $WINGET_PACKAGES = @(
     'Gyan.FFmpeg'
     'Inkscape.Inkscape'
     'BlenderFoundation.Blender'
+
+# benchmarks and stress tests
+    'Maxon.CinebenchR23'
 )
 
 $WINGET_PACKAGES | ForEach-Object {
