@@ -77,6 +77,9 @@ $WINGET_PACKAGES = @(
     '9N7ZMT6X8VLN' # GFX Memory Speed Benchmark
     # TODO add PassMark burnIn test
     # TODO prime95 does not have a winget package - install manually?
+
+# learning & reading
+    'anki.anki'
 )
 
 $WINGET_PACKAGES | ForEach-Object {
