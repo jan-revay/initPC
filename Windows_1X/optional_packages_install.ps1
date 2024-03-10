@@ -69,6 +69,7 @@ $WINGET_PACKAGES = @(
     'Maxon.CinebenchR23'
     'FinalWire.AIDA64.Engineer'
     'PrimateLabs.Geekbench.6'
+    'Geeks3D.FurMark'
 )
 
 $WINGET_PACKAGES | ForEach-Object {
