@@ -71,6 +71,7 @@ $WINGET_PACKAGES = @(
     'PrimateLabs.Geekbench.6'
     'Geeks3D.FurMark'
     'TechPowerUp.GPU-Z'
+    # TODO prime95 does not have a winget package - install manually?
 )
 
 $WINGET_PACKAGES | ForEach-Object {
