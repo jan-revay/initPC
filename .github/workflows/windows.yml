@@ -16,9 +16,9 @@ jobs:
     name: ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     if: |
-      !contains(github.event.head_commit.message, 'Add a TODO') &&
-      !contains(github.event.head_commit.message, 'Add TODOs') &&
-      !contains(github.event.head_commit.message, 'Remove a completed TODO')
+      !endsWith(github.event.head_commit.message, 'Add a TODO') &&
+      !endsWith(github.event.head_commit.message, 'Add TODOs') &&
+      !endsWith(github.event.head_commit.message, 'Remove a completed TODO')
     strategy:
       matrix:
         os: ["windows-2022", "windows-latest"] # TODO add a newer runner when available
