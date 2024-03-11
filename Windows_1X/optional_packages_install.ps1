@@ -22,10 +22,7 @@ $WINGET_PACKAGES = @(
     'BurntSushi.ripgrep.GNU' # TODO test
     'Microsoft.Sysinternals.ProcessMonitor'
 # TODO - always install latest ?
-    'Microsoft.DotNet.DesktopRuntime.6' # for GitExtensions
-    'Microsoft.DotNet.DesktopRuntime.7'
     'Microsoft.DotNet.SDK.7'
-    'GitExtensionsTeam.GitExtensions' # TODO this package is also in packages_install.ps1
 
 # IDEs and code editors
     'Microsoft.VisualStudio.2022.Community'
@@ -37,7 +34,6 @@ $WINGET_PACKAGES = @(
     'KDE.Kate'
     'Coq.CoqPlatform'
     'Meld.Meld'
-    'Notepad++.Notepad++'
     'Postman.Postman'
 
 # Terminal emulators
@@ -55,7 +51,6 @@ $WINGET_PACKAGES = @(
 # Compilers
     'commercialhaskell.stack'
     'SWI-Prolog.SWI-Prolog'
-    'Rustlang.Rustup'
     'Cygwin.Cygwin' # TODO install stuff I use such as GCC
 
 # Multimedia
@@ -63,7 +58,6 @@ $WINGET_PACKAGES = @(
     'Canva.Canva' # broken
     '9WZDNCRFJ3TJ' # Netflix
     '9MSPC6MP8FM4' # MS Whiteboard
-    'Gyan.FFmpeg'
     'Inkscape.Inkscape'
     'BlenderFoundation.Blender'
 
