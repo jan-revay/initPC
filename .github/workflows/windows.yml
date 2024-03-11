@@ -21,7 +21,7 @@ jobs:
       !endsWith(github.event.head_commit.message, 'Remove a completed TODO')
     strategy:
       matrix:
-        os: ["windows-2022", "windows-latest"] # TODO add a newer runner when available
+        os: ["windows-2022", "windows-latest"]
         # TODO make this a single runner when windows-latest is the same as windows-2022
 
     steps:
