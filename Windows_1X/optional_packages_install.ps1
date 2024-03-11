@@ -43,6 +43,8 @@ $WINGET_PACKAGES = @(
 # Terminal emulators
     'Mintty.WSLtty'
     'PuTTY.PuTTY'
+    'Maximus5.ConEmu'
+    'Eugeny.Tabby'
 
 # Office work
     'Foxit.FoxitReader'
