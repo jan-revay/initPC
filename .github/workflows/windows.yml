@@ -44,8 +44,11 @@ jobs:
       - name: Create a directory for temporary files
         shell: pwsh
         run: mkdir C:/tmp
-      - name: save C:/Users for idempotency test
-        run: cp -Recurse C:/Users C:/tmp # TODO this will probably fail
+      # - name: save C:/Users for idempotency test
+      #   run: cp -Recurse C:/Users C:/tmp # TODO this will currently fails with:
+      #     2 |  cp -Recurse C:/Users C:/tmp
+      # |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      # | Access to the path 'C:\Users\All Users\Application Data' is denied.
       - name: "Running `run_all.ps1` script for the 2nd time should not fail."
         shell: pwsh
         run: .\Windows_1X\run_all.ps1
@@ -53,6 +56,4 @@ jobs:
         shell: pwsh
         run: .\Windows_1X\optional_packages_install.ps1
       # - name: "The `run_all.ps1` script should be idempotent on C:/Users directory (WIP - needs testing)"
-      # TODO
-    
-# TODO add idempotence test
+      # TODO finish the idempotence test
