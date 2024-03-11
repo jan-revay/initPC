@@ -19,6 +19,8 @@ jobs:
       !endsWith(github.event.head_commit.message, 'Add a TODO') &&
       !endsWith(github.event.head_commit.message, 'Add TODOs') &&
       !endsWith(github.event.head_commit.message, 'Remove a completed TODO')
+
+      # TODO remove the TODO once this have been tested & add it to the remaining CI tests
     strategy:
       matrix:
         os: ["windows-2022", "windows-latest"] # TODO add a newer runner when available
