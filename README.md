@@ -37,7 +37,7 @@ Run the `refresh` command from Bash, after you have updated the `initPC` or `dot
 
 ```text
                     functional &         tested, stable, useful   not changing, debloated,
-    impl.            consistent            & production-ready        retested & stable
+    impl.            consistent**          & production-ready        retested & stable
 O---------> devel ---------------> testing -----------------> stable -----------------> LTS
 |             ∧    ff-only merge             ff-only merge                rebase
 | impl.       |
@@ -46,6 +46,8 @@ O---------> devel ---------------> testing -----------------> stable -----------
  large
  change
 ```
+
+** "consistent" means, among other things, that CI tests (implemented via GitHub actions) pass successfully.
 
 ## FAQ
 
