@@ -16,57 +16,71 @@
 # TODO add useful packages from here: https://github.com/actions/runner-images/blob/main/images/win/Windows2022-Readme.md
 # TODO add `--silent` and `--disable-interactivity` options to `winget install` commands? https://learn.microsoft.com/en-us/windows/package-manager/winget/install
 # TODO install broken winget packages from msstore if possible
+# TODO move some packages from here to optional and the most used optional packages here
 
 Set-PSDebug -Trace 1
 $ErrorActionPreference = "Stop"
 
 $WINGET_PACKAGES = @(
-    # Web browsers
-    'Mozilla.Firefox'
-    'Google.Chrome'
-
-# Utils
-    'VMware.WorkstationPlayer' # broken
-    'WinDirStat.WinDirStat'
-    'Docker.DockerDesktop'
-    'XAMPPRocky.tokei' # broken?
-    '7zip.7zip'
-    'Ookla.Speedtest.Desktop'
-    'AltSnap.AltSnap'
-    'CPUID.HWMonitor'
+# HW monitoring
     'CPUID.CPU-Z'
-# TODO add relevant sysinternals packages (see `winget search sysinternals`)
-
-
-# Version controll
-    'GitHub.cli'
-    'Git.Git'
-    'GitHub.GitHubDesktop'
-    'GitExtensionsTeam.GitExtensions'
-    'o2sh.onefetch'
+    'CPUID.HWMonitor'
 
 # Drivers and HW support
     'Logitech.OptionsPlus'
+
+# Runtimes
+    'Microsoft.DotNet.DesktopRuntime.6' # for GitExtensions
+    'Microsoft.DotNet.DesktopRuntime.7'
+
+# Virtualisation and containers
+    'Docker.DockerDesktop'
+    'VMware.WorkstationPlayer' # broken
+    # TODO? add WSL installation here?
+
+# Utils
+    '7zip.7zip'
+    'Gyan.FFmpeg'
+    'WinDirStat.WinDirStat'
+    'XAMPPRocky.tokei' # broken? TODO FIX?
+    'Ookla.Speedtest.Desktop'
+
+# Desktop environment & window management extensions
+    'AltSnap.AltSnap'
+    'Microsoft.PowerToys'
+    'AutoHotkey.AutoHotkey'
+    # TODO add relevant sysinternals packages (see `winget search sysinternals`)
+
+# Version control
+    'Git.Git'
+    'GitHub.cli'
+    'GitHub.GitHubDesktop'
+    'GitExtensionsTeam.GitExtensions'
+    'o2sh.onefetch'
 
 # Code editors
     'Microsoft.VisualStudioCode'
     'Neovim.Neovim'
     'Helix.Helix'
+    'Notepad++.Notepad++'
 
 # Terminal emulators
-    'Microsoft.WindowsTerminal'
-    'Maximus5.ConEmu'
-    'Eugeny.Tabby'
     'Alacritty.Alacritty'
+    'Microsoft.WindowsTerminal'
 
 # compilers, build tools and interpreters
     'Python.Python.3.12' # Try always installing the latest Python package instead of fixing the version
-    'LLVM.LLVM'
-    'JFrog.Conan'
     'Kitware.CMake'
+    'LLVM.LLVM'
+    'Rustlang.Rustup'
+    'JFrog.Conan'
     'Ninja-build.Ninja'
 
-# Office work
+# Web browsers
+    'Google.Chrome'
+    'Mozilla.Firefox'
+
+# Office work & document readers & books
     'Adobe.Acrobat.Reader.64-bit'
     'TrackerSoftware.PDF-XChangeEditor'
     'KDE.Okular'
@@ -75,19 +89,14 @@ $WINGET_PACKAGES = @(
     'Grammarly.Grammarly'
     'calibre.calibre'
 
-# Desktop environment extensions and tools
-    'Microsoft.PowerToys'
-    'AutoHotkey.AutoHotkey'
-
 # Messaging and videoconferencing apps
+    'Zoom.Zoom'  # broken TODO FIX?
+    '9NKSQGP7F2NH' # WhatsApp, the winget package is broken
     'OpenWhisperSystems.Signal'
-     # WhatsApp should be installed from msstore, the winget package is broken
-    '9NKSQGP7F2NH' # WhatsApp
-    'Zoom.Zoom'  # broken
-    'Facebook.Messenger' # broken
-    '9NCBCSZSJRSB' # Spotify, the winget package is broken broken
+    'Facebook.Messenger' # broken? TODO FIX?
 
 # Multimedia
+    '9NCBCSZSJRSB' # Spotify, the winget package is broken
     'GIMP.GIMP'
     'IrfanSkiljan.IrfanView'
     'Audacity.Audacity'
