@@ -15,6 +15,7 @@ jobs:
   build:
     name: ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
+    # TODO add this to Linux CI tests as well (once it is well tested)
     if: |
       !endsWith(github.event.head_commit.message, 'Add a TODO') &&
       !endsWith(github.event.head_commit.message, 'Add TODOs') &&
