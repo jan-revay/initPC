@@ -12,6 +12,7 @@ popd
 pushd ~/x/scroll-windows-v-desktops
 pip install -r requirements.txt
 pyinstaller --onefile scroll-desktops.py
+# TODO try adapting this position so that it works well on Win11 i.e. taskbar on the bottom
 $config = @"
 {
     "xMin": -1,
