@@ -51,5 +51,6 @@ if ($null -eq $res) {
         -Action $action -Trigger $trigger -RunLevel Highest
 }
 
+# TODO - turn off startup programs and services that I do not use
 
 Set-PSDebug -Trace 0
