@@ -22,8 +22,7 @@ jobs:
       !endsWith(github.event.head_commit.message, 'Remove a completed TODO')
     strategy:
       matrix:
-        os: ["windows-2022", "windows-latest"]
-        # TODO make this a single runner when windows-latest is the same as windows-2022
+        os: ["windows-latest"] # TODO_YEARLY - consider adding legacy Win versions
 
     steps:
       - name: "checkout repo"
@@ -40,6 +39,17 @@ jobs:
         shell: pwsh
         run: .\Windows_1X\run_all.ps1
       - name: Install optional packages
+        shell: pwsh
+        run: .\Windows_1X\optional_packages_install.ps1
+      - name: Create a directory for temporary files
+        shell: pwsh
+        run: mkdir C:/tmp
+      - name: save C:/Users for idempotency test
+        run: cp -Recursive C:/Users C:/tmp
+      - name: "Running `run_all.ps1` script for the 2nd time should not fail."
+        shell: pwsh
+        run: .\Windows_1X\run_all.ps1
+      - name: Running `optional_packages_install.ps1` script for the 2nd time should not fail.
         shell: pwsh
         run: .\Windows_1X\optional_packages_install.ps1
 
