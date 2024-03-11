@@ -45,4 +45,3 @@ jobs:
         run: .\Windows_1X\optional_packages_install.ps1
 
 # TODO add idempotence test
-# TODO skipp CI if the commit message contains the text "Add a TODO" or "Add TODOs" (also add this to Linux scripts)
