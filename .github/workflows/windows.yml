@@ -45,7 +45,7 @@ jobs:
         shell: pwsh
         run: mkdir C:/tmp
       - name: save C:/Users for idempotency test
-        run: cp -Recursive C:/Users C:/tmp
+        run: cp -Recurse C:/Users C:/tmp
       - name: "Running `run_all.ps1` script for the 2nd time should not fail."
         shell: pwsh
         run: .\Windows_1X\run_all.ps1
