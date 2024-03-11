@@ -47,7 +47,7 @@ O---------> devel ---------------> testing -----------------> stable -----------
  change
 ```
 
-** "consistent" means, among other things, that CI tests (implemented via GitHub actions) pass successfully.
+** "consistent" means, among other things, that all CI tests (implemented via GitHub actions) pass successfully.
 
 ## FAQ
 
