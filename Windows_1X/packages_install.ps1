@@ -17,6 +17,7 @@
 # TODO add `--silent` and `--disable-interactivity` options to `winget install` commands? https://learn.microsoft.com/en-us/windows/package-manager/winget/install
 # TODO install broken winget packages from msstore if possible
 # TODO move some packages from here to optional and the most used optional packages here
+# TODO make the script break if a single package installation fails (I think that currently the script continues in that case)
 
 Set-PSDebug -Trace 1
 $ErrorActionPreference = "Stop"
