@@ -7,6 +7,7 @@ $ErrorActionPreference = "Stop"
 
 # Scripts requiring user input
 . $PSScriptRoot/wsl_install.ps1
+# WSL installation might need a restart before Linux distros can be installed TODO test it...
 
 # Noninteractive scripts
 . $PSScriptRoot/packages_install.ps1
