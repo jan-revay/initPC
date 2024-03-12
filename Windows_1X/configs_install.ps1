@@ -24,6 +24,6 @@ Copy-Item -Force $PSScriptRoot/win_dotfiles/Profile.ps1 $PSHOME/Profile.ps1
 # TODO - debloat Windows
 # TODO optimize Windows startup times & BG processes
 # TODO try running PowerShell and pwsh with the new profile here or in
-# the CI tests. 
+# the CI tests. (to verify that the new profile is OK)
 
 Set-PSDebug -Trace 0
