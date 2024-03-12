@@ -18,6 +18,9 @@
 # TODO install broken winget packages from msstore if possible
 # TODO move some packages from here to optional and the most used optional packages here
 # TODO make the script break if a single package installation fails (I think that currently the script continues in that case)
+# TODO some packages fail to install - mark them and find an alternative way
+# TODO add choco package managers and install stuff that fails or
+# is not present in winget via choco
 
 Set-PSDebug -Trace 1
 $ErrorActionPreference = "Stop"
