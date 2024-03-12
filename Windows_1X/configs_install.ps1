@@ -21,4 +21,7 @@ Copy-Item -Force $PSScriptRoot/win_dotfiles/Profile.ps1 $PSHOME/Profile.ps1
 # Todo try to automatically set these windows settings in future
 # Settings -> multitasking -> on the taskbar, show the windows that are open on all desktops
 
+# TODO - debloat Windows
+# TODO optimize Windows startup times & BG processes
+
 Set-PSDebug -Trace 0
