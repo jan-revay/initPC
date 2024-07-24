@@ -36,6 +36,7 @@ $WINGET_PACKAGES = @(
 # Runtimes
     'Microsoft.DotNet.DesktopRuntime.6' # for GitExtensions
     'Microsoft.DotNet.DesktopRuntime.7'
+    'Microsoft.VCRedist.2015+.x64'
 
 # Virtualisation and containers
     'Docker.DockerDesktop'
