@@ -12,7 +12,7 @@
 4. `git checkout <branch>` (optional step, branch `devel` is the default)
 5. Run the initPC script launcher:
     * `./run_init.sh` - on Linux distros or Termux
-    * `cd Windows_10 && .\run_all.ps1` - on Windows
+    * `Set-ExecutionPolicy unrestricted && cd Windows_10 && .\run_all.ps1` - on Windows
 
 ✔️ *Note: Logs will appear in the folder `initPC/Logs/`. Use `cat <logfile>` to display the log file with the original VT100 colors.*
 
