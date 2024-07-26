@@ -23,6 +23,7 @@ LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' \
 
 # see https://github.com/rr-debugger/rr/wiki/Using-rr-in-an-IDE
 # TODO consider moving all packages that need GUI to GUI part of the initPC script
+# TODO add rclone
 readonly APT_PACKAGES=(
     # GCC and build tools
     build-essential gdb rr ccache ninja-build cmake cmake-gui

@@ -32,3 +32,12 @@ gsettings set org.gnome.desktop.interface cursor-size 64
 xdg-mime default code.desktop text/markdown
 xdg-mime default code.desktop application/x-shellscript
 sudo update-alternatives --set editor /usr/bin/nvim
+
+
+# TODOs:
+# Add - add slovak qwerty keyboard layout
+# set workspaces to static and number to 6
+# set to dark theme
+# add logid.cfg (logitech mouse) options copy paste (and add the logid file
+# to the dotfiles repo)
+#
