@@ -26,6 +26,7 @@ gsettings set org.gnome.desktop.interface locate-pointer true
 # todo test the keyboard settings
 gsettings set org.gnome.desktop.input-sources xkb-options \
     "['terminate:ctrl_alt_bksp', 'shift:both_capslock_cancel', 'caps:none']"
+gsettings set org.gnome.desktop.interface cursor-size 64
 
 # set default apps
 xdg-mime default code.desktop text/markdown

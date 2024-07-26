@@ -24,8 +24,13 @@ fi
 # TODO test the flatpaks
 # TODO debloat
 # TODO add snap installation script so that there is a same base on PopOS
+# TODO consider removeing few `apt update`s
+# Make flatpak packages install noninteractive
+# consider installing all packages at once (config files would just add stuff
+# to a list)
+sudo apt update
 sudo apt install -y linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
-
+sudo apt update
 sudo apt install -y flatpak meld kdevelop coqide gitk cmake-gui # editors, tools and IDEs
 
 sudo apt install -y snapd
