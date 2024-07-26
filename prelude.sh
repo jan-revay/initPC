@@ -63,7 +63,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         if [[ ! -f /etc/os-release ]]; then
             echo "/etc/os-release file not found."
             echo "Aborting."
-            exit ${EXIT_INCORRECT_PLATFORM}
+            exit "${EXIT_INCORRECT_PLATFORM}"
         fi
 
         local ID
@@ -73,7 +73,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
 
         if [[ "${ID}" != "$1" ]]; then
             echo "Error: The distro ID is ${ID} but it should be $1! Aborting."
-            exit ${EXIT_INCORRECT_PLATFORM}
+            exit "${EXIT_INCORRECT_PLATFORM}"
         fi
     }
 
@@ -82,7 +82,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         if [[ ! -f /etc/os-release ]]; then
             echo "/etc/os-release file not found."
             echo "Aborting."
-            exit ${EXIT_INCORRECT_PLATFORM}
+            exit "${EXIT_INCORRECT_PLATFORM}"
         fi
 
         local VERSION_ID
@@ -102,7 +102,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         local MAJOR_VERSION
 
         if ! MAJOR_VERSION="$(get_major_distro_version)"; then
-            exit ${EXIT_INCORRECT_PLATFORM}
+            exit "${EXIT_INCORRECT_PLATFORM}"
         fi
 
         # An empty VERSION_ID is interpretted as the (positive) infinity.
@@ -113,26 +113,27 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
 
         if [[ "${MAJOR_VERSION}" -lt "$1" ]]; then
             echo "Error: Major distro version is ${MAJOR_VERSION} but it should be at least $1! Aborting."
-            exit ${EXIT_INCORRECT_PLATFORM}
+            exit "${EXIT_INCORRECT_PLATFORM}"
         fi
     }
 
-    function distro_version_le {
+    function distro_version_le
+    {
         local MAJOR_VERSION
 
         if ! MAJOR_VERSION="$(get_major_distro_version)"; then
-            exit ${EXIT_INCORRECT_PLATFORM}
+            exit "${EXIT_INCORRECT_PLATFORM}"
         fi
 
         # An empty VERSION_ID is interpretted as the (positive) infinity.
         if [[ "${MAJOR_VERSION}" == "" ]]; then
             echo "Warning: The version ID is empty."
-            exit ${EXIT_INCORRECT_PLATFORM}
+            exit "${EXIT_INCORRECT_PLATFORM}"
         fi
 
         if [[ "${MAJOR_VERSION}" -gt "$1" ]]; then
             echo "Error: Major distro version is ${MAJOR_VERSION} but it should be at most $1! Aborting."
-            exit ${EXIT_INCORRECT_PLATFORM}
+            exit "${EXIT_INCORRECT_PLATFORM}"
         fi
     }
 
@@ -148,7 +149,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
 
         if [[ ${GNOME_PRESENT} != "$1" ]]; then
             echo "GNOME_PRESENT != $1. Aborting."
-            exit ${EXIT_INCORRECT_PLATFORM}
+            exit "${EXIT_INCORRECT_PLATFORM}"
         fi
     }
 

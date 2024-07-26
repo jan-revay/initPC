@@ -9,7 +9,7 @@ function interactive_part
 {
     if ! gh auth status; then
         read -r -s -p "GitHub token: " GITHUB_TOKEN # TODO add a check for empty token
-        echo # add newline
+        echo                                        # add newline
         sudo apt-get -y update
         sudo apt-get install -y gh
         echo "${GITHUB_TOKEN}" | gh auth login --hostname github.com --with-token

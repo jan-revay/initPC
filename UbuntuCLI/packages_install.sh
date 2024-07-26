@@ -65,7 +65,7 @@ readonly APT_PACKAGES=(
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # Install the most recent llvm (see https://apt.llvm.org/)
-pushd /tmp || exit ${EXIT_FILE_IO_ERROR}
+pushd /tmp || exit "${EXIT_FILE_IO_ERROR}"
 # packages required by llvm.sh script are installed above
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
@@ -76,7 +76,7 @@ if ! time yes '' | sudo ./llvm.sh all; then
     time yes '' | sudo ./llvm.sh all
 fi
 rm llvm.sh
-popd || exit ${EXIT_FILE_IO_ERROR}
+popd || exit "${EXIT_FILE_IO_ERROR}"
 
 # Install rust ecosystem
 time curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y

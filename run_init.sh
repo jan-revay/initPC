@@ -12,7 +12,7 @@ mkdir -p "$(dirname "${LOG_PATH}")"
 
 function try_platform
 {
-    pushd "$1" || exit ${EXIT_FILE_IO_ERROR}
+    pushd "$1" || exit "${EXIT_FILE_IO_ERROR}"
 
     time ./run_all.sh "$2" 2>&1 | tee "${LOG_PATH}"
     local STATUS="${PIPESTATUS[0]}"
@@ -29,7 +29,7 @@ function try_platform
         exit "${STATUS}"
     fi
 
-    popd || exit ${EXIT_FILE_IO_ERROR}
+    popd || exit "${EXIT_FILE_IO_ERROR}"
 }
 
 # TODO rationalize parameter passing
@@ -43,4 +43,4 @@ try_platform "Android_13" "$1"
 echo -e "${RED}run_init.sh: Fatal error - Unsupported platform " \
     "- no supported platform detected.${NC}" \
     | tee --append "${LOG_PATH}"
-exit ${EXIT_INCORRECT_PLATFORM}
+exit "${EXIT_INCORRECT_PLATFORM}"
