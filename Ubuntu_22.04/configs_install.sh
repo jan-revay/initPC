@@ -33,7 +33,6 @@ xdg-mime default code.desktop text/markdown
 xdg-mime default code.desktop application/x-shellscript
 sudo update-alternatives --set editor /usr/bin/nvim
 
-
 # TODOs:
 # Add - add slovak qwerty keyboard layout
 # set workspaces to static and number to 6
