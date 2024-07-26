@@ -29,16 +29,18 @@ function install_gnome_extension
     fi
 }
 
+echo "Warning - extensions temporary disabled (because of new GNOME version)"
+
 # TODO find extension for clipboard management
 
-install_gnome_extension "scroll-workspaces@gfxmonk.net"
-install_gnome_extension "Vitals@CoreCoding.com"
-install_gnome_extension "hide-universal-access@akiirui.github.io"
-install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
+# install_gnome_extension "scroll-workspaces@gfxmonk.net"
+# install_gnome_extension "Vitals@CoreCoding.com"
+# install_gnome_extension "hide-universal-access@akiirui.github.io"
+# install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
 # TODO Do some research whether there is not some better workspace indicator.
 # TODO experimental extensions - TODO - evaluate
-install_gnome_extension "this.simple-indication-of-workspaces@azate.email"
-install_gnome_extension "quake-mode@repsac-by.github.com"
+# install_gnome_extension "this.simple-indication-of-workspaces@azate.email"
+# install_gnome_extension "quake-mode@repsac-by.github.com"
 
 # TODO Gnome extensions to try
 # - some new clipboard manager
