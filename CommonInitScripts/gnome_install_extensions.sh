@@ -70,3 +70,31 @@ echo "Warning - extensions temporary disabled (because of new GNOME version)"
 # ubuntu-appindicators@ubuntu.com
 # ubuntu-dock@ubuntu.com
 # panelScroll@sun.wxg@gmail.com
+#
+#
+#
+# arrangeWindows@sun.wxg@gmail.com
+# panelScroll@sun.wxg@gmail.com
+# smart-auto-move@khimaros.com
+# rclone-manager@germanztz.com
+# Vitals@CoreCoding.com
+# windowsNavigator@gnome-shell-extensions.gcampax.github.com
+# stopwatch@aliakseiz.github.com
+# reminder_alarm_clock@trifonovkv.gmail.com
+# hide-universal-access@akiirui.github.io
+# transparent-window-moving@noobsai.github.com
+# window-list@gnome-shell-extensions.gcampax.github.com
+# burn-my-windows@schneegans.github.com
+# all-windows-srwp@jkavery.github.io
+# order-extensions@wa4557.github.com
+# improved-workspace-indicator@michaelaquilina.github.io
+# quake-terminal@diegodario88.github.io
+# focus@scaryrawr.github.io
+# focus-changer@heartmire
+# highlight-focus@pimsnel.com
+# workspaces-by-open-apps@favo02.github.com
+# ding@rastersoft.com
+# tiling-assistant@ubuntu.com
+# ubuntu-appindicators@ubuntu.com
+# ubuntu-dock@ubuntu.com
+
