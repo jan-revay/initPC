@@ -2,6 +2,7 @@
 # The script should not require any user input and should be idempotent.
 
 # TODO use lists for packages (and use on install command)
+# TODO add XP-pen drivers installation to the script
 
 . ../prelude.sh
 
