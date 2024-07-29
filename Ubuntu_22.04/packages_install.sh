@@ -49,7 +49,7 @@ sudo apt install -y gimp krita inkscape okular evince vlc audacity xdotool
 sudo apt install -y ttf-mscorefonts-installer
 
 # Flatpaks
-flatpak install foliate todoist signal caprine
+flatpak install foliate todoist signal caprine spotify
 
 # ===== GUI TWEAKS AND AUTOMATIONS =====
 sudo apt install -y dconf-editor gnome-tweaks
