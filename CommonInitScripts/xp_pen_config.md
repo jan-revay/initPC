@@ -1,4 +1,4 @@
-# XP Pen tablet config
+# XP Pen tablet config for MS Whiteboard
 
 ## Pen settings
 
@@ -32,3 +32,7 @@ K6  |  Ctrl+Y    | *Redo*
 
 ### MS Whiteboard - most often used pen colors
 ![Alt text](../.Pictures/MS_Whiteboard_pen_colors.png     "MS Whiteboard pen colors")
+
+## Notes
+
+MS Whiteboard on Linux & Chrome works fine, while on Linux & Firefox, the app does not register pen pressure (the pressure is constant).
