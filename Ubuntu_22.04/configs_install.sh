@@ -22,7 +22,6 @@ gsettings set org.gnome.desktop.interface text-scaling-factor 1.4
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'minimize'
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:close'
-gsettings set org.gnome.desktop.interface locate-pointer true
 # todo test the keyboard settings
 gsettings set org.gnome.desktop.input-sources xkb-options \
     "['terminate:ctrl_alt_bksp', 'shift:both_capslock_cancel', 'caps:none']"
