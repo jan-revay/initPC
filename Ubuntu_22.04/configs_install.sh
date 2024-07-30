@@ -2,6 +2,8 @@
 # The script should not require any user input and should be idempotent.
 
 # TODO sync with PopOS configs_install.sh
+# TODO move this to CommonInitScripts folder (this is not OS specific but just
+# GNOME specific)
 
 . ../prelude.sh
 
@@ -18,6 +20,12 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
 # GSettings
 # TODO describe the procedure of capturing the GSettings (Dconf monitor)
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-red-dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Yaru-red'
+gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 8
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.4
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'minimize'
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
