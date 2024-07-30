@@ -4,6 +4,9 @@
 # Dotfiles are managed via bare git repository.
 # see: https://www.atlassian.com/git/tutorials/dotfiles
 
+# TODO simplify
+# TODO automatically set upstream branch (git push --set-upstream origin devel)
+
 . ../prelude.sh
 
 function dot
