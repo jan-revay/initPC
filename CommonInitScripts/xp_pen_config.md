@@ -1,6 +1,15 @@
 # XP Pen tablet config
 
-Roller - undo/redo (Ctrl-Z, Ctrl-Y)
+## Pen
+
+Key              |  Shortcut  | MS Whiteboard tool
+-----------------|------------|--------------------
+Bottom button    | Alt+X      | *Ereaser*  
+Top button       | Alt+W      | *Switch to pen*
+
+## Roller
+
+Undo/Redo - (Ctrl-Z, Ctrl-Y)
 
 ## Shortcut keys
 
