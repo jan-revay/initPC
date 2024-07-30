@@ -97,3 +97,4 @@ echo "Warning - extensions temporary disabled (because of new GNOME version)"
 # tiling-assistant@ubuntu.com
 # ubuntu-appindicators@ubuntu.com
 # ubuntu-dock@ubuntu.com
+# clipboard-history@alexsaveau.dev
