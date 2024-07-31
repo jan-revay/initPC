@@ -20,6 +20,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
 # GSettings
 # TODO describe the procedure of capturing the GSettings (Dconf monitor)
+gsettings set org.gnome.desktop.input-sources per-window true
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-red-dark'
