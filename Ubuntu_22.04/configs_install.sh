@@ -41,7 +41,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Control
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Control><Alt><Super>l']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Control><Alt><Super>semicolon']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Control><Alt><Super>apostrophe']"
-
+gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Alt><Super>space']"
 
 # set default apps
 xdg-mime default code.desktop text/markdown
