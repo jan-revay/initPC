@@ -9,9 +9,9 @@
 
 # ==== Enable git hooks ====
 
-pushd ../.git/hooks/ || exit ${EXIT_FILE_IO_ERROR}
+pushd ../.git/hooks/ || exit "${EXIT_FILE_IO_ERROR}"
 ln -s --force ../../pre-commit-hook.sh pre-commit
-popd || exit ${EXIT_FILE_IO_ERROR}
+popd || exit "${EXIT_FILE_IO_ERROR}"
 
 . git_config.sh.ps1
 . mkdirs.sh
