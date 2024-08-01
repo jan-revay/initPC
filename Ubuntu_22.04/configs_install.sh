@@ -35,6 +35,13 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:close'
 gsettings set org.gnome.desktop.input-sources xkb-options \
     "['terminate:ctrl_alt_bksp', 'shift:both_capslock_cancel', 'caps:none']"
 gsettings set org.gnome.desktop.interface cursor-size 64
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Alt><Super>h']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control><Alt><Super>j']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Control><Alt><Super>k']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Control><Alt><Super>l']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Control><Alt><Super>semicolon']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Control><Alt><Super>apostrophe']"
+
 
 # set default apps
 xdg-mime default code.desktop text/markdown
