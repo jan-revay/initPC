@@ -14,6 +14,7 @@
 # TODO add lower window on middle click
 # TODO add keyboard settings
 # TODO add fonts settings scaling factor
+# TODO add grup timeout setup to 1
 
 # KEYBOARD SHORTCUTS
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
