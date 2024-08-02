@@ -5,7 +5,7 @@
 
 if ! uname -a | grep Android; then
     echo The init script does not run on Android
-    exit ${EXIT_INCORRECT_PLATFORM}
+    exit "${EXIT_INCORRECT_PLATFORM}"
 fi
 
 if ! gh auth status; then

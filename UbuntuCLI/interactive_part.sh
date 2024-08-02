@@ -30,7 +30,7 @@ if [ "$1" = "--help" ]; then
     echo
     # shellcheck disable=SC2016
     echo '--noninteractive  skip stuff requiring user interaction (e.g. `gh auth login`)'
-    exit ${EXIT_SUCCESS}
+    exit "${EXIT_SUCCESS}"
 fi
 
 if [ "$1" == "--noninteractive" ]; then
@@ -39,5 +39,5 @@ elif [ "$1" == "" ]; then
     interactive_part
 else
     echo "invalid argument $1"
-    exit ${EXIT_INVALID_ARGUMENT}
+    exit "${EXIT_INVALID_ARGUMENT}"
 fi
