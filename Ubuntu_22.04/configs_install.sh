@@ -15,6 +15,8 @@
 # TODO add keyboard settings
 # TODO add fonts settings scaling factor
 # TODO add grup timeout setup to 1
+# TODO add setup of Ubuntu tiling assistant GNOME extension (gaps, highlight
+# the active window...).
 
 # KEYBOARD SHORTCUTS
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
