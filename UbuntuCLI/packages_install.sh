@@ -118,3 +118,9 @@ time sudo npm i -g bash-language-server
 # TODO remove is not used (also with GEM)
 # GEM packages
 time sudo gem install mdl # markdown-lint
+
+# TODO add automatic pipx upgrade via pipx
+# pipx install pipx
+# And optional remove the obsolete apt pipx!
+# sudo apt purge --autoremove pipx
+# https://github.com/pypa/pipx/issues/1481
