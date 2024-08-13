@@ -39,7 +39,7 @@ APT_PACKAGES=(
     ripgrep tree curl neofetch htop tmux at zsh traceroute jq stow
     # NOTE: fd-find executable is called `fdfind`
     # TODO consider moving doconf-editor to GUI part of the initPC script
-    dconf-editor doxygen git gh bat eza man fish fd-find
+    dconf-editor doxygen git gh bat man fish fd-find
 
     # package managers
     npm rubygems pipx python3-pip
