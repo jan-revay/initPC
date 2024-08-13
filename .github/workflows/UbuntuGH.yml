@@ -25,7 +25,7 @@ jobs:
     - name: Update APT & upgrade
       run: sudo apt-get update -y && sudo apt-get upgrade -y
     # TODO - BUG - use the correct respective branch - check that it is resolved
-    - name: ${{ matrix.install-gui }}
+    - name: ${{ matrix.install-gui }} - ${{ matrix.os }}
       run: |
           if [[ "${{ matrix.install-gui }}" == 'GNOME' ]]; then
               sudo apt-get install -y ubuntu-desktop-minimal
