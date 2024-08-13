@@ -1,3 +1,6 @@
+# See: https://www.reddit.com/r/archlinux/comments/puiysn/libinput_119_and_high_resolution_scrolling/
+# and: https://wayland.freedesktop.org/libinput/doc/latest/device-quirks.html
+
 [Logitech MX Master 3]
 MatchVendor=0x46D
 MatchProduct=0x4082
