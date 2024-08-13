@@ -1,6 +1,8 @@
 #!/bin/bash -x
 # This script should be idempotent.
 # This script REQUIRES USER INTERACTION IN GNOME!!!
+#
+# TODO add extension settings
 
 . ../prelude.sh
 
@@ -132,4 +134,41 @@ echo "Warning - extensions temporary disabled (because of new GNOME version)"
 # dim-background-windows@stephane-13.github.com
 # grand-theft-focus@zalckos.github.com
 # window-title-is-back@fthx
+#
+# List as of 13.8.2024
+#
+# arrangeWindows@sun.wxg@gmail.com
+# panelScroll@sun.wxg@gmail.com
+# smart-auto-move@khimaros.com
+# rclone-manager@germanztz.com
+# Vitals@CoreCoding.com
+# windowsNavigator@gnome-shell-extensions.gcampax.github.com
+# stopwatch@aliakseiz.github.com
+# reminder_alarm_clock@trifonovkv.gmail.com
+# hide-universal-access@akiirui.github.io
+# transparent-window-moving@noobsai.github.com
+# window-list@gnome-shell-extensions.gcampax.github.com
+# burn-my-windows@schneegans.github.com
+# order-extensions@wa4557.github.com
+# improved-workspace-indicator@michaelaquilina.github.io
+# quake-terminal@diegodario88.github.io
+# another-window-session-manager@gmail.com
+# focus@scaryrawr.github.io
+# focus-changer@heartmire
+# highlight-focus@pimsnel.com
+# workspaces-by-open-apps@favo02.github.com
+# all-windows@ezix.org
+# auto-move-windows@gnome-shell-extensions.gcampax.github.com
+# clipboard-history@alexsaveau.dev
+# weeks-start-on-monday@extensions.gnome-shell.fifi.org
+# grand-theft-focus@zalckos.github.com
+# dim-background-windows@stephane-13.github.com
+# system-monitor-next@paradoxxx.zero.gmail.com
+# window-title-is-back@fthx
+# ding@rastersoft.com
+# tiling-assistant@ubuntu.com
+# ubuntu-appindicators@ubuntu.com
+# ubuntu-dock@ubuntu.com
+# workspace-indicator@gnome-shell-extensions.gcampax.github.com
+# panel-workspace-scroll@polymeilex.github.io
 #
