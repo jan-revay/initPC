@@ -1,5 +1,8 @@
 #!/bin/bash -x
 # This script should be idempotent.
+# shellcheck disable=SC2317  # Don't warn about unreachable commands in this file
+
+exit 1 # THIS script needs to be updated...
 
 . ../prelude.sh
 
