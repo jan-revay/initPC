@@ -15,11 +15,12 @@ on:
 jobs:
   build:
     name: ${{ matrix.install-gui }}
-    runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
       matrix:
         install-gui: ['GNOME', 'NO GUI'] # TODO add this to containers.yml
+        os: ['ubuntu-22.04', 'ubuntu-24.04']
+      runs-on: ${{ matrix.os }}
     steps:
     - name: Update APT & upgrade
       run: sudo apt-get update -y && sudo apt-get upgrade -y
