@@ -39,7 +39,7 @@ gsettings set org.gnome.desktop.interface cursor-size 64
 
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'minimize'
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
-gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:close'
+gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
 
 # TODO design and add all keybindings
 # Keybindings
