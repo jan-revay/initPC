@@ -1,5 +1,8 @@
 #!/bin/bash -x
 
+# TODO make this into the library so that the
+# testing of distro version can be used in if/else
+
 if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     __INITPC_PRELUDE_SOURCED__='true'
 
