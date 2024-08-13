@@ -64,3 +64,9 @@ sudo update-alternatives --set editor /usr/bin/nvim
 # add logid.cfg (logitech mouse) options copy paste (and add the logid file
 # to the dotfiles repo)
 #
+#
+# TODO - finish keyboard setup
+# https://wiki.archlinux.org/title/Xorg/Keyboard_configuration#One-click_key_functions
+# e.g. swap esc and caps lock
+# https://www.reddit.com/r/vim/comments/k5twce/switching_esc_with_caps_lock/
+#
