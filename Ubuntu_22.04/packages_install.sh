@@ -39,15 +39,16 @@ sudo apt install -y flatpak meld kdevelop coqide gitk cmake-gui # editors, tools
 # TODO check this according to the official Docker documentation
 # TODO make the install noninteractive
 # TODO do I want to install Docker desktop app or just the CLI (Docker engine)
-pushd /tmp
-wget -O docker-desktop.deb 'https://desktop.docker.com/linux/main/amd64/docker-desktop-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64'
-sudo apt install -y ca-certificates curl gnupg lsb-release
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt update -y
-sudo apt-get install ./docker-desktop.deb
-popd
+# TODO this install script was broken - repair
+# pushd /tmp
+# wget -O docker-desktop.deb 'https://desktop.docker.com/linux/main/amd64/docker-desktop-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64'
+# sudo apt install -y ca-certificates curl gnupg lsb-release
+# sudo mkdir -p /etc/apt/keyrings
+# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+# echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+# sudo apt update -y
+# sudo apt-get install ./docker-desktop.deb
+# popd
 
 sudo apt install -y snapd
 # TODO reloading bashrc might be needed
