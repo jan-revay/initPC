@@ -133,3 +133,5 @@ R_C2 ∘ (R_C1 ∘ S) = R_C2 ∘ S
 1. Format markdown files (add linebreaks, beautify...)
 1. Consolidate branches (unmerged feature branches).
 1. Backup solution
+1. Consider using https://canonical-ubuntu-wsl.readthedocs-hosted.com/en/latest/tutorials/cloud-init/
+
