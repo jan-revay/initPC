@@ -3,6 +3,7 @@
 
 # TODO use lists for packages (and use on install command)
 # TODO add XP-pen drivers installation to the script
+# TODO add docker installation
 
 . ../prelude.sh
 
@@ -33,6 +34,19 @@ sudo apt update
 sudo apt install -y linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
 sudo apt update
 sudo apt install -y flatpak meld kdevelop coqide gitk cmake-gui # editors, tools and IDEs
+
+
+# TODO check this according to the official Docker documentation
+# TODO make the install noninteractive
+pushd /tmp
+wget -O docker-desktop.deb 'https://desktop.docker.com/linux/main/amd64/docker-desktop-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64'
+sudo apt install -y ca-certificates curl gnupg lsb-release
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update -y
+sudo apt-get install ./docker-desktop.deb
+popd
 
 sudo apt install -y snapd
 # TODO reloading bashrc might be needed
