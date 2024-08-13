@@ -8,8 +8,9 @@ distro_version_ge 22
 gnome_present yes
 
 # TODO fix the script and remove
-echo "This script is not yet finished therefore it is disabled to prevent CI fail."
-exit 0
+echo "This script is not yet finished therefore disabled (to prevent incorrect\
+    configs and CI failing on known bugs)."
+exit 1
 
 # TODO "Which services should be restarted?" prompt is still present in VM
 # TODO - is this relevant in Ubuntu desktop (seems to only do sth. in Ubuntu server)
