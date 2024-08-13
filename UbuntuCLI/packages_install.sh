@@ -24,7 +24,7 @@ LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' \
 # see https://github.com/rr-debugger/rr/wiki/Using-rr-in-an-IDE
 # TODO consider moving all packages that need GUI to GUI part of the initPC script
 # TODO add rclone
-readonly APT_PACKAGES=(
+APT_PACKAGES=(
     # GCC and build tools
     build-essential gdb rr ccache ninja-build cmake cmake-gui
     gcc-"${LATEST_GCC_VER_IN_APT}" g++-"${LATEST_GCC_VER_IN_APT}"
@@ -62,6 +62,14 @@ readonly APT_PACKAGES=(
     # requirements for llvm and rust install scripts
     wget lsb-release software-properties-common gnupg curl
 )
+
+# exa was replaced by eza on later versions of Ubuntu
+# (exa is no longer maintained)
+if bash -c '. ../prelude.sh; distro_version_le 23' &> /dev/null; then
+    APT_PACKAGES+=('exa')
+else
+    APT_PACKAGES+=('eza')
+fi
 
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
