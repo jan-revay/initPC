@@ -70,9 +70,10 @@ sudo update-alternatives --set editor /usr/bin/nvim
 # e.g. swap esc and caps lock
 # https://www.reddit.com/r/vim/comments/k5twce/switching_esc_with_caps_lock/
 #
+# https://www.baeldung.com/linux/vim-switch-back-normal-mode-options
+# https://www.reddit.com/r/vim/comments/shndya/how_do_you_escape_to_normal_mode/
 
 pushd RootDotfiles/
 sudo stow -vvv --target=/ disable_highres_scroll/
 sudo stow -vvv --target=/ MX3_MASTER_LOGID_CONFIG/
 popd
-
