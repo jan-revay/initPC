@@ -17,6 +17,7 @@ jobs:
     name: ${{ matrix.install-gui }}
     runs-on: ubuntu-22.04
     strategy:
+      fail-fast: false
       matrix:
         install-gui: ['GNOME', 'NO GUI'] # TODO add this to containers.yml
     steps:
