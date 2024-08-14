@@ -14,8 +14,17 @@
 - hex editor
 - yapf (python formatter)
 - youtube-dl (youtube video downloader)
+- powershell
+- go
+- anaconda
+- .net core SDK
 
 ## OS install with GUI
 
 - Docker
 - some VM hypervisor e.g. VMWare or Virtualbox
+- postman
+- JupyterLab desktop
+- some torrent client
+- some disk space analyzer
+- TODO - have a look at the snap store gui app
