@@ -1,6 +1,10 @@
 #!/bin/bash -x
 # The script should not require any user input and should be idempotent.
 
+# Workflow: use `dconf watch /`, make the change via GUI,
+# use `gsettings get` to check the path, use `gsettings set` to verify the setting
+# add the line here...
+
 # TODO sync with PopOS configs_install.sh
 # TODO move this to CommonInitScripts folder (this is not OS specific but just
 # GNOME specific)
