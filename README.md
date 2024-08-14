@@ -148,3 +148,4 @@ Issues and feature requests can be created here: https://github.com/jan-revay/in
 1. Why does the pre-commit hook (ShellCheck) fail locally but succeed in CI?
 1. Add functional tests (see GitHub runners or ThePrimagen scripts as an example.
 1. Try to replicate my current MX3 master setup (high-res scrolling turned off) with just the logid driver, if possible.
+1. Add Sway init and config files
