@@ -1,5 +1,6 @@
 # Packages to add (TODO)
 
+## CLI
 - XML language server and lint
 - YAML language server and lint
 - more C++ static analyzers and lints
@@ -13,3 +14,8 @@
 - hex editor
 - yapf (python formatter)
 - youtube-dl (youtube video downloader)
+
+## OS install with GUI
+
+- Docker
+- some VM hypervisor e.g. VMWare or Virtualbox
