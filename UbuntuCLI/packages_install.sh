@@ -10,7 +10,7 @@ export DEBIAN_FRONTEND=noninteractive
 export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
 
-sudo apt-get -y update
+time sudo apt-get -y update
 time sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
@@ -108,7 +108,7 @@ readonly PIPX_PACKAGES=(
 )
 # TODO add fb_infer, cppdepend, protolint, PVS...
 
-print0 "${PIPX_PACKAGES[@]}" | xargs -0 -I % pipx install %
+time print0 "${PIPX_PACKAGES[@]}" | xargs -0 -I % pipx install %
 
 # === Rust packages ===
 # shellcheck source=/dev/null
