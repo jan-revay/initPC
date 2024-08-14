@@ -19,3 +19,5 @@ Once termux is installed continue as described in the main [README.md](https://g
 - <https://github.com/Sohil876/Termux-zsh/tree/master>
 - <https://github.com/adi1090x/termux-desktop/tree/master>
 - <https://github.com/GManOfficial/Termux_HackingLab_Setup>
+- <https://github.com/sanwebinfo/my-termux-setup>
+  
