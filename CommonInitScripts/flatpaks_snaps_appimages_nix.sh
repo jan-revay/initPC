@@ -52,6 +52,7 @@ else
     )
     time sudo snap refresh
     time print0 "${SNAP_PACKAGES[@]}" | xargs -0 -I % sudo snap install %
-    time sudo snap install helix --classic
+    time sudo snap install helix --classic # TODO move to UbuntuCLI
+    time sudo snap install gitkraken --classic
 
 fi

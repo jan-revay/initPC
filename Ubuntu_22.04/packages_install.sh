@@ -36,7 +36,7 @@ readonly APT_GUI_PACKAGES=(
     linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
 
     # ===== Editors, tools and IDEs =====
-    meld kdevelop coqide gitk cmake-gui
+    meld kdevelop coqide qgit gitk git-gui cmake-gui
 
     # ===== MESSAGING, PRODUCTIVITY, GRAPHICS, SOUND AND BOOKS =====
     gimp krita inkscape okular evince vlc audacity xdotool
