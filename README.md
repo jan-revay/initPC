@@ -107,7 +107,7 @@ R_C2 ∘ (R_C1 ∘ S) = R_C2 ∘ S
 1. Merge and deprecate the InitNewPC repo InitPC repo on org GitHub and initAndroid repo.
 1. Merge with LogidCfg repo
 1. Test the Windows setup script on a VM
-1. Create aliases for PowerShell
+1. Create aliases for PowerShelly
 1. Try merging the apt, flatpak, and snap install commands
 1. Have a look at popOS packages and add the useful ones to other init scripts
 1. Design a system for applying the configs on all my machines once they
@@ -134,5 +134,6 @@ R_C2 ∘ (R_C1 ∘ S) = R_C2 ∘ S
 1. Consolidate branches (unmerged feature branches).
 1. Backup solution
 1. Consider using https://canonical-ubuntu-wsl.readthedocs-hosted.com/en/latest/tutorials/cloud-init/
-1. Why does the precommit hook (ShellCheck) fails locally but succeeds in CI?
+1. Why does the pre-commit hook (ShellCheck) fail locally but succeed in CI?
 1. Add functional tests (see GitHub runners or ThePrimagen scripts as an example.
+1. Try to replicate my current MX3 master setup (high-res scrolling turned off) with just the logid driver, if possible.
