@@ -149,7 +149,7 @@ Issues and feature requests can be created here: https://github.com/jan-revay/in
 1. Add functional tests (see GitHub runners or ThePrimagen scripts as an example.
 1. Try to replicate my current MX3 master setup (high-res scrolling turned off) with just the logid driver, if possible.
 1. Add Sway init and config files
-
+1. Install VSC as .deb pkg & add config according to <https://code.visualstudio.com/docs/setup/linux>
 
 ## Similar repos
 
