@@ -80,9 +80,13 @@ R_C1 ∘ (R_C1 ∘ S) = R_C1 ∘ S
 
 Yes, the refresh command should be idempotent. This is also partly verified in CI via GitHub actions (TODO make sure).
 
-### 4. Does running the `refresh` command after a change in this repo on a new machine produce an equivalent state to running `refresh` on an existing machine?
+### 4. Does running the `refresh` command after a change in this repo on a clean machine (new OS install) produce an equivalent state to running `refresh` on an existing machine? Why not to use Nix instead?
 
-In general no.
+In general no. Only the Nix package manager can do that well. It would be hard to replicate that elsewhere. However, the whole configuration of a new machine
+takes just around 20 minutes with these scripts. Therefore if the state of an existing machine and the state described in this repo diverge too much, it should be
+possible to reinstall the OS and reconfigure the machine from a clean state fairly quickly (TODO after the backup solution is also finished). Hence despite the fact
+that Nix is more capable in this regard, it is still possible to achieve a similar practical effect using this init script.
+As Nix is a bit less common than Debian and Ubuntu, I have chosen to use Debian package manager as a default instead of Nix. However, I plan to implement the initPC script for Nix as well and I am also considering using Nix more in the future.
 
 TODO - when does this hold and when it does not?
 
