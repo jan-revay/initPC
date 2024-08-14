@@ -20,12 +20,12 @@ time sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
 # TODO - add all packages to a single list (change this to a conditional append)
-if lspci | grep -i vmware; then                             # if the script is running inside of a VMware virtual machine
-    sudo apt install -y open-vm-tools open-vm-tools-desktop # install "VMware tools" (drivers)
-else                                                        # we are running bare metal (I don't use VirtualBox or other hypervisors)
+if lspci | grep -i vmware; then                                 # if the script is running inside of a VMware virtual machine
+    sudo apt-get install -y open-vm-tools open-vm-tools-desktop # install "VMware tools" (drivers)
+else                                                            # we are running bare metal (I don't use VirtualBox or other hypervisors)
     # sudo snap install spotify TODO
     # sudo snap install zoom-client TODO
-    sudo apt install -y logiops
+    sudo apt-get install -y logiops
 fi
 
 readonly APT_GUI_PACKAGES=(
