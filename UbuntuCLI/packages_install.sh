@@ -64,6 +64,7 @@ APT_PACKAGES=(
 
     # stress testing
     stress # see: https://github.com/resurrecting-open-source-projects/stress
+    # TODO add more stress testing utilities
 )
 
 # exa was replaced by eza on later versions of Ubuntu
