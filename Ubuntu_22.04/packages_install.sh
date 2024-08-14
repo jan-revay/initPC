@@ -36,9 +36,9 @@ readonly APT_GUI_PACKAGES=(
     linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
 
     # ===== Editors, tools and IDEs =====
-    # TODO gitk breaks the install script (dependencies) - choose an other install method
+    # TODO gitk and git-gui break the install script (dependencies) - choose an other install method
     # it is just a bash script, hence it might make sense to install from source
-    meld kdevelop coqide qgit git-gui cmake-gui # gitk
+    meld kdevelop coqide qgit cmake-gui # gitk git-gui
 
     # ===== MESSAGING, PRODUCTIVITY, GRAPHICS, SOUND AND BOOKS =====
     gimp krita inkscape okular evince vlc audacity xdotool
