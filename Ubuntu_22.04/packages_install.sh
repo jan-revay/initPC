@@ -29,12 +29,14 @@ else                                                        # we are running bar
 fi
 
 readonly APT_GUI_PACKAGES=(
+    # ===== package managers =====
+    snapd flatpak
+
     # I don't remember why this is here (TODO review)
     linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
 
-    meld kdevelop coqide gitk cmake-gui # editors, tools and IDEs
-
-    snapd flatpak # package managers
+    # ===== Editors, tools and IDEs =====
+    meld kdevelop coqide gitk cmake-gui
 
     # ===== MESSAGING, PRODUCTIVITY, GRAPHICS, SOUND AND BOOKS =====
     gimp krita inkscape okular evince vlc audacity xdotool
