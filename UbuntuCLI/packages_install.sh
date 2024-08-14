@@ -61,6 +61,9 @@ APT_PACKAGES=(
 
     # requirements for llvm and rust install scripts
     wget lsb-release software-properties-common gnupg curl
+
+    # stress testing
+    stress # see: https://github.com/resurrecting-open-source-projects/stress
 )
 
 # exa was replaced by eza on later versions of Ubuntu
