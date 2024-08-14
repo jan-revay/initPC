@@ -60,7 +60,7 @@ parts of the codebase to Ansible scripts later.
 ### 2. Why don't I use Chezmoi?
 
 Dotfiles are currently managed via a bare Git repo (home directory) and Stow (system-level configuration files). In the future, I might use Chezmoi or a more
-sophisticated tool for managing dotfiles & templating them, if the need arises.
+sophisticated tool for managing dotfiles & templating them, if the need arises. See: <https://www.chezmoi.io/why-use-chezmoi/>
 
 ### 3. Is the `refresh` command idempotent?
 
