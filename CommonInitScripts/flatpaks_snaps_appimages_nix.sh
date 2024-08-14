@@ -20,7 +20,7 @@ else
     # TODO test the flatpaks
 
     # TODO - is this needed?
-    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
     # TODO toread https://man7.org/linux/man-pages/man1/flatpak-install.1.html
     readonly FLATPAK_PACKAGES=(
