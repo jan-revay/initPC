@@ -7,6 +7,8 @@
 
 . ../prelude.sh
 
+sudo apt install gir1.2-gtop-2.0 # needed by some performance monitoring extensions
+
 # ===== GNOME EXTENSIONS =====
 
 # TODO consider these extensions: https://youtube.com/watch?v=wtjeaL90E6Q&si=VQmzns96n-dI6eL0 and
