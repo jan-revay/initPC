@@ -3,6 +3,7 @@
 # This script REQUIRES USER INTERACTION IN GNOME!!!
 #
 # TODO add extension settings
+# Consider this: https://github.com/PeterMosmans/ansible-role-customize-gnome
 
 . ../prelude.sh
 
