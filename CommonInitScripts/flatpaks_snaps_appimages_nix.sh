@@ -27,6 +27,7 @@ readonly SNAP_PACKAGES=(
 
 # TODO reloading bashrc might be needed (SNAP)
 # TODO verify Installing snaps from a list is not idempotent for some reason TODO try fixing
+time sudo snap refresh
 time print0 "${SNAP_PACKAGES[@]}" | xargs -0 -I % sudo snap install %
 
 time flatpak install --noninteractive --assumeyes flathub "${FLATPAK_PACKAGES[@]}"
