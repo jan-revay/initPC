@@ -37,7 +37,7 @@
 ## Strategy for testing on different distros
 
 - Currently, I use Docker containers to test setup scripts for distros other than Ubuntu.
-- Alternatively, I could also use WSL2 if Docker is too restrictive.
+- Alternatively, I could also use WSL2 if Docker is too restrictive, or LXD (lightweight VMs)
 
 ## Triggers strategy (TODO)
 
