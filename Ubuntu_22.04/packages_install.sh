@@ -4,37 +4,63 @@
 # TODO use lists for packages (and use on install command)
 # TODO add XP-pen drivers installation to the script
 # TODO add docker installation
+# TODO install packages via a list...
 
 . ../prelude.sh
+
+. ../UbuntuCLI/packages_install.sh
+
+export DEBIAN_FRONTEND=noninteractive
+# TODO "Which services should be restarted?" prompt is still present in VM
+export NEEDRESTART_MODE=a
+export NEEDRESTART_SUSPEND=1
+
+time sudo apt-get -y update
+time sudo apt-get -y upgrade
+apt list --upgradable # check for the packages that were not upgraded
 
 # TODO - add all packages to a single list (change this to a conditional append)
 if lspci | grep -i vmware; then                             # if the script is running inside of a VMware virtual machine
     sudo apt install -y open-vm-tools open-vm-tools-desktop # install "VMware tools" (drivers)
 else                                                        # we are running bare metal (I don't use VirtualBox or other hypervisors)
-    # sudo snap install spotify
-    # sudo snap install zoom-client
+    # sudo snap install spotify TODO
+    # sudo snap install zoom-client TODO
     sudo apt install -y logiops
 fi
 
-. ../UbuntuCLI/packages_install.sh
-# Programs with GUI are added below
+readonly APT_GUI_PACKAGES=(
+    # I don't remember why this is here (TODO review)
+    linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
+
+    meld kdevelop coqide gitk cmake-gui # editors, tools and IDEs
+
+    snapd flatpak # package managers
+
+    # ===== MESSAGING, PRODUCTIVITY, GRAPHICS, SOUND AND BOOKS =====
+    gimp krita inkscape okular evince vlc audacity xdotool
+    ttf-mscorefonts-installer
+
+    # ===== GUI TWEAKS AND AUTOMATION =====
+    dconf-editor gnome-tweaks
+
+    # ===== CODING =====
+    sqlitebrowser
+
+    # ===== TO TRY ===== (TODO review)
+    actiona # automations, written in C++ https://github.com/Jmgr/actiona
+    autokey-common autokey-gtk
+)
+
+time sudo apt-get install -y "${APT_GUI_PACKAGES[@]}"
 
 # TODO add packages from PopOS here (and use this as a base for the PopOS)
 # TODO make the script noninteractive
-# TODO decide between flatpaks and snaps (or combine them)
-# TODO VSC flatpak appears to be broken and lower quality than the snap
-# TODO test the flatpaks
+
 # TODO debloat
 # TODO add snap installation script so that there is a same base on PopOS
-# TODO consider removeing few `apt update`s
-# Make flatpak packages install noninteractive
+# TODO consider removing few `apt update`s
 # consider installing all packages at once (config files would just add stuff
 # to a list)
-sudo apt update
-sudo apt install -y linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
-sudo apt update
-sudo apt install -y flatpak meld kdevelop coqide gitk cmake-gui # editors, tools and IDEs
-
 
 # TODO check this according to the official Docker documentation
 # TODO make the install noninteractive
@@ -50,37 +76,10 @@ sudo apt install -y flatpak meld kdevelop coqide gitk cmake-gui # editors, tools
 # sudo apt-get install ./docker-desktop.deb
 # popd
 
-sudo apt install -y snapd
-# TODO reloading bashrc might be needed
-# Installing snaps from a list is not idempotent for some reason TODO try fixing
-sudo snap install core
-sudo snap install snap-store
-
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-flatpak install flathub com.visualstudio.code
-# ===== MESSAGING, PRODUCTIVITY, GRAPHICS, SOUND AND BOOKS =====
-
-sudo apt install -y gimp krita inkscape okular evince vlc audacity xdotool
-sudo apt install -y ttf-mscorefonts-installer
-
-# Flatpaks
-flatpak install foliate signal caprine spotify
-
-sudo snap install todoist
-
-# ===== GUI TWEAKS AND AUTOMATIONS =====
-sudo apt install -y dconf-editor gnome-tweaks
-
-# ===== MAYBE UNUSED =====
-# TODO remove need for user interaction (Y - enter)
-flatpak install gitkraken
-sudo apt install -y sqlitebrowser
-
-# ==== TO TRY ====
-sudo apt install -y actiona # automations, written in C++ https://github.com/Jmgr/actiona
-sudo apt install -y autokey-common autokey-gtk
-
 # cleanup
-sudo apt autoremove
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y autoremove
 apt list --upgradable # check for the packages that were not upgraded
+
+. ../CommonInitScripts/flatpaks_snaps_appimages_nix.sh
