@@ -135,4 +135,4 @@ R_C2 ∘ (R_C1 ∘ S) = R_C2 ∘ S
 1. Backup solution
 1. Consider using https://canonical-ubuntu-wsl.readthedocs-hosted.com/en/latest/tutorials/cloud-init/
 1. Why does the precommit hook (ShellCheck) fails locally but succeeds in CI?
-
+1. Add functional tests (see GitHub runners or ThePrimagen scripts as an example.
