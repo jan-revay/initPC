@@ -19,6 +19,8 @@
 - clean the Actions logs (delete or hide outdated logs)
 - Add CI for Mac init script
 - Consider adding Ubuntu20.04 runner as well (backward compatibility)
+- compile sth. in every language I use, as a test of compiler installations
+- create a sample Docker container and run it as a test of Docker setup
 
 ## Flatpak/Snap/AppImage testing strategy
 
