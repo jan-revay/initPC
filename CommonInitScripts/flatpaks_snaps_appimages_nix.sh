@@ -31,6 +31,8 @@ else
         com.spotify.Client
         com.axosoft.GitKraken
     )
+    # TODO try fixing flatpak installation without sudo (or at least do some research
+    # whether the sudo will not break sth.)
     time sudo flatpak install --noninteractive --assumeyes flathub "${FLATPAK_PACKAGES[@]}"
 
     # TODO verify Installing snaps from a list is not idempotent for some reason TODO try fixing
