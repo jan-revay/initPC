@@ -9,7 +9,10 @@ Once termux is installed continue as described in the main [README.md](https://g
 ## TODOs
 
 1. Error msg when installing some pkgs - "Could not build wheels for Ninja" - solve.
-2. 
+
+## Ansible on Termux
+
+- <https://github.com/nicenemo/termux-setup>
 
 ## Similar repos
 
