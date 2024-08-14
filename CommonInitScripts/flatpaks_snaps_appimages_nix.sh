@@ -31,7 +31,7 @@ else
         com.spotify.Client
         com.axosoft.GitKraken
     )
-    time flatpak install --noninteractive --assumeyes flathub "${FLATPAK_PACKAGES[@]}"
+    time sudo flatpak install --noninteractive --assumeyes flathub "${FLATPAK_PACKAGES[@]}"
 
     # TODO verify Installing snaps from a list is not idempotent for some reason TODO try fixing
     # TODO reloading bashrc might be needed (SNAP)
