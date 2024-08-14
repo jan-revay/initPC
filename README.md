@@ -53,15 +53,18 @@ O---------> devel ---------------> testing -----------------> stable -----------
 
 ### 1. Why don't I use Ansible?
 
-TODO
+At the moment it would just add complexity, and unnecessary dependence (e.g. it could break Termux on Android), be less flexible, and would not
+be as beneficial for a project of this size. Also, I don't have any experience in writing Ansible scripts... However, I might rewrite some
+parts of the codebase to Ansible scripts later.
 
 ### 2. Why don't I use Chezmoi?
 
-TODO
+Dotfiles are currently managed via a bare Git repo (home directory) and Stow (system-level configuration files). In the future, I might use Chezmoi or a more
+a sophisticated tool for managing dotfiles & templating them, if the need arises.
 
 ### 3. Is the `refresh` command idempotent?
 
-By idempotency we mean: TODO
+By idempotency, we mean: TODO
 
 ```
 Let:
@@ -75,9 +78,9 @@ We want:
 R_C1 ∘ (R_C1 ∘ S) = R_C1 ∘ S
 ```
 
-TODO
+Yes, the refresh command should be idempotent. This is also partly verified in CI via GitHub actions (TODO make sure).
 
-### 4. Does runing the `refresh` command after a change in this repo on a new machine produce an equivalent state to running `refresh` on an existing machine?
+### 4. Does running the `refresh` command after a change in this repo on a new machine produce an equivalent state to running `refresh` on an existing machine?
 
 In general no.
 
