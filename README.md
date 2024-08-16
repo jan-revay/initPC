@@ -22,7 +22,7 @@ If you have updated the `initPC` or `dotfiles` repo, the:
 
 1. `refresh`
 
-command (an alias defined in `.bash_aliases`) will apply the changes in the repository to your machine (e.g. install added packages). However, the script never removes any packages (other than `apt-get autoremove`). Removing a package from the init script will have no effect after the script is executed for the first time.
+command (an alias defined in `.bash_aliases`) will apply the changes in the repository to your machine (e.g. install added packages). However, the script never removes any packages (other than `apt-get autoremove`) and does not reverse already executed changes in machine configuration (the Nix config will be able to do that, but it is not finished). Removing a package from the init script will have no effect after the script is executed for the first time.
 
 ## Branches
 
