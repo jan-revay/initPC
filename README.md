@@ -16,9 +16,13 @@
 
 ✔️ *Note: Logs will appear in the folder `initPC/Logs/`. Use `cat <logfile>` to display the log file with the original VT100 colors.*
 
-### Applying changes to your machine
+### Applying changes in this repo to your machine
 
-Run the `refresh` command from Bash, after you have updated the `initPC` or `dotfiles` repo (e.g. adding a package, changing a config file, or adding an alias...), to apply the config change to your machine (after the first run). The script never removes any packages other than the ones in `apt-get autoremove`, therefore removing packages from the init script does not have any effect after the first run.
+If you have updated the `initPC` or `dotfiles` repo, the:
+
+1. `refresh`
+
+command (an alias defined in `.bash_aliases`) will apply the changes in the repository to your machine (e.g. install added packages). However, the script never removes any packages (other than `apt-get autoremove`). Removing a package from the init script will have no effect after the script is executed for the first time.
 
 ## Branches
 
