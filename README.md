@@ -152,6 +152,7 @@ Issues and feature requests can be created here: https://github.com/jan-revay/in
 1. Install VSC as .deb pkg & add config according to <https://code.visualstudio.com/docs/setup/linux>
 1. Fix CI (stow logid.cfg)
 1. Set up logid mouse
+1. Automatic updates of Flatpaks and Snaps
 
 ## Similar repos
 
