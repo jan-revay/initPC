@@ -123,15 +123,15 @@ Issues and feature requests can be created here: https://github.com/jan-revay/in
 1. Have a look at popOS packages and add the useful ones to other init scripts
 1. Design a system for applying the configs on all my machines once they
    are updated here.
-   - implement `refresh` alias
+   - implement `refresh` alias (with CI idempotency tests)
    - add notification to .bashrc if the initPC or dotfiles are not up to date
 1. Add more C++ tools from here: <https://github.com/cpp-best-practices/cppbestpractices/blob/master/02-Use_the_Tools_Available.md>
 1. Add Bats automated tests
 1. Try adding NixOS
 1. Create CI tests on GitHub
 1. Todos from the repo
-1. Make the core Linux init script Debian based (i.e. other distros just add stuff to the Debian base init script)
-1. Maybe replace the Debian variants (Ubuntu, PopOS...) with a single Ansible script with conditionals?
+1. Make the core Linux init script Debian-based (i.e. other distros just add stuff to the Debian base init script)
+1. Consider replacing the Debian variants (Ubuntu, PopOS...) with a single Ansible script with conditionals.
 1. Do some research on whether snap and flatpak packages work in WSL resp. which alternative package manager to use in WSL
 1. Consider running the whole `./run_all.sh` script as sudo and removing `sudo` commands from the script.
 1. Consider using <http://www.bashbooster.net/>, <https://github.com/bevry/dorothy>, <https://www.chezmoi.io/> or similar libraries (see: <https://www.chezmoi.io/comparison-table/> and <https://dotfiles.github.io/utilities/>).
@@ -150,7 +150,9 @@ Issues and feature requests can be created here: https://github.com/jan-revay/in
 1. Try to replicate my current MX3 master setup (high-res scrolling turned off) with just the logid driver, if possible.
 1. Add Sway init and config files
 1. Install VSC as .deb pkg & add config according to <https://code.visualstudio.com/docs/setup/linux>
+1. Fix CI (stow logid.cfg)
+1. Set up logid mouse
 
 ## Similar repos
 
-- https://github.com/ThePrimeagen/dev
+- <https://github.com/ThePrimeagen/dev> and <https://github.com/ThePrimeagen/.dotfiles>
