@@ -15,13 +15,13 @@
 - add run test for my .vimrc (maybe add it to the dotfiles repo instead)
 - add run test for my bash dotfiles
 - draw a dependency graph here
-- in matrix executions - if one branch fails, the whole task should fail also (though the tests should be executed)
+- in matrix executions - if one branch fails, the whole task should also fail (though the tests should be executed)
 - clean the Actions logs (delete or hide outdated logs)
 - Add CI for Mac init script
 - Consider adding Ubuntu20.04 runner as well (backward compatibility)
 - compile sth. in every language I use, as a test of compiler installations
 - create a sample Docker container and run it as a test of Docker setup
-- add more directories to the idempotency test e.g. /etc
+- add more directories to the idempotence test e.g. /etc
 
 ## Flatpak/Snap/AppImage testing strategy
 
