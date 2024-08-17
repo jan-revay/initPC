@@ -32,7 +32,8 @@ function try_platform
     popd || exit "${EXIT_FILE_IO_ERROR}"
 }
 
-timedatectl set-timezone Europe/Vienna
+# TODO set timezone before running anything...
+# timedatectl set-timezone Europe/Vienna
 # TODO rationalize parameter passing
 try_platform "UbuntuCLI" "$1"
 try_platform "DebianCLI" "$1"
