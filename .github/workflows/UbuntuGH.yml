@@ -44,6 +44,7 @@ jobs:
     # TODO split this command to multiple lines
     # TODO also test that the first run of initPC script does change the state of home dir
     # TODO - test whether the test works as expected
+    # TODO - add more paths e.g. /etc/ a.s.o.
     - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing)
       run: |
         cd ~
