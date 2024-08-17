@@ -9,6 +9,11 @@
 
 sudo apt-get install gir1.2-gtop-2.0 # needed by some performance monitoring extensions
 
+# TODO Another session manager extension can probably replace putwindows and
+# also my autostart scripts as it is also able to start the applications.
+# TODO more research wrt the Another session manager extension and also consider manually
+# scripting window layout rules with tools such as devilspie2 or wmctrl
+
 # ===== GNOME EXTENSIONS =====
 
 # TODO consider these extensions: https://youtube.com/watch?v=wtjeaL90E6Q&si=VQmzns96n-dI6eL0 and
