@@ -44,6 +44,7 @@ jobs:
       - name: Create a directory for temporary files
         shell: pwsh
         run: mkdir C:/tmp
+        # TODO IDEMPOTENCE TEST
       # - name: save C:/Users for idempotency test
       #   run: cp -Recurse C:/Users C:/tmp # TODO this will currently fails with:
       #     2 |  cp -Recurse C:/Users C:/tmp
