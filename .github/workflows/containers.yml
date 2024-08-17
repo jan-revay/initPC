@@ -73,7 +73,7 @@ jobs:
           cd ~
           pwd
           find . -type f \( \
-            ! -path "./.cargo/.global-cache/*" \
+            ! -path "./.cargo/.global-cache" \
             ! -path "*/.dotfiles/logs/HEAD" \
             ! -path "*work/_temp/*" \
             ! -path "./runners/*" \
