@@ -1,6 +1,6 @@
 name: Containers
 
-# TODO try using platform matrix and a single file for Ubuntu and Debian
+# TODO try using a platform matrix and a single file for Ubuntu and Debian
 # TODO - set trigger paths, remove unnecessary commands, unify with Ubuntu script
 # TODO test
 # TODO merge WSL_Debian and WSL_Ubuntu_22.04 CI into a single .yml file
@@ -16,6 +16,7 @@ on:
     branches: [ "devel", "testing", "stable", "LTS" ]
     paths:
     - '**.sh'
+    - 'Ubuntu_22.04/RootDotfiles/**'
     - '.github/workflows/containers.yml'
   pull_request:
     branches: [ "devel", "testing", "stable", "LTS" ]
