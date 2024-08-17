@@ -51,7 +51,9 @@ $WINGET_PACKAGES = @(
     'Ookla.Speedtest.Desktop'
 
 # Desktop environment & window management extensions
-    'AltSnap.AltSnap'
+    'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
+    # TODO implement matching behaviour in Win and Linux (same keyboard shortcuts
+    # and same possibilities)
     'Microsoft.PowerToys'
     'AutoHotkey.AutoHotkey'
     # TODO add relevant sysinternals packages (see `winget search sysinternals`)

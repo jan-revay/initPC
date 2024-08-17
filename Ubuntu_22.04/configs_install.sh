@@ -36,6 +36,7 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-red-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Yaru-red'
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 8
+gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9']"
 
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.4
@@ -44,8 +45,14 @@ gsettings set org.gnome.desktop.interface cursor-size 64
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'minimize'
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
+gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Alt>'
+# NOTE: right click resizing is dependent on the sector of the window being
+# clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
+gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 
 # TODO design and add all keybindings
+# TODO remove useless wm keybindings
+# TODO make the keybindings work similar to AltSnap on windows (emulate AltSnap)
 # Keybindings
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Alt><Super>h']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control><Alt><Super>j']"
@@ -55,6 +62,8 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Control
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Control><Alt><Super>apostrophe']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 "['<Control><Alt><Super>Return']"
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Alt><Super>space']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right']"
 
 # set default apps
 xdg-mime default code.desktop text/markdown
