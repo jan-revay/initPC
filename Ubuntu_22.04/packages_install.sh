@@ -32,6 +32,15 @@ readonly APT_GUI_PACKAGES=(
     # ===== package managers =====
     snapd flatpak
 
+    # ===== needed by Another Window Session Manager GNOME extension =====
+    # TODO remove if not used resp. remove packages that are not necessary
+    # TODO add setup according to https://github.com/nlpsuge/gnome-shell-extension-another-window-session-manager?tab=readme-ov-file#how-to-make-close-by-rules-work or remove
+    ydotool # window management utility
+    procps
+    libglib2.0-dev
+    libgtop2-dev
+    gir1.2-gtop-2.0
+
     # I don't remember why this is here (TODO review)
     linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
 
