@@ -73,6 +73,7 @@ jobs:
           cd ~
           pwd
           find . -type f \( \
+            ! -path "./.cargo/.global-cache/*" \
             ! -path "*/.dotfiles/logs/HEAD" \
             ! -path "*work/_temp/*" \
             ! -path "./runners/*" \
@@ -80,7 +81,6 @@ jobs:
             ! -path "./.cargo/registry/index/*" \
             ! -path "./x/helix/target/release/build/helix-term*" \
             ! -path "./x/helix/target/.rustc_info.json" \
-            ! -path ".cargo/.global-cache/*" \
             ! -iname "*.log" \
             ! -name ".wget-hsts" \
           \) -print0 |
