@@ -33,6 +33,7 @@ popd
 . configs_install.sh
 
 # todo - is this automatic restart really needed?
-echo "INIT SCRIPT FINISHED SUCCESSFULLY, REBOOTING IN 30 SECONDS..."
-sleep 30
-reboot
+# TODO - only restart after the first run
+# echo "INIT SCRIPT FINISHED SUCCESSFULLY, REBOOTING IN 30 SECONDS..."
+# sleep 30
+# reboot
