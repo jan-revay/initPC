@@ -8,6 +8,7 @@
 # TODO sync with PopOS configs_install.sh
 # TODO move this to CommonInitScripts folder (this is not OS specific but just
 # GNOME specific)
+# TODO add command to set GNOME terminal tab close keybinding to Ctrl+W
 
 . ../prelude.sh
 
