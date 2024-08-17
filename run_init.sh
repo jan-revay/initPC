@@ -35,6 +35,7 @@ function try_platform
 # TODO set timezone before running anything...
 # TODO fix
 # see: https://linuxize.com/post/how-to-set-or-change-timezone-on-debian-10/
+# see: https://chatgpt.com/share/e001132e-2bfc-4b68-ab99-8697da44ccc2
 # timedatectl set-timezone Europe/Vienna
 # TODO rationalize parameter passing
 try_platform "UbuntuCLI" "$1"
