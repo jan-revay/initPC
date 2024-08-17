@@ -54,6 +54,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 gsettings set org.gnome.shell.extensions.dash-to-dock pressure-threshold '70.0'
+gsettings set org.gnome.shell.extensions.dash-to-dock preview-size-scale '0.25'
 gsettings set org.gnome.shell.extensions.dash-to-dock shift-click-action 'minimize'
 gsettings set org.gnome.shell.extensions.dash-to-dock shift-middle-click-action 'launch'
 gsettings set org.gnome.shell.extensions.dash-to-dock shortcut-timeout '4'
@@ -61,6 +62,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview true
+
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.4
 gsettings set org.gnome.desktop.interface cursor-size 64
 
