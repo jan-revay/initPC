@@ -161,3 +161,4 @@ Issues and feature requests can be created here: https://github.com/jan-revay/in
 ## Similar repos
 
 - <https://github.com/ThePrimeagen/dev> and <https://github.com/ThePrimeagen/.dotfiles>
+- <https://gitlab.com/dwt1/dotfiles>
