@@ -21,6 +21,9 @@
 # TODO add setup of Ubuntu tiling assistant GNOME extension (gaps, highlight
 # the active window...).
 
+# TOREAD:
+# - https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/configuration-overview-gsettings-dconf
+
 # KEYBOARD SHORTCUTS
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
@@ -40,14 +43,15 @@ gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', 
 
 # TODO add descriptions to these settings in comments (via ChatGPT)
 
-gsettings set org.gnome.shell.extensions.dash-to-dock always-center-icons true
+if bash -c '. ../prelude.sh; distro_version_ge 23' &> /dev/null; then
+    gsettings set org.gnome.shell.extensions.dash-to-dock always-center-icons true
+fi
 gsettings set org.gnome.shell.extensions.dash-to-dock animation-time '0.01'
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
 gsettings set org.gnome.shell.extensions.dash-to-dock default-windows-preview-to-open true
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 gsettings set org.gnome.shell.extensions.dash-to-dock pressure-threshold '70.0'
 gsettings set org.gnome.shell.extensions.dash-to-dock shift-click-action 'minimize'
