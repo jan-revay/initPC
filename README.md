@@ -157,6 +157,9 @@ Issues and feature requests can be created here: https://github.com/jan-revay/in
 1. Fix CI (stow logid.cfg)
 1. Set up logid mouse
 1. Automatic updates of Flatpaks and Snaps
+1. Merge with my old initPC-like repos (private), compare
+gsettings scripts with my old dconf dumps (backup_config repo)
+
 
 ## Similar repos
 
