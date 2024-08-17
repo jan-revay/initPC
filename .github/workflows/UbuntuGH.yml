@@ -8,6 +8,7 @@ on:
     - 'CommonInitScripts/**.sh*'
     - 'UbuntuCLI/**.sh'
     - 'Ubuntu_22.04/**.sh'
+    - 'Ubuntu_22.04/RootDotfiles/**'
     - '.github/workflows/UbuntuGH.yml'
   pull_request:
     branches: [ "devel", "testing", "stable", "LTS" ]
