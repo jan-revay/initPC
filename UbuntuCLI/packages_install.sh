@@ -75,8 +75,6 @@ else
     APT_PACKAGES+=('eza')
 fi
 
-time sudo apt-get install -y "${APT_PACKAGES[@]}"
-
 # Install the most recent llvm (see https://apt.llvm.org/)
 pushd /tmp || exit "${EXIT_FILE_IO_ERROR}"
 # packages required by llvm.sh script are installed above
@@ -90,6 +88,9 @@ if ! time yes '' | sudo ./llvm.sh all; then
 fi
 rm llvm.sh
 popd || exit "${EXIT_FILE_IO_ERROR}"
+
+# TODO move apt-get up if iwyu package is still unavailable here
+time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # Install rust ecosystem
 time curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
