@@ -9,6 +9,8 @@ name: Containers
 # TODO add correct trigger paths (e.g. for PopOS etc.)
 # TODO output of try_platform for Ubuntu does not show in logs
 # TODO change * to ** in all workflows (to support nested directories)
+# TODO The Ubuntu 22.04 container test reports success even if it filed (the timezone blocking bug)
+# TODO the overall result for the test is reported green even though the script failed on some containers (fix)
 
 on:
   push:
