@@ -17,6 +17,8 @@ else
 
     # TODO decide between flatpaks and snaps (or combine them)
     # TODO VSC flatpak appears to be broken and lower quality than the snap
+    # TODO install VSC from a .deb package directly downloaded via website
+    # or find other vay to install it via .deb
     # TODO test the flatpaks
 
     # TODO - is this needed?
