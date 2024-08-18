@@ -9,6 +9,9 @@
 # TODO move this to CommonInitScripts folder (this is not OS specific but just
 # GNOME specific)
 # TODO add command to set GNOME terminal tab close keybinding to Ctrl+W
+# TODO consider using dconf dump & dconf load instead of calling gsettings for every key
+# see: https://askubuntu.com/questions/984205/how-to-save-gnome-settings-in-a-file
+
 
 . ../prelude.sh
 
