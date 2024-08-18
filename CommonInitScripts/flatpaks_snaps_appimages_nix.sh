@@ -2,6 +2,7 @@
 
 . ../prelude.sh
 
+# TODO setup automatic flatpak and snap updates
 # TODO skip install if running inside a docker container and print warning
 # TODO print the text in color and review the code for Docker skipping.
 # TODO maybe the way of detecting docker is not great (try improving)
