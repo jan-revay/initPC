@@ -40,6 +40,8 @@ APT_PACKAGES=(
     # NOTE: fd-find executable is called `fdfind`
     # TODO consider moving doconf-editor to GUI part of the initPC script
     dconf-editor doxygen git gh bat man fish fd-find
+    fzf  # TODO learn how to use fzf and add aliases
+    tldr # TODO learn how to use
 
     # package managers
     npm rubygems pipx python3-pip
