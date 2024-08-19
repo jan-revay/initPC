@@ -26,7 +26,7 @@ command (an alias defined in `.bash_aliases`) will apply the changes in the repo
 
 ## OSes and distributions
 
-Currently, the main focus of the initPC script is a well-tuned **Ubuntu 24.04 with GNOME resp. CLI, and Windows 11**. Some other Debian-based distros are also supported to various degrees. Still, initPC scripts for other OSes/distros are not maintained as much & the support might be completely dropped in the future.
+Currently, the main focus of the initPC script is a well-tuned **Ubuntu 24.04 with GNOME resp. CLI, and Windows 11**. Some other Debian-based distros are also supported to various degrees, but initPC scripts for other OSes/distros are not maintained as much & the support might be completely dropped in the future.
 
 ## Branches
 
