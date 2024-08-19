@@ -23,7 +23,7 @@ APT_PACKAGES+=(neovim helix)        # code editors
 APT_PACKAGES+=(cppcheck iwyu shfmt shellcheck)         # static analyzers
 APT_PACKAGES+=(valgrind doxygen)                       # other coding tools
 APT_PACKAGES+=(zsh fish tmux tree dust onefetch procs) # shells and commands
-APT_PACKAGES+=(tokei fd gh git htop bat exa jq man neofetch openssh ripgrep)
+APT_PACKAGES+=(tokei fd gh git htop bat exa jq man neofetch openssh ripgrep fzf)
 APT_PACKAGES+=(imagemagick)
 APT_PACKAGES+=(proot-distro) # ubuntu/debian emulation
 
