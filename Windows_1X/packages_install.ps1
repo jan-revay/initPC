@@ -141,5 +141,8 @@ pip install pandas
 pip install pytest
 pip install requests
 pip install scipy # TODO broken
-
+pip install statsmodels # TODO broken
+pip install seaborn # TODO broken
+pip install scikit-learn
+pip install shap
 Set-PSDebug -Trace 0
