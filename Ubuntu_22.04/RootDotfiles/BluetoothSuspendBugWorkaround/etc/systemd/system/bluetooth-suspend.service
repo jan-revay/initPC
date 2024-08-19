@@ -1,0 +1,14 @@
+# TODO Possible solution to the bluetooth sleep problem
+# understand first....  & test
+[Unit]
+Description=Disable Bluetooth before suspend and enable after resume
+Before=sleep.target
+After=suspend.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c "rfkill block bluetooth"
+ExecStop=/bin/bash -c "rfkill unblock bluetooth"
+
+[Install]
+WantedBy=sleep.target
