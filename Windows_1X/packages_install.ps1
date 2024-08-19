@@ -49,6 +49,7 @@ $WINGET_PACKAGES = @(
     'WinDirStat.WinDirStat'
     'XAMPPRocky.tokei' # broken? TODO FIX?
     'Ookla.Speedtest.Desktop'
+    'fzf'
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
