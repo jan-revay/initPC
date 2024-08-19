@@ -1,5 +1,7 @@
 # TODO Possible solution to the bluetooth sleep problem
 # understand first....  & test
+# TODO consider using udev instead
+# TODO delete this file if unused...
 [Unit]
 Description=Disable Bluetooth before suspend and enable after resume
 Before=sleep.target
