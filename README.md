@@ -24,6 +24,10 @@ If you have updated the `initPC` or `dotfiles` repo, the:
 
 command (an alias defined in `.bash_aliases`) will apply the changes in the repository to your machine (e.g. install added packages). However, the `refresh` script only adds stuff, it never removes any packages (other than `apt-get autoremove`) even if those were removed from the initPC repo and it does not reverse already executed changes in the machine configuration (the Nix config will be able to do that, but it is not finished). Removing a package/config option from the init script will have no effect after the script is executed for the first time. The `refresh` script however overwrites the old configuration options with a new one, if a particular config option is still present but is changed (e.g. gsettings options)
 
+## OSes and distributions
+
+Currently, the main focus of the initPC script is a well-tuned **Ubuntu 24.04 with GNOME resp. CLI, and Windows 11**. Some other Debian-based distros are also supported to various degrees. Still, initPC scripts for other OSes/distros are not maintained as much & the support might be completely dropped in the future.
+
 ## Branches
 
 1. **`devel`** - development and experiments, might be inconsistent or broken regularly. Consistent, and fully functional changes from the branch `devel` might be merged into the branch `testing`. The `devel` branch is expected to be broken from time to time (e.g. when working on larger changes "per partes" or experimenting) and it might not always be possible to init a machine using it. New changes are usually pushed to the `devel` branch directly, however, very large changes can have an individual feature branch.
