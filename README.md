@@ -169,7 +169,3 @@ gsettings scripts with my old dconf dumps (backup_config repo)
 
 - <https://github.com/ThePrimeagen/dev> and <https://github.com/ThePrimeagen/.dotfiles>
 - <https://gitlab.com/dwt1/dotfiles>
-
-## Packages to consider
-
-- Lazy git
