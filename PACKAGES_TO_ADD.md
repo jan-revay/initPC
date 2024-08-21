@@ -28,3 +28,8 @@
 - some torrent client
 - some disk space analyzer
 - TODO - have a look at the snap store gui app
+
+
+## Packages to consider
+
+- Lazy git
