@@ -41,8 +41,6 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-red-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Yaru-red'
 gsettings set org.gnome.mutter dynamic-workspaces false
-gsettings set org.gnome.desktop.wm.preferences num-workspaces 8
-gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9']"
 
 # TODO add descriptions to these settings in comments (via ChatGPT)
 
@@ -69,18 +67,22 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview true
 gsettings set org.gnome.desktop.interface text-scaling-factor '1.4'
 gsettings set org.gnome.desktop.interface cursor-size '64'
 
-gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'minimize'
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
+gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'minimize'
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
+gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
 gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Alt>'
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 8
+gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
+gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9']"
 # NOTE: right click resizing is dependent on the sector of the window being
 # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
-gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 
 # TODO design and add all keybindings
 # TODO remove useless wm keybindings
 # TODO make the keybindings work similar to AltSnap on windows (emulate AltSnap)
 # Keybindings
+gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Alt><Super>space']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Alt><Super>h']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control><Alt><Super>j']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Control><Alt><Super>k']"
@@ -88,11 +90,9 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Control
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Control><Alt><Super>semicolon']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Control><Alt><Super>apostrophe']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 "['<Control><Alt><Super>Return']"
-gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Alt><Super>space']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
-gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
 # gsettings set org.gnome.desktop.wm.preferences auto-raise 'true'
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Alt>s']"
