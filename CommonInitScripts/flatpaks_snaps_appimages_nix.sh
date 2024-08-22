@@ -25,6 +25,9 @@ else
     # TODO - is this needed?
     sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+    flatpak update --assumeyes
+    # TODO also update snaps
+
     # TODO toread https://man7.org/linux/man-pages/man1/flatpak-install.1.html
     readonly FLATPAK_PACKAGES=(
         com.visualstudio.code
