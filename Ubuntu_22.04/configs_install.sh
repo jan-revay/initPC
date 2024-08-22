@@ -66,8 +66,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button fals
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview true
 
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.4
-gsettings set org.gnome.desktop.interface cursor-size 64
+gsettings set org.gnome.desktop.interface text-scaling-factor '1.4'
+gsettings set org.gnome.desktop.interface cursor-size '64'
 
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'minimize'
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
@@ -91,6 +91,12 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 "['<Control
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Alt><Super>space']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right']"
+gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
+gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
+# gsettings set org.gnome.desktop.wm.preferences auto-raise 'true'
+gsettings set org.gnome.shell.keybindings screenshot "['Print']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Alt>s']"
+gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Super>o']"
 
 # set default apps
 xdg-mime default code.desktop text/markdown
