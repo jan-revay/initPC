@@ -1,5 +1,12 @@
 # Init script for Ubuntu desktop (Ubuntu + GNOME)
 
+
+# Bugs
+
+- commit 5dca40894e79c15c5b832c2958a5df0bf85b8f95 made GNOME unstable (unable to use mouse)
+  going to overview and back (Win, pause, Win) might have solved the problem
+  - if the problem reoccurs, consider reverting the commit
+
 ## TODO
 
 - create an automatic tiling script via ydotool and simulating keyboard shortcuts
