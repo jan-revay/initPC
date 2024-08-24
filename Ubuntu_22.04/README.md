@@ -65,7 +65,21 @@ Have a look at these gnome extensions:
 - https://github.com/hseliger/window-calls-extended
 - https://github.com/lucaswerkmeister/activate-window-by-title
 - https://extensions.gnome.org/extension/5592/focused-window-d-bus/
+- https://unix.stackexchange.com/questions/688583/focus-window-by-title-in-gnome-shell-41-under-wayland
 - I could use script and keyboard shortcuts to automatically tile windows on startup
+- https://superuser.com/questions/142945/bash-command-to-focus-a-specific-window
+- search "GNOME automatic window positioning script wayland"
+- https://extensions.gnome.org/extension/4833/all-windows-saverestore-window-positions/
+- I can probably write a JS that will use DBUS to position my windows on startup
+- articles
+  - https://unix.stackexchange.com/questions/399753/how-to-get-a-list-of-active-windows-when-using-wayland/635740#635740
+  - https://unix.stackexchange.com/questions/399753/how-to-get-a-list-of-active-windows-when-using-wayland/635740#635740
+  - https://unix.stackexchange.com/questions/392437/how-can-i-minimise-all-gnome-wayland-windows-from-the-command-line/635736#635736
+  - https://superuser.com/questions/142945/bash-command-to-focus-a-specific-window
+  - https://gist.github.com/rbreaves/257c3edfa301786e66e964d7ac036269
+  - https://discourse.gnome.org/t/opinions-on-restoring-positions-and-sizes-of-windows-automatically/4902/48
+  - https://blog.urth.org/2022/05/14/restoring-window-positions-in-gnome-after-switching-monitor-inputs/
+  - https://bbs.archlinux.org/viewtopic.php?id=249935
 
 ### Window management
 
@@ -78,6 +92,10 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - search "window" in gnome extensions and go throug the entire list
 - https://extensions.gnome.org/extension/5696/one-window-wonderland/
 - sth. to automatically tile windows
+- articles
+  - https://www.reddit.com/r/gnome/comments/mpwm50/gnomemagicwindow_handy_script_to_bring_a_window/
+  - https://stackoverflow.com/questions/45465016/how-do-i-get-the-active-window-on-gnome-wayland
+  - https://askubuntu.com/questions/994100/is-it-possible-to-enable-focus-stealing-under-wayland-gnome-shell-3-26-ubuntu
 - https://extensions.gnome.org/extension/6385/steal-my-focus-window/ vs. https://extensions.gnome.org/extension/5410/grand-theft-focus/
 - https://extensions.gnome.org/extension/6730/wsp-windows-search-provider/
 - https://extensions.gnome.org/extension/4709/another-window-session-manager/
@@ -89,11 +107,21 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - https://extensions.gnome.org/extension/6084/fix-focus-on-workspace-switch/
 - https://extensions.gnome.org/extension/6768/lomotion/
 - https://extensions.gnome.org/extension/4783/default-workspace/
+- https://extensions.gnome.org/extension/1336/run-or-raise/
 
 ### PIP mode
 
 - https://github.com/iamlemec/miniview
 - https://extensions.gnome.org/extension/6816/wtmb-window-thumbnails/
+
+### Drop-down-terminal extensions
+
+- https://extensions.gnome.org/extension/3780/ddterm/
+
+### Clipboard managers
+
+- https://extensions.gnome.org/extension/779/clipboard-indicator/
+- todo find the best clipboard extension
 
 
 ### Other gnome extensions to try
@@ -119,10 +147,20 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - https://extensions.gnome.org/extension/6490/overview-hover/
 - https://extensions.gnome.org/extension/6712/dash-to-dock-workaround/
 - https://extensions.gnome.org/extension/5188/super-key/
+- https://extensions.gnome.org/extension/7083/pin-it/
+- https://extensions.gnome.org/extension/18/native-window-placement/
+- https://extensions.gnome.org/extension/6397/speedinator/
+- https://extensions.gnome.org/extension/4648/desktop-cube/
+- browse over all GNOME extensions by popularity/downloads/etc - go through them all (only 55 pages i.e. 550 together)
 - consider PopOS extensions
 
 
 ## TODO
+
+### WIP
+
+- put settings of default Ubuntu extensions I use into gsettings scripts
+- if there are multiple options for one extension, also document which one I chose and why
 
 ### Bugs
 - solve everlaying keyboard shortcuts
@@ -135,4 +173,13 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
     - consider using some other dock extension from other linux distro
     - https://askubuntu.com/questions/1332616/whats-the-difference-between-dash-and-dock
     - https://www.reddit.com/r/Fedora/comments/snsdsn/dashtodock_favorite_applications_take_a_long_time/
+    - https://extensions.gnome.org/extension/600/launch-new-instance/
 - add keyboard shortcut for changing tiling layout in Tiling Shell gnome extension
+- I think that the clipboard does not work well for me on Ubuntu with my clipboard extesnion - todo investigate
+
+## Wayland
+
+### When will I switch to wayland?
+
+- https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277
+- 
