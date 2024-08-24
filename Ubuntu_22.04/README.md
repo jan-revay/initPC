@@ -108,6 +108,7 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - https://extensions.gnome.org/extension/6768/lomotion/
 - https://extensions.gnome.org/extension/4783/default-workspace/
 - https://extensions.gnome.org/extension/1336/run-or-raise/
+- https://extensions.gnome.org/extension/4099/no-overview/
 
 ### PIP mode
 
