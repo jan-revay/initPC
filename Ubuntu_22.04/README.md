@@ -80,6 +80,15 @@ Have a look at these gnome extensions:
   - https://discourse.gnome.org/t/opinions-on-restoring-positions-and-sizes-of-windows-automatically/4902/48
   - https://blog.urth.org/2022/05/14/restoring-window-positions-in-gnome-after-switching-monitor-inputs/
   - https://bbs.archlinux.org/viewtopic.php?id=249935
+  - https://danb.me/blog/scripting-monitors/
+  - https://forum.xojo.com/t/wayland-doesnt-allow-setting-or-getting-window-left-and-window-top/52132/11
+  - https://github.com/kovidgoyal/kitty/issues/3284
+  - https://news.ycombinator.com/item?id=24015066
+  - https://gitlab.gnome.org/GNOME/mutter/-/issues/316
+  - https://discourse.gnome.org/t/opinions-on-restoring-positions-and-sizes-of-windows-automatically/4902/25
+  - https://askubuntu.com/questions/1362551/gnome-shell-automating-windows-and-placement
+  - https://www.reddit.com/r/archlinux/comments/z2axt4/window_size_placement_waylandgnome/
+  - https://stackoverflow.com/questions/67318357/how-to-set-the-position-of-a-wayland-window-on-the-screen
 
 ### Window management
 
@@ -197,3 +206,4 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 ### When will I switch to Wayland?
 
 - https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277
+- https://discussion.fedoraproject.org/t/wayland-whats-blocking-you-from-using-it/114012
