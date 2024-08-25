@@ -89,6 +89,16 @@ Have a look at these gnome extensions:
   - https://askubuntu.com/questions/1362551/gnome-shell-automating-windows-and-placement
   - https://www.reddit.com/r/archlinux/comments/z2axt4/window_size_placement_waylandgnome/
   - https://stackoverflow.com/questions/67318357/how-to-set-the-position-of-a-wayland-window-on-the-screen
+  - https://github.com/HTSchoenfelder/dotfiles/blob/0809a2b62f3c88f67e555d90024a6fbcd75c7e7d/stow/.local/bin/activate-window.sh
+  - https://github.com/lucasvreis/org-mode-hs/blob/2f7c54e0b0782c8186d132c83b6dcc4815ef02be/org-exporters/test/files/config/in.org#L2294
+  - https://github.com/bashfulrobot/nixos/blob/e94729e2bd4a89a7ac49eff60232edd0e7ee3646/modules/cli/fish/default.nix#L95
+  - https://github.com/bonds/dotfiles/blob/52b8819fb463bc99b084990f303ab104069aa3dc/bin/linux/maximize_across_multiple_monitors#L4W
+  - https://github.com/prdx23/dotfiles/blob/0ebe5c98cac693dfcb71a71fccba6f26c0cf936d/.config/zsh/alacritty_popup_wayland.sh
+  - https://github.com/dynobo/keyhint/blob/main/keyhint/context.py
+  - https://github.com/mritunjaymusale/linux_macro_master/blob/2acd6de6a434bd008c1fd6116126f611c0206468/utils.py#L37
+  - https://github.com/mritunjaymusale/linux_macro_master
+  - https://github.com/langebo/Tiler
+  - https://github.com/b0bh00d/WindowNotes/blob/cd4423ed580b442f6ce5e2688fdaa04baebc80ab/linux/WindowEvents.cpp#L37
 
 ### Window management
 
