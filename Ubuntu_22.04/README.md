@@ -203,6 +203,7 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - add the install script for the extensions I use, try making it silent (noninteractive)
 - add shortcut for moving windows between workspaces
 - use CapsLock in more keybindings (figure out the way)
+- "Get-ChildItem ., ~, ~/x/, ~/x/work/, ~/source/ -Depth 1 -Directory | Select-Object -ExpandProperty FullName | fzf | cd\r" equivalent
 
 ### Bugs
 - solve overlaying keyboard shortcuts
