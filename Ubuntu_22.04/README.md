@@ -201,6 +201,8 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - try writing a GNOME extension
 - read manuals and github repos of the extensions I use
 - add the install script for the extensions I use, try making it silent (noninteractive)
+- add shortcut for moving windows between workspaces
+- use CapsLock in more keybindings (figure out the way)
 
 ### Bugs
 - solve overlaying keyboard shortcuts
