@@ -4,6 +4,10 @@
 
 *
 
+## To read theory
+
+- https://www.usenix.org/legacy/event/hotos07/tech/full_papers/dolstra/dolstra.pdf
+
 ## To read
 
 * https://github.com/0atman/noboilerplate/blob/main/scripts/38-nixos.md
