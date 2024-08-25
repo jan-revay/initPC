@@ -181,10 +181,13 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 
 ## TODO
 
-### WIP
-
 - put settings of the default Ubuntu extensions I use into gsettings scripts
 - if there are multiple options for one extension, also document which one I chose and why
+- tune the autostart times to be smaller (app autostart)
+- try to find a way to invoke tyling shell functions via dbus (or implement that)
+- try writing a GNOME extension
+- read manuals and github repos of the extensions I use
+- add the install script for the extensions I use, try making it silent (noninteractive)
 
 ### Bugs
 - solve overlaying keyboard shortcuts
