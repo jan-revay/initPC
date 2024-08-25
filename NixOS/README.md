@@ -6,7 +6,9 @@
 
 ## To read theory
 
-- https://www.usenix.org/legacy/event/hotos07/tech/full_papers/dolstra/dolstra.pdf
+- https://www.usenix.org/legacy/event/hotos07/tech/full_papers/dolstra/dolstra.pdf [P1]
+- https://edolstra.github.io/pubs/phd-thesis.pdf [P2]
+- https://edolstra.github.io/pubs/atomic-hotswup2008-final.pdf [P3]
 
 ## To read
 
