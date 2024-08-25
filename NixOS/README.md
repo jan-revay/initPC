@@ -18,3 +18,9 @@
 * https://github.com/NixOS/nix-book
 * https://leanpub.com/nixos-in-production
 * https://github.com/Gabriella439
+
+## Example repos
+
+- https://github.com/bashfulrobot/nixos/tree/e94729e2bd4a89a7ac49eff60232edd0e7ee3646
+- https://github.com/simonrw/nix-config
+- https://github.com/nix-community/nixvim
