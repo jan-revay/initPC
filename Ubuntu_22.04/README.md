@@ -101,6 +101,7 @@ Have a look at these gnome extensions:
   - https://github.com/b0bh00d/WindowNotes/blob/cd4423ed580b442f6ce5e2688fdaa04baebc80ab/linux/WindowEvents.cpp#L37
   - todo code search "/org/gnome/Shell/Extensions/Windows" on GitHub and GitLab and bitbucket
   - https://bbs.archlinux.org/viewtopic.php?id=285206
+  - https://askubuntu.com/questions/1441664/how-do-i-move-maximize-activate-desktop-windows-using-dbus-in-terminal
 
 ### Window management
 
@@ -215,6 +216,9 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
     - https://extensions.gnome.org/extension/600/launch-new-instance/
 - add a keyboard shortcut for changing the tiling layout in the Tiling Shell gnome extension
 - I think that the clipboard does not work well for me on Ubuntu with my clipboard extension - todo investigate
+- Make suspend work (low priority on Dzej's PC)
+- sometimes pressing ctrl will show two tiles where window can go that overlap (Tiling Shell extension)
+it could be that there is a conflicting extension and two extensions fight with each other
 
 ## Wayland
 
