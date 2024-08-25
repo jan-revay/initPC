@@ -99,6 +99,8 @@ Have a look at these gnome extensions:
   - https://github.com/mritunjaymusale/linux_macro_master
   - https://github.com/langebo/Tiler
   - https://github.com/b0bh00d/WindowNotes/blob/cd4423ed580b442f6ce5e2688fdaa04baebc80ab/linux/WindowEvents.cpp#L37
+  - todo code search "/org/gnome/Shell/Extensions/Windows" on GitHub and GitLab and bitbucket
+  - https://bbs.archlinux.org/viewtopic.php?id=285206
 
 ### Window management
 
