@@ -43,7 +43,7 @@
 - https://extensions.gnome.org/extension/4481/forge/
 - https://extensions.gnome.org/extension/1604/arrange-windows/
 - https://extensions.gnome.org/extension/6970/wintile-beyond/
-- https://extensions.gnome.org/extension/4548/tactile/
+- https://extensions.gnome.org/extension/4548/tactile/ - (JOZI GABORIK ALSO USES THIS ONE)
 - https://extensions.gnome.org/extension/28/gtile/
 - reviews
    - https://gist.github.com/bmaupin/5ebd4d7fd52f8911e14fa55cd58aee2d
