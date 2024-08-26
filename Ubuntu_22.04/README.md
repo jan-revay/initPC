@@ -223,6 +223,7 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - sometimes pressing ctrl will show two tiles where window can go that overlap (Tiling Shell extension)
 it could be that there is a conflicting extension and two extensions fight with each other
 - Gdrive launcher - open with my payed gdrive account (there should be CLI option to choose profile resp. URL)
+- some replacement for Caprine package (FB messenger) - ideally just FB web app
 
 ## Wayland
 
