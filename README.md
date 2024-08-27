@@ -30,35 +30,6 @@ command (an alias defined in `.bash_aliases`) to apply the changes in the reposi
 
 Currently, the main focus of the initPC script is a well-tuned **Ubuntu 24.04 with GNOME resp. CLI, and Windows 11**. Some other Debian-based distros are also supported to various degrees, but initPC scripts for other OSes/distros are not maintained as much & the support for them might be completely dropped in the future.
 
-## Branches
-
-1. **`devel`** - development and experiments, might be inconsistent or broken regularly. Consistent, and fully functional changes from the branch `devel` might be merged into the branch `testing`. The `devel` branch is expected to be broken from time to time (e.g. when working on larger changes "per partes" or experimenting) and it might not always be possible to init a machine using it. New changes are usually pushed to the `devel` branch directly, however, very large changes can have an individual feature branch.
-2. **`testing`** - shouldn't be broken or inconsistent most of the time. This branch has changes from `devel` queued to be accepted to the `stable` branch (or rejected). If a change is rejected from `testing` it will be dropped via a commit into `devel` that will be fast-forward merged to the `testing` branch again.
-3. **`stable`** - tested, stable, useful, production-ready, and not expected to change more than a few times a year.
-4. **`LTS`** - debloated, (also tested, stable, useful, production-ready) and not expected to change much in the _yearly horizon_. Only necessary stuff. Possibly useful for detecting whether bugs in the `stable` branch are caused by the init script or to be used as a substitute for the `stable` branch while the `stable` branch has a critical bug. Debloating is done via additional commits on top of the `LTS` branch, therefore syncing `stable` and `LTS` is done via rebasing to preserve the debloating commits on top. As the `LTS` branch has additional commits on top, it is tested separately.
-5. **`feature-<name of the feature>`** - all feature branches should be branched off and merged to `devel`. Features and bugfixes of `testing`, `stable`, or `LTS` should always go through the `devel` branch first (following the change workflow below).
-6. **`archived/<branch-name>-<YYYY-MM-DD>`** - branches archived before a `push --force`.
-
-`LTS`, `stable`, and `testing` branches are expected to be _always in a consistent state_ so that they can always be used to init a new machine e.g. VM or a bootable partition.
-
-✔️ *Note: By stable I mean free of unpredictable behavior and crashes, not as described here: <https://medium.com/@gordon.messmer/what-does-stable-mean-4447ac53bac8> (TODO toread)*
-
-### Change workflow
-
-```text
-                    functional &         tested, stable, useful   not changing, debloated,
-    impl.            consistent**          & production-ready        retested & stable
-O---------> devel ---------------> testing -----------------> stable -----------------> LTS
-|             ∧    ff-only merge             ff-only merge                rebase
-| impl.       |
-|             |
-+-----> feature-branch
- large
- change
-```
-
-** "consistent" means, among other things, that all CI tests (implemented via GitHub actions) pass successfully.
-
 ## FAQ
 
 ### 1. Is the `refresh` command idempotent?
@@ -115,6 +86,36 @@ parts of the codebase to Ansible scripts later.
 
 Dotfiles are currently managed via a bare Git repo (home directory) and Stow (system-level configuration files). In the future, I might use Chezmoi or a more
 sophisticated tool for managing dotfiles & templating them, if the need arises. See: <https://www.chezmoi.io/why-use-chezmoi/>
+
+## Branches
+
+1. **`devel`** - development and experiments, might be inconsistent or broken regularly. Consistent, and fully functional changes from the branch `devel` might be merged into the branch `testing`. The `devel` branch is expected to be broken from time to time (e.g. when working on larger changes "per partes" or experimenting) and it might not always be possible to init a machine using it. New changes are usually pushed to the `devel` branch directly, however, very large changes can have an individual feature branch.
+2. **`testing`** - shouldn't be broken or inconsistent most of the time. This branch has changes from `devel` queued to be accepted to the `stable` branch (or rejected). If a change is rejected from `testing` it will be dropped via a commit into `devel` that will be fast-forward merged to the `testing` branch again.
+3. **`stable`** - tested, stable, useful, production-ready, and not expected to change more than a few times a year.
+4. **`LTS`** - debloated, (also tested, stable, useful, production-ready) and not expected to change much in the _yearly horizon_. Only necessary stuff. Possibly useful for detecting whether bugs in the `stable` branch are caused by the init script or to be used as a substitute for the `stable` branch while the `stable` branch has a critical bug. Debloating is done via additional commits on top of the `LTS` branch, therefore syncing `stable` and `LTS` is done via rebasing to preserve the debloating commits on top. As the `LTS` branch has additional commits on top, it is tested separately.
+5. **`feature-<name of the feature>`** - all feature branches should be branched off and merged to `devel`. Features and bugfixes of `testing`, `stable`, or `LTS` should always go through the `devel` branch first (following the change workflow below).
+6. **`archived/<branch-name>-<YYYY-MM-DD>`** - branches archived before a `push --force`.
+
+`LTS`, `stable`, and `testing` branches are expected to be _always in a consistent state_ so that they can always be used to init a new machine e.g. VM or a bootable partition.
+
+✔️ *Note: By stable I mean free of unpredictable behavior and crashes, not as described here: <https://medium.com/@gordon.messmer/what-does-stable-mean-4447ac53bac8> (TODO toread)*
+
+### Change workflow
+
+```text
+                    functional &         tested, stable, useful   not changing, debloated,
+    impl.            consistent**          & production-ready        retested & stable
+O---------> devel ---------------> testing -----------------> stable -----------------> LTS
+|             ∧    ff-only merge             ff-only merge                rebase
+| impl.       |
+|             |
++-----> feature-branch
+ large
+ change
+```
+
+** "consistent" means, among other things, that all CI tests (implemented via GitHub actions) pass successfully.
+
 ## Contributions
 
 Bug reports and pull requests are welcome, if a feature is interesting but not useful for me, I will keep it in a separate branch, I might change my mind later :D .
