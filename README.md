@@ -74,44 +74,40 @@ sophisticated tool for managing dotfiles & templating them, if the need arises. 
 
 ### 3. Is the `refresh` command idempotent?
 
-By idempotency, we mean: TODO
+**Yes**, the refresh command should be idempotent. This is also partly verified in CI via GitHub actions (TODO make sure and improve the test).
 
+By idempotency, we mean:
 ```
 Let:
 R_C1 - executing refresh resp. initPC via ./run_init.sh on a commit C1
-S - clean state (state after installing a new OS before running ./run_init.sh)
 𝓢 - set of all possible states of an OS image
-∘ : R_Ci x 𝓢 -> 𝓢 - application of the `refresh` command to the state
+S ∈ 𝓢 - clean state (state after installing a new OS before running ./run_init.sh)
+∘ : R_Ci x 𝓢 -> 𝓢 - application of the `refresh` command to the state of the machine
 
 We want:
 
 R_C1 ∘ (R_C1 ∘ S) = R_C1 ∘ S
 ```
 
-Yes, the refresh command should be idempotent. This is also partly verified in CI via GitHub actions (TODO make sure).
+### 4. Does running the `refresh` command on a machine in any state always produce the same state as running the script on a clean new OS install from scratch? Why not use Nix instead?
 
-### 4. Does running the `refresh` command after a change in this repo on a clean machine (new OS install) produce an equivalent state to running `refresh` on an existing machine? Why not to use Nix instead?
-
-In general no. Only the Nix package manager can do that well. It would be hard to replicate that elsewhere. However, the whole configuration of a new machine
-takes just around 20 minutes with these scripts. Therefore if the state of an existing machine and the state described in this repo diverge too much, it should be
-possible to reinstall the OS and reconfigure the machine from a clean state fairly quickly (TODO after the backup solution is also finished). Hence despite the fact
-that Nix is more capable in this regard, it is still possible to achieve a similar practical effect using this init script.
-As Nix is a bit less common than Debian and Ubuntu, I have chosen to use Debian package manager as a default instead of Nix. However, I plan to implement the initPC script for Nix as well and I am also considering using Nix more in the future.
-
-TODO - when does this hold and when it does not?
+In general **no**. Only the Nix package manager can do rollbacks well. It would be hard to replicate that elsewhere. However, the whole configuration of a new machine
+takes just around 20 minutes with these scripts. Therefore if the state of an existing machine and the state described in this repo do diverge too much, it should be
+possible to reinstall the OS and reconfigure the machine from a clean state fairly quickly (TODO after the backup solution is also finished). Hence despite NixOS being
+more capable in this regard, it is still possible to achieve a similar practical effect using this init script.
+As Nix is not as widely used as Debian and Ubuntu, I have used Debian package manager as a default platform rather than Nix.
+However, I plan to implement the initPC script for Nix as well and I am also considering using Nix more in the future, for now, however, most effort is
+spent on tuning the Ubuntu version of the setup script.
 
 ```
 Let us have 2 commits:
-C1
-C2
-
 C1 -> C2
 
 And let:
 R_Ci - executing refresh resp. initPC via ./run_init.sh on a commit Ci
-S - clean state (state after installing a new OS before running ./run_init.sh)
 𝓢 - set of all possible states of an OS image
-∘ : R_Ci x 𝓢 -> 𝓢 - application of the `refresh` command to the state
+S ∈ 𝓢 - clean state (state after installing a new OS before running ./run_init.sh)
+∘ : R_Ci x 𝓢 -> 𝓢 - application of the `refresh` command to the state of the machine
 
 We want:
 
