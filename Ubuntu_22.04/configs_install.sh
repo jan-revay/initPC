@@ -85,6 +85,7 @@ gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', 
 # TODO make the keybindings work similar to AltSnap on windows (emulate AltSnap)
 # Keybindings
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Alt><Super>space']"
+
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Alt><Super>h']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control><Alt><Super>j']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Control><Alt><Super>k']"
@@ -92,6 +93,17 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Control
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Control><Alt><Super>semicolon']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Control><Alt><Super>apostrophe']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 "['<Control><Alt><Super>Return']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 "['<Control><Alt><Super>backslash']"
+
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Shift><Control><Alt><Super>h']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Shift><Control><Alt><Super>j']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Shift><Control><Alt><Super>k']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Shift><Control><Alt><Super>l']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 "['<Shift><Control><Alt><Super>semicolon']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Shift><Control><Alt><Super>apostrophe']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 "['<Shift><Control><Alt><Super>Return']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Shift><Control><Alt><Super>backslash']"
+
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
