@@ -192,16 +192,21 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - consider PopOS extensions
 
 
+## Keybindings
+
+- search GitHub for `gsettings` resp. `gsettings <keybinding>` to see how other devs set them
+
+
 ## TODO
 
 - put settings of the default Ubuntu extensions I use into gsettings scripts
 - if there are multiple options for one extension, also document which one I chose and why
 - tune the autostart times to be smaller (app autostart)
-- try to find a way to invoke tyling shell functions via dbus (or implement that)
+- try to find a way to invoke tyling shell functions via DBus (or implement that)
 - try writing a GNOME extension
-- read manuals and github repos of the extensions I use
+- read manuals and GitHub repos of the extensions I use
 - add the install script for the extensions I use, try making it silent (noninteractive)
-- add shortcut for moving windows between workspaces
+- add a shortcut for moving windows between workspaces
 - use CapsLock in more keybindings (figure out the way)
 - "Get-ChildItem ., ~, ~/x/, ~/x/work/, ~/source/ -Depth 1 -Directory | Select-Object -ExpandProperty FullName | fzf | cd\r" equivalent
 - moving to a different workspace (with the active window or without) - add also arrow keybindings
@@ -222,9 +227,9 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - add a keyboard shortcut for changing the tiling layout in the Tiling Shell gnome extension
 - I think that the clipboard does not work well for me on Ubuntu with my clipboard extension - todo investigate
 - Make suspend work (low priority on Dzej's PC)
-- sometimes pressing ctrl will show two tiles where window can go that overlap (Tiling Shell extension)
+- sometimes pressing ctrl will show two tiles where the window can go that overlap (Tiling Shell extension)
 it could be that there is a conflicting extension and two extensions fight with each other
-- Gdrive launcher - open with my payed gdrive account (there should be CLI option to choose profile resp. URL)
+- Gdrive launcher - open with my payed gdrive account (there should be a CLI option to choose profile resp. URL)
 - some replacement for Caprine package (FB messenger) - ideally just FB web app
 
 ## Wayland
