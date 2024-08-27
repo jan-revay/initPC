@@ -18,6 +18,7 @@
 - https://en.wikipedia.org/wiki/NixOS
 - https://wiki.nixos.org/wiki/NixOS_Wiki
 - https://nixos.wiki/wiki/Nix_package_manager
+- https://github.com/NixOS/nixpkgs/tree/master/nixos
 
 ## To read
 
