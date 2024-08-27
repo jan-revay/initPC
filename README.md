@@ -163,6 +163,10 @@ Issues and feature requests can be created here: https://github.com/jan-revay/in
 1. Merge with my old initPC-like repos (private), compare
 gsettings scripts with my old dconf dumps (backup_config repo)
 
+## TOREAD
+
+- https://repology.org/
+
 
 ## Similar repos
 
