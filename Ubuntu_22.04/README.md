@@ -204,6 +204,8 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - add shortcut for moving windows between workspaces
 - use CapsLock in more keybindings (figure out the way)
 - "Get-ChildItem ., ~, ~/x/, ~/x/work/, ~/source/ -Depth 1 -Directory | Select-Object -ExpandProperty FullName | fzf | cd\r" equivalent
+- moving to a different workspace (with the active window or without) - add also arrow keybindings
+  - one action can have multiple keybindings: https://askubuntu.com/questions/59250/assign-multiple-keyboard-shortcuts-for-one-action
 
 ### Bugs
 - solve overlaying keyboard shortcuts
