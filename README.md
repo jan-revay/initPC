@@ -85,7 +85,7 @@ However, the whole configuration of a new machine
 takes just around 20 minutes with these scripts. Therefore if the state of an existing machine and the state described in this repo do diverge too much, it should be
 possible to reinstall the OS and reconfigure the machine from a clean state fairly quickly (TODO after the backup solution is also finished). Hence despite NixOS being
 more capable in this regard, it is still possible to achieve a similar practical effect using this init script.
-As Nix is not as widely used as Debian and Ubuntu, I have used Debian package manager as a default platform rather than Nix.
+As Nix is not as widely used as Debian and Ubuntu, I have used Debian package manager as a default rather than Nix.
 However, I plan to implement the initPC script for Nix as well and I am also considering using Nix more in the future, for now, however, most effort is
 spent on tuning the Ubuntu version of the setup script.
 
