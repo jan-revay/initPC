@@ -142,7 +142,7 @@ them, if the need arises. See: <https://www.chezmoi.io/why-use-chezmoi/>
 3. **`stable`** - tested, stable, useful, production-ready, and not
    expected to change more than a few times a year.
 4. **`LTS`** - debloated, (also tested, stable, useful,
-   production-ready) and not expected to change much in the _yearly
+   production-ready) and not expected to change much in the *yearly
    horizon*. Only necessary stuff. Possibly useful for detecting whether
    bugs in the `stable` branch are caused by the init script or to be
    used as a substitute for the `stable` branch while the `stable`
