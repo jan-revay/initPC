@@ -72,10 +72,9 @@ We want:
 R_C1 ∘ (R_C1 ∘ S) = R_C1 ∘ S
 ```
 
-### 2. Does running the `refresh` command on a machine in any state always
-
-produce the same state as running the script on a clean new OS install
-from scratch? Why not use Nix instead?
+<h3> 2. Does the `refresh` command (on a machine in any state) always
+   produce the same state as running the script on a clean new OS install
+   from scratch? Why not use Nix?</h3>
 
 In general **no**. Only the Nix package manager can do rollbacks (e.g.
 removing packages and configs) deterministically. It would be hard to
