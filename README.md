@@ -58,7 +58,7 @@ might be completely dropped in the future.
 **Yes**, the refresh command should be idempotent. This is also partly
 verified in CI via GitHub actions (TODO make sure and improve the test).
 
-By "idempotency", we mean:
+By *idempotency*, we mean:
 
 ```text
 Let:
@@ -92,7 +92,7 @@ as well and I am also considering using Nix more in the future, for now,
 however, most effort is spent on tuning the Ubuntu version of the setup
 script.
 
-By "deterministic system configuration", we mean:
+By *deterministic system configuration*, we mean:
 
 ```text
 Let us have 2 commits:
