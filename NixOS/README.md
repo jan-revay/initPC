@@ -19,6 +19,8 @@
 - https://wiki.nixos.org/wiki/NixOS_Wiki
 - https://nixos.wiki/wiki/Nix_package_manager
 - https://github.com/NixOS/nixpkgs/tree/master/nixos
+- https://discourse.nixos.org/
+- https://matrix.to/#/#nix:nixos.org
 
 ## To read
 
