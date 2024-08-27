@@ -196,6 +196,11 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 
 - search GitHub for `gsettings` resp. `gsettings <keybinding>` to see how other devs set them
 
+## GSettings
+
+- https://github.com/GNOME/gsettings-desktop-schemas
+- https://github.com/search?q=gsettings+path%3A*.sh&type=Code&ref=advsearch&l=&l=&p=1
+
 
 ## TODO
 
