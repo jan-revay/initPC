@@ -61,18 +61,7 @@ O---------> devel ---------------> testing -----------------> stable -----------
 
 ## FAQ
 
-### 1. Why don't I use Ansible?
-
-At the moment it would just add complexity, and unnecessary dependence (e.g. it could break Termux on Android), be less flexible, and would not
-be as beneficial for a project of this size. Also, I don't have any experience in writing Ansible scripts... However, I might rewrite some
-parts of the codebase to Ansible scripts later.
-
-### 2. Why don't I use Chezmoi?
-
-Dotfiles are currently managed via a bare Git repo (home directory) and Stow (system-level configuration files). In the future, I might use Chezmoi or a more
-sophisticated tool for managing dotfiles & templating them, if the need arises. See: <https://www.chezmoi.io/why-use-chezmoi/>
-
-### 3. Is the `refresh` command idempotent?
+### 1. Is the `refresh` command idempotent?
 
 **Yes**, the refresh command should be idempotent. This is also partly verified in CI via GitHub actions (TODO make sure and improve the test).
 
@@ -89,7 +78,7 @@ We want:
 R_C1 ∘ (R_C1 ∘ S) = R_C1 ∘ S
 ```
 
-### 4. Does running the `refresh` command on a machine in any state always produce the same state as running the script on a clean new OS install from scratch? Why not use Nix instead?
+### 2. Does running the `refresh` command on a machine in any state always produce the same state as running the script on a clean new OS install from scratch? Why not use Nix instead?
 
 In general **no**. Only the Nix package manager can do rollbacks well. It would be hard to replicate that elsewhere. However, the whole configuration of a new machine
 takes just around 20 minutes with these scripts. Therefore if the state of an existing machine and the state described in this repo do diverge too much, it should be
@@ -114,6 +103,16 @@ We want:
 R_C2 ∘ (R_C1 ∘ S) = R_C2 ∘ S
 ```
 
+### 3. Why don't I use Ansible?
+
+At the moment it would just add complexity, and unnecessary dependence (e.g. it could break Termux on Android), be less flexible, and would not
+be as beneficial for a project of this size. Also, I don't have any experience in writing Ansible scripts... However, I might rewrite some
+parts of the codebase to Ansible scripts later.
+
+### 4. Why don't I use Chezmoi?
+
+Dotfiles are currently managed via a bare Git repo (home directory) and Stow (system-level configuration files). In the future, I might use Chezmoi or a more
+sophisticated tool for managing dotfiles & templating them, if the need arises. See: <https://www.chezmoi.io/why-use-chezmoi/>
 ## Contributions
 
 Bug reports and pull requests are welcome, if a feature is interesting but not useful for me, I will keep it in a separate branch, I might change my mind later :D .
