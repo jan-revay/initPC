@@ -89,6 +89,7 @@ As Nix is not as widely used as Debian and Ubuntu, I have used Debian package ma
 However, I plan to implement the initPC script for Nix as well and I am also considering using Nix more in the future, for now, however, most effort is
 spent on tuning the Ubuntu version of the setup script.
 
+By deterministic system configuration, we mean:
 ```
 Let us have 2 commits:
 C1 -> C2
