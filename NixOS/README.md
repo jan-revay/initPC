@@ -10,6 +10,14 @@
 - https://edolstra.github.io/pubs/phd-thesis.pdf [P2]
 - https://edolstra.github.io/pubs/atomic-hotswup2008-final.pdf [P3]
 - https://en.wikipedia.org/wiki/Nix_(package_manager) [P2]
+- https://nix.dev/manual/nix/2.24/nix-2.24.html
+- https://nix.dev/
+- https://github.com/NixOS/nixpkgs
+- https://repology.org/repositories/graphs
+- https://wiki.archlinux.org/title/Nix
+- https://en.wikipedia.org/wiki/NixOS
+- https://wiki.nixos.org/wiki/NixOS_Wiki
+- https://nixos.wiki/wiki/Nix_package_manager
 
 ## To read
 
