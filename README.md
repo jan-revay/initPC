@@ -18,13 +18,13 @@
 
 ### Applying changes in this repo to your machine
 
-If you have updated the `initPC` or `dotfiles` repo, the:
+If you have updated the `initPC` or `dotfiles` repo, use the:
 
 ```
 refresh
 ```
 
-command (an alias defined in `.bash_aliases`) will apply the changes in the repository to your machine (e.g. install added packages). However, the `refresh` script only adds stuff, it never removes any packages (other than `apt-get autoremove`) even if those were removed from the initPC repo and it does not reverse already executed changes in the machine configuration (the Nix config will be able to do that, but it is not finished). Removing a package/config option from the initPC script does not affect the configuration of the existing machine after the script is executed for the first time. The `refresh` script however overwrites the old configuration options with new ones, if a particular config option is still present but has changed (e.g. a gsettings option).
+command (an alias defined in `.bash_aliases`) to apply the changes in the repository to your machine (e.g. install added packages). Keep in mind, that the `refresh` script only adds stuff, it never removes any packages (other than `apt-get autoremove`) even if those were removed from the initPC repo and it does not reverse already executed changes in the machine configuration (the Nix config will be able to do that, but it is not finished). Removing a package/config option from the initPC script does not affect the configuration of the existing machine after the script is executed for the first time. The `refresh` script however overwrites the old configuration options with new ones, if a particular config option was modified (e.g. a gsettings option).
 
 ## OSes and distributions
 
