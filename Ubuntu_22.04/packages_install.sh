@@ -59,7 +59,7 @@ readonly APT_GUI_PACKAGES=(
 
     # ===== CODING =====
     sqlitebrowser
-    alacritty
+    alacritty # TODO alacritty is not present in older than Ubuntu 24.04 add if
 
     # ===== TO TRY ===== (TODO review)
     actiona # automations, written in C++ https://github.com/Jmgr/actiona
