@@ -59,6 +59,7 @@ readonly APT_GUI_PACKAGES=(
 
     # ===== CODING =====
     sqlitebrowser
+    alacritty
 
     # ===== TO TRY ===== (TODO review)
     actiona # automations, written in C++ https://github.com/Jmgr/actiona
