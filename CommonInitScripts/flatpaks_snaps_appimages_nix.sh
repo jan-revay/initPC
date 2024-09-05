@@ -57,6 +57,7 @@ else
         dust
         procs
         onefetch
+        drive
     )
     time sudo snap refresh
     time print0 "${SNAP_PACKAGES[@]}" | xargs -0 -I % sudo snap install %
