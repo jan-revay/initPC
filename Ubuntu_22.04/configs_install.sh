@@ -70,7 +70,7 @@ gsettings set org.gnome.desktop.interface text-scaling-factor '1.4'
 gsettings set org.gnome.desktop.interface cursor-size '64'
 
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
-gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'minimize'
+gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'lower' # 'minimize'
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
 gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
 gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Alt>'
