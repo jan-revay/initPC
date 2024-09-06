@@ -251,6 +251,7 @@ here: <https://github.com/jan-revay/initPC/issues>
 scripts with my old dconf dumps (backup_config repo)
 1. Put packages equivalent to windows ones to Linux init script
 1. Consider using ZFS (for data and OS) or only for /home
+  - https://gist.github.com/saurabhnanda/6720c13fe02c4ffd950c80f41091e199
 
 ## TOREAD
 
