@@ -250,6 +250,7 @@ here: <https://github.com/jan-revay/initPC/issues>
 1. Merge with my old initPC-like repos (private), compare gsettings
 scripts with my old dconf dumps (backup_config repo)
 1. Put packages equivalent to windows ones to Linux init script
+1. Consider using ZFS (for data and OS) or only for /home
 
 ## TOREAD
 
