@@ -262,6 +262,7 @@ scripts with my old dconf dumps (backup_config repo)
 ## Keyboard layout plans
 
 - remap CapsLock to sth more useful
+  * https://gist.github.com/nat-418/135a62fb9f37cc87cd70af1ab72e276a
 - a more ergonomic layout for programming (mainly for symbols)
 - keyboard shortcuts
 
