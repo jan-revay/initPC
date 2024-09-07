@@ -259,6 +259,12 @@ scripts with my old dconf dumps (backup_config repo)
   - https://www.cbtnuggets.com/blog/technology/system-admin/linux-file-systems-ext4-vs-btrfs-vs-zfs
   - https://www.reddit.com/r/linux/comments/yrlljv/zfs_vs_btrfs_in_2022/
 
+## Keyboard layout plans
+
+- remap CapsLock to sth more useful
+- a more ergonomic layout for programming (mainly for symbols)
+- keyboard shortcuts
+
 ## TOREAD
 
 - <https://repology.org/>
