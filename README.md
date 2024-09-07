@@ -265,6 +265,7 @@ scripts with my old dconf dumps (backup_config repo)
   * https://gist.github.com/nat-418/135a62fb9f37cc87cd70af1ab72e276a
   * https://superuser.com/questions/1678792/how-do-i-remap-cap-lock-to-make-other-keys-act-different
   * https://stackoverflow.com/questions/72450298/use-hyper-key-in-gnome-shortcuts (last post)
+  * https://chatgpt.com/share/a4235ba1-74e9-4dc4-804a-44c03b610ce3
 - a more ergonomic layout for programming (mainly for symbols)
 - keyboard shortcuts
 - https://wiki.archlinux.org/title/Xorg/Keyboard_configuration
