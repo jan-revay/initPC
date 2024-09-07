@@ -62,7 +62,7 @@ readonly APT_GUI_PACKAGES=(
     alacritty # TODO alacritty is not present in older than Ubuntu 24.04 add if
 
     # ===== MULTIMEDIA =====
-    handbrake handbrake-cli ffmpeg x264
+    obs-studio handbrake handbrake-cli ffmpeg x264
 
     # ===== TO TRY ===== (TODO review)
     actiona # automations, written in C++ https://github.com/Jmgr/actiona
