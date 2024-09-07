@@ -264,8 +264,12 @@ scripts with my old dconf dumps (backup_config repo)
 - remap CapsLock to sth more useful
   * https://gist.github.com/nat-418/135a62fb9f37cc87cd70af1ab72e276a
   * https://superuser.com/questions/1678792/how-do-i-remap-cap-lock-to-make-other-keys-act-different
+  * https://stackoverflow.com/questions/72450298/use-hyper-key-in-gnome-shortcuts (last post)
 - a more ergonomic layout for programming (mainly for symbols)
 - keyboard shortcuts
+- https://wiki.archlinux.org/title/Xorg/Keyboard_configuration
+- https://www.x.org/releases/current/doc/xorg-docs/input/XKB-Config.html
+- https://www.charvolant.org/doug/xkb/html/node5.html#SECTION00054000000000000000
 
 ## TOREAD
 
