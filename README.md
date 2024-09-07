@@ -263,6 +263,7 @@ scripts with my old dconf dumps (backup_config repo)
 
 - remap CapsLock to sth more useful
   * https://gist.github.com/nat-418/135a62fb9f37cc87cd70af1ab72e276a
+  * https://superuser.com/questions/1678792/how-do-i-remap-cap-lock-to-make-other-keys-act-different
 - a more ergonomic layout for programming (mainly for symbols)
 - keyboard shortcuts
 
