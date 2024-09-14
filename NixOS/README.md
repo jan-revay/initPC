@@ -36,6 +36,7 @@
 * https://github.com/NixOS/nix-book
 * https://leanpub.com/nixos-in-production
 * https://github.com/Gabriella439
+* https://github.com/nix-community/home-manager
 
 ## Example repos
 
