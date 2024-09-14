@@ -49,6 +49,7 @@ else
     # but install specific versions so that the script
     # will not break easily.
     readonly SNAP_PACKAGES=(
+        anki-ppd
         core
         snap-store
         todoist
