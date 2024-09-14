@@ -29,9 +29,6 @@
 # TOREAD:
 # - https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/configuration-overview-gsettings-dconf
 
-# KEYBOARD SHORTCUTS
-gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
-
 # GSettings
 # TODO describe the procedure of capturing the GSettings (Dconf monitor)
 gsettings set org.gnome.desktop.input-sources per-window true
@@ -83,7 +80,12 @@ gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', 
 # TODO design and add all keybindings
 # TODO remove useless wm keybindings
 # TODO make the keybindings work similar to AltSnap on windows (emulate AltSnap)
-# Keybindings
+
+# KEYBOARD SHORTCUTS (keybindings)
+gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
+# TODO add a custom keybinding for gnome-system-monitor (ctrl+shift+esc)
+# https://community.linuxmint.com/tutorial/view/1171
+# and make sure that the process is idempotent
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Alt><Super>space']"
 
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Alt><Super>h']"
