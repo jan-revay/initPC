@@ -43,3 +43,4 @@
 - https://github.com/bashfulrobot/nixos/tree/e94729e2bd4a89a7ac49eff60232edd0e7ee3646
 - https://github.com/simonrw/nix-config
 - https://github.com/nix-community/nixvim
+- https://gitlab.com/engmark/root/-/blob/07120f644b70028ef4526e4503e180637317cc0d/modules/gui.nix#L350-374
