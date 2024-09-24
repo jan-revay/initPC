@@ -72,7 +72,7 @@ We want:
 R_C1 ∘ (R_C1 ∘ S) = R_C1 ∘ S
 ```
 
-<h3> 2. Does the `refresh` command (on a machine in any state) always
+<h3> 2. Does the <code>refresh</code> command (on a machine in any state) always
    produce the same state as running the script on a clean new OS install
    from scratch? Why not use Nix?</h3>
 
