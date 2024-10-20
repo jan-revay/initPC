@@ -42,6 +42,7 @@ APT_PACKAGES=(
     dconf-editor doxygen git gh bat man fish fd-find
     fzf  # TODO learn how to use fzf and add aliases
     tldr # TODO learn how to use
+    libcrack2
 
     # package managers
     npm rubygems pipx python3-pip
