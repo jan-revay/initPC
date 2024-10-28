@@ -216,6 +216,7 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - "Get-ChildItem ., ~, ~/x/, ~/x/work/, ~/source/ -Depth 1 -Directory | Select-Object -ExpandProperty FullName | fzf | cd\r" equivalent
 - moving to a different workspace (with the active window or without) - add also arrow keybindings
   - one action can have multiple keybindings: https://askubuntu.com/questions/59250/assign-multiple-keyboard-shortcuts-for-one-action
+- sync actions in the dash to dock extension and the top panel workspace switcher
 
 ### Bugs
 - solve overlaying keyboard shortcuts
@@ -234,7 +235,7 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 - Make suspend work (low priority on Dzej's PC)
 - sometimes pressing ctrl will show two tiles where the window can go that overlap (Tiling Shell extension)
 it could be that there is a conflicting extension and two extensions fight with each other
-- Gdrive launcher - open with my payed gdrive account (there should be a CLI option to choose profile resp. URL)
+- Gdrive launcher - open with my paid gdrive account (there should be a CLI option to choose profile resp. URL)
 - some replacement for Caprine package (FB messenger) - ideally just FB web app
 
 ## Wayland
