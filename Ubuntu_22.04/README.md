@@ -204,6 +204,7 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 
 ## TODO
 
+- always install VSC as a native .deb package (the containerised versions are buggy for C++ development) (and don't install the flatpak)
 - put settings of the default Ubuntu extensions I use into gsettings scripts
 - if there are multiple options for one extension, also document which one I chose and why
 - tune the autostart times to be smaller (app autostart)
