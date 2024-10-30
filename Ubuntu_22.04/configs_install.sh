@@ -70,7 +70,7 @@ gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'tog
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'lower' # 'minimize'
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
 gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
-gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Alt>'
+gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Super>'
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 8
 gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9']"
