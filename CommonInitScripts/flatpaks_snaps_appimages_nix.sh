@@ -30,7 +30,7 @@ else
 
     # TODO toread https://man7.org/linux/man-pages/man1/flatpak-install.1.html
     readonly FLATPAK_PACKAGES=(
-        com.visualstudio.code
+        # com.visualstudio.code - containerised VSC sucks for C++ developemtn -> install deb instead
         com.github.johnfactotum.Foliate
         org.signal.Signal
         com.sindresorhus.Caprine
