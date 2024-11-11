@@ -272,6 +272,12 @@ scripts with my old dconf dumps (backup_config repo)
 - https://www.x.org/releases/current/doc/xorg-docs/input/XKB-Config.html
 - https://www.charvolant.org/doug/xkb/html/node5.html#SECTION00054000000000000000
 
+## GTK configuration
+
+- https://askubuntu.com/questions/72600/how-to-configure-gnome-3-through-a-configuration-file
+- https://lazka.github.io/pgi-docs/Gtk-3.0/classes/Settings.html
+- https://askubuntu.com/questions/1352344/add-bookmarks-to-nautilus-via-terminal
+
 ## TOREAD
 
 - <https://repology.org/>
