@@ -111,6 +111,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Con
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
 # gsettings set org.gnome.desktop.wm.preferences auto-raise 'true'
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
+gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
 gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Super>o']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Alt>s']"
 
