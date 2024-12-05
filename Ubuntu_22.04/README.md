@@ -195,6 +195,7 @@ Add shortcuts with arrows as well as vim keys (so that I don't need to move my h
 ## Keybindings
 
 - search GitHub for `gsettings` resp. `gsettings <keybinding>` to see how other devs set them
+- standardize similar or the same keybindings between Samsung DeX, Windows, and GNOME
 
 ## GSettings
 
