@@ -18,11 +18,11 @@ pipx install gnome-extensions-cli --system-site-packages
 # ===== GNOME EXTENSIONS =====
 
 # TODO consider these extensions: https://youtube.com/watch?v=wtjeaL90E6Q&si=VQmzns96n-dI6eL0 and
-# extensions used in Nobara project (linux distro)
+# extensions used in Nobara project (Linux distro)
 # org.gnome.Shell.Extensions.InstallRemoteExtension() is the same DBus method that is used in the
-# gnome-browser-connector package (the package that installs extesions via Chrome/Firefox plugin)
+# gnome-browser-connector package (the package that installs extensions via Chrome/Firefox plugin)
 # TODO add extensions from this video: https://youtu.be/KtjYPMCvQ7Y?si=sAPoExRbWvSI5g3s
-# TODO consider some taskbar extension so that I don't neormally need to use GNOME dock
+# TODO consider some taskbar extension so that I don't normally need to use the GNOME dock
 
 ## @note the gdbus call InstallRemoteExtension() might need to be invoked twice
 ## as sometimes the first call fails.
@@ -36,7 +36,7 @@ function install_gnome_extension
         gnome-extensions-cli install "${EXTENSION_ID}"
     fi
 
-    #
+    #    OLD code - needs user interaction and hence breaks CI TODO DELETE
     #    # TODO test whether all extensions are installed the first call
     #    # if not, call gdbus in a while loop
     #    if ! gnome-extensions list | grep "${EXTENSION_ID}"; then
@@ -46,8 +46,6 @@ function install_gnome_extension
     #            "${EXTENSION_ID}"
     #    fi
 }
-
-echo "Warning - extensions temporary disabled (because of new GNOME version)"
 
 install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
 install_gnome_extension "clipboard-history@alexsaveau.dev"
@@ -74,13 +72,12 @@ install_gnome_extension "windowIsReady_Remover@nunofarruca@gmail.com"
 install_gnome_extension "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
 install_gnome_extension "workspaces-by-open-apps@favo02.github.com"
 
-# TODO find extension for clipboard management
 
 # install_gnome_extension "scroll-workspaces@gfxmonk.net"
 # install_gnome_extension "Vitals@CoreCoding.com"
 # install_gnome_extension "hide-universal-access@akiirui.github.io"
 # install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
-# TODO Do some research whether there is not some better workspace indicator.
+# TODO Do some research on whether there is a better workspace indicator.
 # TODO experimental extensions - TODO - evaluate
 # install_gnome_extension "this.simple-indication-of-workspaces@azate.email"
 # install_gnome_extension "quake-mode@repsac-by.github.com"
