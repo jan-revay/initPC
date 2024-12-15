@@ -95,7 +95,7 @@ time sudo apt-get install -y "${APT_GUI_PACKAGES[@]}"
 # popd
 
 pipx install gnome-extensions-cli --system-site-packages
-source ~/.bashrc
+# source ~/.bashrc TODO remove if not useful... (attempt to fix gext not found)
 
 # cleanup
 sudo apt-get -y update
