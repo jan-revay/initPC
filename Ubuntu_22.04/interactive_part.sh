@@ -8,6 +8,7 @@
 . ../UbuntuCLI/interactive_part.sh
 
 # TODO racionalize parameter handling (`--help` and invalid parameters are handled in UbuntuCLI)
+# TODO -- refactor parameter handling and initialization of the NONINTERACTIVE global variable
 if [ "$1" == "--noninteractive" ]; then
     readonly NONINTERACTIVE='true'
     echo "Skipping interactive commands as $1 parameter was provided"
