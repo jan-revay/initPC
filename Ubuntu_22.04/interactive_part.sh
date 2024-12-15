@@ -9,6 +9,7 @@
 
 # TODO racionalize parameter handling (`--help` and invalid parameters are handled in UbuntuCLI)
 if [ "$1" == "--noninteractive" ]; then
+    readonly NONINTERACTIVE='true'
     echo "Skipping interactive commands as $1 parameter was provided"
 elif [ "$1" == "" ]; then
     # GNOME extensions
