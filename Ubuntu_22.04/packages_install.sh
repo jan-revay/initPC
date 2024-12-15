@@ -94,6 +94,8 @@ time sudo apt-get install -y "${APT_GUI_PACKAGES[@]}"
 # sudo apt-get install ./docker-desktop.deb
 # popd
 
+pipx install gnome-extensions-cli --system-site-packages
+
 # cleanup
 sudo apt-get -y update
 sudo apt-get -y upgrade
