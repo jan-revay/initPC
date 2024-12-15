@@ -31,7 +31,7 @@ function install_gnome_extension
     local EXTENSION_ID="$1"
 
     if [ "${NONINTERACTIVE}" == 'true' ]; then
-        gnome-extensions-cli --filesystem install "${EXTENSION_ID}"
+        gnome-extensions-cli --filesystem --no-color install "${EXTENSION_ID}"
     else
         gnome-extensions-cli install "${EXTENSION_ID}"
     fi
