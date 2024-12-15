@@ -30,6 +30,10 @@ function install_gnome_extension
 {
     local EXTENSION_ID="$1"
 
+    # I am preserving the interactive version because gext webpage says that using the --filesystem
+    # method "some extensions might not install well"
+    # TODO remove the if-else - gext should be able to detect running gnome session by itself.
+    # see https://github.com/essembeh/gnome-extensions-cli?tab=readme-ov-file#under-the-hood-dbus-vs-filesystem
     if [ "${NONINTERACTIVE}" == 'true' ]; then
         gnome-extensions-cli --filesystem --no-color install "${EXTENSION_ID}"
     else
