@@ -2,7 +2,7 @@
 # The script should not require any user input and should be idempotent.
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
 # TODO move the package lists to external files
-
+# TODO add repos and packates that PopOS has: https://pop.system76.com/
 . ../prelude.sh
 
 export DEBIAN_FRONTEND=noninteractive
