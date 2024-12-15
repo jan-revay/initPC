@@ -62,6 +62,11 @@ jobs:
         run: echo ${{ github.sha }}
       - name: "cat /etc/os-release"
         run: cat /etc/os-release
+      - name: "Set the timezone (noninteractive)"
+        run: |
+          ln -fs /usr/share/zoneinfo/Europe/Vienna /etc/localtime && \
+          echo "tzdata tzdata/Areas select Europe" | debconf-set-selections && \
+          echo "tzdata tzdata/Zones/Europe select Vienna" | debconf-set-selections
       - name: Running iniPC script for the 1st time should not fail.
         run: ./run_init.sh --noninteractive
       - name: save ~/ for idempotency test
