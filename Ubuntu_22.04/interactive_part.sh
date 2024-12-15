@@ -19,4 +19,5 @@ elif [ "$1" == "" ]; then
     # TODO what is this app and why does it automatically install itself on Ubuntu
     # server/desktop, but not in wsl? It needs user interaction hence adding it here.
     sudo apt-get install -y postfix
+    . ../CommonInitScripts/gnome_install_extensions.sh
 fi
