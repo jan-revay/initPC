@@ -41,6 +41,8 @@ function install_gnome_extension
 
 echo "Warning - extensions temporary disabled (because of new GNOME version)"
 
+install_gnome_extension "clipboard-history@alexsaveau.dev"
+
 # TODO find extension for clipboard management
 
 # install_gnome_extension "scroll-workspaces@gfxmonk.net"
