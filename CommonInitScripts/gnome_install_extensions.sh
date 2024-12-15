@@ -30,9 +30,9 @@ function install_gnome_extension
     local EXTENSION_ID="$1"
 
     if [ "${NONINTERACTIVE}" == 'true' ]; then
-        gext --filesystem install "${EXTENSION_ID}"
+        gnome-extensions-cli --filesystem install "${EXTENSION_ID}"
     else
-        gext install "${EXTENSION_ID}"
+        gnome-extensions-cli install "${EXTENSION_ID}"
     fi
 
     #
