@@ -104,6 +104,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 \
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 \
     "['<Control><Super>backslash', '<Control><Super>ncaron']"
 
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Control><Super>End']"
+
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Control><Alt><Super>h']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Control><Alt><Super>j']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Control><Alt><Super>k']"
@@ -117,13 +121,9 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 \
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 \
     "['<Control><Alt><Super>backslash', '<Control><Alt><Super>ncaron']"
 
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Control><Alt><Super>Left']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Control><Alt><Super>Right']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-last "['<Control><Alt><Super>End']"
-
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Control><Alt><Super>Right']"
 
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
 # gsettings set org.gnome.desktop.wm.preferences auto-raise 'true'
@@ -135,7 +135,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Al
 gsettings --schemadir \
     "${HOME}/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history toggle-menu "['<Super>v']"
-
 
 gsettings --schemadir \
     "${HOME}/.local/share/gnome-shell/extensions/focus-changer@heartmire/schemas" \
@@ -149,6 +148,12 @@ gsettings --schemadir \
 gsettings --schemadir \
     "${HOME}/.local/share/gnome-shell/extensions/focus-changer@heartmire/schemas" \
     set org.gnome.shell.extensions.focus-changer focus-right "['<Shift><Control><Alt><Super>Right']"
+
+# TODO - keybindings - tostudy
+# What is the difference between "Switch applications", "Switch windows",
+# "Switch windows directly", "Switch windows of an application", and
+# "Switch windows of an app directly" keybindings? Learn how to use them...
+# (see GNOME settings)
 
 # set default apps
 xdg-mime default code.desktop text/markdown
