@@ -29,6 +29,7 @@ else                                                            # we are running
     sudo apt-get install -y logiops
 fi
 
+# TODO add kitty terminal emulator
 readonly APT_GUI_PACKAGES=(
     # ===== package managers =====
     snapd flatpak
@@ -54,12 +55,12 @@ readonly APT_GUI_PACKAGES=(
     gimp krita inkscape okular evince vlc audacity xdotool
     ttf-mscorefonts-installer
     shutter # TODO learn how to use efficiently resp. remove if unused
+    
     # ===== GUI TWEAKS AND AUTOMATION =====
     dconf-editor gnome-tweaks
 
     # ===== CODING =====
     sqlitebrowser
-    alacritty # TODO alacritty is not present in older than Ubuntu 24.04 add if
 
     # ===== MULTIMEDIA =====
     obs-studio handbrake handbrake-cli ffmpeg x264
@@ -68,6 +69,13 @@ readonly APT_GUI_PACKAGES=(
     actiona # automations, written in C++ https://github.com/Jmgr/actiona
     autokey-common autokey-gtk
 )
+
+# TODO alacritty is not present on Ubuntu releases older than Ubuntu 24.04
+if bash -c '. ../prelude.sh; distro_version_le 24' &> /dev/null; then
+    APT_PACKAGES+=('')
+else
+    APT_PACKAGES+=('alacritty')
+fi
 
 time sudo apt-get install -y "${APT_GUI_PACKAGES[@]}"
 
