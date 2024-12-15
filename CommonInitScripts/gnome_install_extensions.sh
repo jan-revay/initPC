@@ -40,6 +40,10 @@ function install_gnome_extension
         gnome-extensions-cli install "${EXTENSION_ID}"
     fi
 
+    # TODO some extensions do not compile their schemas on the installation hence we compile them
+    # manually. TODO investigate and remove if fixed.
+    glib-compile-schemas "${HOME}/.local/share/gnome-shell/extensions/${EXTENSION_ID}/schemas" || true
+
     #    OLD code - needs user interaction and hence breaks CI TODO DELETE
     #    # TODO test whether all extensions are installed the first call
     #    # if not, call gdbus in a while loop

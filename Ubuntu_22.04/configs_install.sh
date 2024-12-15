@@ -136,9 +136,6 @@ gsettings --schemadir \
     "${HOME}/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history toggle-menu "['<Super>v']"
 
-# TODO - try compiling the schema during the extension installation
-glib-compile-schemas "${HOME}/.local/share/gnome-shell/extensions/focus-changer@heartmire/schemas"
-
 gsettings --schemadir \
     "${HOME}/.local/share/gnome-shell/extensions/focus-changer@heartmire/schemas" \
     set org.gnome.shell.extensions.focus-changer focus-up "['<Shift><Control><Alt><Super>Up']"
