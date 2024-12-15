@@ -29,14 +29,21 @@ function install_gnome_extension
 {
     local EXTENSION_ID="$1"
 
-    # TODO test whether all extensions are installed the first call
-    # if not, call gdbus in a while loop
-    if ! gnome-extensions list | grep "${EXTENSION_ID}"; then
-        gdbus call --session --dest org.gnome.Shell.Extensions \
-            --object-path /org/gnome/Shell/Extensions \
-            --method org.gnome.Shell.Extensions.InstallRemoteExtension \
-            "${EXTENSION_ID}"
+    if [ "${NONINTERACTIVE}" == 'true' ]; then
+        gext --filesystem install "${EXTENSION_ID}"
+    else
+        gext install "${EXTENSION_ID}"
     fi
+
+    #
+    #    # TODO test whether all extensions are installed the first call
+    #    # if not, call gdbus in a while loop
+    #    if ! gnome-extensions list | grep "${EXTENSION_ID}"; then
+    #        gdbus call --session --dest org.gnome.Shell.Extensions \
+    #            --object-path /org/gnome/Shell/Extensions \
+    #            --method org.gnome.Shell.Extensions.InstallRemoteExtension \
+    #            "${EXTENSION_ID}"
+    #    fi
 }
 
 echo "Warning - extensions temporary disabled (because of new GNOME version)"
