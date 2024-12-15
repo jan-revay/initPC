@@ -82,38 +82,62 @@ gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', 
 # TODO make the keybindings work similar to AltSnap on windows (emulate AltSnap)
 
 # KEYBOARD SHORTCUTS (keybindings)
-gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
+# note: the keyboard shortcuts are designed to behave the same regardless of the
+# keyboard layout (EN or SK).
 # TODO add a custom keybinding for gnome-system-monitor (ctrl+shift+esc)
 # https://community.linuxmint.com/tutorial/view/1171
 # and make sure that the process is idempotent
-gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Alt><Super>space']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
+gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Super>space']"
 
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Alt><Super>h']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control><Alt><Super>j']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Control><Alt><Super>k']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Control><Alt><Super>l']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Control><Alt><Super>semicolon']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Control><Alt><Super>apostrophe']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 "['<Control><Alt><Super>Return']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 "['<Control><Alt><Super>backslash']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Super>h']"
+# TODO FIX: ctrl+super+j switches to workspace 6 for some reason...
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control><Super>j']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Control><Super>k']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Control><Super>l']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 \
+    "['<Control><Super>semicolon', '<Control><Super>ocircumflex']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 \
+    "['<Control><Super>apostrophe', '<Control><Super>section']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 \
+    "['<Control><Super>Return']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 \
+    "['<Control><Super>backslash', '<Control><Super>ncaron']"
 
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Shift><Control><Alt><Super>h']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Shift><Control><Alt><Super>j']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Shift><Control><Alt><Super>k']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Shift><Control><Alt><Super>l']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 "['<Shift><Control><Alt><Super>semicolon']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Shift><Control><Alt><Super>apostrophe']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 "['<Shift><Control><Alt><Super>Return']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Shift><Control><Alt><Super>backslash']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Control><Alt><Super>h']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Control><Alt><Super>j']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Control><Alt><Super>k']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Control><Alt><Super>l']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 \
+    "['<Control><Alt><Super>semicolon', '<Control><Alt><Super>ocircumflex']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 \
+    "['<Control><Alt><Super>apostrophe', '<Control><Alt><Super>section']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 \
+    "['<Control><Alt><Super>Return']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 \
+    "['<Control><Alt><Super>backslash', '<Control><Alt><Super>ncaron']"
 
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Control><Alt><Super>Left']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Control><Alt><Super>Right']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-last "['<Control><Alt><Super>End']"
+
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Control><Alt><Super>Right']"
+
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
 # gsettings set org.gnome.desktop.wm.preferences auto-raise 'true'
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
-gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Super>o']"
+# gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Super>o']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Alt>s']"
+
+gsettings set org.gnome.shell.extensions.focus-changer focus-up "['<Shift><Control><Alt><Super>Up']"
+gsettings set org.gnome.shell.extensions.focus-changer focus-down "['<Shift><Control><Alt><Super>Down']"
+gsettings set org.gnome.shell.extensions.focus-changer focus-left "['<Shift><Control><Alt><Super>Left']"
+gsettings set org.gnome.shell.extensions.focus-changer focus-right "['<Shift><Control><Alt><Super>Right']"
+
+gsettings set org.gnome.shell.extensions.clipboard-history toggle-menu "['<Super>v']"
 
 # set default apps
 xdg-mime default code.desktop text/markdown
