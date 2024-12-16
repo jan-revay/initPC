@@ -9,3 +9,4 @@ Scripts in this directory serve as a base to all other Linux init scripts (they 
 - use the package groups (in all branches) rather than the `minimal` branch
 - minimal branch can therefore be renamed to LTS or sth. like that.
 - start using tags on stable branch
+- add Docker install and Distrobox
