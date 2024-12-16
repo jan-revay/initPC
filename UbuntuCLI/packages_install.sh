@@ -50,20 +50,20 @@ APT_PACKAGES=(
 
     # static analyzers
     # TODO clazy is broken on Debian:testing
-    cppcheck cppcheck-gui iwyu clazy shellcheck
+    cppcheck cppcheck-gui iwyu shellcheck
 
     # code formatters
     cmake-format shfmt
 
     # dynamic analyzers , TODO test them
-    valgrind hotspot heaptrack
+    valgrind
 
     # Python packages
     python3-matplotlib python3-mock python3-numpy python3-pandas
     python3-pytest python3-requests python3-scipy python3-pylsp
 
     # requirements for llvm and rust install scripts
-    wget lsb-release software-properties-common gnupg curl
+    wget lsb-release gnupg curl
 
     # stress testing
     stress # see: https://github.com/resurrecting-open-source-projects/stress
@@ -79,6 +79,14 @@ if bash -c '. ../prelude.sh; distro_version_le 23' &> /dev/null; then
     APT_PACKAGES+=('exa')
 else
     APT_PACKAGES+=('eza')
+fi
+
+# Kali and Debian rolling do not have these packages...
+# TODO try a more elegant fix
+if bash -c '. ../prelude.sh; distro_is ubuntu' &> /dev/null; then
+    APT_PACKAGES+=(clazy hotspot heaptrack software-properties-common)
+else
+    APT_PACKAGES+=('')
 fi
 
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
