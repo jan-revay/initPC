@@ -85,6 +85,8 @@ fi
 # TODO try a more elegant fix
 if bash -c '. ../prelude.sh; distro_is ubuntu' &> /dev/null; then
     APT_PACKAGES+=(clazy hotspot heaptrack software-properties-common)
+elif  bash -c '. ../prelude.sh; distro_is debian' &> /dev/null; then
+    APT_PACKAGES+=(software-properties)
 else
     APT_PACKAGES+=('')
 fi
