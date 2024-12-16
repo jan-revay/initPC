@@ -80,6 +80,8 @@ gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', 
 # TODO design and add all keybindings
 # TODO remove useless wm keybindings
 # TODO make the keybindings work similar to AltSnap on windows (emulate AltSnap)
+# TODO have a look what keybindings do other developers use for
+# switching desktops and window navigation/tiling
 
 # KEYBOARD SHORTCUTS (keybindings)
 # note: the keyboard shortcuts are designed to behave the same regardless of the
