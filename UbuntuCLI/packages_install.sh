@@ -81,31 +81,30 @@ else
     APT_PACKAGES+=('eza')
 fi
 
-# Kali and Debian rolling do not have these packages...
+# Kali and Debian testing do not have these packages...
 # TODO try a more elegant fix
-if bash -c '. ../prelude.sh; distro_is ubuntu' &> /dev/null; then
+if bash -c '. ../prelude.sh; distro_is ubuntu || (distro_is debian && distro_version_le 12)' &> /dev/null; then
     APT_PACKAGES+=(clazy hotspot heaptrack software-properties-common)
-elif  bash -c '. ../prelude.sh; distro_is debian' &> /dev/null; then
-    APT_PACKAGES+=(software-properties)
-else
-    APT_PACKAGES+=('')
 fi
 
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
-# Install the most recent llvm (see https://apt.llvm.org/)
-pushd /tmp || exit "${EXIT_FILE_IO_ERROR}"
-# packages required by llvm.sh script are installed above
-wget https://apt.llvm.org/llvm.sh
-chmod +x llvm.sh
-if ! time yes '' | sudo ./llvm.sh all; then
-    # workaround bug in llvm install script: https://github.com/llvm/llvm-project/issues/62475
-    # TODO remove the workaround when it is fixed in llvm.sh
-    sudo apt update -y
-    time yes '' | sudo ./llvm.sh all
+# The LLVM convenience script does not work with Debian testing and Kali
+if bash -c '. ../prelude.sh; distro_is ubuntu || (distro_is debian && distro_version_le 12)' &> /dev/null; then
+    # Install the most recent llvm (see https://apt.llvm.org/)
+    pushd /tmp || exit "${EXIT_FILE_IO_ERROR}"
+    # packages required by llvm.sh script are installed above
+    wget https://apt.llvm.org/llvm.sh
+    chmod +x llvm.sh
+    if ! time yes '' | sudo ./llvm.sh all; then
+        # workaround bug in llvm install script: https://github.com/llvm/llvm-project/issues/62475
+        # TODO remove the workaround when it is fixed in llvm.sh
+        sudo apt update -y
+        time yes '' | sudo ./llvm.sh all
+    fi
+    rm llvm.sh
+    popd || exit "${EXIT_FILE_IO_ERROR}"
 fi
-rm llvm.sh
-popd || exit "${EXIT_FILE_IO_ERROR}"
 
 # Install rust ecosystem
 time curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
