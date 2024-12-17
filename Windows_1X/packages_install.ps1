@@ -25,6 +25,10 @@
 Set-PSDebug -Trace 1
 $ErrorActionPreference = "Stop"
 
+# Install Scoop
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+
 $WINGET_PACKAGES = @(
 # HW monitoring
     'CPUID.CPU-Z'
