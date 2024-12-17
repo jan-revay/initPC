@@ -30,25 +30,25 @@ to .vmx file in the virtual machine image directory.
 
 1. Go to: `Control Panel\All Control Panel Items\Ease of Access Center\Make the mouse easier to use`
 2. Mouse pointers -> "Large White"
-3. Consider "Activate a window b hoverin over it with the mouse"
+3. Set: "Activate a window by hovering over it with the mouse"
 
 ### Taskbar
 
-#### Rhight click on the taskbar
+#### Right-click on the taskbar
 - Toolbars - disable all
 - Search -> Hidden
-- Show ... -> disable all except "Show Windows Ink Wokspace button"
+- Show ... -> disable all except "Show Windows Ink Workspace button"
 - taskbar settings
-    * all off except following
+    * all off except the following
     * use small taskbar buttons -> on
     * replace command prompt with Windows PowerShell in the menu (Win + X)
     * taskbar location on screen -> top
-    * Combine taskar buttons -> When taskabar is full
+    * Combine taskbar buttons -> When taskbar is full
     * show taskbar on all displays -> on
-    * show taskabr buttons on -> Taskbar where window is open
+    * show taskbar buttons on -> Taskbar where window is open
     * Combine buttons on other taskbars -> When taskbar is full
-    * Show news and interests on the taskbar -> on, Icon and text
-    * everyting else is off
+    * Show news and interests on the taskbar -> on, Icon, and text
+    * everything else is off
  
 ### Personalization - settings
 
@@ -59,7 +59,7 @@ to .vmx file in the virtual machine image directory.
 - Show app list in start menu -> on
 - Show recently added apps -> on
 - Show most used apps -> on
-- Show recently opened itels in Jump Lists on start or the taskbar and in file explorer Quick access -> on
+- Show recently opened items in Jump Lists on start or the taskbar and in file explorer Quick access -> on
 - Choose which folders appear on Start -> Settings and Personal folder
 
 #### Background
@@ -92,7 +92,7 @@ to .vmx file in the virtual machine image directory.
 
 1. Go to Windows Settings -> System
 
-- Power & Sleep - set all to Never - but set screen to turn off after 45 minutes
+- Power & Sleep - set all to Never - but set the screen to turn off after 45 minutes
 - Multitasking
     * snap windows -> on (plus all related checkboxes)
     * Alt + Tab -> open windows only
@@ -108,8 +108,8 @@ to .vmx file in the virtual machine image directory.
 - Click to "Advanced" tab
 - Click "Settings" in "Performance" section
 - Select "Let Windows choose...."
-- Additionally to that desellect:
-    * "Animate windows when minimizing and maximizing" (it will also improve speed of switching virtual desktops)
+- Additionally, to that deselect:
+    * "Animate windows when minimizing and maximizing" (it will also improve the speed of switching virtual desktops)
     * "Fade or slide ToolTips into view"
     * "Animations in the taskbar"
     * "Animate controls and elements inside Windows" (so that virtual desktops are switched instantly)
@@ -117,7 +117,7 @@ to .vmx file in the virtual machine image directory.
  
 ## Set first day of week
 
-1. Right click at clock/calendar widget in taskbar
+1. Right-click at the clock/calendar widget in the taskbar
 2. Adjust date/time
 3. Related settings (link) - Date, time & regional formatting
 4. Regional format data - change data formats
