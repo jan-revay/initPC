@@ -113,10 +113,12 @@ to .vmx file in the virtual machine image directory.
 - Click "Settings" in "Performance" section
 - Select "Let Windows choose...."
 - Additionally, to that deselect:
-    * "Animate windows when minimizing and maximizing" (it will also improve the speed of switching virtual desktops)
-    * "Fade or slide ToolTips into view"
-    * "Animations in the taskbar"
     * "Animate controls and elements inside Windows" (so that virtual desktops are switched instantly)
+    * "Animate windows when minimizing and maximizing" (it will also improve the speed of switching virtual desktops)
+    * "Animations in the taskbar"
+    * "Fade or slide menus into view"
+    * "Fade or slide ToolTips into view"
+    * "Show shadows under windows"
     * ... TODO find out what other options are doing
  
 ## Set first day of week
