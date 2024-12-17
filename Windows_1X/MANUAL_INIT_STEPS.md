@@ -26,11 +26,15 @@ to .vmx file in the virtual machine image directory.
 
 ## Windows settings that are not yet automatized
 
-### Mouse
+### Mouse & display
 
 1. Go to: `Control Panel\All Control Panel Items\Ease of Access Center\Make the mouse easier to use`
-2. Mouse pointers -> "Large White"
+2. Mouse pointers -> "Extra large White"
 3. Set: "Activate a window by hovering over it with the mouse"
+4. Go to: `Control Panel\All Control Panel Items\Ease of Access Center\Make computer easier to use`
+5. Set: "Make the focus rectangle thicker" and set the thickness of the blinking cursor to 4
+6. Set: "Turn off unnecessary animations" (when possible)
+
 
 ### Taskbar
 
