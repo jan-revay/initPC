@@ -18,7 +18,7 @@ Key |  Shortcut  | MS Whiteboard tool
 K1  |  Alt+I     | *Highliter*
 K2  |  Alt+A     | *Arrow*
 K3  |  Alt+Q     | *Lasso*
-K4  |  Alt+H     | *Hand*
+K4  |  Alt+S     | *Select*
 K5  |  Ctrl+Z    | *Undo*
 K6  |  Ctrl+Y    | *Redo*
 
