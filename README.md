@@ -276,7 +276,14 @@ scripts with my old dconf dumps (backup_config repo)
 
 - https://askubuntu.com/questions/72600/how-to-configure-gnome-3-through-a-configuration-file
 - https://lazka.github.io/pgi-docs/Gtk-3.0/classes/Settings.html
-- https://askubuntu.com/questions/1352344/add-bookmarks-to-nautilus-via-terminal
+- https://askubuntu.com/questions/1352344/add-bookmarks-to-nautilus-via-terminal'
+
+
+## Bugs
+
+### Bugs in CI
+
+- CI was triggered when a .md file in Windows folder was changed (maybe because of the open pull request - investigate
 
 ## TOREAD
 
