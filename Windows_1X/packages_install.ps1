@@ -27,7 +27,7 @@ $ErrorActionPreference = "Stop"
 
 # Install Scoop
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-
+scoop install windows-virtualdesktop-helper
 
 $WINGET_PACKAGES = @(
 # HW monitoring
