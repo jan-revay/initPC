@@ -46,6 +46,7 @@ $WINGET_PACKAGES = @(
     'Microsoft.DotNet.DesktopRuntime.6' # for GitExtensions
     'Microsoft.DotNet.DesktopRuntime.7'
     'Microsoft.VCRedist.2015+.x64'
+    'RubyInstallerTeam.RubyWithDevKit.3.2'
 
 # Virtualisation and containers
     'Docker.DockerDesktop'
@@ -155,4 +156,7 @@ pip install statsmodels # TODO broken
 pip install seaborn # TODO broken
 pip install scikit-learn
 pip install shap
+
+gem install github-linguist
+
 Set-PSDebug -Trace 0
