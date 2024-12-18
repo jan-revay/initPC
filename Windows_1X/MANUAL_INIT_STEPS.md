@@ -137,6 +137,16 @@ to .vmx file in the virtual machine image directory.
    note: there are two sliders for setting the pointer speed that work independently in windows, one is in the settings app
    and another is in the advanced mouse settings dialog
 
+## AltSnap
+
+1. Remap AltSnap key to Win
+
+## XPpen tablet
+
+1. Install drivers and follow the settings guide in CommonInitScripts (todo add link)
+
+## Install Slovak eID drivers
+
 
 # TODO
 
