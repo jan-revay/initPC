@@ -129,6 +129,14 @@ to .vmx file in the virtual machine image directory.
 4. Regional format data - change data formats
 5. First day of week - Monday
 
+## Logiops
+
+1. Fix bug that causes gestures to be way too insensitive:
+   a. Go to Logiops and increade the sensitivity to 71
+   b. Go to windows mouse settings and decrease the sensitivity to 4 ticks (in the advanced mouse settings dialog)
+   note: there are two sliders for setting the pointer speed that work independently in windows, one is in the settings app
+   and another is in the advanced mouse settings dialog
+
 
 # TODO
 
