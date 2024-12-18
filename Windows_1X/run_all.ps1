@@ -11,7 +11,7 @@ $ErrorActionPreference = "Stop"
 
 # Noninteractive scripts
 . $PSScriptRoot/packages_install.ps1
-# ./optional_packages__install.ps1
+. $PSScriptRoot/optional_packages__install.ps1
 . $PSScriptRoot/configs_install.ps1
 . $PSScriptRoot/source_packages_install.ps1
 
