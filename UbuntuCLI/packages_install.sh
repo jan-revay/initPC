@@ -51,6 +51,7 @@ APT_PACKAGES=(
     # static analyzers
     # TODO clazy is broken on Debian:testing
     cppcheck cppcheck-gui iwyu shellcheck
+    cloc
 
     # code formatters
     cmake-format shfmt
