@@ -55,7 +55,7 @@ readonly APT_GUI_PACKAGES=(
     gimp krita inkscape okular evince vlc audacity xdotool
     ttf-mscorefonts-installer
     shutter # TODO learn how to use efficiently resp. remove if unused
-    
+
     # ===== GUI TWEAKS AND AUTOMATION =====
     dconf-editor gnome-tweaks
 
