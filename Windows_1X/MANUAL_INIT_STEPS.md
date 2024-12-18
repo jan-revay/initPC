@@ -109,8 +109,8 @@ to .vmx file in the virtual machine image directory.
 - Right-click the Start menu and select System from the context menu.
 - This will take you to Control Panel > System and Security > System.
 - Now click "Advanced system settings".
-- Click to "Advanced" tab
-- Click "Settings" in "Performance" section
+- Click on the "Advanced" tab
+- Click "Settings" in the "Performance" section
 - Select "Let Windows choose...."
 - Additionally, to that deselect:
     * "Animate controls and elements inside Windows" (so that virtual desktops are switched instantly)
@@ -149,6 +149,12 @@ to .vmx file in the virtual machine image directory.
 
 (TODO - make it automatic)
 
+## Powertoys
+
+### Set keyboard shortcuts in Powertoys
+
+1. Always on top
+2. shortcuts for switching virtual desktop via keyboard shortcuts remapping
 
 # TODO
 
