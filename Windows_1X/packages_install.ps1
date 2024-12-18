@@ -157,6 +157,8 @@ pip install seaborn # TODO broken
 pip install scikit-learn
 pip install shap
 
+# TODO an attempt to reload the path (investigate further)
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 gem install github-linguist
 
 Set-PSDebug -Trace 0
