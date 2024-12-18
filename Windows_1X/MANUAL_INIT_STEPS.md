@@ -131,10 +131,10 @@ to .vmx file in the virtual machine image directory.
 
 ## Logiops
 
-1. Fix bug that causes gestures to be way too insensitive:
-   a. Go to Logiops and increade the sensitivity to 71
-   b. Go to windows mouse settings and decrease the sensitivity to 4 ticks (in the advanced mouse settings dialog)
-   note: there are two sliders for setting the pointer speed that work independently in windows, one is in the settings app
+1. Fix a bug that causes gestures to be way too insensitive:
+   a. Go to Logiops and increase the sensitivity to 71
+   b. Go to Windows mouse settings and decrease the sensitivity to 4 ticks (in the advanced mouse settings dialog)
+   note: there are two sliders for setting the pointer speed that work independently in Windows, one is in the settings app
    and another is in the advanced mouse settings dialog
 
 ## AltSnap
@@ -146,6 +146,8 @@ to .vmx file in the virtual machine image directory.
 1. Install drivers and follow the settings guide in CommonInitScripts (todo add link)
 
 ## Install Slovak eID drivers
+
+(TODO - make it automatic)
 
 
 # TODO
