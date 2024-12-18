@@ -27,6 +27,9 @@ $ErrorActionPreference = "Stop"
 
 # Install Scoop
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+# TODO an attempt to reload the path (investigate further)
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
+# TODO uncomment the next line resp. fix it so that it works and (scoop is not found right after the installation, probably path problem)
 scoop install windows-virtualdesktop-helper
 
 $WINGET_PACKAGES = @(
