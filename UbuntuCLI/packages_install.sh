@@ -146,7 +146,8 @@ time sudo npm i -g bash-language-server
 # TODO remove is not used (also with GEM)
 # GEM packages
 time sudo gem install mdl # markdown-lint
-time sudo gem install github-linguist
+# TODO uncomment and fix the next line
+# time sudo gem install github-linguist
 
 # TODO add automatic pipx upgrade via pipx
 # pipx install pipx
