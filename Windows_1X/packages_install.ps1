@@ -60,6 +60,7 @@ $WINGET_PACKAGES = @(
     'XAMPPRocky.tokei' # broken? TODO FIX?
     'Ookla.Speedtest.Desktop'
     'fzf'
+    'AlDanial.Cloc' # count number of lines of code
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
