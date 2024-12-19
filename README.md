@@ -289,6 +289,11 @@ scripts with my old dconf dumps (backup_config repo)
 
 - <https://repology.org/>
 
+## Aliases to add
+
+1. Alias for home directory (one letter)
+2. Alias for initPC repo (one letter)
+
 
 ## Similar repos
 
