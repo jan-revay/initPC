@@ -13,12 +13,14 @@ pushd ~/x/scroll-windows-v-desktops
 pip install -r requirements.txt
 pyinstaller --onefile scroll-desktops.py
 # TODO try adapting this position so that it works well on Win11 i.e. taskbar on the bottom
+# Having the desktop scrolling area up is buggy because of focus on hover (cursor will move to the focused window
+# and brak the flow when scrolling.
 $config = @"
 {
     "xMin": -1,
     "xMax": 10000,
-    "yMin": -1,
-    "yMax": 45,
+    "yMin": 2140,
+    "yMax": 10000,
     "printPosition": false
 }
 "@
