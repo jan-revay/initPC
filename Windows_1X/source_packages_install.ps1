@@ -19,7 +19,7 @@ $config = @"
 {
     "xMin": -1,
     "xMax": 10000,
-    "yMin": 2140,
+    "yMin": 2090,
     "yMax": 10000,
     "printPosition": false
 }
