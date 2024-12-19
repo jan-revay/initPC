@@ -163,4 +163,6 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 # TODO uncomment and fix the next line
 # gem install github-linguist
 
+Install-Module -Name VirtualDesktop
+
 Set-PSDebug -Trace 0
