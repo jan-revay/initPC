@@ -12,9 +12,10 @@ popd
 pushd ~/x/scroll-windows-v-desktops
 pip install -r requirements.txt
 pyinstaller --onefile scroll-desktops.py
+# TODO - it would probably be better to do this via Autohotkey (see my todoist section "virtual desktops" for examples
 # TODO try adapting this position so that it works well on Win11 i.e. taskbar on the bottom
-# Having the desktop scrolling area up is buggy because of focus on hover (cursor will move to the focused window
-# and brak the flow when scrolling.
+# Having the desktop scrolling area up is buggy because of the focus on hover (the cursor will move to the focused window
+# and break the flow when scrolling.
 $config = @"
 {
     "xMin": -1,
