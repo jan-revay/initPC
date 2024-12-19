@@ -3,7 +3,8 @@ Set-PSDebug -Trace 1
 $ErrorActionPreference = "Stop"
 
 # TODO set to break on errors
-#TODO - add gh auth login
+# TODO - add gh auth login
+echo $PSVersionTable.PSVersion
 
 # Scripts requiring user input
 . $PSScriptRoot/wsl_install.ps1
