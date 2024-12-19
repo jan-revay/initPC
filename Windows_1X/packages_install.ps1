@@ -47,6 +47,7 @@ $WINGET_PACKAGES = @(
     'Microsoft.DotNet.DesktopRuntime.7'
     'Microsoft.VCRedist.2015+.x64'
     'RubyInstallerTeam.RubyWithDevKit.3.2'
+    'Microsoft.PowerShell'
 
 # Virtualisation and containers
     'Docker.DockerDesktop'
@@ -61,6 +62,7 @@ $WINGET_PACKAGES = @(
     'Ookla.Speedtest.Desktop'
     'fzf'
     'AlDanial.Cloc' # count number of lines of code
+    'starship.starship'
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
