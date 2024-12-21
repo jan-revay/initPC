@@ -156,6 +156,17 @@ to .vmx file in the virtual machine image directory.
 1. Always on top
 2. shortcuts for switching virtual desktop via keyboard shortcuts remapping
 
+## Review & check preinstalled sw and drivers
+
+1. Review preinstalled sw & drivers
+2. uninstall bloatware (todo - titus debloater?)
+3. Turn off system services I don't need
+4. update windows and drivers
+5. check tat all necessary drivers are installed and work
+6. Run ookla speedtest on all network inferfaces
+
+## Desktop icons - organize
+
 # TODO
 
 - Do some research on how Sync your settings work in Windows and set it up
