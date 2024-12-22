@@ -19,7 +19,7 @@
 
 1. Only connect to 5GHz WiFi.
 2. Forget password to 2.4 GHz WiFi on all devices if I used 2.4GHz band before.
-3. Turn "WiFi scan throttling" back on, if I turned it off during testing.
+3. Turn "WiFi scan throttling" in Android Settings -> "Developer options" back on, if I turned it off during testing.
 4. Test the connection speed on all devices in multiple rooms of the flat.
 
 Note: Currently I measured the speeds in all rooms with 2.4GHz and 5GHz WiFi and 5GHz is quicker, less congested and more stable everywhere in the flat. Also, the 5GHz connection is lost quicker when I leave the house hence it shortens the glitch while switching to the mobile network.
