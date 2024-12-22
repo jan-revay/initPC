@@ -159,7 +159,7 @@ to .vmx file in the virtual machine image directory.
 ## Review & check preinstalled sw and drivers
 
 1. Review preinstalled sw & drivers
-2. uninstall bloatware (todo - titus debloater?)
+2. uninstall bloatware (todo - titus debloater? https://github.com/ChrisTitusTech/winutil )
 3. Turn off system services I don't need
 4. update windows and drivers
 5. check tat all necessary drivers are installed and work
