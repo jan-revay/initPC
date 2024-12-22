@@ -21,3 +21,5 @@
 2. Forget password to 2.4 GHz WiFi on all devices if I used it before.
 3. Turn "WiFi scan throttling" back on, if I turned it off during testing.
 4. Test the connection speed on all devices in multiple rooms of the house.
+
+Note: Currently I measured the speeds in all rooms with 2.4GHz and 5GHz WiFi and 5GHz is quicker and more stable everywhere. Also, the 5GHz connection is lost quicker when I leave the house hence it shortens the glitch while switching to the mobile network.
