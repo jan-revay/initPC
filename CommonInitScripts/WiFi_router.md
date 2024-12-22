@@ -18,7 +18,7 @@
 ## Device config (Android phones, PCs, laptops, ebook readers, smart watches...)
 
 1. Only connect to 5GHz WiFi.
-2. Forget password to 2.4 GHz WiFi on all devices if I used it before.
+2. Forget password to 2.4 GHz WiFi on all devices if I used 2.4GHz band before.
 3. Turn "WiFi scan throttling" back on, if I turned it off during testing.
 4. Test the connection speed on all devices in multiple rooms of the flat.
 
