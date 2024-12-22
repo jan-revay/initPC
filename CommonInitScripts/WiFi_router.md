@@ -15,7 +15,7 @@
     1. "Wi-Fi Coverage Management" -> "Select a policy to synchronize Wi-Fi parameters to the newly detected external AP." -> "Do not enable automatic synchronization." (TODO this is probably not necessary)
 1. Test the connection speed and stability from multiple rooms in the flat + multiple devices.
 
-## Device config (Android phones, PCs, laptops, smart watches...)
+## Device config (Android phones, PCs, laptops, ebook readers, smart watches...)
 
 1. Only connect to 5GHz WiFi.
 2. Forget password to 2.4 GHz WiFi on all devices if I used it before.
