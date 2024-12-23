@@ -32,4 +32,6 @@ Note: Currently I've measured the speeds in all rooms with 2.4GHz and 5GHz WiFi,
 1. <https://mac-wifi.com/why-i-dislike-dfs-channels-and-you-might-too/>
 2. <https://news.ycombinator.com/item?id=34134905>
 3. <https://www.reddit.com/r/AmpliFi/comments/ye445i/i_think_i_have_been_killing_my_own_wifi/>
-4. ... consider using classic, non-DFS channels?
+4. <https://metis.fi/en/2017/08/dfs-en/>
+5. <https://www.ekahau.com/blog/channel-planning-best-practices-for-better-wi-fi/>
+6. ... consider using classic, non-DFS channels?
