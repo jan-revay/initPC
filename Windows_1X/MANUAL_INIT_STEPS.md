@@ -167,6 +167,10 @@ to .vmx file in the virtual machine image directory.
 
 ## Desktop icons - organize
 
+## Install VMware workstation pro (or VirtualBox)
+
+
+
 # TODO
 
 - Do some research on how Sync your settings work in Windows and set it up
