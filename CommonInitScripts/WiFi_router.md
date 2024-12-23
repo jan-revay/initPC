@@ -26,3 +26,9 @@
 4. Test the connection speed on all devices in multiple rooms of the flat.
 
 Note: Currently I've measured the speeds in all rooms with 2.4GHz and 5GHz WiFi, and 5GHz one is quicker, less congested and more stable everywhere in the flat. Also, the 5GHz connection is lost quicker when I leave the house hence it shortens the glitch while switching to a mobile network (e.g. LTE).
+
+## TODO - toread:
+
+1. <https://mac-wifi.com/why-i-dislike-dfs-channels-and-you-might-too/>
+2. <https://news.ycombinator.com/item?id=34134905>
+3. ... consider using classic, non-DFS channels?
