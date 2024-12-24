@@ -22,9 +22,8 @@ sudo install -D -o root -g root -m 644 linux_signing_key.pub /etc/apt/keyrings/l
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/linux_signing_key.pub] http://dl.google.com/linux/chrome/deb/ stable main" \
     > /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get update
-sudo apt-get install google-chrome-stable
+sudo apt-get install -y google-chrome-stable chrome-gnome-shell
 popd
-sudo apt-get install chrome-gnome-shell
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
 . interactive_part.sh
