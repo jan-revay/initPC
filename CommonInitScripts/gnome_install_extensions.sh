@@ -7,7 +7,7 @@
 
 . ../prelude.sh
 
-sudo apt-get install gir1.2-gtop-2.0 pipx # needed by some performance monitoring extensions
+sudo apt-get install -y gir1.2-gtop-2.0 pipx # needed by some performance monitoring extensions
 pipx install gnome-extensions-cli --system-site-packages
 
 # TODO Another session manager extension can probably replace putwindows and
