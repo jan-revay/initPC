@@ -251,13 +251,13 @@ here: <https://github.com/jan-revay/initPC/issues>
 scripts with my old dconf dumps (backup_config repo)
 1. Put packages equivalent to windows ones to Linux init script
 1. Consider using ZFS or BTRFS for /home partition (or parts of the home dir)
-  - https://gist.github.com/saurabhnanda/6720c13fe02c4ffd950c80f41091e199
-  - https://www.quora.com/Which-format-is-faster-ZFS-or-Ext4
-  - https://www.phoronix.com/review/ubuntu1910-ext4-zfs
-  - https://medium.com/@rebrovadim/my-home-server-file-system-test-ext4-vs-zfs-spoiler-its-not-what-i-expected-e5e5802cbb66
-  - https://www.pitsdatarecovery.net/blog/zfs-vs-ext4/
-  - https://www.cbtnuggets.com/blog/technology/system-admin/linux-file-systems-ext4-vs-btrfs-vs-zfs
-  - https://www.reddit.com/r/linux/comments/yrlljv/zfs_vs_btrfs_in_2022/
+     - https://gist.github.com/saurabhnanda/6720c13fe02c4ffd950c80f41091e199
+     - https://www.quora.com/Which-format-is-faster-ZFS-or-Ext4
+     - https://www.phoronix.com/review/ubuntu1910-ext4-zfs
+     - https://medium.com/@rebrovadim/my-home-server-file-system-test-ext4-vs-zfs-spoiler-its-not-what-i-expected-e5e5802cbb66
+     - https://www.pitsdatarecovery.net/blog/zfs-vs-ext4/
+     - https://www.cbtnuggets.com/blog/technology/system-admin/linux-file-systems-ext4-vs-btrfs-vs-zfs
+     - https://www.reddit.com/r/linux/comments/yrlljv/zfs_vs_btrfs_in_2022/
 1. Remove jr-tutor commits (squash)
 
 ## Keyboard layout plans
