@@ -20,22 +20,12 @@ touch ~/.bashrc # some install scripts want to append stuff here
 # Why?: some packages need postfix and try to install it as a dependence
 # and then freeze the installation because postfix install script shows
 # an interactive menu.
-# TODO - investigate the postfix crash on ubuntu2VM
-# Dec 25 00:34:16 uVM systemd[1]: Created slice system-postfix.slice - Slice /system/postfix.
-# Dec 25 00:34:20 uVM systemd[1]: Starting postfix@-.service - Postfix Mail Transport Agent (instance -)...
-# Dec 25 00:34:20 uVM configure-instance.sh[2512]: postconf: fatal: open /etc/postfix/main.cf: No such file or directory
-# Dec 25 00:34:21 uVM configure-instance.sh[2850]: postconf: fatal: open /etc/postfix/main.cf: No such file or directory
-# Dec 25 00:34:22 uVM systemd[1]: postfix@-.service: Control process exited, code=exited, status=1/FAILURE
-# Dec 25 00:34:22 uVM systemd[1]: postfix@-.service: Failed with result 'exit-code'.
-# Dec 25 00:34:22 uVM systemd[1]: Failed to start postfix@-.service - Postfix Mail Transport Agent (instance -).
-# Dec 25 00:34:22 uVM systemd[1]: postfix.service - Postfix Mail Transport Agent was skipped because of an unmet condition check (ConditionPathExists=/etc/postfix/main.cf).
-# $ cat /etc/postfix/main.cf
-# cat: /etc/postfix/main.cf: No such file or directory
-# TODO -- maybe create just a minimal local config...
-sudo debconf-set-selections <<- EOF
-    postfix postfix/main_mailer_type select No configuration
-EOF
+# Preconfigure Postfix to select "Local only" and set address to localhost
+echo "postfix postfix/mailname string localhost" | sudo debconf-set-selections
+echo "postfix postfix/main_mailer_type select Local only" | sudo debconf-set-selections
 sudo apt-get install -y postfix
+sudo systemctl restart postfix
+sudo systemctl status postfix
 
 # sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test # repository with latest GCC
 LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' \
