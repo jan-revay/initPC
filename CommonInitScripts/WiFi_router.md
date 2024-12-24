@@ -1,5 +1,7 @@
 # WiFi 
 
+## TODO - this did not help - Samsung Galaxy is still dropping the 5GHz network...
+
 ## Router config (Huawei HG8145X6 FTTH, Orange)
 
 1. "WLAN" tab
