@@ -258,6 +258,7 @@ scripts with my old dconf dumps (backup_config repo)
   - https://www.pitsdatarecovery.net/blog/zfs-vs-ext4/
   - https://www.cbtnuggets.com/blog/technology/system-admin/linux-file-systems-ext4-vs-btrfs-vs-zfs
   - https://www.reddit.com/r/linux/comments/yrlljv/zfs_vs_btrfs_in_2022/
+1. Remove jr-tutor commits (squash)
 
 ## Keyboard layout plans
 
