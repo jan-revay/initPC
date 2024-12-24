@@ -17,7 +17,8 @@ elif [ "$1" == "" ]; then
     # TODO configure postfix in advance from command line
     # TODO what is this app and why does it automatically install itself on Ubuntu
     # server/desktop, but not in wsl? It needs user interaction hence adding it here.
-    sudo apt-get install -y postfix
+    sudo apt-get install -y postfix ttf-mscorefonts-installer
+
 fi
 
 . ../CommonInitScripts/gnome_install_extensions.sh
