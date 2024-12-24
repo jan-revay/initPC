@@ -251,3 +251,4 @@ it could be that there is a conflicting extension and two extensions fight with 
 
 - https://canonical-subiquity.readthedocs-hosted.com/en/latest/reference/autoinstall-reference.html
 - https://cloud.theodo.com/en/blog/ubuntu-autoinstall-subiquity#Our_use_case
+- https://github.com/canonical/subiquity
