@@ -246,3 +246,8 @@ it could be that there is a conflicting extension and two extensions fight with 
 
 - https://gist.github.com/probonopd/9feb7c20257af5dd915e3a9f2d1f2277
 - https://discussion.fedoraproject.org/t/wayland-whats-blocking-you-from-using-it/114012
+
+### Create autoinstall.yml for Ubuntu
+
+- https://canonical-subiquity.readthedocs-hosted.com/en/latest/reference/autoinstall-reference.html
+- https://cloud.theodo.com/en/blog/ubuntu-autoinstall-subiquity#Our_use_case
