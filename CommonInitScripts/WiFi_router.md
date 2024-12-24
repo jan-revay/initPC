@@ -2,6 +2,9 @@
 
 ## TODO - this did not help - Samsung Galaxy is still dropping the 5GHz network...
 
+1. Try resp. currently trying this: <https://eu.community.samsung.com/t5/galaxy-a-series/galaxy-a34-5g-keeps-disconnecting-from-wifi-after-waking/td-p/8327855/page/8>
+2. Why is the interference on the 5GHz channel 100 so high according to the router?
+
 ## Router config (Huawei HG8145X6 FTTH, Orange)
 
 1. "WLAN" tab
