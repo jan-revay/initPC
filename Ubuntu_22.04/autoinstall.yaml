@@ -33,7 +33,7 @@ autoinstall:
     install: true
   identity:
     hostname: jrVM
-    password: # TODO add
+    password: 
     realname: jr
     username: jr
   kernel:
