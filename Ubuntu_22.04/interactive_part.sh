@@ -14,8 +14,8 @@ if [ "$1" == "--noninteractive" ]; then
     echo "Skipping interactive commands as $1 parameter was provided"
     # TODO try configuring postfix noninteractively
     # TODO format the code nicer...
-    sudo debconf-set-selections <<EOF
-    postfix postfix/main_mailer_type select No configuration
+    sudo debconf-set-selections <<- EOF
+        postfix postfix/main_mailer_type select No configuration
 EOF
     sudo apt-get install -y postfix
 elif [ "$1" == "" ]; then
