@@ -181,6 +181,7 @@ sudo update-alternatives --set editor /usr/bin/nvim
 pushd RootDotfiles/
 sudo stow -vvv --target=/ disable_highres_scroll/
 
+# TODO do not stow this in a VM
 if stow -vvv --no --target=/ MX3_MASTER_LOGID_CONFIG/; then
     sudo stow -vvv --target=/ MX3_MASTER_LOGID_CONFIG/
 else

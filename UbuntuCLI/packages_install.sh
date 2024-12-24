@@ -117,6 +117,7 @@ sudo apt-get -y autoremove
 apt list --upgradable # check for the packages that were not upgraded
 
 # === PYTHON APPLICATIONS ===
+# TODO add pipx ensurepath ifdef as in gnome_extensions_install.sh
 # pipx ensurepath - ensurepath is broken (it adds the path multiple times in subshells)
 
 # Static analyzers
