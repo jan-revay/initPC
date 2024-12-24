@@ -14,7 +14,9 @@ if [ "$1" == "--noninteractive" ]; then
     echo "Skipping interactive commands as $1 parameter was provided"
 elif [ "$1" == "" ]; then
     # TODO install noninteractively...
-    sudo apt-get install -y postfix ttf-mscorefonts-installer
+    # TODO - ttf-mscorefonts-installer currently breaks the installer and
+    # one needs to install it separatelly
+    sudo apt-get install -y ttf-mscorefonts-installer
 fi
 
 . ../CommonInitScripts/gnome_install_extensions.sh
