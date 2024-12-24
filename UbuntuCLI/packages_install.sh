@@ -20,6 +20,7 @@ touch ~/.bashrc # some install scripts want to append stuff here
 # Why?: some packages need postfix and try to install it as a dependence
 # and then freeze the installation because postfix install script shows
 # an interactive menu.
+# TODO - investigate the postfix crash on ubuntu2VM
 sudo debconf-set-selections <<- EOF
     postfix postfix/main_mailer_type select No configuration
 EOF
