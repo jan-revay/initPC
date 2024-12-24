@@ -17,6 +17,14 @@ apt list --upgradable # check for the packages that were not upgraded
 # see: https://github.com/jan-revay/initPC/issues/31
 touch ~/.bashrc # some install scripts want to append stuff here
 
+# Why?: some packages need postfix and try to install it as a dependence
+# and then freeze the installation because postfix install script shows
+# an interactive menu.
+sudo debconf-set-selections <<- EOF
+    postfix postfix/main_mailer_type select No configuration
+EOF
+sudo apt-get install -y postfix
+
 # sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test # repository with latest GCC
 LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' \
     | grep -E -o '^gcc-[0-9][0-9]' | sort -r | head --lines 1 | grep -E -o '[0-9][0-9]')
