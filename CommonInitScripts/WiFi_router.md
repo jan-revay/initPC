@@ -10,6 +10,8 @@
     1. Set the root login password for the router's WebGUI.
     1. Turn off led indicators ("Indicator Status Management" -> "Indicator Switch" -> Off).
     1. Turn off "Enable Energy Saving" ("Advanced power management" -> "Enable Energy Saving" - uncheck).
+1. 5G Basic Network Settings
+    1. Authentication Mode: WPA3 SAE
 1. 5G Advanced Network Settings:
     1. Turn off "Band Steering" on 5 GHz WiFi. <https://www.devolo.global/glossary/band-steering>
     1. Set the 5GHz "channel" to fixed **100** (see: <https://en.wikipedia.org/wiki/List_of_WLAN_channels>) if it is not interfering with a neighbor's WiFI (use Android WiFi analysis tools to investigate).
