@@ -20,6 +20,9 @@ if ! echo "$PATH" | grep /home/jr/.local/bin; then
 fi
 
 pipx install gnome-extensions-cli --system-site-packages
+# TODO one source.. was not enough for come reason...
+# shellcheck source=/dev/null
+source ~/.bashrc
 
 # TODO Another session manager extension can probably replace putwindows and
 # also my autostart scripts as it is also able to start the applications.
