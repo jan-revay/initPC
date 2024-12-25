@@ -3,6 +3,9 @@
 # This script is being run first i.e. before anything else, so that all
 # user interaction is finished as quickly as possible.
 
+# TODO - run the interactive parts at the end instead of the beginning
+# so that I can simplify the code.
+
 . ../prelude.sh
 
 function interactive_part
