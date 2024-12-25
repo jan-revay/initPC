@@ -27,7 +27,7 @@ on:
 jobs:
   distro-test:
     continue-on-error: true
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     name: ${{ matrix.container }}
     strategy:
       matrix: # TODO add gnome as an additional row in the matrix
