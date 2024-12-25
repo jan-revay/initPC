@@ -20,5 +20,5 @@ fi
 . ubuntu_specific_packages.sh
 . packages_install.sh
 . interactive_part.sh
-# . packages_install_optional.sh
+. packages_install_optional.sh
 . configs_install.sh
