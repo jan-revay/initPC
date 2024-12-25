@@ -22,7 +22,7 @@ function interactive_part
     fi
 }
 
-# TODO improve parameter parsing - move it to platform independent code
+# TODO improve parameter parsing - move it to platform-independent code
 
 if [ "$1" == "--noninteractive" ]; then
     echo "Skipping interactive commands as $1 parameter was provided"
