@@ -100,6 +100,7 @@ fi
 
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
+# TODO add else branch for other distros
 # The LLVM convenience script does not work with Debian testing and Kali
 if bash -c '. ../prelude.sh; distro_is ubuntu || (distro_is debian && distro_version_le 12)' &> /dev/null; then
     # Install the most recent llvm (see https://apt.llvm.org/)
