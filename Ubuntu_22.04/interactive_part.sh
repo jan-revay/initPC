@@ -3,9 +3,6 @@
 # This script is being run first i.e. before anything else, so that all
 # user interaction is finished as quickly as possible.
 
-# TODO - run the interactive parts at the end instead of the beginning
-# so that I can simplify the code.
-
 . ../prelude.sh
 
 . ../UbuntuCLI/interactive_part.sh
@@ -14,9 +11,9 @@
 # TODO -- refactor parameter handling and initialization of the NONINTERACTIVE global variable
 if [ "$1" == "--noninteractive" ]; then
     readonly NONINTERACTIVE='true'
-    echo "Skipping interactive commands as $1 parameter was provided"
+    echo "Ubuntu 22.04 - Skipping interactive commands as $1 parameter was provided"
 elif [ "$1" == "" ]; then
-    echo "Executing the interactive part..."
+    echo "Ubuntu 22.04 - Executing the interactive part..."
 fi
 
 . ../CommonInitScripts/gnome_install_extensions.sh

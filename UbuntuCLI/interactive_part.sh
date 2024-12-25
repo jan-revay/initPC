@@ -3,9 +3,6 @@
 # This script is being run first i.e. before anything else, so that all
 # user interaction is finished as quickly as possible.
 
-# TODO - run the interactive parts at the end instead of the beginning
-# so that I can simplify the code.
-
 . ../prelude.sh
 
 function interactive_part
@@ -13,8 +10,6 @@ function interactive_part
     if ! gh auth status; then
         read -r -s -p "GitHub token: " GITHUB_TOKEN # TODO add a check for empty token
         echo                                        # add newline
-        sudo apt-get -y update
-        sudo apt-get install -y gh
         echo "${GITHUB_TOKEN}" | gh auth login --hostname github.com --with-token
         gh config set git_protocol https --host github.com
         # With the next line, the result of `gh auth login` is exactly the same as
@@ -28,13 +23,6 @@ function interactive_part
 }
 
 # TODO improve parameter parsing - move it to platform independent code
-if [ "$1" = "--help" ]; then
-    echo "usage: ./run_all.sh [--noninteractive]"
-    echo
-    # shellcheck disable=SC2016
-    echo '--noninteractive  skip stuff requiring user interaction (e.g. `gh auth login`)'
-    exit "${EXIT_SUCCESS}"
-fi
 
 if [ "$1" == "--noninteractive" ]; then
     echo "Skipping interactive commands as $1 parameter was provided"

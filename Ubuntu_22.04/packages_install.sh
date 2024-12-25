@@ -29,6 +29,18 @@ else                                                            # we are running
     sudo apt-get install -y logiops
 fi
 
+# TODO try to install chrome in a more standard way
+mkdir -p ~/tmp
+pushd ~/tmp
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub > linux_signing_key.pub
+sudo install -D -o root -g root -m 644 linux_signing_key.pub /etc/apt/keyrings/linux_signing_key.pub
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/linux_signing_key.pub] http://dl.google.com/linux/chrome/deb/ stable main" \
+    > /etc/apt/sources.list.d/google-chrome.list'
+sudo apt-get -y update
+sudo apt-get install -y google-chrome-stable chrome-gnome-shell
+rm linux_signing_key.pub
+popd
+
 echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula boolean true" \
     | sudo debconf-set-selections
 
