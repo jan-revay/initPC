@@ -20,12 +20,12 @@ touch ~/.bashrc # some install scripts want to append stuff here
 # Why?: some packages need postfix and try to install it as a dependence
 # and then freeze the installation because postfix install script shows
 # an interactive menu.
-# Preconfigure Postfix to select "Local only" and set address to localhost
+# Preconfigure Postfix to select "Local only" and set the address to localhost
+# TODO find out which packages have postfix as a dependency ant maybe try to remove
+# the dependency in the future?
 echo "postfix postfix/mailname string localhost" | sudo debconf-set-selections
 echo "postfix postfix/main_mailer_type select Local only" | sudo debconf-set-selections
 sudo apt-get install -y postfix
-sudo systemctl restart postfix
-sudo systemctl status postfix
 
 # sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test # repository with latest GCC
 LATEST_GCC_VER_IN_APT=$(apt-cache search --names-only '^gcc-[0-9][0-9]$' \
