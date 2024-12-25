@@ -13,10 +13,7 @@ if [ "$1" == "--noninteractive" ]; then
     readonly NONINTERACTIVE='true'
     echo "Skipping interactive commands as $1 parameter was provided"
 elif [ "$1" == "" ]; then
-    # TODO install noninteractively...
-    # TODO - ttf-mscorefonts-installer currently breaks the installer and
-    # one needs to install it separatelly
-    sudo apt-get install -y ttf-mscorefonts-installer
+    echo "Executing the interactive part..."
 fi
 
 . ../CommonInitScripts/gnome_install_extensions.sh

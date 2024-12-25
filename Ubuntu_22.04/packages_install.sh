@@ -29,6 +29,9 @@ else                                                            # we are running
     sudo apt-get install -y logiops
 fi
 
+echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula boolean true" \
+    | sudo debconf-set-selections
+
 # TODO add kitty terminal emulator
 readonly APT_GUI_PACKAGES=(
     # ===== package managers =====
@@ -51,6 +54,9 @@ readonly APT_GUI_PACKAGES=(
     # it is just a bash script, hence it might make sense to install from source
     meld kdevelop coqide qgit cmake-gui # gitk git-gui
     qtcreator
+
+    # ===== FONTS ====
+    ttf-mscorefonts-installer
 
     # ===== MESSAGING, PRODUCTIVITY, GRAPHICS, SOUND AND BOOKS =====
     gimp krita inkscape okular evince vlc audacity xdotool
