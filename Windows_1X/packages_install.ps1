@@ -34,6 +34,9 @@ if (-not (Get-Command scoop -ErrorAction SilentlyContinue)) {
 # TODO uncomment the next line resp. fix it so that it works and (scoop is not found right after the installation, probably path problem)
 scoop install windows-virtualdesktop-helper
 
+# TODO - go over this list https://github.com/ChrisTitusTech/winutil/blob/main/config/applications.json and add useful apps
+# TODO add linux versions of the useful apps to linux initPC script
+
 $WINGET_PACKAGES = @(
 # HW monitoring
     'CPUID.CPU-Z'
