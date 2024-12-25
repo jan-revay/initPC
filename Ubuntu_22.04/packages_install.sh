@@ -56,7 +56,7 @@ readonly APT_GUI_PACKAGES=(
     procps
     libglib2.0-dev
     libgtop2-dev
-    gir1.2-gtop-2.0
+    gir1.2-gtop-2.0 # gir1.2-gtop-2.0 is needed by some performance monitoring GNOME extensions
 
     # I don't remember why this is here (TODO review)
     linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
@@ -96,6 +96,8 @@ else
 fi
 
 time sudo apt-get install -y "${APT_GUI_PACKAGES[@]}"
+
+pipx install gnome-extensions-cli --system-site-packages
 
 # TODO add packages from PopOS here (and use this as a base for the PopOS)
 # TODO make the script noninteractive

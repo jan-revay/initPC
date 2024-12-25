@@ -7,22 +7,6 @@
 
 . ../prelude.sh
 
-sudo apt-get install -y gir1.2-gtop-2.0 pipx # gir1.2-gtop-2.0 is needed by some performance monitoring extensions
-
-# TODO - also add this to packages_install.sh
-# TODO reorganize the package installation so that it is not spread over multiple files
-# TODO maybe move the interactive part to the end - that way the packages can be installed
-# in one place
-if ! echo "$PATH" | grep /home/jr/.local/bin; then
-    pipx ensurepath
-    # shellcheck source=/dev/null
-    source ~/.bashrc
-fi
-
-pipx install gnome-extensions-cli --system-site-packages
-# TODO the source command was not enough for come reason... investigate!!!
-export PATH="$PATH:/home/jr/.local/bin"
-
 # TODO Another session manager extension can probably replace putwindows and
 # also my autostart scripts as it is also able to start the applications.
 # TODO more research wrt the Another session manager extension and also consider manually

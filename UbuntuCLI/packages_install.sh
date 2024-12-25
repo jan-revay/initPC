@@ -129,9 +129,6 @@ sudo apt-get -y autoremove
 apt list --upgradable # check for the packages that were not upgraded
 
 # === PYTHON APPLICATIONS ===
-# TODO add pipx ensurepath ifdef as in gnome_extensions_install.sh
-# pipx ensurepath - ensurepath is broken (it adds the path multiple times in subshells)
-
 # Static analyzers
 # codechecker disabled as it fails: pip seemed to fail to build package: PyYAML==5.4.1
 # pipx install codechecker
@@ -142,6 +139,17 @@ readonly PIPX_PACKAGES=(
 # TODO add fb_infer, cppdepend, protolint, PVS...
 
 time print0 "${PIPX_PACKAGES[@]}" | xargs -0 -I % pipx install %
+
+# pipx ensurepath - ensurepath is broken (it adds the path multiple times in subshells)
+# TODO - is the ensurepath still broken? I think so as it adds the path indefinitely... -- TODO test
+# in one place
+if ! echo "$PATH" | grep /home/jr/.local/bin; then
+    pipx ensurepath
+    # shellcheck source=/dev/null
+    source ~/.bashrc
+    # TODO the source command was not enough for come reason... investigate!!!
+    export PATH="$PATH:/home/jr/.local/bin"
+fi
 
 # === Rust packages ===
 # shellcheck source=/dev/null
