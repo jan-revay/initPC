@@ -7,6 +7,7 @@ distro_is ubuntu
 distro_version_ge 22
 gnome_present no
 
+# TODO improve parameter parsing - move it to platform independent code
 if [ "$1" = "--help" ]; then
     echo "usage: ./run_all.sh [--noninteractive]"
     echo
