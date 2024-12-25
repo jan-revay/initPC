@@ -29,6 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     name: ${{ matrix.container }}
     strategy:
+      fail-fast: false
       matrix: # TODO add gnome as an additional row in the matrix
         container:
           - 'ubuntu:22.04'
@@ -95,17 +96,3 @@ jobs:
             ! -name ".wget-hsts" \
           \) -print0 |
           xargs -0 -I{} bash -c 'if ! diff -C 30 "/tmp/old_home/$1" "$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
-        continue-on-error: true
-
-  # check-results:
-  #   runs-on: ubuntu-22.04
-  #   needs: distro-test
-  #   steps:
-  #     - name: Check distro-test results
-  #       run: |
-  #         for job in "${{ needs.distro-test.result }}"; do
-  #           if [[ $job == *"failure"* ]]; then
-  #             echo "A job in the matrix failed.";
-  #             exit 1;
-  #           fi
-  #         done
