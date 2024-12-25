@@ -45,7 +45,6 @@ jobs:
     # TODO - consider making these steps some kind of subroutine
     # or some other way to avoid redundant runs in the matrix
     # consider using dependencies for that: https://stackoverflow.com/questions/58457140/dependencies-between-workflows-on-github-actions 
-    continue-on-error: true
     steps: # TODO - exit if the change was in the path that is not a dependency
       # - name: "set APT to non-interactive"
       #   shell: bash
@@ -96,6 +95,7 @@ jobs:
             ! -name ".wget-hsts" \
           \) -print0 |
           xargs -0 -I{} bash -c 'if ! diff -C 30 "/tmp/old_home/$1" "$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
+        continue-on-error: true
 
   # check-results:
   #   runs-on: ubuntu-22.04
