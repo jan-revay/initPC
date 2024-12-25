@@ -103,7 +103,7 @@ jobs:
     steps:
       - name: Check distro-test results
         run: |
-          for job in ${{ toJSON(needs.distro-test.outputs) }}; do
+          for job in "${{ needs.distro-test.result }}"; do
             if [[ $job == *"failure"* ]]; then
               echo "A job in the matrix failed.";
               exit 1;
