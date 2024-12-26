@@ -44,7 +44,7 @@ sudo apt-get install -y google-chrome-stable chrome-gnome-shell
 rm linux_signing_key.pub
 
 # Install VSC (Snap package is problematic for C++ because of issues with libraries)
-echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-selections
+# echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-selections
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
 echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" \
