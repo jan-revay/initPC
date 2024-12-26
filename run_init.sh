@@ -14,7 +14,7 @@ if [ "$1" = "--help" ]; then
     echo '--noninteractive  skip stuff requiring user interaction (e.g. `gh auth login`)'
     exit "${EXIT_SUCCESS}"
 elif [ "$1" == "--noninteractive" ]; then
-    readonly NONINTERACTIVE='true'
+    export NONINTERACTIVE='true'
     echo 'NONINTERACTIVE=true'
 elif [ "$1" == "" ]; then
     echo "Interactive part of the script will be executed at the end..."
