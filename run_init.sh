@@ -6,7 +6,6 @@
 
 . prelude.sh
 
-# TODO improve parameter parsing - move it to platform-independent code
 if [ "$1" = "--help" ]; then
     echo "usage: ./run_all.sh [--noninteractive]"
     echo
