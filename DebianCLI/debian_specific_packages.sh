@@ -10,7 +10,7 @@
 . ../prelude.sh
 
 mkdir -p ~/x/
-cd ~/x/
+pushd ~/x/
 
 if ! test -d helix; then
     git clone https://github.com/helix-editor/helix
@@ -36,3 +36,4 @@ hx --health
 # for ubuntu and debian (don't forget to make writing /etc/wsl.conf idempotent)
 # TODO - uncomment broken packages and add specific versions (so that they compile ok)
 cargo install du-dust # onefetch procs  - temporary broken (won't compile)
+popd
