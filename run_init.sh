@@ -6,6 +6,23 @@
 
 . prelude.sh
 
+# TODO improve parameter parsing - move it to platform-independent code
+if [ "$1" = "--help" ]; then
+    echo "usage: ./run_all.sh [--noninteractive]"
+    echo
+    # shellcheck disable=SC2016
+    echo '--noninteractive  skip stuff requiring user interaction (e.g. `gh auth login`)'
+    exit "${EXIT_SUCCESS}"
+elif [ "$1" == "--noninteractive" ]; then
+    readonly NONINTERACTIVE='true'
+    echo 'NONINTERACTIVE=true'
+elif [ "$1" == "" ]; then
+    echo "Interactive part of the script will be executed at the end..."
+else
+    echo "Invalid argument $1"
+    exit "${EXIT_INVALID_ARGUMENT}"
+fi
+
 LOG_PATH="$(pwd)/Logs/$(date '+%Y%m%d_%H%M%S').log"
 readonly LOG_PATH
 mkdir -p "$(dirname "${LOG_PATH}")"

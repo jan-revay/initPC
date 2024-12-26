@@ -24,11 +24,8 @@ function interactive_part
 
 # TODO improve parameter parsing - move it to platform-independent code
 
-if [ "$1" == "--noninteractive" ]; then
-    echo "Skipping interactive commands as $1 parameter was provided"
-elif [ "$1" == "" ]; then
-    interactive_part
+if [ "${NONINTERACTIVE}" == 'true' ]; then
+    echo 'Skipping interactive commands as --noninteractive parameter was provided'
 else
-    echo "invalid argument $1"
-    exit "${EXIT_INVALID_ARGUMENT}"
+    interactive_part
 fi

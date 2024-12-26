@@ -6,14 +6,4 @@
 . ../prelude.sh
 
 . ../UbuntuCLI/interactive_part.sh
-
-# TODO racionalize parameter handling (`--help` and invalid parameters are handled in UbuntuCLI)
-# TODO -- refactor parameter handling and initialization of the NONINTERACTIVE global variable
-if [ "$1" == "--noninteractive" ]; then
-    readonly NONINTERACTIVE='true'
-    echo "Ubuntu 22.04 - Skipping interactive commands as $1 parameter was provided"
-elif [ "$1" == "" ]; then
-    echo "Ubuntu 22.04 - Executing the interactive part..."
-fi
-
 . ../CommonInitScripts/gnome_install_extensions.sh
