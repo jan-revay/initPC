@@ -9,6 +9,7 @@
 
 . ../prelude.sh
 
+mkdir -p ~/x/
 cd ~/x/
 
 if ! test -d helix; then
