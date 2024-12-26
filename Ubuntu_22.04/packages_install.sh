@@ -77,10 +77,10 @@ readonly APT_GUI_PACKAGES=(
     linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
 
     # ===== Editors, tools and IDEs =====
-    # TODO gitk and git-gui break the install script (dependencies) - choose an other install method
+    # TODO gitk and git-gui break the install script (dependencies) - choose another install method
     # it is just a bash script, hence it might make sense to install from source
     meld kdevelop coqide qgit cmake-gui # gitk git-gui
-    qtcreator
+    qtcreator kitty
 
     # ===== FONTS ====
     ttf-mscorefonts-installer
