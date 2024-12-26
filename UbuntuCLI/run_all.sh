@@ -9,7 +9,8 @@ gnome_present no
 
 . ubuntu_specific_packages.sh
 . packages_install.sh
+. ubuntu_specific_packages.sh
+. optional_packages_install.sh
 # stuff that requires user input can be turned off by `--noninteractive` CLI param
 . interactive_part.sh
-. optional_packages_install.sh
 . configs_install.sh
