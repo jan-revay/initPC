@@ -51,9 +51,9 @@ echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft
     | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
 rm -f packages.microsoft.gpg
 
-sudo apt install apt-transport-https
-sudo apt update
-sudo apt install code # or code-insiders
+sudo apt-get install -y apt-transport-https
+sudo apt-get -y update
+sudo apt-get install -y code # or code-insiders
 popd
 
 echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula boolean true" \
