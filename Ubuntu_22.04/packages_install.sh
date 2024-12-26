@@ -32,6 +32,9 @@ fi
 # TODO try to install chrome in a more standard way
 mkdir -p ~/tmp
 pushd ~/tmp
+
+# Install Google Chrome and Chrome extension for managing GNOME extensions
+sudo apt-get install -y wget gpg
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub > linux_signing_key.pub
 sudo install -D -o root -g root -m 644 linux_signing_key.pub /etc/apt/keyrings/linux_signing_key.pub
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/linux_signing_key.pub] http://dl.google.com/linux/chrome/deb/ stable main" \
@@ -39,6 +42,18 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/linux_signing_key.
 sudo apt-get -y update
 sudo apt-get install -y google-chrome-stable chrome-gnome-shell
 rm linux_signing_key.pub
+
+# Install VSC (Snap package is problematic for C++ because of issues with libraries)
+echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-selections
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" \
+    | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+rm -f packages.microsoft.gpg
+
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code # or code-insiders
 popd
 
 echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula boolean true" \
