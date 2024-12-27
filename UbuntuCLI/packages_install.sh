@@ -44,7 +44,7 @@ APT_PACKAGES=(
 
     # editors
     # TODO consider moving qtcreator to the GUI part of the script
-    neovim emacs
+    neovim emacs hexedit
 
     # utils
     ripgrep tree curl neofetch htop tmux at zsh traceroute jq stow
