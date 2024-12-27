@@ -21,9 +21,10 @@
 1. Test the connection speed and stability from multiple rooms in the flat + multiple devices.
 
 
+TODO - consider using band steering and a single SSID...
+TODO - remove the commented out text
 
-TODO - consider using band steering and single SSID...
-
+<!--
 ## OLD config
 
 ## TODO - this did not help - Samsung Galaxy is still dropping the 5GHz network...
@@ -68,3 +69,5 @@ Note: Currently I've measured the speeds in all rooms with 2.4GHz and 5GHz WiFi,
 4. <https://metis.fi/en/2017/08/dfs-en/>
 5. <https://www.ekahau.com/blog/channel-planning-best-practices-for-better-wi-fi/>
 6. ... consider using classic, non-DFS channels?
+
+-->
