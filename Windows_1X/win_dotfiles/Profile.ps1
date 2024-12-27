@@ -35,7 +35,7 @@ function spo { & git stash pop $args }
 New-Alias -Name t -Value cat
 New-Alias -Name v -Value nvim
 function x {Set-Location ~/x/} # all my development repos go here
-
+function w {Set-Location ~/initPC/Windows_1X/}
 
 # alias cd..='cd ..' - already exists in PowerShell
 function .. { Set-Location .. }
