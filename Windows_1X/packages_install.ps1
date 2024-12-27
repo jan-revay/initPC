@@ -87,6 +87,7 @@ $WINGET_PACKAGES = @(
     'Neovim.Neovim'
     'Helix.Helix'
     'Notepad++.Notepad++'
+    'WerWolv.ImHex'
 
 # Terminal emulators
     'Alacritty.Alacritty'
