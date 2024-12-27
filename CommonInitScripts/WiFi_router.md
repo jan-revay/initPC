@@ -16,7 +16,7 @@
             1. Note1: Channel 100 is a good choice because it has fewer devices on it as lower channels do and it has enough space for a continuous 80MHz channel width. European weather radars are on channels 120 - 130 <https://www.shmu.sk/sk/?page=2037>, hence the full 160 MHz channel width might be problematic, but 80 MHz width fits well without interfering.
             1. Note2: Due to frequency regulation, it takes around 12 minutes until the Wi-Fi network is available after the router is restarted (because channel 100 and channels around it use the DFS algorithm https://en.wikipedia.org/wiki/Dynamic_frequency_selection).
             1. <https://www.reddit.com/r/HomeNetworking/comments/18zoroy/best_of_dfs_channels/>
-            1. Use this app to check whether the channel 100 is +- free: <https://github.com/jan-revay/initPC/blob/devel/CommonInitScripts/WiFi_router.md>
+            1. Use this app to check whether the channel 100 is +- free: <https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&pli=1>
         1. (IMPORTANT!!!) **Set "Channel width" to "Auto 20/40/80".**
     1. "Wi-Fi Coverage Management" -> "Select a policy to synchronize Wi-Fi parameters to the newly detected external AP." -> "Do not enable automatic synchronization." (TODO this is probably not necessary)
 1. Test the connection speed and stability from multiple rooms in the flat + multiple devices.
