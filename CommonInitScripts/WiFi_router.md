@@ -11,19 +11,20 @@
     1. 5G Basic Network Settings
         1. Authentication Mode: WPA3 SAE
     1. 5G Advanced Network Settings:
-        1. (recommended - OPTIONAL) Turn off "Band Steering" on 5 GHz WiFi. <https://www.devolo.global/glossary/band-steering>
-        1. Set the 5GHz **"channel" to fixed 100** (see: <https://en.wikipedia.org/wiki/List_of_WLAN_channels>) if it is not interfering with a neighbor's WiFI (use Android WiFi analysis tools to investigate).
-            1. Note1: Channel 100 is a good choice because it has fewer devices on it as lower channels do and it has enough space for a continuous 80MHz channel width. European weather radars are on channels 120 - 130 <https://www.shmu.sk/sk/?page=2037>, hence the full 160 MHz channel width might be problematic, but 80 MHz width fits well without interfering.
-            1. Note2: Due to frequency regulation, it takes around 12 minutes until the Wi-Fi network is available after the router is restarted (because channel 100 and channels around it use the DFS algorithm https://en.wikipedia.org/wiki/Dynamic_frequency_selection).
-            1. <https://www.reddit.com/r/HomeNetworking/comments/18zoroy/best_of_dfs_channels/>
-            1. Use this app to check whether the channel 100 is +- free: <https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&pli=1>
         1. (IMPORTANT!!!) **Set "Channel width" to "Auto 20/40/80".**
+        1. Set the 5GHz **"channel" to fixed 100** (see: <https://en.wikipedia.org/wiki/List_of_WLAN_channels>) if it is not interfering with a neighbor's WiFI (use this Android WiFi analysis tool to investigate <https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&pli=1>).
+            1. Note1: Channel 100 is a good choice because it usually has fewer devices on it than lower channels do and it has enough channels above (channels 100 - 116) for a continuous 80MHz channel width.
+            1. Note2: Slovak weather radars are on channels 120 - 130, see: <https://www.shmu.sk/sk/?page=2037>, hence the full 160 MHz bandwidth might be problematic in Bratislava, as both the Bratislava Airport and SHMU radar station Malý Javonrík are in 10km radius, but 80 MHz bandwidth fits well without interfering.
+            1. Note3: Due to frequency regulations, it takes around 12 minutes until the Wi-Fi network is available after the router is restarted (because channel 100 and channels around it use the DFS algorithm https://en.wikipedia.org/wiki/Dynamic_frequency_selection).
+            1. Note4: If channel 100 is busy (more than 2 access points on it), alternatively channel 36 with 160 Mhz bandwidth, or channel 52 with 80 MHz bandwidth can be used also (not many other options for 80MHz bandwidth with this router).
+            1. See: <https://www.reddit.com/r/HomeNetworking/comments/18zoroy/best_of_dfs_channels/>
+        1. (recommended for smaller flats - OPTIONAL) Turn off "Band Steering" on 5 GHz WiFi. <https://www.devolo.global/glossary/band-steering>
     1. "Wi-Fi Coverage Management" -> "Select a policy to synchronize Wi-Fi parameters to the newly detected external AP." -> "Do not enable automatic synchronization." (TODO this is probably not necessary)
 1. Test the connection speed and stability from multiple rooms in the flat + multiple devices.
 
 
 TODO - consider using band steering and a single SSID...
-TODO - remove the commented out text
+TODO - remove the commented-out text
 
 <!--
 ## OLD config
