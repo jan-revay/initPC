@@ -23,7 +23,7 @@
 1. Test the connection speed and stability from multiple rooms in the flat + multiple devices.
 
 
-TODO - consider using band steering and a single SSID...
+TODO - consider using band steering and a single SSID...  
 TODO - remove the commented-out text
 
 <!--
