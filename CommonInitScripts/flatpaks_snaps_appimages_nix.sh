@@ -36,6 +36,7 @@ else
         com.sindresorhus.Caprine
         com.spotify.Client
         com.axosoft.GitKraken
+        net.werwolv.ImHex
     )
     # TODO try fixing flatpak installation without sudo (or at least do some research
     # whether the sudo will not break sth.)
