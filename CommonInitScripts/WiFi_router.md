@@ -1,5 +1,31 @@
 # WiFi 
 
+## New config - Router config (Huawei HG8145X6 FTTH, Orange)
+
+1. "System tools" tab (resp. the first login screen)
+    1. Set the root login password for the router's WebGUI.
+    1. Turn off led indicators ("Indicator Status Management" -> "Indicator Switch" -> Off).
+    1. (CONSIDER - OPTIONAL) Turn off "Enable Energy Saving" ("Advanced power management" -> "Enable Energy Saving" - uncheck).
+1. "WLAN" tab
+    1. Set SSID and PW on 2.4 GHz and 5 GHz WiFI.  
+    1. 5G Basic Network Settings
+        1. Authentication Mode: WPA3 SAE
+    1. 5G Advanced Network Settings:
+        1. (recommended - OPTIONAL) Turn off "Band Steering" on 5 GHz WiFi. <https://www.devolo.global/glossary/band-steering>
+        1. Set the 5GHz **"channel" to fixed 100** (see: <https://en.wikipedia.org/wiki/List_of_WLAN_channels>) if it is not interfering with a neighbor's WiFI (use Android WiFi analysis tools to investigate).
+            1. Note1: Channel 100 is a good choice because it has fewer devices on it as lower channels do and it has enough space for a continuous 80MHz resp. 160 MHz channel width. European weather radars are on channels 120 - 130 <https://www.shmu.sk/sk/?page=2037>, hence the full 160 MHz channel width might be problematic, but 80 MHz width fits well without interfering.
+            1. Note2: Due to frequency regulation, it takes around 12 minutes until the Wi-Fi network is available after the router is restarted (because channel 100 and channels around it use the DFS algorithm https://en.wikipedia.org/wiki/Dynamic_frequency_selection).
+            1. <https://www.reddit.com/r/HomeNetworking/comments/18zoroy/best_of_dfs_channels/> 
+        1. (IMPORTANT!!!) **Set "Channel width" to "Auto 20/40/80".**
+    1. "Wi-Fi Coverage Management" -> "Select a policy to synchronize Wi-Fi parameters to the newly detected external AP." -> "Do not enable automatic synchronization." (TODO this is probably not necessary)
+1. Test the connection speed and stability from multiple rooms in the flat + multiple devices.
+
+
+
+TODO - consider using band steering and single SSID...
+
+## OLD config
+
 ## TODO - this did not help - Samsung Galaxy is still dropping the 5GHz network...
 
 1. Try resp. currently trying this: <https://eu.community.samsung.com/t5/galaxy-a-series/galaxy-a34-5g-keeps-disconnecting-from-wifi-after-waking/td-p/8327855/page/8>
@@ -21,8 +47,8 @@
         1. Note1: Channel 100 is a good choice because it has fewer devices on it as lower channels do and it has enough space for a continuous 80MHz resp. 160 MHz channel width. European weather radars are on channels 120 - 130 <https://www.shmu.sk/sk/?page=2037>, hence the full 160 MHz channel width might be problematic, but 80 MHz width fits well without interfering.
         1. Note2: Due to frequency regulation, it takes around 12 minutes until the Wi-Fi network is available after the router is restarted (because channel 100 and channels around it use the DFS algorithm https://en.wikipedia.org/wiki/Dynamic_frequency_selection).
         1. <https://www.reddit.com/r/HomeNetworking/comments/18zoroy/best_of_dfs_channels/> 
-    1. Set "Channel width" to "Auto 20/40/80/160" or to "Auto 20/40/80" (prefer 160 if the signal is strong enough, test both).
-    1. "Wi-Fi Coverage Management" -> "Select a policy to synchronize Wi-Fi parameters to the newly detected external AP." -> "Do not enable automatic synchronization." (TODO this is probably not necessary)
+    1. Set "Channel width" to "Auto 20/40/80".
+1. "Wi-Fi Coverage Management" -> "Select a policy to synchronize Wi-Fi parameters to the newly detected external AP." -> "Do not enable automatic synchronization." (TODO this is probably not necessary)
 1. Test the connection speed and stability from multiple rooms in the flat + multiple devices.
 
 ## Device config (Android phones, PCs, laptops, ebook readers, smart watches...)
