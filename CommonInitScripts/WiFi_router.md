@@ -1,6 +1,6 @@
 # WiFi 
 
-## New config - Router config (Huawei HG8145X6 FTTH, Orange)
+## Router config (Huawei HG8145X6 FTTH, Orange, Bratislava)
 
 1. "System tools" tab (resp. the first login screen)
     1. Set the root login password for the router's WebGUI.
