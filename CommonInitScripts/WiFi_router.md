@@ -22,7 +22,7 @@ Note: The only 2 important steps in the following are setting the "Channel width
 
 ## Device config (Android phones, PCs, laptops, ebook readers, smart watches...)
 
-### Smartphones, laptops, ebook readers and PCs
+### Smartphones, ebook readers...
 
 1. Only connect to 5GHz WiFi.
 2. (in small apartments) Turn off the "Connect automatically" option for 2.4 GHz WiFi
@@ -33,7 +33,6 @@ Note: The only 2 important steps in the following are setting the "Channel width
 1. Only connect to 2.4 GHz WiFi
 2. Manually check that 5 GHz WiFi is not saved and auto-connect off for 5 GHz.
 3. Note: Try to move as many non-critical devices to 2.4 GHz WiFi as possible, as it will improve the reliability of the 5GHz WiFi.
-
 
 ### Laptops and PCs
 
