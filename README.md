@@ -259,6 +259,7 @@ scripts with my old dconf dumps (backup_config repo)
      - https://www.cbtnuggets.com/blog/technology/system-admin/linux-file-systems-ext4-vs-btrfs-vs-zfs
      - https://www.reddit.com/r/linux/comments/yrlljv/zfs_vs_btrfs_in_2022/
 1. Remove jr-tutor commits (squash)
+1. Use ChatGPT and similar tools to improve grammar in Markdown files resp. code clarity in code files.
 
 ## Keyboard layout plans
 
