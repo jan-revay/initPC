@@ -1,6 +1,6 @@
 # WiFi 
 
-Note: The only 2 important steps in the following are setting the Channel width to "Channel width" to "Auto 20/40/80" and manually setting the channel to 100. Rest is just a recommendation.
+Note: The only 2 important steps in the following are setting the Channel width to "Channel width" to "Auto 20/40/80" and manually setting the channel to 100, the remaining ones are just recommendations.
 
 ## Router config (Huawei HG8145X6 FTTH, single WiFi access point, Orange, Bratislava)
 
