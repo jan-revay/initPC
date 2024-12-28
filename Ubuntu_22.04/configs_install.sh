@@ -110,6 +110,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Cont
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Control><Super>End']"
 
+# TODO - consider also adding Alt+1..5 resp. also Alt+QWERTY for workspace switching
+# The advantage is that I can switch the workspace with one hand that way.
+# TODO - inspect conflicting keybindings on Win and Linux first though
+
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Control><Alt><Super>h']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Control><Alt><Super>j']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Control><Alt><Super>k']"
