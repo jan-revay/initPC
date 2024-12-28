@@ -21,7 +21,7 @@ APT_PACKAGES+=(nodejs ruby)         # JavaScript & Ruby
 APT_PACKAGES+=(neovim helix)        # code editors
 # utils - TODO organize
 APT_PACKAGES+=(cppcheck iwyu shfmt shellcheck)              # static analyzers
-APT_PACKAGES+=(valgrind doxygen)                            # other coding tools
+APT_PACKAGES+=(valgrind doxygen binutils)                   # other coding tools
 APT_PACKAGES+=(zsh fish tmux tree dust onefetch procs 7zip) # shells and commands
 APT_PACKAGES+=(tokei fd gh git htop bat exa jq man neofetch openssh ripgrep fzf)
 APT_PACKAGES+=(imagemagick)
