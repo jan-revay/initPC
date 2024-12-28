@@ -41,7 +41,7 @@ Note: The only 2 important steps in the following are setting the "Channel width
 ... Test the connection speed on all devices in multiple rooms of the flat.
 
 
-Note: Currently I've measured the speeds in all rooms with 2.4GHz and 5GHz WiFi, and 5GHz one is quicker, less congested and more stable everywhere in the flat (3 room apartment in Petrzalka). Also, the 5GHz connection/signal is lost quicker when I leave the house, hence it shortens the glitch while switching to a mobile network (e.g. LTE) while having an online call/meeting and leaving the flat.
+Note: Currently I've measured the speeds in all rooms with 2.4GHz and 5GHz WiFi, and 5GHz one is quicker, less congested and more stable everywhere in the flat (3 room apartment in Petrzalka). Also, the 5GHz connection/signal is disconnected quicker when I leave the house, hence it shortens the glitch while switching to a mobile network (e.g. LTE) while having an online call/meeting and leaving the flat.
 
 ## Notes, explanations, and additional materials:
 
