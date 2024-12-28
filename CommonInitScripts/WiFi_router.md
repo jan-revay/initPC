@@ -25,8 +25,6 @@
 
 
 TODO - consider using band steering and a single SSID...  
-TODO - remove the commented-out text
-
 
 ## Device config (Android phones, PCs, laptops, ebook readers, smart watches...)
 
