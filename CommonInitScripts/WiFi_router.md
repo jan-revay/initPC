@@ -64,3 +64,7 @@ Note: Currently I've measured the speeds in all rooms with 2.4GHz and 5GHz WiFi,
 3. <https://www.reddit.com/r/AmpliFi/comments/ye445i/i_think_i_have_been_killing_my_own_wifi/>
 4. <https://metis.fi/en/2017/08/dfs-en/>
 5. [DFS - The Untold Story | David Coleman | WLPC Phoenix 2020](https://youtu.be/qCzknrd_F8o?si=QCkyuVTB-NcWA41a)
+
+### Airtime fairness
+
+1. [Wi-Fi 6 Tutorial Series - #13: Band steering, airtime fairness, & lies damn lies](https://youtu.be/FANH5lU5jwI?si=QQBlnhys5HmDKF7d)
