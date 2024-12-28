@@ -78,7 +78,7 @@ to .vmx file in the virtual machine image directory.
 
 #### Themes
 
-- Mouse Cursor - Windows Standard (extra large)
+- Mouse Cursor - Windows Inverted (large) (system scheme)
 - Save my theme
 
 ####
