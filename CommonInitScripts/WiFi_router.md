@@ -30,10 +30,19 @@ TODO - remove the commented-out text
 
 ## Device config (Android phones, PCs, laptops, ebook readers, smart watches...)
 
+### Smartphones, laptops, ebook readers and PCs
+
 1. Only connect to 5GHz WiFi.
 2. (in small apartments) Turn off the "Connect automatically" option for 2.4 GHz WiFi
 3. Turn "WiFi scan throttling" in Android Settings -> "Developer options" back on, if I turned it off during testing.
-4. Test the connection speed on all devices in multiple rooms of the flat.
+
+### Smartwatches and slower/older devices
+
+1. Only connect to 2.4GHz WiFi
+2. Manually check that 5GHz WiFi is not saved and auto-connect off for 5GHz.
+
+... Test the connection speed on all devices in multiple rooms of the flat.
+
 
 Note: Currently I've measured the speeds in all rooms with 2.4GHz and 5GHz WiFi, and 5GHz one is quicker, less congested and more stable everywhere in the flat (3 room apartment in Petrzalka). Also, the 5GHz connection/signal is lost quicker when I leave the house, hence it shortens the glitch while switching to a mobile network (e.g. LTE) while having an online call/meeting and leaving the flat.
 
