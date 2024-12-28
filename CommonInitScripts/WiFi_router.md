@@ -37,6 +37,7 @@ Note: The only 2 important steps in the following are setting the "Channel width
 ### Laptops and PCs
 
 1. Laptops and PCs should primarily be connected to the router via an Ethernet cable (ideally shielded CAT6 to future-proof). That will also make the WiFi network more stable for mobile devices.
+2. Uninstall the "Realtek Dragon utility" if it came preinstalled with the new PC (the driver is buggy and makes the internet connection unreliable).
 
 ... Test the connection speed on all devices in multiple rooms of the flat.
 
