@@ -49,6 +49,7 @@ Note: Currently I've measured WiFi speed in all rooms with 2.4GHz and 5GHz WiFi,
 
 1. <https://www.intel.com/content/www/us/en/support/articles/000058989/wireless/intel-killer-wi-fi-products.html>
 2. <https://www.ekahau.com/blog/channel-planning-best-practices-for-better-wi-fi/>
+3. <https://support.huawei.com/enterprise/en/doc/EDOC1100143457> (TOREAD)
 
 ### Bandwidth & Channel
 
