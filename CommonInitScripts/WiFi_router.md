@@ -9,7 +9,7 @@ Note: The two most important steps are setting the "Channel width" on 5 GHz WiFi
     1. Turn off led indicators ("Indicator Status Management" -> "Indicator Switch" -> Off).
     1. (Optional) Consider turning off "Enable Energy Saving" ("Advanced Power Management" -> Uncheck "Enable Energy Saving").
 1. "WLAN" tab
-    1. Set the SSID and password for 2.4 GHz and 5 GHz WiFi.
+    1. Set the SSID and password for 2.4 GHz and 5 GHz WiFi. (SSIDs for 2.4 GHz and 5 GHz WiFi should differ, e.g. by -2G resp -5G suffix)
     1. 5G Basic Network Settings
         1. Authentication Mode: WPA3 SAE
     1. 5G Advanced Network Settings:
