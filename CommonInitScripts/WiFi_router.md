@@ -38,7 +38,7 @@ Note: The two most important steps are setting the "Channel width" on 5 GHz WiFi
 1. Laptops and PCs should primarily be connected to the router via an Ethernet cable (ideally shielded CAT6/CAT6A to future-proof). That will also make the WiFi network more stable for mobile devices.
 2. Uninstall the "Realtek Dragon utility" if it came preinstalled with the new PC (the driver is buggy and makes the internet connection unreliable).
 
-Finally: Test the connection speed and stability from multiple rooms in the apartment using different devices (ideally at times when neighbors also use WiFi so that the potential interference is detected).
+Finally: Test the connection speed and stability from multiple rooms in the apartment using different devices (ideally at times when neighbors also use their WiFi so that the potential interference is detected).
 
 
 Note: Currently I've measured WiFi speed in all rooms with 2.4GHz and 5GHz WiFi, and 5GHz one is quicker, less congested, and more stable everywhere in the flat (3 room apartment in Petrzalka). Also, the 5GHz connection/signal is disconnected quicker when I leave the house, hence it shortens the glitch while switching to a mobile network (e.g. LTE) when having an online call/meeting and leaving the flat.
