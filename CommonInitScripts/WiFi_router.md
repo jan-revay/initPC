@@ -45,18 +45,18 @@ Note: Currently I've measured WiFi speed in all rooms with 2.4GHz and 5GHz WiFi,
 
 ## Notes, explanations, and additional materials:
 
-### Basic info
-
-1. <https://www.intel.com/content/www/us/en/support/articles/000058989/wireless/intel-killer-wi-fi-products.html>
-2. <https://www.ekahau.com/blog/channel-planning-best-practices-for-better-wi-fi/>
-3. <https://support.huawei.com/enterprise/en/doc/EDOC1100143457> (TOREAD)
-
 ### Bandwidth & Channel
 
 1. Channel 100 is a good choice because it usually has fewer devices on it than lower, non-DFS channels do and it has enough channels above (channels 100 - 116) for a continuous 80MHz channel width. DFS has roaming issues on multi-AP networks but that is a non-issue when using a single router.
 1. Slovak SHMU weather radars are on channels 120 - 130, see: <https://www.shmu.sk/sk/?page=2037> and <https://www.shmu.sk/sk/?page=1566>, hence the full 160 MHz bandwidth on channel 100 is usually unstable in Bratislava, as both the Bratislava Airport and SHMU radar station Malý Javonrík (channels 120-124, 5605 MHz) are in 10km radius. 160 MHz bandwidth would theoretically be also possible on channel 36 but that band usually has a lot of interference from neighboring WiFi routers in apartment buildings. 80 MHz bandwidth on channel 100 usually fits well without interfering and is quick enough for the usual use case (~450Mbps).
 1. If channel 100 is busy (there are more than 2 access points on it), channel 36 with 80 MHz bandwidth or channel 52 with 80 MHz bandwidth can also be used (there are not many other options for 80 MHz bandwidth with this router). But this would need to be tested over multiple days with <https://www.speedtest.net/> as channels 36 and 52 usually have much more interference from neighboring access points.
 1. Due to frequency regulations, it takes around 12 minutes until the Wi-Fi network is available after the router is configured/restarted (because channel 100 and channels around it use the DFS radar avoidance algorithm <https://en.wikipedia.org/wiki/Dynamic_frequency_selection>).
+
+### Basic info on configuring Wi-Fi channels and channel widths
+
+1. <https://www.intel.com/content/www/us/en/support/articles/000058989/wireless/intel-killer-wi-fi-products.html>
+2. <https://www.ekahau.com/blog/channel-planning-best-practices-for-better-wi-fi/>
+3. <https://support.huawei.com/enterprise/en/doc/EDOC1100143457> (TOREAD)
 
 ### DFS nuances (channels other than 36-48 in SVK)
 1. <https://mac-wifi.com/why-i-dislike-dfs-channels-and-you-might-too/>
