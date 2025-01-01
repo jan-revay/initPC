@@ -260,6 +260,9 @@ scripts with my old dconf dumps (backup_config repo)
      - https://www.reddit.com/r/linux/comments/yrlljv/zfs_vs_btrfs_in_2022/
 1. Remove jr-tutor commits (squash)
 1. Use ChatGPT and similar tools to improve grammar in Markdown files resp. code clarity in code files.
+1. Configure git config pull.rebase or pull.ff=only see:
+   1. <https://www.reddit.com/r/git/comments/1ddkm9t/make_git_pull_rebase_default_a_bad_idea_different/>
+   2. <https://stackoverflow.com/questions/13846300/how-to-make-git-pull-use-rebase-by-default-for-all-my-repositories>
 
 ## Keyboard layout plans
 
