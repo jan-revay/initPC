@@ -126,6 +126,7 @@ $WINGET_PACKAGES = @(
     'GIMP.GIMP'
     'IrfanSkiljan.IrfanView'
     'Audacity.Audacity'
+    'VideoLAN.VLC'
 
 # Productivity
     'Doist.Todoist'
