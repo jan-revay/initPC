@@ -13,6 +13,7 @@
 ## TODO dec 2024
 
 1. Auto move windows equivalent (thing that positions windows on virtual desktop on startup)
+2. Add mpeg2 codec & video codecs in general
 
 ## Bugs
 1. Try turning off the feature that moves the cursor to the active window.
