@@ -56,6 +56,7 @@ $WINGET_PACKAGES = @(
 # Multimedia
     'OBSProject.OBSStudio'
     'Canva.Canva' # broken
+    'figma.figma'
     '9WZDNCRFJ3TJ' # Netflix
     '9MSPC6MP8FM4' # MS Whiteboard
     'Inkscape.Inkscape'
