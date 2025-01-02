@@ -57,6 +57,8 @@
 
 ## Example GitHub actions from similar repos
 
+- <https://github.com/microsoft/vcpkg-tool/blob/main/.github/workflows/build.yaml>
+
 ### Dotfile managers
 
 1. <https://github.com/bevry/dorothy/blob/master/.github/workflows/dorothy-workflow.yml>
