@@ -101,6 +101,7 @@ $WINGET_PACKAGES = @(
     'Rustlang.Rustup'
     'JFrog.Conan'
     'Ninja-build.Ninja'
+    'Microsoft.VisualStudio.2022.BuildTools'
 
 # Web browsers
     'Google.Chrome'
