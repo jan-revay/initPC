@@ -14,7 +14,12 @@
 
 1. Auto move windows equivalent (thing that positions windows on virtual desktop on startup)
 2. Add mpeg2 codec & video codecs in general
+3. Implement quake like mode for apps similar to <quake-terminal@diegodario88.github.io> GNOME extension (either by AutoHotkey or find an app that does that) so that I can use quake window on half screen.
 
 ## Bugs
 1. Try turning off the feature that moves the cursor to the active window.
 2. 
+
+## TOREAD
+
+<https://www.reddit.com/r/AutoHotkey/comments/lvzqlx/share_your_most_useful_ahk_scripts_my_huge/>
