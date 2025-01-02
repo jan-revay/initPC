@@ -145,13 +145,18 @@ winget upgrade --all --accept-source-agreements --accept-package-agreements `
 # TODO some packages below need to be fixed (or just installed globally?)
 # TODO install python applications with pipx
 # refresh Path variable
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" `
+    + [System.Environment]::GetEnvironmentVariable("Path","User")
+
 py -3 -m pip install --user pipx
 py -3 -m pipx ensurepath
 
 # refresh Path variable
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-pipx install flawfinder # C++ linter
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" `
+    + [System.Environment]::GetEnvironmentVariable("Path","User")
+
+# C++ linters
+pipx install flawfinder
 pipx install cpplint
 
 # TODO try installing these packages directly via winget
@@ -168,7 +173,9 @@ pip install scikit-learn
 pip install shap
 
 # TODO an attempt to reload the path (investigate further)
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" `
+    + [System.Environment]::GetEnvironmentVariable("Path","User")
+
 # TODO uncomment and fix the next line
 # gem install github-linguist
 
