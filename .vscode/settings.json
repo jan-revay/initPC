@@ -40,7 +40,7 @@
         "valgrind",
         "winget"
     ],
-    "cSpell.enableFiletypes": [
-        "shellscript"
-    ]
+    "cSpell.enabledFileTypes": {
+        "shellscript": true
+    }
 }
