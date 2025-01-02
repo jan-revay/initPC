@@ -283,6 +283,12 @@ scripts with my old dconf dumps (backup_config repo)
 - https://lazka.github.io/pgi-docs/Gtk-3.0/classes/Settings.html
 - https://askubuntu.com/questions/1352344/add-bookmarks-to-nautilus-via-terminal'
 
+## Bit rot protection
+
+- consider using <https://en.wikipedia.org/wiki/Parchive>
+for /home partition
+- consider zfs/btrfs resp. alternatives
+- 3 copy backup system
 
 ## Bugs
 
