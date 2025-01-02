@@ -132,10 +132,11 @@ to .vmx file in the virtual machine image directory.
 ## Logiops
 
 1. Fix a bug that causes gestures to be way too insensitive:
-   a. Go to Logiops and increase the sensitivity to 81
+   a. Go to Logiops and increase the sensitivity to 90
    b. Go to Windows mouse settings and decrease the sensitivity to 4 ticks (in the standard mouse settings dialog, not the advanced)
    note: there are two sliders for setting the pointer speed that work independently in Windows, one is in the settings app
    and another is in the advanced mouse settings dialog
+1. SmartShift: set smartshift sensitivity to 95%
 
 ## AltSnap
 
