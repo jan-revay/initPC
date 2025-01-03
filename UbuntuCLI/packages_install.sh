@@ -48,6 +48,7 @@ APT_PACKAGES=(
 
     # utils
     ripgrep tree curl neofetch htop tmux at zsh traceroute jq stow
+    diffoscope
     # NOTE: fd-find executable is called `fdfind`
     # TODO consider moving doconf-editor to GUI part of the initPC script
     dconf-editor doxygen git gh bat man fish fd-find
