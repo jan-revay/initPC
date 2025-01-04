@@ -50,7 +50,7 @@ else
     # but install specific versions so that the script
     # will not break easily.
     readonly SNAP_PACKAGES=(
-        anki-ppd # TODO maybe install directly via website (most up to date)
+        anki-desktop # TODO maybe install directly via website (most up to date)
         core
         snap-store
         todoist

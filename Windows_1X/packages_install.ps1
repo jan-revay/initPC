@@ -67,6 +67,7 @@ $WINGET_PACKAGES = @(
     'AlDanial.Cloc' # count number of lines of code
     'starship.starship'
     'pCloudAG.pCloudDrive'
+    'Anki.Anki'
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
