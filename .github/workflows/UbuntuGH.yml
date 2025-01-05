@@ -84,6 +84,10 @@ jobs:
     # I would not need to run the Free Disk Space step
     # See the Check disk space step for more info
     # TODO confirm that /mnt can be used this way
+    # MNT is so called "temporary disk"
+    # https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview#disk-roles
+    # https://github.com/marketplace/actions/maximize-build-disk-space
+    # but it is not documented wel... so I hope this is not error prone...
     - name: save ~/ for idempotency test
       run: cp -r ~/ /mnt/old_home/
 
