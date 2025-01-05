@@ -95,6 +95,9 @@ jobs:
     - name: save ~/ for idempotency test
       run: cp -r ~/ /tmp/old_home/
 
+    - name: Print /tmp/old_home/ size
+      run: du -sh /tmp/old_home/
+
     - name: Running iniPC script for the 2nd time should not fail.
       run: ./run_init.sh --noninteractive
 
