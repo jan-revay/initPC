@@ -26,6 +26,24 @@ jobs:
         os: [ubuntu-22.04, ubuntu-24.04] # TODO consider adding 20.04
     runs-on: ${{ matrix.os }}
     steps:
+    # TODO try to only run Free disk space if needed
+    # Note: This was added because the idempotency test
+    # (copying home to /tmp was running out of the disk space)
+    - name: Free Disk Space (Ubuntu)
+      uses: jlumbroso/free-disk-space@main
+      with:
+        # this might remove tools that are actually needed,
+        # if set to "true" but frees about 6 GB
+        tool-cache: true
+        
+        # all of these default to true, but feel free to set to
+        # "false" if necessary for your workflow
+        android: true
+        dotnet: true
+        haskell: true
+        large-packages: true
+        docker-images: true
+        swap-storage: true
     - name: Update APT & upgrade
       run: sudo apt-get update -y && sudo apt-get upgrade -y
     # TODO - BUG - use the correct respective branch - check that it is resolved
