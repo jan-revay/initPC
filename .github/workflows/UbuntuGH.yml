@@ -1,8 +1,9 @@
-name: Ubuntu GH 
+name: Ubuntu GH
 
 on:
   schedule:
     # weekly, randomly chosen time
+    # Runs at 03:17, only on Wednesday
     - cron: "17 3 * * 3"
   push:
     branches: [ "devel", "testing", "stable", "LTS" ]
@@ -21,50 +22,53 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        install-gui: ['GNOME', 'CLI'] # TODO add this to containers.yml
+        gui: ['GNOME', 'CLI'] # TODO add this to containers.yml
         os: [ubuntu-22.04, ubuntu-24.04] # TODO consider adding 20.04
-    name: ${{ matrix.os }}_${{ matrix.install-gui }}
+    name: ${{ matrix.os }}_${{ matrix.gui }}
     runs-on: ${{ matrix.os }}
     steps:
+    - name: List tools in $AGENT_TOOLSDIRECTORY
+      run: ls -R $AGENT_TOOLSDIRECTORY
     # Note: Free Disk Space was added because the idempotency test
     # i.e. copying home to /tmp was running out of disk space on
     # Ubuntu 22.04 with GNOME. This only needs to be run for branches
     # of the matrix that fail because of low disk space (otherwise
     # this step should be skipped).
     - name: Free Disk Space (Ubuntu)
-      if: matrix.os == 'ubuntu-22.04' && matrix.install-gui == 'GNOME'
+      if: matrix.os == 'ubuntu-22.04' && matrix.gui == 'GNOME'
       uses: jlumbroso/free-disk-space@main
       with:
         # this might remove tools that are actually needed,
         # if set to "true" but frees about 6 GB
         tool-cache: true
-        
-        # all of these default to true, but feel free to set to
-        # "false" if necessary for your workflow
         android: true
         dotnet: true
         haskell: true
         large-packages: true
         docker-images: true
         swap-storage: true
+
     - name: Update APT & upgrade
       run: sudo apt-get update -y && sudo apt-get upgrade -y
-    # TODO - BUG - use the correct respective branch - check that it is resolved
-    - name: ${{ matrix.install-gui }} - ${{ matrix.os }}
-      run: |
-          if [[ "${{ matrix.install-gui }}" == 'GNOME' ]]; then
-              sudo apt-get install -y ubuntu-desktop-minimal
-          fi
+
+    - name: Install GNOME Desktop (if needed)
+      if: matrix.gui == 'GNOME'
+      run: sudo apt-get install -y ubuntu-desktop-minimal
+
     - uses: actions/checkout@v4
+
     - name: print `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
       run: "echo Ref: ${{ github.ref }}, SHA: ${{ github.sha }}"
-      
+
     - name: Running iniPC script for the 1st time should not fail.
       run: ./run_init.sh --noninteractive
+
     - name: save ~/ for idempotency test
       run: cp -r ~/ /tmp/old_home/
+
     - name: Running iniPC script for the 2nd time should not fail.
       run: ./run_init.sh --noninteractive
+
     - name: Check disk space on the GitHub runner
       run: df -h
 
@@ -73,7 +77,8 @@ jobs:
     # TODO - test whether the test works as expected
     # TODO - add more paths e.g. /etc/ a.s.o.
     # TODO - be more specific in work/_temp/ path
-    - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing)
+    # TODO also add other config style directories such as /etc
+    - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing & tuning)
       run: |
         cd ~
         pwd
