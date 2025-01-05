@@ -88,8 +88,10 @@ jobs:
     # https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview#disk-roles
     # https://github.com/marketplace/actions/maximize-build-disk-space
     # but it is not documented wel... so I hope this is not error prone...
+    # EXPERIMENT RESULT: I get `cp: cannot create directory '/mnt/old_home/': Permission denied`
+    # when I try to use /mnt instead of /tmp
     - name: save ~/ for idempotency test
-      run: cp -r ~/ /mnt/old_home/
+      run: sudo cp -r ~/ /mnt/old_home/
 
     - name: Running iniPC script for the 2nd time should not fail.
       run: ./run_init.sh --noninteractive
