@@ -95,7 +95,7 @@ jobs:
             ! -path "./.cargo/registry/index/*" \
             ! -path "./x/helix/target/release/build/helix-term*" \
             ! -path "./x/helix/target/.rustc_info.json" \
-            ! -path "./x/helix/.git/" \
+            ! -path "./x/helix/.git/*" \
             ! -iname "*.log" \
             ! -name ".wget-hsts" \
           \) -print0 |

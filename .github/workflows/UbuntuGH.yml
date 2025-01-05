@@ -119,7 +119,7 @@ jobs:
           ! -path "./.dotfiles/logs/HEAD" \
           ! -path "*work/_temp/*" \
           ! -path "./runners/*" \
-          ! -path "./x/helix/.git/" \
+          ! -path "./x/helix/.git/*" \
           ! -iname "*.log" \
           ! -name ".wget-hsts" \
         \) -print0 |
