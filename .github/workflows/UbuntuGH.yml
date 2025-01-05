@@ -33,7 +33,7 @@ jobs:
     steps:
     - name: Check disk space on the GitHub runner (before)
       run: df -ha
-    - name: List tools in $AGENT_TOOLSDIRECTORY (Free Disk Space will remove it)
+    - name: List tools in $AGENT_TOOLSDIRECTORY (Free Disk Space removes it)
       run: echo $AGENT_TOOLSDIRECTORY && ls $AGENT_TOOLSDIRECTORY
     # Note: Free Disk Space was added because the idempotency test
     # i.e. copying home to /tmp was running out of disk space on
