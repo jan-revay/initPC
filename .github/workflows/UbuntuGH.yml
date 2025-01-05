@@ -65,6 +65,12 @@ jobs:
     - name: Running iniPC script for the 1st time should not fail.
       run: ./run_init.sh --noninteractive
 
+    # TODO research on what is the /mnt partition on GitHub runners for
+    # and whether it is a better place to store the old_home directory
+    # (it probably does not count to the root file system limit)
+    # TODO maybe if I stored the old_home directory in /mnt
+    # I would not need to run the Free Disk Space step
+    # See the Check disk space step for more info
     - name: save ~/ for idempotency test
       run: cp -r ~/ /tmp/old_home/
 
