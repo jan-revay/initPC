@@ -29,6 +29,10 @@ on:
 
 jobs:
   distro-test:
+    if: |
+      !endsWith(github.event.head_commit.message, 'Add a TODO') &&
+      !endsWith(github.event.head_commit.message, 'Add TODOs') &&
+      !endsWith(github.event.head_commit.message, 'Remove a completed TODO')
     runs-on: ubuntu-latest
     name: ${{ matrix.container }}
     strategy:
