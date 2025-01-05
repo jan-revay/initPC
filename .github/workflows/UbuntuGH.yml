@@ -47,7 +47,7 @@ jobs:
     # this step should be skipped).
     # Note2: Also running Free Disk Space on Ubuntu 24.04 with GNOME
     # as it only has 5GB of disk space left.
-    
+
     # - name: Free Disk Space (Ubuntu)
     #   if: matrix.gui == 'GNOME'
     #   uses: jlumbroso/free-disk-space@main
@@ -113,6 +113,7 @@ jobs:
           ! -path "./.dotfiles/logs/HEAD" \
           ! -path "*work/_temp/*" \
           ! -path "./runners/*" \
+          ! -path "./x/helix/.git/" \
           ! -iname "*.log" \
           ! -name ".wget-hsts" \
         \) -print0 |
