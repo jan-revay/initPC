@@ -1,6 +1,9 @@
 name: Ubuntu GH 
 
 on:
+  schedule:
+    # weekly, randomly chosen time
+    - cron: "17 3 * * 3"
   push:
     branches: [ "devel", "testing", "stable", "LTS" ]
     paths:
