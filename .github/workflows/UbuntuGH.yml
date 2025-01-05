@@ -54,7 +54,7 @@ jobs:
         haskell: true
         large-packages: true
         docker-images: true
-        swap-storage: true
+        swap-storage: false # swap is on a separate partition anyway
 
     - name: Update APT & upgrade (needed to install GNOME)
       if: matrix.gui == 'GNOME'
