@@ -31,7 +31,7 @@ jobs:
       run: echo $AGENT_TOOLSDIRECTORY && ls $AGENT_TOOLSDIRECTORY
 
     - name: List /mnt
-      run: ls /mnt
+      run: ls /mnt && echo . && cat DATALOSS_WARNING_README.txt
     # Note: Free Disk Space was added because the idempotency test
     # i.e. copying home to /tmp was running out of disk space on
     # Ubuntu 22.04 with GNOME. This only needs to be run for branches
