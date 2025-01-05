@@ -14,6 +14,9 @@ name: Containers
 # TODO fix - the workflow has a green checkmark in GitHub even if no branch was successful
 
 on:
+  schedule:
+    # weekly, randomly chosen time
+    - cron: "17 3 * * 3"
   push:
     # TODO add relevant paths resp. rewrite as described in the readme
     branches: [ "devel", "testing", "stable", "LTS" ]
