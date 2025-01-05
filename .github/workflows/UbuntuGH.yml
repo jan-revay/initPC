@@ -48,19 +48,19 @@ jobs:
     # Note2: Also running Free Disk Space on Ubuntu 24.04 with GNOME
     # as it only has 5GB of disk space left.
 
-    # - name: Free Disk Space (Ubuntu)
-    #   if: matrix.gui == 'GNOME'
-    #   uses: jlumbroso/free-disk-space@main
-    #   with:
-    #     # this might remove tools that are actually needed,
-    #     # if set to "true" but frees about 6 GB
-    #     tool-cache: true
-    #     android: true
-    #     dotnet: true
-    #     haskell: true
-    #     large-packages: true
-    #     docker-images: true
-    #     swap-storage: true
+    - name: Free Disk Space (Ubuntu)
+      if: matrix.gui == 'GNOME'
+      uses: jlumbroso/free-disk-space@main
+      with:
+        # this might remove tools that are actually needed,
+        # if set to "true" but frees about 6 GB
+        tool-cache: true
+        android: true
+        dotnet: true
+        haskell: true
+        large-packages: true
+        docker-images: true
+        swap-storage: true
 
     - name: Update APT & upgrade
       run: sudo apt-get update -y && sudo apt-get upgrade -y
