@@ -28,7 +28,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - name: Check disk space on the GitHub runner (before)
-      run: df -h
+      run: df -ha
     - name: List tools in $AGENT_TOOLSDIRECTORY
       run: echo $AGENT_TOOLSDIRECTORY && ls $AGENT_TOOLSDIRECTORY
 
@@ -87,7 +87,7 @@ jobs:
     # https://www.synacktiv.com/en/publications/github-actions-exploitation-self-hosted-runners
     # https://docs.github.com/en/actions/sharing-automations/reusing-workflows?learn=getting_started&learnProduct=actions
     - name: Check disk space on the GitHub runner (after)
-      run: df -h
+      run: df -ha
 
     # TODO split this command to multiple lines
     # TODO also test that the first run of initPC script does change the state of home dir
