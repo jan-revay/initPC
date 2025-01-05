@@ -28,7 +28,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - name: List tools in $AGENT_TOOLSDIRECTORY
-      run: ls $AGENT_TOOLSDIRECTORY
+      run: echo $AGENT_TOOLSDIRECTORY && ls $AGENT_TOOLSDIRECTORY
     # Note: Free Disk Space was added because the idempotency test
     # i.e. copying home to /tmp was running out of disk space on
     # Ubuntu 22.04 with GNOME. This only needs to be run for branches
