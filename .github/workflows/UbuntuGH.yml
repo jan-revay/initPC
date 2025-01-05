@@ -18,18 +18,21 @@ on:
 
 jobs:
   build:
-    name: ${{ matrix.install-gui }} on ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
         install-gui: ['GNOME', 'NO GUI'] # TODO add this to containers.yml
         os: [ubuntu-22.04, ubuntu-24.04] # TODO consider adding 20.04
+    name: ${{ matrix.os }} with ${{ matrix.install-gui }}
     runs-on: ${{ matrix.os }}
     steps:
-    # TODO try to only run Free disk space if needed
-    # Note: This was added because the idempotency test
-    # (copying home to /tmp was running out of the disk space)
+    # Note: Free Disk Space was added because the idempotency test
+    # i.e. copying home to /tmp was running out of disk space on
+    # Ubuntu 22.04 with GNOME. This only needs to be run for branches
+    # of the matrix that fail because of low disk space (otherwise
+    # this step should be skipped).
     - name: Free Disk Space (Ubuntu)
+      if: matrix.os == 'ubuntu-22.04' && matrix.install-gui == 'GNOME'
       uses: jlumbroso/free-disk-space@main
       with:
         # this might remove tools that are actually needed,
