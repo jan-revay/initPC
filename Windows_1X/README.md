@@ -18,7 +18,7 @@
 
 ## Bugs
 1. Try turning off the feature that moves the cursor to the active window.
-2. 
+2. The main script does not stop on error in packages_install.sh
 
 ## TOREAD
 
