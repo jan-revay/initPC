@@ -60,6 +60,7 @@ echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula boolean 
     | sudo debconf-set-selections
 
 # TODO add kitty terminal emulator
+# TODO add IDA disassembler for Linux <https://letsdefend.io/blog/how-to-install-ida-on-linux>
 readonly APT_GUI_PACKAGES=(
     # ===== package managers =====
     snapd flatpak

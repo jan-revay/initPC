@@ -68,6 +68,7 @@ $WINGET_PACKAGES = @(
     'starship.starship'
     'pCloudAG.pCloudDrive'
     'Anki.Anki'
+    'Hex-Rays.IDA.Free'
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
