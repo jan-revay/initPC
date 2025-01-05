@@ -31,6 +31,7 @@ if (-not (Get-Command scoop -ErrorAction SilentlyContinue)) {
     # TODO an attempt to reload the path (investigate further)
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 }
+scoop bucket add extras
 # TODO uncomment the next line resp. fix it so that it works and (scoop is not found right after the installation, probably path problem)
 scoop install windows-virtualdesktop-helper
 
