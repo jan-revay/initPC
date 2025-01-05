@@ -27,7 +27,7 @@ $ErrorActionPreference = "Stop"
 
 # Install Scoop
 if (-not (Get-Command scoop -ErrorAction SilentlyContinue)) {
-    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+    iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
     # TODO an attempt to reload the path (investigate further)
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 }
