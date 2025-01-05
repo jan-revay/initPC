@@ -34,8 +34,10 @@ jobs:
     # Ubuntu 22.04 with GNOME. This only needs to be run for branches
     # of the matrix that fail because of low disk space (otherwise
     # this step should be skipped).
+    # Note2: Also running Free Disk Space on Ubuntu 24.04 with GNOME
+    # as it only has 5GB of disk space left.
     - name: Free Disk Space (Ubuntu)
-      if: matrix.os == 'ubuntu-22.04' && matrix.gui == 'GNOME'
+      if: matrix.gui == 'GNOME'
       uses: jlumbroso/free-disk-space@main
       with:
         # this might remove tools that are actually needed,
