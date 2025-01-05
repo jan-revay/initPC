@@ -61,7 +61,7 @@ jobs:
 
     - uses: actions/checkout@v4
     - name: Checked out to `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
-      # run: "echo Ref: ${{ github.ref }}, SHA: ${{ github.sha }}"
+      run: "echo Ref: ${{ github.ref }}, SHA: ${{ github.sha }}" # this is printing the vars twice... TODO try improving
 
     - name: Running iniPC script for the 1st time should not fail.
       run: ./run_init.sh --noninteractive
