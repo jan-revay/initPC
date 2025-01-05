@@ -35,8 +35,8 @@ jobs:
     - name: Print default paths
       run: |
         echo RUNNER_TEMP = $RUNNER_TEMP
-        RUNNER_TOOL_CACHE = $RUNNER_TOOL_CACHE
-        GITHUB_WORKSPACE = $GITHUB_WORKSPACE
+        echo RUNNER_TOOL_CACHE = $RUNNER_TOOL_CACHE
+        echo GITHUB_WORKSPACE = $GITHUB_WORKSPACE
 
     - name: List /mnt
       run: ls /mnt && echo . && cat /mnt/DATALOSS_WARNING_README.txt
