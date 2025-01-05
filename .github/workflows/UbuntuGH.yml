@@ -47,19 +47,20 @@ jobs:
     # this step should be skipped).
     # Note2: Also running Free Disk Space on Ubuntu 24.04 with GNOME
     # as it only has 5GB of disk space left.
-    - name: Free Disk Space (Ubuntu)
-      if: matrix.gui == 'GNOME'
-      uses: jlumbroso/free-disk-space@main
-      with:
-        # this might remove tools that are actually needed,
-        # if set to "true" but frees about 6 GB
-        tool-cache: true
-        android: true
-        dotnet: true
-        haskell: true
-        large-packages: true
-        docker-images: true
-        swap-storage: true
+    
+    # - name: Free Disk Space (Ubuntu)
+    #   if: matrix.gui == 'GNOME'
+    #   uses: jlumbroso/free-disk-space@main
+    #   with:
+    #     # this might remove tools that are actually needed,
+    #     # if set to "true" but frees about 6 GB
+    #     tool-cache: true
+    #     android: true
+    #     dotnet: true
+    #     haskell: true
+    #     large-packages: true
+    #     docker-images: true
+    #     swap-storage: true
 
     - name: Update APT & upgrade
       run: sudo apt-get update -y && sudo apt-get upgrade -y
@@ -82,8 +83,9 @@ jobs:
     # TODO maybe if I stored the old_home directory in /mnt
     # I would not need to run the Free Disk Space step
     # See the Check disk space step for more info
+    # TODO confirm that /mnt can be used this way
     - name: save ~/ for idempotency test
-      run: cp -r ~/ /tmp/old_home/
+      run: cp -r ~/ /mnt/old_home/
 
     - name: Running iniPC script for the 2nd time should not fail.
       run: ./run_init.sh --noninteractive
@@ -114,4 +116,4 @@ jobs:
           ! -iname "*.log" \
           ! -name ".wget-hsts" \
         \) -print0 |
-        xargs -0 -I{} bash -c 'if ! diff "$1" "/tmp/old_home/$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
+        xargs -0 -I{} bash -c 'if ! diff "$1" "/mnt/old_home/$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
