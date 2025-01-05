@@ -27,6 +27,8 @@ jobs:
     name: ${{ matrix.os }}_${{ matrix.gui }}
     runs-on: ${{ matrix.os }}
     steps:
+    - name: Check disk space on the GitHub runner (before)
+      run: df -h
     - name: List tools in $AGENT_TOOLSDIRECTORY
       run: echo $AGENT_TOOLSDIRECTORY && ls $AGENT_TOOLSDIRECTORY
 
@@ -84,7 +86,7 @@ jobs:
     # see whether I can use them and how <https://github.com/marketplace/actions/maximize-build-disk-space>)
     # https://www.synacktiv.com/en/publications/github-actions-exploitation-self-hosted-runners
     # https://docs.github.com/en/actions/sharing-automations/reusing-workflows?learn=getting_started&learnProduct=actions
-    - name: Check disk space on the GitHub runner
+    - name: Check disk space on the GitHub runner (after)
       run: df -h
 
     # TODO split this command to multiple lines
