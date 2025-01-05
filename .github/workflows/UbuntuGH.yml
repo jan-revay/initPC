@@ -91,7 +91,7 @@ jobs:
     # EXPERIMENT RESULT: I get `cp: cannot create directory '/mnt/old_home/': Permission denied`
     # when I try to use /mnt instead of /tmp
     - name: save ~/ for idempotency test
-      run: sudo cp -r ~/ /mnt/old_home/
+      run: cp -r ~/ /tmp/old_home/
 
     - name: Running iniPC script for the 2nd time should not fail.
       run: ./run_init.sh --noninteractive
@@ -123,4 +123,4 @@ jobs:
           ! -iname "*.log" \
           ! -name ".wget-hsts" \
         \) -print0 |
-        xargs -0 -I{} bash -c 'if ! diff "$1" "/mnt/old_home/$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
+        xargs -0 -I{} bash -c 'if ! diff "$1" "/tmp/old_home/$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
