@@ -23,23 +23,14 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-22.04, ubuntu-24.04]
-        gui: [GNOME, CLI] # TODO add this to containers.yml
+        gui: [GNOME, CLI] # TODO Add GNOME test to containers.yml
     name: ${{ matrix.os }}_${{ matrix.gui }}
     runs-on: ${{ matrix.os }}
     steps:
     - name: Check disk space on the GitHub runner (before)
       run: df -ha
-    - name: List tools in $AGENT_TOOLSDIRECTORY
+    - name: List tools in $AGENT_TOOLSDIRECTORY (Free Disk Space will remove it)
       run: echo $AGENT_TOOLSDIRECTORY && ls $AGENT_TOOLSDIRECTORY
-
-    - name: Print default paths
-      run: |
-        echo RUNNER_TEMP = $RUNNER_TEMP
-        echo RUNNER_TOOL_CACHE = $RUNNER_TOOL_CACHE
-        echo GITHUB_WORKSPACE = $GITHUB_WORKSPACE
-
-    - name: List /mnt
-      run: ls /mnt && echo . && cat /mnt/DATALOSS_WARNING_README.txt
     # Note: Free Disk Space was added because the idempotency test
     # i.e. copying home to /tmp was running out of disk space on
     # Ubuntu 22.04 with GNOME. This only needs to be run for branches
@@ -47,7 +38,6 @@ jobs:
     # this step should be skipped).
     # Note2: Also running Free Disk Space on Ubuntu 24.04 with GNOME
     # as it only has 5GB of disk space left.
-
     - name: Free Disk Space (Ubuntu)
       if: matrix.gui == 'GNOME'
       uses: jlumbroso/free-disk-space@main
@@ -62,51 +52,49 @@ jobs:
         docker-images: true
         swap-storage: true
 
-    - name: Update APT & upgrade
+    - name: Update APT & upgrade (needed to install GNOME)
+      if: matrix.gui == 'GNOME'
       run: sudo apt-get update -y && sudo apt-get upgrade -y
-
     - name: Install GNOME Desktop (if needed)
       if: matrix.gui == 'GNOME'
       run: sudo apt-get install -y ubuntu-desktop-minimal
 
     - uses: actions/checkout@v4
-
-    - name: print `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
-      run: "echo Ref: ${{ github.ref }}, SHA: ${{ github.sha }}"
+    - name: Checked out to `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
+      # run: "echo Ref: ${{ github.ref }}, SHA: ${{ github.sha }}"
 
     - name: Running iniPC script for the 1st time should not fail.
       run: ./run_init.sh --noninteractive
 
+    - name: Print default paths
+      run: |
+        echo GITHUB_WORKSPACE = $GITHUB_WORKSPACE
+        echo RUNNER_TOOL_CACHE = $RUNNER_TOOL_CACHE
+        echo RUNNER_TEMP = $RUNNER_TEMP
     # TODO research on what is the /mnt partition on GitHub runners for
     # and whether it is a better place to store the old_home directory
     # (it probably does not count to the root file system limit)
-    # TODO maybe if I stored the old_home directory in /mnt
-    # I would not need to run the Free Disk Space step
     # See the Check disk space step for more info
     # TODO confirm that /mnt can be used this way
-    # MNT is so called "temporary disk"
+    # MNT is so-called "temporary disk"
     # https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview#disk-roles
-    # https://github.com/marketplace/actions/maximize-build-disk-space
-    # but it is not documented wel... so I hope this is not error prone...
+    # but it is not documented well...
     # EXPERIMENT RESULT: I get `cp: cannot create directory '/mnt/old_home/': Permission denied`
     # when I try to use /mnt instead of /tmp
-    # Copying to /mnt with sudo works ok however - it therefore could be used...
+    # Copying to /mnt with sudo works ok, however - it, therefore, could be used...
     # but it is not needed for now...
+    # Also old_home is just around 1.5GB, hence if I am out of space
+    # using /mnt not save me. What could save me is this GitHub action:
+    # https://github.com/marketplace/actions/maximize-build-disk-space
+    # - name: List /mnt
+    #   run: ls /mnt && echo . && cat /mnt/DATALOSS_WARNING_README.txt
     - name: save ~/ for idempotency test
       run: cp -r ~/ /tmp/old_home/
-
     - name: Print /tmp/old_home/ size
       run: du -sh /tmp/old_home/
 
     - name: Running iniPC script for the 2nd time should not fail.
       run: ./run_init.sh --noninteractive
-
-    # TODO consolidate disk space usage (there some almost free partitions here...
-    # see whether I can use them and how <https://github.com/marketplace/actions/maximize-build-disk-space>)
-    # https://www.synacktiv.com/en/publications/github-actions-exploitation-self-hosted-runners
-    # https://docs.github.com/en/actions/sharing-automations/reusing-workflows?learn=getting_started&learnProduct=actions
-    - name: Check disk space on the GitHub runner (after)
-      run: df -ha
 
     # TODO split this command to multiple lines
     # TODO also test that the first run of initPC script does change the state of home dir
@@ -129,3 +117,6 @@ jobs:
           ! -name ".wget-hsts" \
         \) -print0 |
         xargs -0 -I{} bash -c 'if ! diff "$1" "/tmp/old_home/$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
+        
+    - name: Check disk space on the GitHub runner (after)
+      run: df -ha
