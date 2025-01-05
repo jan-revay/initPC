@@ -77,6 +77,10 @@ jobs:
     - name: Running iniPC script for the 2nd time should not fail.
       run: ./run_init.sh --noninteractive
 
+    # TODO consolidate disk space usage (there some almost free partitions here...
+    # see whether I can use them and how <https://github.com/marketplace/actions/maximize-build-disk-space>)
+    # https://www.synacktiv.com/en/publications/github-actions-exploitation-self-hosted-runners
+    # https://docs.github.com/en/actions/sharing-automations/reusing-workflows?learn=getting_started&learnProduct=actions
     - name: Check disk space on the GitHub runner
       run: df -h
 
