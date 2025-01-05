@@ -62,6 +62,8 @@ jobs:
       run: cp -r ~/ /tmp/old_home/
     - name: Running iniPC script for the 2nd time should not fail.
       run: ./run_init.sh --noninteractive
+    - name: Check disk space on the GitHub runner
+      run: df -h
 
     # TODO split this command to multiple lines
     # TODO also test that the first run of initPC script does change the state of home dir
