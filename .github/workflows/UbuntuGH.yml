@@ -22,8 +22,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        gui: ['GNOME', 'CLI'] # TODO add this to containers.yml
-        os: [ubuntu-22.04, ubuntu-24.04] # TODO consider adding 20.04
+        os: [ubuntu-22.04, ubuntu-24.04]
+        gui: [GNOME, CLI] # TODO add this to containers.yml
     name: ${{ matrix.os }}_${{ matrix.gui }}
     runs-on: ${{ matrix.os }}
     steps:
