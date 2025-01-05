@@ -19,6 +19,10 @@ on:
 
 jobs:
   build:
+    if: |
+      !endsWith(github.event.head_commit.message, 'Add a TODO') &&
+      !endsWith(github.event.head_commit.message, 'Add TODOs') &&
+      !endsWith(github.event.head_commit.message, 'Remove a completed TODO')
     strategy:
       fail-fast: false
       matrix:
