@@ -21,9 +21,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        install-gui: ['GNOME', 'NO GUI'] # TODO add this to containers.yml
+        install-gui: ['GNOME', 'CLI'] # TODO add this to containers.yml
         os: [ubuntu-22.04, ubuntu-24.04] # TODO consider adding 20.04
-    name: ${{ matrix.os }} with ${{ matrix.install-gui }}
+    name: ${{ matrix.os }}_${{ matrix.install-gui }}
     runs-on: ${{ matrix.os }}
     steps:
     # Note: Free Disk Space was added because the idempotency test
