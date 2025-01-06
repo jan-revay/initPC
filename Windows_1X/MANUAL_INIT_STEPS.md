@@ -96,6 +96,7 @@ to .vmx file in the virtual machine image directory.
 
 1. Go to Windows Settings -> System
 
+- Power mode - set to "Best performance"
 - Power & Sleep - set all to Never - but set the screen to turn off after 45 minutes
 - Multitasking
     * snap windows -> on (plus all related checkboxes)
