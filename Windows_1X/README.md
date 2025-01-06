@@ -16,9 +16,13 @@
 2. Add mpeg2 codec & video codecs in general
 3. Implement quake like mode for apps similar to <quake-terminal@diegodario88.github.io> GNOME extension (either by AutoHotkey or find an app that does that) so that I can use quake window on half screen.
 
+# TODO jan 2024
+
+1. PWSH (PowerShell 7) profile (the current profile applies only to the old PowerShell)
+
 ## Bugs
 1. Try turning off the feature that moves the cursor to the active window.
-2. The main script does not stop on error in packages_install.sh
+2. The main script does not stop on an error in packages_install.sh
 3. extreeemly large logs with almost no useful information....
 
 ## TOREAD
