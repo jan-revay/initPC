@@ -59,6 +59,11 @@ popd
 echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula boolean true" \
     | sudo debconf-set-selections
 
+curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /etc/apt/keyrings/wezterm-fury.gpg
+echo 'deb [signed-by=/etc/apt/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
+sudo apt-get -y update
+sudo apt-get -y install wezterm
+
 # TODO add kitty terminal emulator
 # TODO add IDA disassembler for Linux <https://letsdefend.io/blog/how-to-install-ida-on-linux>
 readonly APT_GUI_PACKAGES=(

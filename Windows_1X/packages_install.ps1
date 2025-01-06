@@ -96,6 +96,7 @@ $WINGET_PACKAGES = @(
 # Terminal emulators
     'Alacritty.Alacritty'
     'Microsoft.WindowsTerminal'
+    'wez.wezterm'
 
 # compilers, build tools and interpreters
     'Python.Python.3.12' # Try always installing the latest Python package instead of fixing the version
