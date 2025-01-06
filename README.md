@@ -193,7 +193,7 @@ here: <https://github.com/jan-revay/initPC/issues>
 ## TODO
 
 1. Merge and deprecate the InitNewPC repo InitPC repo on org GitHub and
-   initAndroid repo.
+   initAndroid repo (and my_pc_setup repo and all repos of this type I've created).
 1. Merge with LogidCfg repo
 1. Test the Windows setup script on a VM
 1. Create aliases for PowerShelly
