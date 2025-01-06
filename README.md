@@ -267,6 +267,7 @@ scripts with my old dconf dumps (backup_config repo)
 ## Keyboard layout plans
 
 - remap CapsLock to sth more useful
+  * __<https://github.com/wez/evremap>__
   * https://gist.github.com/nat-418/135a62fb9f37cc87cd70af1ab72e276a
   * https://superuser.com/questions/1678792/how-do-i-remap-cap-lock-to-make-other-keys-act-different
   * https://stackoverflow.com/questions/72450298/use-hyper-key-in-gnome-shortcuts (last post)
