@@ -19,6 +19,7 @@
 # TODO jan 2024
 
 1. PWSH (PowerShell 7) profile (the current profile applies only to the old PowerShell)
+2. Implement refresh command for windows
 
 ## Bugs
 1. Try turning off the feature that moves the cursor to the active window.
