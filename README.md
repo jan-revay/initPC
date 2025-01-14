@@ -17,8 +17,9 @@ are in a separate repository here:
    default)
 5. Run the initPC script launcher:
     * `./run_init.sh` - on Linux distros or Termux
-    * `Set-ExecutionPolicy unrestricted && cd Windows_10 &&
-      .\run_all.ps1` - on Windows (with administrator privileges)
+    * On Windows 11:
+        * Install [WinGet](https://apps.microsoft.com/detail/9nblggh4nns1?hl=en-US&gl=SK) and run: `winget install -e -id Git.Git` (TODO automate)
+        * `Set-ExecutionPolicy unrestricted && cd Windows_10 && .\run_all.ps1` - (with administrator privileges)
 
 ✔️ *Note: Logs will appear in the folder `initPC/Logs/`. Use `cat
 <logfile>` to display the log file with the original VT100 colors.*
