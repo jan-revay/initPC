@@ -21,6 +21,7 @@
 # TODO some packages fail to install - mark them and find an alternative way
 # TODO add choco package managers and install stuff that fails or
 # TODO add relevant packages from the package list here: <https://github.com/xsukax/xwgg/blob/main/index.html>
+# TODO - make the install script list packages which failed to install (currently it just prints error codes in red to stdout)
 # is not present in winget via choco
 
 Set-PSDebug -Trace 1
