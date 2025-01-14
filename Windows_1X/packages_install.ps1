@@ -20,6 +20,7 @@
 # TODO make the script break if a single package installation fails (I think that currently the script continues in that case)
 # TODO some packages fail to install - mark them and find an alternative way
 # TODO add choco package managers and install stuff that fails or
+# TODO add relevant packages from the package list here: <https://github.com/xsukax/xwgg/blob/main/index.html>
 # is not present in winget via choco
 
 Set-PSDebug -Trace 1
