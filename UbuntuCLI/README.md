@@ -10,3 +10,7 @@ Scripts in this directory serve as a base to all other Linux init scripts (they 
 - minimal branch can therefore be renamed to LTS or sth. like that.
 - start using tags on stable branch
 - add Docker install and Distrobox
+
+## Bugs
+
+- postfix errors in WSL Linux Ubuntu (steps to reproduce: run the initPC script on a clean Ubuntu WSL container)
