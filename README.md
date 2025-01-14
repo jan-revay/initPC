@@ -18,7 +18,7 @@ are in a separate repository here:
 5. Run the initPC script launcher:
     * `./run_init.sh` - on Linux distros or Termux
     * On Windows 11:
-        * Install [WinGet](https://apps.microsoft.com/detail/9nblggh4nns1?hl=en-US&gl=SK) and run: `winget install -e -id Git.Git` (TODO automate)
+        * Install [WinGet](https://apps.microsoft.com/detail/9nblggh4nns1?hl=en-US&gl=SK) and run: `winget install -e --id Git.Git` (TODO automate)
         * `Set-ExecutionPolicy unrestricted && cd Windows_10 && .\run_all.ps1` - (with administrator privileges)
 
 ✔️ *Note: Logs will appear in the folder `initPC/Logs/`. Use `cat
