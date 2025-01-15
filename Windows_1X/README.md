@@ -1,8 +1,22 @@
 # README.md
 
-## Examples
+## Examples & similar tools to take ideas from
 
 - <https://github.com/ChrisTitusTech/winutil>
+- <https://github.com/builtbybel/privatezilla>
+- <https://github.com/t-richards/chemo>
+- <https://github.com/builtbybel/Bloatynosy>
+- <https://github.com/builtbybel/SuperMSConfig>
+- <https://github.com/builtbybel/xd-AntiSpy>
+- <https://github.com/builtbybel/bloatbox>
+- <https://github.com/builtbybel/Appcopier>
+- <https://github.com/builtbybel/ThisIsWin11>
+- <https://github.com/builtbybel/CloneApp>
+- <https://github.com/crazy-max/WindowsSpyBlocker>
+- <https://github.com/xanasoft/MajorPrivacy/>
+- <https://github.com/farag2/Sophia-Script-for-Windows>
+- <https://www.oo-software.com/en/shutup10>
+- <https://www.nirsoft.net/utils/index.html>
 
 ## TODO
 
