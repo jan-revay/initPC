@@ -29,7 +29,7 @@ to .vmx file in the virtual machine image directory.
 ### Mouse & display
 
 1. Go to: `Control Panel\All Control Panel Items\Ease of Access Center\Make the mouse easier to use`
-2. Mouse pointers -> "Extra large White"
+2. Mouse pointers -> "Windows Inverted (extra-large)"
 3. Set: "Activate a window by hovering over it with the mouse"
 4. Go to: `Control Panel\All Control Panel Items\Ease of Access Center\Make computer easier to use`
 5. Set: "Make the focus rectangle thicker" and set the thickness of the blinking cursor to 4
@@ -40,13 +40,12 @@ to .vmx file in the virtual machine image directory.
 
 #### Right-click on the taskbar
 - Toolbars - disable all
-- Search -> Hidden
+- Search -> Hide
 - Show ... -> disable all except "Show Windows Ink Workspace button"
 - taskbar settings
     * all off except the following
     * use small taskbar buttons -> on
     * replace command prompt with Windows PowerShell in the menu (Win + X)
-    * taskbar location on screen -> top
     * Combine taskbar buttons -> When taskbar is full
     * show taskbar on all displays -> on
     * show taskbar buttons on -> Taskbar where window is open
@@ -73,7 +72,7 @@ to .vmx file in the virtual machine image directory.
 #### Colors
 
 - Choose your color - dark - IMPORTANT
-- Window colors -> Blue (or some other contrast color wrt. the window borders)
+- Window colors -> Red (or some other contrast color wrt. the window borders)
 - Show accent color on the following surfaces -> Title bars and window borders -> CHECK - IMPORTANT
 
 #### Themes
@@ -101,7 +100,7 @@ to .vmx file in the virtual machine image directory.
 - Multitasking
     * snap windows -> on (plus all related checkboxes)
     * Alt + Tab -> open windows only
-    * Virtual desktops -> On taskbar show windows that are open on -> Only the desktop I'm using
+    * Virtual desktops -> On taskbar show windows that are open on -> On all desktops
     * Alt + Tab shows windows that are open on -> Only the desktop I'm using
 - Clipboard -> clipboard history -> on (Pressing Win + V displays the history)
 
@@ -119,7 +118,8 @@ to .vmx file in the virtual machine image directory.
     * "Animations in the taskbar"
     * "Fade or slide menus into view"
     * "Fade or slide ToolTips into view"
-    * "Show shadows under windows"
+    * Optional "Show shadows under windows"
+    * Show windows contents while dragging
     * ... TODO find out what other options are doing
  
 ## Set first day of week
@@ -134,7 +134,7 @@ to .vmx file in the virtual machine image directory.
 
 1. Fix a bug that causes gestures to be way too insensitive:
     1) Go to Logiops and increase the sensitivity to 90 - this is equivalent to DPI 3031 <https://www.reddit.com/r/logitech/comments/ssvuh8/set_exact_dpi_for_mx_master_3_logitech_options/>
-    2) Go to Windows mouse settings and decrease the sensitivity to 3 ticks (in the standard mouse settings dialog, not the advanced)
+    2) Go to Windows mouse settings and decrease the sensitivity to 2 ticks (in the standard mouse settings dialog, not the advanced)
        note: there are two sliders for setting the pointer speed that work independently in Windows, one is in the settings app
        and another is in the advanced mouse settings dialog
 1. SmartShift: set smartshift sensitivity to 95%
