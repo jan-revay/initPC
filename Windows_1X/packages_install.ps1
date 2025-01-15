@@ -60,7 +60,7 @@ $WINGET_PACKAGES = @(
     'VMware.WorkstationPlayer' # broken
     # TODO? add WSL installation here?
 
-# Utils
+# Utils & TOSORT TODO - sort to cathegories
     '7zip.7zip'
     'Gyan.FFmpeg'
     'WinDirStat.WinDirStat'
@@ -72,6 +72,25 @@ $WINGET_PACKAGES = @(
     'pCloudAG.pCloudDrive'
     'Anki.Anki'
     'Hex-Rays.IDA.Free'
+    'Qalculate'
+    'Joplin'
+    'Geany.Geany'
+    'PuTTY.PuTTY'
+    'DBBrowserForSQLite.DBBrowserForSQLite'
+    'voidtools.Everything'
+    'Oracle.VirtualBox'
+    'Google.EarthPro'
+    'CodeSector.TeraCopy'
+    'AntibodySoftware.WizTree'
+    'Gyan.FFmpeg'
+    'NirSoft.OpenedFilesView'
+    'NirSoft.InsideClipboard'
+    'Google.GoogleDrive'
+    'qBittorrent.qBittorrent'
+    'dotPDN.PaintDotNet'
+    'Inkscape.Inkscape'
+    'Audacity.Audacity'
+    'KDE.Kdenlive'
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
@@ -94,6 +113,7 @@ $WINGET_PACKAGES = @(
     'Helix.Helix'
     'Notepad++.Notepad++'
     'WerWolv.ImHex'
+    'RKibria.frhed'
 
 # Terminal emulators
     'Alacritty.Alacritty'
@@ -108,6 +128,7 @@ $WINGET_PACKAGES = @(
     'JFrog.Conan'
     'Ninja-build.Ninja'
     'Microsoft.VisualStudio.2022.BuildTools'
+    'Cppcheck.Cppcheck'
 
 # Web browsers
     'Google.Chrome'
@@ -116,6 +137,7 @@ $WINGET_PACKAGES = @(
 # Office work & document readers & books
     'Adobe.Acrobat.Reader.64-bit'
     'TrackerSoftware.PDF-XChangeEditor'
+    'SumatraPDF.SumatraPDF'
     'KDE.Okular'
     'TheDocumentFoundation.LibreOffice'
     'Amazon.Kindle'
@@ -126,7 +148,8 @@ $WINGET_PACKAGES = @(
     'Zoom.Zoom'  # broken TODO FIX?
     '9NKSQGP7F2NH' # WhatsApp, the winget package is broken
     'OpenWhisperSystems.Signal'
-    'Facebook.Messenger' # broken? TODO FIX?
+    'Facebook.Messenger' # broken? TODO FIX? TODO maybe replace with Chrome PWA
+    'Discord.Discord'
 
 # Multimedia
     '9NCBCSZSJRSB' # Spotify, the winget package is broken
