@@ -17,6 +17,7 @@
 - <https://github.com/farag2/Sophia-Script-for-Windows>
 - <https://www.oo-software.com/en/shutup10>
 - <https://www.nirsoft.net/utils/index.html>
+- Add utilities from this MS page: <https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns>
 
 ## TODO
 
