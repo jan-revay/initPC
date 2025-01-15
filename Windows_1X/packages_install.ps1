@@ -111,6 +111,10 @@ $WINGET_PACKAGES = @(
 # Multimedia
     'GIMP.GIMP'
     'IrfanSkiljan.IrfanView'
+
+    'WiresharkFoundation.Wireshark'
+    'Microsoft.SysinternalsSuite'
+    'Microsoft.Sysinternals'
 )
 
 $WINGET_PACKAGES | ForEach-Object {
