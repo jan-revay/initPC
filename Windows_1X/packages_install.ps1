@@ -91,6 +91,7 @@ $WINGET_PACKAGES = @(
     'Inkscape.Inkscape'
     'Audacity.Audacity'
     'KDE.Kdenlive'
+    'Microsoft.Sysinternals.Autoruns'
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
