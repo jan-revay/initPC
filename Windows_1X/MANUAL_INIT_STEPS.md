@@ -171,7 +171,7 @@ to .vmx file in the virtual machine image directory.
 
 ## Install VMware workstation pro (or VirtualBox)
 
-
+## Tun the initPC script again and check for errors resp. apps that did not install
 
 # TODO
 
