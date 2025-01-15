@@ -8,7 +8,7 @@
 Set-PSDebug -Trace 1
 $ErrorActionPreference = "Stop"
 
-. $PSScriptRoot/../CommonInitScripts/git_config.sh.ps1
+# . $PSScriptRoot/../CommonInitScripts/git_config.sh.ps1
 . $PSScriptRoot/../CommonInitScripts/mkdirs.ps1
 
 # Todo consider adding this only for current user so that I don't need sudo.
