@@ -1,5 +1,7 @@
 # XP Pen tablet config for MS Whiteboard
 
+## Drivers download page: <https://www.xp-pen.com/download/star-06.html>
+
 ## Pen settings
 
 Key              |  Shortcut  | MS Whiteboard tool
