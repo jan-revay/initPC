@@ -18,7 +18,8 @@
 - <https://www.oo-software.com/en/shutup10>
 - <https://www.nirsoft.net/utils/index.html>
 - Add utilities from this MS page: <https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns>
-   - `winget search sysinternals` - add relevant stuff 
+   - `winget search sysinternals` - add relevant stuff
+   - <https://learn.microsoft.com/en-us/sysinternals/>
 
 ## TODO
 
