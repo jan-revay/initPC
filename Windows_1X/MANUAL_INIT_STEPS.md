@@ -26,6 +26,11 @@ to .vmx file in the virtual machine image directory.
 
 ## Windows settings that are not yet automatized
 
+### Enable SVK QWERTY and EN-US keyboard layouts
+
+Restart the PC afterwards, if I am unable to remove unneeded keyboard layouts use this manual to
+remove them in the Windows registry: <https://superuser.com/questions/957552/how-to-delete-a-keyboard-layout-in-windows-10/1340511#1340511>
+
 ### Mouse & display
 
 1. Go to: `Control Panel\All Control Panel Items\Ease of Access Center\Make the mouse easier to use`
