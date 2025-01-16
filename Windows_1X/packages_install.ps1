@@ -63,7 +63,9 @@ $WINGET_PACKAGES = @(
 # Utils & TOSORT TODO - sort to cathegories
     '7zip.7zip'
     'Gyan.FFmpeg'
+    # TODO WizTree does what WinDirStat does but better and quicker, consider commenting WinDirStat out
     'WinDirStat.WinDirStat'
+    'AntibodySoftware.WizTree'
     'XAMPPRocky.tokei' # broken? TODO FIX?
     'Ookla.Speedtest.Desktop'
     'fzf'
@@ -81,7 +83,6 @@ $WINGET_PACKAGES = @(
     'Oracle.VirtualBox'
     'Google.EarthPro'
     'CodeSector.TeraCopy'
-    'AntibodySoftware.WizTree'
     'Gyan.FFmpeg'
     'NirSoft.OpenedFilesView'
     'NirSoft.InsideClipboard'
