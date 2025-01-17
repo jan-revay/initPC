@@ -112,6 +112,7 @@ $WINGET_PACKAGES = @(
     'GIMP.GIMP'
     'IrfanSkiljan.IrfanView'
 
+    'Insecure.Npcap' # Wireshark driver for local network interface packet capture
     'WiresharkFoundation.Wireshark'
     'Microsoft.SysinternalsSuite'
     'Microsoft.Sysinternals'
