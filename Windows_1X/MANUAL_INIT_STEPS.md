@@ -138,8 +138,8 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 ## Logiops
 
 1. Fix a bug that causes gestures to be way too insensitive:
-    1) Go to Logiops and increase the sensitivity to 70 <https://www.reddit.com/r/logitech/comments/ssvuh8/set_exact_dpi_for_mx_master_3_logitech_options/>
-    2) Go to Windows mouse settings and decrease the sensitivity to 3 ticks (in the standard mouse settings dialog, not the advanced)
+    1) Go to Logiops and increase the sensitivity to 80 <https://www.reddit.com/r/logitech/comments/ssvuh8/set_exact_dpi_for_mx_master_3_logitech_options/>
+    2) Go to Windows mouse settings and decrease the sensitivity to 2 ticks (in the standard mouse settings dialog, not the advanced)
        note: there are two sliders for setting the pointer speed that work independently in Windows, one is in the settings app
        and another is in the advanced mouse settings dialog
 1. SmartShift: set smartshift sensitivity to 95%
