@@ -142,7 +142,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
     2) Go to Windows mouse settings and decrease the sensitivity to 2 ticks (in the standard mouse settings dialog, not the advanced)
        note: there are two sliders for setting the pointer speed that work independently in Windows, one is in the settings app
        and another is in the advanced mouse settings dialog
-1. SmartShift: set smartshift sensitivity to 95%
+1. SmartShift: set smartshift sensitivity to 90%
 
 ## AltSnap
 
