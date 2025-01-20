@@ -57,10 +57,15 @@ $WINGET_PACKAGES = @(
     'fzf'
     'AlDanial.Cloc' # count number of lines of code
     'starship.starship'
-    'Hex-Rays.IDA.Free'
     'Geany.Geany'
     'PuTTY.PuTTY'
     'Microsoft.Sysinternals.Autoruns'
+
+# Debuggers
+    'Hex-Rays.IDA.Free'
+    'Microsoft.WinDbg'
+    'Microsoft.Sysinternals'
+    # consider adding https://github.com/x64dbg/x64dbg
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
