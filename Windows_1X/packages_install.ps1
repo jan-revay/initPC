@@ -179,6 +179,7 @@ winget upgrade --all --accept-source-agreements --accept-package-agreements `
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" `
     + [System.Environment]::GetEnvironmentVariable("Path","User")
 
+python -m pip install --upgrade pip
 py -3 -m pip install --user pipx
 py -3 -m pipx ensurepath
 
