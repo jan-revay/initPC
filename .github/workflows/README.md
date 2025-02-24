@@ -58,6 +58,7 @@
 ## Example GitHub actions from similar repos
 
 - <https://github.com/microsoft/vcpkg-tool/blob/main/.github/workflows/build.yaml>
+- <https://github.com/borgbackup/borg/blob/master/.github/workflows/ci.yml>
 
 ### Dotfile managers
 
