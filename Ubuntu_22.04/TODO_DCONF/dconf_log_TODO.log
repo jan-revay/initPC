@@ -1336,3 +1336,5 @@ dconf watch /
 
 /org/gnome/shell/extensions/tiling-assistant/window-gap
   6
+/org/gnome/shell/extensions/quake-terminal/terminal-id
+  'Alacritty.desktop'
