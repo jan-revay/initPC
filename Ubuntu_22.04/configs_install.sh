@@ -132,7 +132,7 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Contr
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-last "['<Control><Alt><Super>End']"
 
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
-# gsettings set org.gnome.desktop.wm.preferences auto-raise 'true'
+gsettings set org.gnome.desktop.wm.preferences auto-raise 'true'
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
 gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Super>o']"
