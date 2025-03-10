@@ -55,6 +55,7 @@ APT_PACKAGES=(
     fzf  # TODO learn how to use fzf and add aliases
     tldr # TODO learn how to use
     libcrack2
+    flex # fast lexical analyzer generator
 
     # package managers
     npm rubygems pipx python3-pip
