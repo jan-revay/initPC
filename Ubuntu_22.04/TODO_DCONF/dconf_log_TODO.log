@@ -1338,3 +1338,5 @@ dconf watch /
   6
 /org/gnome/shell/extensions/quake-terminal/terminal-id
   'Alacritty.desktop'
+/org/gnome/shell/extensions/quake-terminal/auto-hide-window
+  false
