@@ -1282,3 +1282,57 @@ dconf watch /
 /org/gnome/shell/extensions/window-title-is-back/fixed-width
   true
 
+dconf watch /
+/org/gnome/desktop/wm/preferences/auto-raise
+  true
+
+/org/gnome/desktop/input-sources/mru-sources
+  [('xkb', 'sk+qwerty'), ('xkb', 'us')]
+
+/org/gnome/desktop/input-sources/mru-sources
+  [('xkb', 'us'), ('xkb', 'sk+qwerty')]
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  true
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  false
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  true
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  false
+
+/org/gnome/shell/extensions/tiling-assistant/window-gap
+  6
+
+/org/gnome/shell/extensions/tiling-assistant/single-screen-gap
+  6
+
+/org/gnome/shell/extensions/tiling-assistant/window-gap
+  4
+
+/org/gnome/shell/extensions/tiling-assistant/single-screen-gap
+  4
+
+/org/gnome/shell/extensions/tiling-assistant/window-gap
+  5
+
+/org/gnome/shell/extensions/tiling-assistant/single-screen-gap
+  5
+
+/org/gnome/shell/extensions/tiling-assistant/single-screen-gap
+  7
+
+/org/gnome/shell/extensions/tiling-assistant/single-screen-gap
+  5
+
+/org/gnome/shell/extensions/tiling-assistant/window-gap
+  7
+
+/org/gnome/shell/extensions/tiling-assistant/window-gap
+  5
+
+/org/gnome/shell/extensions/tiling-assistant/window-gap
+  6
