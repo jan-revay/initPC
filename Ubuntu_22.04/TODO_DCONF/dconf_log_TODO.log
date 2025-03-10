@@ -1,0 +1,1284 @@
+dconf watch /
+/org/gnome/shell/keybindings/toggle-overview
+  unset
+
+/org/gnome/shell/keybindings/toggle-overview
+  @as []
+
+/org/gnome/shell/keybindings/toggle-overview
+  ['<Control><Alt><Super>o']
+
+/org/gnome/Extensions/window-height
+  503
+
+/org/gnome/Extensions/window-width
+  802
+
+/org/gnome/Extensions/window-height
+  514
+
+/org/gnome/Extensions/window-width
+  809
+
+/org/gnome/Extensions/window-height
+  536
+
+/org/gnome/Extensions/window-width
+  821
+
+/org/gnome/Extensions/window-height
+  563
+
+/org/gnome/Extensions/window-width
+  837
+
+/org/gnome/Extensions/window-height
+  584
+
+/org/gnome/Extensions/window-width
+  852
+
+/org/gnome/Extensions/window-height
+  609
+
+/org/gnome/Extensions/window-width
+  874
+
+/org/gnome/Extensions/window-height
+  642
+
+/org/gnome/Extensions/window-width
+  907
+
+/org/gnome/Extensions/window-height
+  670
+
+/org/gnome/Extensions/window-width
+  938
+
+/org/gnome/Extensions/window-height
+  721
+
+/org/gnome/Extensions/window-width
+  1000
+
+/org/gnome/Extensions/window-height
+  753
+
+/org/gnome/Extensions/window-width
+  1040
+
+/org/gnome/Extensions/window-height
+  795
+
+/org/gnome/Extensions/window-width
+  1096
+
+/org/gnome/Extensions/window-height
+  837
+
+/org/gnome/Extensions/window-width
+  1150
+
+/org/gnome/Extensions/window-height
+  879
+
+/org/gnome/Extensions/window-width
+  1206
+
+/org/gnome/Extensions/window-height
+  931
+
+/org/gnome/Extensions/window-width
+  1272
+
+/org/gnome/Extensions/window-height
+  991
+
+/org/gnome/Extensions/window-width
+  1352
+
+/org/gnome/Extensions/window-height
+  1039
+
+/org/gnome/Extensions/window-width
+  1414
+
+/org/gnome/Extensions/window-height
+  1109
+
+/org/gnome/Extensions/window-width
+  1496
+
+/org/gnome/Extensions/window-height
+  1179
+
+/org/gnome/Extensions/window-width
+  1576
+
+/org/gnome/Extensions/window-height
+  1231
+
+/org/gnome/Extensions/window-width
+  1634
+
+/org/gnome/Extensions/window-height
+  1279
+
+/org/gnome/Extensions/window-width
+  1686
+
+/org/gnome/Extensions/window-height
+  1355
+
+/org/gnome/Extensions/window-width
+  1759
+
+/org/gnome/Extensions/window-height
+  1397
+
+/org/gnome/Extensions/window-width
+  1797
+
+/org/gnome/Extensions/window-height
+  1420
+
+/org/gnome/Extensions/window-width
+  1817
+
+/org/gnome/Extensions/window-height
+  1456
+
+/org/gnome/Extensions/window-width
+  1843
+
+/org/gnome/Extensions/window-height
+  1475
+
+/org/gnome/Extensions/window-width
+  1856
+
+/org/gnome/Extensions/window-height
+  1486
+
+/org/gnome/Extensions/window-width
+  1864
+
+/org/gnome/Extensions/window-height
+  1495
+
+/org/gnome/Extensions/window-width
+  1869
+
+/org/gnome/Extensions/window-height
+  1500
+
+/org/gnome/Extensions/window-width
+  1871
+
+/org/gnome/Extensions/window-height
+  1504
+
+/org/gnome/Extensions/window-width
+  1873
+
+/org/gnome/Extensions/window-height
+  1507
+
+/org/gnome/Extensions/window-width
+  1875
+
+/org/gnome/Extensions/window-height
+  1512
+
+/org/gnome/Extensions/window-width
+  1878
+
+/org/gnome/Extensions/window-height
+  1515
+
+/org/gnome/Extensions/window-width
+  1880
+
+/org/gnome/Extensions/window-height
+  1517
+
+/org/gnome/Extensions/window-width
+  1882
+
+/org/gnome/Extensions/window-width
+  1881
+
+/org/gnome/Extensions/window-width
+  1880
+
+/org/gnome/Extensions/window-width
+  1879
+
+/org/gnome/Extensions/window-width
+  1877
+
+/org/gnome/Extensions/window-width
+  1871
+
+/org/gnome/Extensions/window-width
+  1868
+
+/org/gnome/Extensions/window-width
+  1864
+
+/org/gnome/Extensions/window-width
+  1861
+
+/org/gnome/Extensions/window-width
+  1847
+
+/org/gnome/Extensions/window-width
+  1834
+
+/org/gnome/Extensions/window-width
+  1809
+
+/org/gnome/Extensions/window-width
+  1801
+
+/org/gnome/Extensions/window-width
+  1783
+
+/org/gnome/Extensions/window-width
+  1764
+
+/org/gnome/Extensions/window-width
+  1721
+
+/org/gnome/Extensions/window-width
+  1704
+
+/org/gnome/Extensions/window-width
+  1649
+
+/org/gnome/Extensions/window-width
+  1587
+
+/org/gnome/Extensions/window-width
+  1466
+
+/org/gnome/Extensions/window-width
+  1402
+
+/org/gnome/Extensions/window-width
+  1291
+
+/org/gnome/Extensions/window-width
+  1257
+
+/org/gnome/Extensions/window-width
+  1231
+
+/org/gnome/Extensions/window-width
+  1229
+
+/org/gnome/Extensions/window-width
+  1228
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  20
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  1100
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  1200
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  1300
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  1400
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  1500
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  1600
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  1700
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  1800
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  1900
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  2000
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  2100
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  2200
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  2300
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  2400
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  2500
+
+/org/gnome/shell/extensions/clipboard-history/history-size
+  5000
+
+/org/gnome/shell/extensions/clipboard-history/ignore-password-mimes
+  false
+
+/org/gnome/shell/extensions/clipboard-history/display-mode
+  1
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  30
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  40
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  50
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  60
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  70
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  60
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  50
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  40
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  30
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  20
+
+/org/gnome/shell/extensions/clipboard-history/topbar-preview-size
+  30
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:1']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:2']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:3']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:1']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:2']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:3']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:1']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:2']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:3']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:5']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:1']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:2']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:3']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:1']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:1']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:2']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:3']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:4']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:5']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:6']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:7']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8']
+
+/org/gnome/desktop/notifications/application/com-spotify-client/application-id
+  'com.spotify.Client.desktop'
+
+/org/gnome/desktop/notifications/application-children
+  ['com-spotify-client']
+
+/org/gnome/control-center/window-state
+  (2003, 1445, false)
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:1']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:2']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:1']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:2']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:3']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:4']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:5']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:6']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:7']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:8']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:8', 'chrome-aghbiahbpaijignceidepookljebhfak-Default.desktop:1']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:8', 'chrome-aghbiahbpaijignceidepookljebhfak-Default.desktop:2']
+
+/org/gnome/shell/extensions/auto-move-windows/application-list
+  ['chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Default.desktop:4', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Default.desktop:4', 'org.signal.Signal.desktop:4', 'code.desktop:2', 'com.spotify.Client.desktop:8', 'chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop:8', 'chrome-aghbiahbpaijignceidepookljebhfak-Default.desktop:3']
+
+/org/gnome/shell/extensions/improved-workspace-indicator/wrap-scroll
+  false
+
+/org/gnome/shell/extensions/improved-workspace-indicator/change-on-scroll
+  false
+
+/org/gnome/shell/extensions/improved-workspace-indicator/skip-taskbar-mode
+  false
+
+/org/gnome/shell/extensions/improved-workspace-indicator/skip-taskbar-mode
+  true
+
+/org/gnome/shell/extensions/improved-workspace-indicator/panel-position
+  'center'
+
+/org/gnome/shell/extensions/improved-workspace-indicator/panel-position
+  'right'
+
+/org/gnome/shell/extensions/improved-workspace-indicator/panel-position
+  'center'
+
+/org/gnome/shell/extensions/lilypad/lilypad-order
+  @as []
+
+/org/gnome/shell/extensions/lilypad/ignored-order
+  @as []
+/org/gnome/shell/extensions/lilypad/reorder
+  true
+
+/org/gnome/shell/extensions/lilypad/lilypad-order
+  ['Reminder_Alarm_Clock_ReminderAlarmClock']
+
+/org/gnome/shell/extensions/lilypad/reorder
+  false
+/org/gnome/shell/extensions/lilypad/rightbox-order
+  ['lilypad', 'improved_workspace_indicator', 'Clipboard_History_Indicator', 'tilingshell', 'system_monitor', 'vitalsMenu', 'a11y', 'keyboard', 'tiling_assistant', 'StatusNotifierItem', 'spotify_client', 'software_update_available', 'livepatch']
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  false
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  true
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  false
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  true
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  false
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  true
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  false
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  true
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  false
+
+/org/gnome/shell/extensions/lilypad/lilypad-order
+  ['a11y', 'Reminder_Alarm_Clock_ReminderAlarmClock']
+
+/org/gnome/shell/extensions/lilypad/reorder
+  true
+/org/gnome/shell/extensions/lilypad/rightbox-order
+  ['lilypad', 'improved_workspace_indicator', 'Clipboard_History_Indicator', 'tilingshell', 'system_monitor', 'vitalsMenu', 'keyboard', 'tiling_assistant', 'StatusNotifierItem', 'spotify_client', 'software_update_available', 'livepatch']
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  true
+
+/org/gnome/shell/extensions/lilypad/show-icons
+  false
+
+/org/gnome/shell/extensions/panelScroll/left
+  'window'
+
+/org/gnome/shell/extensions/panelScroll/right
+  'workspace'
+
+/org/gnome/shell/extensions/panelScroll/wrap
+  false
+
+/org/gnome/shell/extensions/panelScroll/debounce
+  0
+
+/org/gnome/shell/extensions/panelScroll/left
+  'workspace'
+
+/org/gnome/shell/extensions/quake-terminal/auto-hide-window
+  false
+
+/org/gnome/shell/extensions/quake-terminal/auto-hide-window
+  true
+
+/org/gnome/shell/extensions/quake-terminal/animation-time
+  245
+
+/org/gnome/shell/extensions/quake-terminal/animation-time
+  240
+
+/org/gnome/shell/extensions/quake-terminal/animation-time
+  235
+
+/org/gnome/shell/extensions/quake-terminal/animation-time
+  230
+
+/org/gnome/shell/extensions/quake-terminal/animation-time
+  225
+
+/org/gnome/shell/extensions/quake-terminal/animation-time
+  220
+
+/org/gnome/shell/extensions/quake-terminal/animation-time
+  215
+
+/org/gnome/shell/extensions/quake-terminal/animation-time
+  5
+
+/org/gnome/shell/extensions/quake-terminal/animation-time
+  0
+
+/org/gnome/shell/extensions/quake-terminal/vertical-size
+  45
+
+/org/gnome/shell/extensions/quake-terminal/vertical-size
+  40
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  95
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  90
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  85
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  80
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  75
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  70
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  65
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  60
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-alignment
+  1
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  55
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  50
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  45
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  40
+
+/org/gnome/shell/extensions/quake-terminal/horizontal-size
+  45
+
+/org/gnome/shell/extensions/quake-terminal/always-on-top
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/icon-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/icon-display
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/icon-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/move-clock
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/move-clock
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/compact-display
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/compact-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/compact-display
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/compact-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/center-display
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/left-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/center-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/left-display
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/left-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-style
+  'both'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-style
+  'graph'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/swap-display
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/swap-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/fan-display
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/fan-style
+  'both'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/fan-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-display
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-style
+  'both'
+
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 1.0, 1.0, 1.0, 1.0)
+
+/org/gtk/gtk4/settings/color-chooser/custom-colors
+  [(0.66666668653488159, 0.96078431606292725, 0.81568628549575806, 1.0)]
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.66666668653488159, 0.96078431606292725, 0.81568628549575806, 1.0)
+
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.87843137979507446, 0.10588235408067703, 0.14117647707462311, 1.0)
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-cache-color
+  '#e01b24ff'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-style
+  'both'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-style
+  'graph'
+
+/org/gtk/gtk4/settings/color-chooser/custom-colors
+  [(0.0, 0.70196080207824707, 0.35686275362968445, 1.0), (0.66666668653488159, 0.96078431606292725, 0.81568628549575806, 1.0)]
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.0, 0.70196080207824707, 0.35686275362968445, 1.0)
+
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.56862747669219971, 0.25490197539329529, 0.67450982332229614, 1.0)
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-program-color
+  '#9141acff'
+
+/org/gtk/gtk4/settings/color-chooser/custom-colors
+  [(0.0, 1.0, 0.50980395078659058, 1.0), (0.0, 0.70196080207824707, 0.35686275362968445, 1.0), (0.66666668653488159, 0.96078431606292725, 0.81568628549575806, 1.0)]
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.0, 1.0, 0.50980395078659058, 1.0)
+
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.38823530077934265, 0.27058824896812439, 0.17254902422428131, 1.0)
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-buffer-color
+  '#63452cff'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-style
+  'digit'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-style
+  'graph'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/swap-display
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/swap-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-display
+  false
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-display
+  true
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-style
+  'digit'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-style
+  'graph'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-graph-width
+  101
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-graph-width
+  100
+
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.56862747669219971, 0.25490197539329529, 0.67450982332229614, 1.0)
+
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.20000000298023224, 0.81960785388946533, 0.47843137383460999, 1.0)
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-program-color
+  '#33d17aff'
+
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.38823530077934265, 0.27058824896812439, 0.17254902422428131, 1.0)
+
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.10980392247438431, 0.44313725829124451, 0.84705883264541626, 1.0)
+
+/org/gnome/shell/extensions/system-monitor-next-applet/memory-buffer-color
+  '#1c71d8ff'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  99
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  98
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  97
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  96
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  95
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  94
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  93
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  92
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  91
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  90
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  89
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  88
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  87
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  86
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  85
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  84
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  83
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  82
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  81
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  80
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  79
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  78
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  77
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  76
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  75
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  74
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  73
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  72
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  71
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  70
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  69
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  68
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  67
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  66
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  65
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  64
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  63
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  62
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  61
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  60
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  59
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  58
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  57
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  56
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  55
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  54
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  53
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  52
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  51
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  50
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  49
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  48
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  47
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  46
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  47
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  48
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  49
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-graph-width
+  50
+
+/org/gtk/gtk4/settings/color-chooser/custom-colors
+  [(0.7764706015586853, 0.31372550129890442, 0.0, 1.0), (0.0, 1.0, 0.50980395078659058, 1.0), (0.0, 0.70196080207824707, 0.35686275362968445, 1.0), (0.66666668653488159, 0.96078431606292725, 0.81568628549575806, 1.0)]
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.7764706015586853, 0.31372550129890442, 0.0, 1.0)
+
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.20000000298023224, 0.81960785388946533, 0.47843137383460999, 1.0)
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-read-color
+  '#33d17aff'
+
+/org/gtk/gtk4/settings/color-chooser/custom-colors
+  [(1.0, 0.40392157435417175, 0.0, 1.0), (0.7764706015586853, 0.31372550129890442, 0.0, 1.0), (0.0, 1.0, 0.50980395078659058, 1.0), (0.0, 0.70196080207824707, 0.35686275362968445, 1.0), (0.66666668653488159, 0.96078431606292725, 0.81568628549575806, 1.0)]
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 1.0, 0.40392157435417175, 0.0, 1.0)
+
+/org/gtk/gtk4/settings/color-chooser/selected-color
+  (true, 0.87843137979507446, 0.10588235408067703, 0.14117647707462311, 1.0)
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-write-color
+  '#e01b24ff'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-usage-style
+  'bar'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-usage-style
+  'none'
+
+/org/gnome/shell/extensions/system-monitor-next-applet/disk-usage-style
+  'pie'
+
+/org/gnome/shell/extensions/vitals/show-memory
+  false
+
+/org/gnome/shell/extensions/vitals/show-fan
+  false
+
+/org/gnome/shell/extensions/vitals/show-voltage
+  false
+
+/org/gnome/shell/extensions/vitals/show-processor
+  false
+
+/org/gnome/shell/extensions/vitals/hot-sensors
+  ['_memory_usage_', '_system_load_1m_', '__network-rx_max__', '_temperature_k10temp_tctl_', '_system_uptime_']
+
+/org/gnome/shell/extensions/vitals/show-storage
+  false
+
+/org/gnome/gnome-system-monitor/disktreenew/columns-order
+  [1, 2, 3, 4, 5, 6]
+/org/gnome/gnome-system-monitor/disktreenew/sort-col
+  1
+/org/gnome/gnome-system-monitor/disktreenew/sort-order
+  0
+
+/org/gnome/gnome-system-monitor/disktreenew/columns-order
+  [6]
+
+/org/gnome/shell/extensions/vitals/show-network
+  false
+
+/org/gnome/shell/extensions/vitals/show-network
+  true
+
+/org/gnome/shell/extensions/vitals/show-storage
+  true
+
+/org/gnome/shell/extensions/vitals/show-memory
+  true
+
+/org/gnome/shell/extensions/vitals/hot-sensors
+  ['_system_load_1m_', '__network-rx_max__', '_temperature_k10temp_tctl_', '_system_uptime_']
+
+/org/gnome/shell/extensions/vitals/hot-sensors
+  ['__network-rx_max__', '_temperature_k10temp_tctl_', '_system_uptime_']
+
+/org/gnome/shell/extensions/vitals/hot-sensors
+  ['_temperature_k10temp_tctl_', '_system_uptime_']
+
+/org/gnome/shell/extensions/vitals/show-network
+  false
+
+/org/gnome/shell/extensions/vitals/show-storage
+  false
+
+/org/gnome/shell/extensions/vitals/show-system
+  false
+
+/org/gnome/shell/extensions/vitals/show-system
+  true
+
+/org/gnome/shell/extensions/vitals/show-processor
+  true
+
+/org/gnome/shell/extensions/vitals/hot-sensors
+  ['_temperature_k10temp_tctl_', '_system_uptime_', '_temperature_mt7921_phy0_temp1_']
+
+/org/gnome/shell/extensions/vitals/hot-sensors
+  ['_temperature_k10temp_tctl_', '_system_uptime_']
+
+/org/gnome/shell/extensions/vitals/position-in-panel
+  1
+
+/org/gnome/shell/extensions/vitals/icon-style
+  1
+
+/org/gnome/shell/extensions/vitals/icon-style
+  0
+
+/org/gnome/shell/extensions/vitals/icon-style
+  1
+
+/org/gnome/shell/extensions/vitals/icon-style
+  0
+
+/org/gnome/shell/extensions/vitals/icon-style
+  1
+
+/org/gnome/shell/extensions/system-monitor-next-applet/net-style
+  'both'
+
+/org/gnome/shell/extensions/window-title-is-back/colored-icon
+  true
+
+/org/gnome/shell/extensions/window-title-is-back/colored-icon
+  false
+
+/org/gnome/shell/extensions/window-title-is-back/colored-icon
+  true
+
+/org/gnome/shell/extensions/window-title-is-back/icon-size
+  17
+
+/org/gnome/shell/extensions/window-title-is-back/icon-size
+  18
+
+/org/gnome/shell/extensions/window-title-is-back/icon-size
+  19
+
+/org/gnome/shell/extensions/window-title-is-back/icon-size
+  20
+
+/org/gnome/shell/extensions/window-title-is-back/icon-size
+  21
+
+/org/gnome/shell/extensions/window-title-is-back/icon-size
+  22
+
+/org/gnome/shell/extensions/window-title-is-back/icon-size
+  23
+
+/org/gnome/shell/extensions/window-title-is-back/icon-size
+  24
+
+/org/gnome/shell/extensions/window-title-is-back/icon-size
+  25
+
+/org/gnome/shell/extensions/window-title-is-back/icon-size
+  26
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  140
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  130
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  120
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  110
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  100
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  90
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  80
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  70
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  60
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  50
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  40
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  30
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  20
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  10
+
+/org/gnome/shell/extensions/window-title-is-back/ease-time
+  0
+
+/org/gnome/shell/extensions/workspaces-indicator-by-open-apps/scroll-enable
+  false
+
+/org/gnome/shell/extensions/workspaces-indicator-by-open-apps/scroll-wraparound
+  false
+
+/org/gnome/shell/extensions/workspaces-indicator-by-open-apps/indicator-round-borders
+  false
+
+/org/gnome/shell/extensions/workspaces-indicator-by-open-apps/indicator-round-borders
+  true
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  70
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  60
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  50
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  40
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  30
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  20
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  10
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  20
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  30
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  40
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  50
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  60
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  70
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  80
+
+/org/gnome/shell/extensions/window-title-is-back/indicator-width
+  70
+
+/org/gnome/shell/extensions/window-title-is-back/fixed-width
+  false
+
+/org/gnome/shell/extensions/window-title-is-back/fixed-width
+  true
+
