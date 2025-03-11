@@ -15,6 +15,7 @@ are probably buggy
 - create an automatic tiling script via ydotool and simulating keyboard shortcuts
   see: <https://www.reddit.com/r/linuxquestions/comments/u5mxzi/xdotool_alternative_for_wayland/>
 - set desktop background in the config part
+- crontab spin down disk timeout set on reboot
 
 
 ## GNOME extensions to try
