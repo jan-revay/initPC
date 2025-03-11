@@ -11,6 +11,10 @@ HCI MemTest (400%+ coverage per thread)
 Karhu RAM Test (10,000% coverage for high reliability)
 Prime95 (Blend Test for memory-intensive workloads)
 
+## Windows only
+
+- <https://www.karhusoftware.com/ramtest/#introduction>
+
 ## To try
 
 - <https://www.phoronix-test-suite.com/>
