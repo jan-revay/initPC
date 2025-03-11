@@ -1340,3 +1340,10 @@ dconf watch /
   'Alacritty.desktop'
 /org/gnome/shell/extensions/quake-terminal/auto-hide-window
   false
+/org/gnome/shell/app-switcher/current-workspace-only
+  true
+
+/org/gnome/shell/extensions/dash-to-dock/isolate-workspaces
+  true
+/org/gnome/shell/extensions/tiling-assistant/tiling-popup-all-workspace
+  false
