@@ -5,6 +5,12 @@
 - [Memtest86](https://www.memtest.org/)
 - ...
 
+Complementary Tests: After MemTest86, also stress-test in Windows/Linux using tools like:
+TM5 (TestMem5) with Anta777 Extreme preset
+HCI MemTest (400%+ coverage per thread)
+Karhu RAM Test (10,000% coverage for high reliability)
+Prime95 (Blend Test for memory-intensive workloads)
+
 ## To try
 
 - <https://www.phoronix-test-suite.com/>
