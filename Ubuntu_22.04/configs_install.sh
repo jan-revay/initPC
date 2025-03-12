@@ -39,6 +39,8 @@ gsettings set org.gnome.desktop.input-sources xkb-options \
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-red-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Yaru-red'
+# this was set to true for some reason on my fresh Ubuntu 24.04 install
+gsettings set org.gnome.desktop.lockdown disable-lock-screen false
 gsettings set org.gnome.mutter dynamic-workspaces false
 
 # TODO add descriptions to these settings in comments (via ChatGPT)
