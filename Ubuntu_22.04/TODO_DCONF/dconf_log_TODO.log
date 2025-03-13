@@ -1347,3 +1347,7 @@ dconf watch /
   true
 /org/gnome/shell/extensions/tiling-assistant/tiling-popup-all-workspace
   false
+/org/gnome/shell/extensions/focus/inactive-opacity
+  uint32 90
+
+
