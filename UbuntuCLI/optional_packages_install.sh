@@ -9,3 +9,5 @@
 #    - powershell https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.3
 
 . ../prelude.sh
+
+sudo apt install stressapptest
