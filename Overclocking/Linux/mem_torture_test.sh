@@ -4,9 +4,15 @@
 exec &> >(tee output.log)
 
 pushd p95* || exit
+# Results are in ./results.txt file
 timeout --preserve-status 10h ./mprime -t \
     || timeout 2s speaker-test -t sine -f 1000
+
 popd || exit
+
+if grep -F -i error output.log; then
+    timeout 2s speaker-test -t sine -f 1000
+fi
 
 stressapptest -W -M "$(free -m | awk '/Mem:/ {print int($2 * 0.95)}')" -s 36000 \
     || timeout 2s speaker-test -t sine -f 1000
