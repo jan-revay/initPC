@@ -18,3 +18,6 @@ Prime95 (Blend Test for memory-intensive workloads)
 ## To try
 
 - <https://www.phoronix-test-suite.com/>
+
+
+<https://www.techpowerup.com/forums/threads/program-for-basic-memory-testing.311786/>
