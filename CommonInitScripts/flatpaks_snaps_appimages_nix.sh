@@ -37,6 +37,10 @@ else
         com.spotify.Client
         com.axosoft.GitKraken
         net.werwolv.ImHex
+
+        # benchmarks and stress tests
+        com.geeks3d.furmark
+        com.geekbench.Geekbench6
     )
     # TODO try fixing flatpak installation without sudo (or at least do some research
     # whether the sudo will not break sth.)
