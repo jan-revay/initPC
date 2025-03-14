@@ -6,6 +6,7 @@
 - <https://www.karhusoftware.com/ramtest/#introduction>
 - sudo apt install stressapptest
   - `timeout 7h ./mprime -t; stressapptest -W -M $(free -m | awk '/Mem:/ {print int($2 * 0.95)}') -s 60000`
+- see <https://github.com/jan-revay/initPC/blob/devel/Overclocking/Linux/p95v3019b20.linux64/stress.txt>
 - ...
 
 Complementary Tests: After MemTest86, also stress-test in Windows/Linux using tools like:
