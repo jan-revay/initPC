@@ -23,3 +23,5 @@ Prime95 (Blend Test for memory-intensive workloads)
 
 
 <https://www.techpowerup.com/forums/threads/program-for-basic-memory-testing.311786/>
+
+<https://www.reddit.com/r/AMDHelp/comments/17og1bi/stress_test_your_ram/>
