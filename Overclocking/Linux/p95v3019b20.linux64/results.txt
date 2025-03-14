@@ -1,0 +1,4087 @@
+[Tue Mar 11 00:01:34 2025]
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+[Tue Mar 11 00:07:08 2025]
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+[Tue Mar 11 00:13:01 2025]
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+[Tue Mar 11 00:19:12 2025]
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+[Tue Mar 11 00:24:53 2025]
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+[Tue Mar 11 00:30:44 2025]
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+[Tue Mar 11 00:36:19 2025]
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+[Tue Mar 11 00:42:26 2025]
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+[Tue Mar 11 01:00:00 2025]
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+[Tue Mar 11 01:05:33 2025]
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+[Tue Mar 11 05:18:56 2025]
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+[Tue Mar 11 13:36:05 2025]
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+[Tue Mar 11 13:41:38 2025]
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+[Tue Mar 11 13:47:31 2025]
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+[Tue Mar 11 13:53:32 2025]
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+[Tue Mar 11 13:59:17 2025]
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+[Tue Mar 11 14:05:34 2025]
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+[Tue Mar 11 14:11:27 2025]
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+[Tue Mar 11 14:17:15 2025]
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+[Tue Mar 11 14:22:57 2025]
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+[Tue Mar 11 14:28:52 2025]
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+[Tue Mar 11 14:34:35 2025]
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+[Tue Mar 11 14:40:21 2025]
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+[Tue Mar 11 14:46:06 2025]
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+[Tue Mar 11 14:51:53 2025]
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+[Tue Mar 11 14:57:44 2025]
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+[Tue Mar 11 15:03:43 2025]
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+[Tue Mar 11 15:09:45 2025]
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+[Tue Mar 11 15:15:16 2025]
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+[Tue Mar 11 15:21:18 2025]
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+[Tue Mar 11 15:27:29 2025]
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+[Tue Mar 11 15:33:06 2025]
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+[Tue Mar 11 15:38:44 2025]
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+[Tue Mar 11 15:44:55 2025]
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+[Tue Mar 11 15:51:04 2025]
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+[Tue Mar 11 15:57:00 2025]
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+[Tue Mar 11 16:02:55 2025]
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+[Tue Mar 11 16:08:59 2025]
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+[Tue Mar 11 16:15:02 2025]
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+[Tue Mar 11 16:21:00 2025]
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+[Tue Mar 11 16:26:38 2025]
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+[Tue Mar 11 16:32:22 2025]
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+[Tue Mar 11 16:38:10 2025]
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+[Tue Mar 11 16:44:03 2025]
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+[Tue Mar 11 16:49:54 2025]
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+[Tue Mar 11 16:55:49 2025]
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+[Tue Mar 11 17:01:43 2025]
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+[Tue Mar 11 17:07:31 2025]
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+[Tue Mar 11 17:13:32 2025]
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+[Tue Mar 11 17:19:19 2025]
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+[Tue Mar 11 17:25:22 2025]
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+[Tue Mar 11 17:31:09 2025]
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+Self-test 300K passed!
+[Tue Mar 11 17:36:59 2025]
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+[Tue Mar 11 17:42:45 2025]
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+Self-test 320K passed!
+[Tue Mar 11 17:48:28 2025]
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+[Tue Mar 11 17:54:04 2025]
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+Self-test 336K passed!
+[Tue Mar 11 18:00:15 2025]
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+[Tue Mar 11 18:07:10 2025]
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+Self-test 360K passed!
+[Tue Mar 11 18:14:43 2025]
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+[Tue Mar 11 18:20:36 2025]
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+Self-test 384K passed!
+[Tue Mar 11 18:26:30 2025]
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+[Tue Mar 11 18:32:24 2025]
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+Self-test 400K passed!
+[Tue Mar 11 18:38:47 2025]
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+[Tue Mar 11 18:44:08 2025]
+Self-test 1152K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+[Tue Mar 11 18:49:16 2025]
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 432K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+[Tue Mar 11 18:54:21 2025]
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+[Tue Mar 11 18:59:24 2025]
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 448K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+[Tue Mar 11 19:05:00 2025]
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 1280K passed!
+[Tue Mar 11 19:10:05 2025]
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+[Tue Mar 11 19:15:46 2025]
+Self-test 1344K passed!
+Self-test 480K passed!
+Self-test 480K passed!
+Self-test 1344K passed!
+Self-test 480K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+[Tue Mar 11 19:21:38 2025]
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+[Tue Mar 11 19:26:39 2025]
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 512K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+[Tue Mar 11 19:31:48 2025]
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 560K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 560K passed!
+[Tue Mar 11 19:36:55 2025]
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 560K passed!
+Self-test 1440K passed!
+Self-test 560K passed!
+Self-test 560K passed!
+Self-test 560K passed!
+Self-test 560K passed!
+Self-test 560K passed!
+Self-test 560K passed!
+Self-test 1536K passed!
+Self-test 560K passed!
+Self-test 560K passed!
+Self-test 1536K passed!
+Self-test 560K passed!
+Self-test 560K passed!
+[Tue Mar 11 19:43:56 2025]
+Self-test 560K passed!
+Self-test 560K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 560K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 576K passed!
+Self-test 1536K passed!
+Self-test 576K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+[Tue Mar 11 19:51:24 2025]
+Self-test 1536K passed!
+Self-test 576K passed!
+Self-test 1536K passed!
+Self-test 576K passed!
+Self-test 1536K passed!
+Self-test 576K passed!
+Self-test 576K passed!
+Self-test 576K passed!
+Self-test 576K passed!
+Self-test 1728K passed!
+Self-test 576K passed!
+Self-test 1728K passed!
+Self-test 576K passed!
+Self-test 576K passed!
+Self-test 576K passed!
+Self-test 576K passed!
+[Tue Mar 11 19:58:26 2025]
+Self-test 1728K passed!
+Self-test 576K passed!
+Self-test 1728K passed!
+Self-test 576K passed!
+Self-test 1728K passed!
+Self-test 576K passed!
+Self-test 1728K passed!
+Self-test 588K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 588K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+[Tue Mar 11 20:03:33 2025]
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 588K passed!
+Self-test 588K passed!
+Self-test 588K passed!
+Self-test 588K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1920K passed!
+Self-test 1728K passed!
+Self-test 588K passed!
+Self-test 588K passed!
+Self-test 588K passed!
+Self-test 1920K passed!
+[Tue Mar 11 20:09:48 2025]
+Self-test 588K passed!
+Self-test 588K passed!
+Self-test 588K passed!
+Self-test 588K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 588K passed!
+Self-test 588K passed!
+Self-test 600K passed!
+Self-test 1920K passed!
+Self-test 588K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 600K passed!
+[Tue Mar 11 20:17:08 2025]
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 600K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 600K passed!
+Self-test 600K passed!
+Self-test 600K passed!
+Self-test 2048K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 600K passed!
+Self-test 600K passed!
+Self-test 600K passed!
+Self-test 1920K passed!
+Self-test 2048K passed!
+[Tue Mar 11 20:24:21 2025]
+Self-test 600K passed!
+Self-test 600K passed!
+Self-test 2048K passed!
+Self-test 600K passed!
+Self-test 600K passed!
+Self-test 2048K passed!
+Self-test 640K passed!
+Self-test 2048K passed!
+Self-test 640K passed!
+Self-test 2048K passed!
+Self-test 600K passed!
+Self-test 2048K passed!
+Self-test 600K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 600K passed!
+[Tue Mar 11 20:30:30 2025]
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 2048K passed!
+Self-test 2304K passed!
+Self-test 2048K passed!
+Self-test 640K passed!
+Self-test 2048K passed!
+Self-test 2304K passed!
+Self-test 2048K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 2048K passed!
+[Tue Mar 11 20:35:37 2025]
+Self-test 2048K passed!
+Self-test 640K passed!
+Self-test 2304K passed!
+Self-test 2048K passed!
+Self-test 2304K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 2304K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 672K passed!
+Self-test 2304K passed!
+[Tue Mar 11 20:40:59 2025]
+Self-test 672K passed!
+Self-test 640K passed!
+Self-test 640K passed!
+Self-test 2304K passed!
+Self-test 640K passed!
+Self-test 672K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 672K passed!
+Self-test 2304K passed!
+Self-test 672K passed!
+[Tue Mar 11 20:46:00 2025]
+Self-test 672K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 672K passed!
+Self-test 2304K passed!
+Self-test 672K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 672K passed!
+Self-test 2400K passed!
+Self-test 672K passed!
+Self-test 672K passed!
+Self-test 672K passed!
+[Tue Mar 11 20:51:09 2025]
+Self-test 672K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 672K passed!
+Self-test 672K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 672K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 2400K passed!
+[Tue Mar 11 20:56:42 2025]
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 2400K passed!
+Self-test 720K passed!
+Self-test 2400K passed!
+Self-test 720K passed!
+Self-test 2400K passed!
+Self-test 2560K passed!
+Self-test 2400K passed!
+Self-test 2560K passed!
+[Tue Mar 11 21:01:51 2025]
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 2560K passed!
+Self-test 720K passed!
+[Tue Mar 11 21:07:24 2025]
+Self-test 2560K passed!
+Self-test 720K passed!
+Self-test 768K passed!
+Self-test 720K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 768K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 768K passed!
+Self-test 2560K passed!
+Self-test 768K passed!
+[Tue Mar 11 21:12:47 2025]
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 768K passed!
+Self-test 2560K passed!
+Self-test 2592K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2592K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+[Tue Mar 11 21:17:53 2025]
+Self-test 2592K passed!
+[Wed Mar 12 13:05:02 2025]
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+[Wed Mar 12 13:11:34 2025]
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+Self-test 800K passed!
+[Wed Mar 12 13:18:01 2025]
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+Self-test 864K passed!
+[Wed Mar 12 13:24:25 2025]
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+Self-test 896K passed!
+[Wed Mar 12 13:30:27 2025]
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+Self-test 960K passed!
+[Wed Mar 12 13:38:17 2025]
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+Self-test 1024K passed!
+[Wed Mar 12 13:45:10 2025]
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+Self-test 1152K passed!
+[Wed Mar 12 13:52:10 2025]
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+[Wed Mar 12 13:57:14 2025]
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1200K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+[Wed Mar 12 14:02:34 2025]
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1280K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+[Wed Mar 12 14:07:35 2025]
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+Self-test 1344K passed!
+[Wed Mar 12 14:14:34 2025]
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+Self-test 1440K passed!
+[Wed Mar 12 14:22:13 2025]
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+[Wed Mar 12 14:27:28 2025]
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1536K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+[Wed Mar 12 14:33:01 2025]
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1728K passed!
+Self-test 1920K passed!
+[Wed Mar 12 14:38:25 2025]
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+Self-test 1920K passed!
+[Wed Mar 12 14:44:30 2025]
+Self-test 1920K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+Self-test 2048K passed!
+[Wed Mar 12 14:50:12 2025]
+Self-test 2048K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+[Wed Mar 12 14:55:14 2025]
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2304K passed!
+Self-test 2400K passed!
+[Wed Mar 12 15:01:30 2025]
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+Self-test 2400K passed!
+[Wed Mar 12 15:06:41 2025]
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+Self-test 2560K passed!
+[Wed Mar 12 15:12:06 2025]
+Self-test 2560K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2592K passed!
+[Wed Mar 12 15:19:25 2025]
+Self-test 2592K passed!
+Self-test 2592K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+Self-test 2688K passed!
+[Wed Mar 12 15:27:05 2025]
+Self-test 2688K passed!
+Self-test 2880K passed!
+Self-test 2688K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 2880K passed!
+[Wed Mar 12 15:32:08 2025]
+Self-test 2880K passed!
+Self-test 2880K passed!
+Self-test 3072K passed!
+Self-test 2880K passed!
+[Wed Mar 12 15:37:09 2025]
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+Self-test 3072K passed!
+[Wed Mar 12 15:42:28 2025]
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+Self-test 3136K passed!
+[Wed Mar 12 15:48:53 2025]
+Self-test 3136K passed!
+Self-test 3200K passed!
+Self-test 3136K passed!
+Self-test 3200K passed!
+Self-test 3200K passed!
+Self-test 3200K passed!
+Self-test 3200K passed!
+[Wed Mar 12 15:54:07 2025]
+Self-test 3200K passed!
+Self-test 3200K passed!
+Self-test 3200K passed!
+Self-test 3200K passed!
+Self-test 3200K passed!
+Self-test 3200K passed!
+Self-test 3200K passed!
+Self-test 3200K passed!
+Self-test 3200K passed!
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3200K passed!
+Self-test 3456K passed!
+Self-test 3200K passed!
+[Wed Mar 12 16:00:25 2025]
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3456K passed!
+Self-test 3584K passed!
+[Wed Mar 12 16:05:35 2025]
+Self-test 3584K passed!
+Self-test 3456K passed!
+Self-test 3584K passed!
+Self-test 3456K passed!
+Self-test 3584K passed!
+Self-test 3584K passed!
+Self-test 3584K passed!
+Self-test 3584K passed!
+Self-test 3584K passed!
+Self-test 3584K passed!
+Self-test 3584K passed!
+Self-test 3584K passed!
+Self-test 3584K passed!
+[Wed Mar 12 16:10:46 2025]
+Self-test 3584K passed!
+Self-test 3600K passed!
+Self-test 3584K passed!
+Self-test 3600K passed!
+Self-test 3584K passed!
+Self-test 3600K passed!
+Self-test 3584K passed!
+Self-test 3600K passed!
+Self-test 3600K passed!
+[Wed Mar 12 16:16:29 2025]
+Self-test 3600K passed!
+Self-test 3600K passed!
+Self-test 3600K passed!
+Self-test 3600K passed!
+Self-test 3600K passed!
+Self-test 3600K passed!
+Self-test 3600K passed!
+Self-test 3840K passed!
+Self-test 3600K passed!
+Self-test 3600K passed!
+Self-test 3840K passed!
+[Wed Mar 12 16:21:35 2025]
+Self-test 3600K passed!
+Self-test 3840K passed!
+Self-test 3600K passed!
+Self-test 3840K passed!
+Self-test 3840K passed!
+Self-test 3840K passed!
+Self-test 3840K passed!
+Self-test 3840K passed!
+Self-test 3840K passed!
+Self-test 3840K passed!
+Self-test 3840K passed!
+Self-test 4032K passed!
+Self-test 3840K passed!
+[Thu Mar 13 17:39:09 2025]
+FATAL ERROR: Rounding was 0.5, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 0.4997558572, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 0.4999755309, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 0.4999914464, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 1.76843605e+261, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 1.449607029e+277, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 3.500948206e+78, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 9.501574577e+285, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 9.499772476e+285, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+[Fri Mar 14 10:48:37 2025]
+FATAL ERROR: Final result was 00000000, expected: F88B7AAE.
+Hardware failure detected running 720K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 2.308225969e+285, expected less than 0.4
+Hardware failure detected running 720K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 0.4998689092, expected less than 0.4
+Hardware failure detected running 720K FFT size, consult stress.txt file.
+FATAL ERROR: Final result was 00000000, expected: D091E8C3.
+Hardware failure detected running 720K FFT size, consult stress.txt file.
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+[Fri Mar 14 11:04:12 2025]
+FATAL ERROR: Rounding was 0.4998546258, expected less than 0.4
+Hardware failure detected running 720K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 2.633732572e+283, expected less than 0.4
+Hardware failure detected running 720K FFT size, consult stress.txt file.
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+[Fri Mar 14 11:12:11 2025]
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+[Fri Mar 14 11:17:43 2025]
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+[Fri Mar 14 11:23:22 2025]
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+[Fri Mar 14 11:29:01 2025]
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+[Fri Mar 14 11:35:25 2025]
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+[Fri Mar 14 11:41:06 2025]
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+[Fri Mar 14 11:46:38 2025]
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+[Fri Mar 14 11:52:46 2025]
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+[Fri Mar 14 11:58:25 2025]
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+[Fri Mar 14 12:04:22 2025]
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+Self-test 12K (thread 2 of 2) passed!
+Self-test 12K (thread 1 of 2) passed!
+[Fri Mar 14 12:10:20 2025]
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+Self-test 12800 (thread 2 of 2) passed!
+Self-test 12800 (thread 1 of 2) passed!
+[Fri Mar 14 12:16:17 2025]
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+Self-test 14K (thread 2 of 2) passed!
+Self-test 14K (thread 1 of 2) passed!
+[Fri Mar 14 12:21:54 2025]
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+Self-test 15K (thread 2 of 2) passed!
+Self-test 15K (thread 1 of 2) passed!
+[Fri Mar 14 12:27:26 2025]
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+Self-test 16K (thread 2 of 2) passed!
+Self-test 16K (thread 1 of 2) passed!
+[Fri Mar 14 12:33:20 2025]
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 2 of 2) passed!
+Self-test 18K (thread 1 of 2) passed!
+[Fri Mar 14 12:39:07 2025]
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+Self-test 20K (thread 2 of 2) passed!
+Self-test 20K (thread 1 of 2) passed!
+[Fri Mar 14 12:45:11 2025]
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 2 of 2) passed!
+Self-test 24K (thread 1 of 2) passed!
+[Fri Mar 14 12:50:51 2025]
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+Self-test 25K (thread 2 of 2) passed!
+Self-test 25K (thread 1 of 2) passed!
+[Fri Mar 14 12:56:41 2025]
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 2 of 2) passed!
+Self-test 30K (thread 1 of 2) passed!
+[Fri Mar 14 13:02:27 2025]
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+Self-test 32K (thread 2 of 2) passed!
+Self-test 32K (thread 1 of 2) passed!
+[Fri Mar 14 13:08:32 2025]
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+Self-test 36K (thread 2 of 2) passed!
+Self-test 36K (thread 1 of 2) passed!
+[Fri Mar 14 13:14:21 2025]
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+Self-test 40K (thread 2 of 2) passed!
+Self-test 40K (thread 1 of 2) passed!
+[Fri Mar 14 13:20:13 2025]
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 1 of 2) passed!
+Self-test 42K (thread 2 of 2) passed!
+[Fri Mar 14 13:25:44 2025]
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+Self-test 48K (thread 2 of 2) passed!
+Self-test 48K (thread 1 of 2) passed!
+[Fri Mar 14 13:31:30 2025]
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+Self-test 56K (thread 2 of 2) passed!
+Self-test 56K (thread 1 of 2) passed!
+[Fri Mar 14 13:37:24 2025]
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+Self-test 60K (thread 2 of 2) passed!
+Self-test 60K (thread 1 of 2) passed!
+[Fri Mar 14 13:43:11 2025]
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+Self-test 64K (thread 2 of 2) passed!
+Self-test 64K (thread 1 of 2) passed!
+[Fri Mar 14 13:48:50 2025]
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+Self-test 72K (thread 2 of 2) passed!
+Self-test 72K (thread 1 of 2) passed!
+[Fri Mar 14 13:54:57 2025]
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 1 of 2) passed!
+Self-test 80K (thread 2 of 2) passed!
+[Fri Mar 14 14:00:28 2025]
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+Self-test 84K (thread 1 of 2) passed!
+Self-test 84K (thread 2 of 2) passed!
+[Fri Mar 14 14:06:01 2025]
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+Self-test 96K (thread 2 of 2) passed!
+Self-test 96K (thread 1 of 2) passed!
+[Fri Mar 14 14:11:43 2025]
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+[Fri Mar 14 14:16:50 2025]
+Self-test 120K (thread 2 of 2) passed!
+Self-test 120K (thread 1 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+[Fri Mar 14 14:22:03 2025]
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 128K (thread 2 of 2) passed!
+Self-test 128K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+[Fri Mar 14 14:27:19 2025]
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 144K (thread 2 of 2) passed!
+Self-test 144K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+[Fri Mar 14 14:32:25 2025]
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 192K (thread 2 of 2) passed!
+Self-test 192K (thread 1 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+[Fri Mar 14 14:38:20 2025]
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 200K (thread 1 of 2) passed!
+Self-test 200K (thread 2 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+[Fri Mar 14 14:44:18 2025]
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 240K (thread 2 of 2) passed!
+Self-test 240K (thread 1 of 2) passed!
+Self-test 288K passed!
+FATAL ERROR: Final result was 00000000, expected: E9467E64.
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+[Fri Mar 14 14:49:58 2025]
+FATAL ERROR: Rounding was 1.726959598e+16, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 288K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 768K passed!
+Self-test 288K passed!
+[Fri Mar 14 14:56:05 2025]
+Self-test 768K passed!
+[Fri Mar 14 15:01:36 2025]
+FATAL ERROR: Rounding was 5.821748833e+241, expected less than 0.4
+Hardware failure detected running 720K FFT size, consult stress.txt file.
+FATAL ERROR: Rounding was 1.262847401e+104, expected less than 0.4
+Hardware failure detected running 720K FFT size, consult stress.txt file.
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+Self-test 720K passed!
+[Fri Mar 14 15:10:26 2025]
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+Self-test 4608 (thread 1 of 2) passed!
+Self-test 4608 (thread 2 of 2) passed!
+[Fri Mar 14 15:16:39 2025]
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+Self-test 5K (thread 1 of 2) passed!
+Self-test 5K (thread 2 of 2) passed!
+[Fri Mar 14 15:22:53 2025]
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 1 of 2) passed!
+Self-test 6K (thread 2 of 2) passed!
+[Fri Mar 14 15:29:10 2025]
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+Self-test 7K (thread 2 of 2) passed!
+Self-test 7K (thread 1 of 2) passed!
+[Fri Mar 14 15:35:19 2025]
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+Self-test 7680 (thread 1 of 2) passed!
+Self-test 7680 (thread 2 of 2) passed!
+[Fri Mar 14 15:40:56 2025]
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+Self-test 8K (thread 2 of 2) passed!
+Self-test 8K (thread 1 of 2) passed!
+[Fri Mar 14 15:46:26 2025]
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 1 of 2) passed!
+Self-test 9K (thread 2 of 2) passed!
+[Fri Mar 14 15:52:11 2025]
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 2 of 2) passed!
+Self-test 10K (thread 1 of 2) passed!
+[Fri Mar 14 15:57:51 2025]
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
+Self-test 10752 (thread 1 of 2) passed!
+Self-test 10752 (thread 2 of 2) passed!
