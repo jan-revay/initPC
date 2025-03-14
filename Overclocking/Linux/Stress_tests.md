@@ -3,6 +3,8 @@
 - [Prime95](https://www.mersenne.org/download/) - memory and CPU
 - [y-cruncher](http://www.numberworld.org/y-cruncher/)
 - [Memtest86](https://www.memtest.org/)
+- sudo apt install stressapptest
+  - `timeout 7h ./mprime -t; stressapptest -W -M $(free -m | awk '/Mem:/ {print int($2 * 0.95)}') -s 60000`
 - ...
 
 Complementary Tests: After MemTest86, also stress-test in Windows/Linux using tools like:
