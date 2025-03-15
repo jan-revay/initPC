@@ -10,4 +10,9 @@
 
 . ../prelude.sh
 
-sudo apt install stressapptest phoronix-test-suite stress-ng
+OPT_APT_PACKAGES=(
+    # stress testing and benchmarking tools
+    stressapptest phoronix-test-suite stress-ng inxi
+)
+
+time sudo apt-get install -y "${OPT_APT_PACKAGES[@]}"
