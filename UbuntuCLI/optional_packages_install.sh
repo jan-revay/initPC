@@ -10,4 +10,4 @@
 
 . ../prelude.sh
 
-sudo apt install stressapptest phoronix-test-suite
+sudo apt install stressapptest phoronix-test-suite stress-ng
