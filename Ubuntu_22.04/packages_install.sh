@@ -6,6 +6,7 @@
 # TODO add docker installation
 # TODO install packages via a list...
 # TODO consider adding pavucontrol
+# TODO add nix package manager + start managing more packages via nix
 
 . ../prelude.sh
 
