@@ -12,7 +12,7 @@ timeout --preserve-status 10h ./mprime -t \
 
 popd || exit
 
-if grep -F -i error output.log; then
+if grep -i error output.log; then
     timeout 2s speaker-test -t sine -f 1000
 fi
 
