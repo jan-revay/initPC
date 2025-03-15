@@ -1351,3 +1351,14 @@ dconf watch /
   uint32 90
 
 
+/org/gnome/shell/extensions/tilingshell/inner-gaps
+  uint32 5
+
+/org/gnome/shell/extensions/tilingshell/inner-gaps
+  uint32 4
+
+/org/gnome/shell/extensions/tilingshell/outer-gaps
+  uint32 5
+
+/org/gnome/shell/extensions/tilingshell/outer-gaps
+  uint32 4
