@@ -3,6 +3,14 @@
 # save a copy of the output to a file
 exec &> >(tee output.log)
 
+phoronix-test-suite batch-setup
+# we grep for / to filter out coulmn headers
+mapfile -t RECOMMENDED_TESTS < <(phoronix-test-suite list-recommended-tests | awk '/\// {print $1}')
+# AVAILABLE_TESTS=$(phoronix-test-suite list-available-tests | awk '{print $1}' | tail -n +5)
+# phoronix-test-suite batch-install ${AVAILABLE_TESTS}
+phoronix-test-suite batch-install "${RECOMMENDED_TESTS[@]}"
+phoronix-test-suite batch-run "$(phoronix-test-suite list-installed-tests | awk '/\// {print $1}')"
+
 flatpak run com.geekbench.Geekbench6
 
 pushd p95* || exit
