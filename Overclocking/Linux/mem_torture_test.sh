@@ -62,4 +62,4 @@ phoronix-test-suite stress-batch-run system/compress-7zip-1.0.0 pts/build-linux-
     pts/hpcc-1.2.8 pts/hpl-1.0.0 pts/nero2d-1.1.0 pts/nwchem-1.2.0 pts/open-porous-media-1.3.1 \
     pts/opm-git-1.3.51 pts/qe-1.3.1 pts/qmcpack-1.8.0 pts/wrf-1.0.1
 
-phoronix-test-suite stress-batch-run pts/lapack pts/blas pts/compiler
+phoronix-test-suite stress-batch-run pts/lapack pts/blas pts/compiler system/scientific
