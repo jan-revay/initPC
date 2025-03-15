@@ -26,5 +26,4 @@ for i in {1..600}; do
 done
 popd || exit
 
-
 ./burnintest/bit_cmd_line_x64
