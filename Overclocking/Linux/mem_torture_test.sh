@@ -7,7 +7,7 @@ flatpak run com.geekbench.Geekbench6
 
 pushd p95* || exit
 # Results are in ./results.txt file
-timeout --preserve-status 10h ./mprime -t \
+timeout --preserve-status 28h ./mprime -t \
     || timeout 2s speaker-test -t sine -f 1000
 
 popd || exit
@@ -16,12 +16,15 @@ if grep -i error output.log; then
     timeout 2s speaker-test -t sine -f 1000
 fi
 
-stressapptest -W -M "$(free -m | awk '/Mem:/ {print int($2 * 0.95)}')" -s 36000 \
+stressapptest -W -M "$(free -m | awk '/Mem:/ {print int($2 * 0.95)}')" -s 65000 \
     || timeout 2s speaker-test -t sine -f 1000
 
 pushd y-cruncher* || exit
-for i in {1..400}; do
+for i in {1..600}; do
     echo "===== Iteration $i ====="
     ./y-cruncher bench 16G || timeout 2s speaker-test -t sine -f 1000
 done
 popd || exit
+
+
+./burnintest/bit_cmd_line_x64
