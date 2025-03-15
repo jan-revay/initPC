@@ -12,7 +12,8 @@
 
 OPT_APT_PACKAGES=(
     # stress testing and benchmarking tools
-    stressapptest stress-ng inxi
+    # php is required by phoronix test suire
+    stressapptest stress-ng inxi php8.3
 )
 
 time sudo apt-get install -y "${OPT_APT_PACKAGES[@]}"
