@@ -9,7 +9,7 @@ memtester 10G 10
 # phoronix-test-suite batch-install pts/ramspeed
 
 # phoronix-test-suite batch-setup
-# we grep for / to filter out coulmn headers
+# we grep for / to filter out column headers
 # mapfile -t RECOMMENDED_TESTS < <(phoronix-test-suite list-recommended-tests | awk '/\// {print $1}')
 # AVAILABLE_TESTS=$(phoronix-test-suite list-available-tests | awk '{print $1}' | tail -n +5)
 # phoronix-test-suite batch-install ${AVAILABLE_TESTS}
@@ -33,6 +33,7 @@ if grep -i error output.log; then
     timeout 2s speaker-test -t sine -f 1000
 fi
 
+# stress-ng is also avaliable in phoronix test suite
 stress-ng --tz --metrics-brief --matrix 0 -t 2h
 stress-ng --vm 96 --vm-bytes 95% --vm-method all --tz --metrics-brief --timeout 1h
 stress-ng --memrate 0 --metrics-brief --timeout 30m
@@ -52,5 +53,4 @@ popd || exit
 ./burnintest/bit_cmd_line_x64
 
 phoronix-test-suite batch-run system/compress-7zip-1.0.0 pts/build-linux-kernel-1.16.0 pts/build-php-1.7.0 \
-    pts/blender-4.3.0 pts/compress-7zip-1.11.0 pts/encode-flac-1.9.0
-
+    pts/blender-4.3.0 pts/compress-7zip-1.11.0 pts/encode-flac-1.9.0 pts/mbw pts/stream
