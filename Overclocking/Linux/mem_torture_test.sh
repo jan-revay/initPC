@@ -3,6 +3,8 @@
 # save a copy of the output to a file
 exec &> >(tee output.log)
 
+flatpak run com.geekbench.Geekbench6
+
 pushd p95* || exit
 # Results are in ./results.txt file
 timeout --preserve-status 10h ./mprime -t \
