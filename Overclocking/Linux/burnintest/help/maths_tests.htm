@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>CPU Maths Test</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Addition,Division,Floating point,Integer,Maths test suite,Multiplication,Subtraction" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="The CPU test exercises and verifies a wide range of CPU instructions, at user specified loads. The user selectable sub-categories of the CPU test are:" />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "maths_tests.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">CPU Maths Test</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="cd_rom_and_dvd_test.htm">Previous</a>&nbsp;
+     <a href="disk_test.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">The CPU test exercises and verifies a wide range of CPU instructions, at user specified loads. The user selectable sub-categories of the CPU test are:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">• General purpose instructions</p>
+<p class="p_Normal">• Floating Point Unit (FPU) instructions</p>
+<p class="p_Normal">• CPU extension instructions (x86 extensions). &nbsp;The specific extension instructions may be selected: &nbsp;SSE, SSE2.</p>
+<p class="p_Normal">• CPU extension instructions (ARM extensions). &nbsp;The specific extension instructions may be selected: NEON.</p>
+<p class="p_Normal">• Prime number test </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The numbers displayed in the test window for this test represent how many millions of CPU operations have been performed and verified. Each different math’s test is run for half a second. After all tests have been run the cycle count is incremented. The duty cycle and the CPU speed determine how many operations can be processed during the half second period. By default, a CPU test is run on each CPU core.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">General purpose instructions</span></p>
+<p class="p_Normal">This test exercises and verifies correct operation of CPU instructions from the following groups:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Integer mathematics (e.g. add, subtract, multiply and divide) &nbsp;</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Data transfer instructions (e.g. pushing/popping data to/from the stack) </p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Bitwise logical instructions (e.g. bitwise and/or/xor) </p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Shift and rotate instructions &nbsp;(e.g. shift data left x number of bits) </p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Logical instructions (e.g. equals) </p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Control transfer instructions (e.g. jump on x greater than y) </p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>String instructions (eg. copy a text string) </p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Known and random data sets are used to exercise and verify correct operation. The random numbers are generated regularly to provide a larger data set, as well as ensure that the CPU caches overflow and that this mechanism is tested. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Floating Point Unit (FPU) instructions</span></p>
+<p class="p_Normal">This test exercises and verifies correct operation of CPU instructions from the following groups:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Floating Point math (e.g. add, subtract, multiply and divide) </p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Transcendental's (e.g. sin, cos) </p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Extension instructions (x86 extensions)</span></p>
+<p class="p_Normal">This test exercises extensions to the x86 CPU instruction set for a variety of applications, such as multimedia.</p>
+<p class="p_Normal">SSE: As above, but for SSE instructions. Instructions include moving SSE registers, adding, subtracting, and multiplying. Data set: groups of 4 x 32-bit floats (e.g. a,b,c,d) where a,b,c and d are 32-bit floats. &nbsp;</p>
+<p class="p_Normal">SSE2: As for the SSE test, but for SSE2 instructions. Data set: pairs of 64-bit floats (e.g. x,y) where x,y are 64-bit floats. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Extension instructions (ARM extensions)</span></p>
+<p class="p_Normal">NEON: Test the Advanced SIMD instructions. Instructions include moving NEON registers, adding, subtracting, and multiplying. Data set: groups of 4 x 32-bit floats (e.g. a,b,c,d) where a,b,c and d are 32-bit floats.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Prime number</span></p>
+<p class="p_Normal">This test exercises and verifies correct operation of CPU through the use of a prime number generation algorithm.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Helpful command line tool</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">[your_command_line_prompt]# cat /proc/cpuinfo</span></p>
+<p class="p_Normal">This command will show your CPU info, including speed, cache size and features.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

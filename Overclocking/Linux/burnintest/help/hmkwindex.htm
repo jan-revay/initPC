@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>BurnInTest Linux</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <style type="text/css">
+       body { background:#FFF; }
+       .navbar      { font-size: 120%; }
+
+       #idx          { margin: 0; padding: 0; }     /* div tag that wraps the keyword index */
+       #idx a        { font-color: #000; text-decoration: none; }  /* all links in index appear as text */
+
+       #idx p             { margin: 2px; }       /* keywords and secondary keywords */
+       #idx p.idxkeyword2 { margin-left: 20px }  /* indentation for secondary keywords */
+
+       table.idxtable { background: #F4F4F4;
+                        border: 1px solid #000000;
+                        border-collapse: collapse;
+                        -moz-box-shadow: 2px 2px 2px #B0B0B0;
+                        -webkit-box-shadow: 2px 2px 2px #B0B0B0;
+                        box-shadow: 2px 2px 2px #B0B0B0;
+                        filter: progid:DXImageTransform.Microsoft.Shadow(color=B0B0B0, Direction=135, Strength=4); }
+       td.idxtable    { background: #F4F4F4; }
+
+       /* font definitions for keyword section, keywords and popup links */
+       .idxsection  { font-family: Arial,Helvetica; font-weight: bold; font-size: 14pt; color: #000000; text-decoration: none;
+                      margin-top: 15px; margin-bottom: 15px; }
+       .idxkeyword  { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .idxkeyword2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .idxlink     { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #000000; text-decoration: none; }
+
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="hmcontextids.js"></script>
+</head>
+<body>
+<p class="navbar"><a href="hmcontent.htm">Contents</a>
+ | <b>Index</b>
+ | <a href="hmftsearch.htm">Search</a>
+</p>
+<hr/>
+
+  <!-- Place holder for the keyword index - this variable is REQUIRED! -->
+  <script type="text/javascript">
+
+  function hmInitHideLinks(cssCode) {
+  	var styleElement = document.createElement("style");
+  	styleElement.type = "text/css";
+  	if (styleElement.styleSheet) {
+    	styleElement.styleSheet.cssText = cssCode;
+  	}
+  	else {
+    	styleElement.appendChild(document.createTextNode(cssCode));
+  	}
+  	document.getElementsByTagName("head")[0].appendChild(styleElement);
+  }
+
+  hmInitHideLinks("#idx div { display: none }");
+
+  var currentdiv = null;
+  var canhidelinks = true;
+
+  function hmshowLinks(divID) {
+    var thisdiv = document.getElementById(divID);
+    canhidelinks = true;
+    hmhideLinks();
+    if (thisdiv) {
+      currentdiv = thisdiv;
+      $(currentdiv).show();
+      $(currentdiv).mouseover(hmdivMouseOver).mouseout(hmdivMouseOut);
+      $(document).mouseup(hmhideLinks);
+    }
+  }
+  function hmdivMouseOver() { canhidelinks = false; };
+  function hmdivMouseOut() { canhidelinks = true; };
+  function hmhideLinks() {
+    if (canhidelinks) {
+      if (currentdiv) {
+        $(currentdiv).hide();
+        $(currentdiv).unbind("onmouseover", "onmouseout");
+      }
+      currentdiv = null;
+      $(document).unbind("onmouseup");
+    }
+  }
+</script>
+<div id="idx" style="margin:0;padding:0;border:none">
+<a name="A" id="A"></a><p class="idxsection">- A -</p>
+<p class="idxkeyword"><a href="maths_tests.htm" target="hmcontent"><span class="idxkeyword">Addition</span></a></p>
+<a name="B" id="B"></a><p class="idxsection">- B -</p>
+<p class="idxkeyword"><a href="management-console.htm" target="hmcontent"><span class="idxkeyword">BurnInTest Management Console</span></a></p>
+<p class="idxkeyword"><a href="purchase.htm" target="hmcontent"><span class="idxkeyword">Buy</span></a></p>
+<a name="C" id="C"></a><p class="idxsection">- C -</p>
+<p class="idxkeyword"><a href="cd-rom_dvd_preferences.htm" target="hmcontent"><span class="idxkeyword">CD-ROM/DVD Preferences</span></a></p>
+<p class="idxkeyword"><a href="command_line_parameters.htm" target="hmcontent"><span class="idxkeyword">Command line arguments</span></a></p>
+<p class="idxkeyword"><a href="machine_identity.htm" target="hmcontent"><span class="idxkeyword">command line parameter</span></a></p>
+<p class="idxkeyword"><a href="command_line_parameters.htm" target="hmcontent"><span class="idxkeyword">Command line parameters</span></a></p>
+<p class="idxkeyword"><a href="command_line_version.htm" target="hmcontent"><span class="idxkeyword">Command Line Version</span></a></p>
+<p class="idxkeyword"><a href="common_error_messages.htm" target="hmcontent"><span class="idxkeyword">Common error messages</span></a></p>
+<p class="idxkeyword"><a href="contacting_passmark_software.htm" target="hmcontent"><span class="idxkeyword">Contact details</span></a></p>
+<p class="idxkeyword"><a href="contacting_passmark_software.htm" target="hmcontent"><span class="idxkeyword">Contact Passmark</span></a></p>
+<p class="idxkeyword"><a href="maths_preferences.htm" target="hmcontent"><span class="idxkeyword">CPU</span></a></p>
+<p class="idxkeyword"><a href="maths_preferences.htm" target="hmcontent"><span class="idxkeyword">CPU math preferences</span></a></p>
+<a name="D" id="D"></a><p class="idxsection">- D -</p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k14')"><span class="idxkeyword">DB25</span></a></p>
+<div id="k14" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="loopback_plugs.htm" target="hmcontent"><span class="idxlink">Making Loopback plugs</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="parallel_port_loop_back_plug.htm" target="hmcontent"><span class="idxlink">Parallel port loop back plug</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k15')"><span class="idxkeyword">DB9</span></a></p>
+<div id="k15" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="loopback_plugs.htm" target="hmcontent"><span class="idxlink">Making Loopback plugs</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="serial_port_loopback_plug.htm" target="hmcontent"><span class="idxlink">Serial port loopback plug</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="disk_preferences.htm" target="hmcontent"><span class="idxkeyword">Disk Preferences</span></a></p>
+<p class="idxkeyword"><a href="disk_test.htm" target="hmcontent"><span class="idxkeyword">Disk test suite</span></a></p>
+<p class="idxkeyword"><a href="maths_tests.htm" target="hmcontent"><span class="idxkeyword">Division</span></a></p>
+<p class="idxkeyword"><a href="duty_cycles.htm" target="hmcontent"><span class="idxkeyword">Duty Cycles</span></a></p>
+<a name="E" id="E"></a><p class="idxsection">- E -</p>
+<p class="idxkeyword"><a href="common_error_messages.htm" target="hmcontent"><span class="idxkeyword">Error messages</span></a></p>
+<p class="idxkeyword"><a href="error_handling_preferences.htm" target="hmcontent"><span class="idxkeyword">Error preferences</span></a></p>
+<a name="F" id="F"></a><p class="idxsection">- F -</p>
+<p class="idxkeyword"><a href="fault_finding.htm" target="hmcontent"><span class="idxkeyword">Fault finding</span></a></p>
+<p class="idxkeyword"><a href="disk_test.htm" target="hmcontent"><span class="idxkeyword">File size</span></a></p>
+<p class="idxkeyword"><a href="disk_test.htm" target="hmcontent"><span class="idxkeyword">Firewire</span></a></p>
+<p class="idxkeyword"><a href="maths_tests.htm" target="hmcontent"><span class="idxkeyword">Floating point</span></a></p>
+<a name="I" id="I"></a><p class="idxsection">- I -</p>
+<p class="idxkeyword"><a href="maths_tests.htm" target="hmcontent"><span class="idxkeyword">Integer</span></a></p>
+<p class="idxkeyword"><a href="overview.htm" target="hmcontent"><span class="idxkeyword">Introduction</span></a></p>
+<a name="L" id="L"></a><p class="idxsection">- L -</p>
+<p class="idxkeyword"><a href="purchase.htm" target="hmcontent"><span class="idxkeyword">Licensing information</span></a></p>
+<p class="idxkeyword"><a href="usb_loopback_plugs.htm" target="hmcontent"><span class="idxkeyword">Loop back</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k30')"><span class="idxkeyword">Loopback</span></a></p>
+<div id="k30" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="loopback_plugs.htm" target="hmcontent"><span class="idxlink">Making Loopback plugs</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="serial_port_loopback_plug.htm" target="hmcontent"><span class="idxlink">Serial port loopback plug</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="parallel_port_loop_back_plug.htm" target="hmcontent"><span class="idxlink">Parallel port loop back plug</span></a></td></tr></table></td></tr></table></div>
+<a name="M" id="M"></a><p class="idxsection">- M -</p>
+<p class="idxkeyword"><a href="machine_identity.htm" target="hmcontent"><span class="idxkeyword">Machine Identity</span></a></p>
+<p class="idxkeyword"><a href="maths_tests.htm" target="hmcontent"><span class="idxkeyword">Maths test suite</span></a></p>
+<p class="idxkeyword"><a href="disk_test.htm" target="hmcontent"><span class="idxkeyword">Memory card readers</span></a></p>
+<p class="idxkeyword"><a href="memory_preferences.htm" target="hmcontent"><span class="idxkeyword">Memory preferences</span></a></p>
+<p class="idxkeyword"><a href="disk_test.htm" target="hmcontent"><span class="idxkeyword">Memory sticks</span></a></p>
+<p class="idxkeyword"><a href="menu_options.htm" target="hmcontent"><span class="idxkeyword">Menu</span></a></p>
+<p class="idxkeyword"><a href="maths_tests.htm" target="hmcontent"><span class="idxkeyword">Multiplication</span></a></p>
+<a name="N" id="N"></a><p class="idxsection">- N -</p>
+<p class="idxkeyword"><a href="network_preferences.htm" target="hmcontent"><span class="idxkeyword">Network preferences</span></a></p>
+<p class="idxkeyword"><a href="whats_new.htm" target="hmcontent"><span class="idxkeyword">New Features</span></a></p>
+<p class="idxkeyword"><a href="machine_identity.htm" target="hmcontent"><span class="idxkeyword">Notes</span></a></p>
+<a name="O" id="O"></a><p class="idxsection">- O -</p>
+<p class="idxkeyword"><a href="purchase.htm" target="hmcontent"><span class="idxkeyword">Order</span></a></p>
+<p class="idxkeyword"><a href="purchase.htm" target="hmcontent"><span class="idxkeyword">Ordering information</span></a></p>
+<p class="idxkeyword"><a href="overview.htm" target="hmcontent"><span class="idxkeyword">Overview</span></a></p>
+<a name="P" id="P"></a><p class="idxsection">- P -</p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k44')"><span class="idxkeyword">Parallel</span></a></p>
+<div id="k44" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="loopback_plugs.htm" target="hmcontent"><span class="idxlink">Making Loopback plugs</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="parallel_port_loop_back_plug.htm" target="hmcontent"><span class="idxlink">Parallel port loop back plug</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="parallel_port_preferences.htm" target="hmcontent"><span class="idxkeyword">parallel port preferences</span></a></p>
+<p class="idxkeyword"><a href="disk_test.htm" target="hmcontent"><span class="idxkeyword">Pattern</span></a></p>
+<p class="idxkeyword"><a href="pre-test_preferences.htm" target="hmcontent"><span class="idxkeyword">Pre-test preferences</span></a></p>
+<p class="idxkeyword"><a href="purchase.htm" target="hmcontent"><span class="idxkeyword">Prices</span></a></p>
+<p class="idxkeyword"><a href="purchase.htm" target="hmcontent"><span class="idxkeyword">Purchase</span></a></p>
+<a name="R" id="R"></a><p class="idxsection">- R -</p>
+<p class="idxkeyword"><a href="memory_preferences.htm" target="hmcontent"><span class="idxkeyword">RAM</span></a></p>
+<p class="idxkeyword"><a href="disk_preferences.htm" target="hmcontent"><span class="idxkeyword">RAW disk test</span></a></p>
+<p class="idxkeyword"><a href="disk_test.htm" target="hmcontent"><span class="idxkeyword">Read (disk)</span></a></p>
+<p class="idxkeyword"><a href="purchase.htm" target="hmcontent"><span class="idxkeyword">Registration information</span></a></p>
+<p class="idxkeyword"><a href="disk_test.htm" target="hmcontent"><span class="idxkeyword">Removable drives</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k55')"><span class="idxkeyword">RS232</span></a></p>
+<div id="k55" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="loopback_plugs.htm" target="hmcontent"><span class="idxlink">Making Loopback plugs</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="serial_port_loopback_plug.htm" target="hmcontent"><span class="idxlink">Serial port loopback plug</span></a></td></tr></table></td></tr></table></div>
+<a name="S" id="S"></a><p class="idxsection">- S -</p>
+<p class="idxkeyword"><a href="loopback_plugs.htm" target="hmcontent"><span class="idxkeyword">Serial</span></a></p>
+<p class="idxkeyword"><a href="serial_port_loopback_plug.htm" target="hmcontent"><span class="idxkeyword">Serial port</span></a></p>
+<p class="idxkeyword"><a href="serial_port_preferences.htm" target="hmcontent"><span class="idxkeyword">Serial port preferences</span></a></p>
+<p class="idxkeyword"><a href="quick_start.htm" target="hmcontent"><span class="idxkeyword">Started</span></a></p>
+<p class="idxkeyword"><a href="maths_tests.htm" target="hmcontent"><span class="idxkeyword">Subtraction</span></a></p>
+<p class="idxkeyword"><a href="quick_start.htm" target="hmcontent"><span class="idxkeyword">Summary</span></a></p>
+<p class="idxkeyword"><a href="contacting_passmark_software.htm" target="hmcontent"><span class="idxkeyword">Support</span></a></p>
+<a name="T" id="T"></a><p class="idxsection">- T -</p>
+<p class="idxkeyword"><a href="test_descriptions.htm" target="hmcontent"><span class="idxkeyword">Test descriptions</span></a></p>
+<p class="idxkeyword"><a href="disk_test.htm" target="hmcontent"><span class="idxkeyword">Test Pattern</span></a></p>
+<p class="idxkeyword"><a href="duty_cycles.htm" target="hmcontent"><span class="idxkeyword">Test Selection</span></a></p>
+<p class="idxkeyword"><a href="duty_cycles.htm" target="hmcontent"><span class="idxkeyword">Test Selection and Duty Cycles</span></a></p>
+<p class="idxkeyword"><a href="command_line_version.htm" target="hmcontent"><span class="idxkeyword">Text based configuration</span></a></p>
+<a name="U" id="U"></a><p class="idxsection">- U -</p>
+<p class="idxkeyword"><a href="usb_loopback_plugs.htm" target="hmcontent"><span class="idxkeyword">Universal Serial Bus</span></a></p>
+<p class="idxkeyword"><a href="disk_preferences.htm" target="hmcontent"><span class="idxkeyword">Un-partitioned disk test</span></a></p>
+<p class="idxkeyword"><a href="purchase.htm" target="hmcontent"><span class="idxkeyword">Upgrades</span></a></p>
+<p class="idxkeyword"><a href="usb_loopback_plugs.htm" target="hmcontent"><span class="idxkeyword">USB</span></a></p>
+<p class="idxkeyword"><a href="usb_loopback_plugs.htm" target="hmcontent"><span class="idxkeyword">USB 2.0</span></a></p>
+<p class="idxkeyword"><a href="usb_test_preferences.htm" target="hmcontent"><span class="idxkeyword">USB preferences</span></a></p>
+<p class="idxkeyword"><a href="usb_loopback_plugs.htm" target="hmcontent"><span class="idxkeyword">USB specifications</span></a></p>
+<a name="W" id="W"></a><p class="idxsection">- W -</p>
+<p class="idxkeyword"><a href="whats_new.htm" target="hmcontent"><span class="idxkeyword">Whats new</span></a></p>
+<p class="idxkeyword"><a href="disk_test.htm" target="hmcontent"><span class="idxkeyword">write(disk)</span></a></p>
+</div>
+
+
+</body>
+</html>
+

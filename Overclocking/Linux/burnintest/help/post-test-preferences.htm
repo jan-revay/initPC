@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Post-Test Preferences</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="Action: Testing PASSED / Action: Testing FAILED There are different actions that may be taken based on whether a test Passes or Fails, and whether the test is automatically..." />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "post-test-preferences.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Post-Test Preferences</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="pre-test_preferences.htm">Previous</a>&nbsp;
+     <a href="error_handling_preferences.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal"><span style="font-size: 12pt; font-weight: bold; text-decoration: underline;">Action: Testing PASSED / Action: Testing FAILED</span></p>
+<p class="p_Normal">There are different actions that may be taken based on whether a test Passes or Fails, and whether the test is automatically stopped (i.e. the test has run for the set duration) or manually stopped by the user pressing the Stop button.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Auto Stop</span></p>
+<p class="p_Normal">Actions specific to automatically stopped tests are described below.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Stop Tests (Normal behavior)</span></p>
+<p class="p_Normal">This option will stop all the running tests and close all test windows. The Result window indicating a PASS or FAIL will be displayed. This is the normal default setting.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Run external application and exit</span></p>
+<p class="p_Normal">To help with the process of test automation it is possible to have BurnInTest run an external application, and exit automatically, after the tests have been completed. This could be used, for example, to call an application or batch file that would undertake a different type of testing (e.g. PassMark PerformanceTest) or customer specific reporting.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Exit and Reboot PC</span></p>
+<p class="p_Normal">This will exit BurnInTest and issue a system reboot command.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Manual Stop</span></p>
+<p class="p_Normal">Actions specific to manually stopped tests are described below.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Stop Tests (Normal behavior)</span></p>
+<p class="p_Normal">This option will stop all the running tests and close all test windows. This is the normal default setting.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Display option to run application</span></p>
+<p class="p_Normal">This option allows tests to be stopped prior to reaching the test duration, while maintaining a post test process that is consistent with the automatic stop actions (such as customer specific reporting). BurnInTest can display an option to the user asking whether they want to run the Post test application after a test run is manually stopped. If the user selects to run the external application, BurnInTest will exit after running the application. If the user selects not to run the external application, then BurnInTest will not exit.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Always display result Window</span></p>
+<p class="p_Normal">By default, this option is unchecked, and the result window indicating PASS/FAIL is only displayed after the Auto Stop, Stop Tests option. The user may specify to display this result window for the other options (i.e. manually stopped tests, and running an external application). If this option is checked the result window will be displayed after any external application is run, and before exiting BurnInTest.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Use System Beep on auto stop</span></p>
+<p class="p_Normal">When selected, the system beep will occur when a test is automatically stopped. This is to alert a nearby user that the test is completed.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">External Application</span></p>
+<p class="p_Normal">This specifies the application to be run if the appropriate option above is selected.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+<p class="p_Normal">This specifies any parameters to launch the external application with.</p>
+<p class="p_Normal">A number of variable parameters are supported. These parameters will be substituted with fixed strings enclosed in double quotes (“”). These are:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">%RESULT - &nbsp;“PASS” or “FAIL” will be substituted if the test is stopped automatically. If the test is manually stopped by the user, “PASS (manual abort)” or “FAIL (manual abort)” will be substituted.</p>
+<p class="p_Normal">%SERIAL – The serial number will be substituted.</p>
+<p class="p_Normal">%MACHINETYPE – The machine type will be substituted.</p>
+<p class="p_Normal">%NOTES – The notes will be substituted.</p>
+
+</td></tr></table>
+
+</body>
+</html>

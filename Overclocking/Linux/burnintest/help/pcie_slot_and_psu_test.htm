@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>PCIe slot and PSU test</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="When a PCIe test is started, BurnInTest will send a packet of data (using an incrementing byte pattern) to the PCIe test card, which will loop this data back in firmware and..." />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "pcie_slot_and_psu_test.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">PCIe slot and PSU test (x86 only) </span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="plugin.htm">Previous</a>&nbsp;
+     <a href="battery.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">When a PCIe test is started, BurnInTest will send a packet of data (using an incrementing byte pattern) to the PCIe test card, which will loop this data back in firmware and send the same data back to the PC. One PCIe test card is required for each PCIe slot to be tested. &nbsp;The PassMark <a href="http://www.passmark.com/products/pcie-test-card.htm" target="_blank" class="weblink">PCIe test card</a> can be purchased from the PassMark web site and you will need to download, build and load the <a href="https://www.passmark.com/products/pcie-test-card/download.php" target="_blank" class="weblink">PCIe test card device driver for Linux</a> before BurnInTest can access the card. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Temperature and PCIe voltage statistics are retrieved from the PCIe card once per test cycle. The Voltage values are compared with the range values of +- 10% and if the voltage value is out of this range then an error is raised. The temperature values are compared with the range values of 0C to 90C and if the temperature value is out of this range then an error is raised. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">PSU voltages can be monitored during the test by connecting a PSU connector to the PCIe loopback card. The Voltage values are compared with the range values of +- 10% and if the voltage value is out of this range then an error is raised.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">PCIe test window</span></p>
+<p class="p_Normal">The following information is displayed in the PCIe test window.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">PCIe Identity</span></p>
+<p class="p_Normal">The PCIe card number, the negotiated speed (x1 or x4) and the firmware version is displayed in the drop down menu at the top of the test window. </p>
+<p class="p_Normal">The test detials for each can be be displayed by selecting them from the dtop down list.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Bytes Sent/ Received</span></p>
+<p class="p_Normal">The number of Kilobytes sent to and received from the PCIe card.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Average Throughput</span></p>
+<p class="p_Normal">The average number of &nbsp;Megabytes of data received and transmitted per second since the start of the test.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Temperature [minimum/average/maximum]</span></p>
+<p class="p_Normal">The minimum, average and maximum temperature reported by the PCIe test card (in C) since the start of the test.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">12V [minimum/average/maximum]</span></p>
+<p class="p_Normal">The minimum, average and maximum PCIe 12V reported by the PCIe test card since the start of the test.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">3.3V [minimum/average/maximum]</span></p>
+<p class="p_Normal">The minimum, average and maximum PCIe 3.3V reported by the PCIe test card since the start of the test.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">12V PSU [minimum/average/maximum]</span></p>
+<p class="p_Normal">The minimum, average and maximum PSU 12V reported by the PCIe test card since the start of the test. Note the PSU connector must be connected to the PCIe test card to allow the monitoring of PSU voltages.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">5V PSU [minimum/average/maximum]</span></p>
+<p class="p_Normal">The minimum, average and maximum PSU 5V reported by the PCIe test card since the start of the test. Note the PSU connector must be connected to the PCIe test card to allow the monitoring of PSU voltages.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">3.3V aux [minimum/average/maximum]</span></p>
+<p class="p_Normal">The minimum, average and maximum PCIe 3.3V aux reported by the PCIe test card since the start of the test.</p>
+
+</td></tr></table>
+
+</body>
+</html>

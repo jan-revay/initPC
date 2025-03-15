@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Advanced Network Preferences</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="Select network card(s) to test Test mode This drop down selection sets the test mode to be one of the following options: Select Network card IP addresses: Individually speci" />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "advanced-network-preferences.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Advanced Network Preferences</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="test_preferences.htm">Previous</a>&nbsp;
+     <a href="2d-graphics-test.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal"><img alt="network_adv_preferences" width="730" height="448" style="margin:0;width:730px;height:448px;border:none" src="network_adv_preferences.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Select network card(s) to test</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Test mode</span></p>
+<p class="p_Normal">This drop down selection sets the test mode to be one of the following options:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Select Network card IP addresses: Individually specify each Network card to be tested. The test settings can be specified per Network card.</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Test available IPv4 network ports: At the start of the test, BurnInTest will determine all of the available IPv4 network ports and set up a test for each Network port. &nbsp;The test settings are the same for all Network cards that are tested.</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Test available IPv6 network ports: As above, but test available IPv6 enabled network ports only.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Note: selecting a Test mode to automatically detect the Network cards has the advantage that when testing across many systems with different network cards or IP addresses, the same BurnInTest configuration can be used. The downside is that if BurnInTest is unable to detect a network card (for example, the network card device driver failed to load), then there won't be an attempt to test the faulty card, and hence no error will be raised (unless there are no cards detected).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Network card IP address</span></p>
+<p class="p_Normal">This list will show the IP of up to 20 network cards that are installed on the system and plugged in. The values in the fields below are saved for each network card and can be different for each card.</p>
+<p class="p_Normal">IPv4 and IPv6 NICs will be displayed in the drop down. Note: BurnInTest and the Endpoints must support IPv4.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Test On</span></p>
+<p class="p_Normal">Check this box the enable testing for the selected IP of a network card.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Test settings</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Half duplex / Full duplex</span></p>
+<p class="p_Normal">Full duplex – will send and receive data during the test.</p>
+<p class="p_Normal">Half duplex – will only send data during the test.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Data port Number</span></p>
+<p class="p_Normal">This is the starting port number that is used when sending data during the test, as the testing progresses more then one port may be in use by each network card. Unless it conflicts with other services in use this should be left at the default value.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Block Size (bytes)</span></p>
+<p class="p_Normal">This value is buffer size used when breaking the file into packets and sending it across the network.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Target NIC load (%)</span></p>
+<p class="p_Normal">This is the required load placed on the network card during testing, the test will be throttled to maintain the necessary amount of data being sent through the network card. For example, a load of 15% for a 1000 megabit (1 gigabit) network card will be a transfer rate around 17 MB/s. Note: If this setting is high, the system may not be able to generate sufficient traffic to meet this load requirement. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Low NIC threshold</span></p>
+<p class="p_Normal">A low throughput threshold value can be specified to raise a throughput error when the throughput falls below the specified level.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Validate data</span></p>
+<p class="p_Normal">If this is checked then the data sent during the test will be validated , this may slow down the testing due to the CPU overhead of validation.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Display test endpoints</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Display endpoints</span></p>
+<p class="p_Normal">This will scan and display the IPv4 and IPv6 address form each endpoint that is currently available for testing.</p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

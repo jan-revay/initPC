@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Detailed Error log history</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="The detailed error log history can be opened from the ‘View / Error log file’ menu. It contains a record of recent errors and status messages that have occurred during a test..." />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "detailed_error_log_history.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Detailed Error log history</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="test_window_display.htm">Previous</a>&nbsp;
+     <a href="menu_options.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">The detailed error log history can be opened from the ‘View / Error log file’ menu. It contains a record of recent errors and status messages that have occurred during a test run. It is possible to save a copy of this log of recent history using the ‘File / Save test log’ menu item.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The log can contain up to 1000 messages. After 1000, the oldest messages are overwritten by the newer ones. The log window is updated in real time and can left open while a test run is in progress.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Time stamp</span></p>
+<p class="p_Normal">The time stamp records the time when the event occurred. The format is, YYYY-MM-DD HH:MM:SS</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Test type</span></p>
+<p class="p_Normal">The test type refers t the name of the test which originated the event. Examples are, “RAM”, Floppy Disk”. The word “Status”, indicated that the event is not an error but just a status message.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Error Classification</span></p>
+<p class="p_Normal">Where logging records an error, the severity of this error (CRITICAL, SERIOUS, WARNING or INFORMATION) is logged. Where an informational line (related to this error) follows the error line, the error classification is not repeated (to aid determination of the number of unique errors per classification).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Details</span></p>
+<p class="p_Normal">This is a text field that contains additional information about the error (or status message). See Appendix C for a description of the errors that may be encountered. In some cases a log entry may be spread across two lines. The 1st line will contain some general information about the error and the 2nd line will contain more detail.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Some error messages may contain internal program variables (and thus be fair cryptic). These are not always intended to be interpreted by the user can but help us track down faults in our software.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Configuring Error Classifications</span></p>
+<p class="p_Normal">Each of the standard errors detected by BurnInTest can configured to include a customer specific string and error classification. The file BITErrorClassification.txt (in the software directory) contains the error text and classification used by BurnInTest. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The file is formatted as a Comma Separated File with four fields:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>Error number – this must not be changed by the customer;</p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>Error description text – this may be changed. This must be a sting enclosed by quotes;</p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">3.</span>Error classification – this may be changed. This must be one of the following text values (not in quotes): </p><p class="p_Normal">CRITICAL, SERIOUS, WARNING, or INFORMATION </p>
+<p class="p_Normal">A number of errors may be configured to be ignored (not reported as errors), as they may be considered ‘below the radar’. These are configured by setting the Error classification to NONE. These are:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>138,&quot;Warning: Could not lock parallel port&quot;,WARNING,PP</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>146,&quot;Frame could not be displayed and was skipped&quot;,INFORMATION,</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>182,&quot;Video Playback is dropping samples&quot;,WARNING,</p><p class="p_Normal">Other errors may not be configured to be ignored in this way.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">4.</span>Customer comment – this is optional and may be changed – it is ignored by BurnInTest.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Comment lines may be inserted by using a “#” at the start of the line. These lines will be ignored by BurnInTest.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">An example is shown below:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"># PassMark BurnInTest,,,</p>
+<p class="p_Normal"># Error message text and classification,,,</p>
+<p class="p_Normal">0,&quot;No errors&quot;,NONE,</p>
+<p class="p_Normal">1,&quot;Incorrect mathematical addition&quot;,SERIOUS,</p>
+<p class="p_Normal">2,&quot;Incorrect mathematical subtraction&quot;,SERIOUS,</p>
+<p class="p_Normal">3,&quot;Incorrect mathematical division&quot;,SERIOUS,</p>
+<p class="p_Normal">4,&quot;Incorrect mathematical multiply&quot;,SERIOUS,</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

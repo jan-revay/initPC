@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Hard Disk and Floppy Disk Test</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Disk test suite,File size,Firewire,Memory card readers,Memory sticks,Pattern,Read (disk),Removable drives,Test Pattern,write(disk)" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="This suite contains a number of tests that exercise the mass storage units (Hard disk or otherwise) connected to the computer. By default, the start-up volume (with path..." />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "disk_test.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Hard Disk and Floppy Disk Test</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="maths_tests.htm">Previous</a>&nbsp;
+     <a href="memory_test.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">This suite contains a number of tests that exercise the mass storage units (Hard disk or otherwise) connected to the computer. By default, the start-up volume (with path represented by “/”) is used for the hard disk and the floppy disk is represented by the mount directory in the “/etc/fstab” file, i.e. the “mnt_dir” field of the &nbsp;“mntent struct” as returned by a &nbsp;getmntent() system call. &nbsp;You can opt to test more disks/volumes by changing the Preferences Dialog (See section, 0, Disk preferences). &nbsp;Up to 120 drives can be selected for simultaneous testing. From this twenty it is possible to select any combination of available floppy disk and hard disks.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Partitioned drives they must be mounted before BurnInTest can test them, they also need to be of partition type ext2, ext3, ext4, reiserfs, xfs, zfs, vfat or ntfs. Due to limited NTFS support in some Linux distributions you may need to use a non-default type (eg ntfs-3g) to mount NTFS drives with read + write permissions before you can test them.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The user can select one of the following patterns or choose to automatically cycle between the patterns. This selection is done in the preferences dialog (see section, 0, Disk preferences). Possible test mode patterns are,</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Default (Cyclic)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Sequential data pattern (0,1,2...255)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Random data with random seeking</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>High Low freq data overwrite (10101 then 00001)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Binary data pattern 1 (10101010)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Binary data pattern 2 (01010101)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Zeros data pattern (00000000)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Ones data pattern (11111111)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Random data pattern</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">During each test cycle, a file is created and verified on the disk. The size of the file is equal to a certain percentage of the disks capacity and all files are created in the root directory of the drives selected. The default file size is 1.0% of the disk size. For small capacity drives, like floppy disks, there is a minimum file size of 32KB. It is possible to change the default file size percentage from the preferences window. The default setting is to cycle between the patterns. In this case a new pattern will be selected each time the disk is full </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Each test file is filled with a coded number sequence (a pattern) that is used to verify the correct operation of the disk when the file is verified (read). Files are created in the free space on the disk until the disk is 94% full. When the disk has reached this limit, all the test files are deleted and the test starts again. A limit of 94% is used to ensure that some space is kept for use by other applications (including the swap files).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">A number of test modes perform additional testing to that described above. These are described below:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Random data with Random seeking </span></p>
+<p class="p_Normal">Generates 7 blocks of random data for each test disk and sequentially writes a file using the first block of random data, followed by the second, third,forth, fifth, sixth and seventh and then the first etc, until the file size specified is reached. This file is then verified with sequential reads of data blocks from the file just written. This is followed by seeking to a block within the files created, selected at random. At random either a read and verify or a write will occur at this position on the disk. This random seek and random read/verify or write will be repeated the number of times specified by the user in the disk preferences “seek count” field. New files are written and verified with this process until the disk full level is reached. At this point, all the test files written to disk will be deleted and the cycle will be repeated.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">High Low frequency data overwrite </span></p>
+<p class="p_Normal">Works by first writing a file with a high frequency pattern (10101010101010010101…), then overwriting this with a low frequency pattern (00001000010000100001…) and then verifying that the low frequency pattern has been fully and correctly written. Note: This test pattern will write more data than it reads/verifies, this is the reason the MB Written and MB verified shown on the disk test window may not be equal. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If an error is detected in the coded pattern then the error count is incremented. The numbers of bytes written and read from the disk are displayed in the test window. The addition of these two values is displayed in the main window.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Graphical progress bars indicate if the test is currently writing or verifying (reading) information, the percentage complete for the particular file and the space remaining on the disk.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The speed of the hard disk and the duty cycle determine how quickly test files are created.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">There are a few issues to aware of when interpreting the results of the disk test. These are covered in the precautions section (see section 0, Precautions for thorough and careful testing).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Note (1) To test Firewire ports using BurnInTest it is recommended that an external hard disk via the Firewire port is used in conjunction with the BurnInTest disk test. (2) Similarly, to test external memory card readers/writers or other removal drives, it is recommended that the BurnInTest disk test be used.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">RAW (un-partitioned) Disk Testing</span></p>
+<p class="p_Normal">When a Raw &nbsp;(un-partitioned) disk is detected it will be displayed in the drive columns as &quot;Raw Disk [device name]&quot;. This will allow the device to be selected for testing and write directly to the disk, bypassing the file system. Be aware that this test is designed to be run on un-partitioned devices and running the test on a partitioned device can result in corruption of the partition and data stored on the device. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Helpful command line tool</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">[your_command_line_prompt]# cat /etc/mtab</span></p>
+<p class="p_Normal">This command will show all the mounted disks on your system.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">[your_command_line_prompt]# df</span></p>
+<p class="p_Normal">Shows the disk usage including used space and available disk space.</p>
+
+</td></tr></table>
+
+</body>
+</html>

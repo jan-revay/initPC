@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Parallel Port Test</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="Tests the parallel communications port connected to the PC. The parallel port to be tested can be selected from the Test Preferences window (see section 0, Parallel port..." />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "parallel_test.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Parallel Port Test (x86 only)</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="network_test.htm">Previous</a>&nbsp;
+     <a href="serial_test.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">Tests the parallel communications port connected to the PC. The parallel port to be tested can be selected from the Test Preferences window (see section 0, Parallel port preferences).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">A parallel port loop back plug is required to run this test. These can be purchased from the PassMark web site (www.passmark.com) or you can make them yourself (see Appendix D).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Each test cycle corresponds to 500,000 bytes of data transmission. The number of ‘ops’ corresponds to the number of bytes sent and received. The duty cycle affects the time spent waiting between cycles.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The parallel port selected must not already be in use by the operating system (for example by the printer or other external device), for the test to be carried out. &nbsp;The default on-board Parallel port settings are that Port0 is named /dev/lp0 and corresponds to the physical IO memory address 0378.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal"><div style="margin:0;width:300px"><img alt="Parallel loopback plug" title="Parallel loopback plug" width="300" height="300" style="width:300px;height:300px;border:none" src="paraloopback.jpg"/><p style="text-align:center">Parallel loopback plug</p></div></div>
+<p class="p_Normal"><span style="font-weight: bold;">Parallel Port</span></p>
+<p class="p_Normal">This is the port name for the parallel port being tested. The port can be selected from the Test Preferences window. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Bytes Sent</span></p>
+<p class="p_Normal">This is the number of bytes that have been sent to the parallel port.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Bytes Received</span></p>
+<p class="p_Normal">This is the number of bytes that have received from the parallel port.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Errors</span></p>
+<p class="p_Normal">This is the number of errors detected (see Appendix C, p.48).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Throughput</span></p>
+<p class="p_Normal">This is the measured throughput for the port.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Compatibility issues</span></p>
+<p class="p_Normal">You need to have administrator privileges to run this test.</p>
+
+</td></tr></table>
+
+</body>
+</html>

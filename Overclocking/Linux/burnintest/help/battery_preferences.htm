@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Battery Preferences</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="BurnInTest can monitor battery levels and report an error if the battery is below a set capacity value in absolute or percentage terms." />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "battery_preferences.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Battery Preferences</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="management.htm">Previous</a>&nbsp;
+     <a href="temperature-preferences.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">BurnInTest can monitor battery levels and report an error if the battery is below a set capacity value in absolute or percentage terms.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Battery pre-test</span></p>
+<p class="p_Normal">Select this option to check the battery capacity before the main tests start, i.e. as a pre-test.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Battery main test</span></p>
+<p class="p_Normal">Select this option to check the battery capacity during the main test run, i.e. while the other main tests are running. The battery will be checked once per minute. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Use full charge capcity</span></p>
+<p class="p_Normal">Use the battery's current fully charged capacity (the battery capacity when the battery is reporting it is at 100% charge, from POWER_SUPPLY_ENERGY_FULL) instead of current capacity (POWER_SUPPLY_ENERGY_NOW) for comparison. When compared the the design capacity this gives an indication of how the battery has aged. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Use current charge</span></p>
+<p class="p_Normal">Use the current battery charge capacity (POWER_SUPPLY_ENERGY_NOW) instead of full charged capacity (POWER_SUPPLY_ENERGY_FULL) for comparison. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Use threshold (percent)</span></p>
+<p class="p_Normal">Select this option to use a percentage threshold value, eg 90%. If the measured value (full charge or current charge) drops below this level when compared to the battery's design capacity an error will be logged.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Use absolute threshold</span></p>
+<p class="p_Normal">Leave unchecked to use an absolute battery value. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Threshold</span></p>
+<p class="p_Normal">The absolute (e.g. 30000mA) or percentage battery value (e.g. 80%), eg 5000 mWh. If the measured value (full charge or current charge) when compared to the battery's design capacity has a difference greater than this value then an error will be logged.</p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

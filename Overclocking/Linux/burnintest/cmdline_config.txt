@@ -1,0 +1,359 @@
+## Test config file for BurnInTest Linux command line version
+## Use '#' to comment out lines, remove the comment to enable an option
+## Double ## have been used for explanations of each section/paramter
+## Single # have been used to comment out optional paramters/tests
+
+## Note that only 14 lines of tests can be displayed on the main window
+## due to console size limits
+
+## Logging 
+## Comment out the section to turn logging off
+<Logging>
+
+## Location (path) of log file
+LogFilename /tmp/
+
+## Log prefix
+LogPrefix BiTLog2
+## Format - Ascii|HTML|Certificate
+Format Ascii
+## Logging detail level - summary|normal
+LogDetailLevel normal
+## Trace level - None (0) | Activity Trace 1 (1)| Activity Trace 2 (2) 
+TraceLevel 0
+##maximum number of lines for file
+MaxFileLines 1000		
+## Logging mode - single file or multiples with timestamp
+##   - ClearAppend Clear results & append (single file)
+##   - AccumulateAppend Clear results & append (single file)
+##   - ClearNew Clear results and overwrite existing (single file) 
+##		- Timestamp Create new timestamped files (multiple files)
+LogMode ClearAppend
+## Logging Interval - periodically log results summary during a test. 
+## Expects a value in minutes, 0 for log results at end of test
+LogInterval 0
+
+</Logging>
+
+## Pre Test Action
+#<PreTest>
+##Action before tests start - None, Warn and ExternalWait - currently only None and ExternalWait are valid
+#Action 
+##If using ExternalWait this is the path of the file or script to launch and wait for the end of it's execution
+#ExternalPath /path/to/file
+#</PreTest>
+
+## Post Test Action 
+#<PostTest>
+
+##Auto stop action when tests have passed Stop, RunApp, Reboot
+#AutoStopPassed Stop
+##Manual stop action when tests have passed Stop, RunApp
+#ManualStopPassed Stop
+##If using AutoStopPassed RunApp this is the path of the file or script to launch before exiting
+#ExternalPathPassed /path/to/file
+##If using AutoStopPassed RunApp this is the parameters to pass to the application being launched
+#ExternalParamsPassed paramters
+#UseSystemBeepPassed
+#DisplayResultsPassed
+
+##Auto stop action when tests have failed Stop, RunApp, Reboot
+#AutoStopFailed Stop
+##Manual stop action when tests have failed Stop, RunApp
+#ManualStopFailed Stop
+##If using AutoStopPassed RunApp this is the path of the file or script to launch before exiting
+#ExternalPathFailed /path/to/file
+##If using AutoStopPassed RunApp this is the parameters to pass to the application being launched
+#ExternalParamsFailed paramters
+#UseSystemBeepFailed
+#DisplayResultsFailed
+
+#</PostTest>
+
+#<Notes>
+## CustomerName
+#CustomerName Name
+## TechnicianName
+#TechnicianName Name
+## MachineType - One line description of the machine type
+#MachineType Type
+## MachineSerial - Custom serial for this machine
+#MachineSerial Serial1234
+## MachineID - Management console machine ID. Needs to be a minimum of 8 characters, maximum of 15
+#MachineID Test1234
+## Notes - Ones line description of extra notes
+#Notes One line of notes
+#</Notes>
+
+## Duty cycles
+<DutyCycles>
+## Auto stop after XXX minutes
+AutoStopMinutes 15
+## Auto stop after XXX cycles
+AutoStopCycles 0
+## Duty cycle load for each test, 1-100
+CPU 100
+CDDVD 100
+Memory 100
+Serial 100
+Parallel 100
+Disk 100
+Network 100
+USB 100
+Sound 100
+PCIE 100
+VideoRAM 100
+</DutyCycles>
+
+## Memory section
+<Memory>
+#Test pattern - Cycle, Sequence, Binary1, Binary2, Zeros, Ones
+Cycle
+</Memory>
+
+## Disk section - Have a <Test> section for each device to test
+<Disk>
+
+## Global disk test settings
+
+##TestAllDisks - Test all detected partitions, uncomment to use
+#TestAllDisks
+
+##TestAllRAWDisks - Test all detected RAW (unpartitioned) disks, uncomment to use
+#TestAllRAWDisks
+
+##When using Test all  - File size as % of disk space 1-15%
+#FileSize 1
+
+##When using Test all - Cyclic, Sequential, HighLow, Binary1, Binary2, Zeros, Ones, Random, RandomSeeking
+#TestMode Cyclic
+
+## Individual disk settings
+## Test a device
+<Test>
+## The device to be tested
+Device /dev/sda1
+## The test mode - Cyclic, Sequential, HighLow, Binary1, Binary2, Zeros, Ones, Random, RandomSeeking
+TestMode Cyclic
+##File size as % of disk space 1-15%
+FileSize 1
+## Duty cycle override, 0 - 100
+#DutyCycleOverride 0
+## Seek count
+#SeekCount 100
+## Max test cycles 
+#MaxCycles 100
+</Test>
+</Disk>
+
+##CPU-Math 
+##Comment out the matching test name if you don't want the tests run
+<CPU>
+##General Operations Test
+General
+##Floating Point Unit test
+FPU
+##Extension instructions - SSE
+SSE
+##Extension instructions - SSE2
+SSE2
+##Extension instructions - NEON
+NEON
+##Prime Number Test
+Prime 
+</CPU>
+
+## Network
+<Network>
+
+## Have an IP keyword (up to 4) for each destination IP to test. The IP specified should be an address external
+## to the system under test that can respond to ping requests.
+IP 127.0.0.1
+
+## Bad packet ratio
+## - Set to 0 for every bad packet to generate and error
+## - Set to a 1-99 range for an error to be generated once the bad packet ratio reaches this level
+BadPacketRatio 2
+## Timeout - ms time before connection times out, 100 - 200000
+TimeOut 2000
+## Uncomment TestAllNICs to bind each entered IP to a different network card
+#TestAllNICs
+</Network>
+
+## CD-RW/DVD - Have a <Test> section for each device to test
+#<CDRWDVD>
+
+#<Test>
+## Device to test
+#Device /dev/hdc
+## Test mode - Music CD playback (Music), Data CD Read and Verify (Data), PassMark Test CD/DVD (Passmark), No CD (No)
+#TestMode Passmark
+## Additional seek - uncomment and edit the seek value if necessary, only valid for PassMark Test CD/DVD 0-1000
+#Seek 100
+#</Test>
+
+
+## Device to test
+#Device /dev/hdd
+## Test mode - Music CD playback (Music), Data CD Read and Verify (Data), PassMark## Test CD/DVD (Passmark), No CD (No)
+#TestMode Music
+## Additional seek - uncomment and edit the seek value if necessary, only valid for PassMark Test CD/DVD 0-1000
+#Seek 100
+#</Test>
+
+#</CDRWDVD>
+
+## Serial Port - Have a <Test> section for each device to test
+#<Serial>
+
+#<Test>
+## Device to test - ttyS0, ttyS1 etc to ttyS63
+#Device ttyS0
+## Test Mode - Loopback or Detect
+#TestMode Loopback
+#</Test>
+
+#<Test>
+## Device to test - ttyS0, ttyS1 etc to ttyS63
+#Device ttyS1
+## Test Mode - Loopback or Detect
+#TestMode Detect
+#</Test>
+
+
+## Disable RTS/CTS flow control testing
+#DisableRTS
+## Disable DSR/DTR flow control testing
+#DisableDSR
+## Send and receive timeout, 100-30000 ms
+#SendReceive 3500
+## Baud rate - 110, 300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200, 
+##            Cycle to 115200 (Cycle115), 230400, Cycle to 230400 (Cycle230), 460800,921600
+#BaudRate 115200
+#</Serial>
+
+## Parallel Port - Can only test one port at a time
+#<Parallel>
+## Device to test, lp0, lp1 etc
+#Device lp0
+## Test Mode - Loopback or Detect
+#TestMode Loopback
+#</Parallel>
+
+## USB test section
+#<USB>
+## Automatically select all USB plugs found on the system for testing
+#AutoSelectAllUSB
+
+## Number of USB tests to run (when not using AutoSelectAllUSB)
+#NumUSB 2
+
+## Run the benchmark test at the start of the USB test
+#RunUSBBenchmark
+
+## USB 3 connection speed Auto, SuperSpeed (5GB/s), HighSpeed (480Mb/s), FullSpeed (Mb/s), Cycle (Cycle between speeds)
+#USB3Connection Auto 
+
+#</USB>
+
+## Sound section
+#<Sound>
+## Maximum distortion allowed before and error is logged, allowed values 1-20
+#MaxDistortion 5
+## Sound device name to test - plughw, default or other sound alias, should be left as plughw in most cases 
+#SoundDevName plughw
+#</Sound>
+
+##Plugin tests
+##Uncomment 'RunSeparately' and 'IgnoreTimeout' when required and have  <Test> section for each plugin to run (up to 5 )
+#<Plugin>
+
+##Run each plugin separately (default will run at the same time)
+#RunSeparately
+
+##Ignore no-operations timeout 
+#IgnoreTimeout
+
+#<Test>
+## Enter the path of the plugin application to run here
+#Path /path/to/plugin
+## Uncomment 'PreTest' to run as a pre test plugin
+#PreTest
+#</Test>
+
+#</Plugin>
+
+#<PCIE>
+## Automatically select all PCIE slots with PassMark PCIe cards
+#TestAllPCIE
+##Number of PCIe slots to test
+#NumPCIE 1
+#</PCIE>
+
+
+## Errors
+<Errors>
+## Action to take on error - Continue (Continue), Beep and continue (Beep), Stop tests (Stop)
+ActionOnError Continue
+</Errors>
+
+## Management Console
+#<Management>
+##Management console server address eg http://localhost/htdocs/mgtconsolemsghandler.php
+#Server http://192.168.2.2/bitconsole/mgtconsolemsghandler.php
+## HTTP authentication username
+#Username user
+## HTTP authentication password
+#Password passwd
+#</Management>
+
+## Temperature settings
+<Temperature>
+## Auto select which temperature sensors to watch
+AutoSelectSensors
+
+## Temperature sample time in seconds (min 5)
+SamplePeriod 10
+
+## Scale - use either Celcius or Fahrenheit 
+UseCelcius
+#UseFahrenheit
+
+## Stop testing if a sensor records a temperature higher than the threshold
+#StopTestOnHighTemp
+
+## If not using AutoSelectSensors can add sensor names to look for here, must match what BurnInTest displays eg "CPU 0 Core 1"
+## One per line between the "Sensors" tag (up to maxium 64), threshold after a ','
+#<Sensors> 
+#CPU 0 Core 1,90
+#CPU 0 Core 1,90
+#CPU 0 Core 2,90
+#</Sensors>
+
+</Temperature>
+
+#<Battery>
+
+## Test Mode - Main or Pretest
+TestMode Main
+
+## Change comparison mode - Current (current capacity) or Full (full charge capacity)
+Charge Current
+
+## ThresholdAbs - Absolute threshold for when an error is logged. Use this or ThresholdPer.
+#ThresholdAbs 10000
+
+## ThresholdPer - Percentage threshold for when an error is logged
+ThresholdPer 90
+
+#</Battery>
+
+## 2D Video RAM test
+#<VideoRAM>
+## Run the OpenCL based video RAM test
+#LocalVideoMemory
+#</VideoRAM>
+
+
+
+

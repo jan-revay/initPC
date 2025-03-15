@@ -1,0 +1,81 @@
+Memtest process started
+
+Memtest Signals OK
+
+Not enough command line arguments - exiting
+
+Memtest process started
+
+Memtest Signals OK
+
+Shared memory interface flag seems invalid
+
+Memtest process started
+
+Memtest Signals OK
+
+Shared memory interface flag seems invalid
+
+Memtest process started
+
+Memtest Signals OK
+
+Not enough command line arguments - exiting
+
+Memtest process started
+
+Memtest Signals OK
+
+Shared memory interface flag seems invalid
+
+Memtest process started
+
+Memtest Signals OK
+
+Shared memory interface flag seems invalid
+
+Memtest process started
+
+Memtest Signals OK
+
+Not enough command line arguments - exiting
+
+Memtest process started
+
+Memtest Signals OK
+
+Shared memory interface flag valid
+
+Shared memory interface flag ok
+
+Process number is valid
+
+Got shared memory key
+
+Got shared memory ID
+
+Attached shared memory key
+
+Shared memory interface version is valid (3 == 3)
+
+IN_Interface_Version: 3
+IN_DutyCycle: 50
+IN_RAMSize: 34078720000
+IN_Trace_Level: 2
+IN_LogPath: 
+
+Trace level: (0)(0)
+Memtest process started
+
+Memtest Signals OK
+
+Shared memory interface flag valid
+
+Shared memory interface flag ok
+
+Process number is valid
+
+Got shared memory key
+
+Failed to get shared memory ID
+

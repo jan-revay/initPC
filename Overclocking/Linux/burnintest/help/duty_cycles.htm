@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Test Selection and Duty Cycles</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Duty Cycles,Test Selection,Test Selection and Duty Cycles" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="From this window it is possible to configure the automatic stopping of tests, select the tests to be performed and the level of load placed on the system." />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "duty_cycles.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Test Selection and Duty Cycles</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="temperature-preferences.htm">Previous</a>&nbsp;
+     <a href="interpreting_the_results.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">From this window it is possible to configure the automatic stopping of tests, select the tests to be performed and the level of load placed on the system.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="duty_cycles" width="699" height="543" style="margin:0;width:699px;height:543px;border:none" src="duty_cycles.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Auto Stop</span></p>
+<p class="p_Normal">BurnInTest can be set to automatically stop a test run by either configuring a test duration or a number of test cycles. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Test duration</span></p>
+<p class="p_Normal">This option allows the user to select the period of time that tests are to run for. After the time has expired all windows (except the main window) are closed and all the tests are stopped.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The duration, in minutes should be entered in the “Auto Stop after n Minutes” field. A value of 0 in this field means that the tests will run until a manual Stop command is issued via the button bar/menu or the number of test cycles has been reached. The maximum test time in the unregistered shareware version is 15minutes per test. After the software is registered the maximum auto stop time is 10 days. (the registered version can also run forever if the manual stop option is selected).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Number of test cycles</span></p>
+<p class="p_Normal">This option allows the user to select the number of cycles that tests are to run for. After all current tests have undergone the configured number of cycles in testing, all windows (except the main window) are closed and all the tests are stopped.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The number of cycles should be entered in the “or n Cycles” field. A value of 0 in this field means that the tests will run until a manual Stop command is issued via the button bar/menu or the test duration has been reached. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">NOTES:</p>
+<p class="p_Normal">1) Both options are based on the current test run and not accumulated results. </p>
+<p class="p_Normal">2) The test duration and number of cycles are both used to automatically stop a test run (with a logical OR). For example, if duration is set to 15 minutes and number of cycles is set to 3. The test run will be stopped when the first of either 15 minutes OR 3 cycles is reached. If you want to automatically stop a test run based only on duration, set the number of cycles to 0 (ie. Run for the set duration OR forever). If you want to automatically stop the test run only based on the number of test cycles, set the test duration to 0 (ie. Run forever OR for the set number of cycles).</p>
+<p class="p_Normal">3) If you need to run each test a single time, one after the other (ie. In series, rather than in parallel), a script should be created to: Set the number of cycles, run test1, run test2, …, run test n. See SETCYCLES.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Test Check Boxes</span></p>
+<p class="p_Normal">Each test has an associated check box that can be used to turn the test on or off.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Slide bars and Duty cycle</span></p>
+<p class="p_Normal">Each test has a slide bar and an associated edit box. The slide bar allows the user to determine the “duty cycle” for each test. A low duty cycle means that a delay will be inserted during the execution of the test, reducing the load on the system and reducing the number of operations performed during any particular period of time. A high duty cycle corresponds to higher load.</p>
+<p class="p_Normal">A value can also be directly entered into the edit box. The background color of the edit box will vary from dark red to white to bright green depending on the duty cycle selected.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Buttons</span></p>
+<p class="p_Normal">The buttons at the bottom of the window allow all tests to be activated or deactivated with a single click. The default values can also be restored. The settings selected are saved when the OK button is clicked.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Selecting which tests to run</span></p>
+<p class="p_Normal">In order to help select which tests to run, here are some general guidelines:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Only select tests that match your hardware</span></p>
+<p class="p_Normal">The tests you select should correspond to the hardware installed in the PC. For example, if your computer doesn’t have a serial port, there is no point having the serial port test enabled. This will only result in a lot of errors being generated.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Selecting tests for specific testing</span></p>
+<p class="p_Normal">If you suspect a problem with a particular device, (eg the RAM), leave the other tests turned off and just run this particular test at 100%. This will maximise the load on this element.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Selecting tests for general burn in testing</span></p>
+<p class="p_Normal">For a general burn in, select a variety of different tests. The RAM and Disk tests are the most important. Select the other tests based on how you plan to use the computer. For example if the machine is to be used as a server, then the Network test, Tape drive test, CPU tests and CD test should also be enabled. In general it is better to test those elements that will receive the most usage once the machine is put into active use. For example the floppy drive test could be left off, (or tested at a low duty cycle), if the floppy drive is not critical for the machines intended use.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Optimise the load</span></p>
+<p class="p_Normal">As all the tests run at the same time in different threads. Some care should be taken to ensure that important tests are not starved of the CPU and run too slowly. Thus it can be advantages to initially leave the CPU tests off and run with the other tests. Then add in the CPU tests but adjust the duty cycle down until the CPU load just hits 100%. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For example, assuming that the CD and disk drive are critical parts of your system, run just these tests at 100% duty cycle, then note the load on the CPU. Then add in the RAM and CPU tests at a lower duty cycle in order to fully load the CPU.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Note that there is no point trying load up the CPU to more than 100%. Adding more load once the CPU is running at 100% doesn’t result in any more processing being done. The CPUs available processing time is just redistributed and all the running processes run more slowly.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Experiment</span></p>
+<p class="p_Normal">As just about everyone has different requirements don’t hesitate to experiment with the settings to obtain the best result in your environment.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>PCIe Preferences</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="Automatically select all PCIe slots with PassMark loopback cards" />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "pcie_slots.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">PCIe Preferences</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="plugin_preferences.htm">Previous</a>&nbsp;
+     <a href="management.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal"><span style="font-weight: bold;">Automatically select all PCIe slots with PassMark loopback cards</span></p>
+<p class="p_Normal">When selected, this option determines the number of PCIe tests at the start of each test run by detecting the number of PassMark PCIe test cards correctly connected to the system at that time. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">It should be noted that while this improves test automation, it is possible that a PCIe slot is faulty and the PCIe test card has failed to be detected and the number of tests run is less than the required number of tests. When using this option, some type of validation should be done to verify that all of the PCIe test cards are correctly connected. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Number of PCIe slots to test</span></p>
+<p class="p_Normal">This is the number of PCIe test cards that BurnInTest attempts to connect to. In general you will want to set this value to be equal to the number of PCIe test cards that you would typically have connected to the machine. A maximum of 10 cards may be used at the same time. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">See the PCIe slot <a href="pcie_slot_and_psu_test.htm" class="topiclink">PCIe slot and PSU test</a> for more details.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You will need to download, build and load the <a href="https://www.passmark.com/products/pcie-test-card/download.php" target="_blank" class="weblink">PCIe test card device driver for Linux</a> before BurnInTest can access the card. </p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Precautions for thorough and careful testing</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="For a hardware test to be useful several precautions need to be taken. Failure to take into account these factors may result in tests being misleading or other unwanted results." />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "precautions_for_thorough_and_careful_testing.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Precautions for thorough and careful testing</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="example_ascii_log_file.htm">Previous</a>&nbsp;
+     <a href="fault_finding.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">For a hardware test to be useful several precautions need to be taken. Failure to take into account these factors may result in tests being misleading or other unwanted results.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Stop all other applications before running BurnInTest. BurnInTest can be run in the background but it just doesn’t seem prudent to do any important work when you’re testing a computer to see if it will fail. In any case BurnInTest will place such a load on the system that any other applications will run at a snails pace. Not having other applications running also frees up more RAM that can be used by the Memory test.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Back-up any important files before you start. BurnInTest can simulate many days of typical office PC use in a few hours, this increases the risk of hardware failure. Note that the testing process itself doesn’t touch any existing files on the hard disk or floppy disk.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>When testing multiple disk drives at the same time you may not want to test multiple partitions that are on the same physical drive at the same time. Doing this can result in an enormous amount of seeking between partitions and not as much reading and writing.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>PassMark recommends running BurnInTest just after you install a PC for the first time, as this is the ideal time to find a problem. The PC will be still under warranty and you can’t lose any of your data (because you haven’t loaded any). Any disruption caused by a failure will be minimal.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Remember that BurnInTest does not create problems in your hardware, it just helps you find them in a controlled manner. BurnInTest doesn’t use any nasty programming tricks to try and make your hardware fail. It uses the same functions and procedures that standard Linux applications and file servers use. If your computer fails when running BurnInTest, it was going to fail in the near future anyway !</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>If you only want to test a particular component of the computer, turn the other tests off. There’s no point using the CD-Drive when you only wanted to test the new hard drive.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Doing a successful test run doesn’t mean that the computer will never fail. Software problems, viruses, and the fact that no computer component has an unlimited life span means that precautions need to be taken. Having good BurnInTest results is NOT a substitute for making good file backups in the future.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Because BurnInTest doesn’t delete any of the existing files from a disk, this occupied portion of the disk will not be tested. Thus the more free space that the disk has before the test, the larger the portion of the disk that will be tested.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>When using the CD test with a music CD verify that the music is being played clearly though the PC’s sound system.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>On some new computers, the warranty may be voided if you open up the case. Check your warranty before you start poking around in the case.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Old computers tend to fill up with dust over the period of many years. This dust layer can cause heat build up and even short circuits. Check for dust build-up in old computers before you start.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Check the computer has adequate ventilation &amp; check all the fans are in good working order.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Check that the computer isn’t full of bugs. (i.e. the insect type). Depending on where you live, insects can be a real problem. The term ‘Computer Bug’ was coined after a dead moth was found to have shorted out one of the first computers build. In Australia, cockroaches are the most common cause of failure in microwave ovens. Recent studies have even suggested that some insects are attracted to electro-magnetic fields. So watch out !</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>There are many cases where a software bug may appear to be a problem with the hardware. Knowing who or what to blame isn’t easy. Check with your hardware manufacturer(s) from time to time in case they have released new software that fixes some problems they may have found. The hardware components that in general have the most problems with their ‘Driver’ software are, Video cards (especially the 3D functions), Sound cards and CDs.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>By using the Network test you can test both your computer and the network it is connected to. If an error does occur it may be difficult to determine the location of the error. If you are using an Internet address then it is very likely that any transient errors are the result of problems on the Internet. The best compromise is probably to set the test address to the address of a machine on your local area network, (if you have one).</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>When selecting a Serial or Parallel port to use for loop back testing, ensure that the port selected is not already in use by the system. (e.g. by a mouse or printer).</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Because of limitations in the memory test, faulty RAM errors may not be picked up by the test and faulty RAM can often manifest itself in different ways. These include disk I/O errors, system crashes and lockups.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Not all faults can be detected via software and a machine can not be deemed to be 100% fault free after testing with BurnInTest. Some reasons for this include;</p>
+<p class="p_Normal" style="margin: 0 0 0 24px;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 0 24px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Faults may develop only after a certain period of time</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 0 24px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Faults may manifest themselves only in certain environmental conditions (e.g. excessive heat)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 0 24px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Faults might only manifest themselves in an unusual or specific set of circumstances out of thise which are tested</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 0 24px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Not all modes of operation for all possible hardware devices are tested</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 0 24px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Faults might only appear with certain combinations or versions of software / device drivers</p><p class="p_Normal" style="margin: 0 0 0 24px;"> </p>
+<p class="p_Normal">BurnInTest is not fault-tolerant and is not designed or intended for use or resale as on-line control equipment in hazardous environments requiring fail-safe performance, such as in the operation of nuclear facilities, aircraft navigation or communication systems, air traffic control, direct life support machines, or weapons systems, in which failure of BurnInTest could lead directly to death, personal injury, or severe physical or environmental damage (“High Risk Activities”). PassMark and its suppliers specifically disclaim any express or implied warranty of fitness for High Risk Activities.</p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

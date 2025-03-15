@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Optical Drive Test</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="Tests the CD-ROM, &nbsp;DVD and BluRay drives. &nbsp;This test can be used with many different types of CD / DVD media, including the following types. Music CD Data CD-ROM Specialized t" />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "cd_rom_and_dvd_test.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Optical Drive Test</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="3d_graphics_test.htm">Previous</a>&nbsp;
+     <a href="maths_tests.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">Tests the CD-ROM, &nbsp;DVD and BluRay drives.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This test can be used with many different types of CD / DVD media, including the following types.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'StarSymbol';display:inline-block;width:13px;margin-left:-13px">-</span>Music CD</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'StarSymbol';display:inline-block;width:13px;margin-left:-13px">-</span>Data CD-ROM</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'StarSymbol';display:inline-block;width:13px;margin-left:-13px">-</span>Specialized test CD (see below for details)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'StarSymbol';display:inline-block;width:13px;margin-left:-13px">-</span>Data DVD-ROM</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'StarSymbol';display:inline-block;width:13px;margin-left:-13px">-</span>Specialized test DVD (see below for details)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'StarSymbol';display:inline-block;width:13px;margin-left:-13px">-</span>Specialized test BluRay &nbsp;(see below for details)</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The type of disc being used must be suitable for the test mode set in the CD / DVD preferences window however. If multiple CD / DVD players are installed in your system, you can select all or some of them from the Preferences window (see section 0, Disk preferences). Up to twenty drives can be selected for simultaneous testing.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Test Modes</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Music CD playback</span></p>
+<p class="p_Normal">For a music CD, the test verifies the operation of the CD ROM and the PC’s sound system by repeatedly playing a music CD. The number of cycles corresponds to the total number of times the entire CD has been played. The number of ‘ops’ corresponds to the number of bytes read from the CD in order to generate the sound. The duty cycle affects the time spent waiting between tracks. Choose a band you like and turn the volume up loud.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Data disk read and verify</span></p>
+<p class="p_Normal">For optical data disks, the disk is scanned with each file being read in turn. A 32bit checksum is created for each file as it is read from the disk. The disk is then re-read and the checksums verified to complete the cycle. The best data disks’s to use are those, which are full and contain a good variety of files. Some large ones and some small ones. If the CD has more than 10,000 files only the 1st 10,000 will be scanned.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">PassMark Test CD / DVD</span></p>
+<p class="p_Normal">This test method is the most advanced CD-ROM test mode and provides a level of in depth testing not available with the other two methods. When possible this method should be selected in preference to the other two. It allows a complete read and verify of the data on the CD, and optionally random seek testing (see Additional seeking and Seek count below).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">There is the possibility to create CDs and DVDs especially for use with BurnInTest. These specialized CDs and DVDs contain a set of files that have been specifically created to thoroughly check your drive. With these CDs and DVDs, BurnInTest is able to know the layout and exact content for each file on the CD/DVD. This allows BurnInTest to read back each file and test every bit for accuracy.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">PassMark Software sells these specialized CDs and DVDs but you can also make your own file set using your own CD making tool. &nbsp;You will still need 3rd party CD or DVD burner software to actually create the disc however.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">No CD in Drive test option</span></p>
+<p class="p_Normal">This test method only attempts to detect the presence of a CD/DVD drive. No attempt is made to read from the drive. This can be a useful option when there are no discs available for testing but a basic check is still required to ensure that the drive was detected by the system. &nbsp;This test option is not as thorough as the other options and, if possible, one of the other options should be used.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Additional seeking and Seek count</span></p>
+<p class="p_Normal">When Additional seeking is selected (for PassMark CD/DVD’s and Burn CD-RW only), seeking to different positions on the CD/DVD or CD-RW and verifying the data at this position will occur Seek Count number of times for each cycle of a file read and verify. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Display</span></p>
+<p class="p_Normal">Depending on the test the following information is displayed in the test window.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Progress bar</span></p>
+<p class="p_Normal">Displays the progress graphically for the longer CD burn phases. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Phase</span></p>
+<p class="p_Normal">Data CD and specialized CDs :</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Starting</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Checksum creation</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Searching for files</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Opening file</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Reading Test CD</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Verifying checksums</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Seeking</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Files scanned</span></p>
+<p class="p_Normal">This is the number of files that have been scanned during the current cycle.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Current file</span></p>
+<p class="p_Normal">This is the name of the file that is currently being scanned. If this is in the seek phase, this will display the file and block within the file that the drive has seeked to.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Bytes read</span></p>
+<p class="p_Normal">This is the total number of bytes read from the CD.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Throughput (Current and Average)</span></p>
+<p class="p_Normal">This is read speed from the CD in Megabytes per second and a conversion to standard CD Drive speed (eg. 4x). It should be noted that this measurement includes the seek and rotational latency time, so that the speed reported will always be lower than the maximum drive speed. This is especially the case for a CD with many small files. Also most drive manufacturers quote the maximum speed for their drives, the actual transfer rate is usually significantly lower than the quoted maximum. E.g. It is not unusual for a 32x speed drive to only reach a speed of 2MB/Sec, 13x.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Errors</span></p>
+<p class="p_Normal">Data CD and specialized CDs :</p>
+<p class="p_Normal">The number of errors detected. See Common Errors (Appendix C) for a description of the errors that may be encountered.</p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>

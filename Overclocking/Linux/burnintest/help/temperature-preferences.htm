@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Temperature Preferences</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="It is possible to monitor, graph and log the temperature of some hardware components while running BurnInTest tests. Temperature values are displayed and graphed on the..." />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "temperature-preferences.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Temperature Preferences</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="battery_preferences.htm">Previous</a>&nbsp;
+     <a href="duty_cycles.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">It is possible to monitor, graph and log the temperature of some hardware components while running BurnInTest tests. Temperature values are displayed and graphed on the Temperature tab and included in BurnInTest reports. Temperature values will also be stored in the log files at periodic intervals if a periodic logging interval is specified. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Automatically select temperature sources</span></p>
+<p class="p_Normal">When this option is selected up to 64 temperature sources will be automatically at the start of each test run. This allows for portability of configuration files across systems with different temperature sources, as well as reduced configuration time.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">BurnInTest will determine the number of CPU and Hard disk temperature sources supported (i.e. sources per temperature type) at the start of a test run. BurnInTest will attempt to select at least one temperature source from each type of temperature source (e.g. at least 1 CPU, 1 HDD) supported. BurnInTest will also attempt to use as many temperature sources as possible e.g. 2 x CPU, 4 x HDD. Temperature thresholds are set to the value of 90C and are not based on the hardware type.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Temperature sources / Event thresholds</span></p>
+<p class="p_Normal">Up to 64 temperature sources may be selected for monitoring.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">It is possible to raise a temperature event (error), &quot;Temperature threshold exceeded&quot;, on a user defined temperature threshold being exceeded. For each temperature source a maximum temperature value can be specified. If the temperature exceeds this value, a temperature event will be displayed and logged. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Stop testing on temperature threshold exceeded</span></p>
+<p class="p_Normal">Select this option to automatically stop testing on the temperature threshold being exceeded event. This could prevent system shutdown or in extreme cases prevent hardware damage from over temperature (e.g. due to a CPU fan failure).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Sample collection interval</span></p>
+<p class="p_Normal">The frequency that the temperature sources are checked for the temperature values can be configured by specifying the frequency in seconds. </p>
+
+</td></tr></table>
+
+</body>
+</html>

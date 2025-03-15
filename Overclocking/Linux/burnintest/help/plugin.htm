@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Plugin</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="If you have specialized hardware that BurnInTest does not test, you can write your own test and integrate it with BurnInTest." />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "plugin.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Plugin</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="sound_test.htm">Previous</a>&nbsp;
+     <a href="pcie_slot_and_psu_test.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal">If you have specialized hardware that BurnInTest does not test, you can write your own test and integrate it with BurnInTest.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Up to 5 Plugins can be specified</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The plug-in test will appear as another test, much like all of the tests. It may be switched on or off, and duty cycle set. The Plug-in application can define the following, which may be displayed, logged and included in the BurnInTest results:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The test window title text.</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The number of test cycles completed.</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The number of plug-in test errors in the current test run. The plug-in may flag BurnInTest when a new error occurs, and pass a plug-in defined error message (this will be displayed in the BurnInTest windows and may be logged in the log file).</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The plug-in may flag BurnInTest when it wants to display new status text (defined by the plug-in), such as “Waiting for event”.</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The Plug-in may define up to 3 “number of operations counts”. Typically this would be for something like, the number of writes, reads and verifies. All three operation counters may be given plug-in defined labels, which will be displayed in the BurnInTest test window. Any operation counter may be flagged as not in use, hence you could use a single operations counter, such as just “Write”. BurnInTest will display each label and number of operations counters separately in the test window. They will be summed for the main window operation count. These values are 64 bit integers.</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>6 Plug-in defined string values and labels are provided for the display of other interesting data to the user, e.g. the plug-in could provide throughput in Mb/s to BurnInTest. BurnInTest displays this information in the test window. Both of these fields may be flagged as not in use.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Software may be written to interface an external plug-in test module with BurnInTest. An interface is defined to pass test parameters between an external test application and BurnInTest. BurnInTest will attempt to start this application when the Plug-in test is run and this application is specified as the Plug-in file. BurnInTest will pass a flag that indicates that the test run is still underway (e.g. has/ has not been stopped by the user) and BurnInTest will pass in the Duty cycle. Before starting the test, the plug-in application must initialize the test parameters (such as display labels) and flag that they have been set. Once the test is started, the test result parameters and most test window labels may be updated based on the test results. BurnInTest will pick up any changes. Specific cases where the Plugin must flag to BurnInTest that new parameters are available are for a new labels (as a group flag), error, a new status message and the user defined strings 1 &amp; 2. You may need to check that BIT has read the old values before writing new values. See the Interface definition, PLUGININTERFACE, and the sample source code for details.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The PLUGININTERFACE struct (in PluginTestInterface.h) is used for communication between the plug-in and BurnInTest.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For each of the user defined fields (OUT_bUserDef1 to OUT_bUserDef6) the field is enabled by setting OUT_bUserDefX to true, setting OUT_szUserDefX to a string name/description and the OUT_szUserDefValX to the value to be displayed. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The OUT_iStatus field is used for pre-test plug-ins to signal that they have finished by setting the value to PRE_TEST_PLUGIN_COMPLETED.</p>
+<p class="p_Normal">The OUT_szStatus is used to display the current status of the plugin in BurnInTest. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">A test failure is defined to be one or more CRITICAL, SERIOUS or WARNING errors. INFORMATION level events are logged for information only and are not considered to constitute a test failure. </p>
+
+</td></tr></table>
+
+</body>
+</html>

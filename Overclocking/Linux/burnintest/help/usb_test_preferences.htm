@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>USB Test Preferences</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="USB preferences" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="Automatically select all USB ports with loopback plugs" />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "usb_test_preferences.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">USB Test Preferences</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="serial_port_preferences.htm">Previous</a>&nbsp;
+     <a href="sound_preferences.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal"><span style="font-weight: bold;">Automatically select all USB ports with loopback plugs</span></p>
+<p class="p_Normal">When selected, this option determines the number of USB tests at the start of each test run by detecting the number of PassMark Loobpack plugs correctly connected to the system at that time.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">It should be noted that while this improves test automation, it is possible that a USB port is faulty and the loopback plugs has failed to be detected and the number of tests run is less than the required number of tests. When using this option, some type of validation should be done to verify that all of the &nbsp;loopback plugs are correctly connected , e.g. check the Tx and Rx LEDs flash on all plugs during the test.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Maximum number of USB ports</span></p>
+<p class="p_Normal">This is the maximum number of USB plugs BurnInTest will attempt to connect to. A max of 20 plugs can be used at the same time.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Run benchmark test at start</span></p>
+<p class="p_Normal">This will run a short benchmark test at the start of the USB test and the max read and write speeds will be logged. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">USB3 Connection Type</span></p>
+<p class="p_Normal">This is the enumeration speed to use for the USB3 plugs: Super Speed 5Gb/s, High Speed 480Mb/s, Full Speed 12 Mb/s or Cycle.</p>
+<p class="p_Normal">Selecting Cycle will change the speed each cycle (from Super Speed -&gt; High Speed -&gt; Full Speed ...etc).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Refresh list</span></p>
+<p class="p_Normal">Select this option to detect all of the PassMark Loopback plug currently connected to the system.</p>
+
+</td></tr></table>
+
+</body>
+</html>

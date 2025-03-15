@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Interpreting the results</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="description" content="Status display In the main window there is a display that shows a summary of all the results of all the tests that are currently running. &nbsp;Test Name This column shows a pic" />
+   <meta name="picture" content="" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "interpreting_the_results.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#649CCC">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Interpreting the results</span></h1>
+
+    </td>
+    <td style="text-align:right">
+     <a href="overview.htm">Top</a>&nbsp;
+     <a href="duty_cycles.htm">Previous</a>&nbsp;
+     <a href="test_window_display.htm">Next</a>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<p class="p_Normal"><img alt="main_window" width="699" height="558" style="margin:0;width:699px;height:558px;border:none" src="main_window.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Status display</span></p>
+<p class="p_Normal">In the main window there is a display that shows a summary of all the results of all the tests that are currently running.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Test Name</span></p>
+<p class="p_Normal">This column shows a picture depicting the test type and the name of the test. Only those tests actually running are displayed.</p>
+<p class="p_Normal">Cycle</p>
+<p class="p_Normal">The number of test cycles that have been executed for a particular test. The meaning of a ‘test cycle’ varies from test to test. For example, for the Hard disk test it is the number of file write / verify cycles that have occurred. See the test description (chapter 3) for more details about the significance of this field.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Ops (Operations)</span></p>
+<p class="p_Normal">The number of test operations that have been executed for a particular test. The meaning of a ‘Operation’ varies from test to test. For example, for the Hard disk test it is the number of bytes that have been written or verified. See the test description (chapter 3) for more details about the significance of this field. Note: The values are expressed in Units, Millions, Billions, Trillions and Quadrillions.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Default Error View</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Errors</span></p>
+<p class="p_Normal">The number of errors that have been encountered while the test has been executing. This value should normally stay at zero. A value of greater than zero indicates there has been an error in the hardware or the software controlling the hardware. In some cases it is possible for the computer to self-detect an error. (such as the math’s and disk tests). In other cases the user must check themselves that no error has occurred (eg. Is there sound coming from the speakers? Are printouts complete, clear and legible? ).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Last error description</span></p>
+<p class="p_Normal">This is the description of the last error that occurred. This will give some indication as to the cause of the error. See <a href="common_error_messages.htm" class="topiclink">common error messages</a> &nbsp;for a description of the errors that may be encountered.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-style: italic; font-weight: bold;">Error by Category View</span></p>
+<p class="p_Normal">Errors are tabulated based on their severity as defined in the file BITErrorClassification.txt. The number of errors for each test, for each level of severity: Critical, Serious, Warning and Informational will be displayed:</p>
+<div class="p_Normal"><div style="margin:0;width:700px"><img alt="Display errors by category" title="Display errors by category" width="700" height="556" style="width:700px;height:556px;border:none" src="error_by_cat.png"/><p style="text-align:center">Display errors by category</p></div></div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">See <a href="detailed_error_log_history.htm" class="topiclink">Detailed Error log history</a> for an explanation of the logged output. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">See <a href="test_window_display.htm" class="topiclink">Test Window Display</a> for examples of each test window.</p>
+<p class="p_Normal">&nbsp;</p>
+
+</td></tr></table>
+
+</body>
+</html>
