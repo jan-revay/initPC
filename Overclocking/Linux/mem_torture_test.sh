@@ -6,7 +6,7 @@ exec &> >(tee output.log)
 inxi -Fxxxz
 phoronix-test-suite batch-run pts/ramspeed pts/tinymembench
 memtester 10G 10
-# phoronix-test-suite batch-instal lpts/ramspeed
+# phoronix-test-suite batch-install pts/ramspeed
 
 # phoronix-test-suite batch-setup
 # we grep for / to filter out coulmn headers
