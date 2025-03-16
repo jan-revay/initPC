@@ -12,8 +12,9 @@
 
 OPT_APT_PACKAGES=(
     # stress testing and benchmarking tools
-    # php is required by phoronix test suire
-    stressapptest stress-ng inxi php
+    # php is required by phoronix test suite
+    # todo fix php on ubuntu 22.04
+    stressapptest stress-ng inxi php8.3
 )
 
 time sudo apt-get install -y "${OPT_APT_PACKAGES[@]}"
