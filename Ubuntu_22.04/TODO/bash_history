@@ -1,0 +1,2044 @@
+    1  cd
+    2  ls
+    3  mkdir x
+    4  cd x
+    5  ls
+    6  git clone https://github.com/torvalds/linux.git
+    7  gity
+    8  git
+    9  sudo apt install git
+   10  git clone https://github.com/jan-revay/initPC.git
+   11  cd initPC/
+   12  ./run_init.sh 
+   13  x
+   14  exit
+   15  cd initPC/
+   16  ./run_init.sh 
+   17  cd UbuntuCLI/
+   18  ls
+   19  v packages_install.sh 
+   20  exit
+   21  x
+   22  ls
+   23  cd linux/
+   24  make default
+   25  git checkout 005f6f34bd47eaa61d939a2727fc648e687b84c1
+   26  man flex
+   27  sudo apt-get install build-essential libncurses-dev bison flex libssl-dev bc
+   28  man flex
+   29  make defconfig
+   30  make -j$(nproc)
+   31  sudo apt-get install libncurses5-dev gcc make git exuberant-ctags bc libssl-dev
+   32  make -j$(nproc)
+   33  sudo apt install libelf-dev
+   34  make -j$(nproc)
+   35  make clean && time make -j$(nproc)
+   36  reboot
+   37  u
+   38  v packages_install.sh 
+   39  s
+   40  man hdparam
+   41  hdparm
+   42  man hdparm
+   43  sudo hsparm -I /dev/sda1
+   44  sudo hdparm -I /dev/sda1
+   45  man hdparm
+   46  sudo hdparm -y /dev/sda1
+   47  man hdparm
+   48  hdparm -C /dev/sda1
+   49  sudo hdparm -C /dev/sda1
+   50  sudo hdparm -Y /dev/sda1
+   51  sudo hdparm -y /dev/sda1
+   52  man hdparm
+   53  sudo hdparm -S 12 /dev/sda1
+   54  exit
+   55  dconf watch /
+   56  sudo apt install alacritty
+   57  exit
+   58  clear
+   59  dconf watch /
+   60  exit
+   61  cd initPC/
+   62  s
+   63  d
+   64  s
+   65  d
+   66  s
+   67  a UbuntuCLI/
+   68  s
+   69  c
+   70  ph
+   71  s
+   72  d
+   73  i
+   74  s
+   75  ph
+   76  s
+   77  ls
+   78  v
+   79  ls
+   80  exit
+   81  ls
+   82  v
+   83  x
+   84  cd linux/
+   85  make clean && time make -j$(nproc)
+   86  cd
+   87  dconf watch /
+   88  history
+   89  man hdparm
+   90  sudo hdparm -B /dev/sda1
+   91  sudo hdparm -S /dev/sda1
+   92  sudo hdparm -S 12 /dev/sda1
+   93  sudo hdparm -I /dev/sda1
+   94  sudo hdparm -S /dev/sda1
+   95  hdparm -C
+   96  hdparm -C /dev/sda1
+   97  sudo hdparm -C /dev/sda1
+   98  sudo hdparm -C /dev/sda
+   99  sudo hdparm -S /dev/sda
+  100  sudo hdparm -I /dev/sda | grep "Advanced power management level"
+  101  sudo hdparm -Y /dev/sda
+  102  sudo umount /dev/sda1
+  103  sudo umount /dev/sda2
+  104  sudo umount /dev/sda3
+  105  sudo umount /dev/sda
+  106  x
+  107  cd linux/
+  108  make clean && time make -j$(nproc)
+  109  sudo hdparm -Y /dev/sda
+  110  x
+  111  cd linux/
+  112  make clean && time make -j$(nproc)
+  113  man repeat
+  114  v ~/.bash_aliases 
+  115  sudo apt install lm-sensors
+  116  sensors
+  117  cat /sys/class/hwmon/hwmon*/temp*_input
+  118  sudo sensors-detect
+  119  sensors
+  120  sudo hdparm -Y /dev/sda
+  121  crontab -e
+  122  crontab
+  123  man crontab
+  124  crontab -l
+  125  sudo hdparm -Y /dev/sda
+  126  cd linux/
+  127  repeat 4 
+  128  repeat 60 make clean && time make -j$(nproc)
+  129  repeat 60 'make clean && time make -j$(nproc)'
+  130  sudo hdparm -Y /dev/sda
+  131  crontab -l
+  132  crontab -e
+  133  crontab -l
+  134  crontab -e
+  135  crontab -l
+  136  sudo hdparm -Y /dev/sda
+  137  crontab -e
+  138  s
+  139  crontab -l
+  140  x
+  141  cd linux/
+  142  repeat 120 'make clean && time make -j$(nproc) &> /dev/null'
+  143  time make -j$(nproc) &> /dev/null
+  144  repeat 120 'make clean && time make -j$(nproc) &> /dev/null && echo ================='
+  145  repeat 120 'make clean > /dev/null && time make -j$(nproc) &> /dev/null && echo ================='
+  146  sudo hdparm -Y /dev/sda
+  147  stress
+  148  stress --cpu 16
+  149  stress --cpu 32
+  150  sudo hdparm -Y /dev/sda
+  151  stress --cpu 32
+  152  sudo hdparm -Y /dev/sda
+  153  sudo hdparm -C /dev/sda
+  154  sudo hdparm -Y /dev/sda
+  155  history
+  156  history | grep hdparm
+  157  sudo hdparm -S 6 /dev/sda1
+  158  sudo hdparm -S 3 /dev/sda1
+  159  crontab -e
+  160  reboot
+  161  i
+  162  cd initPC/
+  163  pl
+  164  s
+  165  git pull --rebase
+  166  ph
+  167  sudo v /etc/default/grub
+  168  s
+  169  sudo update-grub
+  170  reboot
+  171  stress 
+  172  stress -m 8
+  173  sensors
+  174  sudo modprobe nct6775
+  175  man sensors
+  176  modprobe it87
+  177  sudo modprobe it87
+  178  ls /sys/class/hwmon/
+  179  cd /sys/class/hwmon/
+  180  tree
+  181  cat hwmon1
+  182  cd hwmon1
+  183  ls
+  184  cat temp1_input 
+  185  cd ..
+  186  cat ./*/temp1_input
+  187  for pid in $(pgrep -f chrome); do sudo renice -5 -p $pid; done
+  188  man renice
+  189  x
+  190  git clone https://github.com/frankcrawford/it87.git
+  191  ls
+  192  cd it87/
+  193  make
+  194  gcc --version
+  195  make clean
+  196  make
+  197  sudo make install
+  198  sudo modprobe it87 
+  199  sensors
+  200  history
+  201  sensors
+  202  sensors-detect
+  203  sudo sensors-detect
+  204  sensors
+  205  sudo apt install i2c-tools
+  206  sudo i2cdetect -l
+  207  sesnsors
+  208  sensors
+  209  stress --cpu 32
+  210  history
+  211  history | grep stress
+  212  stress -m 16
+  213  sensors
+  214  history
+  215  sudo hdparm -Y /dev/sda
+  216  apt search Prime95
+  217  sensors
+  218  man watch
+  219  watch ls
+  220  watch sensors
+  221  man sensor
+  222  man sensors 
+  223  sensors -u
+  224  v /etc/sensors.d/custom.conf
+  225  sudo /etc/sensors.d/custom.conf
+  226  sudo v /etc/sensors.d/custom.conf
+  227  sudo sensors -s
+  228  sensors
+  229  watch sensors
+  230  sudo v /etc/sensors.d/custom.conf
+  231  sudo sensors -s
+  232  watch sensors
+  233  sudo v /etc/sensors.d/custom.conf
+  234  cp /etc/sensors.d/custom.conf ~/Downloads/
+  235  sensors -u
+  236  x
+  237  cd linux/
+  238  repeat 120 'make clean > /dev/null && time make -j$(nproc) &> /dev/null && echo ================='
+  239  watch sensors
+  240  sudo hdparm -Y /dev/sda
+  241  man hdparm
+  242  sudo iotop -o
+  243  sudo lsof
+  244  sudo lsof | grep sda
+  245  man hdparm
+  246  sudo hdparm -B /dev/sda
+  247  sudo hdparm -B 1 /dev/sda
+  248  v /etc/hdparm.conf 
+  249  sudo v /etc/hdparm.conf 
+  250  cp /etc/hdparm.conf ~/Downloads/
+  251  hdparm -B /dev/sda
+  252  sudo hdparm -B /dev/sda
+  253  sudo hdparm -S 3 /dev/sda
+  254  crontab -l
+  255  crontab -e
+  256  watch sensors
+  257  cd Downloads/
+  258  ls
+  259  cd p95v3019b20.linux64/
+  260  ls
+  261  ./mprime 
+  262  sudo apt install phoronix-test-suite
+  263  [200~sudo apt install phoronix-test-sui
+  264  sudo apt purge phoronix-test-suite
+  265  sudo apt install phoronix-test-suite
+  266  x
+  267  cd linux/
+  268  repeat 120 'make clean > /dev/null && time make -j$(nproc) &> /dev/null && echo ================='
+  269  reboot
+  270  x
+  271  cd linux/
+  272  repeat 120 'make clean > /dev/null && time make -j$(nproc) &> /dev/null && echo ================='
+  273  sensors
+  274  sensors --help
+  275  man sensors
+  276  sensors
+  277  cd Downloads/
+  278  cd y-cruncher\ v0.8.6.9545-dynamic/
+  279  t Command\ Lines.txt 
+  280  apt search rgb
+  281  apt search openrgb
+  282  sensors
+  283  dconf watch /
+  284  history
+  285  sudo hdparm -Y /dev/sda
+  286  history
+  287  ./y-cruncher bench 16G
+  288  repeat 400 ./y-cruncher bench 16G
+  289  sudo apt install gnome-shell-extension-manager gir1.2-gtop-2.0 lm-sensors
+  290  repeat 400 ./y-cruncher
+  291  cd Downloads/
+  292  cd y-cruncher\ v0.8.6.9545-dynamic/
+  293  ./y-cruncher
+  294  repeat 400 ./y-cruncher bench 16G
+  295  ps 
+  296  killall y-cruncher
+  297  ps
+  298  kill 13862
+  299  ps
+  300  fg
+  301  ps -e
+  302  ps -e | grep crunch
+  303  ps -e | grep y
+  304  cd Downloads/
+  305  ls
+  306  cd p95v3019b20.linux64/
+  307  ls
+  308  ./mprime 
+  309  shutdown
+  310  shutdown -c
+  311  u
+  312  pl
+  313  s
+  314  p
+  315  s
+  316  pl
+  317  o
+  318  d
+  319  i
+  320  s
+  321  r
+  322  s
+  323  cd ..
+  324  cd Ubuntu_22.04/
+  325  a README.md 
+  326  s
+  327  i
+  328  s
+  329  r
+  330  a README.md 
+  331  c
+  332  s
+  333  gl
+  334  s
+  335  i
+  336  s
+  337  ph
+  338  pl
+  339  x
+  340  cd linux/
+  341  repeat 120 'make clean > /dev/null && time make -j$(nproc) &> /dev/null && echo ================='
+  342  nice
+  343  man nice
+  344  repeat 120 'make clean > /dev/null && time nice 19 make -j$(nproc) &> /dev/null && echo ================='
+  345  man nice
+  346  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+  347  shutdown
+  348  cd Downloads/
+  349  ls
+  350  cd p95v3019b20.linux64/
+  351  ls
+  352  ./mprime 
+  353  history | grep chrom
+  354  for pid in $(pgrep -f chrome); do sudo renice -15 -p $pid; done
+  355  history | grep chrom
+  356  for pid in $(pgrep -f chrome); do sudo renice -5 -p $pid; done
+  357  ls
+  358  repea
+  359  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+  360  x
+  361  cd linux/
+  362  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+  363  ls
+  364  apt search wrap
+  365  apt search warp
+  366  sudo apt remove warp-terminal 
+  367  sudo apt install warp-ter
+  368  sudo apt install warp-terminal 
+  369  apt search warp
+  370  cd
+  371  cd initPC/
+  372  ls
+  373  cd Ubuntu_22.04/
+  374  t configs_install.sh 
+  375  v configs_install.sh 
+  376  ls
+  377  cd RootDotfiles/
+  378  ls
+  379  cd disable_highres_scroll/
+  380  ls
+  381  cd etc/
+  382  ls
+  383  cd libinput/
+  384  ls
+  385  cat local-overrides.quirks 
+  386  cd ../../../
+  387  cd ..
+  388  v configs_install.sh 
+  389  cd
+  390  cd down
+  391  cd Downloads/
+  392  ls
+  393  cd p95v3019b20.linux64/
+  394  ls
+  395  ./mprime 
+  396  exit
+  397  history | grep v
+  398  systemctl status logid
+  399  x
+  400  cd linux/
+  401  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+  402  ls
+  403  cd
+  404  x
+  405  ls
+  406  cd tmp/
+  407  ls
+  408  echo "blablabla" > a.txt
+  409  wc < a.txt
+  410  wc 2< a.txt
+  411  wc 1< a.txt
+  412  echo 1< a.txt
+  413  1< a.txt
+  414  3< a.txt
+  415  1< a.txt
+  416  ls
+  417  4<> a.txt 
+  418  wc <4
+  419  wc 0<&4
+  420  man exec
+  421  man 2 exec
+  422  . 
+  423  . ls
+  424  man exec
+  425  echo 0<&3
+  426  cat a.txt 
+  427  wc 0<&3
+  428  echo "Hello world" > a.txt
+  429  grep He < a.txt
+  430  exec 4<a.txt
+  431  grep He <&4
+  432  exec --help
+  433  exec >b.txt
+  434  ls
+  435  ll
+  436  pwd
+  437  cat b.txt 
+  438  man exec
+  439  ls
+  440  ls [^a]*
+  441  ls [!a]*
+  442  ls [^a]*
+  443  ls
+  444  cat b.txt 
+  445  exec 6<>b.txt
+  446  wc <&6
+  447  6<-
+  448  6<&-
+  449  wc <&6
+  450  wc <&5
+  451  wc <&6
+  452  exec 6<>b.txt
+  453  wc <&6
+  454  wc <<< blabla la
+  455  wc <<< "blabla lala"
+  456  wc <<EOF
+  457  lala sldkj alskdfja sldkfja sldkf
+  458  asldfkajslk 
+  459  EOF
+  460  wc <<- 
+  461  wc <<-EOF
+  462      laksdj
+  463  al asld fkja
+  464     alskdjf
+  465     eof
+  466     EOF
+  467  EOF
+  468  wc <<-EOF
+  469      laksdj
+  470  al asld fkja
+  471     alskdjf
+  472     eof
+  473     EOF
+  474  EOF
+  475  head -30 /dev/urandom 
+  476  head -30 /dev/urandom
+  477  head -100 /dev/urandom
+  478  head -1 /dev/urandom
+  479  u
+  480  pl
+  481  ph
+  482  history 
+  483  history | grep gsettings
+  484  history | grep gsettin
+  485  exit
+  486  cd ..
+  487  ls
+  488  cd eqvilent_interview/
+  489  ls
+  490  g++ a.cpp 
+  491  g++ a.cpp && ./a.out 
+  492  /bin/python3 -m pip install ipykernel -U --force-reinstall
+  493  apt search ipykern
+  494  sudo apt install python3-ipykernel
+  495  sudo apt search gnome-screen
+  496  gsettings get org.gnome.desktop.lockdown disable-lock-screen
+  497  gsettings set org.gnome.desktop.lockdown disable-lock-screen false
+  498  history | grep gsett
+  499  sudo apt update && sudo apt upgrade  
+  500  refresh
+  501  sudo ubuntu-drivers autoinstall  
+  502  journalctl -f  
+  503  refresh
+  504  x
+  505  cd linux/
+  506  ls
+  507  make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null
+  508  make clean > /dev/null && time make -j$(nproc) > /dev/null
+  509  s
+  510  git checkout 005f6f34bd47
+  511  py
+  512  ls
+  513  cd Downloads/
+  514  ls
+  515  ./p95v3019b20.linux64/
+  516  cd p95v3019b20.linux64/
+  517  ls
+  518  ./mprime 
+  519  apt search geebench
+  520  snap search geekbench
+  521  flatpak search geekbench
+  522  flatpak install geekbench
+  523  apt search geekbench
+  524  history
+  525  flatpak run geekbench
+  526  flatpak list
+  527  flatpak run com.geekbench.Geekbench6
+  528  cd Downloads/
+  529  cd BurnInTest_Linux_x86-64/
+  530  ls
+  531  cd burnintest/
+  532  ls
+  533  ./memtest 
+  534  ./memtest --help
+  535  ./memtest -?
+  536  ./memtest
+  537  ./memtest --help
+  538  ./memtest /?
+  539  ./memtest 
+  540  '/home/jr/Downloads/BurnInTest_Linux_x86-64/burnintest/advnet_endpoint' 
+  541  '/home/jr/Downloads/BurnInTest_Linux_x86-64/burnintest/bit_cmd_line_x64' 
+  542  phoronix-test-suite 
+  543  phoronix-test-suite list
+  544  phoronix-test-suite list-all-tests 
+  545  phoronix-test-suite install system/compress-7zip 
+  546  phoronix-test-suite run system/compress-7zip 
+  547  flatpak run com.geekbench.Geekbench6
+  548  phoronix-test-suite list-all-tests
+  549  phoronix-test-suite list-all-tests | grep linux
+  550  phoronix-test-suite install pts/build-linux-kernel
+  551  phoronix-test-suite run pts/build-linux-kernel
+  552  exit
+  553  dconf watch /
+  554  exit
+  555  cd Downloads/
+  556  cd p95v3019b20.linux64/
+  557  ./mprime 
+  558  flatpak run com.geekbench.Geekbench6
+  559  phoronix-test-suite run 
+  560  phoronix-test-suite run pts/build-linux-kernel
+  561  flatpak run com.geekbench.Geekbench6
+  562  /bin/python3 /home/jr/x/tmp/geekbench_scrape.py
+  563  sudo apt install stressapptest
+  564  stressapptest --help
+  565  ls
+  566  v stress.txt 
+  567  #flatpak run com.geekbench.Geekbench6
+  568  phoronix-test-suite run pts/build-linux-kernel && flatpak run com.geekbench.Geekbench6
+  569  flatpak run com.geekbench.Geekbench6
+  570  py
+  571  x
+  572  cd linux/
+  573  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+  574  cd
+  575  cd Do
+  576  cd Downloads/
+  577  cd p95v3019b20.linux64/
+  578  ./mprime --help
+  579  ./mprime -t
+  580  ./mprime
+  581  ./mprime -t
+  582  timeout  --help
+  583  timeout 10s ./mprime -t
+  584  free -m
+  585  free --help
+  586  man free
+  587  free -m
+  588  stressapptest --help
+  589  timeout 10s ./mprime -t; stressapptest -W -M $(free -m | awk '/Mem:/ {print int($2 * 0.9)}') -s 60000
+  590  timeout 7h ./mprime -t; stressapptest -W -M $(free -m | awk '/Mem:/ {print int($2 * 0.95)}') -s 60000
+  591  timeout 1h ./mprime -t; stressapptest -W -M $(free -m | awk '/Mem:/ {print int($2 * 0.95)}') -s 6000
+  592  clear
+  593  timeout 1h ./mprime -t; stressapptest -W -M $(free -m | awk '/Mem:/ {print int($2 * 0.95)}') -s 6000
+  594  2
+  595  v run_init.sh 
+  596  lsmod | grep pcspkr
+  597  sudo modprobe pcspkr
+  598  lsmod | grep pcspkr
+  599  beep
+  600  man beep
+  601  beep
+  602  sudo beep
+  603  beep
+  604  lk
+  605  beep
+  606  sleep 2; beep
+  607  history
+  608  ls
+  609  v mem_torture_test.sh 
+  610  pushd p95*
+  611  timeout 1m ./mprime -t 
+  612  $?
+  613  timeout sleep 1
+  614  timeout 1 sleep 19
+  615  $?
+  616  man timeout
+  617  timeout  ls
+  618  man timeout
+  619  ls
+  620  v output.log 
+  621  history | grep geekbench
+  622  phoronix-test-suite run pts/build-linux-kernel && sleep 30 && flatpak run com.geekbench.Geekbench6
+  623  flatpak run com.geekbench.Geekbench6
+  624  history
+  625  cd Downloads/
+  626  cd y-cruncher\ v0.8.6.9545-dynamic/
+  627  ls
+  628  history | grep y-crunc
+  629  cd ..
+  630  x
+  631  ls
+  632  cd
+  633  cd initPC/
+  634  ls
+  635  cd Overclocking/
+  636  ls
+  637  cd Linux/
+  638  v mem_torture_test.sh
+  639  chmod +1 mem_torture_test.sh 
+  640  ls
+  641  chmod +x mem_torture_test.sh 
+  642  man chmod
+  643  chmod
+  644  lsmod
+  645  chmod
+  646  ll
+  647  ./mem_torture_test.sh 
+  648  s
+  649  a [^o]*
+  650  ls
+  651  s
+  652  c
+  653  s
+  654  a mem_torture_test.sh 
+  655  c
+  656  s
+  657  a mem_torture_test.sh 
+  658  c
+  659  s
+  660  ./mem_torture_test.sh 
+  661  phoronix-test-suite run pts/build-linux-kernel && sleep 30 && flatpak run com.geekbench.Geekbench6
+  662  flatpak run com.geekbench.Geekbench6
+  663  cd initPC/Overclocking/Linux/
+  664  ls
+  665  ./mem_torture_test.sh 
+  666  ls
+  667  grep output.log ls
+  668  fgrep output.log ls
+  669  fgrep output.log sldfk
+  670  fgrep ben output.log 
+  671  fgrep ff output.log 
+  672  fgrep FF output.log 
+  673  cd p95v3019b20.linux64/
+  674  v results.txt 
+  675  exit
+  676  man grep 
+  677  ls
+  678  exit
+  679  v mem_torture_test.sh 
+  680  s
+  681  v p95v3019b20.linux64/results.txt 
+  682  v mem_torture_test.sh 
+  683  s
+  684  a mem_torture_test.sh 
+  685  c
+  686  v mem_torture_test.sh 
+  687  grem -F ff output.log 
+  688  grep -F ff output.log 
+  689  grep -F fast output.log 
+  690  grep -F f output.log 
+  691  v mem_torture_test.sh 
+  692  s
+  693  a mem_torture_test.sh 
+  694  c
+  695  ./mem_torture_test.sh 
+  696  ls
+  697  s
+  698  pl
+  699  pl --rebase
+  700  s
+  701  v .gitignore
+  702  cd ..
+  703  v .gitignore
+  704  ls
+  705  s
+  706  a .gitignore p95v3019b20.linux64/.gitignore 
+  707  s
+  708  c
+  709  s
+  710  cd p95v3019b20.linux64/
+  711  v results.txt 
+  712  s
+  713  ls
+  714  rm results.txt 
+  715  s
+  716  ls
+  717  t mprime.pid 
+  718  rm mprime.pid 
+  719  ls
+  720  s
+  721  a
+  722  a .
+  723  s
+  724  c
+  725  s
+  726  pl
+  727  pl --rebase
+  728  ph
+  729  cd
+  730  cd initPC/
+  731  ph
+  732  pl
+  733  apt search furmark
+  734  snap search furmark
+  735  flatpak search furmark
+  736  flatpak install furmark
+  737  furmark
+  738  flatpak run com.geeks3d.furmark
+  739  history | grep flatpak
+  740  history | grep apt
+  741  flatpak search stressapptest
+  742  snap search stressapptest
+  743  apt search stressapptest
+  744  flatpak search OCCT
+  745  apt search OCCT
+  746  snap search occt
+  747  apt search occt
+  748  flatpak search linpak
+  749  snap search linpak
+  750  apt search linpak
+  751  apt search linpack
+  752  cd p95v3019b20.linux64/
+  753  ls
+  754  v stress.txt 
+  755  search
+  756  cd initPC/
+  757  ls
+  758  s
+  759  cd Overclocking/
+  760  ls
+  761  cd Linux/
+  762  ls
+  763  v mem_torture_test.sh 
+  764  s
+  765  ls
+  766  cat .gitignore 
+  767  v output.log 
+  768  v mem_torture_test.sh 
+  769  ./mem_torture_test.sh 
+  770  if grep -F -i error output.log; then     timeout 2s speaker-test -t sine -f 1000; fi
+  771  cd p95v3019b20.linux64/
+  772  ls
+  773  v undoc.txt 
+  774  v prime.txt 
+  775  v whatsnew.txt 
+  776  v readme.txt 
+  777  v stress.txt 
+  778  flatpak run com.geekbench.Geekbench6 --help
+  779  ls
+  780  s
+  781  d
+  782  aa
+  783  c
+  784  s
+  785  ph
+  786  bluetoothctl --help
+  787  bluetoothctl --help | grep connec
+  788  bluetoothctl <<< list
+  789  bluetoothctl <<< "connect 00:11:67:24:75:AF"
+  790  crontab -e
+  791  cd initPC/
+  792  cd Overclocking/
+  793  cd Linux/
+  794  ./mem_torture_test.sh 
+  795  v mem_torture_test.sh 
+  796  s
+  797  cd p95v3019b20.linux64/
+  798  v .gitignore 
+  799  s
+  800  a .gitignore 
+  801  c
+  802  s
+  803  ph
+  804  pl
+  805  pl --rebase
+  806  s
+  807  p
+  808  s
+  809  pl --rebase
+  810  s
+  811  ph
+  812  o
+  813  s
+  814  d
+  815  ..
+  816  ./mem_torture_test.sh 
+  817  ls
+  818  ll
+  819  ls
+  820  cd .config/
+  821  cd autostart/
+  822  v bluetooth.desktop
+  823  mv bluetooth.desktop bluetooth_speaker_connect.sh
+  824  gtk-launch bluetooth_speaker_connect.sh 
+  825  xdg-open bluetooth_speaker_connect.sh 
+  826  reboot
+  827  journalctl -f  
+  828  journalctl 
+  829  man journalctl
+  830  journalctl -b
+  831  journalctl -b | grep cron
+  832  crontab -e
+  833  bluetoothctl <<< "connect 00:11:67:24:75:AF" 
+  834  cd .config/
+  835  ls
+  836  cd autostart/
+  837  ls
+  838  v nautilus.desktop 
+  839  bash -c 'bluetoothctl <<< "connect 00:11:67:24:75:AF" >> ./bluetooth.log'
+  840  t bluetooth.log 
+  841  cd .config/autostart/
+  842  ls
+  843  v bluetooth_speaker_connect.sh 
+  844  ls
+  845  mv bluetooth_speaker_connect.sh bluetooth_speaker_connect.desktop
+  846  s
+  847  .a bluetooth_speaker_connect.desktop 
+  848  s
+  849  .s
+  850  .c
+  851  .ph
+  852  git push --set-upstream origin devel
+  853  dot push --set-upstream origin devel
+  854  ph
+  855  pl
+  856  .ph
+  857  .pl
+  858  reboot
+  859  s
+  860  ph
+  861  pl
+  862  cd .config/
+  863  cd autostart/
+  864  ls
+  865  t bluetooth.log 
+  866  journalctl -b | grep cron
+  867  crontab -e
+  868  cd
+  869  i
+  870  cd initPC/
+  871  cd Overclocking/Linux/
+  872  ./mem_torture_test.sh 
+  873  reboot
+  874  ls
+  875  v mem_torture_test.sh 
+  876  s
+  877  d
+  878  v mem_torture_test.sh 
+  879  ./mem_torture_test.sh 
+  880  v mem_torture_test.sh 
+  881  ./mem_torture_test.sh 
+  882  v mem_torture_test.sh 
+  883  cd
+  884  cd Downloads/
+  885  ls
+  886  cd BurnInTest_Linux_x86-64/
+  887  ls
+  888  cd burnintest/
+  889  ls
+  890  cd ..
+  891  cd
+  892  cd initPC/Overclocking/Linux/
+  893  cd burnintest/
+  894  ls
+  895  cd 
+  896  -
+  897  s
+  898  a .
+  899  s
+  900  c
+  901  v burnintest
+  902  v burnintest.sh 
+  903  s
+  904  a.
+  905  s
+  906  c
+  907  s
+  908  ph
+  909  d
+  910  s
+  911  i
+  912  s
+  913  ph
+  914  s
+  915  ll
+  916  ./burnintest.sh 
+  917  ./memtest 
+  918  ./memtest --help
+  919  ./memtest ?
+  920  ./memtest 10
+  921  v readme.txt 
+  922  ll
+  923  v readme.txt 
+  924  ./bit_cmd_line_x64 
+  925  ./bit_cmd_line_x64  --help
+  926  ..
+  927  t output.log 
+  928  cd .config/autostart/
+  929  v bluetooth
+  930  v bluetooth_speaker_connect.desktop 
+  931  crontab -e
+  932  cd
+  933  cd initPC/
+  934  cd Overclocking/Linux/
+  935  ./mem_torture_test.sh 
+  936  ..
+  937  v mem_torture_test.sh 
+  938  s
+  939  d
+  940  t mem_torture_test.sh 
+  941  ./mem_torture_test.sh 
+  942  cd p95v3019b20.linux64/
+  943  v stress
+  944  v stress.txt 
+  945  fg
+  946  exit
+  947  cd p95v3019b20.linux64/
+  948  ls
+  949  t results.txt 
+  950  s
+  951  v mem_torture_test.sh 
+  952  d
+  953  a mem_torture_test.sh 
+  954  s
+  955  c
+  956  s
+  957  ph
+  958  pl
+  959  t output.log 
+  960  watch grep -i error output.log 
+  961  cd initPC/
+  962  cd Overclocking/Linux/
+  963  ls
+  964  v monitor.sh
+  965  t mem_torture_test.sh 
+  966  watch grep -i error output.log 
+  967  ll
+  968  chmod +x monitor.sh 
+  969  s
+  970  a monitor.sh 
+  971  s
+  972  c
+  973  s
+  974  ph
+  975  chmod +x monitor.sh 
+  976  s
+  977  ./monitor.sh 
+  978  cd initPC/
+  979  s
+  980  cd Overclocking/Linux/
+  981  d mem_torture_test.sh 
+  982  a mem_torture_test.sh 
+  983  s
+  984  cd p95v3019b20.linux64/
+  985  d prime.txt 
+  986  cd ..
+  987  ls
+  988  ll
+  989  s
+  990  c
+  991  ph
+  992  ls
+  993  ./mem_torture_test.sh 
+  994  ls
+  995  cat error.log 
+  996  rm error.log 
+  997  ls
+  998  man watch
+  999  ls error.log
+ 1000  $?
+ 1001  ls mem_torture_test.sh 
+ 1002  $?
+ 1003  ./monitor.sh 
+ 1004  v monitor.sh 
+ 1005  watch ./monitor.sh 
+ 1006  v monitor.sh 
+ 1007  s
+ 1008  a monitor.sh 
+ 1009  s
+ 1010  c
+ 1011  s
+ 1012  watch ./monitor.sh 
+ 1013  ph
+ 1014  gl
+ 1015  cd initPC/Overclocking/Linux/
+ 1016  ./mem_torture_test.sh 
+ 1017  history | grep phoro
+ 1018  AVAILABLE_TESTS=$(phoronix-test-suite list-available-tests | awk '{print $1}' | tail -n +5)
+ 1019  echo $AVAILABLE_TESTS 
+ 1020  phoronix-test-suite list-available-tests 
+ 1021  phoronix-test-suite list-available-tests | grep 3d
+ 1022  phoronix-test-suite list-available-tests | grep 3dmark
+ 1023  phoronix-test-suite list-all-tests --help
+ 1024  AVAILABLE_TESTS=$(phoronix-test-suite list-available-tests | awk '{print $1}' | tail -n +5)
+ 1025  echo $AVAILABLE_TESTS \
+ 1026  AVAILABLE_TESTS=$(phoronix-test-suite list-available-tests | awk '{print $1}' | tail -n +4)
+ 1027  echo $AVAILABLE_TESTS 
+ 1028  AVAILABLE_TESTS=$(phoronix-test-suite list-available-tests | awk '{print $1}' | tail -n +5)
+ 1029  list-recommended-tests
+ 1030  phoronix-test-suite list-recommended-tests
+ 1031  cd initPC/
+ 1032  cd Overclocking/Linux/
+ 1033  ./mem_torture_test.sh 
+ 1034  v ~/.phoronix-test-suite/installed-tests/pts/ai-benchmark-1.0.2/install-failed.log
+ 1035  cd initPC/Overclocking/Linux/
+ 1036  cd
+ 1037  cd initPC/
+ 1038  u
+ 1039  v packages_install.sh 
+ 1040  v optional_packages_install.sh 
+ 1041  cd ..
+ 1042  cd Overclocking/Linux/
+ 1043  ls
+ 1044  v burnintest/
+ 1045  v mem_torture_test.sh 
+ 1046  s
+ 1047  phoronix-test-suite list-recommended-tests 
+ 1048  phoronix-test-suite list-recommended-tests | grep pts | awk '{print $1}'
+ 1049  r=$(phoronix-test-suite list-recommended-tests | grep pts | awk '{print $1}')
+ 1050  phoronix-test-suite batch-run installed
+ 1051  phoronix-test-suite batch-run 
+ 1052  phoronix-test-suite list-available-suites
+ 1053  phoronix-test-suite batch-run $(phoronix-test-suite list-installed-tests | awk '{print $1}')
+ 1054  phoronix-test-suite list-installed-tests | awk '{print $1}'
+ 1055  phoronix-test-suite batch-run $(phoronix-test-suite list-installed-tests | awk '{print $1}' | grep /)
+ 1056  v mem_torture_test.sh 
+ 1057  phoronix-test-suite list-recommended-tests | grep / | awk '/\// {print $1}')
+ 1058  phoronix-test-suite list-recommended-tests | grep / | awk '/\// {print $1}'
+ 1059  s
+ 1060  a mem_torture_test.sh 
+ 1061  s
+ 1062  d
+ 1063  a ../../UbuntuCLI/
+ 1064  s
+ 1065  di
+ 1066  c
+ 1067  v mem_torture_test.sh 
+ 1068  a mem_torture_test.sh 
+ 1069  s
+ 1070  c
+ 1071  v mem_torture_test.sh 
+ 1072  a mem_torture_test.sh 
+ 1073  c
+ 1074  v mem_torture_test.sh 
+ 1075  a mem_torture_test.sh 
+ 1076  c
+ 1077  phoronix-test-suite batch-run "$(phoronix-test-suite list-installed-tests | awk '/\// {print $1}')"
+ 1078  v mem_torture_test.sh 
+ 1079  a mem_torture_test.sh 
+ 1080  c
+ 1081  man mapfile
+ 1082  help mapfile
+ 1083  cd ..
+ 1084  v mem_torture_test.sh 
+ 1085  ./mem_torture_test.sh 
+ 1086  cd
+ 1087  cd initPC/UbuntuCLI/
+ 1088  v packages_install.sh 
+ 1089  exit
+ 1090  ls
+ 1091  t output.log 
+ 1092  men phoronix-test-suite 
+ 1093  man phoronix-test-suite 
+ 1094  phoronix-test-suite 
+ 1095  phoronix-test-suite list-saved-results 
+ 1096  phoronix-test-suite batch-setup 
+ 1097  phoronix-test-suite list-
+ 1098  phoronix-test-suite list-installed-tests
+ 1099  phoronix-test-suite list-all-tests --help
+ 1100  AVAILABLE_TESTS=$(phoronix-test-suite list-available-tests | awk '{print $1}' | tail -n +4)
+ 1101  echo $AVAILABLE_TESTS=
+ 1102  phoronix-test-suite list-all-tests --help
+ 1103  AVAILABLE_TESTS=$(phoronix-test-suite list-available-tests | awk '{print $1}' | tail -n +6)
+ 1104  echo $AVAILABLE_TESTS=
+ 1105  echo $AVAILABLE_TESTS
+ 1106  AVAILABLE_TESTS=$(phoronix-test-suite list-available-tests | awk '{print $1}' | tail -n +5)
+ 1107  echo $AVAILABLE_TESTS
+ 1108  phoronix-test-suite batch-install $AVAILABLE_TESTS
+ 1109  r=$(phoronix-test-suite list-recommended-tests | grep pts | awk '{print $1}')
+ 1110  phoronix-test-suite batch-install $r
+ 1111  exit
+ 1112  phoronix-test-suite list-all-tests 
+ 1113  s
+ 1114  gl
+ 1115  ph
+ 1116  pl
+ 1117  s
+ 1118  dd
+ 1119  df
+ 1120  watch df
+ 1121  cd ..
+ 1122  cd Overclocking/Linux/y-cruncher\ v0.8.6.9545-dynamic/
+ 1123  for i in {1..600}; do     echo "===== Iteration $i =====";     ./y-cruncher bench 16G || timeout 2s speaker-test -t sine -f 1000; done
+ 1124  ./monitor.sh 
+ 1125  watch ./monitor.sh 
+ 1126  dconf watch /
+ 1127  for i in {1..600}; do     echo "===== Iteration $i =====";     ./y-cruncher bench 16G || timeout 2s speaker-test -t sine -f 1000; done
+ 1128  cd initPC/Overclocking/Linux/y-cruncher\ v0.8.6.9545-dynamic/
+ 1129  for i in {1..600}; do     echo "===== Iteration $i =====";     ./y-cruncher bench 16G || timeout 2s speaker-test -t sine -f 1000; done
+ 1130  top
+ 1131  apt search mpi-cxx
+ 1132  v mem_torture_test.sh 
+ 1133  phoronix-test-suite list-installed-tests
+ 1134  gl
+ 1135  ls
+ 1136  ll
+ 1137  rm error.log 
+ 1138  v mem_torture_test.sh 
+ 1139  s
+ 1140  v mem_torture_test.sh 
+ 1141  ls
+ 1142  cd initPC/Overclocking/Linux/
+ 1143  ls
+ 1144  phoronix-test-suite list-installed-tests 
+ 1145  history | phoronix-test-suite 
+ 1146  history | grep phoronix-test-suite 
+ 1147  phoronix-test-suite list-all-tests 
+ 1148  phoronix-test-suite list-all-tests  | grep ninpack
+ 1149  apt search linpack
+ 1150  stress --help
+ 1151  sudo apt install stress-ng
+ 1152  stress-ng --help
+ 1153  stress-ng --help | grep matrix
+ 1154  stress-ng --matrix 0 -t 1h
+ 1155  v mem_torture_test.sh 
+ 1156  t mem_torture_test.sh 
+ 1157  stress-ng --matrix 0 -t 2h
+ 1158  stress-ng --matrix 0 -t -tz 2h
+ 1159  stress-ng --matrix 0 -t --tz 2h
+ 1160  stress-ng --tz --matrix 0 -t 2h
+ 1161  stress-ng --tz --metrics-brief --matrix 0 -t 2h
+ 1162  stress-ng--matrix 0 -t 2h
+ 1163  stress-ng --matrix 0 -t 2h
+ 1164  stress-ng --tz --metrics-brief --matrix 0 -t 2h
+ 1165  sudo apt install inxi
+ 1166  inxi
+ 1167  inxi --help
+ 1168  inxi -m
+ 1169  inxi -Fxxxz
+ 1170  sudo apt install cpu-x
+ 1171  cpu-x
+ 1172  sudo apt install hardinfo
+ 1173  hardinfo
+ 1174  sudo apt install memtester 
+ 1175  sudo apt install memtest86+ 
+ 1176  sudo apt install memtester 
+ 1177  memtester 
+ 1178  memtester --help
+ 1179  memtester 90G 2
+ 1180  memtester 10G 2
+ 1181  memtester 80G 2
+ 1182  memtester 50G 2
+ 1183  memtester 60G 2
+ 1184  memtester 16G 2
+ 1185  memtester 10G 2
+ 1186  memtester 15G 2
+ 1187  memtester 13G 2
+ 1188  memtester 12G 2
+ 1189  memtester 10G 2
+ 1190  sudo apt install lmbench
+ 1191  lmbench-run 120M rd
+ 1192  sudo lmbench-run 120M rd
+ 1193  cd
+ 1194  cd initPC/
+ 1195  cd UbuntuCLI/
+ 1196  v optional_packages_install.sh 
+ 1197  glmark2-wayland 
+ 1198  phoronix-test-suite run pts/ramspeed
+ 1199  t output.log 
+ 1200  cat output.log 
+ 1201  v mem_torture_test.sh 
+ 1202  s
+ 1203  a mem_torture_test.sh 
+ 1204  di
+ 1205  s
+ 1206  di
+ 1207  c
+ 1208  ph
+ 1209  sudo apt install edac-utils 
+ 1210  edac-util -v
+ 1211  phoronix-test-suite benchmark 
+ 1212  phoronix-test-suite 
+ 1213  phoronix-test-suite start-result-viewer 
+ 1214  phoronix-test-suite list-available-tests | grep mem
+ 1215  phoronix-test-suite install Tinymembench
+ 1216  phoronix-test-suite install pts/tinymembench
+ 1217  phoronix-test-suite list-available-tests | grep ram
+ 1218  phoronix-test-suite list-available-tests | grep mem
+ 1219  watch df
+ 1220  watch df
+ 1221  x
+ 1222  sudo apt install dkms git build-essential linux-headers-$(uname -r)
+ 1223  git clone https://github.com/ocerman/zenpower.git
+ 1224  cd zenpower/
+ 1225  sudo make dkms-install
+ 1226  sudo modprobe -r k10temp
+ 1227  sudo modprobe zenpower
+ 1228  cd ..
+ 1229  git clone https://github.com/ocerman/zenmonitor.git
+ 1230  cd zenmonitor/
+ 1231  make
+ 1232  sudo apt install build-essential libgtk-3-dev git
+ 1233  make
+ 1234  make install
+ 1235  sudo make install
+ 1236  sudo make install-polkit 
+ 1237  zenmonitor
+ 1238  apt search zenmonitor
+ 1239  snap search zenmonitor
+ 1240  flatpak search zenmonitor
+ 1241  cd initPC/Overclocking/Linux/
+ 1242  ls
+ 1243  ./mem_torture_test.sh 
+ 1244  v mem_torture_test.sh 
+ 1245  ./mem_torture_test.sh 
+ 1246  v mem_torture_test.sh 
+ 1247  ./mem_torture_test.sh 
+ 1248  v mem_torture_test.sh 
+ 1249  ./mem_torture_test.sh
+ 1250  v mem_torture_test.sh 
+ 1251  ./mem_torture_test.sh
+ 1252  v mem_torture_test.sh 
+ 1253  ./mem_torture_test.sh
+ 1254  v mem_torture_test.sh 
+ 1255  ./mem_torture_test.sh 
+ 1256  v mem_torture_test.sh 
+ 1257  flatpak run com.geekbench.Geekbench6 --memory
+ 1258  man geekbench
+ 1259  ./mem_torture_test.sh 
+ 1260  sleep 60 && ./mem_torture_test.sh 
+ 1261  cd initPC/Overclocking/Linux/
+ 1262  watch ./monitor.sh 
+ 1263  top
+ 1264  PS4=>
+ 1265  PS4='>'
+ 1266  PS1='>'
+ 1267  ls
+ 1268  apt search rufus
+ 1269  phoronix-test-suite list-available-tests | grep stre
+ 1270  phoronix-test-suite list-available-tests
+ 1271  phoronix-test-suite list-available-tests | grep memory
+ 1272  phoronix-test-suite list-available-tests | grep mem
+ 1273  phoronix-test-suite list-available-tests | grep -i memo
+ 1274  phoronix-test-suite install pts/intel-mlc pts/mbw pts/stream pts/stressapptest
+ 1275  v ~/.phoronix-test-suite/installed-tests/pts/stressapptest-1.0.1/install-failed.log
+ 1276  p
+ 1277  phoronix-test-suite list-available-tests | grep -i stress
+ 1278  ls
+ 1279  cd initPC/
+ 1280  s
+ 1281  pl
+ 1282  p
+ 1283  pl
+ 1284  o
+ 1285  s
+ 1286  a .vscode/
+ 1287  s
+ 1288  di
+ 1289  c
+ 1290  s
+ 1291  ph
+ 1292  s
+ 1293  di
+ 1294  a UbuntuCLI/optional_packages_install.sh 
+ 1295  c
+ 1296  ph
+ 1297  s
+ 1298  a Overclocking/Linux/mem_torture_test.sh 
+ 1299  di
+ 1300  s
+ 1301  c
+ 1302  ph
+ 1303  s
+ 1304  a Overclocking/Linux/y-cruncher\ v0.8.6.9545-dynamic/.gitignor
+ 1305  cd Overclocking/Linux/y-cruncher\ v0.8.6.9545-dynamic/
+ 1306  a .gitignore 
+ 1307  s
+ 1308  c
+ 1309  s
+ 1310  ph
+ 1311  cd ..
+ 1312  s
+ 1313  t p95v3019b20.linux64/prime.txt 
+ 1314  cd 
+ 1315  cd Do
+ 1316  cd Downloads/
+ 1317  ls
+ 1318  ls *.deb
+ 1319  flatpak search phoronix-test-suite
+ 1320  snap search phoronix-test-suite
+ 1321  s
+ 1322  cd
+ 1323  cd initPC/
+ 1324  s
+ 1325  di
+ 1326  s
+ 1327  gca
+ 1328  ca
+ 1329  gl
+ 1330  gl -p
+ 1331  ph
+ 1332  exit
+ 1333  cd initPC/Overclocking/Linux/
+ 1334  v mem_torture_test.sh 
+ 1335  exit
+ 1336  cd initPC/Overclocking/Linux/
+ 1337  ls
+ 1338  top
+ 1339  exit
+ 1340  u
+ 1341  v optional_packages_install.sh 
+ 1342  s
+ 1343  a optional_packages_install.sh 
+ 1344  c
+ 1345  s
+ 1346  ph
+ 1347  t ../Overclocking/Linux/BiTLog2
+ 1348  history |
+ 1349  history | grep php
+ 1350  history | grep apt
+ 1351  apt list | grep php
+ 1352  cd initPC/UbuntuCLI/
+ 1353  v optional_packages_install.sh 
+ 1354  ./optional_packages_install.sh syst
+ 1355  phoronix-test-suite 
+ 1356  phoronix-test-suite system-info 
+ 1357  phoronix-test-suite system-sensors 
+ 1358  cd
+ 1359  cd initPC/Overclocking/Linux/
+ 1360  v mem_torture_test.sh 
+ 1361  s
+ 1362  a mem_torture_test.sh 
+ 1363  di
+ 1364  c
+ 1365  s
+ 1366  ph
+ 1367  t mem_torture_test.sh 
+ 1368  sudo apt install php*
+ 1369  sudo apt install php?.?
+ 1370  apt search php
+ 1371  apt search php*
+ 1372  apt install '^php[5-9].[0-9]-cli'
+ 1373  sudo apt install '^php[5-9].[0-9]-cli'
+ 1374  sudo apt install php
+ 1375  php
+ 1376  php --version
+ 1377  v mem_torture_test.sh 
+ 1378  t mem_torture_test.sh 
+ 1379  v mem_torture_test.sh 
+ 1380  s
+ 1381  a mem_torture_test.sh 
+ 1382  c
+ 1383  s
+ 1384  ph
+ 1385  v mem_torture_test.sh 
+ 1386  s
+ 1387  d
+ 1388  d mem_torture_test.sh 
+ 1389  v mem_torture_test.sh 
+ 1390  sudo apt install php8.3
+ 1391  phoronix-test-suite install pts/lapack
+ 1392  sudo apt-get install libopenblas-dev
+ 1393  sudo apt-get install libopenblas-dev\
+ 1394  phoronix-test-suite install system/scientific
+ 1395  phoronix-test-suite list-available-suites 
+ 1396  phoronix-test-suite install /pts/linear-algebra
+ 1397  phoronix-test-suite install pts/linear-algebra
+ 1398  ..
+ 1399  cd Overclocking/Linux/
+ 1400  ls
+ 1401  -
+ 1402  cd UbuntuCLI/
+ 1403  v optional_packages_install.sh 
+ 1404  s
+ 1405  a optional_packages_install.sh 
+ 1406  di
+ 1407  c
+ 1408  ph
+ 1409  v run_all.sh 
+ 1410  v optional_packages_install.sh 
+ 1411  ./optional_packages_install.sh 
+ 1412  phoronix-test-suite run pts/lapack
+ 1413  phoronix-test-suite batch-run pts/lapack
+ 1414  phoronix-test-suite stress-batch-run pts/lapack
+ 1415  phoronix-test-suite install pts/blas
+ 1416  phoronix-test-suite install pts/compiler
+ 1417  cd initPC/Overclocking/Linux/
+ 1418  ls
+ 1419  t output.log 
+ 1420  cd p95v3019b20.linux64/
+ 1421  ./mprime 
+ 1422  cd initPC/Overclocking/Linux/
+ 1423  sleep 60 && ./mem_torture_test.sh 
+ 1424  ./mem_torture_test.sh 
+ 1425  ..
+ 1426  ls
+ 1427  v mem_torture_test.sh 
+ 1428  v bench_mini.sh 
+ 1429  cd initPC/Overclocking/Linux/
+ 1430  t bench_mini.log 
+ 1431  v bench_mini.log 
+ 1432  grep -i error bench_mini.log 
+ 1433  grep -i excep bench_mini.log 
+ 1434  v bench_mini.log 
+ 1435  ls
+ 1436  v output.log 
+ 1437  rm output.log 
+ 1438  t output.log 
+ 1439  watch df
+ 1440  watch ./monitor.sh 
+ 1441  cd initPC/Overclocking/Linux/
+ 1442  watch ./monitor.sh 
+ 1443  t bench_mini.log 
+ 1444  cd initPC/
+ 1445  cd Overclocking/Linux/
+ 1446  v bench.sh
+ 1447  a bench.sh 
+ 1448  c
+ 1449  ph
+ 1450  chmod +x bench.sh 
+ 1451  s
+ 1452  d bench.sh 
+ 1453  ./bench.sh 
+ 1454  cp bench.sh bench_mini.sh
+ 1455  v bench_mini.sh 
+ 1456  ./bench_mini.sh 
+ 1457  v bench_mini.sh 
+ 1458  phoronix-test-suite batch-setup 
+ 1459  ./bench_mini.sh 
+ 1460  ./bench_mini.sh && ./mem_torture_test.sh 
+ 1461  top
+ 1462  grep error|excep <<< exception
+ 1463  grep 'error|excep' <<< exception
+ 1464  grep 'error|excep' <<< error
+ 1465  grep 'error\|excep' <<< error
+ 1466  grep 'error\|excep' <<< excep
+ 1467  grep 'error\|excep' <<< exception
+ 1468  watch df
+ 1469  cd initPC/Overclocking/Linux/
+ 1470  v mem_torture_test.sh 
+ 1471  x
+ 1472  cd linux/
+ 1473  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+ 1474  sudo apt list
+ 1475  sudo apt list | grep php
+ 1476  phoronix-test-suite benchmark
+ 1477  phoronix-test-suite 
+ 1478  phoronix-test-suite start-result-viewer 
+ 1479  cd initPC/Overclocking/
+ 1480  ls
+ 1481  cd Linux/
+ 1482  ls
+ 1483  mv bench_mini.log bench_mini_x60_80L2.log
+ 1484  mv bench_mini_x60_80L2.log bench_mini_x62_90L3.log 
+ 1485  ls
+ 1486  v bench_mini_x62_90L3.log 
+ 1487  echo error > output.log
+ 1488  pl
+ 1489  gl
+ 1490  echo error > output.log
+ 1491  ./bench_mini.sh && ./mem_torture_test.sh 
+ 1492  watch ./monitor.sh 
+ 1493  cd initPC/Overclocking/Linux/
+ 1494  watch ./monitor.sh 
+ 1495  v monitor.sh 
+ 1496  watchgnupg 
+ 1497  watchgnupg --help
+ 1498  watch ./monitor.sh 
+ 1499  ./monitor.sh 
+ 1500  watch ./monitor.sh 
+ 1501  ./monitor.sh 
+ 1502  watch ./monitor.sh 
+ 1503  v monitor.sh 
+ 1504  watch ./monitor.sh 
+ 1505  v monitor.sh 
+ 1506  watch ./monitor.sh 
+ 1507  v monitor.sh 
+ 1508  ll
+ 1509  ls *.log
+ 1510  mv bench_mini_x62_90L3.log bench_mini_x62_90L3.log.old
+ 1511  v error.log 
+ 1512  v mem_torture_test.sh 
+ 1513  cat error.log 
+ 1514  watch ./monitor.sh 
+ 1515  v monitor.sh 
+ 1516  ls
+ 1517  ls *.log
+ 1518  v error.log 
+ 1519  v monitor.sh 
+ 1520  watch ./monitor.sh 
+ 1521  rm error.log 
+ 1522  watch ./monitor.sh 
+ 1523  ./bench_mini.sh && ./mem_torture_test.sh 
+ 1524  cd initPC/Overclocking/Linux/y-cruncher\ v0.8.6.9545-dynamic/
+ 1525  sudo ./y-cruncher 
+ 1526  cd initPC/Overclocking/Linux/
+ 1527  rm output.log 
+ 1528  rm error.log 
+ 1529  gl
+ 1530  gl -p
+ 1531  rm error.log 
+ 1532  gl
+ 1533  rm error.log 
+ 1534  rm output.log 
+ 1535  rm error.log 
+ 1536  rm output.log 
+ 1537  rm error.log 
+ 1538  rm output.log 
+ 1539  v mem_torture_test.sh 
+ 1540  v bench_mini_x62_90L3.log 
+ 1541  cat bench_mini_x62_90L3.log 
+ 1542  cd initPC/Overclocking/Linux/
+ 1543  watch ./monitor.sh 
+ 1544  ls
+ 1545  v monitor.sh 
+ 1546  cd initPC/Overclocking/Linux/
+ 1547  ls
+ 1548  v error.log 
+ 1549  v output.log 
+ 1550  mv output.log output.log.6000mt80l2_16.3.2025
+ 1551  ls
+ 1552  cat error.log 
+ 1553  mv error.log error.log.6000mt80l2_16.3.2025
+ 1554  ll
+ 1555  v bench_mini.log
+ 1556  mv bench_mini.log bench_mini.log.6000mt80l2_16.3.2025
+ 1557  ls
+ 1558  ls *.log
+ 1559  t bench
+ 1560  t bench.log 
+ 1561  t error.log.6000mt80l2_16.3.2025 
+ 1562  ll
+ 1563  ls *.log
+ 1564  mv bench.log bench.log.6000mt80l2_16.3.2025
+ 1565  ls *.log
+ 1566  v output.log.6000mt80l2_16.3.2025 
+ 1567  df
+ 1568  refresh
+ 1569  cd initPC/Overclocking/Linux/
+ 1570  ./bench_mini.sh && ./mem_torture_test.sh 
+ 1571  phoronix-test-suite batch-setup 
+ 1572  ./bench_mini.sh && ./mem_torture_test.sh 
+ 1573  cd initPC/Overclocking/Linux/
+ 1574  cd p95v3019b20.linux64/
+ 1575  ..
+ 1576  .p95*/mprime
+ 1577  ./p95*/mprime
+ 1578  for i in {1..600}; do     echo "===== Iteration $i =====";     timeout --preserve-status 60s ./p95*/mprime -t;     ./y-cruncher*/y-cruncher bench 1G || timeout 2s speaker-test -t sine -f 1000; done
+ 1579  cd initPC/
+ 1580  dc Overclocking/Linux/
+ 1581  cd Overclocking/Linux/
+ 1582  v monitor.sh 
+ 1583  ./monitor.sh 
+ 1584  cd p95v3019b20.linux64/
+ 1585  v results.txt 
+ 1586  mv results.txt results.txt.old16.3.2025
+ 1587  ls
+ 1588  cd ..
+ 1589  ./monitor.sh 
+ 1590  touch ./p95*/results.txt
+ 1591  cd p95v3019b20.linux64/
+ 1592  touch results.txt
+ 1593  cd.
+ 1594  cd ..
+ 1595  ./monitor.sh 
+ 1596  watch ./monitor.sh 
+ 1597  touch bench.log bench_mini.log
+ 1598  watch ./monitor.sh 
+ 1599  touch output.log
+ 1600  watch ./monitor.sh 
+ 1601  cd initPC/Overclocking/Linux/
+ 1602  v mem_torture_test.sh 
+ 1603  d mem_torture_test.sh 
+ 1604  phoronix-test-suite batch-setup 
+ 1605  timeout --preserve-status 1h ./p95*/mprime -t
+ 1606  cd initPC/Overclocking/Linux/
+ 1607  ./bench_mini.sh && ./mem_torture_test.sh 
+ 1608  cd initPC/Overclocking/Linux/
+ 1609  watch ./monitor.sh 
+ 1610  ls
+ 1611  cd initPC/Overclocking/Linux/
+ 1612  t bench_mini.log
+ 1613  phoronix-test-suite 
+ 1614  phoronix-test-suite start-result-viewer 
+ 1615  v mem_torture_test.sh 
+ 1616  s
+ 1617  cd initPC/Overclocking/Linux/
+ 1618  ./bench_mini.sh && ./mem_torture_test.sh 
+ 1619  cd initPC/Overclocking/
+ 1620  ls
+ 1621  cd Linux/
+ 1622  v mem_torture_test.sh 
+ 1623  phoronix-test-suite --help
+ 1624  phoronix-test-suite batch-run --help
+ 1625  phoronix-test-suite install neatbench
+ 1626  cd initPC/Overclocking/
+ 1627  watch ./monitor.sh 
+ 1628  cd Linux/
+ 1629  watch ./monitor.sh 
+ 1630  ls
+ 1631  py
+ 1632  phoronix-test-suite start-phoromatic-server 
+ 1633  phoronix-test-suite 
+ 1634  phoronix-test-suite start-result-viewer 
+ 1635  cd initPC/Overclocking/Linux/
+ 1636  watch ./monitor.sh 
+ 1637  cd initPC/Overclocking/Linux/
+ 1638  phoronix-test-suite batch-setup 
+ 1639  phoronix-test-suite batch-run pts-version 
+ 1640  phoronix-test-suite batch-run neatbench
+ 1641  phoronix-test-suite batch-run neatbench tralala
+ 1642  yes "test_test_todelete" | phoronix-test-suite batch-run neatbench 
+ 1643  yes "test_test_todelete_new" | phoronix-test-suite batch-run neatbench 
+ 1644  v mem_torture_test_v2.sh 
+ 1645  la
+ 1646  cd p95v3019b20.linux64/
+ 1647  v results.txt
+ 1648  v
+ 1649  cd ..
+ 1650  v mem_torture_test
+ 1651  v mem_torture_test_v2.sh 
+ 1652  v mem_torture_test.sh 
+ 1653  cd initPC/Overclocking/
+ 1654  cd Linux/
+ 1655  ./bench_mini.sh && ./mem_torture_test.sh 
+ 1656  ./bench_mini.sh && ./mem_torture_test.sh <<< TEST_TODELETE
+ 1657  (yes "6000mtPBOEL2_low_ventilators_17.3." | ./bench_mini.sh) && ./mem_torture_test.sh
+ 1658  journalctl -b
+ 1659  cd initPC/Overclocking/Linux/
+ 1660  ls
+ 1661  cd
+ 1662  clear
+ 1663  journalctl -b -e --no-pager | grep -iE 'amdgpu|gpu|display|drm|wayland|gnome-shell'
+ 1664  dmesg | grep -iE 'amdgpu|gpu|display|drm|error|failed'
+ 1665  sudo dmesg | grep -iE 'amdgpu|gpu|display|drm|error|failed'
+ 1666  sudo apt update && sudo apt upgrade
+ 1667  sudo ubuntu-drivers install
+ 1668  cd initPC/Overclocking/Linux/
+ 1669  v output.log
+ 1670  journalctl --since "00:17" --until "00:21"
+ 1671  journalctl --since "00:17" --until "00:21" | grep gnome
+ 1672  journalctl --since "00:17" --until "00:21" > ~/gnome_fail_diag
+ 1673  cd /var/crash
+ 1674  ls
+ 1675  ll
+ 1676  ls -l
+ 1677  v _usr_bin_gnome-shell.1000.crash
+ 1678  ./mem_torture_test.sh 
+ 1679  cd initPC/Overclocking/Linux/
+ 1680  watch ./monitor.sh 
+ 1681  ./monitor.sh 
+ 1682  v mem_torture_test.sh 
+ 1683  v output.log
+ 1684  v mem_torture_test
+ 1685  v mem_torture_test.sh 
+ 1686  mv output.log output.log.17-19.3.2025
+ 1687  ls
+ 1688  ls out*
+ 1689  ll
+ 1690  ls out*
+ 1691  v output.log
+ 1692  timeout 30 yes "6000mt_pboe2" | phoronix-test-suite batch-run system/compress-7zip-1.0.0 pts/build-linux-kernel-1.16.0 pts/build-php-1.7.0     pts/blender-4.3.0 pts/compress-7zip-1.11.0 pts/encode-flac-1.9.0 pts/mbw pts/stream     pts/hpcc-1.2.8 pts/hpl-1.0.0 pts/nero2d-1.1.0 pts/nwchem-1.2.0 pts/open-porous-media-1.3.1     pts/opm-git-1.3.51 pts/qe-1.3.1 pts/qmcpack-1.8.0 pts/wrf-1.0.1
+ 1693  phoronix-test-suite install pts/open-porous-media-1.3.1 
+ 1694  sudo apt update
+ 1695  sudo apt install libopm-common-dev libopm-grid-dev libopm-simulators-dev
+ 1696  sudo apt install libopm-common libopm-grid libopm-simulators
+ 1697  apt search libopm
+ 1698  sudo apt install libomp-dev
+ 1699  phoronix-test-suite install pts/open-porous-media-1.3.1 
+ 1700  sudo apt install libomp-17-dev
+ 1701  ompi_invo
+ 1702  ompi_info 
+ 1703  phoronix-test-suite install pts/open-porous-media-1.3.1 
+ 1704  ps
+ 1705  top
+ 1706  cd initPC/Overclocking/Linux/
+ 1707  ls
+ 1708  ./mem_torture_test.sh 
+ 1709  sensors
+ 1710  ./mem_torture_test.sh 
+ 1711  watch sensors
+ 1712  cd initPC/Overclocking/Linux/
+ 1713  watch ./monitor.sh 
+ 1714  cd x
+ 1715  cd linux/
+ 1716  make
+ 1717  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+ 1718  py
+ 1719  cd
+ 1720  cd initPC/Overclocking/Linux/
+ 1721  cd p95v3019b20.linux64/
+ 1722  ./mprime --help
+ 1723  ./mprime -m
+ 1724  cd initPC/Overclocking/Linux/
+ 1725  cd p95v3019b20.linux64/
+ 1726  ./mprime -m
+ 1727  ./mprime -t
+ 1728  cd
+ 1729  x
+ 1730  cd linux/
+ 1731  ls
+ 1732  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+ 1733  v
+ 1734  ls
+ 1735  x
+ 1736  cd linux/
+ 1737  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+ 1738  cd initPC/Overclocking/Linux/
+ 1739  v mem_torture_test
+ 1740  v mem_torture_test.sh 
+ 1741  reboot
+ 1742  cd initPC/
+ 1743  cd Overclocking/Linux/
+ 1744  v mem_torture_test
+ 1745  v mem_torture_test.sh 
+ 1746  ./mem_torture_test.sh 
+ 1747  v mem_torture_test.sh 
+ 1748  ./mem_torture_test.sh 
+ 1749  sleep 10 && ./mem_torture_test.sh 
+ 1750  flatpak run com.geekbench.Geekbench6
+ 1751  x
+ 1752  cd linux/
+ 1753  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+ 1754  cd
+ 1755  cd initPC/Overclocking/Linux/
+ 1756  cd y-cruncher\ v0.8.6.9545-dynamic/
+ 1757  ./y-cruncher bench 16G || timeout 2s speaker-test -t sine -f 1000
+ 1758  cd initPC/Overclocking/Linux/
+ 1759  ls
+ 1760  cd y-cruncher\ v0.8.6.9545-dynamic/
+ 1761  cd ..
+ 1762  v mem_torture_test.sh 
+ 1763  py
+ 1764  sudo hdparm -Y /dev/sda
+ 1765  sudo hdparm -S 3 /dev/sda
+ 1766  sudo hdparm -Y /dev/sda
+ 1767  cd /sys/bus/pci/devices/
+ 1768  ls
+ 1769  tree
+ 1770  ls *
+ 1771  echo */class
+ 1772  echo */
+ 1773  lspci | grep -i sata
+ 1774  ls
+ 1775  echo 1 | sudo tee /sys/bus/pci/devices/0000:11:00.0/remove
+ 1776  echo 0 | sudo tee /sys/bus/pci/devices/0000:11:00.0/remove
+ 1777  ls
+ 1778  echo 1 | sudo tee /sys/bus/pci/rescan
+ 1779  ls
+ 1780  echo 1 | sudo tee /sys/bus/pci/devices/0000:11:00.0/remove
+ 1781  ls
+ 1782  lspci
+ 1783  top /dev/urandom
+ 1784  /dev/urandom > top 10
+ 1785  sudo /dev/urandom > top 10
+ 1786  top 10 < /dev/urandom 
+ 1787  top < /dev/urandom 
+ 1788  man top
+ 1789  top
+ 1790  man head 
+ 1791  head -n3 < /dev/urandom 
+ 1792  head -n10 < /dev/urandom 
+ 1793  head -n20 < /dev/urandom 
+ 1794  head -n10 < /dev/urandom 
+ 1795  sudo hdparm -Y /dev/sda
+ 1796  for i in {1..4}; echo $i; done
+ 1797  for i in {1..20}; do echo $i;  done
+ 1798  sudo hdparm -Y /dev/sda
+ 1799  lsblk
+ 1800  top -n 10 < /dev/urandom 
+ 1801  head -n 10 < /dev/urandom 
+ 1802  cd\
+ 1803  cd initPC/Overclocking/
+ 1804  cd Linux/
+ 1805  ls
+ 1806  v mem_torture_test
+ 1807  v mem_torture_test.sh 
+ 1808  phoronix-test-suite run  pts/nero2d-1.1.0 
+ 1809  v mem_torture_test.sh 
+ 1810  x
+ 1811  cd tmp/
+ 1812  v hodine_cicmanec20.3.2025
+ 1813  cd
+ 1814  cd initPC/Overclocking/Linux/
+ 1815  watch ./monitor.sh 
+ 1816  df
+ 1817  cd initPC/Overclocking/Linux/
+ 1818  cd y-cruncher\ v0.8.6.9545-dynamic/
+ 1819  ./y-cruncher bench 16G || timeout 2s speaker-test -t sine -f 1000
+ 1820  cd
+ 1821  x
+ 1822  cd linux/
+ 1823  repeat 120 'make clean > /dev/null && time nice -n 19 make -j$(nproc) &> /dev/null && echo ================='
+ 1824  man fg
+ 1825  df
+ 1826  df -h
+ 1827  sudo unmount /dev/sda3
+ 1828  sudo umount /dev/sda3
+ 1829  cd initPC/Overclocking/Linux/
+ 1830  ls
+ 1831  ./mem_torture_test.sh 
+ 1832  v mem_torture_test.sh 
+ 1833  ./mem_torture_test.sh 
+ 1834  fg
+ 1835  phoronix-test-suite 
+ 1836  phoronix-test-suite start-result-viewer 
+ 1837  watch sensors
+ 1838  echo 1 | sudo tee /sys/bus/pci/devices/0000:11:00.0/remove
+ 1839  crontab -e
+ 1840  reboot
+ 1841  crontab -e
+ 1842  sudo crontab -e
+ 1843  reboot
+ 1844  cron
+ 1845  man cron
+ 1846  crontab -e
+ 1847  sudo crontab -e
+ 1848  ls
+ 1849  ll
+ 1850  v bluetooth.log 
+ 1851  rm bluetooth.log 
+ 1852  v .bluetooth.log 
+ 1853  rm .bluetooth.log 
+ 1854  v .selected_editor 
+ 1855  sudo crontab -e
+ 1856  reboot
+ 1857  bluetoothctl <<< "connect 00:11:67:24:75:AF"
+ 1858  bluetoothctl power on
+ 1859  bluetoothctl power off
+ 1860  bluetoothctl power on
+ 1861  sudo crontab -e
+ 1862  ll
+ 1863  sudo crontab -e
+ 1864  v bluetooth.log 
+ 1865  rm bluetooth.log 
+ 1866  sudo crontab -e
+ 1867  reboot
+ 1868  crontab -e
+ 1869  cd initPC/Overclocking/Linux/
+ 1870  v mem_torture_test
+ 1871  ./mem_torture_test.sh 
+ 1872  v mem_torture_test.sh 
+ 1873  ./mem_torture_test.sh 
+ 1874  shutdown
+ 1875  sudo apt install gparted
+ 1876  man tee
+ 1877  echo 1 | sudo tee /sys/bus/pci/rescan
+ 1878  cd 
+ 1879  v .bash_aliases 
+ 1880  s
+ 1881  .s
+ 1882  .d
+ 1883  v .bash_aliases 
+ 1884  exit
+ 1885  rescan
+ 1886  man hd
+ 1887  exit
+ 1888  don
+ 1889  doff
+ 1890  exit
+ 1891  man on_ac_power 
+ 1892  on_ac_power 
+ 1893  onefetch 
+ 1894  cd initPC/
+ 1895  onefetch
+ 1896  cd ..
+ 1897  ls
+ 1898  clear
+ 1899  exit
+ 1900  man hdifftopam 
+ 1901  man hdparm
+ 1902  hdparm -B
+ 1903  hdparm /dev/sda
+ 1904  sudo hdparm /dev/sda
+ 1905  df
+ 1906  hddon
+ 1907  hddoff
+ 1908  exit
+ 1909  hddoff
+ 1910  hddon
+ 1911  exit
+ 1912  cd
+ 1913  v .bash_aliases 
+ 1914  bash
+ 1915  exit
+ 1916  hddoff
+ 1917  hddon
+ 1918  .s
+ 1919  .d
+ 1920  hddoff
+ 1921  hddon
+ 1922  cd
+ 1923  .s
+ 1924  .d
+ 1925  .a
+ 1926  .a .bash*
+ 1927  s
+ 1928  .s
+ 1929  dot reset
+ 1930  .s
+ 1931  .a .bash_aliases 
+ 1932  .s
+ 1933  .c
+ 1934  s
+ 1935  .s
+ 1936  .ph
+ 1937  .pl
+ 1938  cd initPC/Overclocking/Linux/
+ 1939  s
+ 1940  d bench.sh 
+ 1941  a bench.sh 
+ 1942  s
+ 1943  v .gitignore 
+ 1944  s
+ 1945  v .gitignore 
+ 1946  s
+ 1947  v .gitignore 
+ 1948  s
+ 1949  v .gitignore 
+ 1950  s
+ 1951  d error.log
+ 1952  di
+ 1953  s
+ 1954  di
+ 1955  c
+ 1956  s
+ 1957  c
+ 1958  exit
+ 1959  cd initPC/Overclocking/Linux/
+ 1960  v mem_torture_test.sh 
+ 1961  v output.log
+ 1962  man tee
+ 1963  v mem_torture_test.sh 
+ 1964  ./mem_torture_test.sh 
+ 1965  ls
+ 1966  ll
+ 1967  sudo crontab -e
+ 1968  hddoff
+ 1969  cd initPC/Overclocking/
+ 1970  cd Linux/
+ 1971  ./monitor.sh 
+ 1972  watch ./monitor.sh 
+ 1973  cd initPC/Overclocking/Linux/
+ 1974  v mem_torture_test.sh 
+ 1975  ./mem_torture_test.sh 
+ 1976  v mem_torture_test.sh 
+ 1977  ./mem_torture_test.sh 
+ 1978  clear
+ 1979  hddon
+ 1980  a=(./y-cruncher*/y-cruncher)
+ 1981  echo ${a[@]}
+ 1982* 
+ 1983  cd y-cruncher\ v0.8.6.9545-dynamic/
+ 1984  ls
+ 1985  ./y-cruncher --version
+ 1986  ./y-cruncher --help
+ 1987  ./y-cruncher -version
+ 1988  ./y-cruncher
+ 1989  cd ..
+ 1990  ls
+ 1991  cd y-cruncher\ v0.8.6.9545-dynamic/
+ 1992  ls
+ 1993  v Read\ Me.txt 
+ 1994  v Username.txt 
+ 1995  ./y-cruncher 
+ 1996  ls
+ 1997  v Command\ Lines.txt 
+ 1998  ./y-cruncher stress 16G
+ 1999  cd ..
+ 2000  ls
+ 2001  s
+ 2002  v BiTLog2 
+ 2003  rm BiTLog2 
+ 2004  rm Pi\ -\ 20250316-155123.txt 
+ 2005  rm Pi\ -\ Dec\ -\ Chudnovsky.txt 
+ 2006  ls
+ 2007  s
+ 2008  a bench.log bench_mini.log bench.log.6000mt80l2_16.3.2025 
+ 2009  *.log
+ 2010  ls *.log
+ 2011  a error.log
+ 2012  a output.log
+ 2013  s
+ 2014  v .gitignore 
+ 2015  s
+ 2016  c
+ 2017  v mem_torture_test.sh 
+ 2018  s
+ 2019  v .gitignore 
+ 2020  v mem_torture_test
+ 2021  v mem_torture_test.sh 
+ 2022  v mem_torture_test_v2.sh 
+ 2023  ls
+ 2024  s
+ 2025  c
+ 2026  cd
+ 2027  ls
+ 2028  cd initPC/UbuntuCLI/
+ 2029  ls
+ 2030  cd ..
+ 2031  cd Ubuntu_22.04/
+ 2032  ls
+ 2033  mv TODO_DCONF/ TODO
+ 2034  cd TODO/
+ 2035  ls
+ 2036  cat hdparm.conf 
+ 2037  ls
+ 2038  man crontab
+ 2039  crontab -l
+ 2040  sudo crontab -l
+ 2041  sudo crontab -l > sudo_crontab
+ 2042  s
+ 2043  ll
+ 2044  history > bash_history.sh
