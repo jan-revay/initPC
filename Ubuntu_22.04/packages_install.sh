@@ -89,6 +89,9 @@ readonly APT_GUI_PACKAGES=(
     meld kdevelop coqide qgit cmake-gui # gitk git-gui
     qtcreator kitty
 
+    # ===== FILES AND DISK MANAGEMENT
+    gparted
+
     # ===== FONTS ====
     ttf-mscorefonts-installer
 
