@@ -12,13 +12,13 @@ TortureTime=6
 TortureWeak=0
 
 [Internals]
-OldCpuSpeed=5463
+OldCpuSpeed=5479
 NewCpuSpeedCount=0
 NewCpuSpeed=0
 V30OptionsConverted=1
 WGUID_version=2
-Pid=6526
+Pid=6735
 RollingHash=0
-RollingStartTime=1741717813
+RollingStartTime=1742245145
 RollingCompleteTime=0
 RollingAverage=1000
