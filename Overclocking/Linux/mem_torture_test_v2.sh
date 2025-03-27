@@ -5,33 +5,36 @@ exec &>> >(tee --append output.log)
 
 # echo ============ TEST BEGIN ==============
 #
-# inxi -Fxxxz
+inxi -Fxxxz
 
-# sleep 120 && flatpak run com.geekbench.Geekbench6
+sleep 120 && flatpak run com.geekbench.Geekbench6
 
-# stress-ng is also avaliable in phoronix test suite
-# stress-ng --tz --metrics-brief --matrix 0 -t 20m
-# stress-ng --vm 96 --vm-bytes 95% --vm-method all --tz --metrics-brief --timeout 20m
-# stress-ng --memrate 0 --metrics-brief --timeout 30m
-# stress-ng --cache 0 --cache-fence --metrics-brief --timeout 30m
-# stress-ng --matrix 0 --vm 96 --vm-bytes 95% --cache 0 --cache-fence --tz --metrics-brief --timeout 20m
+memtester 10G 3
 
-# stressapptest -W -M "$(free -m | awk '/Mem:/ {print int($2 * 0.95)}')" -s 65000 \
-# || timeout 2s speaker-test -t sine -f 1000
-# for i in {1..10}; do
-# echo "===== Iteration $i ====="
-# timeout --preserve-status 20m ./p95*/mprime -t
-# ./y-cruncher*/y-cruncher bench 16G
-# ./y-cruncher*/y-cruncher stress -M:92G -D:300 -TL:3600
-# done
+stress-ng is also avaliable in phoronix test suite
+stress-ng --tz --metrics-brief --matrix 0 -t 20m
+stress-ng --vm 96 --vm-bytes 95% --vm-method all --tz --metrics-brief --timeout 20m
+stress-ng --memrate 0 --metrics-brief --timeout 30m
+stress-ng --cache 0 --cache-fence --metrics-brief --timeout 30m
+stress-ng --matrix 0 --vm 96 --vm-bytes 95% --cache 0 --cache-fence --tz --metrics-brief --timeout 20m
 
-# pushd p95* || exit
+stressapptest -W -M "$(free -m | awk '/Mem:/ {print int($2 * 0.95)}')" -s 65000
+
+for i in {1..100}; do
+    echo "===== Iteration $i ====="
+    timeout --preserve-status 20m ./p95*/mprime -t
+    # shellcheck disable=SC2211
+    ./y-cruncher*/y-cruncher bench 16G
+    # shellcheck disable=SC2211
+    ./y-cruncher*/y-cruncher stress -M:92G -D:300 -TL:3600
+done
+
+pushd p95* || exit
 # Results are in ./results.txt file
-# timeout --preserve-status 2h ./mprime -t
-# popd || exit
+timeout --preserve-status 2h ./mprime -t
+popd || exit
 
-# phoronix-test-suite batch-run pts/ramspeed pts/tinymembench
-# memtester 10G 3
+phoronix-test-suite batch-run pts/ramspeed pts/tinymembench
 
 # phoronix-test-suite batch-install pts/ramspeed
 

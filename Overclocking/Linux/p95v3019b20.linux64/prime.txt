@@ -13,8 +13,8 @@ TortureWeak=0
 
 [Internals]
 OldCpuSpeed=5479
-NewCpuSpeedCount=0
-NewCpuSpeed=0
+NewCpuSpeedCount=2
+NewCpuSpeed=4869
 V30OptionsConverted=1
 WGUID_version=2
 Pid=6735
