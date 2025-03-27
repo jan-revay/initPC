@@ -76,6 +76,7 @@ install_gnome_extension "window-title-is-back@fthx"
 install_gnome_extension "windowIsReady_Remover@nunofarruca@gmail.com"
 install_gnome_extension "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
 install_gnome_extension "workspaces-by-open-apps@favo02.github.com"
+install_gnome_extension "hide-universal-access@akiirui.github.io"
 
 # install_gnome_extension "scroll-workspaces@gfxmonk.net"
 # install_gnome_extension "Vitals@CoreCoding.com"
