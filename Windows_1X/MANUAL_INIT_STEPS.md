@@ -1,5 +1,11 @@
 # Steps that need to be done manually (Windows 10)
 
+## File explorer
+
+- Hide extensions of known file types - disable
+- bookmark ~/x folder
+- bookmark ~ folder
+
 ## VMware virtual machines
 
 ### Enable forward/back mouse buttons
