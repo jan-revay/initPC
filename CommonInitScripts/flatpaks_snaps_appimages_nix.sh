@@ -70,5 +70,6 @@ else
     time sudo snap install helix --classic # TODO move to UbuntuCLI
     time sudo snap install gitkraken --classic
     time sudo snap install clion --classic
+    time sudo snap install --classic go
 
 fi
