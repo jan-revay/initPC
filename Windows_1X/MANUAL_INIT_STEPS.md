@@ -186,6 +186,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 - AMD chipset drivers
 - AMD adrenaline
 - OCCT + license
+- Install motherboard drivers & utilities (ASUS: Driverhub - default tab + "Driverhub individual kits")
 
 ## Install VMware Workstation Pro (or VirtualBox)
 
