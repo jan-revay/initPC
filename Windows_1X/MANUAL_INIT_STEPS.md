@@ -174,6 +174,13 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 
 ## Desktop icons - organize
 
+## Install programs that are not in winget
+
+- Ryzen master
+- AMD chipset drivers
+- AMD adrenaline
+- OCCT + license
+
 ## Install VMware workstation pro (or VirtualBox)
 
 ## Tun the initPC script again and check for errors resp. apps that did not install
