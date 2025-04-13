@@ -20,7 +20,7 @@ mouse.vusb.useBasicMouse = "FALSE"
 
 to .vmx file in the virtual machine image directory.
 
-### Turn off spectre and meldown mitigations in VMware
+### Turn off Spectre and Meltdown mitigations in VMware
 
 Add:
 
@@ -30,11 +30,11 @@ ulm.disableMitigations="TRUE"
 
 to .vmx file in the virtual machine image directory.
 
-## Windows settings that are not yet automatized
+## Windows settings that are not yet automated
 
 ### Enable SVK QWERTY and EN-US keyboard layouts
 
-Restart the PC afterwards, if I am unable to remove unneeded keyboard layouts use this manual to
+Restart the PC afterwards, if I am unable to remove unneeded keyboard layouts, use this manual to
 remove them in the Windows registry: <https://superuser.com/questions/957552/how-to-delete-a-keyboard-layout-in-windows-10/1340511#1340511>
 
 ### Mouse & display
@@ -54,15 +54,15 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 - Search -> Hide
 - Show ... -> disable all except "Show Windows Ink Workspace button"
 - taskbar settings
-    * all off except the following
-    * use small taskbar buttons -> on
-    * replace command prompt with Windows PowerShell in the menu (Win + X)
+    * all off except the following:
+    * Use small taskbar buttons -> on
+    * Replace the command prompt with Windows PowerShell in the menu (Win + X)
     * Combine taskbar buttons -> When taskbar is full
     * show taskbar on all displays -> on
     * show taskbar buttons on -> Taskbar where window is open
     * Combine buttons on other taskbars -> When taskbar is full
     * Show news and interests on the taskbar -> on, Icon, and text
-    * everything else is off
+    * Everything else is off
  
 ### Personalization - settings
 
@@ -78,7 +78,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 
 #### Background
 
-- set it to some gray color
+- Set it to some gray color
 
 #### Colors
 
@@ -130,25 +130,25 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
     * "Fade or slide menus into view"
     * "Fade or slide ToolTips into view"
     * Optional "Show shadows under windows"
-    * Show windows contents while dragging
+    * Show window contents while dragging
     * ... TODO find out what other options are doing
  
 ## Set first day of week
 
-1. Right-click at the clock/calendar widget in the taskbar
+1. Right-click on the clock/calendar widget in the taskbar
 2. Adjust date/time
 3. Related settings (link) - Date, time & regional formatting
 4. Regional format data - change data formats
-5. First day of week - Monday
+5. First day of the week - Monday
 
 ## Logiops
 
 1. Fix a bug that causes gestures to be way too insensitive:
     1) Go to Logiops and increase the sensitivity to 80 <https://www.reddit.com/r/logitech/comments/ssvuh8/set_exact_dpi_for_mx_master_3_logitech_options/>
     2) Go to Windows mouse settings and decrease the sensitivity to 2 ticks (in the standard mouse settings dialog, not the advanced)
-       note: there are two sliders for setting the pointer speed that work independently in Windows, one is in the settings app
+       Note: There are two sliders for setting the pointer speed that work independently in Windows, one is in the settings app
        and another is in the advanced mouse settings dialog
-1. SmartShift: set smartshift sensitivity to 90%
+1. SmartShift: Set smartshift sensitivity to 90%
 
 ## AltSnap
 
@@ -172,31 +172,31 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 ## Review & check preinstalled sw and drivers
 
 1. Review preinstalled sw & drivers
-2. uninstall bloatware (todo - titus debloater? https://github.com/ChrisTitusTech/winutil )
+2. Uninstall bloatware (todo - titus debloater? https://github.com/ChrisTitusTech/winutil )
 3. Turn off system services I don't need
-4. update windows and drivers
-5. check tat all necessary drivers are installed and work
+4. Update Windows and drivers
+5. Check that all necessary drivers are installed and work
 6. Run ookla speedtest on all network inferfaces
 
 ## Desktop icons - organize
 
-## Install programs that are not in winget
+## Install programs that are not in Winget
 
 - Ryzen master
 - AMD chipset drivers
 - AMD adrenaline
 - OCCT + license
 
-## Install VMware workstation pro (or VirtualBox)
+## Install VMware Workstation Pro (or VirtualBox)
 
-## Tun the initPC script again and check for errors resp. apps that did not install
+## Tune the initPC script again and check for errors resp. apps that did not install
 
 # TODO
 
 - Do some research on how Sync your settings work in Windows and set it up
-- adjust ClearType text
+- Adjust ClearType text
 - play around with fractional scaling
-- adjust text size
-- download additional fonts
-- study this - in order to automatize more: <https://learn.microsoft.com/en-us/windows-hardware/get-started/?view=windows-11>
+- Adjust text size
+- Download additional fonts
+- study this - in order to automate more: <https://learn.microsoft.com/en-us/windows-hardware/get-started/?view=windows-11>
 - Optimizations from <https://www.youtube.com/watch?v=RswaXcWWCo0> and <https://www.youtube.com/watch?v=uCVc-7z-toE>
