@@ -5,3 +5,10 @@
 - run AMD curve optimizer (Ryzen master)
 - find max memory freq
 - ...
+
+## Programs to install
+
+- Zen timings
+- prime95
+- y-cruncher
+- ryzen master
