@@ -12,3 +12,5 @@
 - prime95
 - y-cruncher
 - ryzen master
+- HWinfo64  (different from HWmonitor)
+- OCCT
