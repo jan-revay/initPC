@@ -187,6 +187,12 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 - AMD adrenaline
 - OCCT + license
 - Install motherboard drivers & utilities (ASUS: Driverhub - default tab + "Driverhub individual kits")
+- Rufus
+- Cinebench
+- AutoLogon
+- XPpen drivers
+- Zentimings
+- y-cruncher
 
 ## Install VMware Workstation Pro (or VirtualBox)
 
