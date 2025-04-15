@@ -141,6 +141,7 @@ gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Supe
 gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Alt>s']"
 
 # TODO - maybe add this where extensions are installed
+# TODO add line breaks
 
 gsettings --schemadir \
     "${HOME}/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev/schemas" \
@@ -164,12 +165,18 @@ gsettings --schemadir \
 gsettings --schemadir \
     "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" \
     set org.gnome.shell.extensions.panelScroll left "workspace"
-
 gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" set org.gnome.shell.extensions.panelScroll right "workspace"
-
 gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" set org.gnome.shell.extensions.panelScroll wrap "false"
-
 gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" set org.gnome.shell.extensions.panelScroll debounce "0"
+
+# quake-terminal@diegodario88.github.io
+
+gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal animation-time "0"
+gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal auto-hide-window "false"
+gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal horizontal-alignment "1"
+gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal horizontal-size "40"
+gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal vertical-size "50"
+gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal always-on-top "true"
 
 # TODO - keybindings - tostudy
 # What is the difference between "Switch applications", "Switch windows",
