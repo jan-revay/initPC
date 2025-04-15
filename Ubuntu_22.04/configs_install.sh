@@ -145,41 +145,67 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Al
 
 # TODO - maybe add this where extensions are installed
 # TODO add line breaks
+# TODO consider direct dconf backup/restore instead
+# https://ostechnix.com/backup-and-restore-linux-desktop-system-settings-with-dconf/
+readonly SCHDIR="${HOME}/.local/share/gnome-shell/extensions/"
 
 gsettings --schemadir \
-    "${HOME}/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev/schemas" \
+    "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history toggle-menu "['<Super>v']"
 
-gsettings --schemadir \
-    "${HOME}/.local/share/gnome-shell/extensions/focus-changer@heartmire/schemas" \
+gsettings --schemadir "${SCHDIR}/focus-changer@heartmire/schemas" \
     set org.gnome.shell.extensions.focus-changer focus-up "['<Shift><Control><Alt><Super>Up']"
-gsettings --schemadir \
-    "${HOME}/.local/share/gnome-shell/extensions/focus-changer@heartmire/schemas" \
+gsettings --schemadir "${SCHDIR}/focus-changer@heartmire/schemas" \
     set org.gnome.shell.extensions.focus-changer focus-down "['<Shift><Control><Alt><Super>Down']"
-gsettings --schemadir \
-    "${HOME}/.local/share/gnome-shell/extensions/focus-changer@heartmire/schemas" \
+gsettings --schemadir "${SCHDIR}/focus-changer@heartmire/schemas" \
     set org.gnome.shell.extensions.focus-changer focus-left "['<Shift><Control><Alt><Super>Left']"
-gsettings --schemadir \
-    "${HOME}/.local/share/gnome-shell/extensions/focus-changer@heartmire/schemas" \
+gsettings --schemadir "${SCHDIR}/focus-changer@heartmire/schemas" \
     set org.gnome.shell.extensions.focus-changer focus-right "['<Shift><Control><Alt><Super>Right']"
 
 # panelScroll@sun.wxg@gmail.com
 
-gsettings --schemadir \
-    "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" \
+gsettings --schemadir "${SCHDIR}/panelScroll@sun.wxg@gmail.com/schemas" \
     set org.gnome.shell.extensions.panelScroll left "workspace"
-gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" set org.gnome.shell.extensions.panelScroll right "workspace"
-gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" set org.gnome.shell.extensions.panelScroll wrap "false"
-gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" set org.gnome.shell.extensions.panelScroll debounce "0"
+gsettings --schemadir "${SCHDIR}/panelScroll@sun.wxg@gmail.com/schemas" \
+    set org.gnome.shell.extensions.panelScroll right "workspace"
+gsettings --schemadir "${SCHDIR}/panelScroll@sun.wxg@gmail.com/schemas" \
+    set org.gnome.shell.extensions.panelScroll wrap "false"
+gsettings --schemadir "${SCHDIR}/panelScroll@sun.wxg@gmail.com/schemas" \
+    set org.gnome.shell.extensions.panelScroll debounce "0"
 
 # quake-terminal@diegodario88.github.io
 
-gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal animation-time "0"
-gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal auto-hide-window "false"
-gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal horizontal-alignment "1"
-gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal horizontal-size "40"
-gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal vertical-size "50"
-gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/quake-terminal@diegodario88.github.io/schemas" set org.gnome.shell.extensions.quake-terminal always-on-top "true"
+gsettings --schemadir "${SCHDIR}/quake-terminal@diegodario88.github.io/schemas" \
+    set org.gnome.shell.extensions.quake-terminal animation-time "0"
+gsettings --schemadir "${SCHDIR}/quake-terminal@diegodario88.github.io/schemas" \
+    set org.gnome.shell.extensions.quake-terminal auto-hide-window "false"
+gsettings --schemadir "${SCHDIR}/quake-terminal@diegodario88.github.io/schemas" \
+    set org.gnome.shell.extensions.quake-terminal horizontal-alignment "1"
+gsettings --schemadir "${SCHDIR}/quake-terminal@diegodario88.github.io/schemas" \
+    set org.gnome.shell.extensions.quake-terminal horizontal-size "40"
+gsettings --schemadir "${SCHDIR}/quake-terminal@diegodario88.github.io/schemas" \
+    set org.gnome.shell.extensions.quake-terminal vertical-size "50"
+gsettings --schemadir "${SCHDIR}/quake-terminal@diegodario88.github.io/schemas" \
+    set org.gnome.shell.extensions.quake-terminal always-on-top "true"
+
+# clipboard-history@alexsaveau.dev
+gsettings set org.gnome.shell.keybindings toggle-message-tray "[]"
+gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
+    set org.gnome.shell.extensions.clipboard-history window-width-percentage "100"
+gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
+    set org.gnome.shell.extensions.clipboard-history history-size "10000"
+gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
+    set org.gnome.shell.extensions.clipboard-history cache-size "1000"
+gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
+    set org.gnome.shell.extensions.clipboard-history display-mode "1"
+gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
+    set org.gnome.shell.extensions.clipboard-history topbar-preview-size "35"
+gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
+    set org.gnome.shell.extensions.clipboard-history toggle-private-mode "[]"
+gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
+    set org.gnome.shell.extensions.clipboard-history next-entry "['<Alt>v']"
+gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
+    set org.gnome.shell.extensions.clipboard-history prev-entry "['<Shift><Alt>v']"
 
 # TODO - keybindings - tostudy
 # What is the difference between "Switch applications", "Switch windows",
