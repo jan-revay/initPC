@@ -67,6 +67,9 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview true
 
 gsettings set org.gnome.desktop.interface text-scaling-factor '1.25'
 gsettings set org.gnome.desktop.interface cursor-size '64'
+gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
+gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
+gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
 
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'lower' # 'minimize'
