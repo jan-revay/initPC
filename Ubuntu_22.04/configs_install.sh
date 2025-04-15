@@ -65,7 +65,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button fals
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview true
 
-gsettings set org.gnome.desktop.interface text-scaling-factor '1.4'
+gsettings set org.gnome.desktop.interface text-scaling-factor '1.25'
 gsettings set org.gnome.desktop.interface cursor-size '64'
 
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
