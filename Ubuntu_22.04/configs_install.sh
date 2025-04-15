@@ -140,6 +140,8 @@ gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s'
 gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Super>o']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Alt>s']"
 
+# TODO - maybe add this where extensions are installed
+
 gsettings --schemadir \
     "${HOME}/.local/share/gnome-shell/extensions/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history toggle-menu "['<Super>v']"
@@ -156,6 +158,18 @@ gsettings --schemadir \
 gsettings --schemadir \
     "${HOME}/.local/share/gnome-shell/extensions/focus-changer@heartmire/schemas" \
     set org.gnome.shell.extensions.focus-changer focus-right "['<Shift><Control><Alt><Super>Right']"
+
+# panelScroll@sun.wxg@gmail.com
+
+gsettings --schemadir \
+    "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" \
+    set org.gnome.shell.extensions.panelScroll left "workspace"
+
+gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" set org.gnome.shell.extensions.panelScroll right "workspace"
+
+gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" set org.gnome.shell.extensions.panelScroll wrap "false"
+
+gsettings --schemadir "${HOME}/.local/share/gnome-shell/extensions/panelScroll@sun.wxg@gmail.com/schemas" set org.gnome.shell.extensions.panelScroll debounce "0"
 
 # TODO - keybindings - tostudy
 # What is the difference between "Switch applications", "Switch windows",
