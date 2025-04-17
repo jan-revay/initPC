@@ -39,6 +39,8 @@ function install_gnome_extension
 
     # TODO some extensions do not compile their schemas on the installation hence we compile them
     # manually. TODO investigate and remove if fixed.
+    # TODO make sure that this is also done correctly when extension is updated resp. if I rerun
+    # this code and the extension is already installed
     glib-compile-schemas "${HOME}/.local/share/gnome-shell/extensions/${EXTENSION_ID}/schemas" || true
 
     #    OLD code - needs user interaction and hence breaks CI TODO DELETE
