@@ -65,7 +65,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button fals
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview true
 
-gsettings set org.gnome.desktop.interface text-scaling-factor '1.25'
+gsettings set org.gnome.desktop.interface text-scaling-factor '1.3'
 gsettings set org.gnome.desktop.interface cursor-size '64'
 gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
 gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
