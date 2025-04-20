@@ -162,6 +162,10 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 
 (TODO - make it automatic)
 
+## Keyboard shortcut
+
+- set Ctrl+alt+T to open terminal (create shortcut to the terminal on desktop and add the shortcut key) https://chatgpt.com/c/680438c7-db18-800d-b762-57f179a19e69
+
 ## Powertoys
 
 ### Set keyboard shortcuts in Powertoys
