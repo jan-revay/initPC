@@ -164,7 +164,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 
 ## Keyboard shortcut
 
-- set Ctrl+alt+T to open terminal (create shortcut to the terminal on desktop and add the shortcut key) https://chatgpt.com/c/680438c7-db18-800d-b762-57f179a19e69
+- set Ctrl+alt+T to open terminal (create a shortcut to the terminal on the desktop and add the shortcut key) [https://chatgpt.com/c/680438c7-db18-800d-b762-57f179a19e69](https://chatgpt.com/share/68043ead-db74-800d-a457-967cff5d6627)
 
 ## Powertoys
 
