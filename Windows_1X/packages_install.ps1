@@ -131,6 +131,7 @@ $WINGET_PACKAGES = @(
     'Ninja-build.Ninja'
     'Microsoft.VisualStudio.2022.BuildTools'
     'Cppcheck.Cppcheck'
+    'Microsoft.WinDbg'
 
 # Web browsers
     'Google.Chrome'
