@@ -207,6 +207,12 @@ gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
 gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history prev-entry "['<Shift><Alt>v']"
 
+# TODO - does not work for some reason...
+# for profile in $(gsettings get org.gnome.Terminal.ProfilesList list | tr -d "[],'"); do
+  # profile_path="/org/gnome/Terminal/Legacy/Profiles:/:$profile/"
+  # gsettings set "org.gnome.Terminal.Legacy.Profile:$profile_path" scrollback-lines 500000
+# done
+
 # TODO - keybindings - tostudy
 # What is the difference between "Switch applications", "Switch windows",
 # "Switch windows directly", "Switch windows of an application", and

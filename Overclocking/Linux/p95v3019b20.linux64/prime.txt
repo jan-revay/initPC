@@ -7,7 +7,7 @@ UsePrimenet=0
 TortureHyperthreading=1
 MinTortureFFT=4
 MaxTortureFFT=8192
-TortureMem=84684
+TortureMem=84787
 TortureTime=6
 TortureWeak=0
 
