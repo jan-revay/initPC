@@ -209,8 +209,8 @@ gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
 
 # TODO - does not work for some reason...
 # for profile in $(gsettings get org.gnome.Terminal.ProfilesList list | tr -d "[],'"); do
-  # profile_path="/org/gnome/Terminal/Legacy/Profiles:/:$profile/"
-  # gsettings set "org.gnome.Terminal.Legacy.Profile:$profile_path" scrollback-lines 500000
+# profile_path="/org/gnome/Terminal/Legacy/Profiles:/:$profile/"
+# gsettings set "org.gnome.Terminal.Legacy.Profile:$profile_path" scrollback-lines 500000
 # done
 
 # TODO - keybindings - tostudy
