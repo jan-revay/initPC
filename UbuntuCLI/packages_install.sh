@@ -56,7 +56,7 @@ APT_PACKAGES=(
     tldr # TODO learn how to use
     libcrack2
     flex # fast lexical analyzer generator
-    nvme-cli
+    nvme-cli fio
 
     # package managers
     npm rubygems pipx python3-pip
