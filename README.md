@@ -264,6 +264,8 @@ scripts with my old dconf dumps (backup_config repo)
 1. Configure git config pull.rebase or pull.ff=only see:
    1. <https://www.reddit.com/r/git/comments/1ddkm9t/make_git_pull_rebase_default_a_bad_idea_different/>
    2. <https://stackoverflow.com/questions/13846300/how-to-make-git-pull-use-rebase-by-default-for-all-my-repositories>
+1. Identify which machine am I running on and add machine specific install scripts
+e.g. on 9950x add hddoff alias (or detect all HDDs and create the alias on the fly)
 
 ## Keyboard layout plans
 
