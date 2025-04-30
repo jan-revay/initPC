@@ -266,6 +266,10 @@ scripts with my old dconf dumps (backup_config repo)
    2. <https://stackoverflow.com/questions/13846300/how-to-make-git-pull-use-rebase-by-default-for-all-my-repositories>
 1. Identify which machine am I running on and add machine specific install scripts
 e.g. on 9950x add hddoff alias (or detect all HDDs and create the alias on the fly)
+    1. Create a hash function that will take mainboard serial number, network card MAC
+    number, amount of RAM and CPU model as an input and produce a hash that I will
+    use to distinguish my different machines. Have a more thorough look at `dmidecode`
+    command...
 
 ## Keyboard layout plans
 
