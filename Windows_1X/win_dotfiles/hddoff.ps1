@@ -1,5 +1,39 @@
 Set-PSDebug -Trace 1
 
+# TODO make the script more compact
+# TODO add Set-Disk -Number 1 -IsOffline $true
+
+# Desired HDD identifier
+# $targetFriendlyName = "WDC WD102KRYZ-01A5AB0"
+# $targetSerial       = "VH1JR5YM"
+
+# # Find the physical disk matching both FriendlyName and SerialNumber
+# $targetDisk = Get-PhysicalDisk | Where-Object {
+#     $_.FriendlyName -eq $targetFriendlyName -and $_.SerialNumber -eq $targetSerial
+# }
+
+# if (-not $targetDisk) {
+#     Write-Error "Target disk not found using FriendlyName and SerialNumber."
+#     exit 1
+# }
+
+# # Map PhysicalDisk to corresponding Disk Number
+# $diskNumber = (Get-Disk | Where-Object {
+#     $_.UniqueId -eq $targetDisk.UniqueId
+# }).Number
+
+# if ($null -eq $diskNumber) {
+#     Write-Error "Failed to match PhysicalDisk to Disk Number."
+# }
+
+# # Offline the disk
+# try {
+#     Set-Disk -Number $diskNumber -IsOffline $true -ErrorAction Stop
+#     Write-Host "Disk $diskNumber offlined successfully."
+# } catch {
+#     Write-Error "Failed to offline disk $diskNumber: $_"
+# }
+
 cd "C:\Users\jr\initPC\Windows_1X\win_dotfiles"
 Start-Transcript -Path "hddoffOutput.log" -Append
 
