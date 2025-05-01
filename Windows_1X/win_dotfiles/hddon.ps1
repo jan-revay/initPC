@@ -1,0 +1,4 @@
+Set-PSDebug -Trace 1
+
+& "C:\Program Files (x86)\Windows Kits\10\Tools\10.0.26100.0\x64\devcon.exe" enable "*WD102KRYZ-01A5AB0*"
+& "C:\Program Files (x86)\hdparm\hdparm.exe" -S 2 hda
