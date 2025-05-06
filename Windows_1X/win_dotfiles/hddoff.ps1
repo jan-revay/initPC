@@ -62,6 +62,9 @@ if ($model -ne $expectedModel -or $serial -ne $expectedSerial) {
 }
 
 # & is used to execute a command string with spaces
-& $devcon disable "*WD102KRYZ-01A5AB0*"
+# TODO figure out why longer paths do not work
+& $devcon remove "*SCSI\DISK&VEN_WDC&PROD_WD102KRYZ-01A5AB\7&16843F94&0&010000*"
+& $devcon remove "*PROD_WD102KRYZ-01A5AB*"
+& $devcon remove "*WD102KRYZ-01A5AB0*"
 pause
 

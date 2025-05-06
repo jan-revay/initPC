@@ -9,6 +9,7 @@ $expectedSerial = "VH1JR5YM"
 $hdparm = "C:\Program Files (x86)\hdparm\hdparm.exe"
 $devcon = "C:\Program Files (x86)\Windows Kits\10\Tools\10.0.26100.0\x64\devcon.exe"
 
+& $devcon rescan
 & $devcon enable "*WD102KRYZ-01A5AB0*"
 
 foreach ($dev in 'sda','sdb','sdc','sdd','sde','sdf','sdg','sdh') {
