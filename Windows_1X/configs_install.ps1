@@ -18,6 +18,7 @@ $ErrorActionPreference = "Stop"
 Copy-Item -Force $PSScriptRoot/win_dotfiles/Profile.ps1 $PSHOME/Profile.ps1
 
 powercfg.exe /hibernate off
+# TODO - also change pagefile size
 
 # Manually changed settings
 # Todo try to automatically set these windows settings in future
