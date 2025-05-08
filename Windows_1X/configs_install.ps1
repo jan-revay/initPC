@@ -17,6 +17,8 @@ $ErrorActionPreference = "Stop"
 # TODO pwsh does not use this profile for som reason -> also set it for pwsh
 Copy-Item -Force $PSScriptRoot/win_dotfiles/Profile.ps1 $PSHOME/Profile.ps1
 
+powercfg.exe /hibernate off
+
 # Manually changed settings
 # Todo try to automatically set these windows settings in future
 # Settings -> multitasking -> on the taskbar, show the windows that are open on all desktops
