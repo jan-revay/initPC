@@ -4,7 +4,7 @@
 
 # Automatic import
 
-In driver config menu, wheel -> Import settings -> import the file ./win_dotfiles/PenTablet_Config_2025-05-14.pcfg
+In driver config menu, settings wheel -> Import config -> import the file ./win_dotfiles/PenTablet_Config_2025-05-14.pcfg
 
 # Manual import
 
