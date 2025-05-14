@@ -215,4 +215,31 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 # TODO - investigate more and integrate: https://github.com/MScholtes/VirtualDesktop
 # Install-Module -Name VirtualDesktop
 
+## INSTALL RAW .EXE PACKAGES
+
+$downloadUrl = "https://www.xp-pen.com/download/file.html?id=2866&pid=51&ext=zip"
+$zipPath = "$env:TEMP\xppen_driver.zip"
+$extractPath = "$env:TEMP\xppen_driver"
+
+# Create the extract path if it doesn't exist
+if (-Not (Test-Path -Path $extractPath)) {
+    New-Item -ItemType Directory -Path $extractPath | Out-Null
+}
+
+# Download the ZIP file
+Invoke-WebRequest -Uri $downloadUrl -OutFile $zipPath
+
+# Unzip the file
+Expand-Archive -Path $zipPath -DestinationPath $extractPath -Force
+
+# Find the .exe installer (assumes there's only one .exe inside the ZIP)
+$exeFile = Get-ChildItem -Path $extractPath -Filter *.exe -Recurse | Select-Object -First 1
+
+# Check if the EXE was found
+if ($exeFile) {
+    Start-Process -FilePath $exeFile.FullName -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-' -Wait
+} else {
+    Write-Host "No executable installer found in the extracted files."
+}
+
 Set-PSDebug -Trace 0
