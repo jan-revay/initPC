@@ -6,8 +6,8 @@
 
 Key              |  Shortcut  | MS Whiteboard tool
 -----------------|------------|--------------------
-Bottom button    | Alt+X      | *Ereaser*  
 Top button       | Alt+W      | *Switch to pen*
+Bottom button    | Alt+X      | *Ereaser*
 
 ## Roller settings
 
