@@ -2,6 +2,12 @@
 
 ## Drivers download page: <https://www.xp-pen.com/download/star-06.html>
 
+# Automatic import
+
+In driver config menu, wheel -> Import settings -> import file ./win_dotfiles/PenTablet_Config_2025-05-14.pcfg
+
+# Manual import
+
 ## Pen settings
 
 Key              |  Shortcut  | MS Whiteboard tool
