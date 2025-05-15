@@ -133,6 +133,11 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
     * Show window contents while dragging
     * ... TODO find out what other options are doing
  
+#### Hibernation file and pagefile in the advanced settings
+
+- ~~turn off the hibernation file (run `powercfg.exe /hibernate off` as administrator, this is already done in initPC script)~~
+- set the pagefile size to 20GB min - 32GB max (system properties -> Advanced -> Performance options -> Advanced -> Virtual Memory)
+ 
 ## Set first day of week
 
 1. Right-click on the clock/calendar widget in the taskbar
