@@ -9,3 +9,15 @@ on:
     - '.github/workflows/mac.yml'
   pull_request:
     branches: [ "devel", "testing", "stable", "LTS" ]
+
+
+jobs:
+  run-script:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run script
+        run: MacOS/packages_install.sh
