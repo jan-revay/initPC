@@ -19,5 +19,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Make script executable
+        run: chmod +x ./MacOS/packages_install.sh
+
       - name: Run script
         run: ./MacOS/packages_install.sh
