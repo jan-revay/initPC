@@ -1,5 +1,7 @@
 #!/bin/bash -x
 
+# TODO       - name: Make script executable
+#        run: chmod +x ./MacOS/packages_install.sh
 # Inspiration:
 # - https://github.com/nhoizey/macOS-init/blob/main/run-first.sh
 # https://about.gitlab.com/blog/2020/04/17/dotfiles-document-and-automate-your-macbook-setup/
