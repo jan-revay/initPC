@@ -20,4 +20,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run script
-        run: MacOS/packages_install.sh
+        run: ./MacOS/packages_install.sh
