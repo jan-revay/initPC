@@ -1,5 +1,13 @@
 # Steps that need to be done manually (Windows 11)
 
+
+## If on VM or additional Windows partition
+
+### Activate windows
+
+- using the official key on the main partition
+- using <https://massgrave.dev/> elsewhere (might be reinstalled often...)
+
 ## File explorer
 
 - Hide extensions of known file types - disable
@@ -42,15 +50,17 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 1. Go to: `Control Panel\All Control Panel Items\Ease of Access Center\Make the mouse easier to use`
 2. Mouse pointers -> "Windows Inverted (extra-large)"
 3. Set: "Activate a window by hovering over it with the mouse"
-4. Go to: `Control Panel\All Control Panel Items\Ease of Access Center\Make computer easier to use`
-5. Set: "Make the focus rectangle thicker" and set the thickness of the blinking cursor to 4
-6. Set: "Turn off unnecessary animations" (when possible)
-
+4. Mouse settings -> "Hide pointer while typing" -> uncheck (TODO test how it works)
+5. Go to: `Control Panel\All Control Panel Items\Ease of Access Center\Make computer easier to use`
+6. Set: "Make the focus rectangle thicker"
+7. Set the thickness of the blinking cursor to 3
+8. Set: "Turn off unnecessary animations" (when possible)
+9. Set: Turn High Contrast on or off when left ALT + left SHIFT + PRINT SCREEN is pressed -> uncheck
 
 ### Taskbar
 
 #### Right-click on the taskbar
-- Toolbars - disable all
+- Toolbars - disable all except "Task view"
 - Search -> Hide
 - Show ... -> disable all except "Show Windows Ink Workspace button"
 - taskbar settings
