@@ -7,6 +7,7 @@
 
 - using the official key on the main partition
 - using <https://massgrave.dev/> elsewhere (might be reinstalled often...) TODO verify reliability & safety
+      -  https://www.google.com/search?q=userguide+get.activated.win&rlz=1C1GCEA_enSK1157SK1157&oq=userguide+get.activated.win&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIHCAIQABjvBTIKCAMQABiABBiiBDIHCAQQABjvBdIBCDQ0MTlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
 
 ## File explorer
 
