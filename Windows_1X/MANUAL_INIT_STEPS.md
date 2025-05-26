@@ -6,7 +6,7 @@
 ### Activate windows
 
 - using the official key on the main partition
-- using <https://massgrave.dev/> elsewhere (might be reinstalled often...)
+- using <https://massgrave.dev/> elsewhere (might be reinstalled often...) TODO verify reliability & safety
 
 ## File explorer
 
