@@ -1,4 +1,4 @@
-# Steps that need to be done manually (Windows 10)
+# Steps that need to be done manually (Windows 11)
 
 ## File explorer
 
