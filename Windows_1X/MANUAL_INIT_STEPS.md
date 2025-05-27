@@ -194,6 +194,16 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 
 1. Remap AltSnap key to Win
 
+##  windows-virtualdesktop-helper
+
+- run from start menu -> taskbar icon right click -> Settings
+  - Show Previous / Next Desktop in Icon Tray -> uncheck
+  - Show Overlay when switching Desktop -> 500ms
+    - Animate In/Out -> Uncheck
+    - Position -> Top, middle
+- Use Hot Keys to Jump to Desktop -> Alt+#
+- Startup with Windows
+
 ## XPpen tablet
 
 1. Install drivers and follow the settings guide in CommonInitScripts (todo add link)
