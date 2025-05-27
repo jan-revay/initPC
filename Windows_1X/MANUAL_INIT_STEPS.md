@@ -95,7 +95,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 
 - Night light
   - Strength -> max
-  - Schedule -> 21:00 to 7:00
+  - Schedule -> 20:30 to 7:00
 
 ### System -> Storage
 - Automatic user content cleanup -> off
@@ -212,6 +212,11 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 
 (TODO - make it automatic)
 
+## Schedule tasks
+
+- HddOff script at startup
+- Shutdown at 21:00 until 7:00
+
 ## Keyboard shortcut
 
 - set Ctrl+alt+T to open terminal (create a shortcut to the terminal on the desktop and add the shortcut key) [https://chatgpt.com/c/680438c7-db18-800d-b762-57f179a19e69](https://chatgpt.com/share/68043ead-db74-800d-a457-967cff5d6627)
@@ -221,7 +226,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 ### Set keyboard shortcuts in Powertoys
 
 1. Always on top
-2. shortcuts for switching virtual desktop via keyboard shortcuts remapping
+2. Shortcuts for switching virtual desktop via keyboard shortcuts remapping
 
 ## Review & check preinstalled sw and drivers
 
@@ -254,7 +259,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 
 # TODO
 
-- Do some research on how Sync your settings work in Windows and set it up
+- Do some research on how Sync your settings work in Windows, and set it up
 - Adjust ClearType text
 - play around with fractional scaling
 - Adjust text size
