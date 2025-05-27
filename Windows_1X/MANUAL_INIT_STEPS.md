@@ -81,11 +81,31 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 
 #### Start menu
 
+- Layout -> More pins -> Check
+- Show the most used apps -> Check
+- Show recommended files in start, recent files in File Explorer, and items in Jump lists -> on
+- Show recommendations for tips, shortcuts, new app,s and more -> off
 - Show app list in start menu -> on
 - Show recently added apps -> on
 - Show most used apps -> on
 - Show recently opened items in Jump Lists on start or the taskbar and in file explorer Quick access -> on
 - Choose which folders appear on Start -> Settings and Personal folder
+
+#### Display
+
+- Night light
+  - Strength -> max
+  - Schedule -> 21:00 to 7:00
+
+### System -> Storage
+- Automatic user content cleanup -> off
+
+### System -> For developers
+- File Explorer
+  - Show file extensions
+  - Show full path in title bar
+- terminal
+  - Windows terminal
 
 #### Background
 
@@ -111,13 +131,13 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 - Text cursor - Turn on text cursor indicator (pink, 1/4 size)
 - (maybe - Display - Show animations in Windows - off? - that is already set above with greater granularity)
 - (maybe - Display -> make text bigger to around 105%)
-- night light settings - from 21 to 7, 50%
+- Visual effects -> Always show scrollbars -> on?
 
 ### System - settings
 
 1. Go to Windows Settings -> System
 
-- Power mode - set to "Best performance"
+- Power mode - set to "Best performance"/"Ultimate performance"
 - Power & Sleep - set all to Never - but set the screen to turn off after 45 minutes
 - Multitasking
     * snap windows -> on (plus all related checkboxes)
@@ -149,13 +169,17 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 - ~~turn off the hibernation file (run `powercfg.exe /hibernate off` as administrator, this is already done in initPC script)~~
 - set the pagefile size to 20GB min - 32GB max (system properties -> Advanced -> Performance options -> Advanced -> Virtual Memory)
  
-## Set first day of week
+## Set the first day of the week
 
 1. Right-click on the clock/calendar widget in the taskbar
 2. Adjust date/time
 3. Related settings (link) - Date, time & regional formatting
 4. Regional format data - change data formats
 5. First day of the week - Monday
+
+### Time & language -> Typing -> Advanced keyboard settings
+
+- Let me set a different input method for each app window -> check
 
 ## Logiops
 
