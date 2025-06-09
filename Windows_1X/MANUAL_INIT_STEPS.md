@@ -252,6 +252,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 - XPpen drivers
 - Zentimings
 - y-cruncher
+- **Crucial storage executive**
 
 ## Install VMware Workstation Pro (or VirtualBox)
 
