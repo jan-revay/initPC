@@ -153,7 +153,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 - Now click "Advanced system settings".
 - Click on the "Advanced" tab
 - Click "Settings" in the "Performance" section
-- Select "Let Windows choose...."
+- Select "Let Windows choose..."
 - Additionally, to that deselect:
     * "Animate controls and elements inside Windows" (so that virtual desktops are switched instantly)
     * "Animate windows when minimizing and maximizing" (it will also improve the speed of switching virtual desktops)
@@ -167,7 +167,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 #### Hibernation file and pagefile in the advanced settings
 
 - ~~turn off the hibernation file (run `powercfg.exe /hibernate off` as administrator, this is already done in initPC script)~~
-- set the pagefile size to 20GB min - 32GB max (system properties -> Advanced -> Performance options -> Advanced -> Virtual Memory)
+- set the pagefile size to 12882MB min - 20GB max (system properties -> Advanced -> Performance options -> Advanced -> Virtual Memory)
  
 ## Set the first day of the week
 
