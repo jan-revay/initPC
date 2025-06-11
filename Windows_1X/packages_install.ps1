@@ -123,7 +123,7 @@ $WINGET_PACKAGES = @(
     'wez.wezterm'
 
 # compilers, build tools and interpreters
-    'Python.Python.3.12' # Try always installing the latest Python package instead of fixing the version
+    'Python.Python.3.13' # Try always installing the latest Python package instead of fixing the version
     'Kitware.CMake'
     'LLVM.LLVM'
     'Rustlang.Rustup'
