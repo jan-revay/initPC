@@ -60,7 +60,7 @@ install_gnome_extension "focus-changer@heartmire"
 install_gnome_extension "focus@scaryrawr.github.io"
 install_gnome_extension "grand-theft-focus@zalckos.github.com"
 # install_gnome_extension "improved-workspace-indicator@michaelaquilina.github.io" # - outdated for Ubuntu 25.04
-# install_gnome_extension "lilypad@shendrew.github.io" # - outdated for Ubuntu 25.04
+install_gnome_extension "lilypad@shendrew.github.io"
 install_gnome_extension "middleclickclose@paolo.tranquilli.gmail.com"
 install_gnome_extension "panelScroll@sun.wxg@gmail.com"
 install_gnome_extension "quake-terminal@diegodario88.github.io"
@@ -75,10 +75,13 @@ install_gnome_extension "Vitals@CoreCoding.com"
 install_gnome_extension "weeks-start-on-monday@extensions.gnome-shell.fifi.org"
 install_gnome_extension "window-calls@domandoman.xyz"
 install_gnome_extension "window-title-is-back@fthx"
+# TODO - find alterantive
 # install_gnome_extension "windowIsReady_Remover@nunofarruca@gmail.com" # - outdated for Ubuntu 25.04
 install_gnome_extension "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
 install_gnome_extension "workspaces-by-open-apps@favo02.github.com"
-install_gnome_extension "hide-universal-access@akiirui.github.io"
+# install_gnome_extension "hide-universal-access@akiirui.github.io" - I am doing it via Lilpad
+# TODO consider whether it is a good idea as if the icons will fit, I can see them always
+# and if they would not fit, lilpad will not help with that anyway...
 install_gnome_extension "highlight-focus@pimsnel.com"
 
 # DISABLE extensions
