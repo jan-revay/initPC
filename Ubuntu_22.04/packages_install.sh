@@ -100,7 +100,7 @@ readonly APT_GUI_PACKAGES=(
     shutter # TODO learn how to use efficiently resp. remove if unused
 
     # ===== GUI TWEAKS AND AUTOMATION =====
-    dconf-editor gnome-tweaks
+    dconf-editor gnome-tweaks gnome-shell-extension-manager
 
     # ===== CODING =====
     sqlitebrowser
