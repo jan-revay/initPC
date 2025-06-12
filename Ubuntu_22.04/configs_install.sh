@@ -96,6 +96,7 @@ gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', 
 # and make sure that the process is idempotent
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Super>space']"
+gsettings set org.gnome.desktop.interface enable-animations false
 
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Super>h']"
 # TODO FIX: ctrl+super+j switches to workspace 6 for some reason...
