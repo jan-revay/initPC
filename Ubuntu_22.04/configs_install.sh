@@ -98,19 +98,19 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Super>space']"
 gsettings set org.gnome.desktop.interface enable-animations false
 
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Super>h']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Super>h', '<Alt>1']"
 # TODO FIX: ctrl+super+j switches to workspace 6 for some reason...
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control><Super>j']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Control><Super>k']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Control><Super>l']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control><Super>j', '<Alt>2']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Control><Super>k', '<Alt>3']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Control><Super>l', '<Alt>4']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 \
-    "['<Control><Super>semicolon', '<Control><Super>ocircumflex']"
+    "['<Control><Super>semicolon', '<Control><Super>ocircumflex', '<Alt>5']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 \
-    "['<Control><Super>apostrophe', '<Control><Super>section']"
+    "['<Control><Super>apostrophe', '<Control><Super>section', '<Alt>6']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 \
-    "['<Control><Super>Return']"
+    "['<Control><Super>Return', '<Alt>7']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 \
-    "['<Control><Super>backslash', '<Control><Super>ncaron']"
+    "['<Control><Super>backslash', '<Control><Super>ncaron', '<Alt>8']"
 
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right']"
