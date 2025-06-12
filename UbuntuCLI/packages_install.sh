@@ -100,7 +100,7 @@ fi
 # Kali and Debian testing do not have these packages...
 # TODO try a more elegant fix
 if bash -c '. ../prelude.sh; distro_is ubuntu || (distro_is debian && distro_version_le 12)' &> /dev/null; then
-    APT_PACKAGES+=(clazy hotspot heaptrack software-properties-common)
+    APT_PACKAGES+=(clazy heaptrack software-properties-common)
 fi
 
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
