@@ -56,6 +56,7 @@ function install_gnome_extension
 
 # TODO add https://extensions.gnome.org/extension/4356/top-bar-organizer/ ?
 # TODO add https://extensions.gnome.org/extension/3843/just-perfection/
+# TODO consider https://extensions.gnome.org/extension/7777/workspace-buttons-with-app-icons/
 install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
 install_gnome_extension "clipboard-history@alexsaveau.dev"
 install_gnome_extension "focus-changer@heartmire"
