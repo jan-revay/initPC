@@ -54,13 +54,16 @@ function install_gnome_extension
     #    fi
 }
 
+# TODO add https://extensions.gnome.org/extension/4356/top-bar-organizer/ ?
+# TODO add https://extensions.gnome.org/extension/3843/just-perfection/
 install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
 install_gnome_extension "clipboard-history@alexsaveau.dev"
 install_gnome_extension "focus-changer@heartmire"
 install_gnome_extension "focus@scaryrawr.github.io"
 install_gnome_extension "grand-theft-focus@zalckos.github.com"
 # install_gnome_extension "improved-workspace-indicator@michaelaquilina.github.io" # - outdated for Ubuntu 25.04
-install_gnome_extension "lilypad@shendrew.github.io"
+# install_gnome_extension "lilypad@shendrew.github.io"
+# TODO - consider adding back...?
 install_gnome_extension "middleclickclose@paolo.tranquilli.gmail.com"
 install_gnome_extension "panelScroll@sun.wxg@gmail.com"
 install_gnome_extension "quake-terminal@diegodario88.github.io"
@@ -79,7 +82,9 @@ install_gnome_extension "window-title-is-back@fthx"
 # install_gnome_extension "windowIsReady_Remover@nunofarruca@gmail.com" # - outdated for Ubuntu 25.04
 install_gnome_extension "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
 install_gnome_extension "workspaces-by-open-apps@favo02.github.com"
-# install_gnome_extension "hide-universal-access@akiirui.github.io" - I am doing it via Lilpad
+install_gnome_extension "hide-universal-access@akiirui.github.io"
+# TODO jut perfection extension can do that as well and is more universal...
+# I can be doing this via Lilpad
 # TODO consider whether it is a good idea as if the icons will fit, I can see them always
 # and if they would not fit, lilpad will not help with that anyway...
 install_gnome_extension "highlight-focus@pimsnel.com"
