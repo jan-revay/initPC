@@ -59,13 +59,13 @@ install_gnome_extension "clipboard-history@alexsaveau.dev"
 install_gnome_extension "focus-changer@heartmire"
 install_gnome_extension "focus@scaryrawr.github.io"
 install_gnome_extension "grand-theft-focus@zalckos.github.com"
-install_gnome_extension "improved-workspace-indicator@michaelaquilina.github.io"
-install_gnome_extension "lilypad@shendrew.github.io"
+# install_gnome_extension "improved-workspace-indicator@michaelaquilina.github.io" # - outdated for Ubuntu 25.04
+# install_gnome_extension "lilypad@shendrew.github.io" # - outdated for Ubuntu 25.04
 install_gnome_extension "middleclickclose@paolo.tranquilli.gmail.com"
 install_gnome_extension "panelScroll@sun.wxg@gmail.com"
 install_gnome_extension "quake-terminal@diegodario88.github.io"
-install_gnome_extension "reminder_alarm_clock@trifonovkv.gmail.com"
-install_gnome_extension "switcher@landau.fi"
+# install_gnome_extension "reminder_alarm_clock@trifonovkv.gmail.com" # - outdated for Ubuntu 25.04
+# install_gnome_extension "switcher@landau.fi" # - outdated for Ubuntu 25.04
 install_gnome_extension "system-monitor-next@paradoxxx.zero.gmail.com"
 install_gnome_extension "tilingshell@ferrarodomenico.com"
 install_gnome_extension "transparent-window-moving@noobsai.github.com"
@@ -75,10 +75,11 @@ install_gnome_extension "Vitals@CoreCoding.com"
 install_gnome_extension "weeks-start-on-monday@extensions.gnome-shell.fifi.org"
 install_gnome_extension "window-calls@domandoman.xyz"
 install_gnome_extension "window-title-is-back@fthx"
-install_gnome_extension "windowIsReady_Remover@nunofarruca@gmail.com"
+# install_gnome_extension "windowIsReady_Remover@nunofarruca@gmail.com" # - outdated for Ubuntu 25.04
 install_gnome_extension "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
 install_gnome_extension "workspaces-by-open-apps@favo02.github.com"
 install_gnome_extension "hide-universal-access@akiirui.github.io"
+install_gnome_extension "highlight-focus@pimsnel.com"
 
 # DISABLE extensions
 
@@ -107,7 +108,7 @@ gnome-extensions disable ding@rastersoft.com
 # Vitals@CoreCoding.com
 # windowsNavigator@gnome-shell-extensions.gcampax.github.com
 # stopwatch@aliakseiz.github.com
-# reminder_alarm_clock@trifonovkv.gmail.com
+# reminder_alarm_clock@trifonovkv.gmail.com # - outdated for Ubuntu 25.04
 # hide-universal-access@akiirui.github.io
 # transparent-window-moving@noobsai.github.com
 # window-list@gnome-shell-extensions.gcampax.github.com
