@@ -65,11 +65,11 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button fals
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview true
 
-gsettings set org.gnome.desktop.interface text-scaling-factor '1.3'
+gsettings set org.gnome.desktop.interface text-scaling-factor '1.2'
 gsettings set org.gnome.desktop.interface cursor-size '64'
-gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
-gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
-gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
+# gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
+# gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
+# gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
 
 gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'toggle-maximize'
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'lower' # 'minimize'
@@ -141,7 +141,8 @@ gsettings set org.gnome.desktop.wm.preferences auto-raise 'true'
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
 gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Super>o']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Alt>s']"
+# gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Alt>s']"
+# NOTE: <Alt>s is in confict with MS whiteboard shortcuts
 
 # TODO - maybe add this where extensions are installed
 # TODO add line breaks
@@ -199,13 +200,20 @@ gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
 gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history display-mode "1"
 gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
-    set org.gnome.shell.extensions.clipboard-history topbar-preview-size "35"
+    set org.gnome.shell.extensions.clipboard-history topbar-preview-size "45"
 gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history toggle-private-mode "[]"
 gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history next-entry "['<Alt>v']"
 gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history prev-entry "['<Shift><Alt>v']"
+
+# TODO
+# /org/gnome/shell/extensions/workspaces-indicator-by-open-apps/scroll-enable
+# /org/gnome/shell/extensions/workspaces-indicator-by-open-apps/scroll-wraparound
+# /org/gnome/shell/extensions/auto-move-windows/application-list
+# ['org.gnome.Nautilus.desktop:3', 'com.sindresorhus.Caprine.desktop:4', 'snap-store_snap-store.desktop:7', 'gparted.desktop:7', 'code.desktop:2', 'chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Profile_3.desktop:4', 'org.signal.Signal.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Profile_3.desktop:4', 'gnome-session-properties.desktop:7', 'nvidia-settings.desktop:7', 'update-manager.desktop:7', 'org.gnome.tweaks.desktop:7', 'gnome-system-panel.desktop:7', 'org.gnome.SystemMonitor.desktop:7', 'software-properties-gtk.desktop:7', 'gnome-printers-panel.desktop:7', 'org.gnome.baobab.desktop:7', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Profile_3.desktop:4']
+# /org/gnome/desktop/interface/enable-animations  false
 
 # TODO - does not work for some reason...
 # for profile in $(gsettings get org.gnome.Terminal.ProfilesList list | tr -d "[],'"); do
