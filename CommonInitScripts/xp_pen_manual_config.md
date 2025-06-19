@@ -41,14 +41,14 @@ K6  |  Ctrl+Y    | *Redo*
 
 ### NEW SHORTCUTS VIA MY WEB SHORTCUTS - CHROME EXTENSION
 
-Key |  Shortcut              | MS Whiteboard tool
-----|------------------------|--------------------
-K1  |  Ctrl+Alt+Shirt+M      | *Highliter*
-K2  |  Alt+A                 | *Arrow*
-K3  |  Ctrl+Alt+Shirt+Y      | *Pen 2*
-K4  |  Ctrl+Alt+Shirt+I      | *Laso*
-K5  |  Ctrl+Z                | *Undo* (also mapped via the extension)
-K6  |  Ctrl+Y                | *Redo* (also mapped via the extension)
+Key |  Shortcut               | MS Whiteboard tool
+----|-------------------------|--------------------
+K1  |  Ctrl+Alt+Shirt+Y       | *Pen 2*
+K2  |  Ctrl+Alt+Shirt+M       | *Highliter*
+K3  |  Ctrl+Alt+Shirt+Super+G | *Add text*
+K4  |  Ctrl+Alt+Shirt+I       | *Laso*
+K5  |  Ctrl+Z                 | *Undo* (also mapped via the extension)
+K6  |  Ctrl+Y                 | *Redo* (also mapped via the extension)
 
 
 ## Screenshots of the settings
