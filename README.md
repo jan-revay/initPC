@@ -14,7 +14,7 @@ are in a separate repository here:
 2. `git clone https://github.com/jan-revay/initPC.git`
 3. `cd initPC/`
 4. `git checkout <branch>` (optional step, branch `devel` is the
-   default)
+   default) **NOTE: Switch to feature-Ubuntu_25.04_support for Ubuntu 25.04**
 5. Run the initPC script launcher:
     * `./run_init.sh` - on Linux distros or Termux
     * On Windows 11:
