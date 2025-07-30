@@ -44,8 +44,8 @@ K6  |  Ctrl+Y    | *Redo*
 Key |  Shortcut               | MS Whiteboard tool
 ----|-------------------------|--------------------
 K1  |  Ctrl+Alt+Shirt+Y       | *Pen 2*
-K2  |  Ctrl+Alt+Shirt+M       | *Highliter*
-K3  |  Ctrl+Alt+Shirt+Super+G | *Add text*
+K2  |  Ctrl+Alt+Shirt+G       | *Pen 3*
+K3  |  Ctrl+Alt+Shirt+M       | *Highliter*
 K4  |  Ctrl+Alt+Shirt+I       | *Laso*
 K5  |  Ctrl+Z                 | *Undo* (also mapped via the extension)
 K6  |  Ctrl+Y                 | *Redo* (also mapped via the extension)
