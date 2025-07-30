@@ -14,7 +14,7 @@ TODO - remap MY WEB SHORTCUTS - CHROME EXTENSION keybindings
 
 Key              |  Shortcut  | MS Whiteboard tool
 -----------------|------------|--------------------
-Top button       | Alt+W      | *Switch to pen*
+Top button       | Alt+W      | *Pen 1*
 Bottom button    | Alt+X      | *Ereaser*
 
 ### NEW SHORTCUTS VIA MY WEB SHORTCUTS - CHROME EXTENSION
