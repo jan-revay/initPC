@@ -21,7 +21,7 @@ Bottom button    | Alt+X      | *Ereaser*
 
 Key              |  Shortcut             | MS Whiteboard tool
 -----------------|-----------------------|--------------------
-Top button       | Ctrl+Alt+Shirt+O      | *Switch to pen*
+Top button       | Ctrl+Alt+Shirt+O      | *Pen 1*
 Bottom button    | Ctrl+Alt+Shirt+P      | *Ereaser*
 
 ## Roller settings
