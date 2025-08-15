@@ -20,6 +20,7 @@ Copy-Item -Force $PSScriptRoot/win_dotfiles/Profile.ps1 $PSHOME/Profile.ps1
 powercfg.exe /hibernate off
 
 # see: https://wiki.archlinux.org/title/System_time
+# TODO - read the article above
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
 # TODO - also change pagefile size
 
