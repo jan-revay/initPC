@@ -209,6 +209,15 @@ gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
 gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history prev-entry "['<Shift><Alt>v']"
 
+# tiling-assistant@ubuntu.com
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-advanced-experimental-features "true"
+gsettings set org.gnome.shell.extensions.tiling-assistant tiling-popup-all-workspace "false"
+gsettings set org.gnome.shell.extensions.tiling-assistant window-gap "8"
+gsettings set org.gnome.shell.extensions.tiling-assistant focus-hint-outline-style "1"
+gsettings set org.gnome.shell.extensions.tiling-assistant focus-hint-color "rgb(192,97,203)"
+gsettings set org.gnome.shell.extensions.tiling-assistant focus-hint-outline-size "6"
+gsettings set org.gnome.shell.extensions.tiling-assistant focus-hint-outline-border-radius "6"
+
 # TODO
 # /org/gnome/shell/extensions/workspaces-indicator-by-open-apps/scroll-enable
 # /org/gnome/shell/extensions/workspaces-indicator-by-open-apps/scroll-wraparound
