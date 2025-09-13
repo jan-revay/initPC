@@ -217,6 +217,9 @@ gsettings set org.gnome.shell.extensions.tiling-assistant focus-hint-outline-sty
 gsettings set org.gnome.shell.extensions.tiling-assistant focus-hint-color "rgb(192,97,203)"
 gsettings set org.gnome.shell.extensions.tiling-assistant focus-hint-outline-size "6"
 gsettings set org.gnome.shell.extensions.tiling-assistant focus-hint-outline-border-radius "6"
+gsettings set org.gnome.shell.extensions.tiling-assistant focus-hint "3"
+
+# TODO add tiling-assistant keybindings
 
 # TODO
 # /org/gnome/shell/extensions/workspaces-indicator-by-open-apps/scroll-enable
