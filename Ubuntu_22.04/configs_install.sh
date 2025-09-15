@@ -151,10 +151,7 @@ gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Supe
 # https://ostechnix.com/backup-and-restore-linux-desktop-system-settings-with-dconf/
 readonly SCHDIR="${HOME}/.local/share/gnome-shell/extensions/"
 
-gsettings --schemadir \
-    "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
-    set org.gnome.shell.extensions.clipboard-history toggle-menu "['<Super>v']"
-
+# focus-changer@heartmire
 gsettings --schemadir "${SCHDIR}/focus-changer@heartmire/schemas" \
     set org.gnome.shell.extensions.focus-changer focus-up "['<Shift><Control><Alt><Super>Up']"
 gsettings --schemadir "${SCHDIR}/focus-changer@heartmire/schemas" \
@@ -165,7 +162,6 @@ gsettings --schemadir "${SCHDIR}/focus-changer@heartmire/schemas" \
     set org.gnome.shell.extensions.focus-changer focus-right "['<Shift><Control><Alt><Super>Right']"
 
 # panelScroll@sun.wxg@gmail.com
-
 gsettings --schemadir "${SCHDIR}/panelScroll@sun.wxg@gmail.com/schemas" \
     set org.gnome.shell.extensions.panelScroll left "workspace"
 gsettings --schemadir "${SCHDIR}/panelScroll@sun.wxg@gmail.com/schemas" \
@@ -176,7 +172,6 @@ gsettings --schemadir "${SCHDIR}/panelScroll@sun.wxg@gmail.com/schemas" \
     set org.gnome.shell.extensions.panelScroll debounce "0"
 
 # quake-terminal@diegodario88.github.io
-
 gsettings --schemadir "${SCHDIR}/quake-terminal@diegodario88.github.io/schemas" \
     set org.gnome.shell.extensions.quake-terminal animation-time "0"
 gsettings --schemadir "${SCHDIR}/quake-terminal@diegodario88.github.io/schemas" \
@@ -208,6 +203,8 @@ gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history next-entry "['<Alt>v']"
 gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history prev-entry "['<Shift><Alt>v']"
+gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
+    set org.gnome.shell.extensions.clipboard-history toggle-menu "['<Super>v']"
 
 # tiling-assistant@ubuntu.com
 gsettings set org.gnome.shell.extensions.tiling-assistant enable-advanced-experimental-features "true"
