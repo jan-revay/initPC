@@ -14,7 +14,7 @@
       [Desktop Entry]
       Name=Focusrite Control
       Comment=Open ALSA Scarlett GUI for Focusrite interfaces
-      Exec=/home/jr/x/alsa-scarlett-gui/src/alsa-scarlett-gui
+      Exec=sh -c "cd /home/jr/x/alsa-scarlett-gui/src/ && ./alsa-scarlett-gui"
       Icon=audio-card
       Terminal=false
       Type=Application
