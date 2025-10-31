@@ -20,4 +20,5 @@
       Type=Application
       Categories=AudioVideo;Mixer;Settings;
       StartupNotify=true
+      StartupWMClass=vu.b4.alsa-scarlett-gui
       ```
