@@ -6,3 +6,18 @@
 4. Read the docs:
    - <https://github.com/geoffreybennett/alsa-scarlett-gui/blob/master/docs/iface-4th-gen-small.md>
    - <https://github.com/geoffreybennett/alsa-scarlett-gui/blob/master/docs/USAGE.md>
+5. Add .desktop file:
+   - `cd ~/.local/share/applications`
+   - `v alsa-scarlett-gui.desktop`
+   - `chmod +x alsa-scarlett-gui.desktop`
+   - ```
+      [Desktop Entry]
+      Name=Focusrite Control
+      Comment=Open ALSA Scarlett GUI for Focusrite interfaces
+      Exec=/home/jr/x/alsa-scarlett-gui/src/alsa-scarlett-gui
+      Icon=audio-card
+      Terminal=false
+      Type=Application
+      Categories=AudioVideo;Mixer;Settings;
+      StartupNotify=true
+      ```
