@@ -220,6 +220,17 @@ gsettings set org.gnome.shell.extensions.tiling-assistant enable-tiling-popup "f
 gsettings set org.gnome.shell.extensions.tiling-assistant tiling-popup-all-workspace "false"
 gsettings set org.gnome.shell.extensions.tiling-assistant dynamic-keybinding-behavior "0"
 
+# TODO - add a TODOist keybinding
+# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings
+#   ['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding
+#   '<Shift><Super>q'
+# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command
+#   'todoist'
+# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name
+#   'Todoist'
+
+
 # TODO add tiling-assistant keybindings
 
 gsettings --schemadir "${SCHDIR}/workspaces-by-open-apps@favo02.github.com/schemas" \
