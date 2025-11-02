@@ -29,6 +29,8 @@
 # TOREAD:
 # - https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/configuration-overview-gsettings-dconf
 
+sudo prime-select nvidia
+
 # GSettings
 # TODO describe the procedure of capturing the GSettings (Dconf monitor)
 gsettings set org.gnome.desktop.input-sources per-window true
