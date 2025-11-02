@@ -48,13 +48,17 @@ APT_PACKAGES=(
     wl-clipboard # copy/paste to/from nvim
 
     # utils
-    ripgrep tree curl neofetch htop tmux at zsh traceroute jq stow
+    ripgrep tree curl
+    # neofetch
+
+    htop tmux at zsh traceroute jq stow
+
     diffoscope
     # NOTE: fd-find executable is called `fdfind`
     # TODO consider moving doconf-editor to GUI part of the initPC script
     dconf-editor doxygen git gh bat man fish fd-find
     fzf  # TODO learn how to use fzf and add aliases
-    tldr # TODO learn how to use
+    # tldr # TODO learn how to use
     libcrack2
     flex # fast lexical analyzer generator
     nvme-cli fio
@@ -107,21 +111,21 @@ time sudo apt-get install -y "${APT_PACKAGES[@]}"
 
 # TODO add else branch for other distros
 # The LLVM convenience script does not work with Debian testing and Kali
-if bash -c '. ../prelude.sh; distro_is ubuntu || (distro_is debian && distro_version_le 12)' &> /dev/null; then
-    # Install the most recent llvm (see https://apt.llvm.org/)
-    pushd /tmp || exit "${EXIT_FILE_IO_ERROR}"
-    # packages required by llvm.sh script are installed above
-    wget https://apt.llvm.org/llvm.sh
-    chmod +x llvm.sh
-    if ! time yes '' | sudo ./llvm.sh all; then
-        # workaround bug in llvm install script: https://github.com/llvm/llvm-project/issues/62475
-        # TODO remove the workaround when it is fixed in llvm.sh
-        sudo apt update -y
-        time yes '' | sudo ./llvm.sh all
-    fi
-    rm llvm.sh
-    popd || exit "${EXIT_FILE_IO_ERROR}"
-fi
+# if bash -c '. ../prelude.sh; distro_is ubuntu || (distro_is debian && distro_version_le 12)' &> /dev/null; then
+#     # Install the most recent llvm (see https://apt.llvm.org/)
+#     pushd /tmp || exit "${EXIT_FILE_IO_ERROR}"
+#     # packages required by llvm.sh script are installed above
+#     wget https://apt.llvm.org/llvm.sh
+#     chmod +x llvm.sh
+#     if ! time yes '' | sudo ./llvm.sh all; then
+#         # workaround bug in llvm install script: https://github.com/llvm/llvm-project/issues/62475
+#         # TODO remove the workaround when it is fixed in llvm.sh
+#         sudo apt update -y
+#         time yes '' | sudo ./llvm.sh all
+#     fi
+#     rm llvm.sh
+#     popd || exit "${EXIT_FILE_IO_ERROR}"
+# fi
 
 # Install rust ecosystem
 time curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
