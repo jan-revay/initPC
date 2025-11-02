@@ -222,12 +222,18 @@ gsettings set org.gnome.shell.extensions.tiling-assistant dynamic-keybinding-beh
 
 # TODO add tiling-assistant keybindings
 
-# TODO
-# /org/gnome/shell/extensions/workspaces-indicator-by-open-apps/scroll-enable
-# /org/gnome/shell/extensions/workspaces-indicator-by-open-apps/scroll-wraparound
+gsettings --schemadir "${SCHDIR}/workspaces-by-open-apps@favo02.github.com/schemas" \
+    set org.gnome.shell.extensions.workspaces-indicator-by-open-apps indicator-show-background "true"
+
+gsettings --schemadir "${SCHDIR}/workspaces-by-open-apps@favo02.github.com/schemas" \
+    set org.gnome.shell.extensions.workspaces-indicator-by-open-apps scroll-enable "false"
+
 # /org/gnome/shell/extensions/auto-move-windows/application-list
 # ['org.gnome.Nautilus.desktop:3', 'com.sindresorhus.Caprine.desktop:4', 'snap-store_snap-store.desktop:7', 'gparted.desktop:7', 'code.desktop:2', 'chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Profile_3.desktop:4', 'org.signal.Signal.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Profile_3.desktop:4', 'gnome-session-properties.desktop:7', 'nvidia-settings.desktop:7', 'update-manager.desktop:7', 'org.gnome.tweaks.desktop:7', 'gnome-system-panel.desktop:7', 'org.gnome.SystemMonitor.desktop:7', 'software-properties-gtk.desktop:7', 'gnome-printers-panel.desktop:7', 'org.gnome.baobab.desktop:7', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Profile_3.desktop:4']
 # /org/gnome/desktop/interface/enable-animations  false
+# /org/gnome/shell/extensions/tilingshell/overridden-settings
+#  '{"org.gnome.mutter":{"edge-tiling":"false"}}'
+
 
 # TODO - does not work for some reason...
 # for profile in $(gsettings get org.gnome.Terminal.ProfilesList list | tr -d "[],'"); do
