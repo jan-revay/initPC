@@ -122,18 +122,18 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Cont
 # The advantage is that I can switch the workspace with one hand that way.
 # TODO - inspect conflicting keybindings on Win and Linux first though
 
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Control><Alt><Super>h']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Control><Alt><Super>j']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Control><Alt><Super>k']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Control><Alt><Super>l']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Control><Alt><Super>h', '<Alt><Shift>1']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Control><Alt><Super>j', '<Alt><Shift>2']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Control><Alt><Super>k', '<Alt><Shift>3']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Control><Alt><Super>l', '<Alt><Shift>4']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 \
-    "['<Control><Alt><Super>semicolon', '<Control><Alt><Super>ocircumflex']"
+    "['<Control><Alt><Super>semicolon', '<Control><Alt><Super>ocircumflex', '<Alt><Shift>5']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 \
-    "['<Control><Alt><Super>apostrophe', '<Control><Alt><Super>section']"
+    "['<Control><Alt><Super>apostrophe', '<Control><Alt><Super>section', '<Alt><Shift>6']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 \
-    "['<Control><Alt><Super>Return']"
+    "['<Control><Alt><Super>Return', '<Alt><Shift>7']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 \
-    "['<Control><Alt><Super>backslash', '<Control><Alt><Super>ncaron']"
+    "['<Control><Alt><Super>backslash', '<Control><Alt><Super>ncaron', '<Alt><Shift>8']"
 
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Control><Alt><Super>Left']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Control><Alt><Super>Right']"
