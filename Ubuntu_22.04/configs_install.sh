@@ -234,7 +234,6 @@ gsettings --schemadir "${SCHDIR}/workspaces-by-open-apps@favo02.github.com/schem
 # /org/gnome/shell/extensions/tilingshell/overridden-settings
 #  '{"org.gnome.mutter":{"edge-tiling":"false"}}'
 
-
 # TODO - does not work for some reason...
 # for profile in $(gsettings get org.gnome.Terminal.ProfilesList list | tr -d "[],'"); do
 # profile_path="/org/gnome/Terminal/Legacy/Profiles:/:$profile/"
