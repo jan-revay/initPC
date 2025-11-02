@@ -230,7 +230,6 @@ gsettings set org.gnome.shell.extensions.tiling-assistant dynamic-keybinding-beh
 # /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name
 #   'Todoist'
 
-
 # TODO add tiling-assistant keybindings
 
 gsettings --schemadir "${SCHDIR}/workspaces-by-open-apps@favo02.github.com/schemas" \
