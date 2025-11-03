@@ -9,3 +9,5 @@ TODO - install DaVinci Resolve <https://www.dedoimedo.com/computers/davinci-reso
 
 - Vypnut fractional scaling.
 - setup extensions
+
+Firefox - scrollable tabs - enable <https://support.mozilla.org/en-US/questions/1285434>
