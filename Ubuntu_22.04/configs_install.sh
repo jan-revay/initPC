@@ -25,6 +25,8 @@
 # TODO add grup timeout setup to 1
 # TODO add setup of Ubuntu tiling assistant GNOME extension (gaps, highlight
 # the active window...).
+# TODO normalise '' and " usage and also usage without " or '
+# TODO - conflict with Ubuntu settings multitasking tab and gsettings (dash-to-dock and tiling manager...)
 
 # TOREAD:
 # - https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/configuration-overview-gsettings-dconf
@@ -62,10 +64,11 @@ gsettings set org.gnome.shell.extensions.dash-to-dock preview-size-scale '0.25'
 gsettings set org.gnome.shell.extensions.dash-to-dock shift-click-action 'minimize'
 gsettings set org.gnome.shell.extensions.dash-to-dock shift-middle-click-action 'launch'
 gsettings set org.gnome.shell.extensions.dash-to-dock shortcut-timeout '4'
-gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
-gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false
-gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
-gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview true
+gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts 'false'
+gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button 'false'
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash 'false'
+gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview 'true'
+gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces 'false'
 
 gsettings set org.gnome.desktop.interface text-scaling-factor '1.2'
 gsettings set org.gnome.desktop.interface cursor-size '64'
