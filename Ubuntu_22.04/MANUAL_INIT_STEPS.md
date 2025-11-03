@@ -14,3 +14,7 @@ Firefox - scrollable tabs - enable <https://support.mozilla.org/en-US/questions/
 
 - test whether the suspend works and set up the suspend timeout
 - check the security tab in GNOME settings
+
+TODO:
+
+- harmonize keybindings and behavior between ubuntu dock and all workspaces-by-open-apps extension (e.g. what a middle click does and what a right click does...) consider whether overview on second click is ok
