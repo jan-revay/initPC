@@ -154,7 +154,7 @@ gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Supe
 # TODO add line breaks
 # TODO consider direct dconf backup/restore instead
 # https://ostechnix.com/backup-and-restore-linux-desktop-system-settings-with-dconf/
-readonly SCHDIR="${HOME}/.local/share/gnome-shell/extensions/"
+readonly SCHDIR="${HOME}/.local/share/gnome-shell/extensions"
 
 # focus-changer@heartmire
 gsettings --schemadir "${SCHDIR}/focus-changer@heartmire/schemas" \
