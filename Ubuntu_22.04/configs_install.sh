@@ -58,7 +58,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height 'false'
+gsettings set org.gnome.shell.extensions.dash-to-dock hot-keys 'false'
 gsettings set org.gnome.shell.extensions.dash-to-dock pressure-threshold '50.0'
 gsettings set org.gnome.shell.extensions.dash-to-dock preview-size-scale '0.25'
 gsettings set org.gnome.shell.extensions.dash-to-dock shift-click-action 'minimize'
