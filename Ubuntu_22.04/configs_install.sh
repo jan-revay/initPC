@@ -241,6 +241,29 @@ gsettings --schemadir "${SCHDIR}/workspaces-by-open-apps@favo02.github.com/schem
 gsettings --schemadir "${SCHDIR}/workspaces-by-open-apps@favo02.github.com/schemas" \
     set org.gnome.shell.extensions.workspaces-indicator-by-open-apps scroll-enable "false"
 
+# system-monitor-next@paradoxxx.zero.gmail.com
+gsettings --schemadir "${SCHDIR}/system-monitor-next@paradoxxx.zero.gmail.com/schemas" \
+    set org.gnome.shell.extensions.system-monitor-next-applet show-tooltip 'true'
+gsettings --schemadir "${SCHDIR}/system-monitor-next@paradoxxx.zero.gmail.com/schemas" \
+    set org.gnome.shell.extensions.system-monitor-next-applet rotate-labels 'true'
+gsettings --schemadir "${SCHDIR}/system-monitor-next@paradoxxx.zero.gmail.com/schemas" \
+    set org.gnome.shell.extensions.system-monitor-next-applet cpu-system-color '#c01c28ff'
+
+# tilingshell@ferrarodomenico.com
+gsettings --schemadir "${SCHDIR}/tilingshell@ferrarodomenico.com/schemas" \
+    set org.gnome.shell.extensions.tilingshell enable-move-keybindings 'false'
+
+# TODO - this setting probably also sets and unsets stuff in org.gnome.mutter -
+# test whether setting these two values in tiling shell is consistent and behaves
+# the same as setting them in the Extension settings app (if not correct that)
+# I probably need to do more
+gsettings --schemadir "${SCHDIR}/tilingshell@ferrarodomenico.com/schemas" \
+    set org.gnome.shell.extensions.tilingshell overridden-settings '{"org.gnome.mutter":{"edge-tiling":"false"}}'
+
+# window-title-is-back@fthx
+gsettings --schemadir "${SCHDIR}/window-title-is-back@fthx/schemas" \
+    set org.gnome.shell.extensions.window-title-is-back fixed-width 'false'
+
 # /org/gnome/shell/extensions/auto-move-windows/application-list
 # ['org.gnome.Nautilus.desktop:3', 'com.sindresorhus.Caprine.desktop:4', 'snap-store_snap-store.desktop:7', 'gparted.desktop:7', 'code.desktop:2', 'chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Profile_3.desktop:4', 'org.signal.Signal.desktop:4', 'chrome-hpfldicfbfomlpcikngkocigghgafkph-Profile_3.desktop:4', 'gnome-session-properties.desktop:7', 'nvidia-settings.desktop:7', 'update-manager.desktop:7', 'org.gnome.tweaks.desktop:7', 'gnome-system-panel.desktop:7', 'org.gnome.SystemMonitor.desktop:7', 'software-properties-gtk.desktop:7', 'gnome-printers-panel.desktop:7', 'org.gnome.baobab.desktop:7', 'chrome-bbdeiblfgdokhlblpgeaokenkfknecgl-Profile_3.desktop:4']
 # /org/gnome/desktop/interface/enable-animations  false
