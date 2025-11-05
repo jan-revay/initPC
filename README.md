@@ -270,6 +270,7 @@ e.g. on 9950x add hddoff alias (or detect all HDDs and create the alias on the f
     number, amount of RAM and CPU model as an input and produce a hash that I will
     use to distinguish my different machines. Have a more thorough look at `dmidecode`
     command...
+1. Use Omarchy <https://github.com/basecamp/omarchy/tree/master> as an inspiration to improve these scripts. Rename this repo to GNOMEarchy? :D
 
 ## Keyboard layout plans
 
@@ -319,3 +320,4 @@ for /home partition
 - <https://github.com/ThePrimeagen/dev> and
   <https://github.com/ThePrimeagen/.dotfiles>
 - <https://gitlab.com/dwt1/dotfiles>
+- <https://github.com/basecamp/omarchy/tree/master>
