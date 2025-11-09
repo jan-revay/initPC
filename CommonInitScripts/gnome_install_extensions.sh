@@ -62,7 +62,8 @@ install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github
 install_gnome_extension "clipboard-history@alexsaveau.dev"
 install_gnome_extension "focus-changer@heartmire"
 install_gnome_extension "focus@scaryrawr.github.io"
-install_gnome_extension "grand-theft-focus@zalckos.github.com"
+# install_gnome_extension "grand-theft-focus@zalckos.github.com" - outdeated - replaced by steal-my-focus-window@steal-my-focus-window
+install_gnome_extension "steal-my-focus-window@steal-my-focus-window"
 # install_gnome_extension "improved-workspace-indicator@michaelaquilina.github.io" # - outdated for Ubuntu 25.04
 # install_gnome_extension "lilypad@shendrew.github.io"
 # TODO - consider adding back...?
