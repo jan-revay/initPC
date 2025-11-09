@@ -55,7 +55,6 @@ else
     # but install specific versions so that the script
     # will not break easily.
     readonly SNAP_PACKAGES=(
-        alacritty
         anki-desktop # TODO maybe install directly via website (most up to date)
         core
         snap-store
@@ -75,9 +74,9 @@ else
     )
     time sudo snap refresh
     time print0 "${SNAP_PACKAGES[@]}" | xargs -0 -I % sudo snap install %
+    # TODO put the --classic flag to the consistent correct place
     time sudo snap install helix --classic # TODO move to UbuntuCLI
     time sudo snap install gitkraken --classic
     time sudo snap install clion --classic
     time sudo snap install --classic go
-
 fi
