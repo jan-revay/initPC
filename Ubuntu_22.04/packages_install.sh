@@ -88,7 +88,8 @@ readonly APT_GUI_PACKAGES=(
     # TODO gitk and git-gui break the install script (dependencies) - choose another install method
     # it is just a bash script, hence it might make sense to install from source
     meld kdevelop coqide qgit cmake-gui # gitk git-gui
-    qtcreator kitty
+    qtcreator
+    kitty alacritty
 
     # ===== FILES AND DISK MANAGEMENT
     gparted
