@@ -41,6 +41,7 @@ else
         # benchmarks and stress tests
         com.geeks3d.furmark
         com.geekbench.Geekbench6
+        app.zen_browser.zen
     )
     # TODO try fixing flatpak installation without sudo (or at least do some research
     # whether the sudo will not break sth.)
@@ -54,16 +55,23 @@ else
     # but install specific versions so that the script
     # will not break easily.
     readonly SNAP_PACKAGES=(
+        alacritty
         anki-desktop # TODO maybe install directly via website (most up to date)
         core
         snap-store
         todoist
+        onlyoffice-desktopeditors
+        organize-my-files
 
         # TODO add the CLI packages to UbuntuCLI (but use different install method)
         dust
         procs
         onefetch
         drive
+        code
+        firefox
+        chromium
+        chromium-ffmpeg
     )
     time sudo snap refresh
     time print0 "${SNAP_PACKAGES[@]}" | xargs -0 -I % sudo snap install %
