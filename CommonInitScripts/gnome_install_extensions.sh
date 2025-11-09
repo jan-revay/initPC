@@ -62,7 +62,9 @@ install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github
 install_gnome_extension "clipboard-history@alexsaveau.dev"
 install_gnome_extension "focus-changer@heartmire"
 install_gnome_extension "focus@scaryrawr.github.io"
-# install_gnome_extension "grand-theft-focus@zalckos.github.com" - outdeated - replaced by steal-my-focus-window@steal-my-focus-window
+# install_gnome_extension "grand-theft-focus@zalckos.github.com" - disabled 9.11.2025
+# grand-theft focus is outdeated and replaced by steal-my-focus-window@steal-my-focus-window
+# which works correctly
 install_gnome_extension "steal-my-focus-window@steal-my-focus-window"
 # install_gnome_extension "improved-workspace-indicator@michaelaquilina.github.io" # - outdated for Ubuntu 25.04
 # install_gnome_extension "lilypad@shendrew.github.io"
@@ -90,7 +92,7 @@ install_gnome_extension "hide-universal-access@akiirui.github.io"
 # I can be doing this via Lilpad
 # TODO consider whether it is a good idea as if the icons will fit, I can see them always
 # and if they would not fit, lilpad will not help with that anyway...
-install_gnome_extension "highlight-focus@pimsnel.com"
+# install_gnome_extension "highlight-focus@pimsnel.com" - disabled 9.11.2025 - outdated
 
 # DISABLE extensions
 
