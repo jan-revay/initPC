@@ -81,6 +81,7 @@ install_gnome_extension "ubuntu-dock@ubuntu.com"
 install_gnome_extension "undecorate@sun.wxg@gmail.com"
 install_gnome_extension "Vitals@CoreCoding.com"
 install_gnome_extension "weeks-start-on-monday@extensions.gnome-shell.fifi.org"
+# TODO There is also https://github.com/hseliger/window-calls-extended fork - compare the two.
 install_gnome_extension "window-calls@domandoman.xyz"
 install_gnome_extension "window-title-is-back@fthx"
 # TODO - find alterantive
