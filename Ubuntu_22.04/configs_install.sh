@@ -32,6 +32,21 @@
  #
  # EOF
 
+# resp
+# mapfile -t my_list <<'EOF'
+# simpleitem
+# item with spaces
+# item with a 'single quote'
+# item with a "double quote"
+# item with both 'single' and "double" quotes
+# EOF
+
+# Print each item
+# for item in "${my_list[@]}"; do
+#    echo "$item"
+# done
+
+
 # TODO pohrat sa s tymi nastaveniami, ci vlastne su vsetky potrebne a robia to co chcem
 
 . ../prelude.sh
