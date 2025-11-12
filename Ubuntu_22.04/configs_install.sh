@@ -12,6 +12,26 @@
 # TODO consider using dconf dump & dconf load instead of calling gsettings for every key
 # see: https://askubuntu.com/questions/984205/how-to-save-gnome-settings-in-a-file
 
+
+# TODO - use sth like this:
+# apply_gsettings() {
+ # local schema="$1"
+ # while IFS= read -r line; do
+ #     [[ -z "$line" || "$line" =~ ^# ]] && continue
+ #     gsettings set "$schema" "$line"
+ # done
+ # }
+ #
+ # apply_gsettings "test" <<EOF
+ # ano
+ # nie #blabla
+ # mozno
+ #
+ # # lala
+  # sjsjdj
+ #
+ # EOF
+
 # TODO pohrat sa s tymi nastaveniami, ci vlastne su vsetky potrebne a robia to co chcem
 
 . ../prelude.sh
