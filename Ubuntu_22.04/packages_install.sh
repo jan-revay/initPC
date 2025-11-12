@@ -113,6 +113,10 @@ readonly APT_GUI_PACKAGES=(
     # ===== TO TRY ===== (TODO review)
     actiona # automations, written in C++ https://github.com/Jmgr/actiona
     autokey-common autokey-gtk
+
+    chromium-browser
+    chrome-gnome-shell gnome-browser-connector # installing extensions from Firefox or Chrome
+
 )
 
 # TODO alacritty is not present on Ubuntu releases older than Ubuntu 24.04
