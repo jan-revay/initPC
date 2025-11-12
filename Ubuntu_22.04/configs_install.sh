@@ -173,6 +173,23 @@ gsettings set org.gnome.shell.keybindings toggle-overview "['<Control><Alt><Supe
 # gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Alt>s']"
 # NOTE: <Alt>s is in confict with MS whiteboard shortcuts
 
+gsettings set org.gnome.Ptyxis restore-session 'false'
+gsettings set org.gnome.Ptyxis restore-window-size 'false'
+gsettings set org.gnome.Ptyxis scrollbar-policy 'always'
+gsettings set org.gnome.Ptyxis.Shortcuts move-next-tab '<Control>Tab'
+gsettings set org.gnome.Ptyxis.Shortcuts move-previous-tab '<Shift><Control>Tab'
+
+gsettings set org.gnome.Ptyxis.Shortcuts focus-tab-1 '<Control>1'
+gsettings set org.gnome.Ptyxis.Shortcuts focus-tab-2 '<Control>2'
+gsettings set org.gnome.Ptyxis.Shortcuts focus-tab-3 '<Control>3'
+gsettings set org.gnome.Ptyxis.Shortcuts focus-tab-4 '<Control>4'
+gsettings set org.gnome.Ptyxis.Shortcuts focus-tab-5 '<Control>5'
+gsettings set org.gnome.Ptyxis.Shortcuts focus-tab-6 '<Control>6'
+gsettings set org.gnome.Ptyxis.Shortcuts focus-tab-7 '<Control>7'
+gsettings set org.gnome.Ptyxis.Shortcuts focus-tab-8 '<Control>8'
+gsettings set org.gnome.Ptyxis.Shortcuts focus-tab-9 '<Control>9'
+gsettings set org.gnome.Ptyxis.Shortcuts focus-tab-10 '<Control>0'
+
 # TODO - maybe add this where extensions are installed
 # TODO add line breaks
 # TODO consider direct dconf backup/restore instead
