@@ -98,9 +98,9 @@ gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'low
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
 gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
 gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Super>'
-gsettings set org.gnome.desktop.wm.preferences num-workspaces 8
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 10
 gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
-gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9']"
+gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']"
 # NOTE: right click resizing is dependent on the sector of the window being
 # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
 
@@ -118,8 +118,8 @@ gsettings set org.gnome.desktop.wm.preferences workspace-names "['1', '2', '3', 
 # and make sure that the process is idempotent
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "['<Control><Super>space']"
-gsettings set org.gnome.desktop.interface enable-animations false
 
+# TODO pridat home row keybindings k workspace 9 a 10
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control><Super>h', '<Alt>1']"
 # TODO FIX: ctrl+super+j switches to workspace 6 for some reason...
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control><Super>j', '<Alt>2']"
@@ -133,6 +133,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 \
     "['<Control><Super>Return', '<Alt>7']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 \
     "['<Control><Super>backslash', '<Control><Super>ncaron', '<Alt>8']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-9 \
+    "['<Alt>9']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 \
+    "['<Alt>0']"
 
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right']"
@@ -154,6 +158,8 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 \
     "['<Control><Alt><Super>Return', '<Alt><Shift>7']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 \
     "['<Control><Alt><Super>backslash', '<Control><Alt><Super>ncaron', '<Alt><Shift>8']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Alt><Shift>9']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Alt><Shift>0']"
 
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Control><Alt><Super>Left']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Control><Alt><Super>Right']"
