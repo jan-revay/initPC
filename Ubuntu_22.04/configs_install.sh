@@ -40,9 +40,6 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', '
 gsettings set org.gnome.desktop.input-sources xkb-options \
     "['terminate:ctrl_alt_bksp', 'shift:both_capslock_cancel', 'caps:none']"
 
-gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-red-dark'
-gsettings set org.gnome.desktop.interface icon-theme 'Yaru-red'
 # this was set to true for some reason on my fresh Ubuntu 24.04 install
 gsettings set org.gnome.desktop.lockdown disable-lock-screen false
 gsettings set org.gnome.mutter dynamic-workspaces false
@@ -69,10 +66,27 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts 'false'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button 'false'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash 'false'
 gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview 'true'
-gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces 'false'
 
-gsettings set org.gnome.desktop.interface text-scaling-factor '1.2'
+# WARNING: text-scaling-factor can break Chromium (or other GTK apps) and cause
+# the app window to increase in size on refocus (due to floating point rounding
+# errors). Always set the value to decimal that can be represented as float without
+# rounding error and also test whether the Chromium window does not change size on
+# refocus with the specific value.
+# gsettings set org.gnome.desktop.interface text-scaling-factor '1.1875' # TODO consider using 1 as scaling factor and setting interface/document/monospace fonts instead
+gsettings set org.gnome.desktop.interface text-scaling-factor '1' # TODO consider using 1 as scaling factor and setting interface/document/monospace fonts instead
+gsettings set org.gnome.desktop.interface font-name 'Ubuntu Sans 13'
+gsettings set org.gnome.desktop.interface document-font-name 'Sans 13'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Ubuntu Sans Mono 15'
+gsettings set org.gnome.desktop.interface font-hinting 'slight'
 gsettings set org.gnome.desktop.interface cursor-size '64'
+gsettings set org.gnome.desktop.interface enable-animations 'false'
+# TODO consider not setting the theme (it might mess stuff up)
+
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface accent-color 'red'
+gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-red-dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Yaru-red-dark'
+
 # gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
 # gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
 # gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Northan_lights_by_mizuno.webp'
