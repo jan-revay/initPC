@@ -14,7 +14,8 @@
 
 
 # TODO - simplify repeated prefixes as follows:
-
+# I can name the function xargse (xargs extended)
+# or my_xargs
 # run_with_prefix() {
 #     local cmd="$1"
 #     if [[ -z "$cmd" ]]; then
