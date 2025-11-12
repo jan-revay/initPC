@@ -13,45 +13,34 @@
 # see: https://askubuntu.com/questions/984205/how-to-save-gnome-settings-in-a-file
 
 
-# TODO - use sth like this:
-# apply_gsettings() {
- # local schema="$1"
- # while IFS= read -r line; do
- #     [[ -z "$line" || "$line" =~ ^# ]] && continue
- #     gsettings set "$schema" "$line"
- # done
- # }
- #
- # apply_gsettings "test" <<EOF
- # ano
- # nie #blabla
- # mozno
- #
- # # lala
-  # sjsjdj
- #
- # EOF
+# TODO - simplify repeated prefixes as follows:
 
-# resp
-# mapfile -t my_list <<'EOF'
-# simpleitem
-# item with spaces
-# item with a 'single quote'
-# item with a "double quote"
-# item with both 'single' and "double" quotes
-# EOF
+# run_with_prefix() {
+#     local cmd="$1"
+#     if [[ -z "$cmd" ]]; then
+#         echo TODO add explanation what the command does.
+#         echo TODO add help/man page
+#         echo "Missing command to prefix the lines."
+#         echo "Usage: process_items <command>"
+#         echo "Items are passed to stdin (usually as heredocument)"
+#         return 1
+#     fi
+#     grep -vE '^[[:space:]]*(#|$)' | xargs -r -d '\n' -I{} $1 "Processing: {}"
+# }
 
-# Print each item
-# for item in "${my_list[@]}"; do
-#    echo "$item"
-# done
-
-# resp
-# xargs -d '\n' -I{} echo "Processing: {}" <<'EOF'
+# run_with_prefix 'echo' <<'EOF'
+# # This is a comment
 # first item
+
 # second item with spaces
+# # another comment
 # third item with "quotes" and 'single quotes'
+
 # EOF
+
+# Add the helper function to prelude?
+# TODO - try to use lists where possible...
+
 
 # TODO pohrat sa s tymi nastaveniami, ci vlastne su vsetky potrebne a robia to co chcem
 
