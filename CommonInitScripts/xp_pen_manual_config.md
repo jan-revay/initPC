@@ -2,6 +2,8 @@
 
 ## Drivers download page: <https://www.xp-pen.com/download/star-06.html>
 
+Settings -> Disable message (it messes up the focus to the Whiteboard window)
+
 # Automatic import
 
 In driver config menu, settings wheel -> Import config -> import the file ./win_dotfiles/PenTablet_Config_2025-05-14.pcfg
