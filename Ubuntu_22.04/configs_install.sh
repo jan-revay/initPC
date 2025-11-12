@@ -46,6 +46,12 @@
 #    echo "$item"
 # done
 
+# resp
+# xargs -d '\n' -I{} bash -c 'echo "Processing: {}"' <<'EOF'
+# first item
+# second item with spaces
+# third item with "quotes" and 'single quotes'
+# EOF
 
 # TODO pohrat sa s tymi nastaveniami, ci vlastne su vsetky potrebne a robia to co chcem
 
