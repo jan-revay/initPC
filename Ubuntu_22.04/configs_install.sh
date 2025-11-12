@@ -251,6 +251,11 @@ gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
 gsettings --schemadir "${SCHDIR}/clipboard-history@alexsaveau.dev/schemas" \
     set org.gnome.shell.extensions.clipboard-history toggle-menu "['<Super>v']"
 
+# Vitals
+# TODO add the remaining settings
+gsettings --schemadir "${SCHDIR}/Vitals@CoreCoding.com/schemas" \
+    set org.gnome.shell.extensions.vitals fixed-widths "false"
+
 # tiling-assistant@ubuntu.com
 gsettings set org.gnome.shell.extensions.tiling-assistant enable-advanced-experimental-features "true"
 gsettings set org.gnome.shell.extensions.tiling-assistant window-gap "8"
