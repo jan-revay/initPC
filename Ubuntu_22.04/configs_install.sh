@@ -47,7 +47,7 @@
 # done
 
 # resp
-# xargs -d '\n' -I{} bash -c 'echo "Processing: {}"' <<'EOF'
+# xargs -d '\n' -I{} echo "Processing: {}" <<'EOF'
 # first item
 # second item with spaces
 # third item with "quotes" and 'single quotes'
