@@ -114,6 +114,7 @@ readonly APT_GUI_PACKAGES=(
     actiona # automations, written in C++ https://github.com/Jmgr/actiona
     autokey-common autokey-gtk
 
+    ubuntu-restricted-extras
     chromium-browser
     chrome-gnome-shell gnome-browser-connector # installing extensions from Firefox or Chrome
 
