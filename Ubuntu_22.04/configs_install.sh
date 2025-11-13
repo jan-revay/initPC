@@ -33,6 +33,20 @@
 
 sudo prime-select nvidia
 
+for_each()
+{
+    if [[ -z "$1" ]]; then
+        echo Error: Missing parameter
+        echo 'Usage: for_each <command> <<EOF ... EOF'
+        echo Appends a prefix from the first parameter to every line from stdin
+        echo and runs the resulting commands. Ignores empty lines and lines
+        echo "starting with a # character."
+        return 1
+    fi
+
+    grep -vE '^[[:space:]]*(#|$)' | xargs -r -d '\n' -I{} "$1" "{}"
+}
+
 # GSettings
 # TODO describe the procedure of capturing the GSettings (Dconf monitor)
 gsettings set org.gnome.desktop.input-sources per-window true
@@ -50,24 +64,27 @@ if bash -c '. ../prelude.sh; distro_version_ge 23' &> /dev/null; then
     gsettings set org.gnome.shell.extensions.dash-to-dock always-center-icons true
     gsettings set org.gnome.shell.extensions.dash-to-dock default-windows-preview-to-open true
 fi
-gsettings set org.gnome.shell.extensions.dash-to-dock animation-time '0.01'
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'previews'
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height 'false'
-gsettings set org.gnome.shell.extensions.dash-to-dock hot-keys 'false'
+
+for_each "gsettings set org.gnome.shell.extensions.dash-to-dock" << EOF
+animation-time '0.01'
+click-action 'previews'
+dash-max-icon-size 64
+dock-fixed false
+dock-position 'LEFT'
+extend-height 'false'
+hot-keys 'false'
 # TODO find out why changing this to true resp. false does nothing
-gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces 'true'
-gsettings set org.gnome.shell.extensions.dash-to-dock pressure-threshold '50.0'
-gsettings set org.gnome.shell.extensions.dash-to-dock preview-size-scale '0.25'
-gsettings set org.gnome.shell.extensions.dash-to-dock shift-click-action 'minimize'
-gsettings set org.gnome.shell.extensions.dash-to-dock shift-middle-click-action 'launch'
-gsettings set org.gnome.shell.extensions.dash-to-dock shortcut-timeout '4'
-gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts 'false'
-gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button 'false'
-gsettings set org.gnome.shell.extensions.dash-to-dock show-trash 'false'
-gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview 'true'
+isolate-workspaces 'true'
+pressure-threshold '50.0'
+preview-size-scale '0.25'
+shift-click-action 'minimize'
+shift-middle-click-action 'launch'
+shortcut-timeout '4'
+show-mounts 'false'
+show-show-apps-button 'false'
+show-trash 'false'
+show-windows-preview 'true'
+EOF
 
 # WARNING: text-scaling-factor can break Chromium (or other GTK apps) and cause
 # the app window to increase in size on refocus (due to floating point rounding
