@@ -160,4 +160,19 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     {
         [ "$#" -eq 0 ] || printf '%s\0' "$@"
     }
+
+    # Appends a prefix in the first parameter to every line from stdin and executes
+    # the resulting command. Ignores comments and empty lines.
+    for_each()
+    {
+        set +x
+        local prefix="$1"
+        local line
+        while read -r line; do # Read a line and strip leading and trailing spaces
+            # Skip empty lines and comments
+            [[ "$line" =~ ^[[:space:]]*(#|$) ]] && continue
+            bash -cx "$prefix $line"
+        done
+        set -x
+    }
 fi

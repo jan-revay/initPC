@@ -1,6 +1,8 @@
 #!/bin/bash -x
 
 # HOW TO WATCH GSettings changes on Ubuntu? Run `dconf watch /`
+# NOTE: for_each blocks are sorted by path alphabetically (their content and blocks themselves)
+
 # TODO toread: https://wiki.archlinux.org/title/GNOME
 # https://wiki.archlinux.org/title/GNOME/Tips_and_tricks
 # https://wiki.archlinux.org/title/GDM
@@ -11,31 +13,32 @@
 # https://docs.gtk.org/gio/class.Settings.html
 # https://wiki.gnome.org/HowDoI/GSettings
 
-# Appends a prefix in the first parameter to every line from stdin and executes
-# the resulting command. Ignores comments and empty lines.
-for_each()
-{
-    set +x
-    local prefix="$1"
-    local line
-    while read -r line; do # Read a line and strip leading and trailing spaces
-        # Skip empty lines and comments
-        [[ "$line" =~ ^[[:space:]]*(#|$) ]] && continue
-        bash -cx "$prefix $line"
-    done
-    set -x
-}
-
-readonly SCHDIR="${HOME}/.local/share/gnome-shell/extensions/compiled_schemas"
-mkdir -p "${SCHDIR}"
-find ~/.local/share/gnome-shell/extensions/ -name "*.gschema.xml" -exec cp -fu {} "${SCHDIR}" \;
-glib-compile-schemas "${SCHDIR}"
-# See: https://docs.gtk.org/gio/overview.html#running-gio-applications
-export GSETTINGS_SCHEMA_DIR="${SCHDIR}"
+. ../prelude.sh
 
 # this was set to true for some reason on my fresh Ubuntu 24.04 install
 gsettings set org.gnome.desktop.lockdown disable-lock-screen false
 gsettings set org.gnome.mutter dynamic-workspaces false
+
+for_each "gsettings set org.gnome.Ptyxis" << 'BASH'
+    restore-session 'false'
+    restore-window-size 'false'
+    scrollbar-policy 'always'
+BASH
+
+for_each "gsettings set org.gnome.Ptyxis.Shortcuts" << 'BASH'
+    move-next-tab '<Control>Tab'
+    move-previous-tab '<Shift><Control>Tab'
+    focus-tab-1 '<Control>1'
+    focus-tab-2 '<Control>2'
+    focus-tab-3 '<Control>3'
+    focus-tab-4 '<Control>4'
+    focus-tab-5 '<Control>5'
+    focus-tab-6 '<Control>6'
+    focus-tab-7 '<Control>7'
+    focus-tab-8 '<Control>8'
+    focus-tab-9 '<Control>9'
+    focus-tab-10 '<Control>0'
+BASH
 
 for_each "gsettings set org.gnome.desktop.input-sources" << 'BASH'
     per-window true
@@ -65,41 +68,6 @@ for_each "gsettings set org.gnome.desktop.interface" << 'BASH'
     color-scheme 'prefer-dark'
     gtk-theme 'Yaru-red-dark'
     icon-theme 'Yaru-red-dark'
-BASH
-
-for_each "gsettings set org.gnome.shell.extensions.dash-to-dock" << 'BASH'
-    always-center-icons true
-    animation-time '0.01'
-    click-action 'previews'
-    dash-max-icon-size 64
-    default-windows-preview-to-open true
-    dock-fixed false
-    dock-position 'LEFT'
-    extend-height 'false'
-    hot-keys 'false'
-    pressure-threshold '50.0'
-    preview-size-scale '0.25'
-    shift-click-action 'minimize'
-    shift-middle-click-action 'launch'
-    shortcut-timeout '4'
-    show-mounts 'false'
-    show-show-apps-button 'false'
-    show-trash 'false'
-    show-windows-preview 'true'
-BASH
-
-for_each "gsettings set org.gnome.desktop.wm.preferences" << 'BASH'
-    action-double-click-titlebar 'toggle-maximize'
-    action-middle-click-titlebar 'lower' # 'minimize'
-    auto-raise 'true'
-    button-layout 'appmenu:minimize,close'
-    focus-mode 'sloppy'
-    mouse-button-modifier '<Super>'
-    num-workspaces 10
-    # NOTE: right click resizing is dependent on the sector of the window being
-    # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
-    resize-with-right-button true
-    workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']"
 BASH
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
@@ -137,113 +105,23 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings" << 'BASH'
     toggle-fullscreen "['F11']"
 BASH
 
+for_each "gsettings set org.gnome.desktop.wm.preferences" << 'BASH'
+    action-double-click-titlebar 'toggle-maximize'
+    action-middle-click-titlebar 'lower' # 'minimize'
+    auto-raise 'true'
+    button-layout 'appmenu:minimize,close'
+    focus-mode 'sloppy'
+    mouse-button-modifier '<Super>'
+    num-workspaces 10
+    # NOTE: right click resizing is dependent on the sector of the window being
+    # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
+    resize-with-right-button true
+    workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']"
+BASH
+
 for_each "gsettings set org.gnome.shell.keybindings" << 'BASH'
     screenshot "['Print']"
     show-screenshot-ui "['<Shift><Super>s']"
     toggle-overview "['<Control><Alt><Super>o']"
     toggle-message-tray "[]"
 BASH
-
-for_each "gsettings set org.gnome.Ptyxis" << 'BASH'
-    restore-session 'false'
-    restore-window-size 'false'
-    scrollbar-policy 'always'
-BASH
-
-for_each "gsettings set org.gnome.Ptyxis.Shortcuts" << 'BASH'
-    move-next-tab '<Control>Tab'
-    move-previous-tab '<Shift><Control>Tab'
-    focus-tab-1 '<Control>1'
-    focus-tab-2 '<Control>2'
-    focus-tab-3 '<Control>3'
-    focus-tab-4 '<Control>4'
-    focus-tab-5 '<Control>5'
-    focus-tab-6 '<Control>6'
-    focus-tab-7 '<Control>7'
-    focus-tab-8 '<Control>8'
-    focus-tab-9 '<Control>9'
-    focus-tab-10 '<Control>0'
-BASH
-
-# focus-changer@heartmire
-for_each "gsettings set org.gnome.shell.extensions.focus-changer" << 'BASH'
-    focus-down "['<Shift><Control><Alt><Super>Down']"
-    focus-left "['<Shift><Control><Alt><Super>Left']"
-    focus-right "['<Shift><Control><Alt><Super>Right']"
-    focus-up "['<Shift><Control><Alt><Super>Up']"
-BASH
-
-# panelScroll@sun.wxg@gmail.com
-for_each "gsettings set org.gnome.shell.extensions.panelScroll" << 'BASH'
-    debounce "0"
-    left "workspace"
-    right "workspace"
-    wrap "false"
-BASH
-
-# quake-terminal@diegodario88.github.io
-for_each "gsettings set org.gnome.shell.extensions.quake-terminal" << 'BASH'
-    always-on-top "true"
-    animation-time "0"
-    auto-hide-window "false"
-    horizontal-alignment "1"
-    horizontal-size "40"
-    vertical-size "50"
-BASH
-
-# clipboard-history@alexsaveau.dev
-for_each "gsettings set org.gnome.shell.extensions.clipboard-history" << 'BASH'
-    cache-size "1000"
-    display-mode "1"
-    history-size "10000"
-    next-entry "['<Alt>v']"
-    prev-entry "['<Shift><Alt>v']"
-    toggle-menu "['<Super>v']"
-    toggle-private-mode "[]"
-    topbar-preview-size "45"
-    window-width-percentage "100"
-BASH
-
-# TODO add the remaining settings
-gsettings set org.gnome.shell.extensions.vitals fixed-widths "false"
-
-# tiling-assistant@ubuntu.com
-for_each "gsettings set org.gnome.shell.extensions.tiling-assistant" << 'BASH'
-    enable-advanced-experimental-features "true"
-    window-gap "8"
-    focus-hint "3"
-    focus-hint-outline-style "1"
-    focus-hint-color "rgb(192,97,203)"
-    focus-hint-outline-size "6"
-    focus-hint-outline-border-radius "6"
-    enable-tiling-popup "false"
-    tiling-popup-all-workspace "false"
-    dynamic-keybinding-behavior "0"
-BASH
-
-# workspaces-by-open-apps@favo02.github.com
-for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-apps" << 'BASH'
-    indicator-show-background "true"
-    scroll-enable "false"
-BASH
-
-# system-monitor-next@paradoxxx.zero.gmail.com
-for_each "gsettings set org.gnome.shell.extensions.system-monitor-next-applet" << 'BASH'
-    show-tooltip 'true'
-    rotate-labels 'true'
-    cpu-system-color '#c01c28ff'
-BASH
-
-# tilingshell@ferrarodomenico.com
-for_each "gsettings set org.gnome.shell.extensions.tilingshell" << 'BASH'
-    enable-move-keybindings 'false'
-
-    # TODO - this setting probably also sets and unsets stuff in org.gnome.mutter -
-    # test whether setting these two values in tiling shell is consistent and behaves
-    # the same as setting them in the Extension settings app (if not correct that)
-    # I probably need to do more
-    overridden-settings '{"org.gnome.mutter":{"edge-tiling":"false"}}'
-BASH
-
-# window-title-is-back@fthx
-gsettings set org.gnome.shell.extensions.window-title-is-back fixed-width 'false'
