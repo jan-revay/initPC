@@ -10,6 +10,7 @@ gnome_present yes
 # TODO "Which services should be restarted?" prompt is still present in VM
 # TODO - is this relevant in Ubuntu desktop (seems to only do sth. in Ubuntu server)
 # TODO - move to packages_install.sh
+# TODO - remove support for ubuntu versions prior to 26.04
 export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
 
