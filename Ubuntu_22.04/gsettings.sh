@@ -1,6 +1,15 @@
 #!/bin/bash -x
 
 # HOW TO WATCH GSettings changes on Ubuntu? Run `dconf watch /`
+# TODO toread: https://wiki.archlinux.org/title/GNOME
+# https://wiki.archlinux.org/title/GNOME/Tips_and_tricks
+# https://wiki.archlinux.org/title/GDM
+# https://wiki.archlinux.org/title/GTK
+# https://wiki.archlinux.org/title/GNOME/Files
+# https://wiki.archlinux.org/title/GNOME_package_guidelines
+# https://docs.gtk.org/gio/class.Settings.html
+# https://docs.gtk.org/gio/class.Settings.html
+# https://wiki.gnome.org/HowDoI/GSettings
 
 # Appends a prefix in the first parameter to every line from stdin and executes
 # the resulting command. Ignores comments and empty lines.
@@ -21,6 +30,7 @@ readonly SCHDIR="${HOME}/.local/share/gnome-shell/extensions/compiled_schemas"
 mkdir -p "${SCHDIR}"
 find ~/.local/share/gnome-shell/extensions/ -name "*.gschema.xml" -exec cp -fu {} "${SCHDIR}" \;
 glib-compile-schemas "${SCHDIR}"
+# See: https://docs.gtk.org/gio/overview.html#running-gio-applications
 export GSETTINGS_SCHEMA_DIR="${SCHDIR}"
 
 # this was set to true for some reason on my fresh Ubuntu 24.04 install
