@@ -67,24 +67,24 @@ BASH
 
 # ubuntu-dock@ubuntu.com
 for_each "gsettings set org.gnome.shell.extensions.dash-to-dock" << 'BASH'
-    always-center-icons true
-    animation-time '0.01'
-    click-action 'previews'
-    dash-max-icon-size 64
-    default-windows-preview-to-open true
-    dock-fixed false
-    dock-position 'LEFT'
-    extend-height 'false'
-    hot-keys 'false'
-    pressure-threshold '50.0'
-    preview-size-scale '0.25'
-    shift-click-action 'minimize'
-    shift-middle-click-action 'launch'
-    shortcut-timeout '4'
-    show-mounts 'false'
-    show-show-apps-button 'false'
-    show-trash 'false'
-    show-windows-preview 'true'
+    always-center-icons "true"
+    animation-time "0.01"
+    click-action "previews"
+    dash-max-icon-size "64"
+    default-windows-preview-to-open "true"
+    dock-fixed "false"
+    dock-position "LEFT"
+    extend-height "false"
+    hot-keys "false"
+    pressure-threshold "50.0"
+    preview-size-scale "0.25"
+    shift-click-action "minimize"
+    shift-middle-click-action "launch"
+    shortcut-timeout "4"
+    show-mounts "false"
+    show-show-apps-button "false"
+    show-trash "false"
+    show-windows-preview "true"
 BASH
 
 # workspaces-by-open-apps@favo02.github.com
@@ -95,14 +95,14 @@ BASH
 
 # system-monitor-next@paradoxxx.zero.gmail.com
 for_each "gsettings set org.gnome.shell.extensions.system-monitor-next-applet" << 'BASH'
-    show-tooltip 'true'
-    rotate-labels 'true'
-    cpu-system-color '#c01c28ff'
+    show-tooltip "true"
+    rotate-labels "true"
+    cpu-system-color "#c01c28ff"
 BASH
 
 # tilingshell@ferrarodomenico.com
 for_each "gsettings set org.gnome.shell.extensions.tilingshell" << 'BASH'
-    enable-move-keybindings 'false'
+    enable-move-keybindings "false"
 
     # TODO - this setting probably also sets and unsets stuff in org.gnome.mutter -
     # test whether setting these two values in tiling shell is consistent and behaves
@@ -112,4 +112,4 @@ for_each "gsettings set org.gnome.shell.extensions.tilingshell" << 'BASH'
 BASH
 
 # window-title-is-back@fthx
-gsettings set org.gnome.shell.extensions.window-title-is-back fixed-width 'false'
+gsettings set org.gnome.shell.extensions.window-title-is-back fixed-width "false"

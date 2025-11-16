@@ -21,24 +21,25 @@ gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
 for_each "gsettings set org.gnome.Ptyxis" << 'BASH'
-    restore-session 'false'
-    restore-window-size 'false'
-    scrollbar-policy 'always'
+    restore-session "false"
+    restore-window-size "false"
+    scrollbar-policy "always"
 BASH
 
 for_each "gsettings set org.gnome.Ptyxis.Shortcuts" << 'BASH'
-    move-next-tab '<Control>Tab'
-    move-previous-tab '<Shift><Control>Tab'
-    focus-tab-1 '<Control>1'
-    focus-tab-2 '<Control>2'
-    focus-tab-3 '<Control>3'
-    focus-tab-4 '<Control>4'
-    focus-tab-5 '<Control>5'
-    focus-tab-6 '<Control>6'
-    focus-tab-7 '<Control>7'
-    focus-tab-8 '<Control>8'
-    focus-tab-9 '<Control>9'
-    focus-tab-10 '<Control>0'
+    close-tab "<Control>w"
+    move-next-tab "<Control>Tab"
+    move-previous-tab "<Shift><Control>Tab"
+    focus-tab-1 "<Control>1"
+    focus-tab-2 "<Control>2"
+    focus-tab-3 "<Control>3"
+    focus-tab-4 "<Control>4"
+    focus-tab-5 "<Control>5"
+    focus-tab-6 "<Control>6"
+    focus-tab-7 "<Control>7"
+    focus-tab-8 "<Control>8"
+    focus-tab-9 "<Control>9"
+    focus-tab-10 "<Control>0"
 BASH
 
 for_each "gsettings set org.gnome.desktop.input-sources" << 'BASH'
@@ -54,21 +55,21 @@ for_each "gsettings set org.gnome.desktop.interface" << 'BASH'
     # rounding error and also test whether the Chromium window does not change size on
     # refocus with the specific value.
     # TODO consider using 1 as scaling factor and setting interface/document/monospace fonts instead
-    text-scaling-factor '1' 
+    text-scaling-factor "1"
     # text-scaling-factor '1.1875' # this should also work - 1.0011 in binary
-    font-name 'Ubuntu Sans 13'
-    document-font-name 'Sans 13'
-    monospace-font-name 'Ubuntu Sans Mono 15'
+    font-name "Ubuntu Sans 13"
+    document-font-name "Sans 13"
+    monospace-font-name "Ubuntu Sans Mono 15"
 
-    font-hinting 'slight'
-    cursor-size '64'
+    font-hinting "slight"
+    cursor-size "64"
 
-    enable-animations 'false'
+    enable-animations "false"
 
-    accent-color 'red'
-    color-scheme 'prefer-dark'
-    gtk-theme 'Yaru-red-dark'
-    icon-theme 'Yaru-red-dark'
+    accent-color "red"
+    color-scheme "prefer-dark"
+    gtk-theme "Yaru-red-dark"
+    icon-theme "Yaru-red-dark"
 BASH
 
 for_each "gsettings set org.gnome.desktop.wm.keybindings" << 'BASH'
@@ -105,16 +106,16 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings" << 'BASH'
 BASH
 
 for_each "gsettings set org.gnome.desktop.wm.preferences" << 'BASH'
-    action-double-click-titlebar 'toggle-maximize'
-    action-middle-click-titlebar 'lower' # 'minimize'
-    auto-raise 'true'
-    button-layout 'appmenu:minimize,close'
-    focus-mode 'sloppy'
-    mouse-button-modifier '<Super>'
-    num-workspaces 10
+    action-double-click-titlebar "toggle-maximize"
+    action-middle-click-titlebar "lower" # 'minimize'
+    auto-raise "true"
+    button-layout "appmenu:minimize,close"
+    focus-mode "sloppy"
+    mouse-button-modifier "<Super>"
+    num-workspaces "10"
     # NOTE: right click resizing is dependent on the sector of the window being
     # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
-    resize-with-right-button true
+    resize-with-right-button "true"
     workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']"
 BASH
 
