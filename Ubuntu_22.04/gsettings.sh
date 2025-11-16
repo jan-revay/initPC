@@ -15,9 +15,10 @@
 
 . ../prelude.sh
 
-# this was set to true for some reason on my fresh Ubuntu 24.04 install
+# disable-lock-screen was set to true for some reason on my fresh Ubuntu 24.04 install
 gsettings set org.gnome.desktop.lockdown disable-lock-screen false
 gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
 for_each "gsettings set org.gnome.Ptyxis" << 'BASH'
     restore-session 'false'
@@ -69,8 +70,6 @@ for_each "gsettings set org.gnome.desktop.interface" << 'BASH'
     gtk-theme 'Yaru-red-dark'
     icon-theme 'Yaru-red-dark'
 BASH
-
-gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
 for_each "gsettings set org.gnome.desktop.wm.keybindings" << 'BASH'
     # TODO rethink workspace switching keybindings
