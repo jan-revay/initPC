@@ -108,12 +108,12 @@ BASH
 
 # Vitals@CoreCoding.com
 for_each "gsettings set org.gnome.shell.extensions.vitals" << 'BASH'
-    gsettings set org.gnome.shell.extensions.vitals fixed-widths "false"
+    fixed-widths "false"
 BASH
 
 # window-title-is-back@fthx
 for_each "gsettings set org.gnome.shell.extensions.window-title-is-back" << 'BASH'
-    gsettings set org.gnome.shell.extensions.window-title-is-back fixed-width "false"
+    fixed-width "false"
 BASH
 
 # workspaces-by-open-apps@favo02.github.com
