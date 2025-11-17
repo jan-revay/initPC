@@ -50,7 +50,8 @@ function install_gnome_extension
     # TODO - export GSETTINGS_SCHEMA_DIR in the config script so that I can use a simpler syntax
     # TODO see man gsettings and glib-compile-schemas to see which directories to set via environment vars and how.
     # See: https://chatgpt.com/share/6913c94f-ffac-800d-9e68-a66ef8141506
-    glib-compile-schemas "${HOME}/.local/share/gnome-shell/extensions/${EXTENSION_ID}/schemas" || true
+    # glib-compile-schemas "${HOME}/.local/share/gnome-shell/extensions/${EXTENSION_ID}/schemas" || true
+    # NOTE: Schema compilation was moved to extensions_gsettings.sh
 
     #    OLD code - needs user interaction and hence breaks CI TODO DELETE
     #    # TODO test whether all extensions are installed the first call
