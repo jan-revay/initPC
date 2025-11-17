@@ -93,6 +93,7 @@ $WINGET_PACKAGES = @(
     'Audacity.Audacity'
     'KDE.Kdenlive'
     'Microsoft.Sysinternals.Autoruns'
+    'Rufus.Rufus'
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
