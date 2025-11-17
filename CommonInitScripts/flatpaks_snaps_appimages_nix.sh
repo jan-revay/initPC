@@ -41,6 +41,7 @@ else
         # benchmarks and stress tests
         com.geeks3d.furmark
         com.geekbench.Geekbench6
+        app.zen_browser.zen
     )
     # TODO try fixing flatpak installation without sudo (or at least do some research
     # whether the sudo will not break sth.)
@@ -58,18 +59,26 @@ else
         core
         snap-store
         todoist
+        onlyoffice-desktopeditors
+        organize-my-files
 
         # TODO add the CLI packages to UbuntuCLI (but use different install method)
         dust
         procs
         onefetch
         drive
+        code
+        firefox
+        chromium
+        chromium-ffmpeg
     )
     time sudo snap refresh
     time print0 "${SNAP_PACKAGES[@]}" | xargs -0 -I % sudo snap install %
+    # TODO put the --classic flag to the consistent correct place
+    # TODO list install snap classic packages also
     time sudo snap install helix --classic # TODO move to UbuntuCLI
     time sudo snap install gitkraken --classic
     time sudo snap install clion --classic
     time sudo snap install --classic go
-
+    # time sudo snap install ghostty --classic
 fi

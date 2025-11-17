@@ -36,25 +36,26 @@ pushd ~/tmp
 
 # Install Google Chrome and Chrome extension for managing GNOME extensions
 sudo apt-get install -y wget gpg
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub > linux_signing_key.pub
-sudo install -D -o root -g root -m 644 linux_signing_key.pub /etc/apt/keyrings/linux_signing_key.pub
-sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/linux_signing_key.pub] http://dl.google.com/linux/chrome/deb/ stable main" \
-    > /etc/apt/sources.list.d/google-chrome.list'
-sudo apt-get -y update
-sudo apt-get install -y google-chrome-stable chrome-gnome-shell
-rm linux_signing_key.pub
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub > linux_signing_key.pub
+# sudo install -D -o root -g root -m 644 linux_signing_key.pub /etc/apt/keyrings/linux_signing_key.pub
+# sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/linux_signing_key.pub] http://dl.google.com/linux/chrome/deb/ stable main" \
+#    > /etc/apt/sources.list.d/google-chrome.list'
+# sudo apt-get -y update
+# sudo apt-get install -y google-chrome-stable chrome-gnome-shell
+# rm linux_signing_key.pub
 
+# TODO fix VSC and Google chrome installation
 # Install VSC (Snap package is problematic for C++ because of issues with libraries)
 # echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-selections
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
-echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" \
-    | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
-rm -f packages.microsoft.gpg
+# wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+# sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+# echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" \
+# | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+# rm -f packages.microsoft.gpg
 
 sudo apt-get install -y apt-transport-https
 sudo apt-get -y update
-sudo apt-get install -y code # or code-insiders
+# sudo apt-get install -y code # or code-insiders
 popd
 
 echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula boolean true" \
@@ -87,7 +88,8 @@ readonly APT_GUI_PACKAGES=(
     # TODO gitk and git-gui break the install script (dependencies) - choose another install method
     # it is just a bash script, hence it might make sense to install from source
     meld kdevelop coqide qgit cmake-gui # gitk git-gui
-    qtcreator kitty
+    qtcreator
+    kitty alacritty
 
     # ===== FILES AND DISK MANAGEMENT
     gparted
@@ -100,7 +102,7 @@ readonly APT_GUI_PACKAGES=(
     shutter # TODO learn how to use efficiently resp. remove if unused
 
     # ===== GUI TWEAKS AND AUTOMATION =====
-    dconf-editor gnome-tweaks
+    dconf-editor gnome-tweaks gnome-shell-extension-manager
 
     # ===== CODING =====
     sqlitebrowser
@@ -111,6 +113,11 @@ readonly APT_GUI_PACKAGES=(
     # ===== TO TRY ===== (TODO review)
     actiona # automations, written in C++ https://github.com/Jmgr/actiona
     autokey-common autokey-gtk
+
+    ubuntu-restricted-extras
+    chromium-browser
+    chrome-gnome-shell gnome-browser-connector # installing extensions from Firefox or Chrome
+
 )
 
 # TODO alacritty is not present on Ubuntu releases older than Ubuntu 24.04
