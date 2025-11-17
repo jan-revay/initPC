@@ -6,7 +6,7 @@
 # add the line here...
 
 # TODO sync with PopOS configs_install.sh
-# TODO move this to CommonInitScripts folder (this is not OS specific but just
+# TODO move this to DistroAgnostic folder (this is not OS specific but just
 # GNOME specific)
 # TODO add command to set GNOME terminal tab close keybinding to Ctrl+W
 # TODO consider using dconf dump & dconf load instead of calling gsettings for every key

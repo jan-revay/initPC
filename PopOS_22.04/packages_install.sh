@@ -121,4 +121,4 @@ sudo apt autoremove
 apt list --upgradable # check for the packages that were not upgraded
 
 # GNOME extensions
-. ../CommonInitScripts/gnome_install_extensions.sh # TODO also not a dotfile
+. ../DistroAgnostic/gnome_install_extensions.sh # TODO also not a dotfile

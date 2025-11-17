@@ -3,7 +3,7 @@
 
 . ../prelude.sh
 
-pushd ../CommonInitScripts/ || exit "${EXIT_FILE_IO_ERROR}"
+pushd ../DistroAgnostic/ || exit "${EXIT_FILE_IO_ERROR}"
 # TODO cd in sharedConfig.sh
 # shellcheck source=/dev/null
 . sharedConfig.sh

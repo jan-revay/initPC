@@ -1,4 +1,4 @@
-# CommonInitScripts
+# DistroAgnostic
 
 Init script files that are shared between various platforms (e.g. git config script).
 

@@ -11,9 +11,9 @@ exit 77
 # in settings
 #    - desktop icons large
 
-. ../CommonInitScripts/git_config.sh.ps1
+. ../DistroAgnostic/git_config.sh.ps1
 
-. ../CommonInitScripts/mkdirs.sh
+. ../DistroAgnostic/mkdirs.sh
 
 # GNOME TWEAKS
 

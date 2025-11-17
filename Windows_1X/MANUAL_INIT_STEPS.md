@@ -206,7 +206,7 @@ remove them in the Windows registry: <https://superuser.com/questions/957552/how
 
 ## XPpen tablet
 
-1. Install drivers and follow the settings guide in CommonInitScripts (todo add link)
+1. Install drivers and follow the settings guide in DistroAgnostic (todo add link)
 
 ## Install Slovak eID drivers
 
