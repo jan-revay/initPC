@@ -1,4 +1,4 @@
-# UbuntuCLI
+# CLI_Ubuntu
 Scripts in this directory serve as a base to all other Linux init scripts (they are called from Debian, Ubuntu, PopOS, Kubuntu... installers).
 
 ## TODO

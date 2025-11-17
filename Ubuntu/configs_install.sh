@@ -45,7 +45,7 @@
 
 . ../prelude.sh
 
-. ../UbuntuCLI/configs_install.sh
+. ../CLI_Ubuntu/configs_install.sh
 
 # GNOME TWEAKS
 

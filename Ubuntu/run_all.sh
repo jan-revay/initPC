@@ -17,8 +17,8 @@ export NEEDRESTART_SUSPEND=1
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
 . packages_install.sh
-. ../UbuntuCLI/ubuntu_specific_packages.sh
-. ../UbuntuCLI/optional_packages_install.sh
+. ../CLI_Ubuntu/ubuntu_specific_packages.sh
+. ../CLI_Ubuntu/optional_packages_install.sh
 . interactive_part.sh
 . configs_install.sh
 . gsettings.sh

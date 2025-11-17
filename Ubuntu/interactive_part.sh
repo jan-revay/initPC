@@ -5,5 +5,5 @@
 
 . ../prelude.sh
 
-. ../UbuntuCLI/interactive_part.sh
+. ../CLI_Ubuntu/interactive_part.sh
 . ../CommonInitScripts/gnome_install_extensions.sh

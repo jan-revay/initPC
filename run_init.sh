@@ -54,10 +54,10 @@ function try_platform
 # see: https://chatgpt.com/share/e001132e-2bfc-4b68-ab99-8697da44ccc2
 # timedatectl set-timezone Europe/Vienna
 # TODO rationalize parameter passing
-try_platform "UbuntuCLI" "$1"
+try_platform "CLI_Ubuntu" "$1"
 try_platform "DebianCLI" "$1"
 try_platform "KaliCLI" "$1"
-try_platform "Ubuntu_22.04" "$1"
+try_platform "Ubuntu" "$1"
 try_platform "PopOS_22.04" "$1"
 try_platform "Android_13" "$1"
 
