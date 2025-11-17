@@ -21,7 +21,7 @@ export NEEDRESTART_SUSPEND=1
 . interactive_part.sh
 . configs_install.sh
 . gsettings.sh
-. gsettings_extensions.sh
+. extensions_gsettings.sh
 
 # todo - is this automatic restart really needed?
 # TODO - only restart after the first run
