@@ -80,5 +80,5 @@ else
     time sudo snap install gitkraken --classic
     time sudo snap install clion --classic
     time sudo snap install --classic go
-    time sudo snap install ghostty --classic
+    # time sudo snap install ghostty --classic
 fi
