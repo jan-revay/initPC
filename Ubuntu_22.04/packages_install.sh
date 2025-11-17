@@ -115,7 +115,7 @@ readonly APT_GUI_PACKAGES=(
     autokey-common autokey-gtk
 
     ubuntu-restricted-extras
-    chromium-browser
+
     chrome-gnome-shell gnome-browser-connector # installing extensions from Firefox or Chrome
 
 )
