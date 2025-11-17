@@ -12,7 +12,6 @@
 # TODO consider using dconf dump & dconf load instead of calling gsettings for every key
 # see: https://askubuntu.com/questions/984205/how-to-save-gnome-settings-in-a-file
 
-
 # TODO - simplify repeated prefixes as follows:
 # I can name the function xargse (xargs extended)
 # or my_xargs
@@ -41,7 +40,6 @@
 
 # Add the helper function to prelude?
 # TODO - try to use lists where possible...
-
 
 # TODO pohrat sa s tymi nastaveniami, ci vlastne su vsetky potrebne a robia to co chcem
 

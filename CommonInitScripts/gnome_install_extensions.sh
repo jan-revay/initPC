@@ -12,7 +12,6 @@
 # (chatgpt) also male research why do I need to specofy the schemadir
 # at all https://chatgpt.com/share/6913c94f-ffac-800d-9e68-a66ef8141506
 
-
 # TODO Another session manager extension can probably replace putwindows and
 # also my autostart scripts as it is also able to start the applications.
 # TODO more research wrt the Another session manager extension and also consider manually
