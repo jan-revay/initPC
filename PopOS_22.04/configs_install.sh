@@ -11,10 +11,6 @@ exit 77
 # in settings
 #    - desktop icons large
 
-. ../DistroAgnostic/git_config.sh.ps1
-
-. ../DistroAgnostic/mkdirs.sh
-
 # GNOME TWEAKS
 
 # TODO add lower window on middle click

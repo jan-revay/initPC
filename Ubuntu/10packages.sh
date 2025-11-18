@@ -159,5 +159,3 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y autoremove
 apt list --upgradable # check for the packages that were not upgraded
-
-. ../DistroAgnostic/flatpaks_snaps_appimages_nix.sh

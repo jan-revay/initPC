@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-. ../prelude.sh
+. ../../prelude.sh
 
 # TODO setup automatic flatpak and snap updates
 # TODO skip install if running inside a docker container and print warning

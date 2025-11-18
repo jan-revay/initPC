@@ -3,9 +3,11 @@
 
 . ../prelude.sh
 
-if [[ distro_is ubuntu && distro_version_ge 24 ]]; then
+if distro_is ubuntu && distro_version_ge 24; then
     # stuff that requires user input can be turned off by `--noninteractive` CLI param
     for script in [0-9][0-9]*.sh; do
-       [ -f "$script" ] && . "$script"
+        [ -e "$script" ] || continue # skip if no match
+        # shellcheck source=/dev/null
+        [ -f "$script" ] && . "$script"
     done
 fi

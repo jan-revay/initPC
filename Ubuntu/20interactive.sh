@@ -4,7 +4,3 @@
 # user interaction is finished as quickly as possible.
 
 . ../prelude.sh
-
-. ../DistroAgnostic/gnome_install_extensions.sh
-
-# TODO run all distro agnostic code from a separate runner

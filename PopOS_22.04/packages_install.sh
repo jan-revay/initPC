@@ -119,6 +119,3 @@ sudo apt install -y autokey-common autokey-gtk
 # cleanup
 sudo apt autoremove
 apt list --upgradable # check for the packages that were not upgraded
-
-# GNOME extensions
-. ../DistroAgnostic/gnome_install_extensions.sh # TODO also not a dotfile

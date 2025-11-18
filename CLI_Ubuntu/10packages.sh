@@ -184,7 +184,6 @@ time sudo gem install mdl # markdown-lint
 # sudo apt purge --autoremove pipx
 # https://github.com/pypa/pipx/issues/1481
 
-
 # ----------------
 
 # TODO add:
