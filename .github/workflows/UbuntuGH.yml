@@ -19,6 +19,8 @@ on:
 
 jobs:
   build:
+    env:
+      SNAP_PROGRESS: off
     if: |
       !endsWith(github.event.head_commit.message, 'Add a TODO') &&
       !endsWith(github.event.head_commit.message, 'Add TODOs') &&
