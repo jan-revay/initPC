@@ -11,7 +11,7 @@ function interactive_part
         time sudo apt-get -y update
         time sudo apt-get -y upgrade
         sudo apt install -y gh git
-        
+
         read -r -s -p "GitHub token: " GITHUB_TOKEN # TODO add a check for empty token
         echo                                        # add newline
         echo "${GITHUB_TOKEN}" | gh auth login --hostname github.com --with-token

@@ -52,4 +52,5 @@ run_all "Ubuntu"
 run_all "Android_13"
 run_all "DistroAgnostic"
 
+# TODO: Why does the pwd show in logs after this message?
 echo -e "${GREEN}run_init.sh: All configuration scripts run successfully.${NC}"

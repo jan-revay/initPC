@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-. ../prelude.sh
+. ../../prelude.sh
 
 readonly SCHDIR="${HOME}/.local/share/gnome-shell/extensions/compiled_schemas"
 mkdir -p "${SCHDIR}"
