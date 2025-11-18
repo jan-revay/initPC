@@ -4,10 +4,10 @@
 . ../prelude.sh
 
 distro_is ubuntu
-distro_version_ge 22
-gnome_present no
+distro_version_ge 24
 
-. packages_install.sh
 # stuff that requires user input can be turned off by `--noninteractive` CLI param
-. interactive_part.sh
-. configs_install.sh
+for script in [0-9][0-9]*.sh; do
+    . "$script"
+done
+
