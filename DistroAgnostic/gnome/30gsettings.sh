@@ -20,6 +20,9 @@ gsettings set org.gnome.desktop.lockdown disable-lock-screen false
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
+# Ptyxis is not present on Ubuntu 24.04 - check and skip
+if gsettings get org.gnome.Ptyxis scrollbar-policy ; then
+
 for_each "gsettings set org.gnome.Ptyxis" << 'BASH'
     restore-session "false"
     restore-window-size "false"
@@ -41,6 +44,8 @@ for_each "gsettings set org.gnome.Ptyxis.Shortcuts" << 'BASH'
     focus-tab-9 "<Control>9"
     focus-tab-10 "<Control>0"
 BASH
+
+fi # Ubuntu 24.04
 
 for_each "gsettings set org.gnome.desktop.input-sources" << 'BASH'
     per-window true
