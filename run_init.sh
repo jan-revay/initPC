@@ -1,8 +1,5 @@
 #!/bin/bash -x
-# BASE IMAGE: any (including unsupported)
-# This script tries to automatically detect and init/configure the host platform.
-
-# TODO consider logging errors to STDERR?
+# Automatically detect and init/configure the host platform.
 
 . prelude.sh
 
@@ -16,35 +13,23 @@ elif [ "$1" == "--noninteractive" ]; then
     export NONINTERACTIVE='true'
     echo 'NONINTERACTIVE=true'
 elif [ "$1" == "" ]; then
-    echo "Interactive part of the script will be executed at the end..."
+    echo "Interactive part of the script will be executed..."
 else
     echo "Invalid argument $1"
     exit "${EXIT_INVALID_ARGUMENT}"
 fi
 
-LOG_PATH="$(pwd)/Logs/$(date '+%Y%m%d_%H%M%S').log"
-readonly LOG_PATH
-mkdir -p "$(dirname "${LOG_PATH}")"
+LOGFILE="$(pwd)/Logs/$(date '+%Y%m%d_%H%M%S').log"
+readonly LOGFILE
+mkdir -p "$(dirname "${LOGFILE}")"
+
+# Redirect all output (stdout + stderr) to both the log file and the terminal
+exec > >(tee -i "$LOGFILE") 2>&1
 
 function try_platform
 {
     pushd "$1" || exit "${EXIT_FILE_IO_ERROR}"
-
-    time ./run_all.sh "$2" 2>&1 | tee "${LOG_PATH}"
-    local STATUS="${PIPESTATUS[0]}"
-
-    if [[ "${STATUS}" == "0" ]]; then
-        echo -e "${GREEN}run_init.sh: All configuration scripts run successfully.${NC}" \
-            | tee --append "${LOG_PATH}"
-    else
-        echo -e "${RED}run_init.sh: Error - exit code ${STATUS}${NC}" \
-            | tee --append "${LOG_PATH}"
-    fi
-
-    if [[ "${STATUS}" != "${EXIT_INCORRECT_PLATFORM}" ]]; then
-        exit "${STATUS}"
-    fi
-
+    . ./run_all.sh
     popd || exit "${EXIT_FILE_IO_ERROR}"
 }
 
@@ -54,14 +39,12 @@ function try_platform
 # see: https://chatgpt.com/share/e001132e-2bfc-4b68-ab99-8697da44ccc2
 # timedatectl set-timezone Europe/Vienna
 # TODO rationalize parameter passing
-try_platform "CLI_Ubuntu" "$1"
-try_platform "DebianCLI" "$1"
-try_platform "KaliCLI" "$1"
-try_platform "Ubuntu" "$1"
-try_platform "PopOS_22.04" "$1"
-try_platform "Android_13" "$1"
+try_platform "CLI_Ubuntu"
+# try_platform "DebianCLI"
+# try_platform "KaliCLI"
+try_platform "Ubuntu"
+# try_platform "PopOS_22.04"
+try_platform "Android_13"
 
-echo -e "${RED}run_init.sh: Fatal error - Unsupported platform " \
-    "- no supported platform detected.${NC}" \
-    | tee --append "${LOG_PATH}"
-exit "${EXIT_INCORRECT_PLATFORM}"
+# TODO print executed var (it will be a list of all subscripts that were executed)
+# and some succesfull execution msg.

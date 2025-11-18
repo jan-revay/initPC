@@ -6,6 +6,9 @@
 if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     __INITPC_PRELUDE_SOURCED__='true'
 
+    # Enable strict mode
+    set -euo pipefail
+
     # TODO toread:
     # https://linuxopsys.com/topics/customizing-bash-prompt-in-linux-changing-colors
     # https://gist.github.com/vratiu/9780109
