@@ -119,6 +119,7 @@ jobs:
           ! -path "*work/_temp/*" \
           ! -path "./runners/*" \
           ! -path "./x/helix/.git/*" \
+          ! -path "./actions-runner/*" \
           ! -iname "*.log" \
           ! -name ".wget-hsts" \
         \) -print0 |
