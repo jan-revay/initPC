@@ -7,7 +7,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     __INITPC_PRELUDE_SOURCED__='true'
 
     # Enable strict mode
-    set -euo pipefail
+    set -euox pipefail
 
     # TODO toread:
     # https://linuxopsys.com/topics/customizing-bash-prompt-in-linux-changing-colors
@@ -18,10 +18,6 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # https://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
     # https://unix.stackexchange.com/questions/148/colorizing-your-terminal-and-shell-environment
     # https://dev.to/ifenna__/adding-colors-to-bash-scripts-48g4
-
-    set -e # exit on error
-    set -x # debug logging
-    # TODO try removing -x option from scripts that include this
 
     # shellcheck disable=SC2034
     readonly RED='\033[0;31m'
