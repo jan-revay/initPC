@@ -6,16 +6,16 @@ on:
     # Runs at 03:17, only on Wednesday
     - cron: "17 3 * * 3"
   push:
-    branches: [ "devel", "testing", "stable", "LTS" ]
+    branches: [ "devel_ubuntu_25.10" ]
     paths:
     - '*.sh'
-    - 'CommonInitScripts/**.sh*'
-    - 'UbuntuCLI/**.sh'
-    - 'Ubuntu_22.04/**.sh'
-    - 'Ubuntu_22.04/RootDotfiles/**'
+    - 'CLI_Ubuntu/**.sh'
+    - 'Ubuntu/**.sh'
+    - 'DistroAgnostic/**.sh*'
+    - 'Ubuntu/RootDotfiles/**'
     - '.github/workflows/UbuntuGH.yml'
   pull_request:
-    branches: [ "devel", "testing", "stable", "LTS" ]
+    branches: [ "devel_ubuntu_25.10" ]
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-22.04, ubuntu-24.04]
+        os: [ubuntu-24.04]
         gui: [GNOME, CLI] # TODO Add GNOME test to containers.yml
     name: ${{ matrix.os }}_${{ matrix.gui }}
     runs-on: ${{ matrix.os }}
