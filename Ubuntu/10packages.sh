@@ -10,8 +10,6 @@
 
 . ../prelude.sh
 
-. ../CLI_Ubuntu/packages_install.sh
-
 export DEBIAN_FRONTEND=noninteractive
 # TODO "Which services should be restarted?" prompt is still present in VM
 export NEEDRESTART_MODE=a

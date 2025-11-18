@@ -16,13 +16,10 @@ export NEEDRESTART_MODE=a
 export NEEDRESTART_SUSPEND=1
 
 # Run stuff that requires user input first (if not turned off by `--noninteractive`)
-. packages_install.sh
-. ../CLI_Ubuntu/ubuntu_specific_packages.sh
-. ../CLI_Ubuntu/optional_packages_install.sh
-. interactive_part.sh
-. configs_install.sh
-. gsettings.sh
-. extensions_gsettings.sh
+for script in [0-9][0-9]*.sh; do
+    [ -f "$script" ] && . "$script"
+done
+
 
 # todo - is this automatic restart really needed?
 # TODO - only restart after the first run

@@ -45,8 +45,6 @@
 
 . ../prelude.sh
 
-. ../CLI_Ubuntu/configs_install.sh
-
 # GNOME TWEAKS
 
 # TODO add keyboard settings

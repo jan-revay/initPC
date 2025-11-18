@@ -5,5 +5,4 @@
 
 . ../prelude.sh
 
-. ../CLI_Ubuntu/interactive_part.sh
 . ../DistroAgnostic/gnome_install_extensions.sh
