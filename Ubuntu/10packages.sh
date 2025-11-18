@@ -64,7 +64,6 @@ echo 'deb [signed-by=/etc/apt/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez
 sudo apt-get -y update
 sudo apt-get -y install wezterm
 
-# TODO add kitty terminal emulator
 # TODO add IDA disassembler for Linux <https://letsdefend.io/blog/how-to-install-ida-on-linux>
 readonly APT_GUI_PACKAGES=(
     # ===== package managers =====
@@ -87,7 +86,7 @@ readonly APT_GUI_PACKAGES=(
     # it is just a bash script, hence it might make sense to install from source
     meld kdevelop coqide qgit cmake-gui # gitk git-gui
     qtcreator
-    kitty alacritty
+    kitty alacritty ptyxis
 
     # ===== FILES AND DISK MANAGEMENT
     gparted
