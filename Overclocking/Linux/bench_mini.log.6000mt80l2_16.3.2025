@@ -1,1712 +1,0 @@
-+ phoronix-test-suite batch-run system/compress-7zip-1.0.0 pts/build-linux-kernel-1.16.0 pts/build-php-1.7.0 pts/ramspeed pts/tinymembench
-
-
-[1;32mPhoronix Test Suite v10.8.4[0m
-[1;32mSystem Information[0m
-
-
-  [1;30mPROCESSOR[0m:              [1;32mAMD Ryzen 9 9950X 16-Core @ 5.75GHz[0m
-    [1mCore Count[0m:           16                                                           
-    [1mThread Count[0m:         32                                                           
-    [1mExtensions[0m:           SSE 4.2                                                      
-    [1m [0m                     + AVX512_VNNI                                                
-    [1m [0m                     + AVX512CD                                                   
-    [1m [0m                     + AVX2                                                       
-    [1m [0m                     + AVX                                                        
-    [1m [0m                     + RDRAND                                                     
-    [1m [0m                     + FSGSBASE                                                   
-    [1mCache Size[0m:           64 MB                                                        
-    [1mMicrocode[0m:            0xb404023                                                    
-    [1mCore Family[0m:          Family 26 Model 68                                           
-    [1mScaling Driver[0m:       amd-pstate-epp performance (Boost: Enabled EPP: performance) 
-
-  [1;30mGRAPHICS[0m:               [1;32mGigabyte AMD Radeon 2GB[0m
-    [1mBAR1 / Visible vRAM[0m:  2048 MB                                                 
-    [1mOpenGL[0m:               4.6 Mesa 24.2.8-1ubuntu1~24.04.1 (LLVM 19.1.1 DRM 3.59) 
-    [1mMonitor[0m:              DELL U3219Q                                             
-    [1mScreen[0m:               3840x2160                                               
-
-  [1;30mMOTHERBOARD[0m:            [1;32mGigabyte X670E AORUS MASTER[0m
-    [1mBIOS Version[0m:         F33                                         
-    [1mChipset[0m:              AMD Device 14d8                             
-    [1mAudio[0m:                AMD Rembrandt Radeon HD Audio               
-    [1mNetwork[0m:              Intel I225-V + MEDIATEK MT7922 802.11ax PCI 
-
-  [1;30mMEMORY[0m:                 [1;32m92GB[0m
-
-  [1;30mDISK[0m:                   [1;32m1000GB Samsung SSD 980 1TB + 10001GB Western Digital WD102KRYZ-01[0m
-    [1mFile-System[0m:          ext4                  
-    [1mMount Options[0m:        relatime rw stripe=32 
-    [1mDisk Scheduler[0m:       NONE                  
-    [1mDisk Details[0m:         Block Size: 4096      
-
-  [1;30mOPERATING SYSTEM[0m:       [1;32mUbuntu 24.04[0m
-    [1mKernel[0m:               6.11.0-19-generic (x86_64)                                                                                                                            
-    [1mDesktop[0m:              GNOME Shell 46.0                                                                                                                                      
-    [1mDisplay Server[0m:       X Server 1.21.1.11 + Wayland                                                                                                                          
-    [1mCompiler[0m:             GCC 13.3.0 + Clang 18.1.8 + LLVM 18.1.8                                                                                                               
-    [1mSecurity[0m:             gather_data_sampling: Not affected                                                                                                                    
-    [1m [0m                     + itlb_multihit: Not affected                                                                                                                         
-    [1m [0m                     + l1tf: Not affected                                                                                                                                  
-    [1m [0m                     + mds: Not affected                                                                                                                                   
-    [1m [0m                     + meltdown: Not affected                                                                                                                              
-    [1m [0m                     + mmio_stale_data: Not affected                                                                                                                       
-    [1m [0m                     + reg_file_data_sampling: Not affected                                                                                                                
-    [1m [0m                     + retbleed: Not affected                                                                                                                              
-    [1m [0m                     + spec_rstack_overflow: Not affected                                                                                                                  
-    [1m [0m                     + spec_store_bypass: Mitigation of SSB disabled via prctl                                                                                             
-    [1m [0m                     + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization                                                                  
-    [1m [0m                     + spectre_v2: Mitigation of Enhanced / Automatic IBRS; IBPB: conditional; STIBP: always-on; RSB filling; PBRSB-eIBRS: Not affected; BHI: Not affected 
-    [1m [0m                     + srbds: Not affected                                                                                                                                 
-    [1m [0m                     + tsx_async_abort: Not affected                                                                                                                       
-
-
-    [1mRecently Saved Test Results:[0m
-       6000mtpboe80l2autor2         [Today]
-       6000mtpboe80l2auto           [Today]
-       6200mtpboe3160vsoc14vmemv3   [Today]
-       6200mtpboe3160vsoc14vmemv2   [Today]
-       6200mtpboe3160vsoc14vmem     [Today]
-
-
-[1;36mRAMspeed SMP 3.5.0:
-    pts/ramspeed-1.4.3 [Type: Add - Benchmark: Integer][0m
-    Test 1 of 15
-    Estimated Trial Run Count:    3                             
-    Estimated Test Run-Time:      2 Minutes                     
-    Estimated Time To Completion: 1 Hour, 3 Minutes [03:09 UTC] 
-        Started Run 1 @ 02:07:01
-        Started Run 2 @ 02:07:31
-        Started Run 3 @ 02:08:01
-
-    Type: Add - Benchmark: Integer:
-        [1;32m68941.81[0m
-        67378.19
-        [1;31m66458.92[0m
-
-    Average: [1;34m67592.97 MB/s[0m
-    Deviation: 1.86%
-
-[1;36mRAMspeed SMP 3.5.0:
-    pts/ramspeed-1.4.3 [Type: Copy - Benchmark: Integer][0m
-    Test 2 of 15
-    Estimated Trial Run Count:    3                             
-    Estimated Test Run-Time:      2 Minutes                     
-    Estimated Time To Completion: 1 Hour, 2 Minutes [03:09 UTC] 
-        Started Run 1 @ 02:08:37
-        Started Run 2 @ 02:09:07
-        Started Run 3 @ 02:09:37
-
-    Type: Copy - Benchmark: Integer:
-        69389.45
-        [1;31m69262.61[0m
-        [1;32m69437.13[0m
-
-    Average: [1;34m69363.06 MB/s[0m
-    Deviation: 0.13%
-
-[1;36mRAMspeed SMP 3.5.0:
-    pts/ramspeed-1.4.3 [Type: Scale - Benchmark: Integer][0m
-    Test 3 of 15
-    Estimated Trial Run Count:    3                  
-    Estimated Test Run-Time:      2 Minutes          
-    Estimated Time To Completion: 1 Hour [03:10 UTC] 
-        Started Run 1 @ 02:10:13
-        Started Run 2 @ 02:10:43
-        Started Run 3 @ 02:11:13
-
-    Type: Scale - Benchmark: Integer:
-        [1;31m72913.33[0m
-        73284.9
-        [1;32m73904.21[0m
-
-    Average: [1;34m73367.48 MB/s[0m
-    Deviation: 0.68%
-
-[1;36mRAMspeed SMP 3.5.0:
-    pts/ramspeed-1.4.3 [Type: Triad - Benchmark: Integer][0m
-    Test 4 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      2 Minutes              
-    Estimated Time To Completion: 59 Minutes [03:10 UTC] 
-        Started Run 1 @ 02:11:49
-        Started Run 2 @ 02:12:19
-        Started Run 3 @ 02:12:48
-
-    Type: Triad - Benchmark: Integer:
-        [1;31m67157.34[0m
-        68288.97
-        [1;32m69403.53[0m
-
-    Average: [1;34m68283.28 MB/s[0m
-    Deviation: 1.64%
-
-[1;36mRAMspeed SMP 3.5.0:
-    pts/ramspeed-1.4.3 [Type: Average - Benchmark: Integer][0m
-    Test 5 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      2 Minutes              
-    Estimated Time To Completion: 57 Minutes [03:10 UTC] 
-        Started Run 1 @ 02:13:24
-        Started Run 2 @ 02:13:54
-        Started Run 3 @ 02:14:24
-
-    Type: Average - Benchmark: Integer:
-        69736.36
-        [1;31m68984.17[0m
-        [1;32m70386.17[0m
-
-    Average: [1;34m69702.23 MB/s[0m
-    Deviation: 1.01%
-
-[1;36mRAMspeed SMP 3.5.0:
-    pts/ramspeed-1.4.3 [Type: Add - Benchmark: Floating Point][0m
-    Test 6 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      2 Minutes              
-    Estimated Time To Completion: 56 Minutes [03:10 UTC] 
-        Started Run 1 @ 02:15:00
-        Started Run 2 @ 02:15:30
-        Started Run 3 @ 02:16:00
-
-    Type: Add - Benchmark: Floating Point:
-        69033.36
-        [1;32m69439.54[0m
-        [1;31m68936.09[0m
-
-    Average: [1;34m69136.33 MB/s[0m
-    Deviation: 0.39%
-
-[1;36mRAMspeed SMP 3.5.0:
-    pts/ramspeed-1.4.3 [Type: Copy - Benchmark: Floating Point][0m
-    Test 7 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      2 Minutes              
-    Estimated Time To Completion: 54 Minutes [03:10 UTC] 
-        Started Run 1 @ 02:16:36
-        Started Run 2 @ 02:17:07
-        Started Run 3 @ 02:17:37
-
-    Type: Copy - Benchmark: Floating Point:
-        67483.23
-        [1;31m67410.46[0m
-        [1;32m67647.89[0m
-
-    Average: [1;34m67513.86 MB/s[0m
-    Deviation: 0.18%
-
-[1;36mRAMspeed SMP 3.5.0:
-    pts/ramspeed-1.4.3 [Type: Scale - Benchmark: Floating Point][0m
-    Test 8 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      2 Minutes              
-    Estimated Time To Completion: 53 Minutes [03:10 UTC] 
-        Started Run 1 @ 02:18:13
-        Started Run 2 @ 02:18:44
-        Started Run 3 @ 02:19:14
-
-    Type: Scale - Benchmark: Floating Point:
-        [1;32m73800.79[0m
-        73687.88
-        [1;31m72942.58[0m
-
-    Average: [1;34m73477.08 MB/s[0m
-    Deviation: 0.63%
-
-[1;36mRAMspeed SMP 3.5.0:
-    pts/ramspeed-1.4.3 [Type: Triad - Benchmark: Floating Point][0m
-    Test 9 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      2 Minutes              
-    Estimated Time To Completion: 51 Minutes [03:10 UTC] 
-        Started Run 1 @ 02:19:51
-        Started Run 2 @ 02:20:21
-        Started Run 3 @ 02:20:51
-
-    Type: Triad - Benchmark: Floating Point:
-        [1;31m63956.67[0m
-        [1;32m65019.51[0m
-        64282.98
-
-    Average: [1;34m64419.72 MB/s[0m
-    Deviation: 0.85%
-
-[1;36mRAMspeed SMP 3.5.0:
-    pts/ramspeed-1.4.3 [Type: Average - Benchmark: Floating Point][0m
-    Test 10 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      2 Minutes              
-    Estimated Time To Completion: 50 Minutes [03:10 UTC] 
-        Started Run 1 @ 02:21:28
-        Started Run 2 @ 02:21:58
-        Started Run 3 @ 02:22:28
-
-    Type: Average - Benchmark: Floating Point:
-        68696.7
-        [1;31m68677.04[0m
-        [1;32m68727.66[0m
-
-    Average: [1;34m68700.47 MB/s[0m
-    Deviation: 0.04%
-
-[1;36mTinymembench 2018-05-28:
-    pts/tinymembench-1.0.2[0m
-    Test 11 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      13 Minutes             
-    Estimated Time To Completion: 48 Minutes [03:10 UTC] 
-        Started Run 1 @ 02:23:05
-        Started Run 2 @ 02:27:04
-        Started Run 3 @ 02:30:29
-
-    Standard Memcpy:
-        [1;32m30854.7[0m
-        30838.8
-        [1;31m30749.6[0m
-
-    Average: [1;34m30814.4 MB/s[0m
-    Deviation: 0.18%
-
-
-    Standard Memset:
-        [1;32m33554.4[0m
-        [1;32m33554.4[0m
-        [1;31m33504.9[0m
-
-    Average: [1;34m33537.9 MB/s[0m
-    Deviation: 0.09%
-
-[1;36m7-Zip Compression:
-    system/compress-7zip-1.0.0[0m
-    Test 12 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      2 Minutes              
-    Estimated Time To Completion: 36 Minutes [03:09 UTC] 
-        Started Run 1 @ 02:34:09
-        Started Run 2 @ 02:34:34
-        Started Run 3 @ 02:34:59
-
-    Test: Compression Rating:
-        [1;31m210835[0m
-        [1;32m211079[0m
-        211018
-
-    Average: [1;34m210977 MIPS[0m
-    Deviation: 0.06%
-
-
-    Test: Decompression Rating:
-        [1;32m150669[0m
-        149695
-        [1;31m148633[0m
-
-    Average: [1;34m149666 MIPS[0m
-    Deviation: 0.68%
-
-[1;36mTimed Linux Kernel Compilation 6.8:
-    pts/build-linux-kernel-1.16.0 [Build: defconfig][0m
-    Test 13 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      3 Minutes              
-    Estimated Time To Completion: 35 Minutes [03:09 UTC] 
-        Running Pre-Test Script @ 02:35:30
-        Started Run 1 @ 02:35:37
-        Running Interim Test Script @ 02:36:24
-        Started Run 2 @ 02:36:27
-        Running Interim Test Script @ 02:37:12
-        Started Run 3 @ 02:37:16
-        Running Post-Test Script @ 02:38:01
-
-    Build: defconfig:
-        [1;31m44.259[0m
-        [1;32m43.482[0m
-        43.529
-
-    Average: [1;34m43.757 Seconds[0m
-    Deviation: 1.00%
-
-[1;36mTimed Linux Kernel Compilation 6.8:
-    pts/build-linux-kernel-1.16.0 [Build: allmodconfig][0m
-    Test 14 of 15
-    Estimated Trial Run Count:    3                      
-    Estimated Test Run-Time:      31 Minutes             
-    Estimated Time To Completion: 32 Minutes [03:09 UTC] 
-        Running Pre-Test Script @ 02:38:10
-        Started Run 1 @ 02:38:17
-        Running Interim Test Script @ 02:48:14
-        Started Run 2 @ 02:48:19
-        Running Interim Test Script @ 02:58:09
-        Started Run 3 @ 02:58:13
-        Running Post-Test Script @ 03:08:04
-
-    Build: allmodconfig:
-        [1;31m594.918[0m
-        [1;32m588.206[0m
-        588.981
-
-    Average: [1;34m590.702 Seconds[0m
-    Deviation: 0.62%
-
-[1;36mTimed PHP Compilation 8.3.4:
-    pts/build-php-1.7.0[0m
-    Test 15 of 15
-    Estimated Trial Run Count:    3                     
-    Estimated Time To Completion: 2 Minutes [03:09 UTC] 
-        Running Pre-Test Script @ 03:08:15
-        Started Run 1 @ 03:08:21
-        Running Interim Test Script @ 03:08:55
-        Started Run 2 @ 03:08:57
-        Running Interim Test Script @ 03:09:30
-        Started Run 3 @ 03:09:33
-        Running Post-Test Script @ 03:10:07
-
-    Time To Compile:
-        31.441
-        [1;32m31.39[0m
-        [1;31m32.113[0m
-
-    Average: [1;34m31.648 Seconds[0m
-    Deviation: 1.27%
-
-
-    [1mResults Uploaded To: [0mhttps://openbenchmarking.org/result/2503155-NE-6000MTPBO80
-
-+ flatpak run com.geekbench.Geekbench6
-Geekbench 6.4.0 : https://www.geekbench.com/
-
-Geekbench 6 requires an active internet connection and automatically uploads 
-benchmark results to the Geekbench Browser.
-
-Upgrade to Geekbench 6 Pro to enable offline use and unlock other features:
-
-  https://store.primatelabs.com/v6
-
-Enter your Geekbench 6 Pro license using the following command line:
-
-  /app/extra/geekbench6/geekbench6 --unlock <email> <key>
-
-System Information
-  Operating System              Freedesktop SDK 24.08 (Flatpak runtime)
-  Kernel                        Linux 6.11.0-19-generic x86_64
-  Model                         Gigabyte Technology Co., Ltd. X670E AORUS MASTER
-  Motherboard                   Gigabyte Technology Co., Ltd. X670E AORUS MASTER
-  BIOS                          American Megatrends International, LLC. F33
-
-CPU Information
-  Name                          AMD Ryzen 9 9950X 16-Core Processor            
-  Topology                      1 Processor, 16 Cores, 32 Threads
-  Identifier                    AuthenticAMD Family 26 Model 68 Stepping 0
-  Base Frequency                5.75 GHz
-  L1 Instruction Cache          32.0 KB x 16
-  L1 Data Cache                 48.0 KB x 16
-  L2 Cache                      1.00 MB x 16
-  L3 Cache                      32.0 MB x 2
-  Instruction Sets              sse2 sse3 pclmul fma3 sse41 aesni avx avx2 avx512-f avx512-dq shani avx512-bw avx512-vl vaes avx512-vnni avx-vnni
-
-Memory Information
-  Size                          91.9 GB
-
-
-Single-Core
-  Running File Compression
-  Running Navigation
-  Running HTML5 Browser
-  Running PDF Renderer
-  Running Photo Library
-  Running Clang
-  Running Text Processing
-  Running Asset Compression
-  Running Object Detection
-  Running Background Blur
-  Running Horizon Detection
-  Running Object Remover
-  Running HDR
-  Running Photo Filter
-  Running Ray Tracer
-  Running Structure from Motion
-
-Multi-Core
-  Running File Compression
-  Running Navigation
-  Running HTML5 Browser
-  Running PDF Renderer
-  Running Photo Library
-  Running Clang
-  Running Text Processing
-  Running Asset Compression
-  Running Object Detection
-  Running Background Blur
-  Running Horizon Detection
-  Running Object Remover
-  Running HDR
-  Running Photo Filter
-  Running Ray Tracer
-  Running Structure from Motion
-
-
-Uploading results to the Geekbench Browser. This could take a minute or two 
-depending on the speed of your internet connection.
-
-Upload succeeded. Visit the following link and view your results online:
-
-  https://browser.geekbench.com/v6/cpu/11048368
-
-Visit the following link and add this result to your profile:
-
-  https://browser.geekbench.com/v6/cpu/11048368/claim?key=384861
-
-+ pushd 'y-cruncher v0.8.6.9545-dynamic'
-~/initPC/Overclocking/Linux/y-cruncher v0.8.6.9545-dynamic ~/initPC/Overclocking/Linux
-+ for i in {1..3}
-+ echo '===== Iteration 1 ====='
-===== Iteration 1 =====
-+ ./y-cruncher bench 16G
-[22;32my-cruncher v0.8.6 Build 9545-gcc[01;37m
-
-Detecting Environment...
-
-Hardware Features:
-(*) Indicates it is used explicitly by y-cruncher.
-
-CPU Vendor:
-    AMD         = [01;32mYes[01;37m
-    Intel       = [01;31mNo[01;37m
-
-OS Features:
-  * 64-bit      = [01;32mYes[01;37m
-  * OS AVX      = [01;32mYes[01;37m
-  * OS AVX512   = [01;32mYes[01;37m
-
-Hardware Features:
-    MMX         = [01;32mYes[01;37m
-  * x64         = [01;32mYes[01;37m
-  * ABM         = [01;32mYes[01;37m
-    RDRAND      = [01;32mYes[01;37m
-    RDSEED      = [01;32mYes[01;37m
-  * BMI1        = [01;32mYes[01;37m
-  * BMI2        = [01;32mYes[01;37m
-  * ADX         = [01;32mYes[01;37m
-    PREFETCHW   = [01;32mYes[01;37m
-    PREFETCHWT1 = [01;31mNo[01;37m
-    RDPID       = [01;32mYes[01;37m
-    SERIALIZE   = [01;31mNo[01;37m
-    CLDEMOTE    = [01;31mNo[01;37m
-
-SIMD: 128-bit
-  * SSE         = [01;32mYes[01;37m
-  * SSE2        = [01;32mYes[01;37m
-  * SSE3        = [01;32mYes[01;37m
-  * SSSE3       = [01;32mYes[01;37m
-    SSE4a       = [01;32mYes[01;37m
-  * SSE4.1      = [01;32mYes[01;37m
-  * SSE4.2      = [01;32mYes[01;37m
-    PCLMULQDQ   = [01;32mYes[01;37m
-    AES         = [01;32mYes[01;37m
-    SHA         = [01;32mYes[01;37m
-    GFNI        = [01;32mYes[01;37m
-    SM3         = [01;31mNo[01;37m
-
-SIMD: 256-bit
-  * AVX             = [01;32mYes[01;37m
-    FMA4            = [01;31mNo[01;37m
-    XOP             = [01;31mNo[01;37m
-  * FMA3            = [01;32mYes[01;37m
-  * AVX2            = [01;32mYes[01;37m
-    VAES            = [01;32mYes[01;37m
-    VPCLMULQDQ      = [01;32mYes[01;37m
-  * AVX-GFNI        = [01;32mYes[01;37m
-    AVX-VNNI        = [01;32mYes[01;37m
-    AVX-VNNI_INT8   = [01;31mNo[01;37m
-    AVX-IFMA        = [01;31mNo[01;37m
-    AVX-NE-CONVERT  = [01;31mNo[01;37m
-    AVX-VNNI_INT16  = [01;31mNo[01;37m
-    SHA512          = [01;31mNo[01;37m
-    SM4             = [01;31mNo[01;37m
-
-SIMD: 512-bit
-  * AVX512-F                = [01;32mYes[01;37m
-    AVX512-CD               = [01;32mYes[01;37m
-    AVX512-PF               = [01;31mNo[01;37m
-    AVX512-ER               = [01;31mNo[01;37m
-  * AVX512-VL               = [01;32mYes[01;37m
-  * AVX512-BW               = [01;32mYes[01;37m
-  * AVX512-DQ               = [01;32mYes[01;37m
-    AVX512-VPOPCNTDQ        = [01;32mYes[01;37m
-    AVX512-4VNNIW           = [01;31mNo[01;37m
-    AVX512-4FMAPS           = [01;31mNo[01;37m
-  * AVX512-IFMA             = [01;32mYes[01;37m
-  * AVX512-VBMI             = [01;32mYes[01;37m
-    AVX512-VNNI             = [01;32mYes[01;37m
-  * AVX512-VBMI2            = [01;32mYes[01;37m
-    AVX512-BITALG           = [01;32mYes[01;37m
-    AVX512-VPCLMULQDQ       = [01;32mYes[01;37m
-    AVX512-VAES             = [01;32mYes[01;37m
-  * AVX512-GFNI             = [01;32mYes[01;37m
-    AVX512-BF16             = [01;32mYes[01;37m
-    AVX512-VP2INTERSECT     = [01;32mYes[01;37m
-    AVX512-FP16             = [01;31mNo[01;37m
-
-APX + AVX10:
-    APX-F           = [01;31mNo[01;37m
-    AVX10           = [01;31mNo[01;37m
-    AVX10/128       = [01;31mNo[01;37m
-    AVX10/256       = [01;31mNo[01;37m
-    AVX10/512       = [01;31mNo[01;37m
-
-AMX:
-    AMX-TILE        = [01;31mNo[01;37m
-    AMX-INT8        = [01;31mNo[01;37m
-    AMX-BF16        = [01;31mNo[01;37m
-    AMX-FP16        = [01;31mNo[01;37m
-    AMX-COMPLEX     = [01;31mNo[01;37m
-
-
-Auto-Selecting: 24-ZN5 ~ Komari
-
-/home/jr/initPC/Overclocking/Linux/y-cruncher v0.8.6.9545-dynamic/Binaries/24-ZN5 ~ Komari
-
-
-[01;33mLaunching y-cruncher...
-[22;32m================================================================
-
-[01;37mRunning from console...
-
-[01;31m
-Insufficient permissions to set thread priority. Please retry as root.
-[01;37m[01;31m
-Further messages for this warning will be suppressed.
-[01;37m
-Checking processor/OS features...
-
-Required Features:
-[01;36m    x64, ABM, BMI1, BMI2, ADX,
-    SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2,
-    AVX, FMA3, AVX2,
-    AVX512-(F/CD/VL/BW/DQ/IFMA/VBMI/VBMI2/GFNI)
-
-[01;37m
-
-Reading Hardware Topology...
-
-Logical Cores:
-    0-31
-
-Physical Cores:
-    0-15
-
-NUMA Node 0:
-    0-31
-
-Scheduling Group 0:
-    0-31
-
-{
-    DataCache : 0
-    LogicalCores : ["0-31"]
-    PhysicalCores : ["0-15"]
-    Children : [
-        {
-            DataCache : 33554432
-            LogicalCores : ["0-7" "16-23"]
-            PhysicalCores : ["0-7"]
-            Children : [
-                {
-                    DataCache : 1048576
-                    LogicalCores : [0 16]
-                    PhysicalCores : [0]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [0 16]
-                            PhysicalCores : [0]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [1 17]
-                    PhysicalCores : [1]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [1 17]
-                            PhysicalCores : [1]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [2 18]
-                    PhysicalCores : [2]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [2 18]
-                            PhysicalCores : [2]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [3 19]
-                    PhysicalCores : [3]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [3 19]
-                            PhysicalCores : [3]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [4 20]
-                    PhysicalCores : [4]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [4 20]
-                            PhysicalCores : [4]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [5 21]
-                    PhysicalCores : [5]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [5 21]
-                            PhysicalCores : [5]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [6 22]
-                    PhysicalCores : [6]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [6 22]
-                            PhysicalCores : [6]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [7 23]
-                    PhysicalCores : [7]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [7 23]
-                            PhysicalCores : [7]
-                        }
-                    ]
-                }
-            ]
-        }
-        {
-            DataCache : 33554432
-            LogicalCores : ["8-15" "24-31"]
-            PhysicalCores : ["8-15"]
-            Children : [
-                {
-                    DataCache : 1048576
-                    LogicalCores : [8 24]
-                    PhysicalCores : [8]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [8 24]
-                            PhysicalCores : [8]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [9 25]
-                    PhysicalCores : [9]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [9 25]
-                            PhysicalCores : [9]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [10 26]
-                    PhysicalCores : [10]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [10 26]
-                            PhysicalCores : [10]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [11 27]
-                    PhysicalCores : [11]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [11 27]
-                            PhysicalCores : [11]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [12 28]
-                    PhysicalCores : [12]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [12 28]
-                            PhysicalCores : [12]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [13 29]
-                    PhysicalCores : [13]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [13 29]
-                            PhysicalCores : [13]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [14 30]
-                    PhysicalCores : [14]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [14 30]
-                            PhysicalCores : [14]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [15 31]
-                    PhysicalCores : [15]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [15 31]
-                            PhysicalCores : [15]
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
-
-
-
-[01;37mConstant:   [01;32mPi[01;37m
-[01;37mAlgorithm:  [01;33mChudnovsky (1988)[01;37m
-
-[01;37mDecimal Digits:       [01;32m17,179,869,184[01;37m
-[01;37mHexadecimal Digits:   [22;32m14,267,572,528[01;37m[22;31m (Disabled)
-
-[01;37mComputation Mode:     [01;31mRam Only[01;37m
-Multi-Threading:      [01;36mPush Pool  ->  [01;33m32[01;33m / [01;33m?[01;37m[39;49m / [01;31m32[01;32m  (all cores)[01;37m
-
-[01;37mStart Time: [01;33mSun Mar 16 04:14:03 2025[01;37m
-
-Working Memory...  [01;33mmmap...                                                     [39;49mWorking Memory...  [01;33mmmap()                                                      [39;49mWorking Memory...  [01;33mCommitting...                                               [39;49mWorking Memory...  [01;33mLocking...                                                  [39;49mWorking Memory...  [01;33mScanning...                                                 [39;49mWorking Memory...  [01;32m75.0 GiB[01;33m  (spread: 100%/1)                                  [39;49m                                                                               [01;37mWorking Memory...  [01;32m75.0 GiB[01;33m  (spread: 100%/1)[01;37m
-Twiddle Tables...  [01;33mmmap...                                                     [39;49mTwiddle Tables...  [01;33mmmap()                                                      [39;49mTwiddle Tables...  [01;33mCommitting...                                               [39;49mTwiddle Tables...  [01;33mLocking...                                                  [39;49mTwiddle Tables...  [01;33mScanning...                                                 [39;49mTwiddle Tables...  [01;32m11.2 MiB[01;33m  (locked, spread: 100%/1)                          [39;49m                                                                               [01;37mTwiddle Tables...  [01;32m11.2 MiB[01;33m  (locked, spread: 100%/1)[01;37m
-
-Begin Computation:
-
-Series CommonP2B3...  1,211,415,628 terms  (Expansion Factor = 2.961)
-[01;37mSumming: [01;32m0% [01;35m( 24 )[01;31m A [01;33m( 11,980,531 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 22 )[01;31m E [01;33m( 24,286,676 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 20 )[01;31m E [01;34m -> [01;33m( 42,807,339 )                                        [39;49m[01;37mSumming: [01;32m0% [01;35m( 20 )[01;31m E [01;33m( 42,807,332 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 19 )[01;31m E [01;33m( 56,832,460 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 18 )[01;31m E [01;33m( 75,453,202 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 17 )[01;31m E [01;33m( 100,175,885 )                                           [39;49m[01;37mSumming: [01;32m0% [01;35m( 16 )[01;31m E [01;33m( 133,000,716 )                                           [39;49m[01;37mSumming: [01;32m1% [01;35m( 15 )[01;31m E [01;33m( 176,584,292 )                                           [39;49m[01;37mSumming: [01;32m1% [01;35m( 14 )[01;31m E [01;34m -> [01;33m( 234,455,132 )                                       [39;49m[01;37mSumming: [01;32m1% [01;35m( 14 )[01;31m E [01;33m( 234,455,146 )                                           [39;49m[01;37mSumming: [01;32m1% [01;35m( 13 )[01;31m E [01;34m -> [01;33m( 311,300,846 )                                       [39;49m[01;37mSumming: [01;32m1% [01;35m( 13 )[01;31m E [01;33m( 311,300,850 )                                           [39;49m[01;37mSumming: [01;32m2% [01;35m( 12 )[01;31m E [01;34m -> [01;33m( 413,350,045 )                                       [39;49m[01;37mSumming: [01;32m2% [01;35m( 12 )[01;31m E [01;33m( 413,350,057 )                                           [39;49m[01;37mSumming: [01;32m3% [01;35m( 11 )[01;31m E [01;34m -> [01;33m( 548,881,445 )                                       [39;49m[01;37mSumming: [01;32m3% [01;35m( 11 )[01;31m E [01;33m( 548,881,468 )                                           [39;49m[01;37mSumming: [01;32m4% [01;35m( 10 )[01;31m E [01;34m -> [01;33m( 728,903,138 )                                       [39;49m[01;37mSumming: [01;32m4% [01;35m( 10 )[01;31m E [01;33m( 728,903,146 )                                           [39;49m[01;37mSumming: [01;32m5% [01;35m( 9 )[01;31m E [01;34m -> [01;33m( 968,060,090 )                                        [39;49m[01;37mSumming: [01;32m5% [01;35m( 9 )[01;31m E [01;33m( 968,060,121 )                                            [39;49m[01;37mSumming: [01;32m7% [01;35m( 8 )[01;31m E [01;34m -> [01;33m( 1,285,850,543 )                                      [39;49m[01;37mSumming: [01;32m7% [01;35m( 8 )[01;31m E [01;33m( 1,285,850,561 )                                          [39;49m[01;37mSumming: [01;32m9% [01;35m( 7 )[01;31m E [01;34m -> [01;33m( 1,708,261,158 )                                      [39;49m[01;37mSumming: [01;32m9% [01;35m( 7 )[01;31m E [01;33m( 1,708,261,149 )                                          [39;49m[01;37mSumming: [01;32m13% [01;35m( 6 )[01;31m E [01;34m -> [01;33m( 2,269,977,383 )                                     [39;49m[01;37mSumming: [01;32m13% [01;35m( 6 )[01;31m E [01;33m( 2,269,977,380 )                                         [39;49m[01;37mSumming: [01;32m17% [01;35m( 5 )[01;31m E [01;34m -> [01;33m( 3,017,394,750 )                                     [39;49m[01;37mSumming: [01;32m17% [01;35m( 5 )[01;31m E [01;33m( 3,017,394,728 )                                         [39;49m[01;37mSumming: [01;32m23% [01;35m( 4 )[01;31m E [01;34m -> [01;33m( 4,012,772,929 )                                     [39;49m[01;37mSumming: [01;32m23% [01;35m( 4 )[01;31m E [01;33m( 4,012,772,959 )                                         [39;49m[01;37mSumming: [01;32m31% [01;35m( 3 )[01;31m E [01;34m -> [01;33m( 5,340,089,364 )                                     [39;49m[01;37mSumming: [01;32m31% [01;35m( 3 )[01;31m E [01;33m( 5,340,089,386 )                                         [39;49m[01;37mSumming: [01;32m41% [01;35m( 2 )[01;31m E [01;34m -> [01;33m( 7,113,614,792 )                                     [39;49m[01;37mSumming: [01;32m41% [01;35m( 2 )[01;31m E [01;33m( 7,113,614,820 )                                         [39;49m[01;37mSumming: [01;32m55% [01;35m( 1 )[01;31m E [01;34m -> [01;33m( 9,491,538,911 )                                     [39;49m[01;37mSumming: [01;32m55% [01;35m( 1 )[01;31m E [01;33m( 9,491,538,936 )                                         [39;49m[01;37mSumming: [01;32m73% [01;35m( 0 )[01;31m E [01;34m -> [01;33m( 12,702,500,686 )                                    [39;49m[01;37mSumming: [01;32m73% [01;35m( 0 )[01;31m E [01;33m( 12,702,500,672 )                                        [39;49m                                                                               [39;49mTime:    [01;36m301.504 seconds  ( 5.025 minutes )[01;37m
-Large Division...
-[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0M [01;33m( 154 )                               [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 134,217,764 )                                          [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 268,435,489 )                                           [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 536,870,939 )                                            [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;36m 0M [01;33m( 1,073,741,859 )                                            [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;36m O1M [01;33m( 1,073,741,859 )                                           [39;49m[01;37mIterating: [01;31m0[01;32m0[01;36m 0M [01;33m( 2,147,483,699 )                                             [39;49m[01;37mIterating: [01;31m0[01;32m0[01;36m O1M [01;33m( 2,147,483,699 )                                            [39;49m[01;37mIterating: [01;31m0[01;36m 0M [01;33m( 4,294,967,359 )                                              [39;49m[01;37mIterating: [01;31m0[01;36m O1M [01;33m( 4,294,967,359 )                                             [39;49m[01;37mIterating: [01;36m 1M [01;33m( 8,589,934,679 )                                               [39;49m[01;37mIterating: [01;36m 2M [01;33m( 8,589,934,679 )                                               [39;49m                                                                               [39;49mTime:    [01;36m13.421 seconds  ( 0.224 minutes )[01;37m
-InvSqrt(10005)...
-[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 154 )                               [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 268,435,489 )                                            [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 536,870,939 )                                             [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 536,870,939 )                                            [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 1,073,741,859 )                                            [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 1,073,741,859 )                                           [39;49m[01;37mIterating: [01;32m0[01;32m0[01;36m 0S [01;33m( 2,147,483,699 )                                             [39;49m[01;37mIterating: [01;32m0[01;32m0[01;36m O1M [01;33m( 2,147,483,699 )                                            [39;49m[01;37mIterating: [01;32m0[01;36m 0S [01;33m( 4,294,967,359 )                                              [39;49m[01;37mIterating: [01;32m0[01;36m O1M [01;33m( 4,294,967,359 )                                             [39;49m[01;37mIterating: [01;36m 0S [01;33m( 8,589,934,679 )                                               [39;49m[01;37mIterating: [01;36m O1M [01;33m( 8,589,934,679 )                                              [39;49m                                                                               [39;49mTime:    [01;36m8.987 seconds  ( 0.150 minutes )[01;37m
-Large Multiply...
-                                                                               [39;49mTime:    [01;36m5.957 seconds  ( 0.099 minutes )[01;37m
-
-[01;32mPi:  [01;33m329.869 seconds  ( 5.498 minutes )[01;37m
-
-Processing Hexadecimal Digits:
-                                                                               [39;49mTime:    [01;36m0.106 seconds  ( 0.002 minutes )[01;37m
-Base Converting:
-[01;37mSquaring...  [01;33m( 366 )                                                           [39;49m[01;37mSquaring...  [01;33m( 751,979,191 )                                                   [39;49m[01;37mSquaring...  [01;33m( 1,503,958,362 )                                                 [39;49m[01;37mSquaring...  [01;33m( 3,007,916,705 )                                                 [39;49m[01;37mSquaring...  [01;33m( 6,015,833,390 )                                                 [39;49m[01;37mConverting...  [01;32m- [01;33m( 8,606,711,885 )                                             [39;49m[01;37mConverting...  [01;32m*[01;34m -> [01;31m2 x [01;33m( 8,606,711,885 )                                      [39;49m                                                                               [39;49mTime:    [01;36m21.195 seconds  ( 0.353 minutes )[01;37m
-Writing Decimal Digits:
-                                                                               [39;49mTime:    [01;36m7.836 seconds  ( 0.131 minutes )[01;37m
-
-[01;37mStart Time: [01;33mSun Mar 16 04:14:03 2025[01;37m
-[01;37mEnd Time:   [01;33mSun Mar 16 04:20:13 2025[01;37m
-
-[01;32mTotal Computation Time:     [01;33m351.064 seconds  ( 5.851 minutes )[01;37m
-[01;32mStart-to-End Wall Time:     [01;33m369.918 seconds  ( 6.165 minutes )[01;37m
-[01;37m
-[01;37mCPU Utilization:        [01;33m 3026.33 %[01;37m  +  [01;35m  3.36 % kernel overhead
-[01;37mMulti-core Efficiency:  [01;33m   94.57 %[01;37m  +  [01;35m  0.11 % kernel overhead
-[01;37m
-Last Decimal Digits:  [01;32mPi[01;37m
-[01;33m1272677377 1090654257 8031750767 4731053789 2828127983 [01;37m :  [01;32m17,179,869,150
-[01;33m9772829682 6581412229 6083465400 9194
-[01;37m
-Spot Check: [01;32mGood through 17,179,869,184
-[01;37m
-[22;36mProgram:              y-cruncher v0.8.6 Build 9545-icx
-Tuning Profile:       Linux/24-ZN5 ~ Komari => Komari
-Processor(s):         AMD Ryzen 9 9950X 16-Core Processor 
-Topology:             32 threads / 16 cores / 1 socket / 1 NUMA node
-Usable Memory:        98,714,722,304 (91.9 GiB)
-Est. CPU Frequency:   5,733,895,417[22;36m Hz
-[01;37m
-[01;32mValidation File: [01;35mPi - 20250316-042015.txt
-[01;37m[39;49m
-[39;49m+ for i in {1..3}
-+ echo '===== Iteration 2 ====='
-===== Iteration 2 =====
-+ ./y-cruncher bench 16G
-[22;32my-cruncher v0.8.6 Build 9545-gcc[01;37m
-
-Detecting Environment...
-
-Hardware Features:
-(*) Indicates it is used explicitly by y-cruncher.
-
-CPU Vendor:
-    AMD         = [01;32mYes[01;37m
-    Intel       = [01;31mNo[01;37m
-
-OS Features:
-  * 64-bit      = [01;32mYes[01;37m
-  * OS AVX      = [01;32mYes[01;37m
-  * OS AVX512   = [01;32mYes[01;37m
-
-Hardware Features:
-    MMX         = [01;32mYes[01;37m
-  * x64         = [01;32mYes[01;37m
-  * ABM         = [01;32mYes[01;37m
-    RDRAND      = [01;32mYes[01;37m
-    RDSEED      = [01;32mYes[01;37m
-  * BMI1        = [01;32mYes[01;37m
-  * BMI2        = [01;32mYes[01;37m
-  * ADX         = [01;32mYes[01;37m
-    PREFETCHW   = [01;32mYes[01;37m
-    PREFETCHWT1 = [01;31mNo[01;37m
-    RDPID       = [01;32mYes[01;37m
-    SERIALIZE   = [01;31mNo[01;37m
-    CLDEMOTE    = [01;31mNo[01;37m
-
-SIMD: 128-bit
-  * SSE         = [01;32mYes[01;37m
-  * SSE2        = [01;32mYes[01;37m
-  * SSE3        = [01;32mYes[01;37m
-  * SSSE3       = [01;32mYes[01;37m
-    SSE4a       = [01;32mYes[01;37m
-  * SSE4.1      = [01;32mYes[01;37m
-  * SSE4.2      = [01;32mYes[01;37m
-    PCLMULQDQ   = [01;32mYes[01;37m
-    AES         = [01;32mYes[01;37m
-    SHA         = [01;32mYes[01;37m
-    GFNI        = [01;32mYes[01;37m
-    SM3         = [01;31mNo[01;37m
-
-SIMD: 256-bit
-  * AVX             = [01;32mYes[01;37m
-    FMA4            = [01;31mNo[01;37m
-    XOP             = [01;31mNo[01;37m
-  * FMA3            = [01;32mYes[01;37m
-  * AVX2            = [01;32mYes[01;37m
-    VAES            = [01;32mYes[01;37m
-    VPCLMULQDQ      = [01;32mYes[01;37m
-  * AVX-GFNI        = [01;32mYes[01;37m
-    AVX-VNNI        = [01;32mYes[01;37m
-    AVX-VNNI_INT8   = [01;31mNo[01;37m
-    AVX-IFMA        = [01;31mNo[01;37m
-    AVX-NE-CONVERT  = [01;31mNo[01;37m
-    AVX-VNNI_INT16  = [01;31mNo[01;37m
-    SHA512          = [01;31mNo[01;37m
-    SM4             = [01;31mNo[01;37m
-
-SIMD: 512-bit
-  * AVX512-F                = [01;32mYes[01;37m
-    AVX512-CD               = [01;32mYes[01;37m
-    AVX512-PF               = [01;31mNo[01;37m
-    AVX512-ER               = [01;31mNo[01;37m
-  * AVX512-VL               = [01;32mYes[01;37m
-  * AVX512-BW               = [01;32mYes[01;37m
-  * AVX512-DQ               = [01;32mYes[01;37m
-    AVX512-VPOPCNTDQ        = [01;32mYes[01;37m
-    AVX512-4VNNIW           = [01;31mNo[01;37m
-    AVX512-4FMAPS           = [01;31mNo[01;37m
-  * AVX512-IFMA             = [01;32mYes[01;37m
-  * AVX512-VBMI             = [01;32mYes[01;37m
-    AVX512-VNNI             = [01;32mYes[01;37m
-  * AVX512-VBMI2            = [01;32mYes[01;37m
-    AVX512-BITALG           = [01;32mYes[01;37m
-    AVX512-VPCLMULQDQ       = [01;32mYes[01;37m
-    AVX512-VAES             = [01;32mYes[01;37m
-  * AVX512-GFNI             = [01;32mYes[01;37m
-    AVX512-BF16             = [01;32mYes[01;37m
-    AVX512-VP2INTERSECT     = [01;32mYes[01;37m
-    AVX512-FP16             = [01;31mNo[01;37m
-
-APX + AVX10:
-    APX-F           = [01;31mNo[01;37m
-    AVX10           = [01;31mNo[01;37m
-    AVX10/128       = [01;31mNo[01;37m
-    AVX10/256       = [01;31mNo[01;37m
-    AVX10/512       = [01;31mNo[01;37m
-
-AMX:
-    AMX-TILE        = [01;31mNo[01;37m
-    AMX-INT8        = [01;31mNo[01;37m
-    AMX-BF16        = [01;31mNo[01;37m
-    AMX-FP16        = [01;31mNo[01;37m
-    AMX-COMPLEX     = [01;31mNo[01;37m
-
-
-Auto-Selecting: 24-ZN5 ~ Komari
-
-/home/jr/initPC/Overclocking/Linux/y-cruncher v0.8.6.9545-dynamic/Binaries/24-ZN5 ~ Komari
-
-
-[01;33mLaunching y-cruncher...
-[22;32m================================================================
-
-[01;37mRunning from console...
-
-[01;31m
-Insufficient permissions to set thread priority. Please retry as root.
-[01;37m[01;31m
-Further messages for this warning will be suppressed.
-[01;37m
-Checking processor/OS features...
-
-Required Features:
-[01;36m    x64, ABM, BMI1, BMI2, ADX,
-    SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2,
-    AVX, FMA3, AVX2,
-    AVX512-(F/CD/VL/BW/DQ/IFMA/VBMI/VBMI2/GFNI)
-
-[01;37m
-
-Reading Hardware Topology...
-
-Logical Cores:
-    0-31
-
-Physical Cores:
-    0-15
-
-NUMA Node 0:
-    0-31
-
-Scheduling Group 0:
-    0-31
-
-{
-    DataCache : 0
-    LogicalCores : ["0-31"]
-    PhysicalCores : ["0-15"]
-    Children : [
-        {
-            DataCache : 33554432
-            LogicalCores : ["0-7" "16-23"]
-            PhysicalCores : ["0-7"]
-            Children : [
-                {
-                    DataCache : 1048576
-                    LogicalCores : [0 16]
-                    PhysicalCores : [0]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [0 16]
-                            PhysicalCores : [0]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [1 17]
-                    PhysicalCores : [1]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [1 17]
-                            PhysicalCores : [1]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [2 18]
-                    PhysicalCores : [2]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [2 18]
-                            PhysicalCores : [2]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [3 19]
-                    PhysicalCores : [3]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [3 19]
-                            PhysicalCores : [3]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [4 20]
-                    PhysicalCores : [4]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [4 20]
-                            PhysicalCores : [4]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [5 21]
-                    PhysicalCores : [5]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [5 21]
-                            PhysicalCores : [5]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [6 22]
-                    PhysicalCores : [6]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [6 22]
-                            PhysicalCores : [6]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [7 23]
-                    PhysicalCores : [7]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [7 23]
-                            PhysicalCores : [7]
-                        }
-                    ]
-                }
-            ]
-        }
-        {
-            DataCache : 33554432
-            LogicalCores : ["8-15" "24-31"]
-            PhysicalCores : ["8-15"]
-            Children : [
-                {
-                    DataCache : 1048576
-                    LogicalCores : [8 24]
-                    PhysicalCores : [8]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [8 24]
-                            PhysicalCores : [8]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [9 25]
-                    PhysicalCores : [9]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [9 25]
-                            PhysicalCores : [9]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [10 26]
-                    PhysicalCores : [10]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [10 26]
-                            PhysicalCores : [10]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [11 27]
-                    PhysicalCores : [11]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [11 27]
-                            PhysicalCores : [11]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [12 28]
-                    PhysicalCores : [12]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [12 28]
-                            PhysicalCores : [12]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [13 29]
-                    PhysicalCores : [13]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [13 29]
-                            PhysicalCores : [13]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [14 30]
-                    PhysicalCores : [14]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [14 30]
-                            PhysicalCores : [14]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [15 31]
-                    PhysicalCores : [15]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [15 31]
-                            PhysicalCores : [15]
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
-
-
-
-[01;37mConstant:   [01;32mPi[01;37m
-[01;37mAlgorithm:  [01;33mChudnovsky (1988)[01;37m
-
-[01;37mDecimal Digits:       [01;32m17,179,869,184[01;37m
-[01;37mHexadecimal Digits:   [22;32m14,267,572,528[01;37m[22;31m (Disabled)
-
-[01;37mComputation Mode:     [01;31mRam Only[01;37m
-Multi-Threading:      [01;36mPush Pool  ->  [01;33m32[01;33m / [01;33m?[01;37m[39;49m / [01;31m32[01;32m  (all cores)[01;37m
-
-[01;37mStart Time: [01;33mSun Mar 16 04:20:15 2025[01;37m
-
-Working Memory...  [01;33mmmap...                                                     [39;49mWorking Memory...  [01;33mmmap()                                                      [39;49mWorking Memory...  [01;33mCommitting...                                               [39;49mWorking Memory...  [01;33mLocking...                                                  [39;49mWorking Memory...  [01;33mScanning...                                                 [39;49mWorking Memory...  [01;32m75.0 GiB[01;33m  (spread: 100%/1)                                  [39;49m                                                                               [01;37mWorking Memory...  [01;32m75.0 GiB[01;33m  (spread: 100%/1)[01;37m
-Twiddle Tables...  [01;33mmmap...                                                     [39;49mTwiddle Tables...  [01;33mmmap()                                                      [39;49mTwiddle Tables...  [01;33mCommitting...                                               [39;49mTwiddle Tables...  [01;33mLocking...                                                  [39;49mTwiddle Tables...  [01;33mScanning...                                                 [39;49mTwiddle Tables...  [01;32m11.2 MiB[01;33m  (locked, spread: 100%/1)                          [39;49m                                                                               [01;37mTwiddle Tables...  [01;32m11.2 MiB[01;33m  (locked, spread: 100%/1)[01;37m
-
-Begin Computation:
-
-Series CommonP2B3...  1,211,415,628 terms  (Expansion Factor = 2.961)
-[01;37mSumming: [01;32m0% [01;35m( 24 )[01;31m A [01;33m( 11,980,531 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 22 )[01;31m E [01;33m( 24,286,676 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 20 )[01;31m E [01;34m -> [01;33m( 42,807,339 )                                        [39;49m[01;37mSumming: [01;32m0% [01;35m( 20 )[01;31m E [01;33m( 42,807,332 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 19 )[01;31m E [01;33m( 56,832,460 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 18 )[01;31m E [01;33m( 75,453,202 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 17 )[01;31m E [01;33m( 100,175,885 )                                           [39;49m[01;37mSumming: [01;32m0% [01;35m( 16 )[01;31m E [01;33m( 133,000,716 )                                           [39;49m[01;37mSumming: [01;32m1% [01;35m( 15 )[01;31m E [01;33m( 176,584,292 )                                           [39;49m[01;37mSumming: [01;32m1% [01;35m( 14 )[01;31m E [01;34m -> [01;33m( 234,455,132 )                                       [39;49m[01;37mSumming: [01;32m1% [01;35m( 14 )[01;31m E [01;33m( 234,455,146 )                                           [39;49m[01;37mSumming: [01;32m1% [01;35m( 13 )[01;31m E [01;34m -> [01;33m( 311,300,846 )                                       [39;49m[01;37mSumming: [01;32m1% [01;35m( 13 )[01;31m E [01;33m( 311,300,850 )                                           [39;49m[01;37mSumming: [01;32m2% [01;35m( 12 )[01;31m E [01;34m -> [01;33m( 413,350,045 )                                       [39;49m[01;37mSumming: [01;32m2% [01;35m( 12 )[01;31m E [01;33m( 413,350,057 )                                           [39;49m[01;37mSumming: [01;32m3% [01;35m( 11 )[01;31m E [01;34m -> [01;33m( 548,881,445 )                                       [39;49m[01;37mSumming: [01;32m3% [01;35m( 11 )[01;31m E [01;33m( 548,881,468 )                                           [39;49m[01;37mSumming: [01;32m4% [01;35m( 10 )[01;31m E [01;34m -> [01;33m( 728,903,138 )                                       [39;49m[01;37mSumming: [01;32m4% [01;35m( 10 )[01;31m E [01;33m( 728,903,146 )                                           [39;49m[01;37mSumming: [01;32m5% [01;35m( 9 )[01;31m E [01;34m -> [01;33m( 968,060,090 )                                        [39;49m[01;37mSumming: [01;32m5% [01;35m( 9 )[01;31m E [01;33m( 968,060,121 )                                            [39;49m[01;37mSumming: [01;32m7% [01;35m( 8 )[01;31m E [01;34m -> [01;33m( 1,285,850,543 )                                      [39;49m[01;37mSumming: [01;32m7% [01;35m( 8 )[01;31m E [01;33m( 1,285,850,561 )                                          [39;49m[01;37mSumming: [01;32m9% [01;35m( 7 )[01;31m E [01;34m -> [01;33m( 1,708,261,158 )                                      [39;49m[01;37mSumming: [01;32m9% [01;35m( 7 )[01;31m E [01;33m( 1,708,261,149 )                                          [39;49m[01;37mSumming: [01;32m13% [01;35m( 6 )[01;31m E [01;34m -> [01;33m( 2,269,977,383 )                                     [39;49m[01;37mSumming: [01;32m13% [01;35m( 6 )[01;31m E [01;33m( 2,269,977,380 )                                         [39;49m[01;37mSumming: [01;32m17% [01;35m( 5 )[01;31m E [01;34m -> [01;33m( 3,017,394,750 )                                     [39;49m[01;37mSumming: [01;32m17% [01;35m( 5 )[01;31m E [01;33m( 3,017,394,728 )                                         [39;49m[01;37mSumming: [01;32m23% [01;35m( 4 )[01;31m E [01;34m -> [01;33m( 4,012,772,929 )                                     [39;49m[01;37mSumming: [01;32m23% [01;35m( 4 )[01;31m E [01;33m( 4,012,772,959 )                                         [39;49m[01;37mSumming: [01;32m31% [01;35m( 3 )[01;31m E [01;34m -> [01;33m( 5,340,089,364 )                                     [39;49m[01;37mSumming: [01;32m31% [01;35m( 3 )[01;31m E [01;33m( 5,340,089,386 )                                         [39;49m[01;37mSumming: [01;32m41% [01;35m( 2 )[01;31m E [01;34m -> [01;33m( 7,113,614,792 )                                     [39;49m[01;37mSumming: [01;32m41% [01;35m( 2 )[01;31m E [01;33m( 7,113,614,820 )                                         [39;49m[01;37mSumming: [01;32m55% [01;35m( 1 )[01;31m E [01;34m -> [01;33m( 9,491,538,911 )                                     [39;49m[01;37mSumming: [01;32m55% [01;35m( 1 )[01;31m E [01;33m( 9,491,538,936 )                                         [39;49m[01;37mSumming: [01;32m73% [01;35m( 0 )[01;31m E [01;34m -> [01;33m( 12,702,500,686 )                                    [39;49m[01;37mSumming: [01;32m73% [01;35m( 0 )[01;31m E [01;33m( 12,702,500,672 )                                        [39;49m                                                                               [39;49mTime:    [01;36m302.513 seconds  ( 5.042 minutes )[01;37m
-Large Division...
-[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0M [01;33m( 154 )                               [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 134,217,764 )                                          [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 268,435,489 )                                           [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 536,870,939 )                                            [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;36m 0M [01;33m( 1,073,741,859 )                                            [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;36m O1M [01;33m( 1,073,741,859 )                                           [39;49m[01;37mIterating: [01;31m0[01;32m0[01;36m 0M [01;33m( 2,147,483,699 )                                             [39;49m[01;37mIterating: [01;31m0[01;32m0[01;36m O1M [01;33m( 2,147,483,699 )                                            [39;49m[01;37mIterating: [01;31m0[01;36m 0M [01;33m( 4,294,967,359 )                                              [39;49m[01;37mIterating: [01;31m0[01;36m O1M [01;33m( 4,294,967,359 )                                             [39;49m[01;37mIterating: [01;36m 1M [01;33m( 8,589,934,679 )                                               [39;49m[01;37mIterating: [01;36m 2M [01;33m( 8,589,934,679 )                                               [39;49m                                                                               [39;49mTime:    [01;36m13.408 seconds  ( 0.223 minutes )[01;37m
-InvSqrt(10005)...
-[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 154 )                               [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 268,435,489 )                                            [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 536,870,939 )                                             [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 536,870,939 )                                            [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 1,073,741,859 )                                            [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 1,073,741,859 )                                           [39;49m[01;37mIterating: [01;32m0[01;32m0[01;36m 0S [01;33m( 2,147,483,699 )                                             [39;49m[01;37mIterating: [01;32m0[01;32m0[01;36m O1M [01;33m( 2,147,483,699 )                                            [39;49m[01;37mIterating: [01;32m0[01;36m 0S [01;33m( 4,294,967,359 )                                              [39;49m[01;37mIterating: [01;32m0[01;36m O1M [01;33m( 4,294,967,359 )                                             [39;49m[01;37mIterating: [01;36m 0S [01;33m( 8,589,934,679 )                                               [39;49m[01;37mIterating: [01;36m O1M [01;33m( 8,589,934,679 )                                              [39;49m                                                                               [39;49mTime:    [01;36m9.000 seconds  ( 0.150 minutes )[01;37m
-Large Multiply...
-                                                                               [39;49mTime:    [01;36m5.994 seconds  ( 0.100 minutes )[01;37m
-
-[01;32mPi:  [01;33m330.914 seconds  ( 5.515 minutes )[01;37m
-
-Processing Hexadecimal Digits:
-                                                                               [39;49mTime:    [01;36m0.103 seconds  ( 0.002 minutes )[01;37m
-Base Converting:
-[01;37mSquaring...  [01;33m( 366 )                                                           [39;49m[01;37mSquaring...  [01;33m( 751,979,191 )                                                   [39;49m[01;37mSquaring...  [01;33m( 1,503,958,362 )                                                 [39;49m[01;37mSquaring...  [01;33m( 3,007,916,705 )                                                 [39;49m[01;37mSquaring...  [01;33m( 6,015,833,390 )                                                 [39;49m[01;37mConverting...  [01;32m- [01;33m( 8,606,711,885 )                                             [39;49m[01;37mConverting...  [01;32m*[01;34m -> [01;31m2 x [01;33m( 8,606,711,885 )                                      [39;49m                                                                               [39;49mTime:    [01;36m21.401 seconds  ( 0.357 minutes )[01;37m
-Writing Decimal Digits:
-                                                                               [39;49mTime:    [01;36m7.863 seconds  ( 0.131 minutes )[01;37m
-
-[01;37mStart Time: [01;33mSun Mar 16 04:20:15 2025[01;37m
-[01;37mEnd Time:   [01;33mSun Mar 16 04:26:26 2025[01;37m
-
-[01;32mTotal Computation Time:     [01;33m352.315 seconds  ( 5.872 minutes )[01;37m
-[01;32mStart-to-End Wall Time:     [01;33m370.900 seconds  ( 6.182 minutes )[01;37m
-[01;37m
-[01;37mCPU Utilization:        [01;33m 3024.52 %[01;37m  +  [01;35m  3.35 % kernel overhead
-[01;37mMulti-core Efficiency:  [01;33m   94.52 %[01;37m  +  [01;35m  0.10 % kernel overhead
-[01;37m
-Last Decimal Digits:  [01;32mPi[01;37m
-[01;33m1272677377 1090654257 8031750767 4731053789 2828127983 [01;37m :  [01;32m17,179,869,150
-[01;33m9772829682 6581412229 6083465400 9194
-[01;37m
-Spot Check: [01;32mGood through 17,179,869,184
-[01;37m
-[22;36mProgram:              y-cruncher v0.8.6 Build 9545-icx
-Tuning Profile:       Linux/24-ZN5 ~ Komari => Komari
-Processor(s):         AMD Ryzen 9 9950X 16-Core Processor 
-Topology:             32 threads / 16 cores / 1 socket / 1 NUMA node
-Usable Memory:        98,714,722,304 (91.9 GiB)
-Est. CPU Frequency:   5,732,152,996[22;36m Hz
-[01;37m
-[01;32mValidation File: [01;35mPi - 20250316-042627.txt
-[01;37m[39;49m
-[39;49m+ for i in {1..3}
-+ echo '===== Iteration 3 ====='
-===== Iteration 3 =====
-+ ./y-cruncher bench 16G
-[22;32my-cruncher v0.8.6 Build 9545-gcc[01;37m
-
-Detecting Environment...
-
-Hardware Features:
-(*) Indicates it is used explicitly by y-cruncher.
-
-CPU Vendor:
-    AMD         = [01;32mYes[01;37m
-    Intel       = [01;31mNo[01;37m
-
-OS Features:
-  * 64-bit      = [01;32mYes[01;37m
-  * OS AVX      = [01;32mYes[01;37m
-  * OS AVX512   = [01;32mYes[01;37m
-
-Hardware Features:
-    MMX         = [01;32mYes[01;37m
-  * x64         = [01;32mYes[01;37m
-  * ABM         = [01;32mYes[01;37m
-    RDRAND      = [01;32mYes[01;37m
-    RDSEED      = [01;32mYes[01;37m
-  * BMI1        = [01;32mYes[01;37m
-  * BMI2        = [01;32mYes[01;37m
-  * ADX         = [01;32mYes[01;37m
-    PREFETCHW   = [01;32mYes[01;37m
-    PREFETCHWT1 = [01;31mNo[01;37m
-    RDPID       = [01;32mYes[01;37m
-    SERIALIZE   = [01;31mNo[01;37m
-    CLDEMOTE    = [01;31mNo[01;37m
-
-SIMD: 128-bit
-  * SSE         = [01;32mYes[01;37m
-  * SSE2        = [01;32mYes[01;37m
-  * SSE3        = [01;32mYes[01;37m
-  * SSSE3       = [01;32mYes[01;37m
-    SSE4a       = [01;32mYes[01;37m
-  * SSE4.1      = [01;32mYes[01;37m
-  * SSE4.2      = [01;32mYes[01;37m
-    PCLMULQDQ   = [01;32mYes[01;37m
-    AES         = [01;32mYes[01;37m
-    SHA         = [01;32mYes[01;37m
-    GFNI        = [01;32mYes[01;37m
-    SM3         = [01;31mNo[01;37m
-
-SIMD: 256-bit
-  * AVX             = [01;32mYes[01;37m
-    FMA4            = [01;31mNo[01;37m
-    XOP             = [01;31mNo[01;37m
-  * FMA3            = [01;32mYes[01;37m
-  * AVX2            = [01;32mYes[01;37m
-    VAES            = [01;32mYes[01;37m
-    VPCLMULQDQ      = [01;32mYes[01;37m
-  * AVX-GFNI        = [01;32mYes[01;37m
-    AVX-VNNI        = [01;32mYes[01;37m
-    AVX-VNNI_INT8   = [01;31mNo[01;37m
-    AVX-IFMA        = [01;31mNo[01;37m
-    AVX-NE-CONVERT  = [01;31mNo[01;37m
-    AVX-VNNI_INT16  = [01;31mNo[01;37m
-    SHA512          = [01;31mNo[01;37m
-    SM4             = [01;31mNo[01;37m
-
-SIMD: 512-bit
-  * AVX512-F                = [01;32mYes[01;37m
-    AVX512-CD               = [01;32mYes[01;37m
-    AVX512-PF               = [01;31mNo[01;37m
-    AVX512-ER               = [01;31mNo[01;37m
-  * AVX512-VL               = [01;32mYes[01;37m
-  * AVX512-BW               = [01;32mYes[01;37m
-  * AVX512-DQ               = [01;32mYes[01;37m
-    AVX512-VPOPCNTDQ        = [01;32mYes[01;37m
-    AVX512-4VNNIW           = [01;31mNo[01;37m
-    AVX512-4FMAPS           = [01;31mNo[01;37m
-  * AVX512-IFMA             = [01;32mYes[01;37m
-  * AVX512-VBMI             = [01;32mYes[01;37m
-    AVX512-VNNI             = [01;32mYes[01;37m
-  * AVX512-VBMI2            = [01;32mYes[01;37m
-    AVX512-BITALG           = [01;32mYes[01;37m
-    AVX512-VPCLMULQDQ       = [01;32mYes[01;37m
-    AVX512-VAES             = [01;32mYes[01;37m
-  * AVX512-GFNI             = [01;32mYes[01;37m
-    AVX512-BF16             = [01;32mYes[01;37m
-    AVX512-VP2INTERSECT     = [01;32mYes[01;37m
-    AVX512-FP16             = [01;31mNo[01;37m
-
-APX + AVX10:
-    APX-F           = [01;31mNo[01;37m
-    AVX10           = [01;31mNo[01;37m
-    AVX10/128       = [01;31mNo[01;37m
-    AVX10/256       = [01;31mNo[01;37m
-    AVX10/512       = [01;31mNo[01;37m
-
-AMX:
-    AMX-TILE        = [01;31mNo[01;37m
-    AMX-INT8        = [01;31mNo[01;37m
-    AMX-BF16        = [01;31mNo[01;37m
-    AMX-FP16        = [01;31mNo[01;37m
-    AMX-COMPLEX     = [01;31mNo[01;37m
-
-
-Auto-Selecting: 24-ZN5 ~ Komari
-
-/home/jr/initPC/Overclocking/Linux/y-cruncher v0.8.6.9545-dynamic/Binaries/24-ZN5 ~ Komari
-
-
-[01;33mLaunching y-cruncher...
-[22;32m================================================================
-
-[01;37mRunning from console...
-
-[01;31m
-Insufficient permissions to set thread priority. Please retry as root.
-[01;37m[01;31m
-Further messages for this warning will be suppressed.
-[01;37m
-Checking processor/OS features...
-
-Required Features:
-[01;36m    x64, ABM, BMI1, BMI2, ADX,
-    SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2,
-    AVX, FMA3, AVX2,
-    AVX512-(F/CD/VL/BW/DQ/IFMA/VBMI/VBMI2/GFNI)
-
-[01;37m
-
-Reading Hardware Topology...
-
-Logical Cores:
-    0-31
-
-Physical Cores:
-    0-15
-
-NUMA Node 0:
-    0-31
-
-Scheduling Group 0:
-    0-31
-
-{
-    DataCache : 0
-    LogicalCores : ["0-31"]
-    PhysicalCores : ["0-15"]
-    Children : [
-        {
-            DataCache : 33554432
-            LogicalCores : ["0-7" "16-23"]
-            PhysicalCores : ["0-7"]
-            Children : [
-                {
-                    DataCache : 1048576
-                    LogicalCores : [0 16]
-                    PhysicalCores : [0]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [0 16]
-                            PhysicalCores : [0]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [1 17]
-                    PhysicalCores : [1]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [1 17]
-                            PhysicalCores : [1]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [2 18]
-                    PhysicalCores : [2]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [2 18]
-                            PhysicalCores : [2]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [3 19]
-                    PhysicalCores : [3]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [3 19]
-                            PhysicalCores : [3]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [4 20]
-                    PhysicalCores : [4]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [4 20]
-                            PhysicalCores : [4]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [5 21]
-                    PhysicalCores : [5]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [5 21]
-                            PhysicalCores : [5]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [6 22]
-                    PhysicalCores : [6]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [6 22]
-                            PhysicalCores : [6]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [7 23]
-                    PhysicalCores : [7]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [7 23]
-                            PhysicalCores : [7]
-                        }
-                    ]
-                }
-            ]
-        }
-        {
-            DataCache : 33554432
-            LogicalCores : ["8-15" "24-31"]
-            PhysicalCores : ["8-15"]
-            Children : [
-                {
-                    DataCache : 1048576
-                    LogicalCores : [8 24]
-                    PhysicalCores : [8]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [8 24]
-                            PhysicalCores : [8]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [9 25]
-                    PhysicalCores : [9]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [9 25]
-                            PhysicalCores : [9]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [10 26]
-                    PhysicalCores : [10]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [10 26]
-                            PhysicalCores : [10]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [11 27]
-                    PhysicalCores : [11]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [11 27]
-                            PhysicalCores : [11]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [12 28]
-                    PhysicalCores : [12]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [12 28]
-                            PhysicalCores : [12]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [13 29]
-                    PhysicalCores : [13]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [13 29]
-                            PhysicalCores : [13]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [14 30]
-                    PhysicalCores : [14]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [14 30]
-                            PhysicalCores : [14]
-                        }
-                    ]
-                }
-                {
-                    DataCache : 1048576
-                    LogicalCores : [15 31]
-                    PhysicalCores : [15]
-                    Children : [
-                        {
-                            DataCache : 49152
-                            LogicalCores : [15 31]
-                            PhysicalCores : [15]
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
-
-
-
-[01;37mConstant:   [01;32mPi[01;37m
-[01;37mAlgorithm:  [01;33mChudnovsky (1988)[01;37m
-
-[01;37mDecimal Digits:       [01;32m17,179,869,184[01;37m
-[01;37mHexadecimal Digits:   [22;32m14,267,572,528[01;37m[22;31m (Disabled)
-
-[01;37mComputation Mode:     [01;31mRam Only[01;37m
-Multi-Threading:      [01;36mPush Pool  ->  [01;33m32[01;33m / [01;33m?[01;37m[39;49m / [01;31m32[01;32m  (all cores)[01;37m
-
-[01;37mStart Time: [01;33mSun Mar 16 04:26:27 2025[01;37m
-
-Working Memory...  [01;33mmmap...                                                     [39;49mWorking Memory...  [01;33mmmap()                                                      [39;49mWorking Memory...  [01;33mCommitting...                                               [39;49mWorking Memory...  [01;33mLocking...                                                  [39;49mWorking Memory...  [01;33mScanning...                                                 [39;49mWorking Memory...  [01;32m75.0 GiB[01;33m  (spread: 100%/1)                                  [39;49m                                                                               [01;37mWorking Memory...  [01;32m75.0 GiB[01;33m  (spread: 100%/1)[01;37m
-Twiddle Tables...  [01;33mmmap...                                                     [39;49mTwiddle Tables...  [01;33mmmap()                                                      [39;49mTwiddle Tables...  [01;33mCommitting...                                               [39;49mTwiddle Tables...  [01;33mLocking...                                                  [39;49mTwiddle Tables...  [01;33mScanning...                                                 [39;49mTwiddle Tables...  [01;32m11.2 MiB[01;33m  (locked, spread: 100%/1)                          [39;49m                                                                               [01;37mTwiddle Tables...  [01;32m11.2 MiB[01;33m  (locked, spread: 100%/1)[01;37m
-
-Begin Computation:
-
-Series CommonP2B3...  1,211,415,628 terms  (Expansion Factor = 2.961)
-[01;37mSumming: [01;32m0% [01;35m( 24 )[01;31m A [01;33m( 11,980,531 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 22 )[01;31m E [01;33m( 24,286,676 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 20 )[01;31m E [01;34m -> [01;33m( 42,807,339 )                                        [39;49m[01;37mSumming: [01;32m0% [01;35m( 20 )[01;31m E [01;33m( 42,807,332 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 19 )[01;31m E [01;33m( 56,832,460 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 18 )[01;31m E [01;33m( 75,453,202 )                                            [39;49m[01;37mSumming: [01;32m0% [01;35m( 17 )[01;31m E [01;33m( 100,175,885 )                                           [39;49m[01;37mSumming: [01;32m0% [01;35m( 16 )[01;31m E [01;33m( 133,000,716 )                                           [39;49m[01;37mSumming: [01;32m1% [01;35m( 15 )[01;31m E [01;34m -> [01;33m( 176,584,298 )                                       [39;49m[01;37mSumming: [01;32m1% [01;35m( 15 )[01;31m E [01;33m( 176,584,292 )                                           [39;49m[01;37mSumming: [01;32m1% [01;35m( 14 )[01;31m E [01;34m -> [01;33m( 234,455,132 )                                       [39;49m[01;37mSumming: [01;32m1% [01;35m( 14 )[01;31m E [01;33m( 234,455,146 )                                           [39;49m[01;37mSumming: [01;32m1% [01;35m( 13 )[01;31m E [01;34m -> [01;33m( 311,300,846 )                                       [39;49m[01;37mSumming: [01;32m1% [01;35m( 13 )[01;31m E [01;33m( 311,300,850 )                                           [39;49m[01;37mSumming: [01;32m2% [01;35m( 12 )[01;31m E [01;34m -> [01;33m( 413,350,045 )                                       [39;49m[01;37mSumming: [01;32m2% [01;35m( 12 )[01;31m E [01;33m( 413,350,057 )                                           [39;49m[01;37mSumming: [01;32m3% [01;35m( 11 )[01;31m E [01;34m -> [01;33m( 548,881,445 )                                       [39;49m[01;37mSumming: [01;32m3% [01;35m( 11 )[01;31m E [01;33m( 548,881,468 )                                           [39;49m[01;37mSumming: [01;32m4% [01;35m( 10 )[01;31m E [01;34m -> [01;33m( 728,903,138 )                                       [39;49m[01;37mSumming: [01;32m4% [01;35m( 10 )[01;31m E [01;33m( 728,903,146 )                                           [39;49m[01;37mSumming: [01;32m5% [01;35m( 9 )[01;31m E [01;34m -> [01;33m( 968,060,090 )                                        [39;49m[01;37mSumming: [01;32m5% [01;35m( 9 )[01;31m E [01;33m( 968,060,121 )                                            [39;49m[01;37mSumming: [01;32m7% [01;35m( 8 )[01;31m E [01;34m -> [01;33m( 1,285,850,543 )                                      [39;49m[01;37mSumming: [01;32m7% [01;35m( 8 )[01;31m E [01;33m( 1,285,850,561 )                                          [39;49m[01;37mSumming: [01;32m9% [01;35m( 7 )[01;31m E [01;34m -> [01;33m( 1,708,261,158 )                                      [39;49m[01;37mSumming: [01;32m9% [01;35m( 7 )[01;31m E [01;33m( 1,708,261,149 )                                          [39;49m[01;37mSumming: [01;32m13% [01;35m( 6 )[01;31m E [01;34m -> [01;33m( 2,269,977,383 )                                     [39;49m[01;37mSumming: [01;32m13% [01;35m( 6 )[01;31m E [01;33m( 2,269,977,380 )                                         [39;49m[01;37mSumming: [01;32m17% [01;35m( 5 )[01;31m E [01;34m -> [01;33m( 3,017,394,750 )                                     [39;49m[01;37mSumming: [01;32m17% [01;35m( 5 )[01;31m E [01;33m( 3,017,394,728 )                                         [39;49m[01;37mSumming: [01;32m23% [01;35m( 4 )[01;31m E [01;34m -> [01;33m( 4,012,772,929 )                                     [39;49m[01;37mSumming: [01;32m23% [01;35m( 4 )[01;31m E [01;33m( 4,012,772,959 )                                         [39;49m[01;37mSumming: [01;32m31% [01;35m( 3 )[01;31m E [01;34m -> [01;33m( 5,340,089,364 )                                     [39;49m[01;37mSumming: [01;32m31% [01;35m( 3 )[01;31m E [01;33m( 5,340,089,386 )                                         [39;49m[01;37mSumming: [01;32m41% [01;35m( 2 )[01;31m E [01;34m -> [01;33m( 7,113,614,792 )                                     [39;49m[01;37mSumming: [01;32m41% [01;35m( 2 )[01;31m E [01;33m( 7,113,614,820 )                                         [39;49m[01;37mSumming: [01;32m55% [01;35m( 1 )[01;31m E [01;34m -> [01;33m( 9,491,538,911 )                                     [39;49m[01;37mSumming: [01;32m55% [01;35m( 1 )[01;31m E [01;33m( 9,491,538,936 )                                         [39;49m[01;37mSumming: [01;32m73% [01;35m( 0 )[01;31m E [01;34m -> [01;33m( 12,702,500,686 )                                    [39;49m[01;37mSumming: [01;32m73% [01;35m( 0 )[01;31m E [01;33m( 12,702,500,672 )                                        [39;49m                                                                               [39;49mTime:    [01;36m303.363 seconds  ( 5.056 minutes )[01;37m
-Large Division...
-[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0M [01;33m( 154 )                               [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 134,217,764 )                                          [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 268,435,489 )                                           [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 536,870,939 )                                            [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;36m 0M [01;33m( 1,073,741,859 )                                            [39;49m[01;37mIterating: [01;31m0[01;32m0[01;32m0[01;36m O1M [01;33m( 1,073,741,859 )                                           [39;49m[01;37mIterating: [01;31m0[01;32m0[01;36m 0M [01;33m( 2,147,483,699 )                                             [39;49m[01;37mIterating: [01;31m0[01;32m0[01;36m O1M [01;33m( 2,147,483,699 )                                            [39;49m[01;37mIterating: [01;31m0[01;36m 0M [01;33m( 4,294,967,359 )                                              [39;49m[01;37mIterating: [01;31m0[01;36m O1M [01;33m( 4,294,967,359 )                                             [39;49m[01;37mIterating: [01;36m 1M [01;33m( 8,589,934,679 )                                               [39;49m[01;37mIterating: [01;36m 2M [01;33m( 8,589,934,679 )                                               [39;49m                                                                               [39;49mTime:    [01;36m13.424 seconds  ( 0.224 minutes )[01;37m
-InvSqrt(10005)...
-[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 154 )                               [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 268,435,489 )                                            [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 536,870,939 )                                             [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 536,870,939 )                                            [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;36m 0S [01;33m( 1,073,741,859 )                                            [39;49m[01;37mIterating: [01;32m0[01;32m0[01;32m0[01;36m O1M [01;33m( 1,073,741,859 )                                           [39;49m[01;37mIterating: [01;32m0[01;32m0[01;36m 0S [01;33m( 2,147,483,699 )                                             [39;49m[01;37mIterating: [01;32m0[01;32m0[01;36m O1M [01;33m( 2,147,483,699 )                                            [39;49m[01;37mIterating: [01;32m0[01;36m 0S [01;33m( 4,294,967,359 )                                              [39;49m[01;37mIterating: [01;32m0[01;36m O1M [01;33m( 4,294,967,359 )                                             [39;49m[01;37mIterating: [01;36m 0S [01;33m( 8,589,934,679 )                                               [39;49m[01;37mIterating: [01;36m O1M [01;33m( 8,589,934,679 )                                              [39;49m                                                                               [39;49mTime:    [01;36m8.965 seconds  ( 0.149 minutes )[01;37m
-Large Multiply...
-                                                                               [39;49mTime:    [01;36m5.924 seconds  ( 0.099 minutes )[01;37m
-
-[01;32mPi:  [01;33m331.676 seconds  ( 5.528 minutes )[01;37m
-
-Processing Hexadecimal Digits:
-                                                                               [39;49mTime:    [01;36m0.103 seconds  ( 0.002 minutes )[01;37m
-Base Converting:
-[01;37mSquaring...  [01;33m( 366 )                                                           [39;49m[01;37mSquaring...  [01;33m( 751,979,191 )                                                   [39;49m[01;37mSquaring...  [01;33m( 1,503,958,362 )                                                 [39;49m[01;37mSquaring...  [01;33m( 3,007,916,705 )                                                 [39;49m[01;37mSquaring...  [01;33m( 6,015,833,390 )                                                 [39;49m[01;37mConverting...  [01;32m- [01;33m( 8,606,711,885 )                                             [39;49m[01;37mConverting...  [01;32m*[01;34m -> [01;31m2 x [01;33m( 8,606,711,885 )                                      [39;49m                                                                               [39;49mTime:    [01;36m21.407 seconds  ( 0.357 minutes )[01;37m
-Writing Decimal Digits:
-                                                                               [39;49mTime:    [01;36m7.933 seconds  ( 0.132 minutes )[01;37m
-
-[01;37mStart Time: [01;33mSun Mar 16 04:26:27 2025[01;37m
-[01;37mEnd Time:   [01;33mSun Mar 16 04:32:39 2025[01;37m
-
-[01;32mTotal Computation Time:     [01;33m353.083 seconds  ( 5.885 minutes )[01;37m
-[01;32mStart-to-End Wall Time:     [01;33m371.917 seconds  ( 6.199 minutes )[01;37m
-[01;37m
-[01;37mCPU Utilization:        [01;33m 3030.30 %[01;37m  +  [01;35m  3.37 % kernel overhead
-[01;37mMulti-core Efficiency:  [01;33m   94.70 %[01;37m  +  [01;35m  0.11 % kernel overhead
-[01;37m
-Last Decimal Digits:  [01;32mPi[01;37m
-[01;33m1272677377 1090654257 8031750767 4731053789 2828127983 [01;37m :  [01;32m17,179,869,150
-[01;33m9772829682 6581412229 6083465400 9194
-[01;37m
-Spot Check: [01;32mGood through 17,179,869,184
-[01;37m
-[22;36mProgram:              y-cruncher v0.8.6 Build 9545-icx
-Tuning Profile:       Linux/24-ZN5 ~ Komari => Komari
-Processor(s):         AMD Ryzen 9 9950X 16-Core Processor 
-Topology:             32 threads / 16 cores / 1 socket / 1 NUMA node
-Usable Memory:        98,714,722,304 (91.9 GiB)
-Est. CPU Frequency:   5,728,592,568[22;36m Hz
-[01;37m
-[01;32mValidation File: [01;35mPi - 20250316-043241.txt
-[01;37m[39;49m
-[39;49m+ popd
-~/initPC/Overclocking/Linux
