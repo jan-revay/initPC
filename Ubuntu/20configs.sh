@@ -58,7 +58,9 @@
 # TOREAD:
 # - https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/configuration-overview-gsettings-dconf
 
-sudo prime-select nvidia
+if ! sudo prime-select nvidia; then
+    echo -e "${RED}WARNING: prime-select not found ${NC}"
+fi
 
 # TODO design and add all keybindings
 # TODO remove useless wm keybindings
