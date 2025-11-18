@@ -32,16 +32,24 @@ mkdir -p "$(dirname "${LOGFILE}")"
 # Redirect all output (stdout + stderr) to both the log file and the terminal
 exec > >(tee -i "$LOGFILE") 2>&1
 
+function run_all
+{
+    pushd "$1" || exit "${EXIT_FILE_IO_ERROR}"
+    # shellcheck source=/dev/null
+    . ./run_all.sh
+    popd || exit "${EXIT_FILE_IO_ERROR}"
+}
+
 # TODO set timezone before running anything...
 # TODO fix
 # see: https://linuxize.com/post/how-to-set-or-change-timezone-on-debian-10/
 # see: https://chatgpt.com/share/e001132e-2bfc-4b68-ab99-8697da44ccc2
 # timedatectl set-timezone Europe/Vienna
 
-. ./CLI_Ubuntu/run_all.sh
-. ./Ubuntu/run_all.sh
+run_all "CLI_Ubuntu"
+run_all "Ubuntu"
 # try_platform "PopOS_22.04"
-. ./Android_13/run_all.sh
-. ./DistroAgnostic/run_all.sh
+run_all "Android_13"
+run_all "DistroAgnostic"
 
 echo -e "${GREEN}run_init.sh: All configuration scripts run successfully.${NC}"
