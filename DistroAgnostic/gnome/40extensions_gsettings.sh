@@ -82,6 +82,9 @@ for_each "gsettings set org.gnome.shell.extensions.system-monitor-next-applet" <
     show-tooltip "true"
 BASH
 
+# Ubuntu 24.04 CI
+if gsettings get org.gnome.shell.extensions.tiling-assistant focus-hint; then
+
 # tiling-assistant@ubuntu.com
 for_each "gsettings set org.gnome.shell.extensions.tiling-assistant" << 'BASH'
     dynamic-keybinding-behavior "0"
@@ -95,6 +98,8 @@ for_each "gsettings set org.gnome.shell.extensions.tiling-assistant" << 'BASH'
     tiling-popup-all-workspace "false"
     window-gap "8"
 BASH
+
+fi # Ubuntu 24.04 CI
 
 # tilingshell@ferrarodomenico.com
 for_each "gsettings set org.gnome.shell.extensions.tilingshell" << 'BASH'
