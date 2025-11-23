@@ -60,7 +60,7 @@ for_each "gsettings set org.gnome.desktop.interface" << 'BASH'
     # TODO consider using 1 as scaling factor and setting interface/document/monospace fonts instead
     text-scaling-factor "1"
     # text-scaling-factor '1.1875' # this should also work - 1.0011 in binary
-    font-name "Ubuntu Sans 13"
+    font-name "Ubuntu Sans 14"
     document-font-name "Sans 13"
     monospace-font-name "Ubuntu Sans Mono 15"
 
