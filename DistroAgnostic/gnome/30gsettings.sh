@@ -21,7 +21,7 @@ gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
 # Ptyxis and accent-color are not present on Ubuntu 24.04 - check and skip
-if gsettings get org.gnome.Ptyxis scrollbar-policy ; then
+if gsettings get org.gnome.Ptyxis scrollbar-policy && gsettings get org.gnome.desktop.interface accent-color; then
 
 for_each "gsettings set org.gnome.Ptyxis" << 'BASH'
     restore-session "false"
