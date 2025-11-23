@@ -85,18 +85,18 @@ BASH
 # Ubuntu 24.04 CI
 if gsettings get org.gnome.shell.extensions.tiling-assistant focus-hint; then
 
-# tiling-assistant@ubuntu.com
-for_each "gsettings set org.gnome.shell.extensions.tiling-assistant" << 'BASH'
-    dynamic-keybinding-behavior "0"
-    enable-advanced-experimental-features "true"
-    enable-tiling-popup "false"
-    focus-hint "3"
-    focus-hint-color "rgb(192,97,203)"
-    focus-hint-outline-border-radius "6"
-    focus-hint-outline-size "6"
-    focus-hint-outline-style "1"
-    tiling-popup-all-workspace "false"
-    window-gap "8"
+    # tiling-assistant@ubuntu.com
+    for_each "gsettings set org.gnome.shell.extensions.tiling-assistant" << 'BASH'
+        dynamic-keybinding-behavior "0"
+        enable-advanced-experimental-features "true"
+        enable-tiling-popup "false"
+        focus-hint "3"
+        focus-hint-color "rgb(192,97,203)"
+        focus-hint-outline-border-radius "6"
+        focus-hint-outline-size "6"
+        focus-hint-outline-style "1"
+        tiling-popup-all-workspace "false"
+        window-gap "8"
 BASH
 
 fi # Ubuntu 24.04 CI

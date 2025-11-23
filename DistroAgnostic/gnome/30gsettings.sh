@@ -23,56 +23,56 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 # Ptyxis and accent-color are not present on Ubuntu 24.04 - check and skip
 if gsettings get org.gnome.Ptyxis scrollbar-policy && gsettings get org.gnome.desktop.interface accent-color; then
 
-for_each "gsettings set org.gnome.Ptyxis" << 'BASH'
-    restore-session "false"
-    restore-window-size "false"
-    scrollbar-policy "always"
+    for_each "gsettings set org.gnome.Ptyxis" << 'BASH'
+        restore-session "false"
+        restore-window-size "false"
+        scrollbar-policy "always"
 BASH
 
-for_each "gsettings set org.gnome.Ptyxis.Shortcuts" << 'BASH'
-    close-tab "<Control>w"
-    move-next-tab "<Control>Tab"
-    move-previous-tab "<Shift><Control>Tab"
-    focus-tab-1 "<Control>1"
-    focus-tab-2 "<Control>2"
-    focus-tab-3 "<Control>3"
-    focus-tab-4 "<Control>4"
-    focus-tab-5 "<Control>5"
-    focus-tab-6 "<Control>6"
-    focus-tab-7 "<Control>7"
-    focus-tab-8 "<Control>8"
-    focus-tab-9 "<Control>9"
-    focus-tab-10 "<Control>0"
+    for_each "gsettings set org.gnome.Ptyxis.Shortcuts" << 'BASH'
+        close-tab "<Control>w"
+        move-next-tab "<Control>Tab"
+        move-previous-tab "<Shift><Control>Tab"
+        focus-tab-1 "<Control>1"
+        focus-tab-2 "<Control>2"
+        focus-tab-3 "<Control>3"
+        focus-tab-4 "<Control>4"
+        focus-tab-5 "<Control>5"
+        focus-tab-6 "<Control>6"
+        focus-tab-7 "<Control>7"
+        focus-tab-8 "<Control>8"
+        focus-tab-9 "<Control>9"
+        focus-tab-10 "<Control>0"
 BASH
 
-for_each "gsettings set org.gnome.desktop.input-sources" << 'BASH'
-    per-window true
-    sources "[('xkb', 'us'), ('xkb', 'sk+qwerty')]"
-    xkb-options "['terminate:ctrl_alt_bksp', 'shift:both_capslock_cancel', 'caps:none']"
+    for_each "gsettings set org.gnome.desktop.input-sources" << 'BASH'
+        per-window true
+        sources "[('xkb', 'us'), ('xkb', 'sk+qwerty')]"
+        xkb-options "['terminate:ctrl_alt_bksp', 'shift:both_capslock_cancel', 'caps:none']"
 BASH
 
-for_each "gsettings set org.gnome.desktop.interface" << 'BASH'
-    # WARNING: text-scaling-factor can break Chromium (or other GTK apps) and cause
-    # the app window to increase in size on refocus (due to floating point rounding
-    # errors). Always set the value to decimal that can be represented as float without
-    # rounding error and also test whether the Chromium window does not change size on
-    # refocus with the specific value.
-    # TODO consider using 1 as scaling factor and setting interface/document/monospace fonts instead
-    text-scaling-factor "1"
-    # text-scaling-factor '1.1875' # this should also work - 1.0011 in binary
-    font-name "Ubuntu Sans 14"
-    document-font-name "Sans 13"
-    monospace-font-name "Ubuntu Sans Mono 15"
+    for_each "gsettings set org.gnome.desktop.interface" << 'BASH'
+        # WARNING: text-scaling-factor can break Chromium (or other GTK apps) and cause
+        # the app window to increase in size on refocus (due to floating point rounding
+        # errors). Always set the value to decimal that can be represented as float without
+        # rounding error and also test whether the Chromium window does not change size on
+        # refocus with the specific value.
+        # TODO consider using 1 as scaling factor and setting interface/document/monospace fonts instead
+        text-scaling-factor "1"
+        # text-scaling-factor '1.1875' # this should also work - 1.0011 in binary
+        font-name "Ubuntu Sans 14"
+        document-font-name "Sans 13"
+        monospace-font-name "Ubuntu Sans Mono 15"
 
-    font-hinting "slight"
-    cursor-size "64"
+        font-hinting "slight"
+        cursor-size "64"
 
-    enable-animations "false"
+        enable-animations "false"
 
-    accent-color "red"
-    color-scheme "prefer-dark"
-    gtk-theme "Yaru-red-dark"
-    icon-theme "Yaru-red-dark"
+        accent-color "red"
+        color-scheme "prefer-dark"
+        gtk-theme "Yaru-red-dark"
+        icon-theme "Yaru-red-dark"
 BASH
 
 fi # Ubuntu 24.04
