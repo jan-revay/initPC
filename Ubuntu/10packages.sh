@@ -20,6 +20,7 @@ time sudo apt-get -y upgrade
 apt list --upgradable # check for the packages that were not upgraded
 
 # TODO - add all packages to a single list (change this to a conditional append)
+# TODO - also detect Docker and virtualbox
 if lspci | grep -i vmware; then                                 # if the script is running inside of a VMware virtual machine
     sudo apt-get install -y open-vm-tools open-vm-tools-desktop # install "VMware tools" (drivers)
 else                                                            # we are running bare metal (I don't use VirtualBox or other hypervisors)
@@ -72,14 +73,10 @@ readonly APT_GUI_PACKAGES=(
     # ===== needed by Another Window Session Manager GNOME extension =====
     # TODO remove if not used resp. remove packages that are not necessary
     # TODO add setup according to https://github.com/nlpsuge/gnome-shell-extension-another-window-session-manager?tab=readme-ov-file#how-to-make-close-by-rules-work or remove
-    ydotool # window management utility
-    procps
+
     libglib2.0-dev
     libgtop2-dev
     gir1.2-gtop-2.0 # gir1.2-gtop-2.0 is needed by some performance monitoring GNOME extensions
-
-    # I don't remember why this is here (TODO review)
-    linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
 
     # ===== Editors, tools and IDEs =====
     # TODO gitk and git-gui break the install script (dependencies) - choose another install method
@@ -95,8 +92,7 @@ readonly APT_GUI_PACKAGES=(
     ttf-mscorefonts-installer
 
     # ===== MESSAGING, PRODUCTIVITY, GRAPHICS, SOUND AND BOOKS =====
-    gimp krita inkscape okular evince vlc audacity xdotool
-    shutter # TODO learn how to use efficiently resp. remove if unused
+    gimp krita inkscape okular evince vlc audacity shutter
 
     # ===== GUI TWEAKS AND AUTOMATION =====
     dconf-editor gnome-tweaks gnome-shell-extension-manager
@@ -117,16 +113,14 @@ readonly APT_GUI_PACKAGES=(
 
     chrome-gnome-shell gnome-browser-connector # installing extensions from Firefox or Chrome
 
+    stressapptest stress-ng inxi
 )
 
-# TODO alacritty is not present on Ubuntu releases older than Ubuntu 24.04
-if bash -c '. ../prelude.sh; distro_version_le 24' &> /dev/null; then
-    APT_PACKAGES+=('')
-else
-    APT_PACKAGES+=('alacritty')
-fi
-
-time sudo apt-get install -y "${APT_GUI_PACKAGES[@]}"
+time sudo apt-ge# cleanup
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y autoremove
+apt list --upgradable # check for the packages that were not upgradedt install -y "${APT_GUI_PACKAGES[@]}"
 
 pipx install gnome-extensions-cli --system-site-packages
 
@@ -153,8 +147,4 @@ pipx install gnome-extensions-cli --system-site-packages
 # sudo apt-get install ./docker-desktop.deb
 # popd
 
-# cleanup
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y autoremove
-apt list --upgradable # check for the packages that were not upgraded
+
