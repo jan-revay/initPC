@@ -116,11 +116,12 @@ readonly APT_GUI_PACKAGES=(
     stressapptest stress-ng inxi
 )
 
-time sudo apt-ge# cleanup
+time sudo apt-get install -y "${APT_GUI_PACKAGES[@]}"
+# cleanup
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y autoremove
-apt list --upgradable # check for the packages that were not upgradedt install -y "${APT_GUI_PACKAGES[@]}"
+apt list --upgradable # check for the packages that were not upgraded
 
 pipx install gnome-extensions-cli --system-site-packages
 
@@ -146,5 +147,3 @@ pipx install gnome-extensions-cli --system-site-packages
 # sudo apt update -y
 # sudo apt-get install ./docker-desktop.deb
 # popd
-
-
