@@ -12,7 +12,7 @@ pushd ydotool
 mkdir build
 pushd build
 time cmake ..
-time make -j `nproc`
+time make -j "$(nproc)"
 sudo make install
 popd
 popd
@@ -24,12 +24,7 @@ else
     exit 1
 fi
 
-
 # TODO Focusrite drivers
 # git clone https://github.com/geoffreybennett/alsa-scarlett-gui.git
-
-
-
-
 
 popd
