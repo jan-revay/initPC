@@ -62,6 +62,13 @@ APT_PACKAGES=(
     libcrack2
     flex # fast lexical analyzer generator
     nvme-cli fio
+    # I installed ydotool from source as the packages seem to be broken
+    # ydotool ydotoold # simulates keyboard and mouse input
+    procps
+    eza
+    # I don't remember why this is here (TODO review)
+    linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
+    scdoc
 
     # package managers
     npm rubygems pipx python3-pip
@@ -91,23 +98,24 @@ APT_PACKAGES=(
 
     # utilities
     7zip zip file rsync openssh-client
+    clazy heaptrack software-properties-common
+    # stress testing and benchmarking tools
+    # php is required by phoronix test suite
+    # todo fix php on ubuntu 22.04
+
+    # phoronix-test-suite dependencies
+    #    php8.3 php-xml php8.3-xml
+    #    php-gd php-bz2 php-sqlite3 php-curl
+    #    libpopt-dev # TODO mpicc
 )
 
-# exa was replaced by eza on later versions of Ubuntu
-# (exa is no longer maintained)
-if bash -c '. ../prelude.sh; distro_version_le 23' &> /dev/null; then
-    APT_PACKAGES+=('exa')
-else
-    APT_PACKAGES+=('eza')
-fi
-
-# Kali and Debian testing do not have these packages...
-# TODO try a more elegant fix
-if bash -c '. ../prelude.sh; distro_is ubuntu || (distro_is debian && distro_version_le 12)' &> /dev/null; then
-    APT_PACKAGES+=(clazy heaptrack software-properties-common)
-fi
 
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
+# cleanup
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y autoremove
+apt list --upgradable # check for the packages that were not upgraded
 
 # TODO add else branch for other distros
 # The LLVM convenience script does not work with Debian testing and Kali
@@ -130,11 +138,6 @@ time sudo apt-get install -y "${APT_PACKAGES[@]}"
 # Install rust ecosystem
 time curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
-# cleanup
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y autoremove
-apt list --upgradable # check for the packages that were not upgraded
 
 # === PYTHON APPLICATIONS ===
 # Static analyzers
@@ -192,22 +195,6 @@ time sudo gem install mdl # markdown-lint
 #    - ICC and AOCC (Intel and AMD C++ compilers)
 # add foliate: sudo apt install foliate
 #    - powershell https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.3
-
-. ../prelude.sh
-
-OPT_APT_PACKAGES=(
-    stressapptest stress-ng inxi
-    # stress testing and benchmarking tools
-    # php is required by phoronix test suite
-    # todo fix php on ubuntu 22.04
-
-    # phoronix-test-suite dependencies
-    #    php8.3 php-xml php8.3-xml
-    #    php-gd php-bz2 php-sqlite3 php-curl
-    #    libpopt-dev # TODO mpicc
-)
-
-time sudo apt-get install -y "${OPT_APT_PACKAGES[@]}"
 
 # wget -P /tmp/ https://github.com/phoronix-test-suite/phoronix-test-suite/releases/download/v10.8.4/phoronix-test-suite_10.8.4_all.deb
 # sudo dpkg -i /tmp/phoronix-test-suite_10.8.4_all.deb
