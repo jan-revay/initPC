@@ -8,6 +8,7 @@
 mkdir -p ~/localSW
 pushd ~/localSW/
 
+# TODO try using a more efficient method e.g. just pulling and just recompiling
 rm -rf ydotool
 git clone https://github.com/ReimuNotMoe/ydotool.git
 pushd ydotool
