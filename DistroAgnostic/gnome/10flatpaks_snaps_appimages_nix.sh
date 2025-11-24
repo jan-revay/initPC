@@ -33,6 +33,7 @@ else
         # com.visualstudio.code - containerised VSC sucks for C++ developemtn -> install deb instead
         com.github.johnfactotum.Foliate
         org.signal.Signal
+        # TODO try Caprine out and remove if not useful
         com.sindresorhus.Caprine
         com.spotify.Client
         com.axosoft.GitKraken
