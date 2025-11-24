@@ -5,6 +5,7 @@
 # TODO add repos and packates that PopOS has: https://pop.system76.com/
 . ../prelude.sh
 
+mkdir -p ~/localSW
 pushd ~/localSW/
 
 git clone https://github.com/ReimuNotMoe/ydotool.git
