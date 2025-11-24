@@ -19,9 +19,9 @@ popd
 popd
 
 if ydotoold --version; then
-    systemctl --user enable ydotool.service
+    systemctl --user enable ydotoold.service
 else
-    echo "ydotool installation failed"
+    echo "ydotoold installation failed"
     exit 1
 fi
 
