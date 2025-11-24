@@ -8,6 +8,7 @@
 mkdir -p ~/localSW
 pushd ~/localSW/
 
+rm -rf ydotool
 git clone https://github.com/ReimuNotMoe/ydotool.git
 pushd ydotool
 mkdir build
