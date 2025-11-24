@@ -117,6 +117,8 @@ jobs:
           ! -path "./.cache/*" \
           ! -path "./.dotfiles/logs/HEAD" \
           ! -path "*work/_temp/*" \
+          ! -path "*/.git/*" \
+          ! -path "./localSW/ydotool/build/CMakeFiles/*" \
           ! -path "./runners/*" \
           ! -path "./x/helix/.git/*" \
           ! -path "./actions-runner/*" \
