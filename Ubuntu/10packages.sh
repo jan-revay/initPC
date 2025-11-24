@@ -113,7 +113,6 @@ readonly APT_GUI_PACKAGES=(
 
     chrome-gnome-shell gnome-browser-connector # installing extensions from Firefox or Chrome
 
-    stressapptest stress-ng inxi
 )
 
 time sudo apt-get install -y "${APT_GUI_PACKAGES[@]}"

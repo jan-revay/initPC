@@ -107,6 +107,8 @@ APT_PACKAGES=(
     #    php8.3 php-xml php8.3-xml
     #    php-gd php-bz2 php-sqlite3 php-curl
     #    libpopt-dev # TODO mpicc
+
+    stressapptest stress-ng inxi
 )
 
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
