@@ -109,7 +109,6 @@ APT_PACKAGES=(
     #    libpopt-dev # TODO mpicc
 )
 
-
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
 # cleanup
 sudo apt-get -y update
@@ -137,7 +136,6 @@ apt list --upgradable # check for the packages that were not upgraded
 
 # Install rust ecosystem
 time curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-
 
 # === PYTHON APPLICATIONS ===
 # Static analyzers
