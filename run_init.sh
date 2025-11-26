@@ -28,6 +28,8 @@ LOGFILE="$(pwd)/Logs/$(date '+%Y%m%d_%H%M%S').log"
 readonly LOGFILE
 mkdir -p "$(dirname "${LOGFILE}")"
 
+# TODO consider differentiating errors from logs (e.g. adding an error keyword
+# to err function or writing stderr to a different file
 # Redirect all output (stdout + stderr) to both the log file and the terminal
 exec > >(tee -i "$LOGFILE") 2>&1
 
