@@ -1,4 +1,5 @@
 #!/bin/bash
+. ../prelude.sh
 set -euo pipefail
 
 # Find all .sh files and process each one

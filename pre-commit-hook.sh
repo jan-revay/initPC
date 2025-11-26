@@ -33,3 +33,15 @@ find . -type f -name "*.sh" -print0 \
 # I am passing the filename as a parameter to the bash subshell
 # find . -type f -name "*.sh" -execdir \
 #     bash -c 'echo "### Entering directory $(pwd)" && shellcheck "${1}"' bash {} \;
+#
+
+find . -type f -name '*.sh' \( \
+    ! -name "prelude.sh" \
+    \) -print0 \
+    | while IFS= read -r -d '' f; do
+        if ! sed -n '2p' "$f" \
+            | grep -Eq '^\.[[:space:]]+(\.\./)*prelude\.sh$'; then
+            err "File does not have . prelude.sh on the 2nd line: $f"
+            exit 2
+        fi
+    done
