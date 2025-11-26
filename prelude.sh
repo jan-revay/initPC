@@ -178,4 +178,8 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         done
         set -x
     }
+    err()
+    {
+        echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $*" >&2
+    }
 fi

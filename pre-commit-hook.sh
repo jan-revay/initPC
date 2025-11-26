@@ -9,12 +9,12 @@ echo -e "${GREEN} ######  RUNNING PRE-COMMIT HOOKS  ###### ${NC}"
 
 files=$(find . -type f -name "*.sh" -exec shfmt -l {} \;)
 if [ -n "$files" ]; then
-    echo "Error: The following shell files need formatting:"
-    echo "$files"
-    echo ""
-    echo "Running: find . -type f -name \"*.sh\" -exec shfmt -w {} \\;"
+    err "Error: The following shell files need formatting:"
+    err "$files"
+    err
+    err "Running: find . -type f -name \"*.sh\" -exec shfmt -w {} \\;"
     find . -type f -name "*.sh" -execdir shfmt -w {} \;
-    echo "git add the formatted files and commit again"
+    err "git add the formatted files and commit again"
     exit 1
 fi
 
