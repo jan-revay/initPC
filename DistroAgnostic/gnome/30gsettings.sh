@@ -14,7 +14,6 @@
 # https://docs.gtk.org/gio/class.Settings.html
 # https://wiki.gnome.org/HowDoI/GSettings
 
-
 # disable-lock-screen was set to true for some reason on my fresh Ubuntu 24.04 install
 gsettings set org.gnome.desktop.lockdown disable-lock-screen false
 gsettings set org.gnome.mutter dynamic-workspaces false

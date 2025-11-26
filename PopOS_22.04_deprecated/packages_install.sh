@@ -13,7 +13,6 @@
 # - test & tune this on a virtual machine so that no user input is required
 # - use WSL Ubuntu as a base layer
 
-
 readonly LLVM_VERSION=16 # CURRENT_LLVM_STABLE
 readonly GCC_VERSION=13  # CURRENT_GCC_STABLE
 

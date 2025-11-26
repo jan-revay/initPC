@@ -18,7 +18,6 @@
 
 # TODO pohrat sa s tymi nastaveniami, ci vlastne su vsetky potrebne a robia to co chcem
 
-
 # GNOME TWEAKS
 
 # TODO add keyboard settings

@@ -1,7 +1,6 @@
 #!/bin/bash
 . ../prelude.sh
 
-
 # TODO       - name: Make script executable
 #        run: chmod +x ./MacOS/packages_install.sh
 # Inspiration:
