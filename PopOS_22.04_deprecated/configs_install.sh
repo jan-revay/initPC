@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 # shellcheck disable=SC2317
 # WARNING: this script is not uptodate and also does not work - has a lot of bugs
 # it is more of an WIP record of TODOs and stubs than something usable

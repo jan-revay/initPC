@@ -1,4 +1,5 @@
-#!/bin/bash -x
+#!/bin/bash
+. ../../prelude.sh
 
 # HOW TO WATCH GSettings changes on Ubuntu? Run `dconf watch /`
 # NOTE: for_each blocks are sorted by path alphabetically (their content and blocks themselves)
@@ -13,7 +14,6 @@
 # https://docs.gtk.org/gio/class.Settings.html
 # https://wiki.gnome.org/HowDoI/GSettings
 
-. ../../prelude.sh
 
 # disable-lock-screen was set to true for some reason on my fresh Ubuntu 24.04 install
 gsettings set org.gnome.desktop.lockdown disable-lock-screen false

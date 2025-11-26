@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 # This script should be idempotent.
 # shellcheck disable=SC2317  # Don't warn about unreachable commands in this file
 

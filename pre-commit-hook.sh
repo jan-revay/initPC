@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 # TODO precommit hooks WIP
 
 . prelude.sh

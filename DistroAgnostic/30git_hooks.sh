@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 # WARNING: this scripts expects ./DistroAgnostic as a working directory
 
 # TODO rename to snake case shared_configs_install.sh

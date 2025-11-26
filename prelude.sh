@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 # TODO make this into the library so that the
 # testing of distro version can be used in if/else

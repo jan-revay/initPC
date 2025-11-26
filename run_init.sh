@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 # Automatically detect and init/configure the host platform.
 
 . prelude.sh

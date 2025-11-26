@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 # BASE IMAGE: Android 13
 
 . ../prelude.sh

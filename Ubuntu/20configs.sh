@@ -1,4 +1,6 @@
-#!/bin/bash -x
+#!/bin/bash
+. ../prelude.sh
+
 # The script should not require any user input and should be idempotent.
 
 # Workflow: use `dconf watch /`, make the change via GUI,
@@ -16,7 +18,6 @@
 
 # TODO pohrat sa s tymi nastaveniami, ci vlastne su vsetky potrebne a robia to co chcem
 
-. ../prelude.sh
 
 # GNOME TWEAKS
 

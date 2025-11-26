@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 # This script should be idempotent.
 # This script REQUIRES USER INTERACTION IN GNOME!!!
 #
