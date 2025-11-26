@@ -42,6 +42,8 @@ find . -type f -name '*.sh' \( \
         if ! sed -n '2p' "$f" \
             | grep -Eq '^\.[[:space:]]+(\.\./)*prelude\.sh$'; then
             err "File does not have . prelude.sh on the 2nd line: $f"
+            err "Running prelude_rearrange.sh"
+            ./StaticAnalysis/prelude_rearrange.sh
             exit 2
         fi
     done
