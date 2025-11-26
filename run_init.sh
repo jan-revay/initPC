@@ -1,7 +1,6 @@
 #!/bin/bash
-# Automatically detect and init/configure the host platform.
-
 . prelude.sh
+# Automatically detect and init/configure the host platform.
 
 if [[ $# == 0 ]]; then
     echo "No parameters set, the interactive part of the script will be executed..."

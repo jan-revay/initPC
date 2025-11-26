@@ -1,11 +1,10 @@
 #!/bin/bash
+. ../../prelude.sh
 # This script should be idempotent.
 # This script REQUIRES USER INTERACTION IN GNOME!!!
 #
 # TODO add extension settings
 # Consider this: https://github.com/PeterMosmans/ansible-role-customize-gnome
-
-. ../../prelude.sh
 
 # TODO compile schemas into a single file and provide that file
 # as schemadir voa exported variable in the extensions config script.

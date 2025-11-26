@@ -1,7 +1,6 @@
 #!/bin/bash
-# BASE IMAGE: Android 13
-
 . ../prelude.sh
+# BASE IMAGE: Android 13
 
 if [ ! -d ~/storage ]; then
     termux-setup-storage

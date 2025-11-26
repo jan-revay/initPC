@@ -1,7 +1,6 @@
 #!/bin/bash
-# This script should be idempotent.
-
 . ../prelude.sh
+# This script should be idempotent.
 
 if distro_is ubuntu && distro_version_ge 24 && gnome_present yes; then
     # TODO "Which services should be restarted?" prompt is still present in VM

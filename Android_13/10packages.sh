@@ -1,7 +1,6 @@
 #!/bin/bash
-# BASE IMAGE Android 13
-
 . ../prelude.sh
+# BASE IMAGE Android 13
 
 # TODO add toybox https://android.googlesource.com/platform/external/toybox/+/b20c80b/README
 

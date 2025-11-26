@@ -1,7 +1,6 @@
 #!/bin/bash
-# TODO precommit hooks WIP
-
 . prelude.sh
+# TODO precommit hooks WIP
 
 # TODO always run from repo root directory regardless of the pwd
 

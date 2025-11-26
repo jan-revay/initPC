@@ -1,5 +1,4 @@
 #!/bin/bash
-
 . ../../prelude.sh
 
 # TODO setup automatic flatpak and snap updates

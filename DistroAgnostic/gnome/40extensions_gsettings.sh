@@ -1,5 +1,4 @@
 #!/bin/bash
-
 . ../../prelude.sh
 
 readonly SCHDIR="${HOME}/.local/share/gnome-shell/extensions/compiled_schemas"

@@ -1,5 +1,4 @@
 #!/bin/bash
-
 . ../prelude.sh
 
 git config --global core.editor "nvim"

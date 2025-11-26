@@ -1,4 +1,5 @@
 #!/bin/bash
+. ../prelude.sh
 # The script should not require any user input and should be idempotent.
 # BASE IMAGE: ALL
 # Dotfiles are managed via bare git repository.
@@ -6,8 +7,6 @@
 
 # TODO simplify
 # TODO automatically set upstream branch (git push --set-upstream origin devel)
-
-. ../prelude.sh
 
 function dot
 {

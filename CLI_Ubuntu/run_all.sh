@@ -1,7 +1,6 @@
 #!/bin/bash
-# This script should be idempotent.
-
 . ../prelude.sh
+# This script should be idempotent.
 
 if distro_is ubuntu && distro_version_ge 24; then
     # stuff that requires user input can be turned off by `--noninteractive` CLI param

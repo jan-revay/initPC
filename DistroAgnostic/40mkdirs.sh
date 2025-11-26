@@ -1,7 +1,6 @@
 #!/bin/bash
-# The script should not require any user input and should be idempotent.
-
 . ../prelude.sh
+# The script should not require any user input and should be idempotent.
 
 mkdir -p ~/books
 mkdir -p ~/x     # all my development repos go here

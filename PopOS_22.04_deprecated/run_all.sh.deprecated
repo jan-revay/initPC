@@ -1,10 +1,9 @@
 #!/bin/bash
+. ../prelude.sh
 # This script should be idempotent.
 # shellcheck disable=SC2317  # Don't warn about unreachable commands in this file
 
 exit 1 # THIS script needs to be updated...
-
-. ../prelude.sh
 
 distro_is pop
 distro_version_ge 22

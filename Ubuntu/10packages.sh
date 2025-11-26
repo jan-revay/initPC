@@ -1,4 +1,5 @@
 #!/bin/bash
+. ../prelude.sh
 # The script should not require any user input and should be idempotent.
 
 # TODO use lists for packages (and use on install command)
@@ -7,8 +8,6 @@
 # TODO install packages via a list...
 # TODO consider adding pavucontrol
 # TODO add nix package manager + start managing more packages via nix
-
-. ../prelude.sh
 
 export DEBIAN_FRONTEND=noninteractive
 # TODO "Which services should be restarted?" prompt is still present in VM
