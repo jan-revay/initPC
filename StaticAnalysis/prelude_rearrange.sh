@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Find all .sh files and process each one
-find . -type f -name "*.sh" | while IFS= read -r file; do
+find . -type f -name "*.sh" -print0 | while IFS= read -r -d '' file; do
     # Check if file contains "prelude.sh"
     if grep -qE "^\.[[:space:]]+(\.\./)*prelude\.sh$" "$file"; then
         echo "Processing: $file"
