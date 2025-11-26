@@ -7,7 +7,16 @@
 echo
 echo -e "${GREEN} ######  RUNNING PRE-COMMIT HOOKS  ###### ${NC}"
 
-find . -type f -name "*.sh" -execdir shfmt -w {} \;
+files=$(find . -type f -name "*.sh" -exec shfmt -l {} \;)
+if [ -n "$files" ]; then
+    echo "Error: The following shell files need formatting:"
+    echo "$files"
+    echo ""
+    echo "Running: find . -type f -name \"*.sh\" -exec shfmt -w {} \\;"
+    find . -type f -name "*.sh" -execdir shfmt -w {} \;
+    echo "git add the formatted files and commit again"
+    exit 1
+fi
 
 # NOTE: `find -execdir` cannot be used because it does not propagate errors
 # NOTE: I am passing the filename as a parameter to the bash subshell, see
