@@ -2,9 +2,7 @@ name: pre-commit hook
 
 on:
   push:
-    branches: [ "devel", "testing", "stable", "LTS" ]
   pull_request:
-    branches: [ "devel", "testing", "stable", "LTS" ]
 
 jobs:
   build:
