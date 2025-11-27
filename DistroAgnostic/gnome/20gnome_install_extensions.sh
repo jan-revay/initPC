@@ -64,6 +64,7 @@ function install_gnome_extension
 }
 
 # TODO - use bash list and xargs
+# TODO sort alphabetically
 # TODO add https://extensions.gnome.org/extension/4356/top-bar-organizer/ ? or an alternative
 # TODO add https://extensions.gnome.org/extension/3843/just-perfection/
 # TODO consider https://extensions.gnome.org/extension/7777/workspace-buttons-with-app-icons/
