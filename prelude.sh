@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# TODO write a naming convention and set up shfmt accordingly
 # TODO make this into the library so that the
 # testing of distro version can be used in if/else
 #
@@ -174,7 +175,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         while read -r line; do # Read a line and strip leading and trailing spaces
             # Skip empty lines and comments
             [[ "$line" =~ ^[[:space:]]*(#|$) ]] && continue
-            bash -cx "$prefix $line"
+            bash -cx "$prefix$line"
         done
         set -x
     }

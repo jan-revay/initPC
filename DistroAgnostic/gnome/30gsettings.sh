@@ -22,13 +22,13 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 # Ptyxis and accent-color are not present on Ubuntu 24.04 - check and skip
 if gsettings get org.gnome.Ptyxis scrollbar-policy && gsettings get org.gnome.desktop.interface accent-color; then
 
-    for_each "gsettings set org.gnome.Ptyxis" << 'BASH'
+    for_each "gsettings set org.gnome.Ptyxis " << 'BASH'
         restore-session "false"
         restore-window-size "false"
         scrollbar-policy "always"
 BASH
 
-    for_each "gsettings set org.gnome.Ptyxis.Shortcuts" << 'BASH'
+    for_each "gsettings set org.gnome.Ptyxis.Shortcuts " << 'BASH'
         close-tab "<Control>w"
         move-next-tab "<Control>Tab"
         move-previous-tab "<Shift><Control>Tab"
@@ -44,13 +44,13 @@ BASH
         focus-tab-10 "<Control>0"
 BASH
 
-    for_each "gsettings set org.gnome.desktop.input-sources" << 'BASH'
+    for_each "gsettings set org.gnome.desktop.input-sources " << 'BASH'
         per-window true
         sources "[('xkb', 'us'), ('xkb', 'sk+qwerty')]"
         xkb-options "['terminate:ctrl_alt_bksp', 'shift:both_capslock_cancel', 'caps:none']"
 BASH
 
-    for_each "gsettings set org.gnome.desktop.interface" << 'BASH'
+    for_each "gsettings set org.gnome.desktop.interface " << 'BASH'
         # WARNING: text-scaling-factor can break Chromium (or other GTK apps) and cause
         # the app window to increase in size on refocus (due to floating point rounding
         # errors). Always set the value to decimal that can be represented as float without
@@ -76,7 +76,7 @@ BASH
 
 fi # Ubuntu 24.04
 
-for_each "gsettings set org.gnome.desktop.wm.keybindings" << 'BASH'
+for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     # TODO rethink workspace switching keybindings
     # TODO add home row keybindings for workspaces 9 and 10
     always-on-top "['<Control><Super>space']"
@@ -109,7 +109,7 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings" << 'BASH'
     toggle-fullscreen "['F11']"
 BASH
 
-for_each "gsettings set org.gnome.desktop.wm.preferences" << 'BASH'
+for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
     action-double-click-titlebar "toggle-maximize"
     action-middle-click-titlebar "lower" # 'minimize'
     auto-raise "true"
@@ -123,7 +123,7 @@ for_each "gsettings set org.gnome.desktop.wm.preferences" << 'BASH'
     workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11']"
 BASH
 
-for_each "gsettings set org.gnome.shell.keybindings" << 'BASH'
+for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
     screenshot "['Print']"
     show-screenshot-ui "['<Shift><Super>s']"
     toggle-overview "['<Control><Alt><Super>o']"

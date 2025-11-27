@@ -13,7 +13,7 @@ export GSETTINGS_SCHEMA_DIR="${SCHDIR}"
 # 2. All keys in a specific for_each block are sorted alphabetically
 
 # clipboard-history@alexsaveau.dev
-for_each "gsettings set org.gnome.shell.extensions.clipboard-history" << 'BASH'
+for_each "gsettings set org.gnome.shell.extensions.clipboard-history " << 'BASH'
     cache-size "1000"
     display-mode "1"
     history-size "10000"
@@ -26,7 +26,7 @@ for_each "gsettings set org.gnome.shell.extensions.clipboard-history" << 'BASH'
 BASH
 
 # ubuntu-dock@ubuntu.com
-for_each "gsettings set org.gnome.shell.extensions.dash-to-dock" << 'BASH'
+for_each "gsettings set org.gnome.shell.extensions.dash-to-dock " << 'BASH'
     always-center-icons "true"
     animation-time "0.01"
     click-action "previews"
@@ -49,7 +49,7 @@ for_each "gsettings set org.gnome.shell.extensions.dash-to-dock" << 'BASH'
 BASH
 
 # focus-changer@heartmire
-for_each "gsettings set org.gnome.shell.extensions.focus-changer" << 'BASH'
+for_each "gsettings set org.gnome.shell.extensions.focus-changer " << 'BASH'
     focus-down "['<Shift><Control><Alt><Super>Down']"
     focus-left "['<Shift><Control><Alt><Super>Left']"
     focus-right "['<Shift><Control><Alt><Super>Right']"
@@ -57,7 +57,7 @@ for_each "gsettings set org.gnome.shell.extensions.focus-changer" << 'BASH'
 BASH
 
 # panelScroll@sun.wxg@gmail.com
-for_each "gsettings set org.gnome.shell.extensions.panelScroll" << 'BASH'
+for_each "gsettings set org.gnome.shell.extensions.panelScroll " << 'BASH'
     debounce "0"
     left "workspace"
     right "workspace"
@@ -65,7 +65,7 @@ for_each "gsettings set org.gnome.shell.extensions.panelScroll" << 'BASH'
 BASH
 
 # quake-terminal@diegodario88.github.io
-for_each "gsettings set org.gnome.shell.extensions.quake-terminal" << 'BASH'
+for_each "gsettings set org.gnome.shell.extensions.quake-terminal " << 'BASH'
     always-on-top "true"
     animation-time "0"
     auto-hide-window "false"
@@ -75,7 +75,7 @@ for_each "gsettings set org.gnome.shell.extensions.quake-terminal" << 'BASH'
 BASH
 
 # system-monitor-next@paradoxxx.zero.gmail.com
-for_each "gsettings set org.gnome.shell.extensions.system-monitor-next-applet" << 'BASH'
+for_each "gsettings set org.gnome.shell.extensions.system-monitor-next-applet " << 'BASH'
     cpu-system-color "#c01c28ff"
     rotate-labels "true"
     show-tooltip "true"
@@ -85,7 +85,7 @@ BASH
 if gsettings get org.gnome.shell.extensions.tiling-assistant focus-hint; then
 
     # tiling-assistant@ubuntu.com
-    for_each "gsettings set org.gnome.shell.extensions.tiling-assistant" << 'BASH'
+    for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
         dynamic-keybinding-behavior "0"
         enable-advanced-experimental-features "true"
         enable-tiling-popup "false"
@@ -101,7 +101,7 @@ BASH
 fi # Ubuntu 24.04 CI
 
 # tilingshell@ferrarodomenico.com
-for_each "gsettings set org.gnome.shell.extensions.tilingshell" << 'BASH'
+for_each "gsettings set org.gnome.shell.extensions.tilingshell " << 'BASH'
     enable-move-keybindings "false"
 
     # TODO - this setting probably also sets and unsets stuff in org.gnome.mutter -
@@ -112,17 +112,17 @@ for_each "gsettings set org.gnome.shell.extensions.tilingshell" << 'BASH'
 BASH
 
 # Vitals@CoreCoding.com
-for_each "gsettings set org.gnome.shell.extensions.vitals" << 'BASH'
+for_each "gsettings set org.gnome.shell.extensions.vitals " << 'BASH'
     fixed-widths "false"
 BASH
 
 # window-title-is-back@fthx
-for_each "gsettings set org.gnome.shell.extensions.window-title-is-back" << 'BASH'
+for_each "gsettings set org.gnome.shell.extensions.window-title-is-back " << 'BASH'
     fixed-width "false"
 BASH
 
 # workspaces-by-open-apps@favo02.github.com
-for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-apps" << 'BASH'
+for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-apps " << 'BASH'
     indicator-show-background "true"
     scroll-enable "false"
 BASH
