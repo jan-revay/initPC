@@ -142,4 +142,13 @@ for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
     switch-to-application-7 "[]"
     switch-to-application-8 "[]"
     switch-to-application-9 "[]"
+    open-new-window-application-1 "[]"
+    open-new-window-application-2 "[]"
+    open-new-window-application-3 "[]"
+    open-new-window-application-4 "[]"
+    open-new-window-application-5 "[]"
+    open-new-window-application-6 "[]"
+    open-new-window-application-7 "[]"
+    open-new-window-application-8 "[]"
+    open-new-window-application-9 "[]"
 BASH
