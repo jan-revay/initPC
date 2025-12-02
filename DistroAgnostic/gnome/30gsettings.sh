@@ -132,7 +132,7 @@ for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
     screenshot "['Print']"
     show-screenshot-ui "['<Shift><Super>s']"
     toggle-overview "['<Control><Alt><Super>o']"
-    toggle-message-tray "[]"
+    toggle-message-tray "['<Super>m']"
     switch-to-application-1 "[]"
     switch-to-application-2 "[]"
     switch-to-application-3 "[]"
