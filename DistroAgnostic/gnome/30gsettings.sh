@@ -45,6 +45,10 @@ BASH
         focus-tab-10 "<Control>0"
 BASH
 
+    for_each "gsettings set org.gnome.desktop.calendar " << 'BASH'
+        show-weekdate "true"
+BASH
+
     for_each "gsettings set org.gnome.desktop.input-sources " << 'BASH'
         per-window true
         sources "[('xkb', 'us'), ('xkb', 'sk+qwerty')]"
