@@ -79,7 +79,7 @@ fi # Ubuntu 24.04
 
 for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     # TODO rethink workspace switching keybindings
-    # TODO add home row keybindings for workspaces 9 and 10
+    # TODO add home row keybindings for workspaces 9 to 12
     always-on-top "['<Control><Super>space']"
     move-to-workspace-1 "['<Control><Alt><Super>h', '<Alt><Shift>1', '<Control><Alt><Super>Home']"
     move-to-workspace-2 "['<Control><Alt><Super>j', '<Alt><Shift>2']"
@@ -91,6 +91,8 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     move-to-workspace-8 "['<Control><Alt><Super>backslash', '<Control><Alt><Super>ncaron', '<Alt><Shift>8']"
     move-to-workspace-9 "['<Alt><Shift>9']"
     move-to-workspace-10 "['<Alt><Shift>0']"
+    move-to-workspace-11 "['<Alt><Shift>minus']"
+    move-to-workspace-12 "['<Alt><Shift>equal']"
     move-to-workspace-last "['<Control><Alt><Super>End']"
     move-to-workspace-left "['<Control><Alt><Super>Left']"
     move-to-workspace-right "['<Control><Alt><Super>Right']"
@@ -104,6 +106,8 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     switch-to-workspace-8 "['<Control><Super>backslash', '<Control><Super>ncaron', '<Alt>8']"
     switch-to-workspace-9 "['<Alt>9']"
     switch-to-workspace-10 "['<Alt>0']"
+    switch-to-workspace-11 "['<Alt>minus']"
+    switch-to-workspace-12 "['<Alt>equal']"
     switch-to-workspace-last "['<Control><Super>End']"
     switch-to-workspace-left "['<Control><Super>Left']"
     switch-to-workspace-right "['<Control><Super>Right']"
@@ -117,11 +121,11 @@ for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
     button-layout "appmenu:minimize,close"
     focus-mode "sloppy"
     mouse-button-modifier "<Super>"
-    num-workspaces "11"
+    num-workspaces "12"
     # NOTE: right click resizing is dependent on the sector of the window being
     # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
     resize-with-right-button "true"
-    workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11']"
+    workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']"
 BASH
 
 for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
