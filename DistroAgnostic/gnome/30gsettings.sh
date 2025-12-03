@@ -156,3 +156,13 @@ for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
     open-new-window-application-8 "[]"
     open-new-window-application-9 "[]"
 BASH
+
+# TODO - add custom keybinding
+# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings
+#   ['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/binding
+#   '<Super>1'
+# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/command
+#   'kitty'
+# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/name
+#   'kitty'
