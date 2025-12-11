@@ -88,6 +88,7 @@ if gsettings get org.gnome.shell.extensions.tiling-assistant focus-hint; then
     for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
         dynamic-keybinding-behavior "0"
         enable-advanced-experimental-features "true"
+        enable-raise-tile-group "false"
         enable-tile-animations "false"
         enable-tiling-popup "false"
         enable-untile-animations "false"
