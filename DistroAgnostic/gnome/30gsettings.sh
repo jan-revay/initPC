@@ -17,7 +17,6 @@
 # disable-lock-screen was set to true for some reason on my fresh Ubuntu 24.04 install
 gsettings set org.gnome.desktop.lockdown disable-lock-screen false
 gsettings set org.gnome.mutter dynamic-workspaces false
-gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
 # Ptyxis and accent-color are not present on Ubuntu 24.04 - check and skip
 # TODO remove the ifdef after Ubuntu 26.04 is avaliable is GitHub Actions runner
@@ -130,6 +129,11 @@ for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
     # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
     resize-with-right-button "true"
     workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']"
+BASH
+
+for_each "gsettings set org.gnome.settings-daemon.plugins.media-keys " << 'BASH'
+    home "['<Super>e']"
+    mic-mute "['<Shift><Super>a']"
 BASH
 
 for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
