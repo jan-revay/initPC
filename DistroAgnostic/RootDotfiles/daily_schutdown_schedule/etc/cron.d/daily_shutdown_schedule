@@ -1,15 +1,16 @@
 # I use PC shutdown to notify me that it is a time to take a break/finish the
-# work for the day.
+# work for the day and to make it difficult to break the habit of keeping a
+# consistent daily schedule.
 #
 # Advantages:
 #      1. I have to stop what I was doing.
 #
 #	   I could use alarm, but my issue with alarms was, that alarms can go
-#	   unnoticed (e.g. if sound is muted) and are easy to postpone.
-#	   Postponing is however not a good practice for building strong habits.
-#	   If I need to finish some work, I can turn the PC back on for a minute
-#	   (shutdown uses "+1m" as the default time parameter), which is enough
-#	   time to finish my work and save files.
+#	   unnoticed (e.g. if sound is muted) and are easy to postpone. Postponing
+#	   is however not a good practice for building strong habits. If I need to
+#	   finish some work, I can turn the PC back on for a minute (shutdown uses
+#	   "+1m" as the default time parameter), which is enough time to finish my
+#	   work and save files.
 #
 #      2. I don't have to think about turning off the PC and can just always
 #      leave it on.
