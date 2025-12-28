@@ -2,19 +2,27 @@
 # work for the day.
 #
 # Advantages:
-#      1. I actually have to stop what I was doing.
+#      1. I have to stop what I was doing.
 #
-#	  I could use alarm, but my issue with alarms was, that alarms can go
-#	  unnoticed (e.g. if sound is muted) and are easy to postpone.
-#	  Postponing is however not a good practice for building strong habits.
-#	  If I need to finish some work, I can turn the PC back on for a minute
-#	  (shutdown uses "+1m" as the default time parameter), which is enough
-#	  time to finish my work and save files.
+#	   I could use alarm, but my issue with alarms was, that alarms can go
+#	   unnoticed (e.g. if sound is muted) and are easy to postpone.
+#	   Postponing is however not a good practice for building strong habits.
+#	   If I need to finish some work, I can turn the PC back on for a minute
+#	   (shutdown uses "+1m" as the default time parameter), which is enough
+#	   time to finish my work and save files.
 #
 #      2. I don't have to think about turning off the PC and can just always
 #      leave it on.
 #
-#      3. Optionally I can also add alarm on my phone for 10 minutes before the
+#      3. It forces me to context switch, by closing all my open apps (my
+#      desktop is then less cluttered during the day) and helps me to
+#      reevaluate my priorities for the day during breaks (it takes me at least
+#      15min to "unfocus" from the thing I was doing until I am able to do some
+#      planning). I.e. it helps me to distinguish between important and "nice to
+#      have" tasks by giving me some perspective and time to do/reevaluate my
+#      daily/weekly planning.
+#
+#      4. Optionally I can also add alarm on my phone for 10 minutes before the
 #      shutdown timer, so that I am not surprised by the shutdown.
 #
 #      TODO - what if I will be having an online call or teaching? TOSOLVE
