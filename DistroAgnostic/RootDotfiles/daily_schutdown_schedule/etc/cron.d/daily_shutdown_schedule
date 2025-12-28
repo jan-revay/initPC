@@ -28,10 +28,29 @@
 #
 #      TODO - what if I will be having an online call or teaching? TOSOLVE
 
-*      0-7    * * *  root /sbin/shutdown
+# 6:45 wake up & hydrate & low intensity exercise (stretching and a few
+# push-ups), morning routine
+# 7:00 high intensity exercise & sunlight (run, push ups, strength training)
+# ~7:45 - breakfast
+# ~8:00 - planning of the next 3 days (including this one)
+# 8:00 - 9:00 - communication i.e. WA & shallow focus work for the day
+# 9:00 - 9:15 "terce" small pause to pray & think about priorities for the day
 0-15   9      * * *  root /sbin/shutdown
+
+# 9:15 - 11:45 First deep work session (phone off)
+
+# preparation for lunch & lunch
 45-59  11     * * *  root /sbin/shutdown
 *      12     * * *  root /sbin/shutdown
-30-59  15     * * *  root /sbin/shutdown
+
+# 13:00 - 15:30 second deep focus session
+
+# 15:30 - 15:50 a pause to slow down revisit my day & context switch if needed
+30-50  15     * * *  root /sbin/shutdown
+
+# 16:00 - 19:15 third deep work session
+
+# 19:15 - 8:00 - "great silence" i.e. preparations for sleep, relax & sleep
 15-59  19     * * *  root /sbin/shutdown
 *      20-23  * * *  root /sbin/shutdown
+*      0-7    * * *  root /sbin/shutdown
