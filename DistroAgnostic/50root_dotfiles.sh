@@ -3,6 +3,9 @@
 
 pushd RootDotfiles/
 
+sudo chown root:root ./daily_schutdown_schedule/etc/cron.d/daily_shutdown_schedule
+sudo chmod 644 ./daily_schutdown_schedule/etc/cron.d/daily_shutdown_schedule
+
 if ! stow -vvv --no --target=/ MX3_MASTER_LOGID_CONFIG/; then
     sudo mv /etc/logid.cfg /etc/logid.cfg-initPCBackup"$(date '+%Y%m%d_%H%M%S')"
 fi
