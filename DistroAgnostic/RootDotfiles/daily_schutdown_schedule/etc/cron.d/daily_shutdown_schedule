@@ -1,4 +1,26 @@
+# I use PC shutdown to notify me that it is a time to take a break/finish the
+# work for the day.
+#
+# Advantages:
+#      1. I actually have to stop what I was doing.
+#
+#	  I could use alarm, but my issue with alarms was, that alarms can go
+#	  unnoticed (e.g. if sound is muted) and are easy to postpone.
+#	  Postponing is however not a good practice for building strong habits.
+#	  If I need to finish some work, I can turn the PC back on for a minute
+#	  (shutdown uses "+1m" as the default time parameter), which is enough
+#	  time to finish my work and save files.
+#
+#      2. I don't have to think about turning off the PC and can just always
+#      leave it on.
+#
+#      3. Optionally I can also add alarm on my phone for 10 minutes before the
+#      shutdown timer, so that I am not surprised by the shutdown.
+#
+#      TODO - what if I will be having an online call or teaching? TOSOLVE
+
 *      0-7    * * *  root /sbin/shutdown
+0-15   9      * * *  root /sbin/shutdown
 45-59  11     * * *  root /sbin/shutdown
 *      12     * * *  root /sbin/shutdown
 15-59  19     * * *  root /sbin/shutdown
