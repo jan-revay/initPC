@@ -23,5 +23,6 @@
 0-15   9      * * *  root /sbin/shutdown
 45-59  11     * * *  root /sbin/shutdown
 *      12     * * *  root /sbin/shutdown
+30-59  15     * * *  root /sbin/shutdown
 15-59  19     * * *  root /sbin/shutdown
 *      20-23  * * *  root /sbin/shutdown
