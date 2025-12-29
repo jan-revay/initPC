@@ -1,1 +1,7 @@
+# Only works on my 9950x PC.
+# TODO make it generic and more robust by using a list of IDs
+# https://chatgpt.com/share/69525352-dea8-8008-b9db-ee8873e13ed1
+# also modify hddoff and hddon aliases in .bash_aliases
+
 @reboot root /bin/bash -c 'echo 1 | sudo tee /sys/block/sda/device/delete'
+
