@@ -54,3 +54,12 @@
 15-59  19     * * *  root /sbin/shutdown
 *      20-23  * * *  root /sbin/shutdown
 *      0-7    * * *  root /sbin/shutdown
+
+
+# Weekly shutdown schedule - TODO put it to a separate file?
+
+# House cleaning
+*      16-20  * * Sat  root /sbin/shutdown
+# Rest/sport
+*      12-20  * * Sun  root /sbin/shutdown
+
