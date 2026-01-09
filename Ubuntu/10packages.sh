@@ -100,7 +100,7 @@ readonly APT_GUI_PACKAGES=(
     sqlitebrowser
 
     # ===== MULTIMEDIA =====
-    obs-studio handbrake handbrake-cli ffmpeg x264
+    handbrake handbrake-cli ffmpeg x264
     libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-good
     gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
 

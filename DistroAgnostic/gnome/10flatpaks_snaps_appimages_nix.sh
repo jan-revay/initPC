@@ -36,6 +36,7 @@ else
         com.sindresorhus.Caprine
         com.spotify.Client
         com.axosoft.GitKraken
+        com.obsproject.Studio
         net.werwolv.ImHex
 
         # benchmarks and stress tests
