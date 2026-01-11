@@ -187,6 +187,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     }
     my_run_parts() 
     {
+    echo "Not implemented"
     # filter by 00_name.sh regex
     # print executable files that were not run
     # and warn about them.
