@@ -1,6 +1,8 @@
 #!/bin/bash
 . prelude.sh
 # Automatically detect and init/configure the host platform.
+# TODO consider cd ing to script repo here so that the script can be run from
+# anywhere
 
 if [[ $# == 0 ]]; then
     echo "No parameters set, the interactive part of the script will be executed..."
@@ -31,6 +33,7 @@ mkdir -p "$(dirname "${LOGFILE}")"
 # TODO consider differentiating errors from logs (e.g. adding an error keyword
 # to err function or writing stderr to a different file
 # Redirect all output (stdout + stderr) to both the log file and the terminal
+# TODO consider also logging stderr separately (stdout + std err and std err)
 exec > >(tee -i "$LOGFILE") 2>&1
 
 function run_all
