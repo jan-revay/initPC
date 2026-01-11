@@ -60,6 +60,9 @@ jobs:
     - name: Install GNOME Desktop (if needed)
       if: matrix.gui == 'GNOME'
       run: sudo apt-get install -y ubuntu-desktop-minimal
+    - name: Install flatpak (if needed)
+      if: matrix.gui == 'GNOME'
+      run: sudo apt-get install -y flatpak
 
     - uses: actions/checkout@v4
     - name: Checked out to `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
