@@ -62,7 +62,6 @@ function run_all
 
 run_all "CLI_Ubuntu"
 run_all "Ubuntu"
-# try_platform "PopOS_22.04"
 run_all "Android"
 run_all "DistroAgnostic"
 
