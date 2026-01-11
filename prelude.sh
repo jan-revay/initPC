@@ -10,7 +10,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     __INITPC_PRELUDE_SOURCED__='true'
 
     # Enable strict mode
-    set -euox pipefail
+    set -euo pipefail
 
     # TODO toread:
     # https://linuxopsys.com/topics/customizing-bash-prompt-in-linux-changing-colors
@@ -49,6 +49,8 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     readonly EXIT_INVALID_ARGUMENT=10
     # TODO - finish
     #
+
+    set -x # turn logging on here to avoid polluting logs with obvious
 
     # @param $1 - distro ID
     function distro_is
