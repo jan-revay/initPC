@@ -1,5 +1,5 @@
 name: Ubuntu GH
-
+# TODO don't run on changes to snaps and flatpaks (moved to a separate workflow)
 on:
   schedule:
     # weekly, randomly chosen time
