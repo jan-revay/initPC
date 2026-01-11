@@ -41,7 +41,7 @@ function run_all
 {
     pushd "$1" || exit "${EXIT_FILE_IO_ERROR}"
     # shellcheck source=/dev/null
-    . ./run_all.sh
+    ./run_all.sh
     popd || exit "${EXIT_FILE_IO_ERROR}"
 }
 
