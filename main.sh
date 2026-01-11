@@ -40,6 +40,8 @@ mkdir -p "$(dirname "${LOGFILE}")"
 # TODO consider also logging stderr separately (stdout + std err and std err)
 exec > >(tee -i "$LOGFILE") 2>&1
 
+# TODO pushd in run_all.sh using the script location and
+# remove this function?
 function run_all
 {
     pushd "$1" || exit "${EXIT_FILE_IO_ERROR}"
