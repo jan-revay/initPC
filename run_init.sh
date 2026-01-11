@@ -3,6 +3,7 @@
 # Automatically detect and init/configure the host platform.
 # TODO consider cd ing to script repo here so that the script can be run from
 # anywhere
+# TODO consider renaming run_init.sh to main.sh
 
 if [[ $# == 0 ]]; then
     echo "No parameters set, the interactive part of the script will be executed..."
