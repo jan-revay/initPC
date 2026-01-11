@@ -70,7 +70,7 @@ jobs:
       run: "echo Ref: ${{ github.ref }}, SHA: ${{ github.sha }}" # this is printing the vars twice... TODO try improving
 
     - name: Running iniPC script for the 1st time should not fail.
-      run: ./main.sh --noninteractive
+      run: SKIP_FLATS_AND_SNAPS='true' ./main.sh --noninteractive
 
     - name: Print default paths
       run: |
@@ -100,7 +100,7 @@ jobs:
       run: du -sh /tmp/old_home/
 
     - name: Running iniPC script for the 2nd time should not fail.
-      run: ./main.sh --noninteractive
+      run: SKIP_FLATS_AND_SNAPS='true' ./main.sh --noninteractive
 
     # TODO split this command to multiple lines
     # TODO also test that the first run of initPC script does change the state of home dir

@@ -7,6 +7,8 @@
 # TODO consider renaming run_init.sh to main.sh
 # TODO move MacOS dir to a separate repository
 # TODO remove PopOS dir
+# TODO handle --noninteractive with environment vars only? i.e. pass it as
+# environment variable? TOCONSIDER
 
 if [[ $# == 0 ]]; then
     echo "No parameters set, the interactive part of the script will be executed..."
