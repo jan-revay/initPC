@@ -1,22 +1,24 @@
 #!/bin/bash
 . ../prelude.sh
 
-clean(){
-    local readonly TO_CLEAN=(
+clean()
+{
+    local -r TO_CLEAN=(
         /etc/cron.d/daily_shutdown_schedule
         /etc/cron.d/spin_hdd_off
         /etc/libinput/local-overrides.quirks
     )
     # Delete links to files created by this script
-    sudo rm -f "${TO_CLEAN}"
+    sudo rm -f "${TO_CLEAN[@]}"
     # Backup old logid.cfg
     if ! stow -vvv --no --target=/ MX3_MASTER_LOGID_CONFIG/; then
         sudo mv /etc/logid.cfg /etc/logid.cfg-initPCBackup"$(date '+%Y%m%d_%H%M%S')"
     fi
 }
 
-permissions() {
-    local readonly CROND_FILES=(
+permissions()
+{
+    local -r CROND_FILES=(
         ./daily_schutdown_schedule/etc/cron.d/daily_shutdown_schedule
         ./spin_hdd_off/etc/cron.d/spin_hdd_off
     )
@@ -27,16 +29,17 @@ permissions() {
     sudo chmod 644 "${CROND_FILES[@]}"
 }
 
-stow_all() {
+stow_all()
+{
     # TODO - modify dirs_to_stow based on platform (e.g. VM)
-    local readonly DIRS_TO_STOW=(
+    local -r DIRS_TO_STOW=(
         MX3_MASTER_LOGID_CONFIG
         daily_schutdown_schedule
         disable_highres_scroll
         spin_hdd_off
     )
 
-    sudo stow -vvv --target=/ ${DIRS_TO_STOW[@]}
+    sudo stow -vvv --target=/ "${DIRS_TO_STOW[@]}"
 }
 
 # We create libinput dir explicitly instead of just linking to it with stow,
