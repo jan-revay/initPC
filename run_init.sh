@@ -1,8 +1,9 @@
 #!/bin/bash
 . prelude.sh
 # Automatically detect and init/configure the host platform.
+
 # TODO consider cd ing to script repo here so that the script can be run from
-# anywhere
+# anywhere, see .my_scripts/WB.sh
 # TODO consider renaming run_init.sh to main.sh
 
 if [[ $# == 0 ]]; then
