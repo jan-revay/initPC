@@ -1,0 +1,127 @@
+name: DistroAgnostic
+
+on:
+  schedule:
+    # weekly, randomly chosen time
+    # Runs at 03:17, only on Wednesday
+    - cron: "17 3 * * 3"
+  push:
+    branches: [ "devel_ubuntu_25.10" ]
+    paths:
+    - 'DistroAgnostic/**.sh*'
+    - '.github/workflows/DistroAgnostic.yml'
+  pull_request:
+    branches: [ "devel_ubuntu_25.10" ]
+
+jobs:
+  build:
+    env:
+      SNAP_PROGRESS: off
+    if: |
+      !endsWith(github.event.head_commit.message, 'Add a TODO') &&
+      !endsWith(github.event.head_commit.message, 'Add TODOs') &&
+      !endsWith(github.event.head_commit.message, 'Remove a completed TODO')
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04]
+        gui: [GNOME, CLI] # TODO Add GNOME test to containers.yml
+    name: ${{ matrix.os }}_${{ matrix.gui }}
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: Check disk space on the GitHub runner (before)
+      run: df -ha
+    - name: List tools in $AGENT_TOOLSDIRECTORY (Free Disk Space removes it)
+      run: echo $AGENT_TOOLSDIRECTORY && ls $AGENT_TOOLSDIRECTORY
+    # Note: Free Disk Space was added because the idempotency test
+    # i.e. copying home to /tmp was running out of disk space on
+    # Ubuntu 22.04 with GNOME. This only needs to be run for branches
+    # of the matrix that fail because of low disk space (otherwise
+    # this step should be skipped).
+    # Note2: Also running Free Disk Space on Ubuntu 24.04 with GNOME
+    # as it only has 5GB of disk space left.
+    - name: Free Disk Space (Ubuntu)
+      if: matrix.gui == 'GNOME'
+      uses: jlumbroso/free-disk-space@main
+      with:
+        # this might remove tools that are actually needed,
+        # if set to "true" but frees about 6 GB
+        tool-cache: true
+        android: true
+        dotnet: true
+        haskell: true
+        large-packages: true
+        docker-images: true
+        swap-storage: false # swap is on a separate partition anyway
+
+    - name: Update APT & upgrade (needed to install GNOME)
+      if: matrix.gui == 'GNOME'
+      run: sudo apt-get update -y && sudo apt-get upgrade -y
+    - name: Install GNOME Desktop (if needed)
+      if: matrix.gui == 'GNOME'
+      run: sudo apt-get install -y ubuntu-desktop-minimal
+
+    - uses: actions/checkout@v4
+    - name: Checked out to `github.ref=${{ github.ref }}` and `github.sha=${{ github.sha }}`
+      run: "echo Ref: ${{ github.ref }}, SHA: ${{ github.sha }}" # this is printing the vars twice... TODO try improving
+
+    - name: Running iniPC script for the 1st time should not fail.
+      run: pushd ./DistroAgnostic/ && NONINTERACTIVE=true ./run_all.sh && popd
+
+    - name: Print default paths
+      run: |
+        echo GITHUB_WORKSPACE = $GITHUB_WORKSPACE
+        echo RUNNER_TOOL_CACHE = $RUNNER_TOOL_CACHE
+        echo RUNNER_TEMP = $RUNNER_TEMP
+    # TODO research on what is the /mnt partition on GitHub runners for
+    # and whether it is a better place to store the old_home directory
+    # (it probably does not count to the root file system limit)
+    # See the Check disk space step for more info
+    # TODO confirm that /mnt can be used this way
+    # MNT is so-called "temporary disk"
+    # https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview#disk-roles
+    # but it is not documented well...
+    # EXPERIMENT RESULT: I get `cp: cannot create directory '/mnt/old_home/': Permission denied`
+    # when I try to use /mnt instead of /tmp
+    # Copying to /mnt with sudo works ok, however - it, therefore, could be used...
+    # but it is not needed for now...
+    # Also old_home is just around 1.5GB, hence if I am out of space
+    # using /mnt not save me. What could save me is this GitHub action:
+    # https://github.com/marketplace/actions/maximize-build-disk-space
+    # - name: List /mnt
+    #   run: ls /mnt && echo . && cat /mnt/DATALOSS_WARNING_README.txt
+    - name: save ~/ for idempotency test
+      run: cp -r ~/ /tmp/old_home/
+    - name: Print /tmp/old_home/ size
+      run: du -sh /tmp/old_home/
+
+    - name: Running iniPC script for the 2nd time should not fail.
+      run: pushd ./DistroAgnostic/ && NONINTERACTIVE=true ./run_all.sh && popd
+
+    # TODO split this command to multiple lines
+    # TODO also test that the first run of initPC script does change the state of home dir
+    # TODO - test whether the test works as expected
+    # TODO - add more paths e.g. /etc/ a.s.o.
+    # TODO - be more specific in work/_temp/ path
+    # TODO also add other config style directories such as /etc
+    - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing & tuning)
+      run: |
+        cd ~
+        pwd
+        find . -type f \(  \
+          ! -path "./.cargo/.global-cache" \
+          ! -path "./.cache/*" \
+          ! -path "./.dotfiles/logs/HEAD" \
+          ! -path "*work/_temp/*" \
+          ! -path "*/.git/*" \
+          ! -path "./localSW/ydotool/build/CMakeFiles/*" \
+          ! -path "./runners/*" \
+          ! -path "./x/helix/.git/*" \
+          ! -path "./actions-runner/*" \
+          ! -iname "*.log" \
+          ! -name ".wget-hsts" \
+        \) -print0 |
+        xargs -0 -I{} bash -c 'if ! diff "$1" "/tmp/old_home/$1"; then echo "diff failed for: $1"; exit 1; fi' bash {}
+        
+    - name: Check disk space on the GitHub runner (after)
+      run: df -ha
