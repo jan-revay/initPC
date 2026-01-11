@@ -1,6 +1,6 @@
 #!/bin/bash
 . ../prelude.sh
-# BASE IMAGE: Android 13
+# Init for Termux on Android
 
 if uname -a | grep Android; then
     # TODO Move the if to a separate script file
