@@ -9,6 +9,8 @@
 # TODO remove PopOS dir
 # TODO handle --noninteractive with environment vars only? i.e. pass it as
 # environment variable? TOCONSIDER
+# see: SKIP_FLATS_AND_SNAPS variable in workflows and in gnome folder
+# I am already passing the NONINTERACTIVE var as environmental variable elsewhere...
 
 if [[ $# == 0 ]]; then
     echo "No parameters set, the interactive part of the script will be executed..."
