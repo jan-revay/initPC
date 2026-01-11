@@ -7,6 +7,9 @@ CROND_FILES=(./daily_schutdown_schedule/etc/cron.d/daily_shutdown_schedule
     ./spin_hdd_off/etc/cron.d/spin_hdd_off
 )
 
+# TODO anytime git touches these files, permissions will be messed up.
+# Is it ok? Consider copying directly.
+#
 sudo chown root:root "${CROND_FILES[@]}"
 sudo chmod 644 "${CROND_FILES[@]}"
 
