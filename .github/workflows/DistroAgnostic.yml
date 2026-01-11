@@ -8,6 +8,7 @@ on:
   push:
     branches: [ "devel_ubuntu_25.10" ]
     paths:
+    - '*.sh'
     - 'DistroAgnostic/**.sh*'
     - '.github/workflows/DistroAgnostic.yml'
   pull_request:
