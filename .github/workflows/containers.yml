@@ -81,11 +81,11 @@ jobs:
           echo "tzdata tzdata/Areas select Europe" | debconf-set-selections && \
           echo "tzdata tzdata/Zones/Europe select Vienna" | debconf-set-selections
       - name: Running iniPC script for the 1st time should not fail.
-        run: ./run_init.sh --noninteractive
+        run: ./main.sh --noninteractive
       - name: save ~/ for idempotency test
         run: cp -r ~/ /tmp/old_home/
       - name: Running iniPC script for the 2nd time should not fail.
-        run: ./run_init.sh --noninteractive
+        run: ./main.sh --noninteractive
       # TODO split this command to multiple lines
       # TODO also test that the first run of initPC script does change the state of home dir
       # TODO - test whether the test works as expected
