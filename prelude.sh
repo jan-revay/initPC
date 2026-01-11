@@ -50,7 +50,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     # TODO - finish
     #
 
-    set -x # turn logging on here to avoid polluting logs with obvious
+    set -x # turn logging on here to avoid polluting logs with the obvious
 
     # @param $1 - distro ID
     function distro_is
