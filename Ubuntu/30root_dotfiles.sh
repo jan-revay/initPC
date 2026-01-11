@@ -1,5 +1,7 @@
 #!/bin/bash
 . ../prelude.sh
+# NOTE: "${name[@]}" expands each element of name to a separate word. See:
+# https://www.gnu.org/software/bash/manual/bash.html?utm_source=chatgpt.com#Arrays
 
 clean()
 {
