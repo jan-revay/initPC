@@ -1,6 +1,9 @@
 #!/bin/bash
 . ../../prelude.sh
 
+# TODO consider running this in a separate github runner so that I will not risk
+# resource exhaustion.
+
 # TODO setup automatic flatpak and snap updates
 # TODO skip install if running inside a docker container and print warning
 # TODO print the text in color and review the code for Docker skipping.
