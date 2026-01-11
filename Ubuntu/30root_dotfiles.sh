@@ -1,6 +1,6 @@
 #!/bin/bash
 . ../prelude.sh
-
+# TODO add an option to clean the stowed files
 pushd RootDotfiles/
 
 CROND_FILES=(./daily_schutdown_schedule/etc/cron.d/daily_shutdown_schedule
