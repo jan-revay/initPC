@@ -7,7 +7,7 @@ if [[ $# == 0 ]]; then
     export NONINTERACTIVE='false'
 elif [[ $# -gt 1 ]]; then
     echo "ERROR: Too many parameters. See --help."
-    exit 70
+    exit "${EXIT_INVALID_ARGUMENT}"
 else
     if [[ "$1" == "--help" ]]; then
         echo "usage: ./run_all.sh [--noninteractive]"
