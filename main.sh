@@ -5,6 +5,8 @@
 # TODO consider cd ing to script repo here so that the script can be run from
 # anywhere, see .my_scripts/WB.sh
 # TODO consider renaming run_init.sh to main.sh
+# TODO move MacOS dir to a separate repository
+# TODO remove PopOS dir
 
 if [[ $# == 0 ]]; then
     echo "No parameters set, the interactive part of the script will be executed..."
