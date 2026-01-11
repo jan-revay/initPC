@@ -185,4 +185,10 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     {
         echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $*" >&2
     }
+    my_run_parts() 
+    {
+    # filter by 00_name.sh regex
+    # print executable files that were not run
+    # and warn about them.
+    }
 fi
