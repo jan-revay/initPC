@@ -5,6 +5,7 @@
 # testing of distro version can be used in if/else
 #
 # TODO refactor and rewrite this whole file, it is a bit ugly and buggy
+# TODO use just one bash function notation not two
 
 if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     __INITPC_PRELUDE_SOURCED__='true'
