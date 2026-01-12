@@ -63,6 +63,9 @@ function run_all
 # TODO delete run_all.sh scripts and run everything just from here
 # with my_run_parts, also move my_run_parts directly here (move platform
 # detection here as well).
+#
+# TODO move functions for detection of linux distro/version here also
+# so that prelude.sh is really small
 
 run_all "CLI_Ubuntu"
 run_all "Ubuntu"
