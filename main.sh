@@ -12,6 +12,14 @@
 # see: SKIP_FLATS_AND_SNAPS variable in workflows and in gnome folder
 # I am already passing the NONINTERACTIVE var as environmental variable elsewhere...
 
+# TODO split package installations to separate files by
+# package manager
+# TODO move packages installed via multiplatform pkg managees
+# to distro-agnostic folder (test it wrt. Android and other distros
+# TODO add test on Ubuntu 26.04 docker imag
+# TODO add test on some other linux distro for distro-agnostic folder
+# TODO finish idempote cy test so that it is reliable
+
 if [[ $# == 0 ]]; then
     echo "No parameters set, the interactive part of the script will be executed..."
     export NONINTERACTIVE='false'
