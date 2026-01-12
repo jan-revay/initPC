@@ -143,7 +143,7 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
             return "${EXIT_INCORRECT_PLATFORM}"
         fi
     }
-
+    # TODO is this robust enough? What about sth. more robust?
     function gnome_present
     {
         local GNOME_PRESENT="no"
@@ -187,9 +187,19 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
     }
     my_run_parts()
     {
+        # TODO add pushd and popd here?
+        # maybe run-parts can also execute everything from main
+        # and the platform check would be a firtst file in the folder
+        # i.e. 00 and I would call it platform_check or sth like that
+        # what about that?
         echo "Not implemented"
-        # filter by 00_name.sh regex
-        # print executable files that were not run
-        # and warn about them.
+        # run-parts for generic filenames (including dot)
+        # as a test run first
+        run-parts --regex='^[\.A-Za-z0-9_-]+$' --test .
+        # but filter the filenames and exit if there is a filename
+        # that does not match [0-9][0-9]*.sh
+        # Then run the real run and only filter by the strict regex
+        exit 1
+        # run-parts --regex='' --exit-on-error --verbose
     }
 fi
