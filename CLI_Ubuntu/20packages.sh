@@ -4,6 +4,29 @@
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
 # TODO move the package lists to external files
 # TODO add repos and packates that PopOS has: https://pop.system76.com/
+#
+#
+# TODO fix issues with uname -r in docker containers - ifdef that part
+# e.g.
+# if ! grep -qE '/docker|/containerd' /proc/1/cgroup 2>/dev/null; then
+#   # host system
+#   apt-get install -y linux-tools-$(uname -r)
+# else
+#   echo "Running in container — skipping kernel-specific packages"
+# fi
+#
+#
+# or
+#
+# KVER="$(uname -r)"
+# if apt-cache show "linux-tools-$KVER" >/dev/null 2>&1; then
+#   sudo apt-get install -y "linux-tools-$KVER"
+# else
+#   echo "linux-tools-$KVER not available, skipping"
+# fi
+#
+#
+# see: https://chatgpt.com/share/69661d42-1a2c-8008-82ba-72f4e69e0ca0
 
 export DEBIAN_FRONTEND=noninteractive
 # TODO "Which services should be restarted?" prompt is still present in VM
