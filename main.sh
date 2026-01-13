@@ -67,6 +67,7 @@ function run_all
 # see: https://linuxize.com/post/how-to-set-or-change-timezone-on-debian-10/
 # see: https://chatgpt.com/share/e001132e-2bfc-4b68-ab99-8697da44ccc2
 # timedatectl set-timezone Europe/Vienna
+# see my containers.yml workflow for that
 
 # TODO delete run_all.sh scripts and run everything just from here
 # with my_run_parts, also move my_run_parts directly here (move platform
