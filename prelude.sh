@@ -196,7 +196,8 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         echo "Not implemented"
         # run-parts for generic filenames (including dot)
         # as a test run first
-        run-parts --regex='^[\.A-Za-z0-9_-]+$' --test .
+        # run-parts --regex='^[^/]+$' --test . | grep files not matching the regex below
+        run-parts --regex='^[0-9][0-9][\.A-Za-z0-9_-]+$' .
         # but filter the filenames and exit if there is a filename
         # that does not match [0-9][0-9]*.sh
         # Then run the real run and only filter by the strict regex
