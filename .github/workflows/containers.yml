@@ -90,11 +90,17 @@ jobs:
       # TODO also test that the first run of initPC script does change the state of home dir
       # TODO - test whether the test works as expected
       # TODO sync the idempotency test between linux distros (this is the most recent)
+      # TODO put this into a bash script that will run from all actions
+      # TODO somehow unify the UbuntuGH and container workflows
       - name: The initPC script should be idempotent on ~/ directory (WIP - needs testing)
         run: |
           cd ~
           pwd
           find . -type f \( \
+            ! -path "*/.git/*" \
+            ! -path "./localSW/ydotool/build/CMakeFiles/*" \
+            ! -path "./runners/*" \
+            ! -path "./actions-runner/*" \
             ! -path "./.cargo/.global-cache" \
             ! -path "./.cache/*" \
             ! -path "./.dotfiles/logs/HEAD" \
