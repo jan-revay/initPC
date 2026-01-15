@@ -12,7 +12,7 @@ pkg upgrade -y # running upgrade once is sometimes not enough
 # pkg install -y x11-repo
 # TODO setup termux X11 see https://github.com/termux/termux-x11
 
-APT_PACKAGES=(wget gnupg curl tar)
+APT_PACKAGES=(wget gnupg curl tar which clang libffi openssl)
 APT_PACKAGES+=(build-essential binutils-bin gdb ccache ninja cmake) # GCC and build tools
 APT_PACKAGES+=(rust rustc-dev rust-analyzer)
 APT_PACKAGES+=(python python-numpy) # python
