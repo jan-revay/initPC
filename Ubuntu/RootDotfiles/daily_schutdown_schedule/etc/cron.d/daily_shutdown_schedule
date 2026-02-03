@@ -37,29 +37,27 @@
 # 9:00 - 9:15 "terce" small pause to pray & think about priorities for the day
 0-15   9      * * *  root /sbin/shutdown
 
-# 9:15 - 11:45 First deep work session (phone off)
+# --- 9:15 - 11:45 First deep work session (phone off) ---
 
-# preparation for lunch & lunch
+# --- lunch & walk ---
 45-59  11     * * *  root /sbin/shutdown
 *      12     * * *  root /sbin/shutdown
 
-# 13:00 - 15:30 second deep focus session
+# --- 13:00 - 15:30 second deep work session ---
 
-# 15:30 - 15:50 a pause to slow down revisit my day & context switch if needed
-30-50  15     * * *  root /sbin/shutdown
+# 15:30 - 15:40 a pause to slow down revisit my day & context switch if needed
+30-40  15     * * *  root /usr/bin/loginctl lock-session
 
-# 16:00 - 19:15 third deep work session
+# --- 16:00 - 19:15 third deep work session ---
 
 # 19:15 - 8:00 - "great silence" i.e. preparations for sleep, relax & sleep
 15-59  19     * * *  root /sbin/shutdown
 *      20-23  * * *  root /sbin/shutdown
 *      0-7    * * *  root /sbin/shutdown
 
-
-# Weekly shutdown schedule - TODO put it to a separate file?
-
-# House cleaning
+# === WEEKLY SHUTDOWN SCHEDULE ===
+# Saturday - house cleaning
 *      16-20  * * Sat  root /sbin/shutdown
-# Rest/sport
+# Sunday - rest/sport
 *      12-20  * * Sun  root /sbin/shutdown
 
