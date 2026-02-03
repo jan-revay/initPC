@@ -44,6 +44,8 @@ else
             com.spotify.Client
             com.axosoft.GitKraken
             com.obsproject.Studio
+            com.obsproject.Studio.Plugin.WaylandHotkeys
+            com.obsproject.Studio.Plugin.DroidCam
             net.werwolv.ImHex
 
             # benchmarks and stress tests
