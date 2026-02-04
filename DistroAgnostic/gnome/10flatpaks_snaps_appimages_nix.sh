@@ -46,6 +46,7 @@ else
             com.obsproject.Studio
             com.obsproject.Studio.Plugin.WaylandHotkeys
             com.obsproject.Studio.Plugin.DroidCam
+            com.github.wwmm.easyeffects
             net.werwolv.ImHex
 
             # benchmarks and stress tests
