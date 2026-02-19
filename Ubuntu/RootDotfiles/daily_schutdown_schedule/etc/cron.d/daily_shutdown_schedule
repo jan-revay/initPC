@@ -46,7 +46,7 @@
 # --- 13:00 - 15:30 second deep work session ---
 
 # 15:30 - 15:40 a pause to slow down revisit my day & context switch if needed
-30-40  15     * * *  root /usr/bin/loginctl lock-session
+30-35/2 15     * * *  root /usr/bin/loginctl lock-sessions
 
 # --- 16:00 - 19:15 third deep work session ---
 
