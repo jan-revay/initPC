@@ -104,6 +104,8 @@ readonly APT_GUI_PACKAGES=(
     libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-good
     gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
     helvum
+    pavucontrol
+    qpwgraph
 
     # ===== TO TRY ===== (TODO review)
     actiona # automations, written in C++ https://github.com/Jmgr/actiona
