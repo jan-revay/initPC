@@ -53,7 +53,7 @@
 # 19:15 - 8:00 - "great silence" i.e. preparations for sleep, relax & sleep
 15-59  19     * * *  root /sbin/shutdown
 *      20-23  * * *  root /sbin/shutdown
-*      0-7    * * *  root /sbin/shutdown
+*      0-6    * * *  root /sbin/shutdown
 
 # === WEEKLY SHUTDOWN SCHEDULE ===
 # Saturday - house cleaning

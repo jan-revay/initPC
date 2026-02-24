@@ -48,6 +48,7 @@ else
             com.obsproject.Studio.Plugin.DroidCam
             com.github.wwmm.easyeffects
             net.werwolv.ImHex
+            io.github.dimtpap.coppwr
 
             # benchmarks and stress tests
             com.geeks3d.furmark
