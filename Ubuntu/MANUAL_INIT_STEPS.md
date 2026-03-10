@@ -1,5 +1,7 @@
 # Manual Init steps - Ubuntu
 
+Install Discord apt repo <https://github.com/palfrey/discord-apt>
+
 sudo prime-select nvidia
 
 TODO read: <https://wiki.archlinux.org/title/PRIME>
