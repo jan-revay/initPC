@@ -27,6 +27,8 @@ permissions()
 
     # TODO anytime git touches these files, permissions will be messed up?
     # Is it ok? Consider copying directly.
+    # consider sudo install -m 644 -o root -g root source /etc/cron.d/file
+    # TODO consider what to do if a file does not exists
     sudo chown root:root "${CROND_FILES[@]}"
     sudo chmod 644 "${CROND_FILES[@]}"
 }
