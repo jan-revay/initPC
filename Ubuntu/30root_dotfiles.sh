@@ -21,7 +21,7 @@ clean()
 permissions()
 {
     local -r CROND_FILES=(
-        ./daily_schutdown_schedule/etc/cron.d/daily_shutdown_schedule
+        ./daily_schutdown_schedule/etc/cron.d/horarium
         ./spin_hdd_off/etc/cron.d/spin_hdd_off
     )
 

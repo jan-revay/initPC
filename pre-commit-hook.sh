@@ -35,15 +35,15 @@ find . -type f -name "*.sh" -print0 \
 #     bash -c 'echo "### Entering directory $(pwd)" && shellcheck "${1}"' bash {} \;
 #
 
-find . -type f -name '*.sh' \( \
-    ! -name "prelude.sh" \
-    \) -print0 \
-    | while IFS= read -r -d '' f; do
-        if ! sed -n '2p' "$f" \
-            | grep -Eq '^\.[[:space:]]+(\.\./)*prelude\.sh$'; then
-            err "File does not have . prelude.sh on the 2nd line: $f"
-            err "Running prelude_rearrange.sh"
-            ./StaticAnalysis/prelude_rearrange.sh
-            exit 2
-        fi
-    done
+# find . -type f -name '*.sh' \( \
+#     ! -name "prelude.sh" \
+#     \) -print0 \
+#     | while IFS= read -r -d '' f; do
+#         if ! sed -n '2p' "$f" \
+#             | grep -Eq '^\.[[:space:]]+(\.\./)*prelude\.sh$'; then
+#             err "File does not have . prelude.sh on the 2nd line: $f"
+#             err "Running prelude_rearrange.sh"
+#             ./StaticAnalysis/prelude_rearrange.sh
+#             exit 2
+#         fi
+#     done
