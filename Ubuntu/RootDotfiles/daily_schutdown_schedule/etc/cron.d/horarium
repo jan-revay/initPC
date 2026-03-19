@@ -1,36 +1,36 @@
 # I use cron to enforce my breaks & daily schedule ("horarium") as most of my
 # work is being done on a PC and phone (I use an app to do sth. similar on my
 # phone).
-
+#
+# Scheduled breaks during the day help me to better discover and follow my
+# priorities for the day (it sometimes takes me up to 15 min to "unfocus" resp.
+# mentally park a task I was doing before I am able to do a focused
+# prioritization).
+#
 # Advantages as opposed to only using alarms:
 #   1. I don't have to think about my schedule and manage the alarms.
-#   2. Alarms can go unnoticed (e.g. if my phone is in a different room or out
+#   2. Alarms may go unnoticed (e.g. if my phone is in a different room or out
 #   of battery).
 #   3. There is no postpone button. I don't waste my willpower to keep my
 #   time-blocks sharp.
-#   4. I don't have to think about turning off the PC and can just always
-#   leave it on, when I go away.
-#   5. It helps me to context switch between time blocks in my day (I use time
-#   blocking), and keep my virtual desktops clean.
-#   6. Breaks help me to reevaluate my priorities for the day (it sometimes
-#   takes me up to 15 min to "unfocus" resp. mentally park the thing I was doing
-#   before I am able to do focused prioritization).
+#   4. I can always leave my PC on when I go away (it will turn off itself).
+#   5. Easier context switches between time blocks in my day and clean desktop.
 #
-#   Note: shutdown uses default "+1m" delay, hence if I am caught off guard, I
-#   can return by turning my PC on back again and 1m is just enough time to
-#   finish what I was doing.
-#
-# Disadvantages:
+# Disadvantages of managing my daily schedule this way:
 #   1. It is annoying during online calls - but this is also a blessing in
 #   disguise as I am forced to stick online calls to my time-blocks, not the
-#   other way around. However online calls need to be taken into consideration
-#   when modifying the daily schedule.
-
+#   other way around. However ONLINE CALLS need to be taken into consideration
+#   when modifying this daily schedule.
+#
+#   Note: shutdown command uses default "+1m" delay, hence if I am caught off
+#   guard, I can return by turning my PC on back again and 1m is just enough
+#   time to finish what I was doing.
+#
 
 
 *      0-6    * * *  root /usr/local/bin/notify_and_shutdown.sh "Sleep"
 
-# --- 7 - 9 Time block 0 (phone off) ---
+# --- 7 - 9 Time block 0 (phone on for 10 min) ---
 
 50-59   8      * * *  root /usr/local/bin/notify_and_shutdown.sh "Terce"
 
@@ -53,8 +53,8 @@
 
 
 # === WEEKLY SCHEDULE ===
-# Saturday - cleanup
-*      17-20  * * Sat  root /sbin/shutdown
+# Saturday
+*      18-20  * * Sat  root /sbin/shutdown
 # Sunday - rest/sport
 *      12-20  * * Sun  root /sbin/shutdown
 
