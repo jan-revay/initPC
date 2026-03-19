@@ -1,11 +1,13 @@
-# I use cron to enforce my breaks & daily schedule ("horarium") as most of my
-# work is being done on a PC and phone (I use an app to do sth. similar on my
+# I use cron to enforce my time block boundaries and breaks as most of my work
+# is being done on a PC and phone (I use an app to do sth. similar on my
 # phone).
 #
-# Scheduled breaks during the day help me to better discover and follow my
-# priorities for the day (it sometimes takes me up to 15 min to "unfocus" resp.
-# mentally park a task I was doing before I am able to do a focused
-# prioritization).
+# Scheduled breaks help me to follow my priorities for the day/week (it
+# sometimes takes me up to 15 min to "unfocus" resp. mentally park a task I was
+# doing before I am able to do a focused prioritization). Leaving timing of
+# breaks to cron helps me to concentrate as my brain is then not constantly
+# reminding me of what else I need to do, and I can then trust my system that I
+# will make right decisions during my planning & breaks.
 #
 # Advantages as opposed to only using alarms:
 #   1. I don't have to think about my schedule and manage the alarms.
@@ -17,32 +19,30 @@
 #   5. Easier context switches between time blocks in my day and clean desktop.
 #
 # Disadvantages of managing my daily schedule this way:
-#   1. It is annoying during online calls - but this is also a blessing in
+#   1. It is annoying during ONLINE CALLS - but this is also a blessing in
 #   disguise as I am forced to stick online calls to my time-blocks, not the
-#   other way around. However ONLINE CALLS need to be taken into consideration
+#   other way around. However online calls need to be taken into consideration
 #   when modifying this daily schedule.
 #
-#   Note: shutdown command uses default "+1m" delay, hence if I am caught off
+#   Note: shutdown command uses a default "+1m" delay, hence if I am caught off
 #   guard, I can return by turning my PC on back again and 1m is just enough
 #   time to finish what I was doing.
-#
-# TODO: fix shutdown notifications
 
 
-*      0-6    * * *  root /usr/local/bin/notify_and_shutdown.sh "Sleep"
+*      0-6    * * *  root /sbin/shutdown
 
 # --- 7 - 9 Time block 0 (phone on for 10 min) ---
 
-50-59   8      * * *  root /usr/local/bin/notify_and_shutdown.sh "Terce"
+50-59   8      * * *  root /sbin/shutdown
 
 # --- 9 - 12 Time block 1 (phone off) ---
 
 # --- Sext, lunch and walk (phone on) ---
-*      12     * * *  root /usr/local/bin/notify_and_shutdown.sh "Lunch"
+*      12     * * *  root /sbin/shutdown
 
 # --- 13 - 15 Time block 2 (phone off) ---
 
-15-20/2 15     * * *  root /usr/bin/loginctl lock-sessions
+15,17  15     * * *  root /usr/bin/loginctl lock-sessions
 
 # --- 15:30 - 17:40 Time block 3 (phone off) ---
 
@@ -50,7 +50,7 @@
 
 # --- 18:00 - 20:00 Bonus time block (optional, phone on)
 
-*      20-23  * * *  root /usr/local/bin/notify_and_shutdown.sh "End of the day"
+*      20-23  * * *  root /sbin/shutdown
 
 
 # === WEEKLY SCHEDULE ===
