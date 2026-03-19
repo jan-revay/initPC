@@ -26,6 +26,7 @@
 #   guard, I can return by turning my PC on back again and 1m is just enough
 #   time to finish what I was doing.
 #
+# TODO: fix shutdown notifications
 
 
 *      0-6    * * *  root /usr/local/bin/notify_and_shutdown.sh "Sleep"
