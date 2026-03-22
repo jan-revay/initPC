@@ -2,11 +2,15 @@
 . ../prelude.sh
 # NOTE: "${name[@]}" expands each element of name to a separate word. See:
 # https://www.gnu.org/software/bash/manual/bash.html?utm_source=chatgpt.com#Arrays
+# TODO: refactor this to be less hacky. Ideally I should need no clean step and
+# no exact paths. (turning packages on and off can be done by straight deletion
+# of the directory subtree)
+# Ideally I would just set permissions and stow everyting...
 
 clean()
 {
     local -r TO_CLEAN=(
-        /etc/cron.d/daily_shutdown_schedule
+        /etc/cron.d/horarium
         /etc/cron.d/spin_hdd_off
         /etc/libinput/local-overrides.quirks
     )
@@ -18,11 +22,11 @@ clean()
     fi
 }
 
-permissions()
+cron_permissions()
 {
     local -r CROND_FILES=(
-        ./daily_schutdown_schedule/etc/cron.d/horarium
-        ./spin_hdd_off/etc/cron.d/spin_hdd_off
+        ./horarium/etc/cron.d/*
+        ./spin_hdd_off/etc/cron.d/*
     )
 
     # TODO anytime git touches these files, permissions will be messed up?
@@ -33,26 +37,14 @@ permissions()
     sudo chmod 644 "${CROND_FILES[@]}"
 }
 
-stow_all()
-{
-    # TODO - modify dirs_to_stow based on platform (e.g. VM)
-    local -r DIRS_TO_STOW=(
-        MX3_MASTER_LOGID_CONFIG
-        daily_schutdown_schedule
-        disable_highres_scroll
-        spin_hdd_off
-    )
-
-    sudo stow -vvv --target=/ "${DIRS_TO_STOW[@]}"
-}
-
 # We create libinput dir explicitly instead of just linking to it with stow,
 # so that we can clean just the file we stowed there (the dir might be used
 # by other utils as well), we don't want stow to own the whole directory.
 sudo mkdir -p /etc/libinput
 
 pushd RootDotfiles/
+
 clean
-permissions
-stow_all
+cron_permissions
+sudo stow -vvv --target=/ -- *
 popd
