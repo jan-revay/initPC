@@ -85,18 +85,73 @@ for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
     open-new-window-application-9 "[]"
 BASH
 
-# TODO - add custom keybinding
-# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings
-#   ['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
-# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/binding
-#   '<Super>1'
-# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/command
-#   'kitty'
-# /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/name
-#   'kitty'
-#
-#   TODO add custom keybinding
-#   nautilus --new-window
-#   to "['<Super>e']"
-#
-#   using home media key keybinding just focuses the existing window
+# TODO move this function to the appropriate location
+gnome_add_custom_keybinding()
+{
+    local name command binding
+    local schema reloc_schema base_path path current updated
+
+    if [ "$#" -ne 3 ]; then
+        echo "Invalid number of parameters" >&2
+        echo "Usage: gnome_add_custom_keybinding <name> <binding> <command>" >&2
+        echo "  <name> every character must match [a-z0-9_-] (e.g., 'my-terminal')." >&2
+        echo "  <binding> is the accelerator (e.g., '<Super>Return')." >&2
+        echo "  <command> is the shell command to run." >&2
+        return 1
+    fi
+
+    if [[ -z "$1" ]]; then
+        echo "Error: name must not be empty." >&2
+        return 2
+    fi
+
+    if [[ "$1" =~ [^a-z0-9_-] ]]; then
+        echo "Error: All characters in name parameter must match [a-z0-9_-] (e.g., 'my-terminal')." >&2
+        return 3
+    fi
+
+    name="state0_$1"
+    binding="$2"
+    command="$3"
+
+    schema="org.gnome.settings-daemon.plugins.media-keys"
+    reloc_schema="org.gnome.settings-daemon.plugins.media-keys.custom-keybinding"
+    base_path="/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
+    path="$base_path/${name}/"
+
+    # Add path to custom-keybindings array if not present
+    current="$(gsettings get "$schema" custom-keybindings)"
+    if printf '%s\n' "$current" | grep -q "'$path'"; then
+        echo "Keybinding ${name} is already present."
+    else
+        if [ "$current" = "@as []" ]; then # the dconf array is empty
+            updated="['$path']"
+        else
+            updated=$(printf '%s' "$current" | sed 's/]$//')
+            updated="${updated}, '$path']"
+        fi
+        gsettings set "$schema" custom-keybindings "$updated"
+        echo "The custom-keybindings array updated to: $updated"
+    fi
+
+    # Set the fields on the relocatable schema
+    gsettings set "${reloc_schema}:${path}" name "$name"
+    gsettings set "${reloc_schema}:${path}" binding "$binding"
+    gsettings set "${reloc_schema}:${path}" command "$command"
+
+    echo "${reloc_schema}:${path} set to" \
+        "name: '${name}', binding: '${binding}', command: '${command}'."
+}
+
+# TODO - rewrite for_each to be able to run this without exporting:
+export -f gnome_add_custom_keybinding
+
+# TODO consider putting the keybinding last
+for_each "gnome_add_custom_keybinding " << 'BASH'
+    # name      keybinding                command
+    kitty       "<Super>1"                "kitty"
+    firefox     "<Super>2"                "firefox --new-window"
+    # using media-key home keybinding would just focus the existing Nautilus window
+    nautilus    "<Super>e"                "nautilus --new-window"
+    todoist     "<Shift><Super>q"         "todoist"
+BASH
