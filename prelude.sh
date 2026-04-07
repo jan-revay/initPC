@@ -178,6 +178,9 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         while read -r line; do # Read a line and strip leading and trailing spaces
             # Skip empty lines and comments
             [[ "$line" =~ ^[[:space:]]*(#|$) ]] && continue
+            # TODO try rewriting this with eval so that the colors and
+            # debug msgs are printed correctly. I am using subshell instead of eval
+            # because of the debugging output being displayed incorrectly otherwise.
             bash -cx "$prefix$line"
         done
         set -x
