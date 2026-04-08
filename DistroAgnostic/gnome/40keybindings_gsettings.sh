@@ -89,13 +89,11 @@ BASH
 # TODO normalize error logging in the whole repo
 gnome_add_custom_keybinding()
 {
-    local name command binding
-    local schema reloc_schema base_path path current updated
-
     if [ "$#" -ne 3 ]; then
         echo "Invalid number of parameters" >&2
         echo "Usage: gnome_add_custom_keybinding <name> <binding> <command>" >&2
-        echo "  <name> every character must match [a-z0-9_-] (e.g., 'my-terminal')." >&2
+        echo "  <name> All name characters must match [a-z0-9_-]" >&2
+        echo "         (e.g., 'my-terminal')." >&2
         echo "  <binding> is the keybinding (e.g., '<Super>Return')." >&2
         echo "  <command> is the shell command to run." >&2
         return 1
@@ -107,29 +105,32 @@ gnome_add_custom_keybinding()
     fi
 
     if [[ "$1" =~ [^a-z0-9_-] ]]; then
-        echo "Error: All characters in name parameter must match [a-z0-9_-] (e.g., 'my-terminal')." >&2
+        echo "Error: All characters in name parameter must match [a-z0-9_-]" >&2
+        echo "         (e.g., 'my-terminal')." >&2
         return 3
     fi
 
-    name="state0_$1"
-    binding="$2"
-    command="$3"
+    local -r name="state0_$1"
+    local -r binding="$2"
+    local -r command="$3"
 
-    schema="org.gnome.settings-daemon.plugins.media-keys"
+    local -r schema="org.gnome.settings-daemon.plugins.media-keys"
+    local reloc_schema base_path
     reloc_schema="org.gnome.settings-daemon.plugins.media-keys.custom-keybinding"
     base_path="/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
-    path="${base_path}/${name}/"
+    readonly reloc_schema base_path
+    local -r path="${base_path}/${name}/"
 
     # Add path to custom-keybindings array if not present
-    current="$(gsettings get "${schema}" custom-keybindings)"
+    local -r current="$(gsettings get "${schema}" custom-keybindings)"
     if printf '%s\n' "${current}" | grep -q "'${path}'"; then
         echo "Keybinding ${name} is already present."
     else
         if [ "${current}" = "@as []" ]; then # the dconf array is empty
-            updated="['${path}']"
+            local -r updated="['${path}']"
         else
-            updated=$(printf '%s' "${current}" | sed 's/]$//')
-            updated="${updated}, '${path}']"
+            local -r updated_base=$(printf '%s' "${current}" | sed 's/]$//')
+            local -r updated="${updated_base}, '${path}']"
         fi
         gsettings set "${schema}" custom-keybindings "${updated}"
         echo "The custom-keybindings array updated to: ${updated}"
