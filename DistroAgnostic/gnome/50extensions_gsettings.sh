@@ -99,6 +99,20 @@ if gsettings get org.gnome.shell.extensions.tiling-assistant focus-hint; then
         focus-hint-outline-style "1"
         tiling-popup-all-workspace "false"
         window-gap "8"
+        tile-topleft-quarter "['<Alt>q']"
+        tile-topright-quarter "['<Alt>w']"
+        tile-bottomleft-quarter "['<Alt>a']"
+        tile-bottomright-quarter "['<Alt>s']"
+        tile-left-half "['<Alt>z']"
+        tile-right-half "['<Alt>x']"
+        tile-maximize "['<Super>Up']"
+        restore-window "['<Super>Down']"
+        tile-left-half-ignore-ta "['<Super>Left']"
+        tile-right-half-ignore-ta "['<Super>Right']"
+        activate-layout0 "['<Shift><Alt>q']"
+        activate-layout1 "['<Shift><Alt>w']"
+        activate-layout2 "['<Shift><Alt>a']"
+        activate-layout3 "['<Shift><Alt>s']"
 BASH
 
 fi # Ubuntu 24.04 CI
