@@ -66,6 +66,7 @@ else
         # rust packages and maybe switch back to cargo
         # but install specific versions so that the script
         # will not break easily.
+        # TODO - consider using for_each here also
         readonly SNAP_PACKAGES=(
             anki-desktop # TODO maybe install directly via website (most up to date)
             core
