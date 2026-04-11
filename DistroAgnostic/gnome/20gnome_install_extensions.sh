@@ -63,52 +63,57 @@ function install_gnome_extension
     #    fi
 }
 
+export -f install_gnome_extension
+
+for_each "install_gnome_extension " << 'BASH'
+    "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
+    "clipboard-history@alexsaveau.dev"
+    "focus-changer@heartmire"
+    "focus@scaryrawr.github.io"
+    "steal-my-focus-window@steal-my-focus-window"
+    "middleclickclose@paolo.tranquilli.gmail.com"
+    "panelScroll@sun.wxg@gmail.com"
+    "quake-terminal@diegodario88.github.io"
+    "system-monitor-next@paradoxxx.zero.gmail.com"
+    "tilingshell@ferrarodomenico.com"
+    "transparent-window-moving@noobsai.github.com"
+    "ubuntu-dock@ubuntu.com"
+    "undecorate@sun.wxg@gmail.com"
+    "Vitals@CoreCoding.com"
+    "weeks-start-on-monday@extensions.gnome-shell.fifi.org"
+    "window-calls@domandoman.xyz"
+    "window-title-is-back@fthx"
+    "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
+    "workspaces-by-open-apps@favo02.github.com"
+    "hide-universal-access@akiirui.github.io"
+BASH
+
+# DISABLE extensions
+
+gnome-extensions disable ding@rastersoft.com
+
 # TODO - use bash list and xargs
 # TODO sort alphabetically
 # TODO add https://extensions.gnome.org/extension/4356/top-bar-organizer/ ? or an alternative
 # TODO add https://extensions.gnome.org/extension/3843/just-perfection/
 # TODO consider https://extensions.gnome.org/extension/7777/workspace-buttons-with-app-icons/
 # TODO add workspace-indicator@gnome-shell-extensions.gcampax.github.com   ??
-install_gnome_extension "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
-install_gnome_extension "clipboard-history@alexsaveau.dev"
-install_gnome_extension "focus-changer@heartmire"
-install_gnome_extension "focus@scaryrawr.github.io"
 # install_gnome_extension "grand-theft-focus@zalckos.github.com" - disabled 9.11.2025
 # grand-theft focus is outdeated and replaced by steal-my-focus-window@steal-my-focus-window
 # which works correctly
-install_gnome_extension "steal-my-focus-window@steal-my-focus-window"
 # install_gnome_extension "improved-workspace-indicator@michaelaquilina.github.io" # - outdated for Ubuntu 25.04
 # install_gnome_extension "lilypad@shendrew.github.io"
 # TODO - consider adding back...?
-install_gnome_extension "middleclickclose@paolo.tranquilli.gmail.com"
-install_gnome_extension "panelScroll@sun.wxg@gmail.com"
-install_gnome_extension "quake-terminal@diegodario88.github.io"
 # install_gnome_extension "reminder_alarm_clock@trifonovkv.gmail.com" # - outdated for Ubuntu 25.04
 # install_gnome_extension "switcher@landau.fi" # - outdated for Ubuntu 25.04
-install_gnome_extension "system-monitor-next@paradoxxx.zero.gmail.com"
-install_gnome_extension "tilingshell@ferrarodomenico.com"
-install_gnome_extension "transparent-window-moving@noobsai.github.com"
-install_gnome_extension "ubuntu-dock@ubuntu.com"
-install_gnome_extension "undecorate@sun.wxg@gmail.com"
-install_gnome_extension "Vitals@CoreCoding.com"
-install_gnome_extension "weeks-start-on-monday@extensions.gnome-shell.fifi.org"
 # TODO There is also https://github.com/hseliger/window-calls-extended fork - compare the two.
-install_gnome_extension "window-calls@domandoman.xyz"
-install_gnome_extension "window-title-is-back@fthx"
 # TODO - find alterantive
 # install_gnome_extension "windowIsReady_Remover@nunofarruca@gmail.com" # - outdated for Ubuntu 25.04
-install_gnome_extension "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
-install_gnome_extension "workspaces-by-open-apps@favo02.github.com"
-install_gnome_extension "hide-universal-access@akiirui.github.io"
 # TODO jut perfection extension can do that as well and is more universal...
 # I can be doing this via Lilpad
 # TODO consider whether it is a good idea as if the icons will fit, I can see them always
 # and if they would not fit, lilpad will not help with that anyway...
 # install_gnome_extension "highlight-focus@pimsnel.com" - disabled 9.11.2025 - outdated
-
-# DISABLE extensions
-
-gnome-extensions disable ding@rastersoft.com
 
 # install_gnome_extension "scroll-workspaces@gfxmonk.net"
 # install_gnome_extension "Vitals@CoreCoding.com"
