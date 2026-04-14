@@ -3,6 +3,11 @@
 
 # TODO move remaining keybindings from gsettings scripts here
 
+for_each "gsettings set org.gnome.mutter.keybindings " << 'BASH'
+    toggle-tiled-left "[]"
+    toggle-tiled-right "[]"
+BASH
+
 if gsettings get org.gnome.Ptyxis scrollbar-policy; then
     for_each "gsettings set org.gnome.Ptyxis.Shortcuts " << 'BASH'
         close-tab "<Control>w"
