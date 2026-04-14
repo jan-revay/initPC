@@ -100,6 +100,7 @@ for_each "gsettings set org.gnome.shell.extensions.quake-terminal " << 'BASH'
     auto-hide-window "false"
     horizontal-alignment "1"
     horizontal-size "40"
+    terminal-id 'org.gnome.Ptyxis.desktop'
     vertical-size "50"
 BASH
 
