@@ -68,6 +68,7 @@ for_each "gsettings set org.gnome.shell.extensions.dash-to-dock " << 'BASH'
     middle-click-action "launch"
     pressure-threshold "50.0"
     preview-size-scale "0.25"
+    scroll-action "cycle-windows"
     shift-click-action "minimize"
     shift-middle-click-action "quit"
     shortcut-timeout "4"
