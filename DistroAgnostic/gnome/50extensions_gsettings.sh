@@ -121,6 +121,7 @@ BASH
 # Ubuntu 24.04 CI
 if gsettings get org.gnome.shell.extensions.tiling-assistant focus-hint; then
 
+    # TODO also add numeric keyboard tiling shortcuts just in case
     # tiling-assistant@ubuntu.com
     for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
         dynamic-keybinding-behavior "0"
