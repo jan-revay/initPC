@@ -1,6 +1,7 @@
 #!/bin/bash
 . ../../prelude.sh
 
+# TODO sort again once ifdefs are removed
 # HOW TO WATCH GSettings changes on Ubuntu? Run `dconf watch /`
 # NOTE: for_each blocks are sorted by path alphabetically (their content and blocks themselves)
 
@@ -15,8 +16,37 @@
 # https://wiki.gnome.org/HowDoI/GSettings
 
 # disable-lock-screen was set to true for some reason on my fresh Ubuntu 24.04 install
-gsettings set org.gnome.desktop.lockdown disable-lock-screen false
-gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.desktop.lockdown disable-lock-screen "false"
+gsettings set org.gnome.desktop.session idle-delay "0"
+
+for_each "gsettings set org.gnome.desktop.peripherals.touchpad " << 'BASH'
+    click-method "fingers"
+    disable-while-typing "true"
+    send-events "disabled"
+BASH
+
+for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
+    action-double-click-titlebar "toggle-maximize"
+    action-middle-click-titlebar "lower" # 'minimize'
+    auto-raise "true"
+    button-layout "appmenu:minimize,close"
+    focus-mode "sloppy"
+    mouse-button-modifier "<Super>"
+    num-workspaces "13"
+    # NOTE: right click resizing is dependent on the sector of the window being
+    # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
+    resize-with-right-button "true"
+    workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13']"
+BASH
+
+for_each "gsettings set org.gnome.mutter " << 'BASH'
+    dynamic-workspaces "false"
+    workspaces-only-on-primary "false"
+BASH
+
+for_each "gsettings set org.gnome.shell.app-switcher " << 'BASH'
+    current-workspace-only "true"
+BASH
 
 # Ptyxis and accent-color are not present on Ubuntu 24.04 - check and skip
 # TODO remove the ifdef after Ubuntu 26.04 is avaliable is GitHub Actions runner
@@ -63,17 +93,3 @@ BASH
 BASH
 
 fi # Ubuntu 24.04
-
-for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
-    action-double-click-titlebar "toggle-maximize"
-    action-middle-click-titlebar "lower" # 'minimize'
-    auto-raise "true"
-    button-layout "appmenu:minimize,close"
-    focus-mode "sloppy"
-    mouse-button-modifier "<Super>"
-    num-workspaces "13"
-    # NOTE: right click resizing is dependent on the sector of the window being
-    # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
-    resize-with-right-button "true"
-    workspace-names "['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13']"
-BASH

@@ -36,6 +36,8 @@ for_each "gsettings set org.gnome.shell.extensions.dash-to-dock " << 'BASH'
     dock-position "LEFT"
     extend-height "false"
     hot-keys "false"
+    isolate-workspaces "true"
+    isolate-monitors "true"
     middle-click-action "launch"
     pressure-threshold "50.0"
     preview-size-scale "0.25"
