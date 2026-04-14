@@ -12,10 +12,10 @@ export GSETTINGS_SCHEMA_DIR="${SCHDIR}"
 # 1. All for_each blocks are sorted by their respective gsettings path
 # 2. All keys in a specific for_each block are sorted alphabetically
 
-readonly current_auto_move_windows
 current_auto_move_windows=$(
     gsettings get org.gnome.shell.extensions.auto-move-windows application-list
 )
+readonly current_auto_move_windows
 
 # auto-move-windows@gnome-shell-extensions.gcampax.github.com
 # TODO Auto Move Windows - write a function that will add a string value to
