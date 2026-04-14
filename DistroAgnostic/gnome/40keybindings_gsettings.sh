@@ -1,6 +1,8 @@
 #!/bin/bash
 . ../../prelude.sh
 
+# TODO move remaining keybindings from gsettings scripts here
+
 if gsettings get org.gnome.Ptyxis scrollbar-policy; then
     for_each "gsettings set org.gnome.Ptyxis.Shortcuts " << 'BASH'
         close-tab "<Control>w"
