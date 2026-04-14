@@ -109,6 +109,12 @@ for_each "gsettings set org.gnome.shell.extensions.system-monitor-next-applet " 
     cpu-system-color "#c01c28ff"
     rotate-labels "true"
     show-tooltip "true"
+    icon-display "false"
+    net-graph-width "60"
+    memory-graph-width "60"
+    cpu-graph-width "60"
+    disk-display "true"
+    disk-graph-width "60"
 BASH
 
 # Ubuntu 24.04 CI
