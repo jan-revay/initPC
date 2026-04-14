@@ -89,9 +89,10 @@ for_each "install_gnome_extension " << 'BASH'
     "hide-universal-access@akiirui.github.io"
 BASH
 
-# DISABLE extensions
-
-gnome-extensions disable ding@rastersoft.com
+for_each "gnome-extensions disable " << 'BASH'
+    ding@rastersoft.com
+    focus@scaryrawr.github.io
+BASH
 
 # TODO - use bash list and xargs
 # TODO sort alphabetically
