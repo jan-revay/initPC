@@ -172,6 +172,7 @@ BASH
 
 # window-title-is-back@fthx
 for_each "gsettings set org.gnome.shell.extensions.window-title-is-back " << 'BASH'
+    colored-icon "true"
     fixed-width "false"
 BASH
 
