@@ -12,6 +12,11 @@ export GSETTINGS_SCHEMA_DIR="${SCHDIR}"
 # 1. All for_each blocks are sorted by their respective gsettings path
 # 2. All keys in a specific for_each block are sorted alphabetically
 
+# TODO Auto Move Windows - write a function that will add a string value to
+# an array, but only if the string value is not already present. I.e. sth.
+# similar to what I already use to set custom keybindings. Maybe just also
+# reuse the code there.
+
 # clipboard-history@alexsaveau.dev
 for_each "gsettings set org.gnome.shell.extensions.clipboard-history " << 'BASH'
     cache-size "1000"
