@@ -12,10 +12,32 @@ export GSETTINGS_SCHEMA_DIR="${SCHDIR}"
 # 1. All for_each blocks are sorted by their respective gsettings path
 # 2. All keys in a specific for_each block are sorted alphabetically
 
+readonly current_auto_move_windows
+current_auto_move_windows=$(
+    gsettings get org.gnome.shell.extensions.auto-move-windows application-list
+)
+
+# auto-move-windows@gnome-shell-extensions.gcampax.github.com
 # TODO Auto Move Windows - write a function that will add a string value to
 # an array, but only if the string value is not already present. I.e. sth.
 # similar to what I already use to set custom keybindings. Maybe just also
 # reuse the code there.
+# TODO consider just removing everything that was in the array before and always
+# replacing here... it would be a simpler code and it would enforce 1:1 with
+# configuration. Maybe the replace always policy is a good policy.
+# TODO update 1:1 and then remove the if
+if [ "${current_auto_move_windows}" = "@as []" ]; then # the dconf array is empty
+    gsettings set org.gnome.shell.extensions.auto-move-windows application-list \
+        "['org.gnome.Settings.desktop:7', \
+          'systemsettings.desktop:7', \
+          'org.gnome.Shell.Extensions.desktop:7', \
+          'com.mattjakeman.ExtensionManager.desktop:7', \
+          'org.gnome.tweaks.desktop:7', \
+          'snap-store_snap-store.desktop:7', \
+          'org.signal.Signal.desktop:4', \
+          'com.spotify.Client.desktop:12', \
+          'gnome-system-monitor-kde.desktop:7']"
+fi
 
 # clipboard-history@alexsaveau.dev
 for_each "gsettings set org.gnome.shell.extensions.clipboard-history " << 'BASH'
