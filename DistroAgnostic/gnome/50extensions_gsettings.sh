@@ -164,7 +164,7 @@ BASH
 fi # Ubuntu 24.04 CI
 
 # TODO configure Tiling shell in detail & in congruence with other keybindings
-# and settings.
+# and settings. https://github.com/domferr/tilingshell
 # tilingshell@ferrarodomenico.com
 for_each "gsettings set org.gnome.shell.extensions.tilingshell " << 'BASH'
     enable-move-keybindings "false"
