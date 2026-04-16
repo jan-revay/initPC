@@ -30,6 +30,8 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     # TODO rethink workspace switching keybindings
     # TODO add home row keybindings for workspaces 9 to 12
     always-on-top "['<Control><Super>space']"
+    # TODO try finding a solution to also focus the window that has highest Z
+    # order after the lower action.
     lower "['<Control><Alt>space']"
     move-to-workspace-1 "['<Control><Alt><Super>h', '<Alt><Shift>1', '<Control><Alt><Super>Home']"
     move-to-workspace-2 "['<Control><Alt><Super>j', '<Alt><Shift>2']"
