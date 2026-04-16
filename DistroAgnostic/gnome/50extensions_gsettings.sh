@@ -26,6 +26,9 @@ readonly current_auto_move_windows
 # replacing here... it would be a simpler code and it would enforce 1:1 with
 # configuration. Maybe the replace always policy is a good policy.
 # TODO update 1:1 and then remove the if
+# TODO finish the list + split it to two parts A) genersc B) machine specific
+# TODO find a way to manage these dconf lists ad native lists so that the code
+# is more intuitive and less error prone.
 if [ "${current_auto_move_windows}" = "@as []" ]; then # the dconf array is empty
     gsettings set org.gnome.shell.extensions.auto-move-windows application-list \
         "['org.gnome.Settings.desktop:7', \
