@@ -83,10 +83,10 @@ BASH
 
 # focus-changer@heartmire
 for_each "gsettings set org.gnome.shell.extensions.focus-changer " << 'BASH'
-    focus-down "['<Shift><Control><Alt><Super>Down']"
-    focus-left "['<Shift><Control><Alt><Super>Left']"
-    focus-right "['<Shift><Control><Alt><Super>Right']"
-    focus-up "['<Shift><Control><Alt><Super>Up']"
+    focus-down "['<Shift><Control><Alt><Super>Down', '<Control><Alt>a']"
+    focus-left "['<Shift><Control><Alt><Super>Left', '<Control><Alt>z']"
+    focus-right "['<Shift><Control><Alt><Super>Right', '<Control><Alt>x']"
+    focus-up "['<Shift><Control><Alt><Super>Up', '<Control><Alt>s']"
 BASH
 
 # panelScroll@sun.wxg@gmail.com
