@@ -73,6 +73,7 @@ for_each "install_gnome_extension " << 'BASH'
     "focus@scaryrawr.github.io"
     "steal-my-focus-window@steal-my-focus-window"
     "middleclickclose@paolo.tranquilli.gmail.com"
+    "native-window-placement@gnome-shell-extensions.gcampax.github.com"
     "panelScroll@sun.wxg@gmail.com"
     "quake-terminal@diegodario88.github.io"
     "system-monitor-next@paradoxxx.zero.gmail.com"
