@@ -65,6 +65,9 @@ function install_gnome_extension
 
 export -f install_gnome_extension
 
+# TODO workspaces-by-open-apps - add a feature - windows are sorted by left upper
+# corner (left to right, top to bottom)
+
 for_each "install_gnome_extension " << 'BASH'
     "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
     "apps-menu@gnome-shell-extensions.gcampax.github.com"
