@@ -33,7 +33,7 @@
 
 # --- 7 - 9 Time block 0 (phone on for 10 min) ---
 
-50-59   8      * * *  root /sbin/shutdown
+50-59   8      * * *  root /usr/bin/loginctl lock-sessions
 
 # --- 9 - 12 Time block 1 (phone off) ---
 
