@@ -1,28 +1,27 @@
-# I use cron to enforce my time block boundaries and breaks as most of my work
-# is being done on a PC and phone (I use an app to do sth. similar on my
-# phone).
+# I plan my day and week using time-blocking method. I use cron to enforce my
+# time block boundaries and breaks as most of my work is being done on a PC and
+# phone (I use an app to do sth. similar on my phone).
 #
-# Scheduled breaks help me to follow my priorities for the day/week (it
-# sometimes takes me up to 15 min to "unfocus" resp. mentally park a task I was
-# doing before I am able to do a focused prioritization). Leaving timing of
-# breaks to cron helps me to concentrate as my brain is then not constantly
-# reminding me of what else I need to do, and I can then trust my system that I
-# will make right decisions during my planning & breaks.
-#
-# Advantages as opposed to only using alarms:
-#   1. I don't have to think about my schedule and manage the alarms.
+# Advantages as opposed to only using alarms on phone:
+#   1. I don't have to think about my schedule and manage alarms.
 #   2. Alarms may go unnoticed (e.g. if my phone is in a different room or out
 #   of battery).
 #   3. There is no postpone button. I don't waste my willpower to keep my
 #   time-blocks sharp.
-#   4. I can always leave my PC on when I go away (it will turn off itself).
-#   5. Easier context switches between time blocks in my day and clean desktop.
+#   4. I can always leave my PC on when I go away (it will turn off itself
+#   eventually).
+#   5. Easier context switches between morning and evening time blocks and
+#   cleaner PC desktop.
+#   6. It is less likely that my attention gets stolen/grabbed by a low
+#   priority engaging or urgent task as the time-block boundary/break helps me
+#   to reevaluate my priorities for the day resp. "unfocus", so that I am able
+#   to do a calm prioritization.
 #
 # Disadvantages of managing my daily schedule this way:
-#   1. It is annoying during ONLINE CALLS - but this is also a blessing in
-#   disguise as I am forced to stick online calls to my time-blocks, not the
-#   other way around. However online calls need to be taken into consideration
-#   when modifying this daily schedule.
+#   1. ONLINE CALLS need to fit time-block boundaries! Having my screen locked
+#   or PC turned off in the middle of an online call is annoying, but this is
+#   also a blessing in disguise as I am forced to schedule my online calls to
+#   fit my time-blocks, not the other way around.
 #
 #   Note: shutdown command uses a default "+1m" delay, hence if I am caught off
 #   guard, I can return by turning my PC on back again and 1m is just enough
