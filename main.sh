@@ -75,6 +75,7 @@ function run_all
 #
 # TODO move functions for detection of linux distro/version here also
 # so that prelude.sh is really small
+# TODO do sth like run-parts --regex '^.*\.sh$' --test ~/initPC/DistroAgnostic/
 
 run_all "CLI_Ubuntu"
 run_all "Ubuntu"
