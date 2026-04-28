@@ -2,6 +2,8 @@
 . prelude.sh
 # Automatically detect and init/configure the host platform.
 
+# TODO check that all files satisfy https://google.github.io/styleguide/shellguide.html
+# TODO use LLMs for the code review and check of GSG compliance
 # TODO consider cd ing to script repo here so that the script can be run from
 # anywhere, see .my_scripts/WB.sh
 # TODO consider renaming run_init.sh to main.sh
