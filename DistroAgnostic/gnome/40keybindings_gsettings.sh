@@ -2,6 +2,7 @@
 . ../../prelude.sh
 
 # TODO move remaining keybindings from gsettings scripts here
+# TODO TOREAD https://nikitabobko.github.io/AeroSpace/guide
 
 for_each "gsettings set org.gnome.mutter.keybindings " << 'BASH'
     toggle-tiled-left "[]"
