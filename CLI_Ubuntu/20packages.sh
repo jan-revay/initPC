@@ -72,6 +72,7 @@ APT_PACKAGES=(
 
     # utils
     ripgrep tree curl
+    # add ast-grep
     # neofetch
 
     htop tmux at zsh traceroute jq stow
