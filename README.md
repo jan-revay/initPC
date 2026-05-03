@@ -323,3 +323,7 @@ for /home partition
 ## Shell tools & Distrobox TODO
 
 - <https://github.com/Favo02/dotfiles>
+
+## Tiling and WM TODO
+
+- emulate features of https://github.com/nikitabobko/AeroSpace
