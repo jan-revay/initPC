@@ -319,3 +319,7 @@ for /home partition
   <https://github.com/ThePrimeagen/.dotfiles>
 - <https://gitlab.com/dwt1/dotfiles>
 - <https://github.com/basecamp/omarchy/tree/master>
+
+## Shell tools & Distrobox TODO
+
+- <https://github.com/Favo02/dotfiles>
