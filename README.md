@@ -328,3 +328,4 @@ for /home partition
 
 - emulate features of https://github.com/nikitabobko/AeroSpace
 - emulate features of https://github.com/asmvik/yabai
+- try to implement the harmonica pattern and window grouping in GNOME
