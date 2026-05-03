@@ -85,6 +85,7 @@ for_each "install_gnome_extension " << 'BASH'
     "ubuntu-dock@ubuntu.com"
     "undecorate@sun.wxg@gmail.com"
     "Vitals@CoreCoding.com"
+    # TODO remove - in GNOME 50 there is a config option for that
     "weeks-start-on-monday@extensions.gnome-shell.fifi.org"
     "window-calls@domandoman.xyz"
     "window-title-is-back@fthx"
