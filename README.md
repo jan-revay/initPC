@@ -327,3 +327,4 @@ for /home partition
 ## Tiling and WM TODO
 
 - emulate features of https://github.com/nikitabobko/AeroSpace
+- emulate features of https://github.com/asmvik/yabai
