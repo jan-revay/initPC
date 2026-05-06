@@ -1,5 +1,19 @@
 # Manual Init steps - Ubuntu
 
+## Ubuntu Studio Installer
+
+If this is a PC on which I am recording audio, install:
+    - <https://ubuntustudio.org/ubuntu-studio-installer/>
+and select options:
+    - ubuntustudio-lowlatency-settings (kernel parameters)
+    - ubuntustudio-performance-tweaks (pam_limits a.s.o.)
+    - optionally other packages from the Ubuntu Studio Installer
+
+Setup: <https://ubuntustudio.org/audio-configuration/>
+
+
+## Other
+
 Install Discord apt repo <https://github.com/palfrey/discord-apt>
 
 sudo prime-select nvidia
