@@ -189,10 +189,12 @@ BASH
 
 # workspaces-by-open-apps@favo02.github.com
 for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-apps " << 'BASH'
-    apps-minimized-effect "REDUCE OPACITY"
     apps-inactive-effect "NOTHING"
+    apps-minimized-effect "NOTHING"
     click-on-active-overview "false"
+    indicator-hide-empty "true"
     indicator-round-borders "false"
     indicator-show-background "true"
+    indicator-text-use-theme-color "ture"
     scroll-enable "false"
 BASH
