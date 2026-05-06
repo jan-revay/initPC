@@ -262,3 +262,10 @@ BASH
 # workspace-indicator@gnome-shell-extensions.gcampax.github.com
 # panel-workspace-scroll@polymeilex.github.io
 #
+
+# TODO consider may 2026
+#
+# https://github.com/MirS0bhan/nice-focus/tree/main
+# https://extensions.gnome.org/extension/9024/deja-window/
+# https://extensions.gnome.org/extension/9174/window-dimensions/
+# https://extensions.gnome.org/extension/8642/tasks-in-panel/
