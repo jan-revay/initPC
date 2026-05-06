@@ -197,4 +197,5 @@ for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-
     indicator-show-background "true"
     indicator-text-use-theme-color "ture"
     scroll-enable "false"
+    windows-sort-method 'COORDINATES'
 BASH
