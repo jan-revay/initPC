@@ -8,6 +8,8 @@ and select options:
     - ubuntustudio-lowlatency-settings (kernel parameters)
     - ubuntustudio-performance-tweaks (pam_limits a.s.o.)
     - optionally other packages from the Ubuntu Studio Installer
+    - ubuntustudio-audio-config - set PW quantum to 128
+    - edit /etc/security/limits.d/30-ubuntustudio-audio.conf  - uncomment #@audio   -  nice      -19 and #@pipewire - nice -19
 
 Setup: <https://ubuntustudio.org/audio-configuration/>
 
