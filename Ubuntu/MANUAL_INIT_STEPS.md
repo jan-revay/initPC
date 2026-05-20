@@ -1,6 +1,7 @@
 # Manual Init steps - Ubuntu
 
-## Ubuntu Studio Installer
+## Audio
+### Ubuntu Studio Installer
 
 If this is a PC on which I am recording audio, install:
 - <https://ubuntustudio.org/ubuntu-studio-installer/>
@@ -8,10 +9,26 @@ and select options:
 - ubuntustudio-lowlatency-settings (kernel parameters)
 - ubuntustudio-performance-tweaks (pam_limits a.s.o.)
 - optionally other packages from the Ubuntu Studio Installer
-- ubuntustudio-audio-config - set PW quantum to 128
+- ubuntustudio-audio-config - set PW/jack quantum to 256
 - edit /etc/security/limits.d/30-ubuntustudio-audio.conf  - uncomment #@audio   -  nice      -19 and #@pipewire - nice -19
+- PW quantum - set to 256
+
+### Focusrite Scarlet 2i2 config
+
+- install focusrite control GUI
+- set 2i2 into pro audio mode in Pipewire
+- create a virtual source for AUX0
 
 Setup: <https://ubuntustudio.org/audio-configuration/>
+
+### Chrome - disable automatic volume adjustment
+
+When clipping in 2i2 with google chrome, system mic volume is lowered. This messes up recordings. To disable set these in chrome://flags/  :
+
+- #enable-webrtc-allow-input-volume-adjustment - DISABLED
+- #enable-webrtc-apm-downmix-capture-audio-method - DISABLED
+
+
 
 
 ## Other
