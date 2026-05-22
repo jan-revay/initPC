@@ -9,9 +9,7 @@ and select options:
 - ubuntustudio-lowlatency-settings (kernel parameters)
 - ubuntustudio-performance-tweaks (pam_limits a.s.o.)
 - optionally other packages from the Ubuntu Studio Installer
-- ubuntustudio-audio-config - set PW/jack quantum to 256
-- edit /etc/security/limits.d/30-ubuntustudio-audio.conf  - uncomment #@audio   -  nice      -19 and #@pipewire - nice -19
-- PW quantum - set to 256
+- ubuntustudio-audio-config - set PW/jack quantum to 1024
 
 ### Focusrite Scarlet 2i2 config
 
@@ -28,7 +26,9 @@ When clipping in 2i2 with google chrome, system mic volume is lowered. This mess
 - #enable-webrtc-allow-input-volume-adjustment - DISABLED
 - #enable-webrtc-apm-downmix-capture-audio-method - DISABLED
 
+### Firefox and native apps that use mic or WebRTC
 
+- test the sound and delay
 
 
 ## Other
