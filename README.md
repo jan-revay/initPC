@@ -189,6 +189,10 @@ but not useful for me, I will keep it in a separate branch, I might
 change my mind later :D . Issues and feature requests can be created
 here: <https://github.com/jan-revay/initPC/issues>
 
+## Important TODO (BUGS)
+
+1. Remove all "/home/jr/" path ocurrences in initPC and dotfiles
+
 ## TODO
 
 1. Merge and deprecate the InitNewPC repo InitPC repo on org GitHub and
