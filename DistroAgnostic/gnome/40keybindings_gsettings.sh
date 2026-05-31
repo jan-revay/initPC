@@ -182,6 +182,6 @@ for_each "gnome_add_custom_keybinding " << 'BASH'
     move-to-workspace-16 "<Alt><Shift>l"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 15"
     switch-to-workspace-17-en "<Alt>semicolon"     "wmctrl -s 16" # indexes begin at 0
     switch-to-workspace-17-sk "<Alt>ocircumflex"   "wmctrl -s 16" # indexes begin at 0
-    move-to-workspace-17-en "<Alt><Shift>semicolon"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 16"
-    move-to-workspace-17-sk "<Alt><Shift>ocircumflex"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 16"
+    move-to-workspace-17-en "<Shift><Alt>semicolon"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 16"
+    move-to-workspace-17-sk "<Shift><Alt>ocircumflex"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 16"
 BASH
