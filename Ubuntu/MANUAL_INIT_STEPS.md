@@ -1,5 +1,7 @@
 # Manual Init steps - Ubuntu
 
+## Install OBS-cmd
+
 ## Audio
 ### Ubuntu Studio Installer
 
