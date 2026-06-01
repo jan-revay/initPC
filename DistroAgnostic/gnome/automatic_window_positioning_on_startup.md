@@ -13,3 +13,8 @@
 - <https://github.com/ihpled/deja-windo>
 - <https://extensions.gnome.org/review/6676>
 - <https://github.com/gavindi/window-positioner>
+
+
+## Ideas
+
+I could modify the auto move windows gnome extensions to also move to the preset ubuntu tiling assistant tile & add a timeout option to every window so that it can run only preset amount of seconds after boot. I would need to solve what to do if a same application has multiple windows though.
