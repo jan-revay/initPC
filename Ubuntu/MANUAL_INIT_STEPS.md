@@ -1,5 +1,8 @@
 # Manual Init steps - Ubuntu
 
+## Install Vesktop discord client??
+- <https://vesktop.dev/>
+
 ## Install OBS-cmd
 
 ## Audio
