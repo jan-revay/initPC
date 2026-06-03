@@ -341,3 +341,10 @@ for /home partition
 - or preempt=full threadirqs
 - https://www.reddit.com/r/linuxaudio/comments/1j2cns1/do_any_of_you_use_the_realtime_kernel/
 - https://linuxmusicians.com/viewtopic.php?t=27121
+
+## Similar projects - take good ideas from there
+
+- https://omakub.org
+- omarchy
+
+...
