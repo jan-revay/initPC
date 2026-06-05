@@ -75,10 +75,17 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
 BASH
 
 for_each "gsettings set org.gnome.settings-daemon.plugins.media-keys " << 'BASH'
+# TODO fix mic mute - not working resp. not displaying notification correctly
     mic-mute "['<Shift><Super>a']"
+    control-center "['<Super>s']"
 BASH
 
 for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
+# NOTE: "quick-settings" is not Settings window but just the pop-up window
+# in the upper right corner of the top-bar (where shut-down menu is).
+# The correct key for gnome settings is in:
+# org.gnome.settings-daemon.plugins.media-keys control-center
+    toggle-quick-settings "[]"
     screenshot "['Print']"
     show-screenshot-ui "['<Shift><Super>s']"
     toggle-overview "['<Control><Alt><Super>o']"
@@ -105,6 +112,7 @@ BASH
 
 # TODO move this function to the appropriate location
 # TODO normalize error logging in the whole repo
+# TODO set +x after the function is tested enough
 gnome_add_custom_keybinding()
 {
     if [ "$#" -ne 3 ]; then
