@@ -164,9 +164,11 @@ export -f gnome_add_custom_keybinding
 
 # TODO consider putting the keybinding last
 for_each "gnome_add_custom_keybinding " << 'BASH'
-    # name      keybinding                command
-    kitty       "<Super>1"                "kitty"
-    firefox     "<Super>2"                "firefox --new-window"
+    # name          keybinding                command
+    kitty           "<Super>Above_Tab"        "kitty"
+    firefox         "<Super>1"                "firefox --new-window"
+    google-chrome   "<Super>2"                "google-chrome"
+    qpwgraph        "<Super>3"                "qpwgraph"
     # using media-key home keybinding would just focus the existing Nautilus window
     nautilus    "<Super>e"                "nautilus --new-window"
     todoist     "<Shift><Super>q"         "todoist"
