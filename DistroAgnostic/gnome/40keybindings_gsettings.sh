@@ -67,6 +67,10 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     switch-to-workspace-last "['<Control><Super>End']"
     switch-to-workspace-left "['<Control><Super>Left']"
     switch-to-workspace-right "['<Control><Super>Right']"
+    switch-windows "[]"
+    switch-windows-backward "[]"
+    cycle-windows "['<Alt>Tab']"
+    cycle-windows-backward "['<Shift><Alt>Tab']"
     toggle-fullscreen "['F11']"
 BASH
 
