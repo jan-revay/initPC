@@ -40,7 +40,10 @@ for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
 BASH
 
 for_each "gsettings set org.gnome.mutter " << 'BASH'
+    attach-modal-dialogs "false"
+    center-new-windows "false"
     dynamic-workspaces "false"
+    overlay-key "Super_L"
     workspaces-only-on-primary "false"
 BASH
 
