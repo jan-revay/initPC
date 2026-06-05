@@ -33,3 +33,7 @@
 ## Packages to consider
 
 - Lazy git
+
+## Potentially useful packages (2026)
+
+- https://ulauncher.io/
