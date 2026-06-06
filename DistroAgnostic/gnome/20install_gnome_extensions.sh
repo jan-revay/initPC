@@ -2,6 +2,7 @@
 . ../../prelude.sh
 # This script should be idempotent.
 # This script REQUIRES USER INTERACTION IN GNOME!!!
+# TODO try Omakub extensions
 #
 # TODO add extension settings
 # Consider this: https://github.com/PeterMosmans/ansible-role-customize-gnome
