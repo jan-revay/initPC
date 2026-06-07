@@ -97,6 +97,9 @@ else
             | xargs -0 -I % sudo snap install %
         time print0 "${SNAP_CLASSIC_PACKAGES[@]}" \
             | xargs -0 -I % sudo snap install --classic %
+
+        sudo snap install --edge yt-dlp
+        sudo snap refresh --edge yt-dlp
     fi
 
 fi # SKIP_FLATS_AND_SNAPS
