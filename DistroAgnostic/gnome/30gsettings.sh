@@ -32,11 +32,11 @@ for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
     button-layout "appmenu:minimize,close"
     focus-mode "sloppy"
     mouse-button-modifier "<Super>"
-    num-workspaces "17"
+    num-workspaces "18"
     # NOTE: right click resizing is dependent on the sector of the window being
     # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
     resize-with-right-button "true"
-    workspace-names "['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16']"
+    workspace-names "['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17']"
 BASH
 
 for_each "gsettings set org.gnome.mutter " << 'BASH'

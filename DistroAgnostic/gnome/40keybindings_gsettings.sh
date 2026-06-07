@@ -188,18 +188,18 @@ for_each "gnome_add_custom_keybinding " << 'BASH'
     # using media-key home keybinding would just focus the existing Nautilus window
     nautilus    "<Super>e"                "nautilus --new-window"
     todoist     "<Shift><Super>q"         "todoist"
-    switch-to-workspace-13-h "<Alt>h"          "wmctrl -s 12" # indexes begin at 0
-    move-to-workspace-13-h "<Alt><Shift>h"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 12"
     switch-to-workspace-13 "<Alt>equal"          "wmctrl -s 12" # indexes begin at 0
     move-to-workspace-13 "<Alt><Shift>equal"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 12"
-    switch-to-workspace-14 "<Alt>j"          "wmctrl -s 13" # indexes begin at 0
-    move-to-workspace-14 "<Alt><Shift>j"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 13"
-    switch-to-workspace-15 "<Alt>k"          "wmctrl -s 14" # indexes begin at 0
-    move-to-workspace-15 "<Alt><Shift>k"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 14"
-    switch-to-workspace-16 "<Alt>l"          "wmctrl -s 15" # indexes begin at 0
-    move-to-workspace-16 "<Alt><Shift>l"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 15"
-    switch-to-workspace-17-en "<Alt>semicolon"     "wmctrl -s 16" # indexes begin at 0
-    switch-to-workspace-17-sk "<Alt>ocircumflex"   "wmctrl -s 16" # indexes begin at 0
-    move-to-workspace-17-en "<Shift><Alt>semicolon"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 16"
-    move-to-workspace-17-sk "<Shift><Alt>ocircumflex"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 16"
+    switch-to-workspace-14 "<Alt>h"          "wmctrl -s 13" # indexes begin at 0
+    move-to-workspace-14 "<Alt><Shift>h"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 13"
+    switch-to-workspace-15 "<Alt>j"          "wmctrl -s 14" # indexes begin at 1
+    move-to-workspace-15 "<Alt><Shift>j"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 14"
+    switch-to-workspace-16 "<Alt>k"          "wmctrl -s 15" # indexes begin at 0
+    move-to-workspace-16 "<Alt><Shift>k"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 15"
+    switch-to-workspace-17 "<Alt>l"          "wmctrl -s 16" # indexes begin at 0
+    move-to-workspace-17 "<Alt><Shift>l"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 16"
+    switch-to-workspace-18-en "<Alt>semicolon"     "wmctrl -s 17" # indexes begin at 0
+    switch-to-workspace-18-sk "<Alt>ocircumflex"   "wmctrl -s 17" # indexes begin at 0
+    move-to-workspace-18-en "<Shift><Alt>semicolon"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 17"
+    move-to-workspace-18-sk "<Shift><Alt>ocircumflex"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 17"
 BASH
