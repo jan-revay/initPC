@@ -195,6 +195,8 @@ here: <https://github.com/jan-revay/initPC/issues>
 
 ## TODO
 
+1. MERGE Dotfiles and initPC together - and name it state0
+   - try disabling git ignore in state0 folder
 1. Merge and deprecate the InitNewPC repo InitPC repo on org GitHub and
    initAndroid repo (and my_pc_setup repo and all repos of this type I've created).
 1. Merge with LogidCfg repo
