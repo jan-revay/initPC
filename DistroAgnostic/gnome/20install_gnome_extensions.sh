@@ -74,6 +74,7 @@ for_each "install_gnome_extension " << 'BASH'
     "apps-menu@gnome-shell-extensions.gcampax.github.com"
     "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
     "clipboard-history@alexsaveau.dev"
+    "executor@raujonas.github.io"
     "focus-changer@heartmire"
     "focus@scaryrawr.github.io"
     "hide-universal-access@akiirui.github.io"
