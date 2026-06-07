@@ -70,29 +70,29 @@ export -f install_gnome_extension
 # corner (left to right, top to bottom)
 
 for_each "install_gnome_extension " << 'BASH'
-    "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
+    "Vitals@CoreCoding.com"
     "apps-menu@gnome-shell-extensions.gcampax.github.com"
+    "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
     "clipboard-history@alexsaveau.dev"
     "focus-changer@heartmire"
     "focus@scaryrawr.github.io"
-    "steal-my-focus-window@steal-my-focus-window"
+    "hide-universal-access@akiirui.github.io"
     "middleclickclose@paolo.tranquilli.gmail.com"
     "native-window-placement@gnome-shell-extensions.gcampax.github.com"
     "panelScroll@sun.wxg@gmail.com"
     "quake-terminal@diegodario88.github.io"
+    "steal-my-focus-window@steal-my-focus-window"
     "system-monitor-next@paradoxxx.zero.gmail.com"
     "tilingshell@ferrarodomenico.com"
     "transparent-window-moving@noobsai.github.com"
     "ubuntu-dock@ubuntu.com"
     "undecorate@sun.wxg@gmail.com"
-    "Vitals@CoreCoding.com"
     # TODO remove - in GNOME 50 there is a config option for that
     "weeks-start-on-monday@extensions.gnome-shell.fifi.org"
     "window-calls@domandoman.xyz"
     "window-title-is-back@fthx"
     "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
     "workspaces-by-open-apps@favo02.github.com"
-    "hide-universal-access@akiirui.github.io"
 BASH
 
 # TODO do some research and testing wrt windows navigator extension and
