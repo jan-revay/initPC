@@ -119,6 +119,7 @@ BASH
 # TODO set +x after the function is tested enough
 gnome_add_custom_keybinding()
 {
+    set +x
     if [ "$#" -ne 3 ]; then
         echo "Invalid number of parameters" >&2
         echo "Usage: gnome_add_custom_keybinding <name> <binding> <command>" >&2
@@ -173,6 +174,7 @@ gnome_add_custom_keybinding()
 
     echo "${reloc_schema}:${path} set to" \
         "name: '${name}', binding: '${binding}', command: '${command}'."
+    set -x
 }
 
 # TODO - rewrite for_each to be able to run this without exporting:
