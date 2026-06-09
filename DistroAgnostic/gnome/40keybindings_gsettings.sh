@@ -200,6 +200,9 @@ for_each "gnome_add_custom_keybinding " << 'BASH'
     move-to-workspace-16 "<Alt><Shift>k"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 15"
     switch-to-workspace-17 "<Alt>l"          "wmctrl -s 16" # indexes begin at 0
     move-to-workspace-17 "<Alt><Shift>l"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 16"
+    # TODO - weird bug where setting Alt+; manually through GNOME settings
+    # reports that it is already taken by switch-to-workspace-1 keybinding
+    # (even though it is not).
     switch-to-workspace-18-en "<Alt>semicolon"     "wmctrl -s 17" # indexes begin at 0
     switch-to-workspace-18-sk "<Alt>ocircumflex"   "wmctrl -s 17" # indexes begin at 0
     move-to-workspace-18-en "<Shift><Alt>semicolon"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 17"
