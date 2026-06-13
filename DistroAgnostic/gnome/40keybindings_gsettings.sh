@@ -180,6 +180,7 @@ gnome_add_custom_keybinding()
 # TODO - rewrite for_each to be able to run this without exporting:
 export -f gnome_add_custom_keybinding
 
+# TODO fix switching to ws 12 and 13 with SK keyboard layout
 # TODO consider putting the keybinding last
 for_each "gnome_add_custom_keybinding " << 'BASH'
     # name          keybinding                command
