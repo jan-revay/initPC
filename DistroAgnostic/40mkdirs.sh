@@ -8,3 +8,4 @@ mkdir -p ~/x/tmp # stuff that can be deleted after restart
 # localSW is also created in source_packages.sh (they are installed there)
 mkdir -p ~/localSW
 mkdir -p ~/tmp
+mkdir -p ~/Documents
