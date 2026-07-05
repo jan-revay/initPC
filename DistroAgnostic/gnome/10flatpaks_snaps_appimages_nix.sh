@@ -45,6 +45,7 @@ else
             com.axosoft.GitKraken
             com.obsproject.Studio
             com.obsproject.Studio.Plugin.WebSocket
+            com.obsproject.Studio.Plugin.SourceClone
             com.github.wwmm.easyeffects
             net.werwolv.ImHex
             io.github.dimtpap.coppwr
