@@ -44,7 +44,6 @@ else
             com.spotify.Client
             com.axosoft.GitKraken
             com.obsproject.Studio
-            com.obsproject.Studio.Plugin.DroidCam
             com.obsproject.Studio.Plugin.WebSocket
             com.github.wwmm.easyeffects
             net.werwolv.ImHex
