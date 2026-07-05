@@ -208,5 +208,6 @@ for_each "gnome_add_custom_keybinding " << 'BASH'
     switch-to-workspace-18-sk "<Alt>ocircumflex"   "wmctrl -s 17" # indexes begin at 0
     move-to-workspace-18-en "<Shift><Alt>semicolon"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 17"
     move-to-workspace-18-sk "<Shift><Alt>ocircumflex"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 17"
-    obs-share-entire-screen "<Shift><Super>e"  "obs-cmd scene switch ENTIRE_SCREEN"
+    obs-share-entire-screen "<Shift><Super>e"  "obs-cmd scene switch 'ENTIRE_SCREEN'"
+    obs-share-vdo-ninja     "<Shift><Super>d"  "obs-cmd scene switch 'Camera - vdo.ninja'"
 BASH
