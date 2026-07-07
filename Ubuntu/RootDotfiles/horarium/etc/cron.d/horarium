@@ -25,7 +25,8 @@
 #
 #   Note: shutdown command uses a default "+1m" delay, hence if I am caught off
 #   guard, I can return by turning my PC on back again and 1m is just enough
-#   time to finish what I was doing.
+#   time to finish what I was doing, resp. I can use `shutdown -c` repeatedly,
+#   to postpone the shutdown a little bit.
 
 
 *      0-6    * * *  root /sbin/shutdown
