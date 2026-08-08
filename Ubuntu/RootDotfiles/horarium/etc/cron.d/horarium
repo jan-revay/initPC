@@ -24,22 +24,23 @@
 #   fit my time-blocks, not the other way around.
 #
 #   Note: shutdown command uses a default "+1m" delay, hence if I am caught off
-#   guard, I can return by turning my PC on back again and 1m is just enough
-#   time to finish what I was doing, resp. I can use `shutdown -c` repeatedly,
-#   to postpone the shutdown a little bit.
-
+#   guard, I can return by turning my PC on back again and I can use:
+#   `shutdown -c` repeatedly, to postpone the shutdown a little bit, until I
+#   finish the necessary work. This prevents me from loosing track of time and
+#   helps me to keep my schedule.
 
 *      0-6    * * *  root /sbin/shutdown
 
 # --- 7 - 9 Time block 0 (phone on for 10 min) ---
 
-50-59   8      * * TUE,WED,FRI-SUN  root /usr/bin/loginctl lock-sessions
+# breakfast (the latest)
+50,55  8      * * TUE,WED,FRI-SUN  root /usr/bin/loginctl lock-sessions
 
 # --- 9 - 12 Time block 1 (phone off) ---
 
 # --- Sext, lunch and walk (phone on) ---
-# Locks session shortly before shutdown (gives a warning effect)
-55     11     * * *  root /usr/bin/loginctl lock-sessions
+# Locking screen shortly before shutdown serves as a warning
+50,55  11     * * *  root /usr/bin/loginctl lock-sessions
 *      12     * * *  root /sbin/shutdown
 
 # --- 13 - 15 Time block 2 (phone off) ---
@@ -51,14 +52,14 @@
 
 # --- 18:00 - 20:00 Bonus time block (optional, phone on)
 
-# Locks session shortly before shutdown (gives a warning effect)
+# Locking screen shortly before shutdown serves as a warning
 50,55  19     * * *  root /usr/bin/loginctl lock-sessions
 *      20-23  * * *  root /sbin/shutdown
 
 
 # === WEEKLY SCHEDULE ===
 # Saturday
-*      18-20  * * Sat  root /sbin/shutdown
+*/15   18-20  * * Sat  root /usr/bin/loginctl lock-sessions
 # Sunday - rest/sport
 *      12-20  * * Sun  root /sbin/shutdown
 
