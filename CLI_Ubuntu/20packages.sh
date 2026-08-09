@@ -125,6 +125,7 @@ APT_PACKAGES=(
     7zip zip file rsync openssh-client
     clazy heaptrack software-properties-common
     qpdf poppler-utils # .pdf utils see: https://linuxhalwa.blogspot.com/2019/07/join-merge-pdf-files-using-pdfunite-tool.html
+    flac
     # stress testing and benchmarking tools
     # php is required by phoronix test suite
     # todo fix php on ubuntu 22.04
