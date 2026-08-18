@@ -53,8 +53,8 @@
 # --- 18:00 - 20:00 Bonus time block (optional, phone on)
 
 # Locking screen shortly before shutdown serves as a gentle reminder
-50,55  19     * * *  root /usr/bin/loginctl lock-sessions
-*      20-23  * * *  root /sbin/shutdown
+30,50,55  18     * * *  root /usr/bin/loginctl lock-sessions
+*         19-23  * * *  root /sbin/shutdown
 
 
 # === WEEKLY SCHEDULE ===
