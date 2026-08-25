@@ -76,12 +76,12 @@ for_each "install_gnome_extension " << 'BASH'
     "clipboard-history@alexsaveau.dev"
     "executor@raujonas.github.io"
     "focus-changer@heartmire" # TODO disable - Tiling shell does this better
-    "focus@scaryrawr.github.io"
+    "focus@scaryrawr.github.io" # TODO remove
     "hide-universal-access@akiirui.github.io"
     "middleclickclose@paolo.tranquilli.gmail.com"
     "native-window-placement@gnome-shell-extensions.gcampax.github.com"
     "panelScroll@sun.wxg@gmail.com"
-    "quake-terminal@diegodario88.github.io"
+    "quake-terminal@diegodario88.github.io" # TODO consider https://sw.kovidgoyal.net/kitty/kittens/quick-access-terminal/ instead
     "steal-my-focus-window@steal-my-focus-window"
     "system-monitor-next@paradoxxx.zero.gmail.com"
     "tilingshell@ferrarodomenico.com"
@@ -92,7 +92,7 @@ for_each "install_gnome_extension " << 'BASH'
     "weeks-start-on-monday@extensions.gnome-shell.fifi.org"
     "window-calls@domandoman.xyz"
     "window-title-is-back@fthx"
-    "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
+    "windowsNavigator@gnome-shell-extensions.gcampax.github.com" # TODO remove
     "workspaces-by-open-apps@favo02.github.com"
 BASH
 
@@ -104,6 +104,9 @@ for_each "gnome-extensions disable " << 'BASH'
     "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
 BASH
 
+# TODO go over all Linux GNOME tiling extensions
+# TODO - go over all GNOME extensions Omakub uses
+# TODO - go over all gnome extensions my coleagues use
 # TODO - use bash list and xargs
 # TODO sort alphabetically
 # TODO add https://extensions.gnome.org/extension/4356/top-bar-organizer/ ? or an alternative
