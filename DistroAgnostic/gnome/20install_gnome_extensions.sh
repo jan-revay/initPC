@@ -99,8 +99,8 @@ BASH
 # TODO do some research and testing wrt windows navigator extension and
 # possibly remove it from the list.
 for_each "gnome-extensions disable " << 'BASH'
-    ding@rastersoft.com
-    focus@scaryrawr.github.io
+    "ding@rastersoft.com"
+    "focus@scaryrawr.github.io"
     "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
 BASH
 
