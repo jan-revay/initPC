@@ -104,7 +104,11 @@ for_each "gsettings set org.gnome.shell.extensions.quake-terminal " << 'BASH'
     auto-hide-window "false"
     horizontal-alignment "1"
     horizontal-size "40"
-    terminal-id 'org.gnome.Ptyxis.desktop'
+    render-on-current-monitor "false"
+    render-on-leftmost-monitor "false"
+    render-on-primary-monitor "true"
+    # terminal-id 'org.gnome.Ptyxis.desktop' - set terminal manually?
+    terminal-id "kitty.desktop"
     vertical-size "50"
 BASH
 
