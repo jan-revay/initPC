@@ -59,6 +59,12 @@ for_each "gsettings set org.gnome.settings-daemon.plugins.power " << 'BASH'
     sleep-inactive-battery-type "nothing"
 BASH
 
+for_each "gsettings set org.gnome.settings-daemon.plugins.housekeeping " << 'BASH'
+    free-percent-notify "0.09375"
+    free-percent-notify-again "0.0625"
+    free-size-gb-no-notify "20"
+BASH
+
 for_each "gsettings set org.gnome.shell.app-switcher " << 'BASH'
     current-workspace-only "true"
 BASH
