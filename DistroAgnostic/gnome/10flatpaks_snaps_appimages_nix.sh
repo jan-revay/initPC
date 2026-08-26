@@ -46,6 +46,7 @@ else
         com.geekbench.Geekbench6
         app.zen_browser.zen
         no.mifi.losslesscut
+        net.nokyan.Resources
     )
     # TODO try fixing flatpak installation without sudo (or at least do some research
     # whether the sudo will not break sth.)
