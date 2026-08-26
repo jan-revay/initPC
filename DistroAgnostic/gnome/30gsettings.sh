@@ -49,7 +49,13 @@ for_each "gsettings set org.gnome.mutter " << 'BASH'
 BASH
 
 for_each "gsettings set org.gnome.settings-daemon.plugins.power " << 'BASH'
+    ambient-enabled "false"
+    idle-dim "false"
+    lid-close-ac-action "nothing"
+    lid-close-battery-action "nothing"
+    sleep-inactive-ac-timeout "0"
     sleep-inactive-ac-type "nothing"
+    sleep-inactive-battery-timeout "0"
     sleep-inactive-battery-type "nothing"
 BASH
 
