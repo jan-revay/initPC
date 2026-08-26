@@ -2,6 +2,7 @@
 . ../prelude.sh
 # The script should not require any user input and should be idempotent.
 
+# TODO - could this cause compatibility issues (e.g. glibc ? - do research)
 install_kitty()
 {
     sudo apt-get remove -y kitty kitty-doc kitty-shell-integration kitty-terminfo
