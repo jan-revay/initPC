@@ -225,6 +225,7 @@ for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-
     indicator-hide-empty "false"
     indicator-round-borders "false"
     indicator-show-background "true"
+    indicator-use-custom-names "true"
     scroll-enable "false"
     windows-sort-method 'COORDINATES'
 BASH
