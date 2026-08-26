@@ -17,7 +17,6 @@
 
 # disable-lock-screen was set to true for some reason on my fresh Ubuntu 24.04 install
 gsettings set org.gnome.desktop.lockdown disable-lock-screen "false"
-gsettings set org.gnome.desktop.session idle-delay "0"
 
 for_each "gsettings set org.gnome.desktop.peripherals.touchpad " << 'BASH'
     click-method "fingers"
