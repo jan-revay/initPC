@@ -45,7 +45,7 @@ for_each "gsettings set org.gnome.mutter " << 'BASH'
     center-new-windows "false"
     dynamic-workspaces "false"
     overlay-key "Super_L"
-    workspaces-only-on-primary "false"
+    workspaces-only-on-primary "true"
 BASH
 
 for_each "gsettings set org.gnome.shell.app-switcher " << 'BASH'
