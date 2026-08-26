@@ -51,7 +51,7 @@ for_each "gsettings set org.gnome.shell.extensions.clipboard-history " << 'BASH'
     prev-entry "['<Shift><Alt>v']"
     toggle-menu "['<Super>v']"
     toggle-private-mode "[]"
-    topbar-preview-size "40"
+    topbar-preview-size "30"
     window-width-percentage "100"
 BASH
 
