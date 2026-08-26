@@ -82,7 +82,7 @@ readonly APT_GUI_PACKAGES=(
     # it is just a bash script, hence it might make sense to install from source
     meld kdevelop coqide qgit cmake-gui # gitk git-gui
     qtcreator
-    kitty alacritty
+    alacritty # kitty - installed independently via sh script
 
     # ===== FILES AND DISK MANAGEMENT
     gparted
