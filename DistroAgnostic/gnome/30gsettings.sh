@@ -48,6 +48,11 @@ for_each "gsettings set org.gnome.mutter " << 'BASH'
     workspaces-only-on-primary "true"
 BASH
 
+for_each "gsettings set org.gnome.settings-daemon.plugins.power " << 'BASH'
+    sleep-inactive-ac-type "nothing"
+    sleep-inactive-battery-type "nothing"
+BASH
+
 for_each "gsettings set org.gnome.shell.app-switcher " << 'BASH'
     current-workspace-only "true"
 BASH
