@@ -150,6 +150,7 @@ fi # Ubuntu 26.04
 # TODO also add numeric keyboard tiling shortcuts just in case
 # TODO find out what is the difference between regular and -ignore-ta keybindings
 # TODO go through tiling assistant issues and all settings again to find hidden gems :D
+# TODO - check why predefined layouts do not tile completely in tiling assistant BUG
 # tiling-assistant@ubuntu.com
 for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
     activate-layout0 "['<Shift><Alt>q']"
