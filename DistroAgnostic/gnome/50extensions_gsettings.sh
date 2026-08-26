@@ -144,6 +144,7 @@ BASH
 fi # Ubuntu 26.04
 
 # TODO also add numeric keyboard tiling shortcuts just in case
+# TODO find out what is the difference between regular and -ignore-ta keybindings
 # tiling-assistant@ubuntu.com
 for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
     activate-layout0 "['<Shift><Alt>q']"
