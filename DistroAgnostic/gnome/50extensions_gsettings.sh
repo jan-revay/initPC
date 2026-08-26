@@ -125,47 +125,57 @@ for_each "gsettings set org.gnome.shell.extensions.system-monitor-next-applet " 
     disk-graph-width "60"
 BASH
 
-# Ubuntu 24.04 CI
+# Ubuntu 24.04
 if gsettings get org.gnome.shell.extensions.tiling-assistant focus-hint; then
-
-    # TODO also add numeric keyboard tiling shortcuts just in case
-    # tiling-assistant@ubuntu.com
     for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
-        activate-layout0 "['<Shift><Alt>q']"
-        activate-layout1 "['<Shift><Alt>w']"
-        activate-layout2 "['<Shift><Alt>a']"
-        activate-layout3 "['<Shift><Alt>s']"
-        dynamic-keybinding-behavior "0"
-        enable-advanced-experimental-features "true"
-        enable-raise-tile-group "false"
-        enable-tile-animations "false"
-        enable-tiling-popup "false"
-        enable-untile-animations "false"
         focus-hint "3"
         focus-hint-color "rgb(192,97,203)"
         focus-hint-outline-border-radius "6"
         focus-hint-outline-size "6"
         focus-hint-outline-style "1"
-        maximize-with-gap "true"
-        restore-window "['<Super>Down']"
-        screen-top-gap "6"
-        screen-left-gap "6"
-        screen-right-gap "6"
-        screen-bottom-gap "6"
-        tile-bottomleft-quarter "['<Alt>a']"
-        tile-bottomright-quarter "['<Alt>s']"
-        tile-left-half "['<Alt>z']"
-        tile-left-half-ignore-ta "['<Super>Left']"
-        tile-maximize "['<Super>Up']"
-        tile-right-half "['<Alt>x']"
-        tile-right-half-ignore-ta "['<Super>Right']"
-        tile-topleft-quarter "['<Alt>q']"
-        tile-topright-quarter "['<Alt>w']"
-        tiling-popup-all-workspace "false"
-        window-gap "8"
 BASH
+elif gsettings get org.gnome.shell.extensions.tiling-assistant active-window-hint; then
+    for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
+        active-window-hint "2"
+        active-window-hint-border-size "6"
+        active-window-hint-color "rgb(192,97,203)"
+        window-gap "1"
+BASH
+fi # Ubuntu 26.04
 
-fi # Ubuntu 24.04 CI
+# TODO also add numeric keyboard tiling shortcuts just in case
+# tiling-assistant@ubuntu.com
+for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
+    activate-layout0 "['<Shift><Alt>q']"
+    activate-layout1 "['<Shift><Alt>w']"
+    activate-layout2 "['<Shift><Alt>a']"
+    activate-layout3 "['<Shift><Alt>s']"
+    dynamic-keybinding-behavior "0"
+    enable-advanced-experimental-features "true"
+    enable-raise-tile-group "false"
+    enable-tile-animations "false"
+    enable-tiling-popup "false"
+    enable-untile-animations "false"
+    maximize-with-gap "true"
+    restore-window "['<Super>Down']"
+    screen-top-gap "6"
+    screen-left-gap "6"
+    screen-right-gap "6"
+    screen-bottom-gap "6"
+    tile-bottom-half "['<Alt><Shift>x']"
+    tile-bottomleft-quarter "['<Alt>a']"
+    tile-bottomright-quarter "['<Alt>s']"
+    tile-left-half "['<Alt>z']"
+    tile-left-half-ignore-ta "['<Super>Left']"
+    tile-maximize "['<Super>Up']"
+    tile-right-half "['<Alt>x']"
+    tile-right-half-ignore-ta "['<Super>Right']"
+    tile-top-half "['<Alt><Shift>z']"
+    tile-topleft-quarter "['<Alt>q']"
+    tile-topright-quarter "['<Alt>w']"
+    tiling-popup-all-workspace "false"
+    window-gap "8"
+BASH
 
 # TODO configure Tiling shell in detail & in congruence with other keybindings
 # and settings. https://github.com/domferr/tilingshell
