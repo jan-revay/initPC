@@ -182,13 +182,27 @@ BASH
 # and settings. https://github.com/domferr/tilingshell
 # tilingshell@ferrarodomenico.com
 for_each "gsettings set org.gnome.shell.extensions.tilingshell " << 'BASH'
-    enable-move-keybindings "false"
-
+    cycle-layouts "['<Control><Alt><Super>l']"
+    cycle-layouts-backward "['<Shift><Control><Alt><Super>l']"
+    enable-move-keybindings "true"
+    enable-span-multiple-tiles "false"
+    focus-window-down "['<Control><Alt>j']"
+    focus-window-left "['<Control><Alt>h']"
+    focus-window-right "['<Control><Alt>l']"
+    focus-window-up "['<Control><Alt>k']"
+    inner-gaps "6"
+    move-window-down "['<Shift><Control><Alt><Super>Down']"
+    move-window-left "['<Shift><Control><Alt><Super>Left']"
+    move-window-right "['<Shift><Control><Alt><Super>Right']"
+    move-window-up "['<Shift><Control><Alt><Super>Up']"
+    outer-gaps "8"
     # TODO - this setting probably also sets and unsets stuff in org.gnome.mutter -
     # test whether setting these two values in tiling shell is consistent and behaves
     # the same as setting them in the Extension settings app (if not correct that)
     # I probably need to do more
     overridden-settings '{"org.gnome.mutter":{"edge-tiling":"false"}}'
+    restore-window-original-size "false"
+    span-multiple-tiles-activation-key "['-1']"
 BASH
 
 # Vitals@CoreCoding.com
