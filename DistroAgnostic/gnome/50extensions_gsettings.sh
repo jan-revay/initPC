@@ -53,6 +53,9 @@ for_each "gsettings set org.gnome.shell.extensions.clipboard-history " << 'BASH'
     toggle-private-mode "[]"
     topbar-preview-size "30"
     window-width-percentage "100"
+    render-on-primary-monitor "true"
+    render-on-current-monitor "false"
+    render-on-leftmost-monitor "false"
 BASH
 
 # ubuntu-dock@ubuntu.com
