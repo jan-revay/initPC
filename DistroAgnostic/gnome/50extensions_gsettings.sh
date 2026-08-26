@@ -55,6 +55,7 @@ for_each "gsettings set org.gnome.shell.extensions.clipboard-history " << 'BASH'
     window-width-percentage "100"
 BASH
 
+# TODO go through the dock settings again and in detail
 # ubuntu-dock@ubuntu.com
 for_each "gsettings set org.gnome.shell.extensions.dash-to-dock " << 'BASH'
     always-center-icons "true"
@@ -81,6 +82,7 @@ for_each "gsettings set org.gnome.shell.extensions.dash-to-dock " << 'BASH'
     show-windows-preview "true"
 BASH
 
+# TODO consider remowing the alternative shortcuts
 # focus-changer@heartmire
 for_each "gsettings set org.gnome.shell.extensions.focus-changer " << 'BASH'
     focus-down "['<Control><Alt>Down', '<Control><Alt>a']"
@@ -97,6 +99,7 @@ for_each "gsettings set org.gnome.shell.extensions.panelScroll " << 'BASH'
     wrap "false"
 BASH
 
+# TODO consider using https://sw.kovidgoyal.net/kitty/kittens/quick-access-terminal/
 # quake-terminal@diegodario88.github.io
 for_each "gsettings set org.gnome.shell.extensions.quake-terminal " << 'BASH'
     always-on-top "true"
@@ -112,6 +115,7 @@ for_each "gsettings set org.gnome.shell.extensions.quake-terminal " << 'BASH'
     vertical-size "50"
 BASH
 
+# TODO add all options
 # system-monitor-next@paradoxxx.zero.gmail.com
 for_each "gsettings set org.gnome.shell.extensions.system-monitor-next-applet " << 'BASH'
     cpu-system-color "#c01c28ff"
@@ -145,6 +149,7 @@ fi # Ubuntu 26.04
 
 # TODO also add numeric keyboard tiling shortcuts just in case
 # TODO find out what is the difference between regular and -ignore-ta keybindings
+# TODO go through tiling assistant issues and all settings again to find hidden gems :D
 # tiling-assistant@ubuntu.com
 for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
     activate-layout0 "['<Shift><Alt>q']"
@@ -180,6 +185,7 @@ BASH
 
 # TODO configure Tiling shell in detail & in congruence with other keybindings
 # and settings. https://github.com/domferr/tilingshell
+# TODO go through the settings, help and manuals in detail
 # tilingshell@ferrarodomenico.com
 for_each "gsettings set org.gnome.shell.extensions.tilingshell " << 'BASH'
     cycle-layouts "['<Control><Alt><Super>l']"
@@ -205,6 +211,7 @@ for_each "gsettings set org.gnome.shell.extensions.tilingshell " << 'BASH'
     span-multiple-tiles-activation-key "['-1']"
 BASH
 
+# TODO configure in detail
 # Vitals@CoreCoding.com
 for_each "gsettings set org.gnome.shell.extensions.vitals " << 'BASH'
     fixed-widths "false"
@@ -217,6 +224,7 @@ for_each "gsettings set org.gnome.shell.extensions.window-title-is-back " << 'BA
 BASH
 
 # TODO add Size and spacing settings - go through setting up from defaults again (reinstall)
+# TODO configure in detail
 # workspaces-by-open-apps@favo02.github.com
 for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-apps " << 'BASH'
     apps-inactive-effect "NOTHING"
