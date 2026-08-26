@@ -207,4 +207,12 @@ if [[ "${__INITPC_PRELUDE_SOURCED__}" != "true" ]]; then
         exit 1
         # run-parts --regex='' --exit-on-error --verbose
     }
+    ensure_line()
+    {
+        local line="$1"
+        local file="$2"
+
+        grep -Fxq -- "$line" "$file" 2> /dev/null \
+            || printf '%s\n' "$line" >> "$file"
+    }
 fi
