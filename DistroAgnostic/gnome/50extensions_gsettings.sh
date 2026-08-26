@@ -202,6 +202,7 @@ for_each "gsettings set org.gnome.shell.extensions.window-title-is-back " << 'BA
     fixed-width "false"
 BASH
 
+# TODO add Size and spacing settings - go through setting up from defaults again (reinstall)
 # workspaces-by-open-apps@favo02.github.com
 for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-apps " << 'BASH'
     apps-inactive-effect "NOTHING"
