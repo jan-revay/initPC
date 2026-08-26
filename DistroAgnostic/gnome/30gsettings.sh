@@ -16,7 +16,9 @@
 # https://wiki.gnome.org/HowDoI/GSettings
 
 # disable-lock-screen was set to true for some reason on my fresh Ubuntu 24.04 install
-gsettings set org.gnome.desktop.lockdown disable-lock-screen "false"
+if [[ $(gsettings get org.gnome.desktop.lockdown disable-lock-screen) != "false" ]]; then
+    gsettings set org.gnome.desktop.lockdown disable-lock-screen "false"
+fi
 
 for_each "gsettings set org.gnome.desktop.peripherals.touchpad " << 'BASH'
     click-method "fingers"
