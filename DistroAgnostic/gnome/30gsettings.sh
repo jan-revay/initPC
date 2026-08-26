@@ -21,7 +21,7 @@ gsettings set org.gnome.desktop.lockdown disable-lock-screen "false"
 for_each "gsettings set org.gnome.desktop.peripherals.touchpad " << 'BASH'
     click-method "fingers"
     disable-while-typing "true"
-    send-events "disabled"
+    send-events "disabled-on-external-mouse"
 BASH
 
 for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
