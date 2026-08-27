@@ -31,8 +31,7 @@ BASH
 # GNOME settings -> Search (influences results in super_L overview search menu)
 gsettings set org.gnome.desktop.search-providers disabled \
     "['org.gnome.seahorse.Application.desktop', 'org.gnome.clocks.desktop', \
-'org.gnome.Characters.desktop', 'org.gnome.Calendar.desktop', \
-'org.gnome.Calculator.desktop', 'org.gnome.Terminal.desktop']"
+ 'org.gnome.Calendar.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Terminal.desktop']"
 
 for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
     action-double-click-titlebar "toggle-maximize"
