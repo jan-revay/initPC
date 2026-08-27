@@ -40,8 +40,8 @@
 
 # --- Sext, lunch and walk (phone on) ---
 # Locking screen shortly before shutdown serves as a gentle reminder
-50,55  11     * * *  root /usr/bin/loginctl lock-sessions
-*      12     * * *  root /sbin/shutdown
+45,50,55  11     * * *  root /usr/bin/loginctl lock-sessions
+*         12     * * *  root /sbin/shutdown
 
 # --- 13 - 15 Time block 2 (phone off) ---
 # 15,17  15     * * *  root /usr/bin/loginctl lock-sessions
@@ -53,8 +53,8 @@
 # --- 18:00 - 20:00 Bonus time block (optional, phone on)
 
 # Locking screen shortly before shutdown serves as a gentle reminder
-30,50,55  18     * * *  root /usr/bin/loginctl lock-sessions
-*         19-23  * * *  root /sbin/shutdown
+30,45,50,55  18     * * *  root /usr/bin/loginctl lock-sessions
+*            19-23  * * *  root /sbin/shutdown
 
 
 # === WEEKLY SCHEDULE ===
