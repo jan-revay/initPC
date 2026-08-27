@@ -129,6 +129,7 @@ for_each "gsettings set org.gnome.shell.extensions.system-monitor-next-applet " 
     disk-graph-width "60"
 BASH
 
+# TODO consider smaller window-hint-border-size e.g. 4 or 5
 # Ubuntu 24.04
 if gsettings get org.gnome.shell.extensions.tiling-assistant focus-hint; then
     for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
