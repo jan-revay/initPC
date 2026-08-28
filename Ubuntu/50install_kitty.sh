@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash +x
 . ../prelude.sh
 # The script should not require any user input and should be idempotent.
 
@@ -14,6 +14,7 @@ install_kitty()
     # TODO - security. Is this secure?
     curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin launch=n
 
+    mkdir -p ~/.local/bin/
     # Create symbolic links to add kitty and kitten to PATH (assuming ~/.local/bin is in
     # your system-wide PATH)
     ln -sf ~/.local/kitty.app/bin/kitty ~/.local/kitty.app/bin/kitten ~/.local/bin/
