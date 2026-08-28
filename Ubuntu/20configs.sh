@@ -88,12 +88,6 @@ fi
 
 # set default apps
 xdg-mime default code.desktop text/markdown
-xdg-mime default code.desktop application/x-shellscript
-
-if ! sudo update-alternatives --set editor /usr/bin/nvim; then
-    sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 100
-    sudo update-alternatives --set editor /usr/bin/nvim
-fi
 
 # TODOs:
 # Add - add slovak qwerty keyboard layout
