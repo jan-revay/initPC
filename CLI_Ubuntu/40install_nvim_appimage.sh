@@ -14,6 +14,7 @@ install_nvim()
     pushd "${NVIM_DOWNLOAD_PATH}"
     sudo curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
     sudo chmod u+x nvim-linux-x86_64.appimage
+    sudo rm -rf ./squashfs-root
     # I benchmarked it. The extracted AppImage has around 50ms faster startup
     sudo ./nvim-linux-x86_64.appimage --appimage-extract
     sudo ln -sfTn "${NVIM_DOWNLOAD_PATH}/squashfs-root/AppRun" "${NVIM_INSTALL_PATH}"
