@@ -113,6 +113,7 @@ APT_PACKAGES=(
     # Python packages
     python3-matplotlib python3-mock python3-numpy python3-pandas
     python3-pytest python3-requests python3-scipy python3-pylsp
+    python3-pynvim
 
     # requirements for llvm and rust install scripts
     wget lsb-release gnupg curl
@@ -200,8 +201,10 @@ source "$HOME/.cargo/env"
 CARGO_PACKAGES=(tokei git-graph)
 time cargo install "${CARGO_PACKAGES[@]}"
 
+go install github.com/jesseduffield/lazygit@latest
+
 # NPM packages
-time sudo npm i -g bash-language-server
+time sudo npm install -g bash-language-server tree-sitter-cli @mermaid-js/mermaid-cli
 
 # TODO remove is not used (also with GEM)
 # GEM packages
