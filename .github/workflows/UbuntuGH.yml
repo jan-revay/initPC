@@ -28,7 +28,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-24.04]
+        os: [ubuntu-24.04, ubuntu-26.04]
         gui: [GNOME, CLI] # TODO Add GNOME test to containers.yml
     name: ${{ matrix.os }}_${{ matrix.gui }}
     runs-on: ${{ matrix.os }}
