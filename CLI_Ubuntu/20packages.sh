@@ -136,6 +136,7 @@ APT_PACKAGES=(
     #    libpopt-dev # TODO mpicc
 
     stressapptest stress-ng inxi
+    hyperfine
 )
 
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
