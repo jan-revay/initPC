@@ -67,7 +67,7 @@ APT_PACKAGES=(
 
     # editors
     # TODO consider moving qtcreator to the GUI part of the script
-    neovim emacs hexedit
+    emacs hexedit
     wl-clipboard # copy/paste to/from nvim
 
     # utils
