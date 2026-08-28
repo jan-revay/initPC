@@ -127,6 +127,7 @@ jobs:
           ! -path "./runners/*" \
           ! -path "./x/helix/.git/*" \
           ! -path "./actions-runner/*" \
+          ! -path "./.config/go/telemetry/*" \
           ! -iname "*.log" \
           ! -name ".wget-hsts" \
         \) -print0 |
