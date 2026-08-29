@@ -157,6 +157,9 @@ for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
     activate-layout1 "['<Shift><Alt>w']"
     activate-layout2 "['<Shift><Alt>a']"
     activate-layout3 "['<Shift><Alt>s']"
+    activate-layout4 "['<Shift><Control><Alt>q']" # center tile
+    activate-layout6 "['<Shift><Control><Alt>e']" # file explorers
+    activate-layout8 "['<Shift><Control><Alt>a']" # kitties
     dynamic-keybinding-behavior "0"
     enable-advanced-experimental-features "true"
     enable-raise-tile-group "false"
