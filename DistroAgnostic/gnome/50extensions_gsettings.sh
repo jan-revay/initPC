@@ -177,6 +177,7 @@ for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
     tile-bottom-half "['<Alt><Shift>x']"
     tile-bottomleft-quarter "['<Alt>a']"
     tile-bottomright-quarter "['<Alt>s']"
+    tile-edit-mode "['<Shift><Control><Alt><Super>e']"
     tile-left-half "['<Alt>z']"
     tile-left-half-ignore-ta "['<Super>Left']"
     tile-maximize "['<Super>Up']"
