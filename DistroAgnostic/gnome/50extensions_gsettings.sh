@@ -195,6 +195,7 @@ BASH
 # TODO go through the settings, help and manuals in detail
 # tilingshell@ferrarodomenico.com
 for_each "gsettings set org.gnome.shell.extensions.tilingshell " << 'BASH'
+    active-screen-edges "false"
     cycle-layouts "['<Control><Alt><Super>l']"
     cycle-layouts-backward "['<Shift><Control><Alt><Super>l']"
     enable-move-keybindings "true"
@@ -213,7 +214,7 @@ for_each "gsettings set org.gnome.shell.extensions.tilingshell " << 'BASH'
     # test whether setting these two values in tiling shell is consistent and behaves
     # the same as setting them in the Extension settings app (if not correct that)
     # I probably need to do more
-    overridden-settings '{"org.gnome.mutter":{"edge-tiling":"false"}}'
+    overridden-settings '{"org.gnome.mutter.keybindings":{"toggle-tiled-right":"@as []","toggle-tiled-left":"@as []"},"org.gnome.desktop.wm.keybindings":{"maximize":"@as []","unmaximize":"@as []"}}'
     restore-window-original-size "false"
     span-multiple-tiles-activation-key "['-1']"
 BASH
