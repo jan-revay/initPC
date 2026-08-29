@@ -144,7 +144,6 @@ elif gsettings get org.gnome.shell.extensions.tiling-assistant active-window-hin
         active-window-hint "2"
         active-window-hint-border-size "6"
         active-window-hint-color "rgb(192,97,203)"
-        window-gap "1"
 BASH
 fi # Ubuntu 26.04
 
