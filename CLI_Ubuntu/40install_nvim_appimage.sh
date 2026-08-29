@@ -5,6 +5,10 @@
 # TODO implement AppImageUpdate method
 # https://github.com/AppImageCommunity/AppImageUpdate
 # TODO - consider compiling nvim myself or using tar.gz
+# TODO .tar.gz is quicker it seems - see:
+# hyperfine --warmup 10 './nvim "+qa" ~/initPC/Ubuntu/10packages.sh' '/usr/local/bin/nvim "+qa" ~/initPC/Ubuntu/10packages.sh'
+# TODO - benchmark multiple scenarios and use .tar.gz instead?
+# TODO - try compiling from source with tuned flags and compare to .tar.gz
 install_nvim()
 {
     readonly NVIM_DOWNLOAD_PATH="/opt/nvim"
