@@ -11,6 +11,7 @@
 # TODO - try compiling from source with tuned flags and compare to .tar.gz
 install_nvim()
 {
+    sudo apt-get -y remove neovim
     readonly NVIM_DOWNLOAD_PATH="/opt/nvim"
     readonly NVIM_INSTALL_PATH="/usr/local/bin/nvim"
 
