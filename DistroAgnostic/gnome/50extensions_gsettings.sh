@@ -165,6 +165,8 @@ for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
     enable-tiling-popup "false"
     enable-untile-animations "false"
     maximize-with-gap "false"
+    move-adaptive-tiling-mod "2"
+    move-favorite-layout-mod "0"
     restore-window "['<Super>Down']"
     screen-top-gap "10"
     screen-left-gap "10"
