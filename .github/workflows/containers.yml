@@ -24,14 +24,14 @@ on:
     - cron: "17 3 * * 3"
   push:
     # TODO add relevant paths resp. rewrite as described in the readme
-    branches: [ "devel_ubuntu_25.10" ]
+    branches: [ "devel_ubuntu_26.04" ]
     paths:
     - '*.sh'
     - 'CLI_Ubuntu/**.sh'
     - 'DistroAgnostic/**.sh*'
     - '.github/workflows/containers.yml'
   pull_request:
-    branches: [ "devel_ubuntu_25.10" ]
+    branches: [ "devel_ubuntu_26.04" ]
 
 jobs:
   distro-test:

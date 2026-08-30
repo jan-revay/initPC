@@ -6,13 +6,13 @@ on:
     # Runs at 03:17, only on Wednesday
     - cron: "17 3 * * 3"
   push:
-    branches: [ "devel_ubuntu_25.10" ]
+    branches: [ "devel_ubuntu_26.04" ]
     paths:
     - '*.sh'
     - 'DistroAgnostic/**.sh*'
     - '.github/workflows/DistroAgnostic.yml'
   pull_request:
-    branches: [ "devel_ubuntu_25.10" ]
+    branches: [ "devel_ubuntu_26.04" ]
 
 jobs:
   build:
