@@ -218,6 +218,7 @@ for_each "gsettings set org.gnome.shell.extensions.tilingshell " << 'BASH'
     restore-window-original-size "false"
     snap-assist-sync-layout "true"
     span-multiple-tiles-activation-key "['-1']"
+    tiling-system-deactivation-key "['1']"
 BASH
 
 # TODO configure in detail
