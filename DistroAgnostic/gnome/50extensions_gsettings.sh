@@ -118,15 +118,15 @@ BASH
 # TODO add all options
 # system-monitor-next@paradoxxx.zero.gmail.com
 for_each "gsettings set org.gnome.shell.extensions.system-monitor-next-applet " << 'BASH'
-    cpu-system-color "#c01c28ff"
-    rotate-labels "true"
-    show-tooltip "true"
-    icon-display "false"
-    net-graph-width "60"
-    memory-graph-width "60"
     cpu-graph-width "60"
+    cpu-system-color "#c01c28ff"
     disk-display "true"
     disk-graph-width "60"
+    icon-display "false"
+    memory-graph-width "60"
+    net-graph-width "60"
+    rotate-labels "true"
+    show-tooltip "true"
 BASH
 
 # TODO consider smaller window-hint-border-size e.g. 4 or 5
