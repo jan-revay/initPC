@@ -188,6 +188,7 @@ for_each "gnome_add_custom_keybinding " << 'BASH'
     firefox         "<Super>1"                "firefox --new-window"
     google-chrome   "<Super>2"                "google-chrome"
     qpwgraph        "<Super>3"                "qpwgraph"
+    zen             "<Super>4"                "flatpak run app.zen_browser.zen"
     # using media-key home keybinding would just focus the existing Nautilus window
     nautilus    "<Super>e"                "nautilus --new-window"
     todoist     "<Shift><Super>q"         "todoist"
