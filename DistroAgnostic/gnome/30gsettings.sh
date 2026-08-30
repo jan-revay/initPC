@@ -87,10 +87,15 @@ for_each "gsettings set org.gnome.desktop.input-sources " << 'BASH'
 BASH
 
 for_each "gsettings set org.gnome.desktop.interface " << 'BASH'
-    enable-animations "false"
     color-scheme "prefer-dark"
+    cursor-size "64"
+    document-font-name "Sans 13"
+    enable-animations "false"
+    font-hinting "slight"
+    font-name "Ubuntu Sans 14"
     gtk-theme "Yaru-red-dark"
     icon-theme "Yaru-red-dark"
+    monospace-font-name "Ubuntu Sans Mono 15"
     show-battery-percentage "true"
 BASH
 
@@ -114,12 +119,6 @@ fi
 # If on my work ThinkPad P1 Gen8
 if lscpu | grep -F "Intel(R) Core(TM) Ultra 7 265H"; then
     for_each "gsettings set org.gnome.desktop.interface " << 'BASH'
-        cursor-size "64"
-        document-font-name "Sans 13"
-        font-hinting "slight"
-        font-name "Ubuntu Sans 14"
-        monospace-font-name "Ubuntu Sans Mono 15"
-
         # WARNING: text-scaling-factor can break Chromium (or other GTK apps) and cause
         # the app window to increase in size on refocus (due to floating point rounding
         # errors). Always set the value to decimal that can be represented as float without
@@ -130,6 +129,5 @@ if lscpu | grep -F "Intel(R) Core(TM) Ultra 7 265H"; then
         # TODO also try fractional scaling on laptop monitor
         # TODO try          1.234375 , 1.21875 and 1.1875
         # equals in binary  1.001111 , 1.00111, 1.0011
-
 BASH
 fi
