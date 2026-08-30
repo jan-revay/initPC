@@ -230,7 +230,13 @@ BASH
 # window-title-is-back@fthx
 for_each "gsettings set org.gnome.shell.extensions.window-title-is-back " << 'BASH'
     colored-icon "true"
-    fixed-width "false"
+    ease-time "10"
+    fixed-width "true"
+    icon-size "25"
+    show-app "true"
+    show-icon "true"
+    show-title "true"
+    width "10"
 BASH
 
 # TODO add Size and spacing settings - go through setting up from defaults again (reinstall)
@@ -240,6 +246,7 @@ for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-
     apps-inactive-effect "NOTHING"
     apps-minimized-effect "NOTHING"
     click-on-active-overview "false"
+    icons-group "GROUP AND SHOW COUNT"
     indicator-hide-empty "false"
     indicator-round-borders "false"
     indicator-show-background "true"
