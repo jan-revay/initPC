@@ -216,6 +216,7 @@ for_each "gsettings set org.gnome.shell.extensions.tilingshell " << 'BASH'
     # I probably need to do more
     overridden-settings '{"org.gnome.mutter.keybindings":{"toggle-tiled-right":"@as []","toggle-tiled-left":"@as []"},"org.gnome.desktop.wm.keybindings":{"maximize":"@as []","unmaximize":"@as []"}}'
     restore-window-original-size "false"
+    snap-assist-sync-layout "true"
     span-multiple-tiles-activation-key "['-1']"
 BASH
 
