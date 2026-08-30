@@ -1,17 +1,21 @@
 # Manual Init steps - Ubuntu
 
 ## Install Vesktop discord client??
+
 - <https://vesktop.dev/>
 
 ## Install OBS-cmd
 
 ## Audio
+
 ### Ubuntu Studio Installer
 
 If this is a PC on which I am recording audio, install:
+
 - <https://ubuntustudio.org/ubuntu-studio-installer/>
 and select options:
 - ubuntustudio-lowlatency-settings (kernel parameters)
+  - only select preempt=full boot parameter if any (other params can cause freezes - particularly nvidia driver related freezes)
 - ubuntustudio-performance-tweaks (pam_limits a.s.o.)
 - optionally other packages from the Ubuntu Studio Installer
 - ubuntustudio-audio-config - set PW/jack quantum to 1024
@@ -34,7 +38,6 @@ When clipping in 2i2 with google chrome, system mic volume is lowered. This mess
 ### Firefox and native apps that use mic or WebRTC
 
 - test the sound and delay
-
 
 ## Other
 
@@ -60,7 +63,7 @@ TODO:
 - harmonize keybindings and behavior between ubuntu dock and all workspaces-by-open-apps extension (e.g. what a middle click does and what a right click does...) consider whether overview on second click is ok
 
 - PWAs
-    * install pwas-for-firefox extensions <https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/>
-    * install Messages, Messenger and WhatsApp as PWAs
-    * install MS Whiteboard and Google Keep as PWAs (via Google Chrome)
-    * install keybindings extension <https://browsergadgets.io/gadgets/mywebshortcuts> and set up shortcuts for MS Whiteboard
+  - install pwas-for-firefox extensions <https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/>
+  - install Messages, Messenger and WhatsApp as PWAs
+  - install MS Whiteboard and Google Keep as PWAs (via Google Chrome)
+  - install keybindings extension <https://browsergadgets.io/gadgets/mywebshortcuts> and set up shortcuts for MS Whiteboard
