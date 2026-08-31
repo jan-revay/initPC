@@ -80,6 +80,9 @@ function run_all
 # TODO do sth like run-parts --regex '^.*\.sh$' --test ~/initPC/DistroAgnostic/
 # TODO Libraries must have a .sh extension and should not be executable. (google
 # style guide)
+#
+# TODO - use just a regular run-parts with regex option and exit on error
+# TODO do platform detection here
 
 run_all "CLI_Ubuntu"
 run_all "Ubuntu"
