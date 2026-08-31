@@ -12,9 +12,8 @@ BASH
 if gsettings get org.gnome.Ptyxis scrollbar-policy; then
     for_each "gsettings set org.gnome.Ptyxis.Shortcuts " << 'BASH'
         close-tab "<Control>w"
-        move-next-tab "<Control>Tab"
-        move-previous-tab "<Shift><Control>Tab"
         focus-tab-1 "<Control>1"
+        focus-tab-10 "<Control>0"
         focus-tab-2 "<Control>2"
         focus-tab-3 "<Control>3"
         focus-tab-4 "<Control>4"
@@ -23,7 +22,8 @@ if gsettings get org.gnome.Ptyxis scrollbar-policy; then
         focus-tab-7 "<Control>7"
         focus-tab-8 "<Control>8"
         focus-tab-9 "<Control>9"
-        focus-tab-10 "<Control>0"
+        move-next-tab "<Control>Tab"
+        move-previous-tab "<Shift><Control>Tab"
 BASH
 fi # Ubuntu 24.04
 
@@ -34,8 +34,13 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     # TODO try finding a solution to also focus the window that has highest Z
     # order after the lower action.
     # TODO this does not seem to work (lower)
+    cycle-windows "['<Alt>Tab']"
+    cycle-windows-backward "['<Shift><Alt>Tab']"
     lower "['<Control><Alt>space']"
     move-to-workspace-1 "['<Alt><Shift>Above_Tab', '<Control><Shift><Super>Home']"
+    move-to-workspace-10 "['<Alt><Shift>9']"
+    move-to-workspace-11 "['<Alt><Shift>0']"
+    move-to-workspace-12 "['<Alt><Shift>minus']"
     move-to-workspace-2 "['<Alt><Shift>1']"
     move-to-workspace-3 "['<Alt><Shift>2']"
     move-to-workspace-4 "['<Alt><Shift>3']"
@@ -44,17 +49,17 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     move-to-workspace-7 "['<Alt><Shift>6']"
     move-to-workspace-8 "['<Alt><Shift>7']"
     move-to-workspace-9 "['<Alt><Shift>8']"
-    move-to-workspace-10 "['<Alt><Shift>9']"
-    move-to-workspace-11 "['<Alt><Shift>0']"
-    move-to-workspace-12 "['<Alt><Shift>minus']"
+    move-to-workspace-down "[]"
     move-to-workspace-last "['<Control><Shift><Super>End']"
     move-to-workspace-left "['<Control><Shift><Super>Left']"
     move-to-workspace-right "['<Control><Shift><Super>Right']"
     move-to-workspace-up "[]"
-    move-to-workspace-down "[]"
     switch-group "[]"
     switch-group-backward "[]"
     switch-to-workspace-1 "['<Alt>Above_Tab', '<Control><Super>Home']"
+    switch-to-workspace-10 "['<Alt>9']"
+    switch-to-workspace-11 "['<Alt>0']"
+    switch-to-workspace-12 "['<Alt>minus']"
     switch-to-workspace-2 "['<Alt>1']"
     switch-to-workspace-3 "['<Alt>2']"
     switch-to-workspace-4 "['<Alt>3']"
@@ -63,25 +68,20 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     switch-to-workspace-7 "['<Alt>6']"
     switch-to-workspace-8 "['<Alt>7']"
     switch-to-workspace-9 "['<Alt>8']"
-    switch-to-workspace-10 "['<Alt>9']"
-    switch-to-workspace-11 "['<Alt>0']"
-    switch-to-workspace-12 "['<Alt>minus']"
+    switch-to-workspace-down "[]"
     switch-to-workspace-last "['<Control><Super>End']"
     switch-to-workspace-left "['<Control><Super>Left', '<Control><Super>h']"
     switch-to-workspace-right "['<Control><Super>Right', '<Control><Super>l']"
     switch-to-workspace-up "[]"
-    switch-to-workspace-down "[]"
     switch-windows "[]"
     switch-windows-backward "[]"
-    cycle-windows "['<Alt>Tab']"
-    cycle-windows-backward "['<Shift><Alt>Tab']"
     toggle-fullscreen "['F11']"
 BASH
 
 for_each "gsettings set org.gnome.settings-daemon.plugins.media-keys " << 'BASH'
 # TODO fix mic mute - not working resp. not displaying notification correctly
-    mic-mute "['<Shift><Super>a']"
     control-center "['<Super>s']"
+    mic-mute "['<Shift><Super>a']"
 BASH
 
 for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
@@ -89,20 +89,6 @@ for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
 # in the upper right corner of the top-bar (where shut-down menu is).
 # The correct key for gnome settings is in:
 # org.gnome.settings-daemon.plugins.media-keys control-center
-    toggle-quick-settings "[]"
-    screenshot "['Print']"
-    show-screenshot-ui "['<Shift><Super>s']"
-    toggle-overview "['<Control><Alt><Super>o']"
-    toggle-message-tray "['<Super>m']"
-    switch-to-application-1 "[]"
-    switch-to-application-2 "[]"
-    switch-to-application-3 "[]"
-    switch-to-application-4 "[]"
-    switch-to-application-5 "[]"
-    switch-to-application-6 "[]"
-    switch-to-application-7 "[]"
-    switch-to-application-8 "[]"
-    switch-to-application-9 "[]"
     open-new-window-application-1 "[]"
     open-new-window-application-2 "[]"
     open-new-window-application-3 "[]"
@@ -112,6 +98,20 @@ for_each "gsettings set org.gnome.shell.keybindings " << 'BASH'
     open-new-window-application-7 "[]"
     open-new-window-application-8 "[]"
     open-new-window-application-9 "[]"
+    screenshot "['Print']"
+    show-screenshot-ui "['<Shift><Super>s']"
+    switch-to-application-1 "[]"
+    switch-to-application-2 "[]"
+    switch-to-application-3 "[]"
+    switch-to-application-4 "[]"
+    switch-to-application-5 "[]"
+    switch-to-application-6 "[]"
+    switch-to-application-7 "[]"
+    switch-to-application-8 "[]"
+    switch-to-application-9 "[]"
+    toggle-message-tray "['<Super>m']"
+    toggle-overview "['<Control><Alt><Super>o']"
+    toggle-quick-settings "[]"
 BASH
 
 # TODO move this function to the appropriate location
@@ -192,23 +192,23 @@ for_each "gnome_add_custom_keybinding " << 'BASH'
     # using media-key home keybinding would just focus the existing Nautilus window
     nautilus    "<Super>e"                "nautilus --new-window"
     todoist     "<Shift><Super>q"         "todoist"
-    switch-to-workspace-13 "<Alt>equal"          "wmctrl -s 12" # indexes begin at 0
+    obs-share-entire-screen "<Shift><Super>e"  "obs-cmd scene switch 'ENTIRE_SCREEN'"
+    obs-share-vdo-ninja     "<Shift><Super>d"  "obs-cmd scene switch 'Camera - vdo.ninja'"
     move-to-workspace-13 "<Alt><Shift>equal"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 12"
-    switch-to-workspace-14 "<Alt>h"          "wmctrl -s 13" # indexes begin at 0
     move-to-workspace-14 "<Alt><Shift>h"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 13"
-    switch-to-workspace-15 "<Alt>j"          "wmctrl -s 14" # indexes begin at 1
     move-to-workspace-15 "<Alt><Shift>j"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 14"
-    switch-to-workspace-16 "<Alt>k"          "wmctrl -s 15" # indexes begin at 0
     move-to-workspace-16 "<Alt><Shift>k"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 15"
-    switch-to-workspace-17 "<Alt>l"          "wmctrl -s 16" # indexes begin at 0
     move-to-workspace-17 "<Alt><Shift>l"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 16"
+    switch-to-workspace-13 "<Alt>equal"          "wmctrl -s 12" # indexes begin at 0
+    switch-to-workspace-14 "<Alt>h"          "wmctrl -s 13" # indexes begin at 0
+    switch-to-workspace-15 "<Alt>j"          "wmctrl -s 14" # indexes begin at 1
+    switch-to-workspace-16 "<Alt>k"          "wmctrl -s 15" # indexes begin at 0
+    switch-to-workspace-17 "<Alt>l"          "wmctrl -s 16" # indexes begin at 0
     # TODO - weird bug where setting Alt+; manually through GNOME settings
     # reports that it is already taken by switch-to-workspace-1 keybinding
     # (even though it is not).
-    switch-to-workspace-18-en "<Alt>semicolon"     "wmctrl -s 17" # indexes begin at 0
-    switch-to-workspace-18-sk "<Alt>ocircumflex"   "wmctrl -s 17" # indexes begin at 0
     move-to-workspace-18-en "<Shift><Alt>semicolon"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 17"
     move-to-workspace-18-sk "<Shift><Alt>ocircumflex"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 17"
-    obs-share-entire-screen "<Shift><Super>e"  "obs-cmd scene switch 'ENTIRE_SCREEN'"
-    obs-share-vdo-ninja     "<Shift><Super>d"  "obs-cmd scene switch 'Camera - vdo.ninja'"
+    switch-to-workspace-18-en "<Alt>semicolon"     "wmctrl -s 17" # indexes begin at 0
+    switch-to-workspace-18-sk "<Alt>ocircumflex"   "wmctrl -s 17" # indexes begin at 0
 BASH
