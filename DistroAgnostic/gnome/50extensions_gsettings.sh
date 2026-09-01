@@ -44,11 +44,18 @@ fi
 
 # clipboard-history@alexsaveau.dev
 for_each "gsettings set org.gnome.shell.extensions.clipboard-history " << 'BASH'
+    cache-only-favorites "true"
     cache-size "1000"
-    display-mode "1"
+    confirm-clear "true"
+    disable-down-arrow "false"
+    display-mode "2"
     history-size "10000"
+    move-item-first "false"
     next-entry "['<Alt>v']"
+    notify-on-copy "false"
+    paste-on-selection "true"
     prev-entry "['<Shift><Alt>v']"
+    process-primary-selection "true"
     toggle-menu "['<Super>v']"
     toggle-private-mode "[]"
     topbar-preview-size "30"
