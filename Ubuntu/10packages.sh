@@ -12,6 +12,10 @@
 # mainly signal and wa messengers
 # https://rustutils.com/tools/flare/
 # https://github.com/wiomoc/whatsappweb-rs
+# https://asciinema.org/
+# https://ast-grep.github.io/
+# https://rustutils.com/tools/broot/
+# https://github.com/sharkdp/fd
 # use messaging apps written in rust or cpp
 
 export DEBIAN_FRONTEND=noninteractive
