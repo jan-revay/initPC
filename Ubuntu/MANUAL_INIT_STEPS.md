@@ -38,6 +38,7 @@ When clipping in 2i2 with google chrome, system mic volume is lowered. This mess
 ### Firefox and native apps that use mic or WebRTC
 
 - test the sound and delay
+- about:config -> toolkit.tabbox.switchByScrolling -> true
 
 ## Other
 
@@ -53,7 +54,7 @@ TODO - install DaVinci Resolve <https://www.dedoimedo.com/computers/davinci-reso
 - Vypnut fractional scaling.
 - setup extensions
 
-Firefox - scrollable tabs - enable <https://support.mozilla.org/en-US/questions/1285434>
+Firefox & Zen - scrollable tabs - enable <https://support.mozilla.org/en-US/questions/1285434>
 
 - test whether the suspend works and set up the suspend timeout
 - check the security tab in GNOME settings
