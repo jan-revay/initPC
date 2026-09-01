@@ -63,6 +63,7 @@ APT_PACKAGES=(
     build-essential make gdb rr ccache ninja-build cmake cmake-gui
     gcc-"${LATEST_GCC_VER_IN_APT}" g++-"${LATEST_GCC_VER_IN_APT}"
     golang-go
+    protobuf-compiler
 
     # " linux-tools-$(uname -r)" # TODO broken
 
