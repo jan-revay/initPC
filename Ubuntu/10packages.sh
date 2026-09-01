@@ -8,6 +8,11 @@
 # TODO install packages via a list...
 # TODO consider adding pavucontrol
 # TODO add nix package manager + start managing more packages via nix
+# TODO add relevant packages from: https://rustutils.com
+# mainly signal and wa messengers
+# https://rustutils.com/tools/flare/
+# https://github.com/wiomoc/whatsappweb-rs
+# use messaging apps written in rust or cpp
 
 export DEBIAN_FRONTEND=noninteractive
 # TODO "Which services should be restarted?" prompt is still present in VM
