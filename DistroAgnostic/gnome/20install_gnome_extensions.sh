@@ -32,6 +32,8 @@ function install_gnome_extension
 {
     local EXTENSION_ID="$1"
 
+    # TODO skip installing extension that is already installed
+
     # I am preserving the interactive version because gext webpage says that using the --filesystem
     # method "some extensions might not install well"
     # TODO remove the if-else - gext should be able to detect running gnome session by itself.
@@ -105,14 +107,15 @@ for_each "gnome-extensions disable " << 'BASH'
     "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
 BASH
 
-# Sort enabled/disabled extensions arrays so that idempotency tests pass in Github Actions.
-ENABLED_EXTENSIONS_SORTED=$(gsettings get org.gnome.shell enabled-extensions \
-    | python3 -c 'import sys, ast; print(sorted(ast.literal_eval(sys.stdin.read())))')
-DISABLED_EXTENSIONS_SORTED=$(gsettings get org.gnome.shell disabled-extensions \
-    | python3 -c 'import sys, ast; print(sorted(ast.literal_eval(sys.stdin.read())))')
-
-gsettings set org.gnome.shell enabled-extensions "${ENABLED_EXTENSIONS_SORTED}"
-gsettings set org.gnome.shell disabled-extensions "${DISABLED_EXTENSIONS_SORTED}"
+# TODO  Sort enabled/disabled extensions arrays so that idempotency tests pass in Github Actions. - TOINVESTIGATE
+# TODO - alternatively just make the code itself more idempotent - not reinstalling installed extension and not reenabling extension that should be disabled
+# ENABLED_EXTENSIONS_SORTED=$(gsettings get org.gnome.shell enabled-extensions \
+#     | python3 -c 'import sys, ast; print(sorted(ast.literal_eval(sys.stdin.read())))')
+# DISABLED_EXTENSIONS_SORTED=$(gsettings get org.gnome.shell disabled-extensions \
+#     | python3 -c 'import sys, ast; print(sorted(ast.literal_eval(sys.stdin.read())))')
+#
+# gsettings set org.gnome.shell enabled-extensions "${ENABLED_EXTENSIONS_SORTED}"
+# gsettings set org.gnome.shell disabled-extensions "${DISABLED_EXTENSIONS_SORTED}"
 
 # TODO go over all Linux GNOME tiling extensions
 # TODO - go over all GNOME extensions Omakub uses
