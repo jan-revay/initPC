@@ -16,6 +16,8 @@ name: Containers
 # TODO the overall result for the test is reported green even though the script failed on some containers (fix)
 # TODO fix - the workflow has a green checkmark in GitHub even if no branch was successful
 # TODO add linux mint container (cinamon) and KDE Neon
+# TODO - this skips the Ubuntu_CLI part because Ubuntu_CLI part only accepts Ubuntu
+# TODO - add a flag to skip OS distro check - just start executing yolo
 
 
 on:
