@@ -25,7 +25,8 @@ fi
 for_each "gsettings set org.gnome.desktop.peripherals.touchpad " << 'BASH'
     click-method "fingers"
     disable-while-typing "true"
-    send-events "disabled-on-external-mouse"
+    # send-events "disabled-on-external-mouse"
+    send-events "enabled"
 BASH
 
 # GNOME settings -> Search (influences results in super_L overview search menu)
