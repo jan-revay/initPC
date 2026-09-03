@@ -105,7 +105,12 @@ jobs:
       run: du -sh /tmp/old_home/
 
     - name: Running iniPC script for the 2nd time should not fail.
-      run: pushd ./DistroAgnostic/ && NONINTERACTIVE=true ./run_all.sh && popd
+      run: |
+        dconf watch / > dconf_2nd_run.log &
+        SKIP_FLATS_AND_SNAPS='true' ./main.sh --noninteractive
+
+    - name: Print dconf watch output
+      run: cat dconf_2nd_run.log
 
     # TODO split this command to multiple lines
     # TODO also test that the first run of initPC script does change the state of home dir
