@@ -81,6 +81,7 @@ for_each "install_gnome_extension " << 'BASH'
     "apps-menu@gnome-shell-extensions.gcampax.github.com"
     "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
     "clipboard-history@alexsaveau.dev"
+    "disable-workspace-switcher@jbradaric.me"
     "executor@raujonas.github.io"
     "focus-changer@heartmire" # TODO disable - Tiling shell does this better
     "focus@scaryrawr.github.io" # TODO remove
