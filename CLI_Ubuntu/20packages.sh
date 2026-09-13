@@ -185,17 +185,17 @@ time print0 "${PIPX_PACKAGES[@]}" | xargs -0 -I % pipx install %
 # pipx ensurepath - ensurepath is broken (it adds the path multiple times in subshells)
 # TODO - is the ensurepath still broken? I think so as it adds the path indefinitely... -- TODO test
 # in one place
-if ! echo "$PATH" | grep /home/jr/.local/bin; then
+if ! echo "$PATH" | grep "/home/${USER}/.local/bin"; then
     pipx ensurepath
     # shellcheck source=/dev/null
     source ~/.bashrc
     # TODO the source command was not enough for come reason... investigate!!!
-    export PATH="$PATH:/home/jr/.local/bin"
+    export PATH="$PATH:/home/${USER}/.local/bin"
 fi
 
 # === Rust packages ===
 # shellcheck source=/dev/null
-source "$HOME/.cargo/env"
+source "${HOME}/.cargo/env"
 # TODO try to find these packages in apt db or as snaps
 # TODO try to minimize the number of package managers I need to use
 # TODO installing cargo packages is super slow - try to find another way. Don't use cargo unless we have to.
