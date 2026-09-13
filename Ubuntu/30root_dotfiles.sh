@@ -15,6 +15,7 @@ clean()
         /etc/cron.d/horarium
         /etc/cron.d/spin_hdd_off
         /etc/libinput/local-overrides.quirks
+        /etc/keyd/default.conf
     )
     # Delete links to files created by this script
     sudo rm -f "${TO_CLEAN[@]}"
@@ -43,6 +44,7 @@ cron_permissions()
 # so that we can clean just the file we stowed there (the dir might be used
 # by other utils as well), we don't want stow to own the whole directory.
 sudo mkdir -p /etc/libinput
+sudo mkdir -p /etc/keyd
 
 pushd RootDotfiles/
 
