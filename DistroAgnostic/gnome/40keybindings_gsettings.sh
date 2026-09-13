@@ -3,6 +3,9 @@
 
 # TODO move remaining keybindings from gsettings scripts here
 # TODO TOREAD https://nikitabobko.github.io/AeroSpace/guide
+# TODO make keybindings more coordinated together e.g.
+# win + letter combinations are almost unused, thise
+# could be assigned to more frequently used actions
 
 for_each "gsettings set org.gnome.mutter.keybindings " << 'BASH'
     toggle-tiled-left "[]"
@@ -40,7 +43,7 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     move-to-workspace-1 "['<Alt><Shift>Above_Tab', '<Control><Shift><Super>Home']"
     move-to-workspace-10 "['<Alt><Shift>9']"
     move-to-workspace-11 "['<Alt><Shift>0']"
-    move-to-workspace-12 "['<Alt><Shift>minus']"
+    move-to-workspace-12 "['<Shift>Launch1']"
     move-to-workspace-2 "['<Alt><Shift>1']"
     move-to-workspace-3 "['<Alt><Shift>2']"
     move-to-workspace-4 "['<Alt><Shift>3']"
@@ -59,7 +62,7 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     switch-to-workspace-1 "['<Alt>Above_Tab', '<Control><Super>Home']"
     switch-to-workspace-10 "['<Alt>9']"
     switch-to-workspace-11 "['<Alt>0']"
-    switch-to-workspace-12 "['<Alt>minus']"
+    switch-to-workspace-12 "['Launch1']"
     switch-to-workspace-2 "['<Alt>1']"
     switch-to-workspace-3 "['<Alt>2']"
     switch-to-workspace-4 "['<Alt>3']"
@@ -194,12 +197,13 @@ for_each "gnome_add_custom_keybinding " << 'BASH'
     todoist     "<Shift><Super>q"         "todoist"
     obs-share-entire-screen "<Shift><Super>e"  "obs-cmd scene switch 'ENTIRE_SCREEN'"
     obs-share-vdo-ninja     "<Shift><Super>d"  "obs-cmd scene switch 'Camera - vdo.ninja'"
-    move-to-workspace-13 "<Alt><Shift>equal"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 12"
-    move-to-workspace-14 "<Alt><Shift>h"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 13"
-    move-to-workspace-15 "<Alt><Shift>j"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 14"
-    move-to-workspace-16 "<Alt><Shift>k"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 15"
-    move-to-workspace-17 "<Alt><Shift>l"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 16"
-    switch-to-workspace-13 "<Alt>equal"          "wmctrl -s 12" # indexes begin at 0
+    move-to-workspace-13 "<Shift>Launch2"     "/home/${USER}/.my_scripts/move_focused_to_workspace.sh 12"
+    move-to-workspace-14 "<Alt><Shift>h"     "/home/${USER}/.my_scripts/move_focused_to_workspace.sh 13"
+    move-to-workspace-15 "<Alt><Shift>j"     "/home/${USER}/.my_scripts/move_focused_to_workspace.sh 14"
+    move-to-workspace-16 "<Alt><Shift>k"     "/home/${USER}/.my_scripts/move_focused_to_workspace.sh 15"
+    move-to-workspace-17 "<Alt><Shift>l"     "/home/${USER}/.my_scripts/move_focused_to_workspace.sh 16"
+    move-to-workspace-18 "<Shift>Launch3"     "/home/${USER}/.my_scripts/move_focused_to_workspace.sh 17"
+    switch-to-workspace-13 "Launch2"          "wmctrl -s 12" # indexes begin at 0
     switch-to-workspace-14 "<Alt>h"          "wmctrl -s 13" # indexes begin at 0
     switch-to-workspace-15 "<Alt>j"          "wmctrl -s 14" # indexes begin at 1
     switch-to-workspace-16 "<Alt>k"          "wmctrl -s 15" # indexes begin at 0
@@ -207,8 +211,18 @@ for_each "gnome_add_custom_keybinding " << 'BASH'
     # TODO - weird bug where setting Alt+; manually through GNOME settings
     # reports that it is already taken by switch-to-workspace-1 keybinding
     # (even though it is not).
-    move-to-workspace-18-en "<Shift><Alt>semicolon"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 17"
-    move-to-workspace-18-sk "<Shift><Alt>ocircumflex"     "/home/jr/.my_scripts/move_focused_to_workspace.sh 17"
-    switch-to-workspace-18-en "<Alt>semicolon"     "wmctrl -s 17" # indexes begin at 0
-    switch-to-workspace-18-sk "<Alt>ocircumflex"   "wmctrl -s 17" # indexes begin at 0
+    # TODO bug - move-to-workspace-18-sk and switch-to-workspace-18-sk are not working
+    # when slovak layout is activated
+    # TODO also report this as a bug -- this is a serious functionality issue
+    # TODO - this is a symptom of the keysym vs. keycode issue
+    switch-to-workspace-18 "Launch3"     "wmctrl -s 17" # indexes begin at 0
 BASH
+
+# TODO move move_focused_to_workspace.sh script into initPC repo
+# also move relevant parts od .my_scripts into initPC repo
+#
+
+# TODO install keyd
+# keyd can be installed as a cli package
+# keyd is probably present on Ubuntu 26.04 but needs to be installed as a PPA
+# on previous ubuntu versions
