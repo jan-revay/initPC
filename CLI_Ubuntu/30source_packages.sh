@@ -4,6 +4,8 @@
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
 # TODO move the package lists to external files
 # TODO add repos and packates that PopOS has: https://pop.system76.com/
+#
+# consider finding the source packages on homebrew or some pkg. manager
 
 mkdir -p ~/localSW
 pushd ~/localSW/
