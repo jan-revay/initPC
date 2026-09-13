@@ -110,6 +110,9 @@ for_each "gnome-extensions disable " << 'BASH'
     "apps-menu@gnome-shell-extensions.gcampax.github.com"
     "ding@rastersoft.com"
     "focus@scaryrawr.github.io"
+    "native-window-placement@gnome-shell-extensions.gcampax.github.com"
+    "undecorate@sun.wxg@gmail.com"
+    "window-title-is-back@fthx"
     "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
 BASH
 
