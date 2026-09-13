@@ -3,6 +3,8 @@
 # The script should not require any user input and should be idempotent.
 #
 
+# TODO - consider installing fonts via homebrew or some other pkg manager
+
 # OLD code
 # mkdir -p ~/.local/share/fonts
 # cd /tmp
