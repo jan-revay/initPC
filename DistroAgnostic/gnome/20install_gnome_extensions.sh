@@ -32,6 +32,11 @@ function install_gnome_extension
 {
     local EXTENSION_ID="$1"
 
+    if gnome-extensions info "${EXTENSION_ID}"; then
+        echo "${EXTENSION_ID}" is already installed...
+        return 0
+    fi
+
     # TODO skip installing extension that is already installed
 
     # I am preserving the interactive version because gext webpage says that using the --filesystem
