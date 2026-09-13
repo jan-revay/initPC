@@ -2,6 +2,8 @@
 . ../prelude.sh
 # The script should not require any user input and should be idempotent.
 
+# TODO consider installing nvim via homebrew and just customizing the rest
+
 # TODO implement AppImageUpdate method
 # https://github.com/AppImageCommunity/AppImageUpdate
 # TODO - consider compiling nvim myself or using tar.gz
