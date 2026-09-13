@@ -45,7 +45,9 @@ for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
     # NOTE: right click resizing is dependent on the sector of the window being
     # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
     resize-with-right-button "true"
-    workspace-names "['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17']"
+    workspace-names "['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11*', '12*', '-H-', '-J-', '-K-', '-L-', '17*']"
+    # TODO experiment with hjkl workspace names so that they are as readable as possible
+    # Also expetiment with names of workspaces that do not correspond to a number key
 BASH
 
 for_each "gsettings set org.gnome.mutter " << 'BASH'
