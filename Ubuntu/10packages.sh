@@ -117,8 +117,9 @@ readonly APT_GUI_PACKAGES=(
     qpwgraph
 
     # ===== TO TRY ===== (TODO review)
-    actiona # automations, written in C++ https://github.com/Jmgr/actiona
-    autokey-common autokey-gtk
+    actiona                        # automations, written in C++ https://github.com/Jmgr/actiona
+    autokey-common autokey-gtk wev # TODO autokey probably only work on X server - TODO remove pkg
+    # TODO find other outdated pkgs via LLMs
 
     ubuntu-restricted-extras
 
