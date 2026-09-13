@@ -2,6 +2,7 @@
 . ../prelude.sh
 # The script should not require any user input and should be idempotent.
 
+# TODO - consiedr using brew to install kittty
 # TODO - also check dependencies (glibc)
 # strings ~/.local/kitty.app/bin/kitty | grep -o 'GLIBC_[0-9.]*' | sort -V | tail -1
 # ldd --version
