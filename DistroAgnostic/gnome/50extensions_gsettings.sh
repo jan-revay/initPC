@@ -256,6 +256,7 @@ for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-
     apps-minimized-effect "NOTHING"
     click-on-active-overview "false"
     icons-group "GROUP AND SHOW COUNT"
+    indicator-all-text "∀"
     indicator-hide-empty "false"
     indicator-round-borders "false"
     indicator-show-background "true"
