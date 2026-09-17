@@ -55,7 +55,7 @@ for_each "gsettings set org.gnome.shell.extensions.clipboard-history " << 'BASH'
     notify-on-copy "false"
     paste-on-selection "true"
     prev-entry "['<Shift><Alt>v']"
-    process-primary-selection "true"
+    process-primary-selection "false"
     toggle-menu "['<Super>v']"
     toggle-private-mode "[]"
     topbar-preview-size "7"
