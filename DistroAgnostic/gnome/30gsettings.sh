@@ -128,6 +128,9 @@ if lscpu | grep -F "Intel(R) Core(TM) Ultra 7 265H"; then
         # rounding error and also test whether the Chromium window does not change size on
         # refocus with the specific value.
         # TODO consider using 1 as scaling factor and setting interface/document/monospace fonts instead
+        # TODO play with the text scaling factor - find sth that can work on most of my devices
+        # TODO gnome workspace overview and a few other UI elemnents do not are a bit cropped
+        # with text-scaling-factor so large
         text-scaling-factor "1.25"
         # TODO also try fractional scaling on laptop monitor
         # TODO try          1.234375 , 1.21875 and 1.1875
