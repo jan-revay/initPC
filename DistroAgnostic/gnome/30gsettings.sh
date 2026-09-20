@@ -86,7 +86,7 @@ BASH
 for_each "gsettings set org.gnome.desktop.input-sources " << 'BASH'
     per-window true
     sources "[('xkb', 'us'), ('xkb', 'sk+qwerty')]"
-    xkb-options "['terminate:ctrl_alt_bksp', 'shift:both_capslock', 'caps:escape']"
+    xkb-options "['terminate:ctrl_alt_bksp']"
 BASH
 
 for_each "gsettings set org.gnome.desktop.interface " << 'BASH'
