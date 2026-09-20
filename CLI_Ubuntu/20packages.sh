@@ -92,7 +92,7 @@ APT_PACKAGES=(
     # I installed ydotool from source as the packages seem to be broken
     # ydotool ydotoold # simulates keyboard and mouse input
     procps
-    eza starship
+    eza
     # I don't remember why this is here (TODO review)
     linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
     scdoc
