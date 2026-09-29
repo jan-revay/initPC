@@ -4,29 +4,6 @@
 # TODO apt-get install linux-headers-$(uname -r) does not work in WSL
 # TODO move the package lists to external files
 # TODO add repos and packates that PopOS has: https://pop.system76.com/
-#
-#
-# TODO fix issues with uname -r in docker containers - ifdef that part
-# e.g.
-# if ! grep -qE '/docker|/containerd' /proc/1/cgroup 2>/dev/null; then
-#   # host system
-#   apt-get install -y linux-tools-$(uname -r)
-# else
-#   echo "Running in container — skipping kernel-specific packages"
-# fi
-#
-#
-# or
-#
-# KVER="$(uname -r)"
-# if apt-cache show "linux-tools-$KVER" >/dev/null 2>&1; then
-#   sudo apt-get install -y "linux-tools-$KVER"
-# else
-#   echo "linux-tools-$KVER not available, skipping"
-# fi
-#
-#
-# see: https://chatgpt.com/share/69661d42-1a2c-8008-82ba-72f4e69e0ca0
 
 export DEBIAN_FRONTEND=noninteractive
 # TODO "Which services should be restarted?" prompt is still present in VM
@@ -65,8 +42,6 @@ APT_PACKAGES=(
     golang-go
     protobuf-compiler
 
-    # " linux-tools-$(uname -r)" # TODO broken
-
     # editors
     # TODO consider moving qtcreator to the GUI part of the script
     emacs hexedit
@@ -94,7 +69,7 @@ APT_PACKAGES=(
     procps
     eza
     # I don't remember why this is here (TODO review)
-    linux-tools-common linux-tools-generic linux-tools-"$(uname -r)"
+    linux-tools-common linux-tools-generic
     scdoc
 
     # package managers
@@ -141,6 +116,16 @@ APT_PACKAGES=(
     stressapptest stress-ng inxi
     hyperfine
 )
+
+# linux-tools-$(uname -r) matches the running kernel. In Docker, WSL, and some
+# OEM/HWE kernels that package is missing from apt; installing it anyway makes
+# apt-get fail and aborts the rest of init (set -e). linux-tools-generic stays.
+KVER="$(uname -r)"
+if apt-cache show "linux-tools-${KVER}" > /dev/null 2>&1; then
+    APT_PACKAGES+=("linux-tools-${KVER}")
+else
+    echo "Warning: linux-tools-${KVER} is not in apt; skipping."
+fi
 
 time sudo apt-get install -y "${APT_PACKAGES[@]}"
 # cleanup
