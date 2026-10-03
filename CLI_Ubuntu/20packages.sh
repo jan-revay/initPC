@@ -48,7 +48,7 @@ APT_PACKAGES=(
     wl-clipboard # copy/paste to/from nvim
 
     # utils
-    ripgrep tree curl
+    ripgrep tree curl git-lfs git-all
     # add ast-grep
     # neofetch
 
