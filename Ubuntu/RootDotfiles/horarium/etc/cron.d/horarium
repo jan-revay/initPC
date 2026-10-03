@@ -2,7 +2,7 @@
 # time block boundaries and breaks as most of my work is being done on PC and
 # phone (I use sth. similar on my phone).
 #
-# Advantages as opposed to only using alarms on phone:
+# Advantages as opposed to only using alarms:
 #   1. I don't have to think about my schedule and manage alarms.
 #   2. Alarms may go unnoticed (e.g. if my phone is in a different room or out
 #   of battery).
@@ -10,9 +10,7 @@
 #   time-blocks sharp.
 #   4. I can always leave my PC on when I go away (it will turn off itself
 #   eventually).
-#   5. Easier context switches between morning and evening time blocks and
-#   cleaner PC desktop.
-#   6. It is less likely that my attention gets stolen/grabbed by a low
+#   5. It is less likely that my attention gets stolen/grabbed by a low
 #   priority engaging or urgent task as the time-block boundary/break helps me
 #   to reevaluate my priorities for the day resp. "unfocus", so that I am able
 #   to do a calm prioritization.
@@ -27,7 +25,7 @@
 #   guard, I can return by turning my PC on back again and I can use:
 #   `shutdown -c` repeatedly, to postpone the shutdown a little bit, until I
 #   finish the necessary work. This prevents me from loosing track of time and
-#   helps me to keep my schedule.
+#   helps me to keep my schedule sharp.
 
 *      0-6    * * *  root /sbin/shutdown
 
