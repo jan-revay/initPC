@@ -92,6 +92,7 @@ readonly APT_GUI_PACKAGES=(
     meld kdevelop coqide qgit cmake-gui # gitk git-gui
     qtcreator
     alacritty # kitty - installed independently via sh script
+    nemo
 
     # ===== FILES AND DISK MANAGEMENT
     gparted

@@ -196,7 +196,7 @@ for_each "gnome_add_custom_keybinding " << 'BASH'
     qpwgraph        "<Super>3"                "qpwgraph"
     zen             "<Super>4"                "flatpak run app.zen_browser.zen"
     # using media-key home keybinding would just focus the existing Nautilus window
-    nautilus    "<Super>e"                "nautilus --new-window"
+    nautilus    "<Super>e"                "nemo"
     todoist     "<Shift><Super>q"         "todoist"
     obs-share-entire-screen "<Shift><Super>e"  "obs-cmd scene switch 'ENTIRE_SCREEN'"
     obs-share-vdo-ninja     "<Shift><Super>d"  "obs-cmd scene switch 'Camera - vdo.ninja'"
