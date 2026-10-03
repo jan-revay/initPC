@@ -22,7 +22,7 @@ and select options:
 
 ### Focusrite Scarlet 2i2 config
 
-- install focusrite control GUI
+- install focusrite control GUI: <https://github.com/geoffreybennett/alsa-scarlett-gui/blob/master/docs/INSTALL.md>
 - set 2i2 into pro audio mode in Pipewire
 - create a virtual source for AUX0
 
@@ -68,3 +68,13 @@ TODO:
   - install Messages, Messenger and WhatsApp as PWAs
   - install MS Whiteboard and Google Keep as PWAs (via Google Chrome)
   - install keybindings extension <https://browsergadgets.io/gadgets/mywebshortcuts> and set up shortcuts for MS Whiteboard
+
+
+## Install XP pen drivers
+
+see DistroAgnotsitc folder for that.
+
+
+## Install JetBrains IDEs
+
+Install JetBrains IDEs via tar.gz
