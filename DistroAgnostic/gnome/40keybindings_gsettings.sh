@@ -34,6 +34,9 @@ for_each "gsettings set org.gnome.desktop.wm.keybindings " << 'BASH'
     # TODO rethink workspace switching keybindings
     # TODO add home row keybindings for workspaces 9 to 12
     always-on-top "['<Control><Super>space']"
+    # NOTE: Use Shift+Arrow to snap resized dimension toward screen edges or
+    # nearby window boundaries. Use enter to exit the resize mode.
+    begin-resize "['<Control><Alt>Return']"
     # TODO try finding a solution to also focus the window that has highest Z
     # order after the lower action.
     # TODO this does not seem to work (lower)
