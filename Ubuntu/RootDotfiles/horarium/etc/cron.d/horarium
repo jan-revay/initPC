@@ -53,7 +53,8 @@
 
 # === WEEKLY SCHEDULE ===
 # Saturday
-*/15   18-20  * * Sat  root /usr/bin/loginctl lock-sessions
+*/15   15-16  * * Sat  root /usr/bin/loginctl lock-sessions
+*      17-20  * * Sat  root /usr/bin/loginctl lock-sessions
 # Sunday - rest/sport
 *      12-20  * * Sun  root /sbin/shutdown
 
